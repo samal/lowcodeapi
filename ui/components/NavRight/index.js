@@ -4,35 +4,15 @@ import IconPack from '../IconPack';
 
 const tabs = [
   // {
-  //   "id": "collection",
-  //   "name": "Collection",
-  //   "description": "API Collections",
-  //   "description_public": "API Collections",
-  //   "icon": "collection",
+  //   "id": "fav",
+  //   "name": "Favorite",
+  //   "description": "User's Favorite API for Quick Access",
+  //   "icon": "bookmarks",
   //   "disabled": false,
   //   "released": true,
+  //   "login_required": true,
   //   "visible": true
   // },
-  // {
-  //   "id": "unified",
-  //   "name": "Unified",
-  //   "description": "Unified APIs",
-  //   "description_public": "Unified APIs",
-  //   "icon": "unified",
-  //   "disabled": false,
-  //   "released": true,
-  //   "visible": true
-  // },
-  {
-    "id": "fav",
-    "name": "Favorite",
-    "description": "User's Favorite API for Quick Access",
-    "icon": "bookmarks",
-    "disabled": false,
-    "released": true,
-    "login_required": true,
-    "visible": true
-  },
   {
     "id": "settings",
     "icon": "cog",

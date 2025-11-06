@@ -1,19 +1,9 @@
-import React, { useEffect, useRef} from "react";
+import React from "react";
 
 import IconPack from '../IconPack';
 
-import getLogoUrl from '@/utils/logo-url';
-
 const OAUTH = ['OAUTH2.0', 'OAUTH1.0', 'OAUTH1.0a'];
-const OAUTH2 = ['OAUTH2.0'];
 
-const getTitleForOAuth = (name, connected, auth_type) => {
-  const auth_text = OAUTH2.includes(auth_type) ? `ClientID and ClientSecret` : `Key and Secret`;
-  if (connected) {
-    return `${name}\'s ${auth_text} is configured for accessing apis`;
-  }
-  return `Configure ${name}\'s ${auth_text} to access apis`;
-}
 const OAuth = ({ user, selected, details, endpoint, setConfigurationView}) => {
   return (<div className="relative flex items-center justify-end text-xs">
     <div id="step3" className="flex items-center relative">

@@ -1,13 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
 
-// import ReactTooltip from 'react-tooltip';
-
-const ReactTooltip = dynamic(() => import('react-tooltip'), {
-    ssr: false,
-});
 import { BASE_PATH } from '../../utils/constants';
 import getLogoUrl from '../../utils/logo-url';
 
@@ -59,30 +53,6 @@ export default function SidebarNavs({ navs, className }) {
                                                         : null }
                                                     </span>
                                                     <span className="inline-block mx-3">{nav.name}</span>
-                                                </div>
-                                                <div className='flex items-center relative mr-2'>
-                                                    {/* {
-                                                        nav.auth_type === 'TOKEN' ? 
-                                                        <span 
-                                                            className=''
-                                                            title={`${nav.integration && nav.integration.activated ? `${nav.name} is integrated using API credentials`: `Integrate your ${nav.name} API credentials.`}`}
-                                                        >
-                                                            <LogoOrIcon 
-                                                                nav={nav.auth_type === 'TOKEN'? { id: 'token', w:'w-3', h:'h-3', color: nav.integration && nav.integration.activated ? 'text-gray-700': 'text-gray-400'}: {} } 
-                                                            />
-                                                        </span>: null
-                                                    }
-                                                                                                        {
-                                                        ['OAUTH2.0','OAUTH2', 'OAUTH1', 'OAUTH1.0a'].includes(nav.auth_type) ? 
-                                                        <span 
-                                                            className=''
-                                                            title={`${nav.integration && nav.integration.activated ? `${nav.name} access is authorized using OAuth authentication`: `Authorize ${nav.name} access using OAuth authentication`}`}
-                                                        >
-                                                            <LogoOrIcon
-                                                                nav={['OAUTH2.0', 'OAUTH2', 'OAUTH1', 'OAUTH1.0a'].includes(nav.auth_type)? { id: 'oauth', opacity: nav.integration && nav.integration.activated ? 'opacity-70': 'opacity-20'}: {} }
-                                                            />
-                                                        </span>: null
-                                                    } */}
                                                 </div>
                                             </>
                                         </Link>

@@ -27,9 +27,6 @@ const ProfileTab = ({
           />
         </div>
         <div className="">
-          {/* <p className="font-medium text-gray-700 group-hover:text-gray-900 truncate">
-            <span className="mr-2" title={title}>{name}</span>
-          </p> */}
           {
             onClick ? 
               <p className="text-xs leading-4 text-gray-500 group-hover:text-gray-700 transition ease-in-out duration-150">

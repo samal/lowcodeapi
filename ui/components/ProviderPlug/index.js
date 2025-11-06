@@ -1,7 +1,6 @@
 import getLogoUrl from '@/utils/logo-url';
 
 export default function ProviderPlug({ brand= '', provider, name, display, children, status }) {
-    const title = name || provider;
     return (<>
         <span className='flex items-center'>
             <img src={getLogoUrl(brand.toLowerCase())} className=' w-4 h-4' alt={brand} title={brand} />

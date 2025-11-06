@@ -1,17 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import ProfileTab from '../ProfileTabNew';
-import IconPack from '../IconPack';
 
 import userAvatar from '../../public/avatar.svg';
 
 const navsDefault = [];
 
-const Bar = ({ children, info = {}, config = {} , home , BASE_PATH = '', BASE_PATH_FALLBACK = '/', navs = navsDefault, user, brand, onLogout, hideNav = false, col= false }) => {
-  // const { name, disable_tabs } = info;
-  // const homeLink = home || BASE_PATH || BASE_PATH_FALLBACK;
-  // const completeRegistration = `${BASE_PATH}/pending-action`;
-  // const signupLink = `${BASE_PATH}/signup`;
+const Bar = ({ info = {}, config = {} , home , BASE_PATH = '', BASE_PATH_FALLBACK = '/', navs = navsDefault, user, brand, onLogout, hideNav = false }) => {
   const loginLink = `${BASE_PATH}/login`;
   
   const [href, setHref] = useState(''); 
@@ -43,7 +38,7 @@ const Bar = ({ children, info = {}, config = {} , home , BASE_PATH = '', BASE_PA
                 {
                   account_config.signup || account_config.login ? <>
                       <div className='flex flex-col items-center justify-center text-xs text-gray-600'>
-                         {
+                        {
                           account_config.login ? <Link href={loginLink} className='underline my-2'>
                               Login
                             </Link>
