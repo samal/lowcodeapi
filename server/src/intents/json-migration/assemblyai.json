@@ -33,8 +33,8 @@
     "total_api": 19,
     "credential_link": "https://www.assemblyai.com/app/account"
   },
-  "routes": {
-    "assemblyai__/v2/transcript/id___DELETE": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/transcript/id",
       "provider_proxy_intent": "/v2/transcript/:id",
       "text": "Deleting transcript",
@@ -70,9 +70,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.044Z"
+      "updated_at": "2025-11-11T15:37:34.791Z"
     },
-    "assemblyai__/v2/transcript___POST": {
+    {
       "provider_alias_intent": "/v2/transcript",
       "provider_proxy_intent": "/v2/transcript",
       "text": "Transcribe audio",
@@ -260,9 +260,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id",
       "provider_proxy_intent": "/v2/transcript/:transcript_id",
       "text": "Get transcript",
@@ -298,9 +298,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript___GET": {
+    {
       "provider_alias_intent": "/v2/transcript",
       "provider_proxy_intent": " /v2/transcript",
       "text": "List transcripts",
@@ -355,9 +355,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id/sentences___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id/sentences",
       "provider_proxy_intent": "/v2/transcript/:transcript_id/sentences",
       "text": "Get sentences in transcript",
@@ -393,9 +393,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id/subtitle_format___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id/subtitle_format",
       "provider_proxy_intent": "/v2/transcript/:transcript_id/:subtitle_format",
       "text": "Get subtitles for transcript",
@@ -435,9 +435,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id/redacted-audio___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id/redacted-audio",
       "provider_proxy_intent": "/v2/transcript/:transcript_id/redacted-audio",
       "text": "Get redacted audio",
@@ -473,9 +473,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id/paragraphs___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id/paragraphs",
       "provider_proxy_intent": "/v2/transcript/:transcript_id/paragraphs",
       "text": "Get paragraphs in transcript",
@@ -511,9 +511,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/upload___POST": {
+    {
       "provider_alias_intent": "/v2/upload",
       "provider_proxy_intent": "/v2/upload",
       "text": "Upload a media file",
@@ -536,9 +536,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/transcript/transcript_id/word-search___GET": {
+    {
       "provider_alias_intent": "/v2/transcript/transcript_id/word-search",
       "provider_proxy_intent": "/v2/transcript/:transcript_id/word-search",
       "text": "Search words in transcript",
@@ -573,9 +573,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/generate/task___POST": {
+    {
       "provider_alias_intent": "/lemur/v3/generate/task",
       "provider_proxy_intent": "/lemur/v3/generate/task",
       "text": "Run a task using LeMUR",
@@ -627,9 +627,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/generate/summary___POST": {
+    {
       "provider_alias_intent": "/lemur/v3/generate/summary",
       "provider_proxy_intent": "/lemur/v3/generate/summary",
       "text": "Summarize a transcript using LeMUR",
@@ -681,9 +681,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/generate/question-answer___POST": {
+    {
       "provider_alias_intent": "/lemur/v3/generate/question-answer",
       "provider_proxy_intent": "/lemur/v3/generate/question-answer",
       "text": "Ask questions using LeMUR",
@@ -735,9 +735,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/generate/action-items___POST": {
+    {
       "provider_alias_intent": "/lemur/v3/generate/action-items",
       "provider_proxy_intent": "/lemur/v3/generate/action-items",
       "text": "Extract action items",
@@ -789,9 +789,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/request_id___GET": {
+    {
       "provider_alias_intent": "/lemur/v3/request_id",
       "provider_proxy_intent": "/lemur/v3/:request_id",
       "text": "Retrieve LeMUR response",
@@ -820,9 +820,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/lemur/v3/request_id___DELETE": {
+    {
       "provider_alias_intent": "/lemur/v3/request_id",
       "provider_proxy_intent": "/lemur/v3/:request_id",
       "text": "Purge LeMUR request data",
@@ -851,9 +851,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__/v2/realtime/token___POST": {
+    {
       "provider_alias_intent": "/v2/realtime/token",
       "provider_proxy_intent": "/v2/realtime/token",
       "text": "Create temporary authentication token for Streaming STT",
@@ -882,9 +882,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__wss//api.assemblyai.com/v2/realtime/ws___GET": {
+    {
       "provider_alias_intent": "wss//api.assemblyai.com/v2/realtime/ws",
       "provider_proxy_intent": "wss://api.assemblyai.com/v2/realtime/ws",
       "text": "Streaming Speech-to-Text",
@@ -932,9 +932,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     },
-    "assemblyai__createatranscriptfromamediafilethatisaccessibleviaaurl.___POST": {
+    {
       "provider_alias_intent": "createatranscriptfromamediafilethatisaccessibleviaaurl.",
       "provider_proxy_intent": "Create a transcript from a media file that is accessible via a URL.",
       "text": "Transcribe audio",
@@ -1111,7 +1111,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.045Z"
+      "updated_at": "2025-11-11T15:37:34.792Z"
     }
-  }
+  ]
 }

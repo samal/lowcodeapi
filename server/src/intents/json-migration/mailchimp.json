@@ -31,8 +31,8 @@
     "total_api": 94,
     "credential_link": "https://mailchimp.com/help/about-api-keys/#Generate_an_API_key"
   },
-  "routes": {
-    "mailchimp__/api/1.0/messages/send___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/1.0/messages/send",
       "text": "Send new message",
       "category": "Messages",
@@ -105,9 +105,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/send-template___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/send-template",
       "text": "Send using message template",
       "category": "Messages",
@@ -166,9 +166,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/search___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/search ",
       "text": "Search messages by date",
       "category": "Messages",
@@ -224,9 +224,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/search-time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/search-time-series",
       "text": "Search messages by hour",
       "category": "Messages",
@@ -274,9 +274,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/info___GET": {
+    {
       "provider_alias_intent": "/api/1.0/messages/info",
       "text": "Get message info",
       "category": "Messages",
@@ -309,9 +309,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/content___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/content",
       "text": "Get message content",
       "category": "Messages",
@@ -344,9 +344,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/parse___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/parse",
       "text": "Parse mime document",
       "category": "Messages",
@@ -379,9 +379,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/send-raw___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/send-raw",
       "text": "Send mime document Message",
       "category": "Messages",
@@ -446,9 +446,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/list-scheduled___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/list-scheduled",
       "text": "List scheduled emails",
       "category": "Messages",
@@ -480,9 +480,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/cancel-scheduled___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/cancel-scheduled",
       "text": "Cancel scheduled email",
       "category": "Messages",
@@ -515,9 +515,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/messages/reschedule___POST": {
+    {
       "provider_alias_intent": "/api/1.0/messages/reschedule",
       "text": "Reschedule email",
       "category": "Messages",
@@ -555,9 +555,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/allowlists/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/allowlists/add",
       "text": "Add email to allowlist",
       "category": "Allowlists",
@@ -593,9 +593,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/allowlists/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/allowlists/list",
       "text": "List allowlisted emails",
       "category": "Allowlists",
@@ -626,9 +626,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/allowlists/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/allowlists/delete",
       "text": "Remove email from allowlist",
       "category": "Allowlists",
@@ -660,9 +660,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/info",
       "text": "View export info",
       "category": "Exports",
@@ -694,9 +694,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/list",
       "text": "List exports",
       "category": "Exports",
@@ -728,9 +728,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/rejects___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/rejects",
       "text": "Export denylist",
       "category": "Exports",
@@ -761,9 +761,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/whitelist___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/whitelist",
       "text": "Export Allowlist whitelist",
       "category": "Exports",
@@ -794,9 +794,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/allowlist___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/allowlist",
       "text": "Export Allowlist",
       "category": "Exports",
@@ -827,9 +827,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/exports/activity___POST": {
+    {
       "provider_alias_intent": "/api/1.0/exports/activity",
       "text": "Export activity history",
       "category": "Exports",
@@ -890,9 +890,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/list",
       "text": "List ip addresses",
       "category": "IPs",
@@ -924,9 +924,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/info",
       "text": "Get ip info",
       "category": "IPs",
@@ -957,9 +957,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/provision___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/provision",
       "text": "Request additional ip",
       "category": "IPs",
@@ -1003,9 +1003,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/start-warmup___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/start-warmup",
       "text": "Start ip warmup",
       "category": "IPs",
@@ -1037,9 +1037,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/cancel-warmup___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/cancel-warmup",
       "text": "Cancel ip warmup",
       "category": "IPs",
@@ -1071,9 +1071,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/set-pool___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/set-pool",
       "text": "Move ip to different pool",
       "category": "IPs",
@@ -1118,9 +1118,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/delete",
       "text": "Delete ip address",
       "category": "IPs",
@@ -1152,9 +1152,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/list-pools___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/list-pools ",
       "text": "List ip pools",
       "category": "IPs",
@@ -1186,9 +1186,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/pool-info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/pool-info",
       "text": "Get ip pool info",
       "category": "IPs",
@@ -1220,9 +1220,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/create-pool___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/create-pool",
       "text": "Add ip pool",
       "category": "IPs",
@@ -1254,9 +1254,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/delete-pool___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/delete-pool",
       "text": "Delete ip pool",
       "category": "IPs",
@@ -1288,9 +1288,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/check-custom-dns___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/check-custom-dns",
       "text": "Test custom dns",
       "category": "IPs",
@@ -1327,9 +1327,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/ips/set-custom-dns___POST": {
+    {
       "provider_alias_intent": "/api/1.0/ips/set-custom-dns",
       "text": "Set custom dns",
       "category": "IPs",
@@ -1366,9 +1366,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/domains___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/domains",
       "text": "List inbound domains",
       "category": "Inbound",
@@ -1400,9 +1400,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/add-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/add-domain",
       "text": "Add inbound domain",
       "category": "Inbound",
@@ -1434,9 +1434,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/check-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/check-domain ",
       "text": "Check domain settings",
       "category": "Inbound",
@@ -1468,9 +1468,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/delete-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/delete-domain",
       "text": "Delete inbound domain",
       "category": "Inbound",
@@ -1502,9 +1502,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/routes___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/routes",
       "text": "List mailbox routes",
       "category": "Inbound",
@@ -1536,9 +1536,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/add-route___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/add-route",
       "text": "Add mailbox route",
       "category": "Inbound",
@@ -1580,9 +1580,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/update-route___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/update-route",
       "text": "Update mailbox route",
       "category": "Inbound",
@@ -1622,9 +1622,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/delete-route___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/delete-route",
       "text": "Delete mailbox route",
       "category": "Inbound",
@@ -1656,9 +1656,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/inbound/send-raw___POST": {
+    {
       "provider_alias_intent": "/api/1.0/inbound/send-raw",
       "text": "Send mime document",
       "category": "Inbound",
@@ -1706,9 +1706,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/metadata/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/metadata/list",
       "text": "List metadata fields",
       "category": "Metadata",
@@ -1740,9 +1740,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/metadata/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/metadata/add",
       "text": "Add metadata field",
       "category": "Metadata",
@@ -1778,9 +1778,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/metadata/update___POST": {
+    {
       "provider_alias_intent": "/api/1.0/metadata/update",
       "text": "Update metadata field",
       "category": "Metadata",
@@ -1817,9 +1817,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/metadata/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/metadata/delete",
       "text": "Delete metadata field",
       "category": "Metadata",
@@ -1851,9 +1851,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/rejects/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/rejects/add",
       "text": "Add email to denylist",
       "category": "Rejects",
@@ -1893,9 +1893,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/rejects/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/rejects/list",
       "text": "List denylisted emails",
       "category": "Rejects",
@@ -1938,9 +1938,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/rejects/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/rejects/delete",
       "text": "Delete email from denylist",
       "category": "Rejects",
@@ -1976,9 +1976,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/list",
       "text": "List account senders",
       "category": "Senders",
@@ -2010,9 +2010,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/domains___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/domains",
       "text": "List sender domains",
       "category": "Senders",
@@ -2044,9 +2044,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/add-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/add-domain",
       "text": "Add sender domain",
       "category": "Senders",
@@ -2078,9 +2078,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/check-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/check-domain",
       "text": "Check domain settings sender",
       "category": "Senders",
@@ -2112,9 +2112,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/verify-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/verify-domain",
       "text": "Verify domain",
       "category": "Senders",
@@ -2151,9 +2151,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/info",
       "text": "Get sender info",
       "category": "Senders",
@@ -2185,9 +2185,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/senders/time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/senders/time-series",
       "text": "View sender history",
       "category": "Senders",
@@ -2219,9 +2219,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/list",
       "text": "List subaccounts",
       "category": "Subaccounts",
@@ -2252,9 +2252,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/add",
       "text": "Add subaccount",
       "category": "Subaccounts",
@@ -2298,9 +2298,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/info",
       "text": "Get subaccount info",
       "category": "Subaccounts",
@@ -2332,9 +2332,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/update___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/update",
       "text": "Update subaccount",
       "category": "Subaccounts",
@@ -2383,9 +2383,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/delete",
       "text": "Delete subaccount",
       "category": "Subaccounts",
@@ -2417,9 +2417,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/pause___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/pause",
       "text": "Pause subaccount",
       "category": "Subaccounts",
@@ -2451,9 +2451,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/subaccounts/resume___POST": {
+    {
       "provider_alias_intent": "/api/1.0/subaccounts/resume",
       "text": "Resume subaccount",
       "category": "Subaccounts",
@@ -2485,9 +2485,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/tags/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/tags/list",
       "text": "List tags",
       "category": "Tags",
@@ -2519,9 +2519,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/tags/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/tags/delete",
       "text": "Delete tag",
       "category": "Tags",
@@ -2553,9 +2553,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/tags/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/tags/info",
       "text": "Get tag info",
       "category": "Tags",
@@ -2587,9 +2587,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/tags/time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/tags/time-series",
       "text": "View tag history",
       "category": "Tags",
@@ -2621,9 +2621,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/tags/all-time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/tags/all-time-series ",
       "text": "View all tags history",
       "category": "Tags",
@@ -2655,9 +2655,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/add",
       "text": "Add template",
       "category": "Templates",
@@ -2724,9 +2724,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/info",
       "text": "Get template info",
       "category": "Templates",
@@ -2758,9 +2758,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/update___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/update",
       "text": "Update template",
       "category": "Templates",
@@ -2824,9 +2824,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/publish___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/publish",
       "text": "Publish template content",
       "category": "Templates",
@@ -2858,9 +2858,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/delete",
       "text": "Delete template",
       "category": "Templates",
@@ -2892,9 +2892,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/list",
       "text": "List templates",
       "category": "Templates",
@@ -2926,9 +2926,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/time-series",
       "text": "Get template history",
       "category": "Templates",
@@ -2960,9 +2960,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/templates/render___POST": {
+    {
       "provider_alias_intent": "/api/1.0/templates/render",
       "text": "Render html template",
       "category": "Templates",
@@ -2999,9 +2999,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/list",
       "text": "List most clicked urls",
       "category": "URLs",
@@ -3033,9 +3033,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/search___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/search",
       "text": "Search most clicked urls",
       "category": "URLs",
@@ -3067,9 +3067,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/time-series___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/time-series",
       "text": "Get url history",
       "category": "URLs",
@@ -3101,9 +3101,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/tracking-domains___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/tracking-domains",
       "text": "List tracking domains",
       "category": "URLs",
@@ -3135,9 +3135,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/add-tracking-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/add-tracking-domain",
       "text": "Add tracking domains",
       "category": "URLs",
@@ -3169,9 +3169,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/urls/check-tracking-domain___POST": {
+    {
       "provider_alias_intent": "/api/1.0/urls/check-tracking-domain",
       "text": "Check cname settings",
       "category": "URLs",
@@ -3203,9 +3203,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/users/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/users/info",
       "text": "Get user info",
       "category": "Users",
@@ -3237,9 +3237,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/users/ping___POST": {
+    {
       "provider_alias_intent": "/api/1.0/users/ping",
       "text": "Ping",
       "category": "Users",
@@ -3271,9 +3271,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/users/ping2___POST": {
+    {
       "provider_alias_intent": "/api/1.0/users/ping2 ",
       "text": "Ping 2",
       "category": "Users",
@@ -3305,9 +3305,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/users/senders___POST": {
+    {
       "provider_alias_intent": "/api/1.0/users/senders",
       "text": "List account senders user",
       "category": "Users",
@@ -3339,9 +3339,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/webhooks/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/webhooks/list",
       "text": "List webhooks",
       "category": "Webhooks",
@@ -3373,9 +3373,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/webhooks/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/webhooks/add",
       "text": "Add webhook",
       "category": "Webhooks",
@@ -3415,9 +3415,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/webhooks/info___POST": {
+    {
       "provider_alias_intent": "/api/1.0/webhooks/info",
       "text": "Get webhook info",
       "category": "Webhooks",
@@ -3449,9 +3449,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/webhooks/update___POST": {
+    {
       "provider_alias_intent": "/api/1.0/webhooks/update",
       "text": "Update webhook",
       "category": "Webhooks",
@@ -3496,9 +3496,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/webhooks/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/webhooks/delete",
       "text": "Delete webhook",
       "category": "Webhooks",
@@ -3530,9 +3530,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/whitelists/add___POST": {
+    {
       "provider_alias_intent": "/api/1.0/whitelists/add",
       "text": "Add email to allowlist Whitelists",
       "category": "Whitelists",
@@ -3568,9 +3568,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/whitelists/list___POST": {
+    {
       "provider_alias_intent": "/api/1.0/whitelists/list",
       "text": "List allowlisted emails Whitelists",
       "category": "Whitelists",
@@ -3602,9 +3602,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     },
-    "mailchimp__/api/1.0/whitelists/delete___POST": {
+    {
       "provider_alias_intent": "/api/1.0/whitelists/delete",
       "text": "Remove email from allowlist Whitelists",
       "category": "Whitelists",
@@ -3636,7 +3636,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.654Z"
+      "updated_at": "2025-11-11T15:37:35.205Z"
     }
-  }
+  ]
 }

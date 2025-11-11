@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "zohorecruit__recruit/v2/settings/modules___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "recruit/v2/settings/modules",
       "text": "Get list of modules",
       "category": "Modules",
@@ -37,9 +37,9 @@
       "scope": "ZohoRecruit.setup.operation.all",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.029Z"
     },
-    "zohorecruit__/recruit/v2/settings/roles___GET": {
+    {
       "provider_alias_intent": "/recruit/v2/settings/roles",
       "text": "Get roles",
       "category": "Roles",
@@ -75,7 +75,7 @@
       "scope": "ZohoRECRUIT.settings.roles.ALL,\nZohoRECRUIT.settings.roles.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.029Z"
     }
-  }
+  ]
 }

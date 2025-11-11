@@ -33,8 +33,8 @@
     "total_api": 2,
     "credential_link": "https://smallest.ai/acount"
   },
-  "routes": {
-    "smallestai__/awaaz/get_server_state___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/awaaz/get_server_state",
       "text": "Get the state of the server/start the server",
       "category": "Get Server State",
@@ -71,9 +71,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.851Z"
+      "updated_at": "2025-11-11T15:37:35.494Z"
     },
-    "smallestai__/awaaz/get_speech___POST": {
+    {
       "provider_alias_intent": "/awaaz/get_speech",
       "text": "Get speech from given text",
       "category": "Get Speech",
@@ -126,7 +126,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.851Z"
+      "updated_at": "2025-11-11T15:37:35.494Z"
     }
-  }
+  ]
 }

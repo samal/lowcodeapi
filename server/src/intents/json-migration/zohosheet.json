@@ -76,8 +76,8 @@
     "total_api": 11,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohosheet__/api/v2/resource_id___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v2/resource_id",
       "": "",
       "text": "Delete worksheet",
@@ -136,9 +136,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/utils___POST": {
+    {
       "provider_alias_intent": "/api/v2/utils",
       "": "",
       "text": "Convert Index to Range",
@@ -195,9 +195,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/workbooks___POST": {
+    {
       "provider_alias_intent": "/api/v2/workbooks",
       "": "",
       "text": "List all workbooks",
@@ -250,9 +250,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/templates___POST": {
+    {
       "provider_alias_intent": "/api/v2/templates",
       "": "",
       "text": "List all templates",
@@ -293,9 +293,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/create___POST": {
+    {
       "provider_alias_intent": "/api/v2/create",
       "": "",
       "text": "Create workbook",
@@ -340,9 +340,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/createfromtemplate___POST": {
+    {
       "provider_alias_intent": "/api/v2/createfromtemplate",
       "": "",
       "text": "Create workbook from template",
@@ -391,9 +391,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/upload___POST": {
+    {
       "provider_alias_intent": "/api/v2/upload",
       "": "",
       "text": "Upload workbook",
@@ -454,9 +454,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/download/resource_id___POST": {
+    {
       "provider_alias_intent": "/api/v2/download/resource_id",
       "": "",
       "text": "Download workbook",
@@ -546,9 +546,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/insertimages___POST": {
+    {
       "provider_alias_intent": "/api/v2/insertimages",
       "": "",
       "text": "Insert images",
@@ -601,9 +601,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/copy___POST": {
+    {
       "provider_alias_intent": "/api/v2/copy",
       "": "",
       "text": "Copy workbook",
@@ -652,9 +652,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/share___POST": {
+    {
       "provider_alias_intent": "/api/v2/share",
       "": "",
       "text": "Share workbook",
@@ -703,9 +703,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/trash___POST": {
+    {
       "provider_alias_intent": "/api/v2/trash",
       "": "",
       "text": "Trash workbook",
@@ -760,9 +760,9 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     },
-    "zohosheet__/api/v2/restore___POST": {
+    {
       "provider_alias_intent": "/api/v2/restore",
       "": "",
       "text": "Restore workbook",
@@ -817,7 +817,7 @@
       "response_type": "",
       "scope": "ZohoSheet.dataAPI.UPDATE\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.031Z"
     }
-  }
+  ]
 }

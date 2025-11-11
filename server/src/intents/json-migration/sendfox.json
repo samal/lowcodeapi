@@ -33,8 +33,8 @@
     "total_api": 2,
     "credential_link": ""
   },
-  "routes": {
-    "sendfox__/me___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/me",
       "text": "Gets information for authenticated user.",
       "category": "authenticated user",
@@ -56,9 +56,9 @@
       },
       "auth": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.815Z"
+      "updated_at": "2025-11-11T15:37:35.440Z"
     },
-    "sendfox__/lists___GET": {
+    {
       "provider_alias_intent": "/lists",
       "text": "Gets paginated contact lists.",
       "category": "contact",
@@ -80,7 +80,7 @@
       },
       "auth": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.815Z"
+      "updated_at": "2025-11-11T15:37:35.440Z"
     }
-  }
+  ]
 }

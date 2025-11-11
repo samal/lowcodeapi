@@ -76,8 +76,8 @@
     "total_api": 189,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohopeople__/api/files/editfile___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/files/editfile",
       "text": "Edit File API",
       "category": " Files",
@@ -174,9 +174,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/editFile",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/getallfiles___GET": {
+    {
       "provider_alias_intent": "/api/files/getallfiles",
       "text": "Get Files API",
       "category": " Files",
@@ -245,9 +245,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/getAllFiles",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/viewfile___POST": {
+    {
       "provider_alias_intent": "/api/files/viewfile",
       "text": "View Files API",
       "category": " Files",
@@ -288,9 +288,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/viewFile",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/deletefiles___POST": {
+    {
       "provider_alias_intent": "/api/files/deletefiles",
       "text": "Delete Files API",
       "category": " Files",
@@ -331,9 +331,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/deleteFiles",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/uploadfilemultipart___POST": {
+    {
       "provider_alias_intent": "/api/files/uploadfilemultipart",
       "text": "Add and Upload File",
       "category": " Files",
@@ -430,9 +430,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/uploadFileMultipart",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/downloadfile___POST": {
+    {
       "provider_alias_intent": "/api/files/downloadfile",
       "text": "Download Files API",
       "category": " Files",
@@ -473,9 +473,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/downloadFile",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/addfolder___GET": {
+    {
       "provider_alias_intent": "/api/files/addfolder",
       "text": "Add and Edit Folder API",
       "category": " Files",
@@ -524,9 +524,9 @@
       "scope": "ZOHOPEOPLE.files.ALL",
       "api_endpoint_src": "{endpoint}/api/files/addFolder",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/files/getcategories___GET": {
+    {
       "provider_alias_intent": "/api/files/getcategories",
       "text": "Get Files Categories API",
       "category": " Files",
@@ -562,9 +562,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/files/getCategories",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/addannouncement___POST": {
+    {
       "provider_alias_intent": "/api/announcement/addannouncement",
       "text": "Add Announcements API",
       "category": "Announcements",
@@ -647,9 +647,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/addAnnouncement",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.122Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/updateannouncement___POST": {
+    {
       "provider_alias_intent": "/api/announcement/updateannouncement",
       "text": "Update Announcements API",
       "category": "Announcements",
@@ -737,9 +737,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/updateAnnouncement",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/getallannouncement___GET": {
+    {
       "provider_alias_intent": "/api/announcement/getallannouncement",
       "text": "Get All Announcements API",
       "category": "Announcements",
@@ -788,9 +788,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/getAllAnnouncement",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/getannouncementbyid___GET": {
+    {
       "provider_alias_intent": "/api/announcement/getannouncementbyid",
       "text": "Get Single Announcements by ID API",
       "category": "Announcements",
@@ -832,9 +832,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/getAnnouncementByID",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/getannouncementbyid___POST": {
+    {
       "provider_alias_intent": "/api/announcement/getannouncementbyid",
       "text": "Filter Announcements API",
       "category": "Announcements",
@@ -892,9 +892,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/getAnnouncementByID",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/deleteannoucement___POST": {
+    {
       "provider_alias_intent": "/api/announcement/deleteannoucement",
       "text": "Delete Announcements API",
       "category": "Announcements",
@@ -936,9 +936,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/deleteAnnoucement",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/enabledisableannouncement___POST": {
+    {
       "provider_alias_intent": "/api/announcement/enabledisableannouncement",
       "text": "Enable or Disable Announcements API",
       "category": "Announcements",
@@ -980,9 +980,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/enableDisableAnnouncement",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/addannouncementcomment___POST": {
+    {
       "provider_alias_intent": "/api/announcement/addannouncementcomment",
       "text": "Add Announcement Comment API",
       "category": "Announcements",
@@ -1029,9 +1029,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/addAnnouncementComment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/announcement/deleteannouncementcomment___POST": {
+    {
       "provider_alias_intent": "/api/announcement/deleteannouncementcomment",
       "text": "Delete Announcement Comment API",
       "category": "Announcements",
@@ -1073,9 +1073,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/announcement/deleteAnnouncementComment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/bulkimport___POST": {
+    {
       "provider_alias_intent": "/api/attendance/bulkimport",
       "text": "Attendance Bulk Import API",
       "category": "Attendance ",
@@ -1120,9 +1120,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/bulkImport",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/fetchlatestattentries___GET": {
+    {
       "provider_alias_intent": "/api/attendance/fetchlatestattentries",
       "text": "Fetch Last Attendance Entries API",
       "category": "Attendance ",
@@ -1167,9 +1167,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/fetchLatestAttEntries",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance___POST": {
+    {
       "provider_alias_intent": "/api/attendance",
       "text": "Attendance check-in and check-out API",
       "category": "Attendance ",
@@ -1230,9 +1230,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/getattendanceentries___POST": {
+    {
       "provider_alias_intent": "/api/attendance/getattendanceentries",
       "text": "Attendance Entries API",
       "category": "Attendance ",
@@ -1293,9 +1293,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/getAttendanceEntries",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/getuserreport___POST": {
+    {
       "provider_alias_intent": "/api/attendance/getuserreport",
       "text": "Single Attendance Record - User Report API",
       "category": "Attendance ",
@@ -1356,9 +1356,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/getUserReport",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/updateusershift___POST": {
+    {
       "provider_alias_intent": "/api/attendance/updateusershift",
       "text": "Employee Shift Mapping API",
       "category": "Attendance ",
@@ -1415,9 +1415,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/updateUserShift",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/getshiftconfiguration___GET": {
+    {
       "provider_alias_intent": "/api/attendance/getshiftconfiguration",
       "text": "Getting Shift Details Of Employee API",
       "category": "Attendance ",
@@ -1474,9 +1474,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/getShiftConfiguration",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/attendance/getregularizationrecords___GET": {
+    {
       "provider_alias_intent": "/api/attendance/getregularizationrecords",
       "text": "Get Regularization Records API",
       "category": "Attendance ",
@@ -1537,9 +1537,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/attendance/getRegularizationRecords",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/hrcases/viewcase___GET": {
+    {
       "provider_alias_intent": "/api/hrcases/viewcase",
       "text": "View Case Details API",
       "category": "Cases",
@@ -1581,9 +1581,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/hrcases/viewcase",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/hrcases/getrequestedcases___GET": {
+    {
       "provider_alias_intent": "/api/hrcases/getrequestedcases",
       "text": "View Case Listing API",
       "category": "Cases",
@@ -1645,9 +1645,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/hrcases/getRequestedCases",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/hrcases/listcategory___GET": {
+    {
       "provider_alias_intent": "/api/forms/hrcases/listcategory",
       "text": "View List of categories API",
       "category": "Cases",
@@ -1683,9 +1683,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/hrcases/listCategory",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/hrcases/addcase___POST": {
+    {
       "provider_alias_intent": "/api/forms/hrcases/addcase",
       "text": "Add Case API",
       "category": "Cases",
@@ -1741,9 +1741,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/hrcases/addcase",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/employee/getrecords___GET": {
+    {
       "provider_alias_intent": "/api/forms/employee/getrecords",
       "text": "Get Bulk Records API",
       "category": "Forms",
@@ -1805,9 +1805,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/employee/getRecords",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/input_type/form_link_name/insertrecord___POST": {
+    {
       "provider_alias_intent": "/api/forms/input_type/form_link_name/insertrecord",
       "text": "Adding Projects API",
       "category": "Timesheet / Projects",
@@ -1881,9 +1881,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,  ZOHOPEOPLE.forms.CREATE",
       "api_endpoint_src": "{endpoint}/api/forms/<inputType>/<formLinkName>/insertRecord",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/json/employee/insertrecord___POST": {
+    {
       "provider_alias_intent": "/api/forms/json/employee/insertrecord",
       "text": "Insert Record API for Adding Employees",
       "category": "Forms",
@@ -1946,9 +1946,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.CREATE",
       "api_endpoint_src": "{endpoint}/api/forms/json/employee/insertRecord",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/input_type/form_link_name/updaterecord___POST": {
+    {
       "provider_alias_intent": "/api/forms/input_type/form_link_name/updaterecord",
       "text": "Modify Project API",
       "category": "Timesheet / Projects",
@@ -2027,9 +2027,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,  ZOHOPEOPLE.forms.UPDATE",
       "api_endpoint_src": "{endpoint}/api/forms/<inputType>/<formLinkName>/updateRecord",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/department/records___POST": {
+    {
       "provider_alias_intent": "/api/department/records",
       "text": "Add Department API",
       "category": "Forms",
@@ -2070,9 +2070,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.CREATE ",
       "api_endpoint_src": "{endpoint}/api/department/records",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms___GET": {
+    {
       "provider_alias_intent": "/api/forms",
       "text": "Fetch Forms API",
       "category": "Forms",
@@ -2108,9 +2108,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.form.READ ",
       "api_endpoint_src": "{endpoint}/api/forms",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/form_link_name/getdatabyid___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/getdatabyid",
       "text": "Fetch Single Record API",
       "category": "Forms",
@@ -2166,9 +2166,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/getDataByID",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/form_link_name/getrecordbyid___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/getrecordbyid",
       "text": "Fetch Single Record API (Section Wise)",
       "category": "Forms",
@@ -2224,9 +2224,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/getRecordByID",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/form_link_name/getrelatedrecords___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/getrelatedrecords",
       "text": "Get Related Records API",
       "category": "Forms",
@@ -2298,9 +2298,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/getRelatedRecords",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/form_link_name/getrecords___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/getrecords",
       "text": "Search Records Based on Record Values",
       "category": "Forms",
@@ -2372,9 +2372,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/getRecords",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/forms/form_link_name/components___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/components",
       "text": "Get Fields of Form API",
       "category": "Forms / Appendix",
@@ -2426,9 +2426,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,ZOHOPEOPLE.form.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/components",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments",
       "text": "Create Assignment API",
       "category": "LMS / Assignment",
@@ -2545,9 +2545,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments",
       "text": "Update Assignment API",
       "category": "LMS / Assignment",
@@ -2664,9 +2664,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments/assignment_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments/assignment_id",
       "text": "Delete Assignment API",
       "category": "LMS / Assignment",
@@ -2734,9 +2734,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments/<assignmentId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments/assignment_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments/assignment_id",
       "text": "Fetch Single Assignment API",
       "category": "LMS / Assignment",
@@ -2804,9 +2804,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments/<assignmentId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments",
       "text": "Fetch Module Assignments API",
       "category": "LMS / Assignment",
@@ -2869,9 +2869,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/assignments/assignment_id/updatemarks___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/assignments/assignment_id/updatemarks",
       "text": "Update Assignment Marks API",
       "category": "LMS / Assignment",
@@ -2949,9 +2949,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/assignments/<assignmentId>/updateMarks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id",
       "text": "Create Batch API",
       "category": "LMS / Batch  ",
@@ -3066,9 +3066,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id",
       "text": "Update Batch API",
       "category": "LMS / Batch  ",
@@ -3180,9 +3180,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.018Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id",
       "text": "Delete Batch API",
       "category": "LMS / Batch  ",
@@ -3240,9 +3240,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id",
       "text": "Fetch Single Batch API",
       "category": "LMS / Batch  ",
@@ -3300,9 +3300,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches",
       "text": "Fetch Course Batch List API",
       "category": "LMS / Batch  ",
@@ -3355,9 +3355,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/publish___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/publish",
       "text": "Publish Batch API",
       "category": "LMS / Batch Action",
@@ -3424,9 +3424,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/publish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/unpublish___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/unpublish",
       "text": "Unpublish Batch API",
       "category": "LMS / Batch Action",
@@ -3484,9 +3484,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/unpublish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/markascomplete___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/markascomplete",
       "text": "Mark Batch As Complete API",
       "category": "LMS / Batch Action",
@@ -3544,9 +3544,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/markAsComplete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/markasincomplete___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/markasincomplete",
       "text": "Mark Batch As Incomplete API",
       "category": "LMS / Batch Action",
@@ -3604,9 +3604,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/markAsIncomplete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/schedulers___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/schedulers",
       "text": "Create Batch Scheduler API",
       "category": "LMS / Batch Scheduler ",
@@ -3785,9 +3785,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/schedulers",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id",
       "text": "Update Batch Scheduler API",
       "category": "LMS / Batch Scheduler ",
@@ -3971,9 +3971,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/schedulers/<batchSchedulerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id",
       "text": "Delete Batch Scheduler API",
       "category": "LMS / Batch Scheduler ",
@@ -4031,9 +4031,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/schedulers/<batchSchedulerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/schedulers/batch_scheduler_id",
       "text": "Fetch Batch Scheduler API",
       "category": "LMS / Batch Scheduler ",
@@ -4091,9 +4091,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/schedulers/<batchSchedulerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/schedulers___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/schedulers",
       "text": "Fetch Batch Scheduler List API",
       "category": "LMS / Batch Scheduler ",
@@ -4145,9 +4145,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/schedulers",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/categories___GET": {
+    {
       "provider_alias_intent": "/api/v1/categories",
       "text": "Fetch Categories API",
       "category": "LMS / Categories",
@@ -4188,9 +4188,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/categories",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/contents/content_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/contents/content_id",
       "text": "Fetch Single Content API",
       "category": "LMS / Content ",
@@ -4258,9 +4258,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/contents/<contentId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/contents___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/contents",
       "text": "Fetch Module Content API",
       "category": "LMS / Content ",
@@ -4322,9 +4322,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/contents",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/contents___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/contents",
       "text": "Fetch Course or Batch Contents API",
       "category": "LMS / Content ",
@@ -4376,9 +4376,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/contents",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/publish___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/publish",
       "text": "Publish Course API",
       "category": "LMS / Course Action",
@@ -4435,9 +4435,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/publish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/unpublish___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/unpublish",
       "text": "Unpublish Course API",
       "category": "LMS / Course Action",
@@ -4485,9 +4485,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/unpublish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/enable___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/enable",
       "text": "Enable Course API",
       "category": "LMS / Course Action",
@@ -4540,9 +4540,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/enable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/disable___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/disable",
       "text": "Disable Course API",
       "category": "LMS / Course Action",
@@ -4595,9 +4595,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/disable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/favorite___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/favorite",
       "text": "Favourite Course API",
       "category": "LMS / Course Action",
@@ -4645,9 +4645,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/favorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/unfavorite___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/unfavorite",
       "text": "Unfavourite Course API",
       "category": "LMS / Course Action",
@@ -4695,9 +4695,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/unfavorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/share___PUT": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/share",
       "text": "Share Course API",
       "category": "LMS / Course Action",
@@ -4751,9 +4751,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/share___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/share",
       "text": "Remove Shared Course API",
       "category": "LMS / Course Action",
@@ -4805,9 +4805,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/share___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/share",
       "text": "Get Shared Users List API",
       "category": "LMS / Course Action",
@@ -4859,9 +4859,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/suggest___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/suggest",
       "text": "Suggest Course API",
       "category": "LMS / Course Action",
@@ -4914,9 +4914,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/suggest",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/stats/courses/counts/suggestedtome___GET": {
+    {
       "provider_alias_intent": "/api/v1/stats/courses/counts/suggestedtome",
       "text": "Get Suggested Courses Count API",
       "category": "LMS / Course Action",
@@ -4952,9 +4952,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/stats/courses/counts/suggestedToMe",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/enroll___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/enroll",
       "text": "Enroll Learner To Course API",
       "category": "LMS / Course Learner ",
@@ -5008,9 +5008,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/enroll",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/enroll___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/enroll",
       "text": "Enroll Learner To Batch API",
       "category": "LMS / Course Learner ",
@@ -5074,9 +5074,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/enroll",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/unenroll___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/unenroll",
       "text": "Unenroll Learner From Course API",
       "category": "LMS / Course Learner ",
@@ -5130,9 +5130,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/unenroll",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/unenroll___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/unenroll",
       "text": "Unenroll Learner From Batch API",
       "category": "LMS / Course Learner ",
@@ -5196,9 +5196,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/unenroll",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/learners/learner_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/learners/learner_id",
       "text": "Remove Learner From Course API",
       "category": "LMS / Course Learner ",
@@ -5256,9 +5256,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/learners/<LearnerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/learners/learner_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/learners/learner_id",
       "text": "Remove Learner From Batch API",
       "category": "LMS / Course Learner ",
@@ -5326,9 +5326,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/learners/<LearnerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses",
       "text": "Create Course API",
       "category": "LMS / Courses ",
@@ -5412,9 +5412,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses",
       "text": "Update Course API",
       "category": "LMS / Courses ",
@@ -5498,9 +5498,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id",
       "text": "Delete Course API",
       "category": "LMS / Courses ",
@@ -5548,9 +5548,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id",
       "text": "Fetch Single Course API",
       "category": "LMS / Courses ",
@@ -5602,9 +5602,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses",
       "text": "Fetch All Course API",
       "category": "LMS / Courses ",
@@ -5693,9 +5693,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/mycourses___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/mycourses",
       "text": "Fetch My Courses API",
       "category": "LMS / Courses ",
@@ -5784,9 +5784,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/mycourses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/learners/learner_id/lockedentities/locked_entity_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/learners/learner_id/lockedentities/locked_entity_id",
       "text": "List Requisite Course Entities API",
       "category": "LMS / Courses ",
@@ -5864,9 +5864,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/{course_id}/batches/{batch _id}/learners/{learner_id}/lockedEntities/{locked_entity_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/files___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/files",
       "text": "Create Files API",
       "category": "LMS / File",
@@ -5979,9 +5979,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/files",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modulesmodule_id/files/file_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modulesmodule_id/files/file_id",
       "text": "Update Files API",
       "category": "LMS / File",
@@ -6113,9 +6113,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules<moduleId>/files/<fileId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/files/file_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/files/file_id",
       "text": "Delete Files API",
       "category": "LMS / File",
@@ -6183,9 +6183,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/files/<fileId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/files/file_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/files/file_id",
       "text": "Fetch Single File API",
       "category": "LMS / File",
@@ -6253,9 +6253,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/files/<fileId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/files___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/files",
       "text": "Fetch Module Files API",
       "category": "LMS / File",
@@ -6317,9 +6317,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/files",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/files___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/files",
       "text": "Fetch Course or Batch Files API",
       "category": "LMS / File",
@@ -6371,9 +6371,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/files",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/links___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/links",
       "text": "Create Link API",
       "category": "LMS / Link",
@@ -6467,9 +6467,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/links",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modulesmodule_id/links/link_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modulesmodule_id/links/link_id",
       "text": "Update Link API",
       "category": "LMS / Link",
@@ -6572,9 +6572,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules<moduleId>/links/<linkId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/links/link_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/links/link_id",
       "text": "Delete Link API",
       "category": "LMS / Link",
@@ -6642,9 +6642,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/links/<linkId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/links/link_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/links/link_id",
       "text": "Fetch Single Link API",
       "category": "LMS / Link",
@@ -6712,9 +6712,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/links/<linkId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/links___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/links",
       "text": "Fetch Module Links API",
       "category": "LMS / Link",
@@ -6777,9 +6777,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/links",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/links___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/links",
       "text": "Fetch Course or Batch Links API",
       "category": "LMS / Link",
@@ -6832,9 +6832,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/links",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules",
       "text": "Create Modules API",
       "category": "LMS / Module",
@@ -6909,9 +6909,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modulesmodule_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modulesmodule_id",
       "text": "Update Modules API",
       "category": "LMS / Module",
@@ -7005,9 +7005,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules<moduleId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id",
       "text": "Delete Modules API",
       "category": "LMS / Module",
@@ -7075,9 +7075,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id",
       "text": "Fetch Single Module API",
       "category": "LMS / Module",
@@ -7135,9 +7135,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules",
       "text": "Fetch Course Modules API",
       "category": "LMS / Module",
@@ -7189,9 +7189,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/offlinetests___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/offlinetests",
       "text": "Create Offline Test API",
       "category": "LMS / Offline Test",
@@ -7290,9 +7290,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/offlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modulesmodule_id/offlinetests/offline_test_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modulesmodule_id/offlinetests/offline_test_id",
       "text": "Update Offline Test API",
       "category": "LMS / Offline Test",
@@ -7397,9 +7397,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules<moduleId>/offlineTests/<offlineTestId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id",
       "text": "Delete Offline Test API",
       "category": "LMS / Offline Test",
@@ -7467,9 +7467,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/offlineTests/<offlineTestId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id",
       "text": "Fetch Single Offline Test API",
       "category": "LMS / Offline Test",
@@ -7537,9 +7537,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/offlineTests/<offlineTestId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/offlinetests___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/offlinetests",
       "text": "Fetch Module Offline Tests API",
       "category": "LMS / Offline Test",
@@ -7602,9 +7602,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/offlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/offlinetests___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/offlinetests",
       "text": "Fetch Course or Batch Offline Tests API",
       "category": "LMS / Offline Test",
@@ -7657,9 +7657,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/offlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id/updatemarks___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/offlinetests/offline_test_id/updatemarks",
       "text": "Update Offline Test Marks API",
       "category": "LMS / Offline Test",
@@ -7738,9 +7738,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/offlineTests/<offlineTestId>/updateMarks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/onlinetests___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/onlinetests",
       "text": "Create Online Test API",
       "category": "LMS / Online Test ",
@@ -7873,9 +7873,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/onlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/onlinetests___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/onlinetests",
       "text": "Update Online Test API",
       "category": "LMS / Online Test ",
@@ -8004,9 +8004,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/onlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/onlinetests/online_test_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/onlinetests/online_test_id",
       "text": "Delete Online Test API",
       "category": "LMS / Online Test ",
@@ -8074,9 +8074,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/onlineTests/<onlineTestId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/onlinetests/online_test_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/onlinetests/online_test_id",
       "text": "Fetch Single Online Test API",
       "category": "LMS / Online Test ",
@@ -8144,9 +8144,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/onlineTests/<onlineTestId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/modules/module_id/onlinetests___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/modules/module_id/onlinetests",
       "text": "Fetch Module Online Tests API",
       "category": "LMS / Online Test ",
@@ -8209,9 +8209,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/modules/<moduleId>/onlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/postcourseactivities/onlinetests___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/postcourseactivities/onlinetests",
       "text": "Add Post Learning Activity - Online Test",
       "category": "LMS / Post Learning Activities",
@@ -8334,9 +8334,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/postcourseactivities/onlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/postcourseactivities/onlinetests/test_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/postcourseactivities/onlinetests/test_id",
       "text": "Edit Post Learning Activity - Online Test",
       "category": "LMS / Post Learning Activities",
@@ -8464,9 +8464,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/postcourseactivities/onlineTests/<testId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/postcourseactivities/onlinetests/test_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/postcourseactivities/onlinetests/test_id",
       "text": "Delete Post Learning Activity - Online Test",
       "category": "LMS / Post Learning Activities",
@@ -8524,9 +8524,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/postcourseactivities/onlineTests/<testId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/precourseactivities/onlinetests___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/precourseactivities/onlinetests",
       "text": "Add Pre Learning Activity - Online Test",
       "category": "LMS / Pre Learning Activities ",
@@ -8649,9 +8649,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/precourseactivities/onlineTests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/precourseactivities/onlinetests/test_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/precourseactivities/onlinetests/test_id",
       "text": "Edit Pre Learning Activity - Online Test",
       "category": "LMS / Pre Learning Activities ",
@@ -8784,9 +8784,9 @@
       "scope": "ZOHOPEOPLE.training.ALL, ZOHOPEOPLE.training.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/precourseactivities/onlineTests/<testId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings/precourseactivities/onlinetests/test_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings/precourseactivities/onlinetests/test_id",
       "text": "Delete Pre Learning Activity - Online Test",
       "category": "LMS / Pre Learning Activities ",
@@ -8844,9 +8844,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings/precourseactivities/onlineTests/<testId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/rooms/room_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/rooms/room_id",
       "text": "Fetch Single Room API",
       "category": "LMS / Rooms ",
@@ -8898,9 +8898,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/rooms/<roomId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/rooms___GET": {
+    {
       "provider_alias_intent": "/api/v1/rooms",
       "text": "Fetch Rooms",
       "category": "LMS / Rooms ",
@@ -8941,9 +8941,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/rooms",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions",
       "text": "Create Session API",
       "category": "LMS / Session ",
@@ -9063,9 +9063,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>/sessions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id",
       "text": "Delete Session API",
       "category": "LMS / Session ",
@@ -9143,9 +9143,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>/sessions/<sessionId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id",
       "text": "Fetch Single Session API",
       "category": "LMS / Session ",
@@ -9223,9 +9223,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>/sessions/<sessionId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions",
       "text": "Fetch Module Sessions API",
       "category": "LMS / Session ",
@@ -9298,9 +9298,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>/sessions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/sessions___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/sessions",
       "text": "Fetch Course Batch Sessions API",
       "category": "LMS / Session ",
@@ -9363,9 +9363,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/sessions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id/markattendance___POST": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/batches/batch_id/modules/module_id/sessions/session_id/markattendance",
       "text": "Mark Attendance API",
       "category": "LMS / Session ",
@@ -9454,9 +9454,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/batches/<batchId>/modules/<moduleId>/sessions/<sessionId>/markAttendance",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/lmssettings___GET": {
+    {
       "provider_alias_intent": "/api/v1/lmssettings",
       "text": "Fetch Settings API",
       "category": "LMS / Settings",
@@ -9492,9 +9492,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/lmssettings",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/courses/course_id/settings___GET": {
+    {
       "provider_alias_intent": "/api/v1/courses/course_id/settings",
       "text": "Fetch Course Settings API",
       "category": "LMS / Settings",
@@ -9542,9 +9542,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/courses/<courseId>/settings",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/trainers___POST": {
+    {
       "provider_alias_intent": "/api/v1/trainers",
       "text": "Add Trainer API",
       "category": "LMS / Trainer ",
@@ -9586,9 +9586,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/trainers",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/trainers/trainer_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/trainers/trainer_id",
       "text": "Delete Trainer API",
       "category": "LMS / Trainer ",
@@ -9636,9 +9636,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/trainers/<trainerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/trainers/trainer_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/trainers/trainer_id",
       "text": "Fetch Single Trainer API",
       "category": "LMS / Trainer ",
@@ -9686,9 +9686,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,  ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/trainers/<trainerId>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v1/trainers___GET": {
+    {
       "provider_alias_intent": "/api/v1/trainers",
       "text": "Fetch Trainers List API",
       "category": "LMS / Trainer ",
@@ -9737,9 +9737,9 @@
       "scope": "ZOHOPEOPLE.training.ALL,ZOHOPEOPLE.training.READ",
       "api_endpoint_src": "{endpoint}/api/v1/trainers",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/leave/v2/holidays/get___GET": {
+    {
       "provider_alias_intent": "/api/leave/v2/holidays/get",
       "text": "Get All Holidays API",
       "category": "Leave /  Holidays",
@@ -9808,9 +9808,9 @@
       "scope": "ZOHOPEOPLE.leave.ALL",
       "api_endpoint_src": "{endpoint}/api/leave/v2/holidays/get",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/leave/addbalance___POST": {
+    {
       "provider_alias_intent": "/api/leave/addbalance",
       "text": "Add Leave Balance API",
       "category": "Leave /  Holidays",
@@ -9856,9 +9856,9 @@
       "scope": "ZOHOPEOPLE.leave.ALL",
       "api_endpoint_src": "{endpoint}/api/leave/addBalance",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/leave/getleavetypedetails___GET": {
+    {
       "provider_alias_intent": "/api/leave/getleavetypedetails",
       "text": "Get Leave Types API",
       "category": "Leave /  To Be Deprecated",
@@ -9899,9 +9899,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/leave/getLeaveTypeDetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/leave/getholidays___GET": {
+    {
       "provider_alias_intent": "/api/leave/getholidays",
       "text": "Get Holidays API",
       "category": "Leave /  To Be Deprecated",
@@ -9942,9 +9942,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/leave/getHolidays",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/leave/getdatabyid___POST": {
+    {
       "provider_alias_intent": "/api/forms/leave/getdatabyid",
       "text": "Fetch Single Record API",
       "category": "Leave / Records",
@@ -9990,9 +9990,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/leave/getDataByID",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/leaves/records/cancel/record_id___PATCH": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/leaves/records/cancel/record_id",
       "text": "Cancel Leave API",
       "category": "Leave / Records",
@@ -10045,9 +10045,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/leaves/records/cancel/<record-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/reports/user___GET": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/reports/user",
       "text": "User Report API",
       "category": "Leave / Reports",
@@ -10093,9 +10093,9 @@
       "scope": "ZOHOPEOPLE.leave.READ",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/reports/user",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/reports/bookedandbalance___GET": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/reports/bookedandbalance",
       "text": "Leave Booked and Balance Report API",
       "category": "Leave / Reports",
@@ -10171,9 +10171,9 @@
       "scope": "ZOHOPEOPLE.leave.READ",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/reports/bookedAndBalance ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/reports/bradford___GET": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/reports/bradford",
       "text": "Leave Bradford API",
       "category": "Leave / Reports",
@@ -10218,9 +10218,9 @@
       "scope": "ZOHOPEOPLE.leave.ALL",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/reports/bradford",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/reports/encashment___GET": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/reports/encashment",
       "text": "Encashment Report API",
       "category": "Leave / Reports",
@@ -10288,9 +10288,9 @@
       "scope": "ZOHOPEOPLE.leave.READ",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/reports/encashment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/v2/leavetracker/reports/lop___GET": {
+    {
       "provider_alias_intent": "/api/v2/leavetracker/reports/lop",
       "text": "Loss Of Pay Report API",
       "category": "Leave / Reports",
@@ -10362,9 +10362,9 @@
       "scope": "ZOHOPEOPLE.leave.READ",
       "api_endpoint_src": "{endpoint}/api/v2/leavetracker/reports/lop ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/employee|candidate/triggeronboarding___POST": {
+    {
       "provider_alias_intent": "/api/employee|candidate/triggeronboarding",
       "text": "Trigger Onboarding API",
       "category": "Onboarding",
@@ -10427,9 +10427,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/<Employee|Candidate>/triggerOnboarding",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/json/candidate/insertrecord___POST": {
+    {
       "provider_alias_intent": "/api/forms/json/candidate/insertrecord",
       "text": "Add Candidate API",
       "category": "Onboarding",
@@ -10470,9 +10470,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/json/Candidate/insertRecord",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/input_type/candidate/updaterecord___POST": {
+    {
       "provider_alias_intent": "/api/forms/input_type/candidate/updaterecord",
       "text": "Update Candidate API",
       "category": "Onboarding",
@@ -10529,9 +10529,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/<inputType>/Candidate/updateRecord",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/form_link_name/getrecordcount___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/getrecordcount",
       "text": "Get Record Count API",
       "category": "Record Count",
@@ -10591,9 +10591,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/getRecordCount",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/addclient___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/addclient",
       "text": "Add Client API",
       "category": "Timesheet / Client",
@@ -10700,9 +10700,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/addclient",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/modifyclient___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/modifyclient",
       "text": "Modify Client API",
       "category": "Timesheet / Client",
@@ -10812,9 +10812,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/modifyclient",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getclients___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getclients",
       "text": "Get Clients API",
       "category": "Timesheet / Client",
@@ -10859,9 +10859,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getclients",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getclientdetails___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getclientdetails",
       "text": "Get Client Details API",
       "category": "Timesheet / Client",
@@ -10911,9 +10911,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getclientdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deleteclient___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deleteclient",
       "text": "Delete Clients API",
       "category": "Timesheet / Client",
@@ -10955,9 +10955,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deleteclient",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/addjobschedule___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/addjobschedule",
       "text": "Add Job Schedule API",
       "category": "Timesheet / Job Schedule  ",
@@ -11060,9 +11060,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.CREATE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/addJobSchedule",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/editjobschedule___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/editjobschedule",
       "text": "Edit Job Schedule API",
       "category": "Timesheet / Job Schedule  ",
@@ -11172,9 +11172,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/editJobSchedule",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getjobschedule___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getjobschedule",
       "text": "Get Job Schedule API",
       "category": "Timesheet / Job Schedule  ",
@@ -11233,9 +11233,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getJobSchedule",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/publishjobschedule___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/publishjobschedule",
       "text": "Publish Job Schedule API",
       "category": "Timesheet / Job Schedule  ",
@@ -11286,9 +11286,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE",
       "api_endpoint_src": "{endpoint}/api/timetracker/publishJobSchedule",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deletejobschedule___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deletejobschedule",
       "text": "Delete Job Schedule API",
       "category": "Timesheet / Job Schedule  ",
@@ -11342,9 +11342,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deleteJobSchedule",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getjobs___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getjobs",
       "text": "Get Jobs API",
       "category": "Timesheet / Jobs ",
@@ -11429,9 +11429,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getjobs",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getjobdetails___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getjobdetails",
       "text": "Get Job Details API",
       "category": "Timesheet / Jobs ",
@@ -11485,9 +11485,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getjobdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/modifyjobstatus___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/modifyjobstatus",
       "text": "Change Job Status API",
       "category": "Timesheet / Jobs ",
@@ -11534,9 +11534,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/modifyjobstatus",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deletejob___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deletejob",
       "text": "Delete Jobs API",
       "category": "Timesheet / Jobs ",
@@ -11578,9 +11578,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deletejob",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getprojects___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getprojects",
       "text": "Get Projects API",
       "category": "Timesheet / Projects",
@@ -11665,9 +11665,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getprojects",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getprojectdetails___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getprojectdetails",
       "text": "Get Project Details API",
       "category": "Timesheet / Projects",
@@ -11733,9 +11733,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL, ZOHOPEOPLE.timetracker.READ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getprojectdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/changeprojectstatus___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/changeprojectstatus",
       "text": "Change Project Status API",
       "category": "Timesheet / Projects",
@@ -11782,9 +11782,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE",
       "api_endpoint_src": "{endpoint}/api/timetracker/changeprojectstatus",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deleteproject___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deleteproject",
       "text": "Delete Projects API",
       "category": "Timesheet / Projects",
@@ -11826,9 +11826,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE",
       "api_endpoint_src": "{endpoint}/api/timetracker/deleteproject",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/addtimelog___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/addtimelog",
       "text": "Add Time Logs API",
       "category": "Timesheet / Time Logs ",
@@ -11924,9 +11924,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.CREATE  ",
       "api_endpoint_src": "{endpoint}/api/timetracker/addtimelog",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/edittimelog___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/edittimelog",
       "text": "Modify Time Logs API",
       "category": "Timesheet / Time Logs ",
@@ -12008,9 +12008,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE  ",
       "api_endpoint_src": "{endpoint}/api/timetracker/edittimelog",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/gettimelogs___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/gettimelogs",
       "text": "Get Time Logs API",
       "category": "Timesheet / Time Logs ",
@@ -12100,9 +12100,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/gettimelogs",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/gettimelogdetails___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/gettimelogdetails",
       "text": "Get Time Logs Details API",
       "category": "Timesheet / Time Logs ",
@@ -12160,9 +12160,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/gettimelogdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deletetimelog___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deletetimelog",
       "text": "Delete Time Logs API",
       "category": "Timesheet / Time Logs ",
@@ -12204,9 +12204,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE  ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deletetimelog",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/timer___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/timer",
       "text": "Pause/Resume Timer API",
       "category": "Timesheet / Timer",
@@ -12253,9 +12253,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/timetracker/timer",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getcurrentlyrunningtimer___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getcurrentlyrunningtimer",
       "text": "Get Currently Running Timer API",
       "category": "Timesheet / Timer",
@@ -12291,9 +12291,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/getcurrentlyrunningtimer",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/addcomment___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/addcomment",
       "text": "Add Comments for Timer API",
       "category": "Timesheet / Timer",
@@ -12340,9 +12340,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/addcomment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/getcomments___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/getcomments",
       "text": "Get Comments for Timer API",
       "category": "Timesheet / Timer",
@@ -12384,9 +12384,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/timetracker/getcomments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deletecomment___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deletecomment",
       "text": "Delete Comment for Timer API",
       "category": "Timesheet / Timer",
@@ -12428,9 +12428,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deletecomment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/createtimesheet___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/createtimesheet",
       "text": "Create Timesheets API",
       "category": "Timesheet / Timesheets",
@@ -12519,9 +12519,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.CREATE",
       "api_endpoint_src": "{endpoint}/api/timetracker/createtimesheet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/modifytimesheet___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/modifytimesheet",
       "text": "Modify Timesheet API",
       "category": "Timesheet / Timesheets",
@@ -12587,9 +12587,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/modifytimesheet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/gettimesheet___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/gettimesheet",
       "text": "Get Timesheets API",
       "category": "Timesheet / Timesheets",
@@ -12659,9 +12659,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/gettimesheet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/gettimesheetdetails___GET": {
+    {
       "provider_alias_intent": "/api/timetracker/gettimesheetdetails",
       "text": "Get Timesheets Details API",
       "category": "Timesheet / Timesheets",
@@ -12707,9 +12707,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.READ ",
       "api_endpoint_src": "{endpoint}/api/timetracker/gettimesheetdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/approvetimesheet___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/approvetimesheet",
       "text": "Approve Timesheet API",
       "category": "Timesheet / Timesheets",
@@ -12771,9 +12771,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.UPDATE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/approvetimesheet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/timetracker/deletetimesheet___POST": {
+    {
       "provider_alias_intent": "/api/timetracker/deletetimesheet",
       "text": "Delete Timesheets API",
       "category": "Timesheet / Timesheets",
@@ -12815,9 +12815,9 @@
       "scope": "ZOHOPEOPLE.timetracker.ALL,  ZOHOPEOPLE.timetracker.DELETE ",
       "api_endpoint_src": "{endpoint}/api/timetracker/deletetimesheet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/view_name/records___GET": {
+    {
       "provider_alias_intent": "/api/forms/view_name/records",
       "text": "Fetch Record API",
       "category": "View",
@@ -12889,9 +12889,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL,  ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<viewname>/records",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/views___GET": {
+    {
       "provider_alias_intent": "/api/views",
       "text": "Default And Custom View API",
       "category": "View",
@@ -12927,9 +12927,9 @@
       "scope": "ZOHOPEOPLE.forms.ALL, ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/views",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     },
-    "zohopeople__/api/forms/form_link_name/views___GET": {
+    {
       "provider_alias_intent": "/api/forms/form_link_name/views",
       "text": "Fetch View of a Specific Form API",
       "category": "View",
@@ -12981,7 +12981,7 @@
       "scope": "ZOHOPEOPLE.forms.ALL, ZOHOPEOPLE.forms.READ",
       "api_endpoint_src": "{endpoint}/api/forms/<formLinkName>/views",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.123Z"
+      "updated_at": "2025-11-11T15:37:36.019Z"
     }
-  }
+  ]
 }

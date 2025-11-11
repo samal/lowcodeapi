@@ -16,8 +16,8 @@
     "total_api": 25,
     "credential_link": ""
   },
-  "routes": {
-    "oneai__/agent/v1/create___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/agent/v1/create",
       "text": "Create",
       "category": "One AI Agent/agent",
@@ -60,9 +60,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/insert/async___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/insert/async",
       "text": "Insert URL",
       "category": "One AI Agent/agent",
@@ -106,9 +106,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/insert/file/async___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/insert/file/async",
       "text": "Insert File",
       "category": "One AI Agent/agent",
@@ -142,9 +142,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/update/async___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/update/async",
       "text": "Update URL",
       "category": "One AI Agent/agent",
@@ -188,9 +188,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/update/file/async___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/update/file/async",
       "text": "Update File",
       "category": "One AI Agent/agent",
@@ -221,9 +221,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agent_id/document/document_id/settings/___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agent_id/document/document_id/settings/",
       "text": "Document Settings",
       "category": "One AI Agent/agent",
@@ -263,9 +263,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/documents/document_id/metadata___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/documents/document_id/metadata",
       "text": "Update Metadata",
       "category": "One AI Agent/agent",
@@ -296,9 +296,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/sample_questions/add___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/sample_questions/add",
       "text": "Add Agent Sample Questions Endpoint",
       "category": "One AI Agent/agent",
@@ -330,9 +330,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/sample_questions/update___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/sample_questions/update",
       "text": "Update Agent Sample Questions Endpoint",
       "category": "One AI Agent/agent",
@@ -364,9 +364,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/free/settings___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/free/settings",
       "text": "Set Agent Free Settings",
       "category": "One AI Agent/agent",
@@ -439,9 +439,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/paid/settings___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/paid/settings",
       "text": "Set Agent Paid Settings",
       "category": "One AI Agent/agent",
@@ -507,9 +507,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/chat___POST": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/chat",
       "text": "Query Public Endpoint",
       "category": "One AI Agent/agent",
@@ -558,9 +558,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agent/agent/internal/___GET": {
+    {
       "provider_alias_intent": "/agent/v1/agent/agent/internal/",
       "text": "Get Agent",
       "category": "One AI Agent/agent",
@@ -587,9 +587,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/list/agents___GET": {
+    {
       "provider_alias_intent": "/agent/v1/list/agents",
       "text": "List Agents",
       "category": "One AI Agent/agent",
@@ -611,9 +611,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/list/documentspage1limit1000___GET": {
+    {
       "provider_alias_intent": "/agent/v1/list/documentspage1limit1000",
       "text": "List Documents",
       "category": "One AI Agent/agent",
@@ -646,9 +646,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/tasks/task_id___GET": {
+    {
       "provider_alias_intent": "/agent/v1/tasks/task_id",
       "text": "Get Task Status",
       "category": "One AI Agent/agent",
@@ -675,9 +675,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/tasks/task_id/abort___GET": {
+    {
       "provider_alias_intent": "/agent/v1/tasks/task_id/abort",
       "text": "Abort",
       "category": "One AI Agent/agent",
@@ -704,9 +704,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.776Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/chats/chat_id/share___GET": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/chats/chat_id/share",
       "text": "Share Chat",
       "category": "One AI Agent/agent",
@@ -737,9 +737,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/chats/chat_id/history___GET": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/chats/chat_id/history",
       "text": "Chat History",
       "category": "One AI Agent/agent",
@@ -770,9 +770,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agent_id/document/document_id___GET": {
+    {
       "provider_alias_intent": "/agent/v1/agent_id/document/document_id",
       "text": "Get Document",
       "category": "One AI Agent/agent",
@@ -803,9 +803,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/delete___DELETE": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/delete",
       "text": "Delete Agent",
       "category": "One AI Agent/agent",
@@ -832,9 +832,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/shared_chat/share_id___GET": {
+    {
       "provider_alias_intent": "/agent/v1/shared_chat/share_id",
       "text": "Get Shared Chat",
       "category": "One AI Agent/agent",
@@ -861,9 +861,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/sample_questions/delete___DELETE": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/sample_questions/delete",
       "text": "Delete Agent Sample Questions Endpoint",
       "category": "One AI Agent/agent",
@@ -895,9 +895,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     },
-    "oneai__/agent/v1/agents/agent_id/documents/document_id/delete___DELETE": {
+    {
       "provider_alias_intent": "/agent/v1/agents/agent_id/documents/document_id/delete",
       "text": "Delete Document",
       "category": "One AI Agent/agent",
@@ -928,7 +928,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.777Z"
+      "updated_at": "2025-11-11T15:37:35.375Z"
     }
-  }
+  ]
 }

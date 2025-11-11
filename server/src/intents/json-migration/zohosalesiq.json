@@ -76,8 +76,8 @@
     "total_api": 6,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohosalesiq__/api/v1/screenname/chats/chat_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/screenname/chats/chat_id",
       "text": "Get Chat",
       "category": "Chat",
@@ -132,9 +132,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     },
-    "zohosalesiq__/api/v1/screenname/chats___GET": {
+    {
       "provider_alias_intent": "/api/v1/screenname/chats",
       "text": "List all Chats",
       "category": "Chat",
@@ -191,9 +191,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     },
-    "zohosalesiq__/api/v1/screenname/chats/chat_id/attachmenturl___GET": {
+    {
       "provider_alias_intent": "/api/v1/screenname/chats/chat_id/attachmenturl",
       "text": "Get the Attachment URL",
       "category": "Chat",
@@ -258,9 +258,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     },
-    "zohosalesiq__/api/v1/screenname/chats/chat_id/transcript___GET": {
+    {
       "provider_alias_intent": "/api/v1/screenname/chats/chat_id/transcript",
       "text": "Get Chat Messages",
       "category": "Chat",
@@ -327,9 +327,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     },
-    "zohosalesiq__/api/v1/screenname/visitorsview/viewid/visitors___GET": {
+    {
       "provider_alias_intent": "/api/v1/screenname/visitorsview/viewid/visitors",
       "text": "Get Visitor Details",
       "category": "Visitor",
@@ -388,9 +388,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     },
-    "zohosalesiq__/api/v1/screenname/visitorsbyemail/email___POST": {
+    {
       "provider_alias_intent": "/api/v1/screenname/visitorsbyemail/email",
       "text": "Update Visitor Info",
       "category": "Visitor",
@@ -449,7 +449,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.128Z"
+      "updated_at": "2025-11-11T15:37:36.030Z"
     }
-  }
+  ]
 }

@@ -76,8 +76,8 @@
     "total_api": 121,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/data___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/data",
       "text": "In New Table",
       "category": "Bulk APIs",
@@ -136,9 +136,9 @@
       "scope": "ZohoAnalytics.data.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/data___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/data",
       "text": "Import Data As Batches In Existing Table",
       "category": "Bulk APIs",
@@ -202,9 +202,9 @@
       "scope": "ZohoAnalytics.data.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/data___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/data",
       "text": "Create Import Job for a new table",
       "category": "Bulk APIs",
@@ -263,9 +263,9 @@
       "scope": "ZohoAnalytics.data.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/importjobs/job_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/importjobs/job_id",
       "text": "Get Import Job Details",
       "category": "Bulk APIs",
@@ -328,9 +328,9 @@
       "scope": "ZohoAnalytics.data.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/importjobs/<job-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/data/batch___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/data/batch",
       "text": "Import Data As Batches In New Table",
       "category": "Bulk APIs",
@@ -384,9 +384,9 @@
       "scope": "ZohoAnalytics.data.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/data/batch",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/views/view_id/data___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/views/view_id/data",
       "text": "Using View ID",
       "category": "Create Export Job",
@@ -444,9 +444,9 @@
       "scope": "ZohoAnalytics.data.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/views/<view-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/data___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/data",
       "text": "Using SQL Query",
       "category": "Create Export Job",
@@ -494,9 +494,9 @@
       "scope": "ZohoAnalytics.data.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/exportjobs/job_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/exportjobs/job_id",
       "text": "Get Export Job Details",
       "category": "Create Export Job",
@@ -554,9 +554,9 @@
       "scope": "ZohoAnalytics.data.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/exportjobs/<job-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/bulk/workspaces/workspace_id/exportjobs/job_id/data___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/bulk/workspaces/workspace_id/exportjobs/job_id/data",
       "text": "Download Exported Data",
       "category": "Create Export Job",
@@ -614,9 +614,9 @@
       "scope": "ZohoAnalytics.data.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/bulk/workspaces/<workspace-id>/exportjobs/<job-id>/data",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/rows___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/rows",
       "text": "Copy Formulas",
       "category": "Modeling API",
@@ -680,9 +680,9 @@
       "scope": "ZohoAnalytics.modeling.create\n",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/rows",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/rows___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/rows",
       "text": "Update Rows",
       "category": "Data APIs",
@@ -756,9 +756,9 @@
       "scope": "ZohoAnalytics.data.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/rows",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/rows___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/rows",
       "text": "Delete Row",
       "category": "Data APIs",
@@ -826,9 +826,9 @@
       "scope": "ZohoAnalytics.data.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/rows",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish",
       "text": "Get View URL",
       "category": "Embed APIs",
@@ -890,9 +890,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/embed___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/embed",
       "text": "Get Embed URL",
       "category": "Embed APIs",
@@ -954,9 +954,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/embed",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink",
       "text": "Get Private URL",
       "category": "Embed APIs",
@@ -1014,9 +1014,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/privatelink",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink",
       "text": "Create Private URL",
       "category": "Embed APIs",
@@ -1080,9 +1080,9 @@
       "scope": "ZohoAnalytics.embed.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/privatelink",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/public___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/public",
       "text": "Make Views Public",
       "category": "Embed APIs",
@@ -1146,9 +1146,9 @@
       "scope": "ZohoAnalytics.embed.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/public",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/privatelink",
       "text": "Remove Private Access",
       "category": "Embed APIs",
@@ -1206,9 +1206,9 @@
       "scope": "ZohoAnalytics.embed.delete\n",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/privatelink",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/config___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/config",
       "text": "Get Publish Configurations",
       "category": "Embed APIs",
@@ -1266,9 +1266,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/config",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/config___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/config",
       "text": "Update Publish Configurations",
       "category": "Embed APIs",
@@ -1332,9 +1332,9 @@
       "scope": "ZohoAnalytics.embed.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/config",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/publish/public___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/publish/public",
       "text": "Remove Public Permission",
       "category": "Embed APIs",
@@ -1392,9 +1392,9 @@
       "scope": "ZohoAnalytics.embed.delete\n",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/publish/public",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides",
       "text": "Get Slideshows",
       "category": "Embed APIs",
@@ -1447,9 +1447,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides/slide_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides/slide_id",
       "text": "Get Slideshow Details",
       "category": "Embed APIs",
@@ -1507,9 +1507,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides/<slide-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides/slide_id/publish___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides/slide_id/publish",
       "text": "Get Slideshow URL",
       "category": "Embed APIs",
@@ -1572,9 +1572,9 @@
       "scope": "ZohoAnalytics.embed.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides/<slide-id>/publish",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides",
       "text": "Create Slideshow",
       "category": "Embed APIs",
@@ -1628,9 +1628,9 @@
       "scope": "ZohoAnalytics.embed.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides/slide_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides/slide_id",
       "text": "Update Slideshow",
       "category": "Embed APIs",
@@ -1694,9 +1694,9 @@
       "scope": "ZohoAnalytics.embed.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides/<slide-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/slides/slide_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/slides/slide_id",
       "text": "Delete Slideshow",
       "category": "Embed APIs",
@@ -1754,9 +1754,9 @@
       "scope": "ZohoAnalytics.embed.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/slides/<slide-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/orgs/restapi/v2/orgs___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/orgs/restapi/v2/orgs",
       "text": "Get Organizations",
       "category": "Metadata APIs",
@@ -1792,9 +1792,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/orgs/restapi/v2/orgs",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces",
       "text": "Get All Workspaces",
       "category": "Metadata APIs",
@@ -1830,9 +1830,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/owned___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/owned",
       "text": "Get Owned Workspaces",
       "category": "Metadata APIs",
@@ -1868,9 +1868,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/owned",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/shared___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/shared",
       "text": "Get Shared Workspaces",
       "category": "Metadata APIs",
@@ -1906,9 +1906,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/shared",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views",
       "text": "Get Views",
       "category": "Metadata APIs",
@@ -1956,9 +1956,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/folders___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/folders",
       "text": "Get Folders",
       "category": "Metadata APIs",
@@ -2006,9 +2006,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/folders",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/recentviews___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/recentviews",
       "text": "Get Recent Views",
       "category": "Metadata APIs",
@@ -2044,9 +2044,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/recentviews",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/trash___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/trash",
       "text": "Get Trash Views",
       "category": "Metadata APIs",
@@ -2094,9 +2094,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/trash",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/dashboards___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/dashboards",
       "text": "Get Dashboards",
       "category": "Metadata APIs",
@@ -2132,9 +2132,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/dashboards",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/rows___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/rows",
       "text": "Get Owned Dashboards",
       "category": "Metadata APIs",
@@ -2192,9 +2192,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/rows",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/dashboards/shared___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/dashboards/shared",
       "text": "Get Shared Dashboards",
       "category": "Metadata APIs",
@@ -2230,9 +2230,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/dashboards/shared",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/secretkey___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/secretkey",
       "text": "Get Workspace Secretkey",
       "category": "Metadata APIs",
@@ -2285,9 +2285,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/secretkey",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id",
       "text": "Get Workspace Details",
       "category": "Metadata APIs",
@@ -2335,9 +2335,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/views/view_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/views/view_id",
       "text": "Get View Details",
       "category": "Metadata APIs",
@@ -2390,9 +2390,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/views/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/dependents___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/dependents",
       "text": "Get View Dependents",
       "category": "Metadata APIs",
@@ -2450,9 +2450,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/dependents",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id/dependents___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id/dependents",
       "text": "Get Column Dependents",
       "category": "Metadata APIs",
@@ -2520,9 +2520,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/<column-id>/dependents",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/favorite___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/favorite",
       "text": "Add Favorite Workspace",
       "category": "Metadata APIs",
@@ -2570,9 +2570,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/favorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/favorite___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/favorite",
       "text": "Remove Favorite Workspace",
       "category": "Metadata APIs",
@@ -2620,9 +2620,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/favorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/default___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/default",
       "text": "Add Default Workspace",
       "category": "Metadata APIs",
@@ -2670,9 +2670,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/default",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/default___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/default",
       "text": "Remove Default Workspace",
       "category": "Metadata APIs",
@@ -2720,9 +2720,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/default",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/favorite___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/favorite",
       "text": "Add Favorite View",
       "category": "Metadata APIs",
@@ -2780,9 +2780,9 @@
       "scope": "ZohoAnalytics.metadata.updatde",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/favorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__restapi/v2/workspaces/workspace_id/views/view_id/favorite___DELETE": {
+    {
       "provider_alias_intent": "restapi/v2/workspaces/workspace_id/views/view_id/favorite",
       "text": "Remove Favorite View",
       "category": "Metadata APIs",
@@ -2840,9 +2840,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}restapi/v2/workspaces/<workspace-id>/views/<view-id>/favorite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/customformulas___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/customformulas",
       "text": "Get Custom Formula List",
       "category": "Metadata APIs",
@@ -2900,9 +2900,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/customformulas",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas",
       "text": "Get Aggregate Formula List",
       "category": "Metadata APIs",
@@ -2960,9 +2960,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/aggregateformulas",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/metadetails___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/metadetails",
       "text": "Get Meta Details",
       "category": "Metadata APIs",
@@ -3004,9 +3004,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/metadetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/datasources___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/datasources",
       "text": "Get Datasources",
       "category": "Metadata APIs",
@@ -3054,9 +3054,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/datasources",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/datasources/data_source_id/sync___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/datasources/data_source_id/sync",
       "text": "Sync Data",
       "category": "Metadata APIs",
@@ -3120,9 +3120,9 @@
       "scope": "ZohoAnalytics.metadata.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/datasources/<datasource-id>/sync",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/importdetails___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/importdetails",
       "text": "Get Last Import Details",
       "category": "Metadata APIs",
@@ -3180,9 +3180,9 @@
       "scope": "ZohoAnalytics.metadata.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/importdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/datasources/data_source_id/sync___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/datasources/data_source_id/sync",
       "text": "Update Datasource Connection",
       "category": "Metadata APIs",
@@ -3246,9 +3246,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/datasources/<datasource-id>/sync",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/wlaccess___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/wlaccess",
       "text": "Enable Domain Workspace",
       "category": "Metadata APIs",
@@ -3296,9 +3296,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/wlaccess",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/wlaccess___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/wlaccess",
       "text": "Disable Domain Workspace",
       "category": "Metadata APIs",
@@ -3346,9 +3346,9 @@
       "scope": "ZohoAnalytics.metadata.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/wlaccess",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces",
       "text": "Create Workspace",
       "category": "Modeling API",
@@ -3390,9 +3390,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id",
       "text": "Copy Workspace",
       "category": "Modeling API",
@@ -3446,9 +3446,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id",
       "text": "Rename Workspace",
       "category": "Modeling API",
@@ -3502,9 +3502,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id",
       "text": "Delete Workspace",
       "category": "Modeling API",
@@ -3552,9 +3552,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/tables___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/tables",
       "text": "Create Table",
       "category": "Modeling API",
@@ -3608,9 +3608,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/tables",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/querytables___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/querytables",
       "text": "Create Query Table",
       "category": "Modeling API",
@@ -3664,9 +3664,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/querytables",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/querytables/view_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/querytables/view_id",
       "text": "Edit Query Table",
       "category": "Modeling API",
@@ -3730,9 +3730,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/querytables/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/saveas___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/saveas",
       "text": "Saveas View",
       "category": "Modeling API",
@@ -3796,9 +3796,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/saveas",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id",
       "text": "Rename View",
       "category": "Modeling API",
@@ -3862,9 +3862,9 @@
       "scope": " ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id",
       "text": "Delete View",
       "category": "Modeling API",
@@ -3927,9 +3927,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/trash/view_id___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/trash/view_id",
       "text": "Restore Trash Views",
       "category": "Modeling API",
@@ -3993,9 +3993,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/trash/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/trash/view_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/trash/view_id",
       "text": "Delete Trash Views",
       "category": "Modeling API",
@@ -4058,9 +4058,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/trash/<view-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/folders___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/folders",
       "text": "Create Folder",
       "category": "Modeling API",
@@ -4114,9 +4114,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/folders",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/folders/folder_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/folders/folder_id",
       "text": "Rename Folder",
       "category": "Modeling API",
@@ -4180,9 +4180,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/folders/<folder-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/folders/folder_id/default___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/folders/folder_id/default",
       "text": "Make Default Folder",
       "category": "Modeling API",
@@ -4240,9 +4240,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/folders/<folder-id>/default",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/folders/folder_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/folders/folder_id",
       "text": "Delete Folder",
       "category": "Modeling API",
@@ -4300,9 +4300,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/folders/<folder-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns",
       "text": "Add Column",
       "category": "Modeling API",
@@ -4366,9 +4366,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id",
       "text": "Rename Column",
       "category": "Modeling API",
@@ -4442,9 +4442,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/<column-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id",
       "text": "Delete Column",
       "category": "Modeling API",
@@ -4517,9 +4517,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/<column-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id/lookup___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/column_id/lookup",
       "text": "Add Lookup",
       "category": "Modeling API",
@@ -4593,9 +4593,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/<column-id>/lookup",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/views/columns/lookup___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/views/columns/lookup",
       "text": "Remove Lookup",
       "category": "Modeling API",
@@ -4631,9 +4631,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/views/columns/lookup",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/hide___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/hide",
       "text": "Hide Columns",
       "category": "Modeling API",
@@ -4697,9 +4697,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/hide",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/columns/show___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/columns/show",
       "text": "Show Columns",
       "category": "Modeling API",
@@ -4763,9 +4763,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/columns/show",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.939Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/source_workspace_id/views/copy___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/source_workspace_id/views/copy",
       "text": "Copy Views",
       "category": "Modeling API",
@@ -4819,9 +4819,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<source-workspace-id>/views/copy",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/source_workspace_id/views/view_id/similarviews___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/source_workspace_id/views/view_id/similarviews",
       "text": "Create Similar Views",
       "category": "Modeling API",
@@ -4885,9 +4885,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<source-workspace-id>/views/<view-id>/similarviews",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/source_workspace_id/views/view_id/autoanalyse___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/source_workspace_id/views/view_id/autoanalyse",
       "text": "Auto Analyse View",
       "category": "Modeling API",
@@ -4951,9 +4951,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<source-workspace-id>/views/<view-id>/autoanalyse",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/source_workspace_id/views/view_id/columns/column_id/autoanalyse___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/source_workspace_id/views/view_id/columns/column_id/autoanalyse",
       "text": "Auto Analyse Column",
       "category": "Modeling API",
@@ -5021,9 +5021,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<source-workspace-id>/views/<view-id>/columns/<column-id>/autoanalyse",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/variables___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/variables",
       "text": "Get Variables",
       "category": "Modeling API",
@@ -5071,9 +5071,9 @@
       "scope": "ZohoAnalytics.modeling.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/variables",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/variables/variable_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/variables/variable_id",
       "text": "Get Variable Details",
       "category": "Modeling API",
@@ -5131,9 +5131,9 @@
       "scope": "ZohoAnalytics.modeling.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/variables/<variable-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/variables___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/variables",
       "text": "Create Variable",
       "category": "Modeling API",
@@ -5187,9 +5187,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/variables",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/variables/variable_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/variables/variable_id",
       "text": "Update Variable",
       "category": "Modeling API",
@@ -5253,9 +5253,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/variables/<variable-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/variables/variable_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/variables/variable_id",
       "text": "Delete Variable",
       "category": "Modeling API",
@@ -5318,9 +5318,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/variables/<variable-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/customformulas___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/customformulas",
       "text": "Add Custom Formula",
       "category": "Modeling API",
@@ -5384,9 +5384,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/customformulas",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/customformulas/formula_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/customformulas/formula_id",
       "text": "Edit Custom Formula",
       "category": "Modeling API",
@@ -5460,9 +5460,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/customformulas/<formula-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/customformulas/formula_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/customformulas/formula_id",
       "text": "Delete Custom Formula",
       "category": "Modeling API",
@@ -5530,9 +5530,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/customformulas/<formula-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas",
       "text": "Add Aggregate Formula",
       "category": "Modeling API",
@@ -5596,9 +5596,9 @@
       "scope": "ZohoAnalytics.modeling.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/aggregateformulas",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.682Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas/formula_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas/formula_id",
       "text": "Edit Aggregate Formula",
       "category": "Modeling API",
@@ -5666,9 +5666,9 @@
       "scope": "ZohoAnalytics.modeling.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/aggregateformulas/<formula-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas/formula_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/aggregateformulas/formula_id",
       "text": "Delete Aggregate Formula",
       "category": "Modeling API",
@@ -5741,9 +5741,9 @@
       "scope": "ZohoAnalytics.modeling.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/aggregateformulas/<formula-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/orgadmins___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/orgadmins",
       "text": "Get Org Admins",
       "category": "Sharing and Collaboration APIs",
@@ -5779,9 +5779,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/orgadmins",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/admins___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/admins",
       "text": "Get Workspace Admins",
       "category": "Sharing and Collaboration APIs",
@@ -5829,9 +5829,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/admins",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/admins___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/admins",
       "text": "Add Workspace Admins",
       "category": "Sharing and Collaboration APIs",
@@ -5885,9 +5885,9 @@
       "scope": "ZohoAnalytics.share.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/admins",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/admins___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/admins",
       "text": "Remove Workspace Admins",
       "category": "Sharing and Collaboration APIs",
@@ -5940,9 +5940,9 @@
       "scope": "ZohoAnalytics.share.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/admins",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/share___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/share",
       "text": "Get Workspace Shared Details",
       "category": "Sharing and Collaboration APIs",
@@ -5990,9 +5990,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/share___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/share",
       "text": "Share Views",
       "category": "Sharing and Collaboration APIs",
@@ -6046,9 +6046,9 @@
       "scope": "ZohoAnalytics.share.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/share___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/share",
       "text": "Remove Share",
       "category": "Sharing and Collaboration APIs",
@@ -6101,9 +6101,9 @@
       "scope": "ZohoAnalytics.share.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/share/mypermissions___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/share/mypermissions",
       "text": "Get My Permissions",
       "category": "Sharing and Collaboration APIs",
@@ -6161,9 +6161,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/share/mypermissions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/share/shareddetails___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/share/shareddetails",
       "text": "Get Shared Details For Views",
       "category": "Sharing and Collaboration APIs",
@@ -6216,9 +6216,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/share/shareddetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/views/view_id/share___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/views/view_id/share",
       "text": "Update Shared Details For View",
       "category": "Sharing and Collaboration APIs",
@@ -6282,9 +6282,9 @@
       "scope": "ZohoAnalytics.share.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/views/<view-id>/share",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups",
       "text": "Get Groups",
       "category": "Sharing and Collaboration APIs",
@@ -6332,9 +6332,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups/group_id___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups/group_id",
       "text": "Get Group Details",
       "category": "Sharing and Collaboration APIs",
@@ -6392,9 +6392,9 @@
       "scope": "ZohoAnalytics.share.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups/<group-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups",
       "text": "Create Group",
       "category": "Sharing and Collaboration APIs",
@@ -6448,9 +6448,9 @@
       "scope": "ZohoAnalytics.share.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups/group_id___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups/group_id",
       "text": "Rename Group",
       "category": "Sharing and Collaboration APIs",
@@ -6514,9 +6514,9 @@
       "scope": "ZohoAnalytics.share.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups/<group-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups/group_id/members___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups/group_id/members",
       "text": "Add Group Members",
       "category": "Sharing and Collaboration APIs",
@@ -6580,9 +6580,9 @@
       "scope": "ZohoAnalytics.share.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups/<group-id>/members",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups/group_id/members___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups/group_id/members",
       "text": "Remove Group Members",
       "category": "Sharing and Collaboration APIs",
@@ -6645,9 +6645,9 @@
       "scope": "ZohoAnalytics.share.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups/<group-id>/members",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/workspaces/workspace_id/groups/group_id___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/workspaces/workspace_id/groups/group_id",
       "text": "Delete Group",
       "category": "Sharing and Collaboration APIs",
@@ -6705,9 +6705,9 @@
       "scope": "ZohoAnalytics.share.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/workspaces/<workspace-id>/groups/<group-id>",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/users",
       "text": "Get Users",
       "category": "User Management API",
@@ -6743,9 +6743,9 @@
       "scope": "ZohoAnalytics.usermanagement.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/users",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users___POST": {
+    {
       "provider_alias_intent": "/restapi/v2/users",
       "text": "Add Users",
       "category": "User Management API",
@@ -6787,9 +6787,9 @@
       "scope": "ZohoAnalytics.usermanagement.create",
       "api_endpoint_src": "{endpoint}/restapi/v2/users",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users___DELETE": {
+    {
       "provider_alias_intent": "/restapi/v2/users",
       "text": "Remove Users",
       "category": "User Management API",
@@ -6831,9 +6831,9 @@
       "scope": "ZohoAnalytics.usermanagement.delete",
       "api_endpoint_src": "{endpoint}/restapi/v2/users",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users/active___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/users/active",
       "text": "Activate Users",
       "category": "User Management API",
@@ -6875,9 +6875,9 @@
       "scope": "ZohoAnalytics.usermanagement.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/users/active",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users/inactive___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/users/inactive",
       "text": "Deactivate Users",
       "category": "User Management API",
@@ -6919,9 +6919,9 @@
       "scope": "ZohoAnalytics.usermanagement.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/users/inactive",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/users/role___PUT": {
+    {
       "provider_alias_intent": "/restapi/v2/users/role",
       "text": "Change User Role",
       "category": "User Management API",
@@ -6963,9 +6963,9 @@
       "scope": "ZohoAnalytics.usermanagement.update",
       "api_endpoint_src": "{endpoint}/restapi/v2/users/role",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/subscription___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/subscription",
       "text": "Get Subscription Details",
       "category": "User Management API",
@@ -7001,9 +7001,9 @@
       "scope": "ZohoAnalytics.usermanagement.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/subscription",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     },
-    "zohoanalytics__/restapi/v2/resources___GET": {
+    {
       "provider_alias_intent": "/restapi/v2/resources",
       "text": "Get Resource Details",
       "category": "User Management API",
@@ -7039,7 +7039,7 @@
       "scope": "ZohoAnalytics.usermanagement.read",
       "api_endpoint_src": "{endpoint}/restapi/v2/resources",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.940Z"
+      "updated_at": "2025-11-11T15:37:35.683Z"
     }
-  }
+  ]
 }

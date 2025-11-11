@@ -33,8 +33,8 @@
     "total_api": 34,
     "credential_link": "https://app.lemonsqueezy.com/settings/api"
   },
-  "routes": {
-    "lemonsqueezy__/v1/checkouts___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/checkouts",
       "text": "Create a checkout",
       "category": "Checkouts",
@@ -62,9 +62,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.648Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/checkouts/id___GET": {
+    {
       "provider_alias_intent": "/v1/checkouts/id",
       "text": "Retrieve a checkout",
       "category": "Checkouts",
@@ -102,9 +102,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.648Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/checkouts___GET": {
+    {
       "provider_alias_intent": "/v1/checkouts",
       "text": "List all checkouts",
       "category": "Checkouts",
@@ -132,9 +132,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/customers/id___GET": {
+    {
       "provider_alias_intent": "/v1/customers/id",
       "text": "Retrieve a customer",
       "category": "Customers",
@@ -172,9 +172,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/customers___GET": {
+    {
       "provider_alias_intent": "/v1/customers",
       "text": "List all customers",
       "category": "Customers",
@@ -202,9 +202,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discount-redemptions/id___GET": {
+    {
       "provider_alias_intent": "/v1/discount-redemptions/id",
       "text": "Retrieve a discount redemption",
       "category": "Discount Redemptions",
@@ -242,9 +242,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discount-redemptions___GET": {
+    {
       "provider_alias_intent": "/v1/discount-redemptions",
       "text": "List all discount redemptions",
       "category": "Discount Redemptions",
@@ -272,9 +272,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discounts___POST": {
+    {
       "provider_alias_intent": "/v1/discounts",
       "text": "Create a discount",
       "category": "Discounts",
@@ -302,9 +302,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discounts/id___GET": {
+    {
       "provider_alias_intent": "/v1/discounts/id",
       "text": "Retrieve a discount",
       "category": "Discounts",
@@ -342,9 +342,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discounts/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/discounts/id",
       "text": "Delete a discount",
       "category": "Discounts",
@@ -382,9 +382,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/discounts___GET": {
+    {
       "provider_alias_intent": "/v1/discounts",
       "text": "List all discounts",
       "category": "Discounts",
@@ -412,9 +412,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/files/id___GET": {
+    {
       "provider_alias_intent": "/v1/files/id",
       "text": "Retrieve a file",
       "category": "Files",
@@ -452,9 +452,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/files___GET": {
+    {
       "provider_alias_intent": "/v1/files",
       "text": "List all files",
       "category": "Files",
@@ -482,9 +482,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/license-key-instances/id___GET": {
+    {
       "provider_alias_intent": "/v1/license-key-instances/id",
       "text": "Retrieve a license key instance",
       "category": "License Key Instances",
@@ -522,9 +522,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/license-key-instances___GET": {
+    {
       "provider_alias_intent": "/v1/license-key-instances",
       "text": "List all license key instances",
       "category": "License Key Instances",
@@ -552,9 +552,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/license-keys/id___GET": {
+    {
       "provider_alias_intent": "/v1/license-keys/id",
       "text": "Retrieve a license key",
       "category": "License Keys",
@@ -592,9 +592,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/license-keys___GET": {
+    {
       "provider_alias_intent": "/v1/license-keys",
       "text": "List all license keys",
       "category": "License Keys",
@@ -622,9 +622,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/order-items/id___GET": {
+    {
       "provider_alias_intent": "/v1/order-items/id",
       "text": "Retrieve an order item",
       "category": "Order Items",
@@ -662,9 +662,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/order-items___GET": {
+    {
       "provider_alias_intent": "/v1/order-items",
       "text": "List all order items",
       "category": "Order Items",
@@ -692,9 +692,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/orders/id___GET": {
+    {
       "provider_alias_intent": "/v1/orders/id",
       "text": "Retrieve an order",
       "category": "Orders",
@@ -732,9 +732,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/orders___GET": {
+    {
       "provider_alias_intent": "/v1/orders",
       "text": "List all orders",
       "category": "Orders",
@@ -762,9 +762,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/products/id___GET": {
+    {
       "provider_alias_intent": "/v1/products/id",
       "text": "Retrieve a product",
       "category": "Products",
@@ -802,9 +802,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/products___GET": {
+    {
       "provider_alias_intent": "/v1/products",
       "text": "List all products",
       "category": "Products",
@@ -832,9 +832,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/stores/id___GET": {
+    {
       "provider_alias_intent": "/v1/stores/id",
       "text": "Retrieve a store",
       "category": "Stores",
@@ -872,9 +872,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__v1/stores___GET": {
+    {
       "provider_alias_intent": "v1/stores",
       "text": "List all stores",
       "category": "Stores",
@@ -902,9 +902,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscription-invoices/id___GET": {
+    {
       "provider_alias_intent": "/v1/subscription-invoices/id",
       "text": "Retrieve a subscription invoice",
       "category": "Subscription Invoices",
@@ -942,9 +942,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscription-invoices___GET": {
+    {
       "provider_alias_intent": "/v1/subscription-invoices",
       "text": "List all subscription invoices",
       "category": "Subscription Invoices",
@@ -972,9 +972,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscriptions/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/subscriptions/id",
       "text": "Update a subscription",
       "category": "Subscriptions",
@@ -1012,9 +1012,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscriptions/id___GET": {
+    {
       "provider_alias_intent": "/v1/subscriptions/id",
       "text": "Retrieve a subscription",
       "category": "Subscriptions",
@@ -1052,9 +1052,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscriptions___GET": {
+    {
       "provider_alias_intent": "/v1/subscriptions",
       "text": "List all subscriptions",
       "category": "Subscriptions",
@@ -1082,9 +1082,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/subscriptions/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/subscriptions/id",
       "text": "Cancel a Subscription",
       "category": "Subscriptions",
@@ -1122,9 +1122,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/users/me___GET": {
+    {
       "provider_alias_intent": "/v1/users/me",
       "text": "Retrieve the authenticated user",
       "category": "User",
@@ -1152,9 +1152,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/variants/id___GET": {
+    {
       "provider_alias_intent": "/v1/variants/id",
       "text": "Retrieve a variant",
       "category": "Variants",
@@ -1192,9 +1192,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.196Z"
     },
-    "lemonsqueezy__/v1/variants___GET": {
+    {
       "provider_alias_intent": "/v1/variants",
       "text": "List all variants",
       "category": "Variants",
@@ -1222,7 +1222,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.649Z"
+      "updated_at": "2025-11-11T15:37:35.197Z"
     }
-  }
+  ]
 }

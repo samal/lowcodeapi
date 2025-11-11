@@ -32,8 +32,8 @@
     "total_api": 2,
     "credential_link": ""
   },
-  "routes": {
-    "ashbyhq__/apikey.info___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/apikey.info",
       "text": "Retrieve information about the API key being used to make the request.",
       "category": "API key",
@@ -60,9 +60,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.039Z"
+      "updated_at": "2025-11-11T15:37:34.788Z"
     },
-    "ashbyhq__/application.info___POST": {
+    {
       "provider_alias_intent": "/application.info",
       "text": "Fetch application details by application id",
       "category": "Application",
@@ -89,7 +89,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.040Z"
+      "updated_at": "2025-11-11T15:37:34.788Z"
     }
-  }
+  ]
 }

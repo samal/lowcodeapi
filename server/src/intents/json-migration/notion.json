@@ -35,8 +35,8 @@
     "total_api": 20,
     "credential_link": "https://www.notion.so/my-integrations"
   },
-  "routes": {
-    "notion__/v1/pages/page_id___PATCH": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/pages/page_id",
       "provider_proxy_intent": "/v1/pages/{page_id}",
       "text": "Update page properties including cover and icon",
@@ -96,9 +96,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/pages/page_id___GET": {
+    {
       "provider_alias_intent": "/v1/pages/page_id",
       "provider_proxy_intent": "/v1/pages/{page_id}",
       "text": "Retrieve a page properties and other information",
@@ -144,9 +144,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/pages/page_id/properties/property_id___GET": {
+    {
       "provider_alias_intent": "/v1/pages/page_id/properties/property_id",
       "provider_proxy_intent": "/v1/pages/{page_id}/properties/{property_id}",
       "text": "Retrieve a page property item",
@@ -198,9 +198,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/blocks/block_id___GET": {
+    {
       "provider_alias_intent": "/v1/blocks/block_id",
       "provider_proxy_intent": "/v1/blocks/{block_id}",
       "text": "Retrieve a block",
@@ -238,9 +238,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/blocks/block_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/blocks/block_id",
       "provider_proxy_intent": "/v1/blocks/{block_id}",
       "text": "Update a block",
@@ -287,9 +287,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/pages___POST": {
+    {
       "provider_alias_intent": "/v1/pages",
       "provider_proxy_intent": "/v1/pages",
       "text": "Create a new page inside page or a database",
@@ -382,9 +382,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/databases/database_id___GET": {
+    {
       "provider_alias_intent": "/v1/databases/database_id",
       "provider_proxy_intent": "/v1/databases/{database_id}",
       "text": "Retrieve database detail and it's properties",
@@ -422,9 +422,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/databases/database_id/query___POST": {
+    {
       "provider_alias_intent": "/v1/databases/database_id/query",
       "provider_proxy_intent": "/v1/databases/{database_id}/query",
       "text": "Fetch rows of the Notion database using query",
@@ -488,9 +488,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/databases/database_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/databases/database_id",
       "provider_proxy_intent": "/v1/databases/{database_id}",
       "text": "Update database details",
@@ -541,9 +541,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/databases___POST": {
+    {
       "provider_alias_intent": "/v1/databases",
       "provider_proxy_intent": "/v1/databases",
       "text": "Create new database",
@@ -611,9 +611,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/blocks/block_id/children___GET": {
+    {
       "provider_alias_intent": "/v1/blocks/block_id/children",
       "provider_proxy_intent": "/v1/blocks/{block_id}/children",
       "text": "Retrieve block children",
@@ -660,9 +660,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/blocks/block_id/children___PATCH": {
+    {
       "provider_alias_intent": "/v1/blocks/block_id/children",
       "provider_proxy_intent": "/v1/blocks/{block_id}/children",
       "text": "Append block children",
@@ -710,9 +710,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/blocks/block_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/blocks/block_id",
       "provider_proxy_intent": "/v1/blocks/{block_id}",
       "text": "Delete a block",
@@ -750,9 +750,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/comments___GET": {
+    {
       "provider_alias_intent": "/v1/comments",
       "provider_proxy_intent": "/v1/comments",
       "text": "Retrieve comments",
@@ -798,9 +798,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/comments___POST": {
+    {
       "provider_alias_intent": "/v1/comments",
       "provider_proxy_intent": "/v1/comments",
       "text": "Create comment",
@@ -846,9 +846,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/search___POST": {
+    {
       "provider_alias_intent": "/v1/search",
       "provider_proxy_intent": "/v1/search",
       "text": "Search",
@@ -904,9 +904,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/users/user_id___GET": {
+    {
       "provider_alias_intent": "/v1/users/user_id",
       "provider_proxy_intent": "/v1/users/{user_id}",
       "text": "Retrieve a user",
@@ -944,9 +944,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/users___GET": {
+    {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "List all users",
@@ -987,9 +987,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/oauth/token___POST": {
+    {
       "provider_alias_intent": "/v1/oauth/token",
       "provider_proxy_intent": "/v1/oauth/token",
       "text": "Create a token",
@@ -1035,9 +1035,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     },
-    "notion__/v1/users/me___GET": {
+    {
       "provider_alias_intent": "/v1/users/me",
       "provider_proxy_intent": "/v1/users/me",
       "text": "Fetch token user",
@@ -1069,7 +1069,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.770Z"
+      "updated_at": "2025-11-11T15:37:35.315Z"
     }
-  }
+  ]
 }

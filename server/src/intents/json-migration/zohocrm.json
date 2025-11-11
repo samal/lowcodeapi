@@ -76,8 +76,8 @@
     "total_api": 4,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohocrm__/crm/v6/settings/modules/Leads___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/crm/v6/settings/modules/Leads",
       "text": "Get the metadata for a specific module",
       "category": "Module Metadata",
@@ -112,9 +112,9 @@
       "response_type": "",
       "scope": "ZohoCRM.settings.ALL,ZohoCRM.settings.modulesALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.010Z"
+      "updated_at": "2025-11-11T15:37:35.843Z"
     },
-    "zohocrm__/crm/v6/settings/profiles___GET": {
+    {
       "provider_alias_intent": "/crm/v6/settings/profiles",
       "text": "Get Profiles",
       "category": "Profiles",
@@ -149,9 +149,9 @@
       "response_type": "",
       "scope": "ZohoCRM.settings.profiles.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.010Z"
+      "updated_at": "2025-11-11T15:37:35.843Z"
     },
-    "zohocrm__/crm/v6/settings/profiles/profile_id___GET": {
+    {
       "provider_alias_intent": "/crm/v6/settings/profiles/profile_id",
       "text": "Get a specific profile",
       "category": "Profiles",
@@ -186,9 +186,9 @@
       "response_type": "",
       "scope": "ZohoCRM.settings.profiles.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.010Z"
+      "updated_at": "2025-11-11T15:37:35.843Z"
     },
-    "zohocrm__/crm/v6/settings/roles___GET": {
+    {
       "provider_alias_intent": "/crm/v6/settings/roles",
       "text": "Get Roles",
       "category": "Roles",
@@ -223,7 +223,7 @@
       "response_type": "",
       "scope": "ZohoCRM.settings.roles.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.010Z"
+      "updated_at": "2025-11-11T15:37:35.843Z"
     }
-  }
+  ]
 }

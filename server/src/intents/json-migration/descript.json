@@ -33,8 +33,8 @@
     "total_api": 4,
     "credential_link": "https://app.squadcast.fm/account/developers"
   },
-  "routes": {
-    "descript__/v1/edit_in_descript/schema___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/edit_in_descript/schema",
       "text": "Create Import URL",
       "category": "Edit in Descript",
@@ -77,9 +77,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.155Z"
+      "updated_at": "2025-11-11T15:37:34.852Z"
     },
-    "descript__/v1/overdub/generate_async___POST": {
+    {
       "provider_alias_intent": "/v1/overdub/generate_async",
       "text": "Generate a new Overdub",
       "category": "Overdub",
@@ -146,9 +146,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.155Z"
+      "updated_at": "2025-11-11T15:37:34.852Z"
     },
-    "descript__/v1/overdub/generate_async/overdubid___GET": {
+    {
       "provider_alias_intent": "/v1/overdub/generate_async/overdubid",
       "text": "Get an Overdub result",
       "category": "Overdub",
@@ -192,9 +192,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.155Z"
+      "updated_at": "2025-11-11T15:37:34.852Z"
     },
-    "descript__/v1/overdub/voices___GET": {
+    {
       "provider_alias_intent": "/v1/overdub/voices",
       "text": "Get voices",
       "category": "Overdub",
@@ -226,7 +226,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.155Z"
+      "updated_at": "2025-11-11T15:37:34.852Z"
     }
-  }
+  ]
 }

@@ -76,8 +76,8 @@
     "total_api": 42,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohowriter__/writer/api/v1/documents___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/writer/api/v1/documents",
       "text": "Get Trashed List",
       "category": "Document API",
@@ -136,9 +136,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/templates/template_id/bulkmerge___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates/template_id/bulkmerge",
       "text": "Bulk Merge",
       "category": "Bulk API",
@@ -216,9 +216,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL, \nWorkDrive.files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/templates/template_id/bulkmerge/sign___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates/template_id/bulkmerge/sign",
       "text": "Bulk Sign",
       "category": "Bulk API",
@@ -329,9 +329,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL,\nZohoSign.documents.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/sign___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/sign",
       "text": "Sign API",
       "category": "Bulk API",
@@ -427,9 +427,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoSign.documents.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/convert___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/convert",
       "text": "Convert Documents with Web URL",
       "category": "Conversion API",
@@ -482,9 +482,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents",
       "text": "Create through Web URL",
       "category": "Document API",
@@ -535,9 +535,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id",
       "text": "Get All Fields",
       "category": "Document API",
@@ -582,9 +582,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/download/document_id___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/download/document_id",
       "text": "Download Document",
       "category": "Document API",
@@ -641,9 +641,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/copy___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/copy",
       "text": "Copy Document",
       "category": "Document API",
@@ -709,9 +709,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/search___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/search",
       "text": "Search Document",
       "category": "Document API",
@@ -764,9 +764,9 @@
       "response_type": "",
       "scope": "ZohoSearch.securesearch.READ,\nWorkDrive.team.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/trash___DELETE": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/trash",
       "text": "Trash Document",
       "category": "Document API",
@@ -811,9 +811,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/restore___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/restore",
       "text": "Restore Document",
       "category": "Document API",
@@ -858,9 +858,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/delete___DELETE": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/delete",
       "text": "Delete Document Permanently",
       "category": "Document API",
@@ -905,9 +905,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folders___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/folders",
       "text": "Get Folders List",
       "category": "Folder API",
@@ -948,9 +948,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoPC.files.ALL,\nTeamDrive.files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folders/folder_id___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/folders/folder_id",
       "text": "Get Folder Information",
       "category": "Folder API",
@@ -995,9 +995,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folders___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/folders",
       "text": "Create Folder",
       "category": "Folder API",
@@ -1036,9 +1036,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folder/folder_id___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/folder/folder_id",
       "text": "Create Folder within Folder",
       "category": "Folder API",
@@ -1089,9 +1089,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folders/folder_id___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/folders/folder_id",
       "text": "Create Folder with Web URL",
       "category": "Folder API",
@@ -1152,9 +1152,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/folders/folder_id___DELETE": {
+    {
       "provider_alias_intent": "/writer/api/v1/folders/folder_id",
       "text": "Delete Folder",
       "category": "Folder API",
@@ -1199,9 +1199,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/email___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/email",
       "text": "Merge and Email Attachment",
       "category": "Merge API",
@@ -1337,9 +1337,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\n ZohoWriter.merge.ALL ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/webhook___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/webhook",
       "text": "Merge and Deliver via Webhook",
       "category": "Merge API",
@@ -1427,9 +1427,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge",
       "text": "Merge Document",
       "category": "Merge API",
@@ -1529,9 +1529,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/store___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/store",
       "text": "Merge and Store V1 [Deprecated]",
       "category": "Merge API",
@@ -1621,9 +1621,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL, \nWorkDrive.Files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.081Z"
     },
-    "zohowriter__/writer/api/v2/documents/document_id/merge/store___POST": {
+    {
       "provider_alias_intent": "/writer/api/v2/documents/document_id/merge/store",
       "text": "Merge and Store V2",
       "category": "Merge API",
@@ -1713,9 +1713,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL,\nWorkDrive.Files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/sign___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/sign",
       "text": "Merge and Sign",
       "category": "Merge API",
@@ -1838,9 +1838,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL,\nZohoSign.documents.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/execute___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/execute",
       "text": "Merge and Invoke",
       "category": "Merge API",
@@ -1925,9 +1925,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/merge/sharetofill___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/merge/sharetofill",
       "text": "Merge and Share Fillable Link",
       "category": "Merge API",
@@ -2008,9 +2008,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/mergewithpresets___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/mergewithpresets",
       "text": "Merge with Presets",
       "category": "Merge API",
@@ -2093,9 +2093,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/pdf/combine___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/pdf/combine",
       "text": "Combine PDFs",
       "category": "Merge API",
@@ -2144,9 +2144,9 @@
       "response_type": "",
       "scope": "ZohoWriter.documentEditor.ALL,\nZohoWriter.merge.ALL,\nWorkDrive.organization.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/meta___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/meta",
       "text": "Enable/Disable Track Changes",
       "category": "Meta API",
@@ -2197,9 +2197,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/publish___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/publish",
       "text": "Publish Specific Document Version",
       "category": "Publish API",
@@ -2259,9 +2259,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/publish___DELETE": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/publish",
       "text": "Unpublish Document",
       "category": "Publish API",
@@ -2306,9 +2306,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/apps/blog/wordpress/accounts___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/apps/blog/wordpress/accounts",
       "text": "Get WordPress Accounts",
       "category": "Publish API",
@@ -2341,9 +2341,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/apps/blog/wordpress/accounts/account_id/blogs/site_id___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/apps/blog/wordpress/accounts/account_id/blogs/site_id",
       "text": "Post to WordPress",
       "category": "Publish API",
@@ -2430,9 +2430,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/apps/blog/blogger/accounts___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/apps/blog/blogger/accounts",
       "text": "Get Blogger Accounts",
       "category": "Publish API",
@@ -2465,9 +2465,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/apps/blog/blogger/accounts/account_id/blogs___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/apps/blog/blogger/accounts/account_id/blogs",
       "text": "Get Blogs List in Blogger",
       "category": "Publish API",
@@ -2512,9 +2512,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/documents/document_id/apps/blog/blogger/accounts/account_id/blogs/blog_id___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/documents/document_id/apps/blog/blogger/accounts/account_id/blogs/blog_id",
       "text": "Post to Blogger",
       "category": "Publish API",
@@ -2597,9 +2597,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/templates___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates",
       "text": "Get List of Templates",
       "category": "Template API",
@@ -2649,9 +2649,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/templates___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates",
       "text": "Create Template through Web URL",
       "category": "Template API",
@@ -2702,9 +2702,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/templates/template_id___GET": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates/template_id",
       "text": "Get Template Details",
       "category": "Template API",
@@ -2749,9 +2749,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/templates/template_id/copy___POST": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates/template_id/copy",
       "text": "Copy Template",
       "category": "Template API",
@@ -2805,9 +2805,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     },
-    "zohowriter__/writer/api/v1/templates/template_id/delete___DELETE": {
+    {
       "provider_alias_intent": "/writer/api/v1/templates/template_id/delete",
       "text": "Delete Template",
       "category": "Template API",
@@ -2852,7 +2852,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.147Z"
+      "updated_at": "2025-11-11T15:37:36.082Z"
     }
-  }
+  ]
 }

@@ -42,8 +42,8 @@
     "total_api": 49,
     "credential_link": "https://www.name.com/account/settings/api"
   },
-  "routes": {
-    "name__/v4/domains/domainname/records___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v4/domains/domainname/records",
       "text": "List all the domain records",
       "category": "DNS",
@@ -88,9 +88,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/records/id___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/records/id",
       "text": "Get Individual record details",
       "category": "DNS",
@@ -135,9 +135,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/records___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/records",
       "text": "Creates new record of the domain",
       "category": "DNS",
@@ -199,9 +199,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/records/id___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/records/id",
       "text": "Replace old record with new",
       "category": "DNS",
@@ -275,9 +275,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/records/id___DELETE": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/records/id",
       "text": "Delete domain record from zone",
       "category": "DNS",
@@ -322,9 +322,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/dnssec___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/dnssec",
       "text": "DNSSEC keys listed by registry",
       "category": "DNSSEC ",
@@ -361,9 +361,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/dnssec/digest___GET": {
+    {
       "provider_alias_intent": "/v4/domains/dnssec/digest",
       "text": "Retrieve registered key details from registry",
       "category": "DNSSEC ",
@@ -408,9 +408,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/dnssec___POST": {
+    {
       "provider_alias_intent": "/v4/domains/dnssec",
       "text": "DNSSEC key registration with registry",
       "category": "DNSSEC ",
@@ -464,9 +464,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/dnssec/digest___DELETE": {
+    {
       "provider_alias_intent": "/v4/domains/dnssec/digest",
       "text": "DNSSEC key removal from registry",
       "category": "DNSSEC ",
@@ -511,9 +511,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains___POST": {
+    {
       "provider_alias_intent": "/v4/domains",
       "text": "Buy a new domain",
       "category": "Domain",
@@ -560,9 +560,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains-checkavailability___POST": {
+    {
       "provider_alias_intent": "/v4/domains-checkavailability",
       "text": "Domain availability check for purchase",
       "category": "Domain",
@@ -599,9 +599,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains-search___POST": {
+    {
       "provider_alias_intent": "/v4/domains-search",
       "text": "Search domain name",
       "category": "Domain",
@@ -639,9 +639,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-getpricing___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-getpricing",
       "text": "Get price of the domain",
       "category": "Domain",
@@ -684,9 +684,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains___GET": {
+    {
       "provider_alias_intent": "/v4/domains",
       "text": "User-owned domain list API",
       "category": "Domain",
@@ -722,9 +722,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname",
       "text": "Get details about a specific domain",
       "category": "Domain",
@@ -763,9 +763,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-enablewhoisprivacy___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-enablewhoisprivacy",
       "text": "Enables the domain to be private",
       "category": "Domain",
@@ -804,9 +804,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-disablewhoisprivacy___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-disablewhoisprivacy",
       "text": "Disables domain privacy",
       "category": "Domain",
@@ -845,9 +845,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-enableautorenew___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-enableautorenew",
       "text": "Automated domain renewal enabled",
       "category": "Domain",
@@ -886,9 +886,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-disableautorenew___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-disableautorenew",
       "text": "Disables automatic renewals",
       "category": "Domain",
@@ -927,9 +927,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-renew___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-renew",
       "text": "Renew a domain",
       "category": "Domain",
@@ -982,9 +982,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-getauthcode___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-getauthcode",
       "text": "Domain Transfer Authorization Code Retrieval",
       "category": "Domain",
@@ -1021,9 +1021,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-purchaseprivacy___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-purchaseprivacy",
       "text": "Add Privacy protection to a domain",
       "category": "Domain",
@@ -1074,9 +1074,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-setnameservers___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-setnameservers",
       "text": "Set the nameservers for the Domain",
       "category": "Domain",
@@ -1118,9 +1118,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-setcontacts___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-setcontacts",
       "text": "Set the contacts for the Domain",
       "category": "Domain",
@@ -1163,9 +1163,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-lock___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-lock",
       "text": "Lock a domain",
       "category": "Domain",
@@ -1202,9 +1202,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname-unlock___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname-unlock",
       "text": "Unlock a domain",
       "category": "Domain",
@@ -1241,9 +1241,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains-searchstream___POST": {
+    {
       "provider_alias_intent": "/v4/domains-searchstream",
       "text": "Return JSON-encoded SearchResults from registry",
       "category": "Domain",
@@ -1290,9 +1290,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/email/forwarding___GET": {
+    {
       "provider_alias_intent": "/v4/domains/email/forwarding",
       "text": "List paginated email forwarding entries",
       "category": "EmailForwarding ",
@@ -1345,9 +1345,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/email/forwarding/emailbox___GET": {
+    {
       "provider_alias_intent": "/v4/domains/email/forwarding/emailbox",
       "text": "Email forwarding entry returned by GetEmailForwarding",
       "category": "EmailForwarding ",
@@ -1392,9 +1392,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/email/forwarding___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/email/forwarding",
       "text": "Creates an email forwarding entry",
       "category": "EmailForwarding ",
@@ -1440,9 +1440,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/email/forwarding/emailbox___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/email/forwarding/emailbox",
       "text": "UpdateEmailForwarding changes forwarded email address",
       "category": "EmailForwarding ",
@@ -1491,9 +1491,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/email/forwarding/emailbox___DELETE": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/email/forwarding/emailbox",
       "text": "Deletes email forwarding entry",
       "category": "EmailForwarding ",
@@ -1538,9 +1538,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/hello___GET": {
+    {
       "provider_alias_intent": "/v4/hello",
       "text": "Returns some information about the API server",
       "category": "Hello",
@@ -1567,9 +1567,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/orders___GET": {
+    {
       "provider_alias_intent": "/v4/orders",
       "text": "Retrieve account's orders with ListOrders",
       "category": "Order",
@@ -1605,9 +1605,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/ordersorderid___GET": {
+    {
       "provider_alias_intent": "/v4/ordersorderid",
       "text": "Order details retrieval using GetOrder",
       "category": "Order",
@@ -1644,9 +1644,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.751Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/transfers___GET": {
+    {
       "provider_alias_intent": "/v4/transfers",
       "text": "Pending transfer requests listed by ListTransfers",
       "category": "Transfer",
@@ -1682,9 +1682,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/transfers/domainname___GET": {
+    {
       "provider_alias_intent": "/v4/transfers/domainname",
       "text": "GetTransfer gets details for a transfer request",
       "category": "Transfer",
@@ -1721,9 +1721,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/transfers___POST": {
+    {
       "provider_alias_intent": "/v4/transfers",
       "text": "Purchases a new domain transfer request",
       "category": "Transfer",
@@ -1775,9 +1775,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/transfers/domainname-cancel___POST": {
+    {
       "provider_alias_intent": "/v4/transfers/domainname-cancel",
       "text": "Refunds and cancels pending transfer",
       "category": "Transfer",
@@ -1814,9 +1814,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/url/forwarding___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/url/forwarding",
       "text": "Paginated URL forwarding entries for domain",
       "category": "URLForwarding",
@@ -1861,9 +1861,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/url/forwarding/host___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/url/forwarding/host",
       "text": "Returns an URL forwarding entry",
       "category": "URLForwarding",
@@ -1908,9 +1908,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/url/forwarding___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/url/forwarding",
       "text": "Create URL Forwarding Entry",
       "category": "URLForwarding",
@@ -1973,9 +1973,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/url/forwarding/host___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/url/forwarding/host",
       "text": "Update URL Forwarding for Host",
       "category": "URLForwarding",
@@ -2039,9 +2039,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/url/forwarding/host___DELETE": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/url/forwarding/host",
       "text": "Deletes the URL forwarding entry",
       "category": "URLForwarding",
@@ -2086,9 +2086,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/vanity_nameservers___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/vanity_nameservers",
       "text": "List registered nameservers with the registry",
       "category": "VanityNameserver",
@@ -2133,9 +2133,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/vanity_nameservers/hostname___GET": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/vanity_nameservers/hostname",
       "text": "Retrieve details of registered vanity nameserver",
       "category": "VanityNameserver",
@@ -2180,9 +2180,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/vanity_nameservers___POST": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/vanity_nameservers",
       "text": "Register nameserver with the registry",
       "category": "VanityNameserver",
@@ -2228,9 +2228,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/vanity_nameservers/hostname___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/vanity_nameservers/hostname",
       "text": "Update glue record IP addresses at the registry",
       "category": "VanityNameserver",
@@ -2277,9 +2277,9 @@
       },
       "auth": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     },
-    "name__/v4/domains/domainname/vanity_nameservers/hostname___DELETE": {
+    {
       "provider_alias_intent": "/v4/domains/domainname/vanity_nameservers/hostname",
       "text": "Unregister nameserver from registry",
       "category": "VanityNameserver",
@@ -2317,7 +2317,7 @@
       },
       "auth": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.752Z"
+      "updated_at": "2025-11-11T15:37:35.213Z"
     }
-  }
+  ]
 }

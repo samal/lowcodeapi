@@ -76,8 +76,8 @@
     "total_api": 10,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Get Meeting API",
       "category": "Meeting",
@@ -135,9 +135,9 @@
       "scope": "ZohoMeeting.meeting.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/sessions.json___POST": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/sessions.json",
       "text": "Create a Meeting",
       "category": "Meeting",
@@ -190,9 +190,9 @@
       "scope": "ZohoMeeting.meeting.CREATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/sessions.json___GET": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/sessions.json",
       "text": "List of Meeting API",
       "category": "Meeting",
@@ -255,9 +255,9 @@
       "scope": "ZohoMeeting.meeting.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___PUT": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Edit Meeting API",
       "category": "Meeting",
@@ -320,9 +320,9 @@
       "scope": "ZohoMeeting.meeting.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___DELETE": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Delete Meeting API",
       "category": "Meeting",
@@ -380,9 +380,9 @@
       "scope": "ZohoMeeting.meeting.DELETE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/webinar.json___GET": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/webinar.json",
       "text": "List of Webinar API",
       "category": "Webinar",
@@ -430,9 +430,9 @@
       "scope": "ZohoMeeting.webinar.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.058Z"
     },
-    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___GET": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Get Webinar API",
       "category": "Webinar",
@@ -490,9 +490,9 @@
       "scope": "ZohoMeeting.webinar.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.059Z"
     },
-    "zohowebinar__/api/v2/zso_id/webinar.json___POST": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/webinar.json",
       "text": "Create a Webinar",
       "category": "Webinar",
@@ -545,9 +545,9 @@
       "scope": "ZohoMeeting.webinar.CREATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.059Z"
     },
-    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___PUT": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Edit Webinar API",
       "category": "Webinar",
@@ -610,9 +610,9 @@
       "scope": "ZohoMeeting.webinar.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.059Z"
     },
-    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___DELETE": {
+    {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Delete Webinar API",
       "category": "Webinar",
@@ -670,7 +670,7 @@
       "scope": "ZohoMeeting.webinar.DELETE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.139Z"
+      "updated_at": "2025-11-11T15:37:36.059Z"
     }
-  }
+  ]
 }

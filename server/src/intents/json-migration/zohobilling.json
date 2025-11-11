@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "zohobilling__/billing/v1/addons___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/billing/v1/addons",
       "text": "Create an addon",
       "category": "Addons",
@@ -37,9 +37,9 @@
       "scope": "ZohoSubscriptions.addons.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/addons___GET": {
+    {
       "provider_alias_intent": "/billing/v1/addons",
       "text": "List all addons",
       "category": "Addons",
@@ -75,9 +75,9 @@
       "scope": "ZohoSubscriptions.addons.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/addons/email-basic___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/addons/email-basic",
       "text": "Update an addon",
       "category": "Addons",
@@ -113,9 +113,9 @@
       "scope": "ZohoSubscriptions.addons.UPDATE\r\n\r",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/addons/email-basic___GET": {
+    {
       "provider_alias_intent": "/billing/v1/addons/email-basic",
       "text": "Retrieve an addon",
       "category": "Addons",
@@ -151,9 +151,9 @@
       "scope": "ZohoSubscriptions.addons.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/addons/email-basic___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/addons/email-basic",
       "text": "Delete an addon",
       "category": "Addons",
@@ -189,9 +189,9 @@
       "scope": "ZohoSubscriptions.addons.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products/903000000045027/markasactive___POST": {
+    {
       "provider_alias_intent": "/billing/v1/products/903000000045027/markasactive",
       "text": "Mark as active",
       "category": "Products",
@@ -227,9 +227,9 @@
       "scope": "ZohoSubscriptions.products.CREATE\r\n\r",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products/903000000045027/markasinactive___POST": {
+    {
       "provider_alias_intent": "/billing/v1/products/903000000045027/markasinactive",
       "text": "Mark as inactive",
       "category": "Products",
@@ -265,9 +265,9 @@
       "scope": "ZohoSubscriptions.products.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/9030000005664/bankaccounts/90300000079126___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/9030000005664/bankaccounts/90300000079126",
       "text": "Retrieve a bank account information",
       "category": "Bank-Accounts",
@@ -303,9 +303,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/9030000005664/cards/90300000079226___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/9030000005664/cards/90300000079226",
       "text": "Retrieve a credit card information",
       "category": "Cards",
@@ -341,9 +341,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/9030000005664/cards/90300000079226___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/customers/9030000005664/cards/90300000079226",
       "text": "Delete a credit card",
       "category": "Cards",
@@ -379,9 +379,9 @@
       "scope": "ZohoSubscriptions.customers.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/9030000005664/card___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/9030000005664/card",
       "text": "List all Active Credit Cards of a Customer",
       "category": "Cards",
@@ -417,9 +417,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099/contactpersons___POST": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099/contactpersons",
       "text": "Create a contact person",
       "category": "Contact-Persons",
@@ -455,9 +455,9 @@
       "scope": "ZohoSubscriptions.customers.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099/contactpersons___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099/contactpersons",
       "text": "List of all contact persons",
       "category": "Contact-Persons",
@@ -493,9 +493,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099/contactpersons/903000000053362___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099/contactpersons/903000000053362",
       "text": "Update a contact person",
       "category": "Contact-Persons",
@@ -531,9 +531,9 @@
       "scope": "ZohoSubscriptions.customers.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099/contactpersons/903000000053362___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099/contactpersons/903000000053362 ",
       "text": "Retrieve a contact person",
       "category": "Contact-Persons",
@@ -569,9 +569,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099/contactpersons/903000000053362___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099/contactpersons/903000000053362 ",
       "text": "Delete a contact person",
       "category": "Contact-Persons",
@@ -607,9 +607,9 @@
       "scope": "ZohoSubscriptions.customers.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/coupons___POST": {
+    {
       "provider_alias_intent": "/billing/v1/coupons",
       "text": "Create an coupon",
       "category": "Coupons",
@@ -645,9 +645,9 @@
       "scope": "ZohoSubscriptions.coupons.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/coupons___GET": {
+    {
       "provider_alias_intent": "/billing/v1/coupons",
       "text": "List all coupons",
       "category": "Coupons",
@@ -683,9 +683,9 @@
       "scope": "ZohoSubscriptions.coupons.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/coupons/thanksgiving20___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/coupons/thanksgiving20",
       "text": "Update a coupon",
       "category": "Coupons",
@@ -721,9 +721,9 @@
       "scope": "ZohoSubscriptions.coupons.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/coupons/thanksgiving20___GET": {
+    {
       "provider_alias_intent": "/billing/v1/coupons/thanksgiving20",
       "text": "Retrieve a coupon",
       "category": "Coupons",
@@ -759,9 +759,9 @@
       "scope": "ZohoSubscriptions.coupons.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/coupons/thanksgiving20___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/coupons/thanksgiving20",
       "text": "Delete a coupon",
       "category": "Coupons",
@@ -797,9 +797,9 @@
       "scope": "ZohoSubscriptions.coupons.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes",
       "text": "Create a credit note",
       "category": "Credit-Notes",
@@ -835,9 +835,9 @@
       "scope": " ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369___GET": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369",
       "text": "Retreive a credit note",
       "category": "Credit-Notes",
@@ -873,9 +873,9 @@
       "scope": "ZohoSubscriptions.creditnotes.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369",
       "text": "Delete a credit note",
       "category": "Credit-Notes",
@@ -911,9 +911,9 @@
       "scope": "ZohoSubscriptions.creditnotes.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369/email___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369/email",
       "text": "Email a credit note",
       "category": "Credit-Notes",
@@ -949,9 +949,9 @@
       "scope": "ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369/void___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369/void",
       "text": "Void a credit note",
       "category": "Credit-Notes",
@@ -987,9 +987,9 @@
       "scope": "ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369/converttoopen___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369/converttoopen",
       "text": "Open a voided credit note",
       "category": "Credit-Notes",
@@ -1025,9 +1025,9 @@
       "scope": "ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000072369/invoices___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000072369/invoices",
       "text": "Apply Credits to Multiple Invoices",
       "category": "Credit-Notes",
@@ -1063,9 +1063,9 @@
       "scope": "ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers",
       "text": "List all customers",
       "category": "Customers",
@@ -1101,9 +1101,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers___POST": {
+    {
       "provider_alias_intent": "/billing/v1/customers",
       "text": "Create a customer",
       "category": "Customers",
@@ -1139,9 +1139,9 @@
       "scope": "ZohoSubscriptions.customers.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099",
       "text": "Update a customer",
       "category": "Customers",
@@ -1177,9 +1177,9 @@
       "scope": "ZohoSubscriptions.customers.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099",
       "text": "Retrieve a customer",
       "category": "Customers",
@@ -1215,9 +1215,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/903000000000099___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/customers/903000000000099",
       "text": "Delete a customer",
       "category": "Customers",
@@ -1253,9 +1253,9 @@
       "scope": "ZohoSubscriptions.customers.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/customers/reference/903000000021976___GET": {
+    {
       "provider_alias_intent": "/billing/v1/customers/reference/903000000021976",
       "text": "Retrieve a customer Using CRM Reference",
       "category": "Customers",
@@ -1291,9 +1291,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/transactions___GET": {
+    {
       "provider_alias_intent": "/billing/v1/transactions",
       "text": "List of transactions",
       "category": "Customers",
@@ -1329,9 +1329,9 @@
       "scope": "ZohoSubscriptions.customers.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/events___GET": {
+    {
       "provider_alias_intent": "/billing/v1/events",
       "text": "List of events",
       "category": "Events",
@@ -1367,9 +1367,9 @@
       "scope": "ZohoSubscriptions.webhooks.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/events/90300000005337___GET": {
+    {
       "provider_alias_intent": "/billing/v1/events/90300000005337",
       "text": "Retrieve an event",
       "category": "Events",
@@ -1405,9 +1405,9 @@
       "scope": "ZohoSubscriptions.webhooks.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/hostedpages/8c589071e7e26a8d28e8af081c373fb00bd6dc5366fd129eefd5c61c569da526___GET": {
+    {
       "provider_alias_intent": "/billing/v1/hostedpages/8c589071e7e26a8d28e8af081c373fb00bd6dc5366fd129eefd5c61c569da526",
       "text": "Retrieve a hosted page",
       "category": "Hosted-Pages",
@@ -1443,9 +1443,9 @@
       "scope": "ZohoSubscriptions.hostedpages.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/hostedpages___GET": {
+    {
       "provider_alias_intent": "/billing/v1/hostedpages",
       "text": "List of HostedPages",
       "category": "Hosted-Pages",
@@ -1481,9 +1481,9 @@
       "scope": "ZohoSubscriptions.hostedpages.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/hostedpages/newsubscription___POST": {
+    {
       "provider_alias_intent": "/billing/v1/hostedpages/newsubscription",
       "text": "Create a subscription",
       "category": "Hosted-Pages",
@@ -1519,9 +1519,9 @@
       "scope": "ZohoSubscriptions.hostedpages.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200",
       "text": "Update a subscription",
       "category": "Subscriptions\r",
@@ -1557,9 +1557,9 @@
       "scope": "ZohoSubscriptions.subscriptions.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/hostedpages/updatecard___POST": {
+    {
       "provider_alias_intent": "/billing/v1/hostedpages/updatecard",
       "text": "Update card for a subscription",
       "category": "Hosted-Pages",
@@ -1595,9 +1595,9 @@
       "scope": "ZohoSubscriptions.hostedpages.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/hostedpages/buyonetimeaddon___POST": {
+    {
       "provider_alias_intent": "/billing/v1/hostedpages/buyonetimeaddon",
       "text": "Buy one-time addon for a subscription",
       "category": "Hosted-Pages",
@@ -1633,9 +1633,9 @@
       "scope": "ZohoSubscriptions.hostedpages.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices___GET": {
+    {
       "provider_alias_intent": "/billing/v1/invoices",
       "text": "List all invoices",
       "category": "Invoices",
@@ -1671,9 +1671,9 @@
       "scope": "ZohoSubscriptions.invoices.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426___GET": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426",
       "text": "Retrieve an invoice",
       "category": "Invoices",
@@ -1709,9 +1709,9 @@
       "scope": "ZohoSubscriptions.invoices.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/converttoopen___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/converttoopen",
       "text": "Convert to open",
       "category": "Invoices",
@@ -1747,9 +1747,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/982000000567114/status/void___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/982000000567114/status/void",
       "text": "Void an invoice",
       "category": "Invoices",
@@ -1785,9 +1785,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/email___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/email",
       "text": "Email an invoice",
       "category": "Invoices",
@@ -1823,9 +1823,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/collect___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/collect ",
       "text": "Collect charge via bank account / credit card",
       "category": "Invoices",
@@ -1861,9 +1861,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/writeoff___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/writeoff",
       "text": "Write off",
       "category": "Invoices",
@@ -1899,9 +1899,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/address___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/address",
       "text": "Update address",
       "category": "Invoices",
@@ -1937,9 +1937,9 @@
       "scope": "ZohoSubscriptions.invoices.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/customfields___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/customfields",
       "text": "Update Custom Fields",
       "category": "Subscriptions\r",
@@ -1975,9 +1975,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/credits___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/credits",
       "text": "Apply Multiple Credits to Invoice",
       "category": "Invoices",
@@ -2013,9 +2013,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/lineitems___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/lineitems",
       "text": "Add items to a pending invoice",
       "category": "Invoices",
@@ -2051,9 +2051,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/lineitems/7000000079434___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/lineitems/7000000079434",
       "text": "Delete items from a pending invoice",
       "category": "Invoices",
@@ -2089,9 +2089,9 @@
       "scope": "ZohoSubscriptions.invoices.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/903000000079426/attachment___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/903000000079426/attachment",
       "text": "Add attachment to an invoice",
       "category": "Invoices",
@@ -2127,9 +2127,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/invoices/982000000567114/writeoff/cancel___POST": {
+    {
       "provider_alias_intent": "/billing/v1/invoices/982000000567114/writeoff/cancel",
       "text": "Cancel write off",
       "category": "Invoices",
@@ -2165,9 +2165,9 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/payments___POST": {
+    {
       "provider_alias_intent": "/billing/v1/payments",
       "text": "Create a payment",
       "category": "Payments",
@@ -2203,9 +2203,9 @@
       "scope": "ZohoSubscriptions.payments.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/payments/9030000079467___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/payments/9030000079467",
       "text": "Update a payment",
       "category": "Payments",
@@ -2241,9 +2241,9 @@
       "scope": "ZohoSubscriptions.payments.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/payments/9030000079467___GET": {
+    {
       "provider_alias_intent": "/billing/v1/payments/9030000079467",
       "text": "Retrieve a payment",
       "category": "Payments",
@@ -2279,9 +2279,9 @@
       "scope": "ZohoSubscriptions.payments.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/payments/9030000079467___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/payments/9030000079467",
       "text": "Delete a payment",
       "category": "Payments",
@@ -2317,9 +2317,9 @@
       "scope": "ZohoSubscriptions.payments.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/plans___POST": {
+    {
       "provider_alias_intent": "/billing/v1/plans",
       "text": "Create a plan",
       "category": "Plans",
@@ -2355,9 +2355,9 @@
       "scope": "ZohoSubscriptions.plans.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/plans___GET": {
+    {
       "provider_alias_intent": "/billing/v1/plans",
       "text": "List all plans",
       "category": "Plans",
@@ -2393,9 +2393,9 @@
       "scope": "ZohoSubscriptions.plans.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/plans/basic-monthly___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/plans/basic-monthly",
       "text": "Update a plan",
       "category": "Plans",
@@ -2431,9 +2431,9 @@
       "scope": "ZohoSubscriptions.plans.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/plans/basic-monthly___GET": {
+    {
       "provider_alias_intent": "/billing/v1/plans/basic-monthly",
       "text": "Retrieve a plan",
       "category": "Plans",
@@ -2469,9 +2469,9 @@
       "scope": "ZohoSubscriptions.plans.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/plans/basic-monthly___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/plans/basic-monthly",
       "text": "Delete a plan",
       "category": "Plans",
@@ -2507,9 +2507,9 @@
       "scope": "ZohoSubscriptions.plans.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products___GET": {
+    {
       "provider_alias_intent": "/billing/v1/products",
       "text": "List of all products",
       "category": "Products",
@@ -2545,9 +2545,9 @@
       "scope": "ZohoSubscriptions.products.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products___POST": {
+    {
       "provider_alias_intent": "/billing/v1/products ",
       "text": "Create a product",
       "category": "Products",
@@ -2583,9 +2583,9 @@
       "scope": "ZohoSubscriptions.products.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products/903000000045027___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/products/903000000045027",
       "text": "Update a product",
       "category": "Products",
@@ -2621,9 +2621,9 @@
       "scope": "ZohoSubscriptions.products.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products/903000000045027___GET": {
+    {
       "provider_alias_intent": "/billing/v1/products/903000000045027",
       "text": "Retrieve a product",
       "category": "Products",
@@ -2659,9 +2659,9 @@
       "scope": "ZohoSubscriptions.products.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/products/903000000045027___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/products/903000000045027",
       "text": "Delete a product",
       "category": "Products",
@@ -2697,9 +2697,9 @@
       "scope": "ZohoSubscriptions.products.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects",
       "text": "Create a project",
       "category": "Projects",
@@ -2735,9 +2735,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects",
       "text": "List projects",
       "category": "Projects",
@@ -2773,9 +2773,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019",
       "text": "Update a project",
       "category": "Projects",
@@ -2811,9 +2811,9 @@
       "scope": "ZohoSubscriptions.projects.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019",
       "text": "Get a project",
       "category": "Projects",
@@ -2849,9 +2849,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019",
       "text": "Delete project",
       "category": "Projects",
@@ -2887,9 +2887,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/active___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/active",
       "text": "Activate a project",
       "category": "Projects",
@@ -2925,9 +2925,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/inactive___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/inactive",
       "text": "Deactivate a project",
       "category": "Projects",
@@ -2963,9 +2963,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.946Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/clone___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/clone",
       "text": "Clone a project",
       "category": "Projects",
@@ -3001,9 +3001,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users",
       "text": "Assign users",
       "category": "Projects",
@@ -3039,9 +3039,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users",
       "text": "List Users",
       "category": "Projects",
@@ -3077,9 +3077,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users/invite___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users/invite",
       "text": "Invite user",
       "category": "Projects",
@@ -3115,9 +3115,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users/460000000024003___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users/460000000024003",
       "text": "Update user",
       "category": "Projects",
@@ -3153,9 +3153,9 @@
       "scope": "ZohoSubscriptions.projects.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users/460000000024003___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users/460000000024003",
       "text": "Get a User",
       "category": "Projects",
@@ -3191,9 +3191,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/users/460000000024003___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/users/460000000024003",
       "text": "Delete user",
       "category": "Projects",
@@ -3229,9 +3229,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/comments___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/comments",
       "text": "Post comment",
       "category": "Projects",
@@ -3267,9 +3267,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/comments___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/comments",
       "text": "List comments",
       "category": "Projects",
@@ -3305,9 +3305,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/comments/460000000044027___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/comments/460000000044027",
       "text": "Delete comment",
       "category": "Projects",
@@ -3343,9 +3343,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/460000000044019/invoices___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/460000000044019/invoices",
       "text": "List invoices",
       "category": "Projects",
@@ -3381,9 +3381,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/90300000081375/refunds___POST": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/90300000081375/refunds",
       "text": "Refund a credit note",
       "category": "Refunds",
@@ -3419,9 +3419,9 @@
       "scope": "ZohoSubscriptions.creditnotes.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/payments//refunds___POST": {
+    {
       "provider_alias_intent": "/billing/v1/payments//refunds",
       "text": "Refund a payment",
       "category": "Refunds",
@@ -3457,9 +3457,9 @@
       "scope": "ZohoSubscriptions.payments.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/creditnotes/refunds/90300000081385___GET": {
+    {
       "provider_alias_intent": "/billing/v1/creditnotes/refunds/90300000081385",
       "text": "Retrieve refund details",
       "category": "Refunds",
@@ -3495,9 +3495,9 @@
       "scope": "ZohoSubscriptions.creditnotes.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/settings/taxes___GET": {
+    {
       "provider_alias_intent": "/billing/v1/settings/taxes",
       "text": "Retrieve list of taxes",
       "category": "Settings",
@@ -3533,9 +3533,9 @@
       "scope": "ZohoSubscriptions.settings.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/settings/taxexemptions___GET": {
+    {
       "provider_alias_intent": "/billing/v1/settings/taxexemptions",
       "text": "Retrieve list of tax Exemptions",
       "category": "Settings",
@@ -3571,9 +3571,9 @@
       "scope": "ZohoSubscriptions.settings.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/settings/taxauthorities___GET": {
+    {
       "provider_alias_intent": "/billing/v1/settings/taxauthorities",
       "text": "Retrieve list of tax Authorities",
       "category": "Settings",
@@ -3609,9 +3609,9 @@
       "scope": "ZohoSubscriptions.settings.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/settings/preferences/churnmessages___GET": {
+    {
       "provider_alias_intent": "/billing/v1/settings/preferences/churnmessages",
       "text": "Retrieve Churn Message preferences",
       "category": "Settings",
@@ -3647,9 +3647,9 @@
       "scope": "ZohoSubscriptions.settings.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions",
       "text": "Create a subscription",
       "category": "Subscriptions\r",
@@ -3685,9 +3685,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions___GET": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions",
       "text": "List all subscriptions",
       "category": "Subscriptions\r",
@@ -3723,9 +3723,9 @@
       "scope": "ZohoSubscriptions.subscriptions.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200___GET": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200",
       "text": "Retrieve a subscription",
       "category": "Subscriptions\r",
@@ -3761,9 +3761,9 @@
       "scope": "ZohoSubscriptions.subscriptions.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200",
       "text": "Delete a subscription",
       "category": "Subscriptions\r",
@@ -3799,9 +3799,9 @@
       "scope": "ZohoSubscriptions.subscriptions.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/cancel___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/cancel",
       "text": "Cancel a subscription",
       "category": "Subscriptions\r",
@@ -3837,9 +3837,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/reactivate___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/reactivate",
       "text": "Reactivate subscription",
       "category": "Subscriptions\r",
@@ -3875,9 +3875,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/scheduledchanges___GET": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/scheduledchanges",
       "text": "View Scheduled Changes",
       "category": "Subscriptions\r",
@@ -3913,9 +3913,9 @@
       "scope": "ZohoSubscriptions.subscriptions.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/recentactivities___GET": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/recentactivities",
       "text": "Subscription Activities",
       "category": "Subscriptions\r",
@@ -3951,9 +3951,9 @@
       "scope": "ZohoSubscriptions.subscriptions.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/buyonetimeaddon___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/buyonetimeaddon",
       "text": "Buy one-time addon",
       "category": "Subscriptions\r",
@@ -3989,9 +3989,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/coupons/flat10___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/coupons/flat10",
       "text": "Associate a coupon",
       "category": "Subscriptions\r",
@@ -4027,9 +4027,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/coupons___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/coupons",
       "text": "Remove a coupon",
       "category": "Subscriptions\r",
@@ -4065,9 +4065,9 @@
       "scope": "ZohoSubscriptions.subscriptions.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/card___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/card",
       "text": "Update Card",
       "category": "Subscriptions\r",
@@ -4103,9 +4103,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/card___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/card",
       "text": "Remove Card",
       "category": "Subscriptions\r",
@@ -4141,9 +4141,9 @@
       "scope": "ZohoSubscriptions.subscriptions.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/charge___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/charge",
       "text": "Add Charge",
       "category": "Subscriptions\r",
@@ -4179,9 +4179,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/contactpersons___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/contactpersons",
       "text": "Add contact person",
       "category": "Subscriptions\r",
@@ -4217,9 +4217,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/postpone___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/postpone ",
       "text": "Postpone renewal",
       "category": "Subscriptions\r",
@@ -4255,9 +4255,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/lineitems/%7bplan_or_addon_code%7d___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/lineitems/%7bplan_or_addon_code%7d",
       "text": "Add/Edit description for a item in line items list",
       "category": "Subscriptions\r",
@@ -4293,9 +4293,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/autocollect___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/autocollect",
       "text": "Change to Online/Offline mode",
       "category": "Subscriptions\r",
@@ -4331,9 +4331,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/reference___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/reference",
       "text": "Update Reference",
       "category": "Subscriptions\r",
@@ -4369,9 +4369,9 @@
       "scope": " ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/salesperson___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/salesperson",
       "text": "Update Sales Person",
       "category": "Subscriptions\r",
@@ -4407,9 +4407,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/notes___POST": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/notes",
       "text": "Add a note",
       "category": "Subscriptions\r",
@@ -4445,9 +4445,9 @@
       "scope": "ZohoSubscriptions.subscriptions.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/subscriptions/90300000079200/notes/903000076543___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/subscriptions/90300000079200/notes/903000076543",
       "text": "Delete a note",
       "category": "Subscriptions\r",
@@ -4483,9 +4483,9 @@
       "scope": "ZohoSubscriptions.subscriptions.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/90300000072369/tasks___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/90300000072369/tasks",
       "text": "Add a task",
       "category": "Tasks",
@@ -4521,9 +4521,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/90300000072369/tasks___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/90300000072369/tasks",
       "text": "List tasks",
       "category": "Tasks",
@@ -4559,9 +4559,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/90300000072369/tasks/90300000072369___PUT": {
+    {
       "provider_alias_intent": "/billing/v1/projects/90300000072369/tasks/90300000072369",
       "text": "Update a task",
       "category": "Tasks",
@@ -4597,9 +4597,9 @@
       "scope": "ZohoSubscriptions.projects.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/90300000072369/tasks/90300000072369___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/90300000072369/tasks/90300000072369",
       "text": "Get a task",
       "category": "Tasks",
@@ -4635,9 +4635,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/90300000072369/tasks/90300000072369___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/90300000072369/tasks/90300000072369",
       "text": "Delete a Task",
       "category": "Tasks",
@@ -4673,9 +4673,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries",
       "text": "Log time entries",
       "category": "Time Entries",
@@ -4711,9 +4711,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries",
       "text": "List time entries.",
       "category": "Time Entries",
@@ -4749,9 +4749,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries",
       "text": "Delete time entries",
       "category": "Time Entries",
@@ -4787,9 +4787,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__com/billing/v1/projects/timeentries/460000000044021___PUT": {
+    {
       "provider_alias_intent": "com/billing/v1/projects/timeentries/460000000044021",
       "text": "Update time entry",
       "category": "Time Entries",
@@ -4825,9 +4825,9 @@
       "scope": "ZohoSubscriptions.projects.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries/460000000044021___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries/460000000044021",
       "text": "Get a time entry",
       "category": "Time Entries",
@@ -4863,9 +4863,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries/460000000044021___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries/460000000044021",
       "text": "Delete time entry",
       "category": "Time Entries",
@@ -4901,9 +4901,9 @@
       "scope": "ZohoSubscriptions.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries/460000000044021/timer/start___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries/460000000044021/timer/start",
       "text": "Start timer",
       "category": "Time Entries",
@@ -4939,9 +4939,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries/timer/stop___POST": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries/timer/stop",
       "text": "Stop timer",
       "category": "Time Entries",
@@ -4977,9 +4977,9 @@
       "scope": "ZohoSubscriptions.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/projects/timeentries/runningtimer/me___GET": {
+    {
       "provider_alias_intent": "/billing/v1/projects/timeentries/runningtimer/me",
       "text": "Get timer",
       "category": "Time Entries",
@@ -5015,9 +5015,9 @@
       "scope": "ZohoSubscriptions.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/unbilledcharges/90300000079200___GET": {
+    {
       "provider_alias_intent": "/billing/v1/unbilledcharges/90300000079200 ",
       "text": "Retrieve an unbilled charge",
       "category": "Unbilled-Charges",
@@ -5053,9 +5053,9 @@
       "scope": "ZohoSubscriptions.invoices.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/unbilledcharges/90300000079200___DELETE": {
+    {
       "provider_alias_intent": "/billing/v1/unbilledcharges/90300000079200",
       "text": "Delete unbilled charge",
       "category": "Unbilled-Charges",
@@ -5091,9 +5091,9 @@
       "scope": "ZohoSubscriptions.invoices.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     },
-    "zohobilling__/billing/v1/unbilledcharges/90300000079200/createinvoice___POST": {
+    {
       "provider_alias_intent": "/billing/v1/unbilledcharges/90300000079200/createinvoice",
       "text": "Convert unbilled charge to invoice",
       "category": "Unbilled-Charges",
@@ -5129,7 +5129,7 @@
       "scope": "ZohoSubscriptions.invoices.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.947Z"
+      "updated_at": "2025-11-11T15:37:35.710Z"
     }
-  }
+  ]
 }

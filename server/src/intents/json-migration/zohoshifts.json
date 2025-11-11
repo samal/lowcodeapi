@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "zohoshifts__/api/v1/org_id/employees___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/org_id/employees",
       "text": "Get all employees",
       "category": "Employees",
@@ -37,9 +37,9 @@
       "scope": "ZohoShifts.employees.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.129Z"
+      "updated_at": "2025-11-11T15:37:36.034Z"
     },
-    "zohoshifts__/api/v1/org_id/timesheets___GET": {
+    {
       "provider_alias_intent": "/api/v1/org_id/timesheets",
       "text": "Get all time entries",
       "category": "Entries",
@@ -75,7 +75,7 @@
       "scope": "ZohoShifts.timesheets.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.129Z"
+      "updated_at": "2025-11-11T15:37:36.034Z"
     }
-  }
+  ]
 }

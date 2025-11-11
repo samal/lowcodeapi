@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "audiostack__https//v2.api.audio/content/file/create-upload-url___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "https//v2.api.audio/content/file/create-upload-url",
       "text": "Creates a url for uploading a new file.",
       "category": "File",
@@ -49,9 +49,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/file/transfer-file___PUT": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/file/transfer-file",
       "text": "Transfers a file created in the audiostack api",
       "category": "File",
@@ -99,9 +99,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/content/file/search___GET": {
+    {
       "provider_alias_intent": "/content/file/search",
       "text": "Search for files.",
       "category": "File",
@@ -154,9 +154,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/file/id/fileid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/file/id/fileid",
       "text": "Get a file object and creates a url for downloading it.",
       "category": "File",
@@ -184,9 +184,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/file/id/fileid___DELETE": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/file/id/fileid",
       "text": "Deletes a file.",
       "category": "File",
@@ -214,9 +214,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/file/id/fileid___PATCH": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/file/id/fileid",
       "text": "Updates a file resource",
       "category": "File",
@@ -265,9 +265,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/folder___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/folder",
       "text": "Creates an empty folder",
       "category": "Folder",
@@ -295,9 +295,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/folder___DELETE": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/folder",
       "text": "Deletes a folder.",
       "category": "Folder",
@@ -330,9 +330,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/content/recommend/tag___POST": {
+    {
       "provider_alias_intent": "/content/recommend/tag",
       "text": "Get recommended tags from user-specified list",
       "category": "Recommend",
@@ -375,9 +375,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/recommend/tone___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/recommend/tone",
       "text": "Get recommended tones",
       "category": "Recommend",
@@ -410,9 +410,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/recommend/mood___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/recommend/mood",
       "text": "Get recommended moods",
       "category": "Recommend",
@@ -445,9 +445,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/content/recommend/iab_category___POST": {
+    {
       "provider_alias_intent": "/content/recommend/iab_category",
       "text": "Get recommended IAB category",
       "category": "Recommend",
@@ -485,9 +485,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script",
       "text": "Create a Script resource.",
       "category": "Script",
@@ -527,9 +527,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script___PUT": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script",
       "text": "Updates a Script resource.",
       "category": "Script",
@@ -566,9 +566,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/content/scripts___GET": {
+    {
       "provider_alias_intent": "/content/scripts",
       "text": "Lists multiple script resources.",
       "category": "Script",
@@ -615,9 +615,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script/scriptid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script/scriptid",
       "text": "Get a single script.",
       "category": "Script",
@@ -654,9 +654,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script/scriptid___DELETE": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script/scriptid",
       "text": "Deletes a script and all its versions (if applicable).",
       "category": "Script",
@@ -684,9 +684,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script/scriptid/version___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script/scriptid/version",
       "text": "Get a single version of a script with a given scriptId.",
       "category": "Script",
@@ -728,9 +728,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/script/scriptid/version___DELETE": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/script/scriptid/version",
       "text": "Deletes a single version of a script.",
       "category": "Script",
@@ -763,9 +763,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/list_projects___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/list_projects",
       "text": "Lists all projects that have been created.",
       "category": "Script",
@@ -787,9 +787,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/generate/advert___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/generate/advert",
       "text": "Generate an advert using AI based on a Productdescription.",
       "category": "Script",
@@ -838,9 +838,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/content/edit/advert___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/content/edit/advert",
       "text": "Edit an advert.",
       "category": "Script",
@@ -898,9 +898,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/voice___GET": {
+    {
       "provider_alias_intent": "/speech/voice",
       "text": "List all available voices.",
       "category": "Voice",
@@ -971,9 +971,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/voice/parameter___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/voice/parameter",
       "text": "Lists voice parameters.",
       "category": "Voice",
@@ -995,9 +995,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/voice/name___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/voice/name",
       "text": "Get data for a single voice.",
       "category": "Voice",
@@ -1025,9 +1025,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/voice/select___POST": {
+    {
       "provider_alias_intent": "/speech/voice/select",
       "text": "Get a voice and speed recommendation for your content.",
       "category": "Voice",
@@ -1071,9 +1071,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/diction/custom/item___PUT": {
+    {
       "provider_alias_intent": "/speech/diction/custom/item",
       "text": "Add word to a custom dictionary",
       "category": "Dictionary",
@@ -1118,9 +1118,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/diction/custom/item___DELETE": {
+    {
       "provider_alias_intent": "/speech/diction/custom/item",
       "text": "Deletes a word from a dictionary.",
       "category": "Dictionary",
@@ -1157,9 +1157,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/diction___GET": {
+    {
       "provider_alias_intent": "/speech/diction",
       "text": "List dictionaries",
       "category": "Dictionary",
@@ -1181,9 +1181,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/diction/custom___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/diction/custom",
       "text": "List dictionaries",
       "category": "Dictionary",
@@ -1205,9 +1205,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.052Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/diction/custom/items___GET": {
+    {
       "provider_alias_intent": "/speech/diction/custom/items",
       "text": "Lists all words within a custom dictionary.",
       "category": "Dictionary",
@@ -1235,9 +1235,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/predict___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/predict",
       "text": "Predicts the resultant audio length of the given text content read by the supplied voice alias",
       "category": "Predict",
@@ -1270,9 +1270,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/predict/voices___GET": {
+    {
       "provider_alias_intent": "/speech/predict/voices",
       "text": "Lists all voices that can be predict resultant audio length",
       "category": "Predict",
@@ -1294,9 +1294,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/voice-builder___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/voice-builder",
       "text": "Clones a voice from a list of files.",
       "category": "Voice Cloning",
@@ -1342,9 +1342,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/voice-builder___GET": {
+    {
       "provider_alias_intent": "/speech/voice-builder",
       "text": "Lists all Voice Cloning jobs done within your organisation.",
       "category": "Voice Cloning",
@@ -1372,9 +1372,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts",
       "text": "Create a text-to-speech resource.",
       "category": "Speech",
@@ -1438,9 +1438,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts",
       "text": "Lists multiple text-to-speech resources.",
       "category": "Speech",
@@ -1487,9 +1487,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/section___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/section",
       "text": "Create a single section of a text-to-speech resource.",
       "category": "Speech",
@@ -1550,9 +1550,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/preview___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/preview",
       "text": "Create a fast preview of a given voice",
       "category": "Speech",
@@ -1584,9 +1584,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/speechid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/speechid",
       "text": "Retrieve a text-to-speech resource",
       "category": "Speech",
@@ -1614,9 +1614,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/tts/speechid___DELETE": {
+    {
       "provider_alias_intent": "/speech/tts/speechid",
       "text": "Deletes a text-to-speech resource",
       "category": "Speech",
@@ -1644,9 +1644,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/reduce___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/reduce",
       "text": "Reduce length of speech to fit in a target using silence removal and time stretching with pitch preservationReduce length of speech to fit in a target using silence removal and time stretching with pitch preservation.Reduce length of speech to fit in a target using silence removal and time stretching with pitch preservation.",
       "category": "Speech",
@@ -1679,9 +1679,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/remove_padding___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/remove_padding",
       "text": "Remove silence of a file given the parameters below",
       "category": "Speech",
@@ -1721,9 +1721,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/tts/annotate___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/tts/annotate",
       "text": "Returns time annotations for each word",
       "category": "Speech",
@@ -1755,9 +1755,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/sts/voices___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/sts/voices",
       "text": "List available speech-to-speech compatible voices",
       "category": "Speech",
@@ -1779,9 +1779,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/speech/sts___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/speech/sts",
       "text": "Submit a voice recording for speech-to-speech transformation into a different speaker",
       "category": "Speech",
@@ -1818,9 +1818,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/speech/sts/pipelineid___GET": {
+    {
       "provider_alias_intent": "/speech/sts/pipelineid",
       "text": "Get speech-to-speech generation pipeline status updates",
       "category": "Speech",
@@ -1848,9 +1848,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/sound/template___POST": {
+    {
       "provider_alias_intent": "/production/sound/template",
       "text": "Create a sound template resource",
       "category": "Sound Template",
@@ -1886,9 +1886,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/sound/template___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/sound/template",
       "text": "Lists available sound templates",
       "category": "Sound Template",
@@ -1935,9 +1935,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/sound/template/name___DELETE": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/sound/template/name",
       "text": "Deletes a sound template",
       "category": "Sound Template",
@@ -1965,9 +1965,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/sound/parameter___GET": {
+    {
       "provider_alias_intent": "/production/sound/parameter",
       "text": "Lists sound templates parameters",
       "category": "Sound Template",
@@ -1989,9 +1989,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/sound/select___POST": {
+    {
       "provider_alias_intent": "/production/sound/select",
       "text": "Get a Sound Template recommendation for your content",
       "category": "Sound Template",
@@ -2027,9 +2027,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/sound/atmospheres___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/sound/atmospheres",
       "text": "Lists available sound atmospheres",
       "category": "Sound Atmospheres",
@@ -2051,9 +2051,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/sound/segment___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/sound/segment",
       "text": "Adds a sound segment to an existing sound template",
       "category": "Sound Segment",
@@ -2091,9 +2091,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/suite/enhance___POST": {
+    {
       "provider_alias_intent": "/production/suite/enhance",
       "text": "Evaluate and enhance an audio file",
       "category": "Suite",
@@ -2137,9 +2137,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/denoise___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/denoise",
       "text": "Denoise an audio file",
       "category": "Suite",
@@ -2171,9 +2171,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/speed-adjust___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/speed-adjust",
       "text": "Speed up an audio file",
       "category": "Suite",
@@ -2209,9 +2209,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/silence-trim___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/silence-trim",
       "text": "Trim an audio file",
       "category": "Suite",
@@ -2251,9 +2251,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/separate___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/separate",
       "text": "Separate an audio file",
       "category": "Suite",
@@ -2281,9 +2281,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/transcribe___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/transcribe",
       "text": "Transcribe an audio file",
       "category": "Suite",
@@ -2316,9 +2316,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/suite/file_to_video___POST": {
+    {
       "provider_alias_intent": "/production/suite/file_to_video",
       "text": "Create a video",
       "category": "Suite",
@@ -2354,9 +2354,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/pipeline/pipelineid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/pipeline/pipelineid",
       "text": "Retrieve a pipeline resource",
       "category": "Suite",
@@ -2384,9 +2384,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/suite/videopipeline/pipelineid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/suite/videopipeline/pipelineid",
       "text": "Retrieve a video pipeline resource",
       "category": "Suite",
@@ -2414,9 +2414,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/mix___POST": {
+    {
       "provider_alias_intent": "/production/mix",
       "text": "Creates a mix of multiple audio resources",
       "category": "Mixing ",
@@ -2480,9 +2480,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/validate___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/validate",
       "text": "Validates that the requested mastering request is valid",
       "category": "Mixing ",
@@ -2538,9 +2538,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/mixes___GET": {
+    {
       "provider_alias_intent": "/production/mixes",
       "text": "Lists multiple mixed resources",
       "category": "Mixing ",
@@ -2587,9 +2587,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/production/mix/productionid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/production/mix/productionid",
       "text": "Retrieve a mixed resource",
       "category": "Mixing ",
@@ -2617,9 +2617,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/mix/productionid___DELETE": {
+    {
       "provider_alias_intent": "/production/mix/productionid",
       "text": "Deletes a mixed resource",
       "category": "Mixing ",
@@ -2647,9 +2647,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/production/mix/presets___GET": {
+    {
       "provider_alias_intent": "/production/mix/presets",
       "text": "Lists available mastering presets",
       "category": "Mixing ",
@@ -2671,9 +2671,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/delivery/encoder___POST": {
+    {
       "provider_alias_intent": "/delivery/encoder",
       "text": "Changes the audio encoding of a mixed audio file",
       "category": "Encoder",
@@ -2737,9 +2737,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/delivery/encoder/presets___GET": {
+    {
       "provider_alias_intent": "/delivery/encoder/presets",
       "text": "Lists available encoder presets and loudness presets",
       "category": "Encoder",
@@ -2761,9 +2761,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/delivery/video___POST": {
+    {
       "provider_alias_intent": "https//v2.api.audio/delivery/video",
       "text": "Create video",
       "category": "Video",
@@ -2795,9 +2795,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/delivery/connectors/julep___POST": {
+    {
       "provider_alias_intent": "/delivery/connectors/julep",
       "text": "Sends a produced file to Julep connector",
       "category": "Julep",
@@ -2856,9 +2856,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/delivery/connectors/authenticate-julep___PUT": {
+    {
       "provider_alias_intent": "/delivery/connectors/authenticate-julep",
       "text": "Authenticates with Julep",
       "category": "Julep",
@@ -2891,9 +2891,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__/delivery/connectors/status___GET": {
+    {
       "provider_alias_intent": "/delivery/connectors/status",
       "text": "Lists all connected deliveries",
       "category": "Connector",
@@ -2915,9 +2915,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.053Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     },
-    "audiostack__https//v2.api.audio/delivery/connectors/status/deliveryid___GET": {
+    {
       "provider_alias_intent": "https//v2.api.audio/delivery/connectors/status/deliveryid",
       "text": "Get a single delivery",
       "category": "Connector",
@@ -2945,7 +2945,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.054Z"
+      "updated_at": "2025-11-11T15:37:34.796Z"
     }
-  }
+  ]
 }

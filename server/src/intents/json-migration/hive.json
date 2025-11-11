@@ -33,8 +33,8 @@
     "total_api": 14,
     "credential_link": ""
   },
-  "routes": {
-    "hive__/v2/task/sync___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/task/sync",
       "text": "Submit a Task Synchronously",
       "category": "Tasks",
@@ -73,9 +73,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v1/task/async___POST": {
+    {
       "provider_alias_intent": "/v1/task/async",
       "text": "Submit a Task Asynchronously",
       "category": "Tasks",
@@ -122,9 +122,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v1/task___GET": {
+    {
       "provider_alias_intent": "/v1/task",
       "text": "Get Task Summary",
       "category": "Tasks",
@@ -182,9 +182,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v1/task/callback___POST": {
+    {
       "provider_alias_intent": "/v1/task/callback",
       "text": "Trigger a Callback for a Completed Task",
       "category": "Tasks",
@@ -224,9 +224,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v2/stream/frame___POST": {
+    {
       "provider_alias_intent": "/v2/stream/frame",
       "text": "Submit a Stream (Video Frames)",
       "category": "Tasks",
@@ -265,9 +265,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v2/stream/audio___POST": {
+    {
       "provider_alias_intent": "/v2/stream/audio",
       "text": "Submit a Stream (Audio Segments)",
       "category": "Tasks",
@@ -310,9 +310,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v2/stream/cancel___POST": {
+    {
       "provider_alias_intent": "/v2/stream/cancel",
       "text": "Stop a Stream",
       "category": "Tasks",
@@ -343,9 +343,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v2/stream/active___GET": {
+    {
       "provider_alias_intent": "/v2/stream/active",
       "text": "Get All Streams",
       "category": "Tasks",
@@ -371,9 +371,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     },
-    "hive__/v1/feedback_data___POST": {
+    {
       "provider_alias_intent": "/v1/feedback_data",
       "text": "Send Feedback",
       "category": "Tasks",
@@ -412,7 +412,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.433Z"
+      "updated_at": "2025-11-11T15:37:35.068Z"
     }
-  }
+  ]
 }

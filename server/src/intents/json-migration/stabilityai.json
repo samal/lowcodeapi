@@ -33,8 +33,8 @@
     "total_api": 35,
     "credential_link": "https://next.platform.stability.ai/account/keys"
   },
-  "routes": {
-    "stabilityai__/v1/engines/list___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/engines/list",
       "text": "List all engines available to your organization/user",
       "category": "Engines/list",
@@ -62,9 +62,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/generation/engine_id/image-to-image___POST": {
+    {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image",
       "text": "Modify an image based on a text prompt",
       "category": "Generation/image-to-image",
@@ -207,9 +207,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/generation/engine_id/image-to-image/masking___POST": {
+    {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image/masking",
       "text": "Selectively modify portions of an image using a mask",
       "category": "Generation/image-to-image/masking",
@@ -347,9 +347,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/generation/engine_id/image-to-image/upscale___POST": {
+    {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image/upscale",
       "text": "Create a higher resolution version of an input image.",
       "category": "Generation/image-to-image/upscale",
@@ -403,9 +403,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/generation/engine_id/text-to-image___POST": {
+    {
       "provider_alias_intent": "/v1/generation/engine_id/text-to-image",
       "text": "Generate a new image from a text prompt",
       "category": "Generation/text-to-image",
@@ -531,9 +531,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/user/account___GET": {
+    {
       "provider_alias_intent": "/v1/user/account",
       "text": "Get information about the account associated with the provided API key",
       "category": "User/account",
@@ -561,9 +561,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     },
-    "stabilityai__/v1/user/balance___GET": {
+    {
       "provider_alias_intent": "/v1/user/balance",
       "text": "Get the credit balance of the account/organization associated with the API key",
       "category": "User/balance",
@@ -591,7 +591,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.876Z"
+      "updated_at": "2025-11-11T15:37:35.506Z"
     }
-  }
+  ]
 }

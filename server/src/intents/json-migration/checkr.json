@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "checkr__/v1/account___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/account",
       "text": "Retrieve authenticated account details",
       "category": "Account",
@@ -28,9 +28,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.095Z"
+      "updated_at": "2025-11-11T15:37:34.825Z"
     },
-    "checkr__/v1/hierarchy/status___GET": {
+    {
       "provider_alias_intent": "/v1/hierarchy/status",
       "text": "Retrieve Hierarchy update status",
       "category": "Hierarchy (Enabled by request)",
@@ -57,9 +57,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.095Z"
+      "updated_at": "2025-11-11T15:37:34.825Z"
     },
-    "checkr__/v1/users___GET": {
+    {
       "provider_alias_intent": "/v1/users",
       "text": "List existing Users",
       "category": "Users",
@@ -86,7 +86,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.095Z"
+      "updated_at": "2025-11-11T15:37:34.825Z"
     }
-  }
+  ]
 }

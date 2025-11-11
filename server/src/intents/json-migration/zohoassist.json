@@ -76,8 +76,8 @@
     "total_api": 13,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoassist__/api/v2/devices/resource_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v2/devices/resource_id",
       "text": "Get Device Details",
       "category": "Computers",
@@ -112,9 +112,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.computer.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/devices___GET": {
+    {
       "provider_alias_intent": "/api/v2/devices",
       "text": "Get Unattended Computer",
       "category": "Computers",
@@ -258,9 +258,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.computer.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/devices/resource_id___PUT": {
+    {
       "provider_alias_intent": "/api/v2/devices/resource_id",
       "text": "Update Unattended Computer",
       "category": "Computers",
@@ -301,9 +301,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.computer.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/devices/resource_id___DELETE": {
+    {
       "provider_alias_intent": "/api/v2/devices/resource_id",
       "text": "Delete Unattended Computer",
       "category": "Computers",
@@ -338,9 +338,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.computer.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/unattended_computer/group___GET": {
+    {
       "provider_alias_intent": "/api/v2/unattended_computer/group",
       "text": "Get Unattended Groups",
       "category": "Groups",
@@ -385,9 +385,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.group.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/unattended_computer/group___POST": {
+    {
       "provider_alias_intent": "/api/v2/unattended_computer/group",
       "text": "Create Unattended Groups",
       "category": "Groups",
@@ -442,9 +442,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.group.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/unattended_computer/group___PUT": {
+    {
       "provider_alias_intent": "/api/v2/unattended_computer/group",
       "text": "Update Unattended Groups",
       "category": "Groups",
@@ -510,9 +510,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.group.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/unattended_computer/group___DELETE": {
+    {
       "provider_alias_intent": "/api/v2/unattended_computer/group",
       "text": "Delete Unattended Groups",
       "category": "Groups",
@@ -558,9 +558,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.group.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/reports___GET": {
+    {
       "provider_alias_intent": "/api/v2/reports",
       "text": "Get Session Reports",
       "category": "Reports",
@@ -623,9 +623,9 @@
       "response_type": "",
       "scope": "ZohoAssist.reportapi.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/session___POST": {
+    {
       "provider_alias_intent": "/api/v2/session",
       "text": "Create a session",
       "category": "Session",
@@ -669,9 +669,9 @@
       "response_type": "",
       "scope": "ZohoAssist.sessionapi.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/session/schedule___POST": {
+    {
       "provider_alias_intent": "/api/v2/session/schedule",
       "text": "Schedule Session",
       "category": "Session",
@@ -751,9 +751,9 @@
       "response_type": "",
       "scope": "ZohoAssist.sessionapi.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/unattended/resource_id/connect___POST": {
+    {
       "provider_alias_intent": "/api/v2/unattended/resource_id/connect",
       "text": "Unattended Session",
       "category": "Session",
@@ -814,9 +814,9 @@
       "response_type": "",
       "scope": "ZohoAssist.unattended.device.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     },
-    "zohoassist__/api/v2/user___GET": {
+    {
       "provider_alias_intent": "/api/v2/user",
       "text": "Get User Info",
       "category": "Users",
@@ -851,7 +851,7 @@
       "response_type": "",
       "scope": "ZohoAssist.userapi.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.944Z"
+      "updated_at": "2025-11-11T15:37:35.697Z"
     }
-  }
+  ]
 }

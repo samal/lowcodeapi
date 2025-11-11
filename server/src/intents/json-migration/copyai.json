@@ -33,8 +33,8 @@
     "total_api": 7,
     "credential_link": ""
   },
-  "routes": {
-    "copyai__/webhook___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/webhook",
       "text": "Register Webhook",
       "category": "Webhooks",
@@ -71,9 +71,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/webhook/webhook_id___GET": {
+    {
       "provider_alias_intent": "/webhook/webhook_id",
       "text": "Get Webhook",
       "category": "Webhooks",
@@ -107,9 +107,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/webhook___GET": {
+    {
       "provider_alias_intent": "/webhook",
       "text": "Get All Webhooks",
       "category": "Webhooks",
@@ -140,9 +140,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/webhook/webhook_id___DELETE": {
+    {
       "provider_alias_intent": "/webhook/webhook_id",
       "text": "Remove Webhook",
       "category": "Webhooks",
@@ -176,9 +176,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/workflow/workflow_id/run___POST": {
+    {
       "provider_alias_intent": "/workflow/workflow_id/run",
       "text": "Start a Workflow Run",
       "category": "Workflow Runs",
@@ -222,9 +222,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/workflow/workflow_id/run/run_id___GET": {
+    {
       "provider_alias_intent": "/workflow/workflow_id/run/run_id",
       "text": "Get Workflow Run",
       "category": "Workflow Runs",
@@ -268,9 +268,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     },
-    "copyai__/workflow/workflow_id/run___GET": {
+    {
       "provider_alias_intent": "/workflow/workflow_id/run",
       "text": "Get All Workflow Runs",
       "category": "Workflow Runs",
@@ -312,7 +312,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.138Z"
+      "updated_at": "2025-11-11T15:37:34.842Z"
     }
-  }
+  ]
 }

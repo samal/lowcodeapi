@@ -76,8 +76,8 @@
     "total_api": 61,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoconnect__/pulse/api/addevent___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/pulse/api/addevent",
       "text": "Create Event",
       "category": "Events",
@@ -212,9 +212,9 @@
       "response_type": "",
       "scope": "zohopulse.events.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addeventinvitees___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addeventinvitees",
       "text": "Add Event Attendees",
       "category": "Events",
@@ -268,9 +268,9 @@
       "response_type": "",
       "scope": "zohopulse.events.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addeventreminder___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addeventreminder",
       "text": "Add Event Reminder",
       "category": "Events",
@@ -327,9 +327,9 @@
       "response_type": "",
       "scope": "zohopulse.events.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteevent___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deleteevent",
       "text": "Delete Event",
       "category": "Events",
@@ -374,9 +374,9 @@
       "response_type": "",
       "scope": "zohopulse.events.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/upcomingevents___GET": {
+    {
       "provider_alias_intent": "/pulse/api/upcomingevents",
       "text": "Get upcoming events",
       "category": "Events",
@@ -448,9 +448,9 @@
       "response_type": "",
       "scope": "zohopulse.events.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteeventreminder___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deleteeventreminder",
       "text": "Remove Event Reminder",
       "category": "Events",
@@ -495,9 +495,9 @@
       "response_type": "",
       "scope": "zohopulse.events.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteeventinvitees___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deleteeventinvitees",
       "text": "Removing event attendees",
       "category": "Events",
@@ -550,9 +550,9 @@
       "response_type": "",
       "scope": "zohopulse.events.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updateevent___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updateevent",
       "text": "Update Event",
       "category": "Events",
@@ -696,9 +696,9 @@
       "response_type": "",
       "scope": "zohopulse.events.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/v2/addstream___POST": {
+    {
       "provider_alias_intent": "/pulse/api/v2/addstream",
       "text": "Create an Announcement",
       "category": "Feeds",
@@ -780,9 +780,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addpoll___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addpoll",
       "text": "Creating a Poll",
       "category": "Feeds",
@@ -878,9 +878,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/v1/singlestream___GET": {
+    {
       "provider_alias_intent": "/pulse/api/v1/singlestream",
       "text": "Get Single Feed",
       "category": "Feeds",
@@ -946,9 +946,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/v2/addcomment___POST": {
+    {
       "provider_alias_intent": "/pulse/api/v2/addcomment",
       "text": "Adding a Comment",
       "category": "Feeds",
@@ -1007,9 +1007,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deletestream___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deletestream",
       "text": "Delete a Feed",
       "category": "Feeds",
@@ -1055,9 +1055,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/streams___GET": {
+    {
       "provider_alias_intent": "/pulse/api/streams",
       "text": "Fetch Feeds by ID",
       "category": "Feeds",
@@ -1111,9 +1111,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/v1/recentstreams___GET": {
+    {
       "provider_alias_intent": "/pulse/api/v1/recentstreams",
       "text": "Get feeds from My Feed",
       "category": "Feeds",
@@ -1170,9 +1170,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/latestpartitioncomments___GET": {
+    {
       "provider_alias_intent": "/pulse/api/latestpartitioncomments",
       "text": "Get Latest Comment",
       "category": "Feeds",
@@ -1223,9 +1223,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/latestpartitionstreams___GET": {
+    {
       "provider_alias_intent": "/pulse/api/latestpartitionstreams",
       "text": "Get Latest Group Feeds",
       "category": "Feeds",
@@ -1276,9 +1276,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.003Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/getlateststreams___GET": {
+    {
       "provider_alias_intent": "/pulse/api/getlateststreams",
       "text": "Get My Feed & Group Feed",
       "category": "Feeds",
@@ -1336,9 +1336,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/votedmembers___POST": {
+    {
       "provider_alias_intent": "/pulse/api/votedmembers",
       "text": "Get poll results",
       "category": "Feeds",
@@ -1388,9 +1388,9 @@
       "response_type": "",
       "scope": "zohopulse.feedList.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updatestream___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updatestream",
       "text": "Update Feed & Poll Preferences",
       "category": "Feeds",
@@ -1537,9 +1537,9 @@
       "response_type": "",
       "scope": "zohopulse.feedlist.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addblog___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addblog",
       "text": "Create a Forum Post",
       "category": "Forums",
@@ -1604,9 +1604,9 @@
       "response_type": "",
       "scope": "zohopulse.blogs.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/recentblogs___GET": {
+    {
       "provider_alias_intent": "/pulse/api/recentblogs",
       "text": "Get Recent Forums",
       "category": "Forums",
@@ -1667,9 +1667,9 @@
       "response_type": "",
       "scope": "zohopulse.blogs.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/publishblog___POST": {
+    {
       "provider_alias_intent": "/pulse/api/publishblog",
       "text": "Publish a Forum",
       "category": "Forums",
@@ -1715,9 +1715,9 @@
       "response_type": "",
       "scope": "zohopulse.blogs.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updateblog___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updateblog",
       "text": "Update a Forum",
       "category": "Forums",
@@ -1781,9 +1781,9 @@
       "response_type": "",
       "scope": "zohopulse.blogs.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/allgroups___GET": {
+    {
       "provider_alias_intent": "/pulse/api/allgroups",
       "text": "Get all Groups",
       "category": "Groups",
@@ -1828,9 +1828,9 @@
       "response_type": "",
       "scope": "zohopulse.userDetail.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addgroup___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addgroup",
       "text": "Creat a Group",
       "category": "Groups",
@@ -1900,9 +1900,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updategroupdetails___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updategroupdetails",
       "text": "Update Group Details",
       "category": "Groups",
@@ -1964,9 +1964,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/joingroup___POST": {
+    {
       "provider_alias_intent": "/pulse/api/joingroup",
       "text": "Join a Group",
       "category": "Groups",
@@ -2012,9 +2012,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/leavegroup___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/leavegroup",
       "text": "Leave Group",
       "category": "Groups",
@@ -2060,9 +2060,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__zohopulse.grouplist.create___POST": {
+    {
       "provider_alias_intent": "zohopulse.grouplist.create",
       "text": "Add User Role in a Group",
       "category": "Groups",
@@ -2120,9 +2120,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/changeuserroleingroup___POST": {
+    {
       "provider_alias_intent": "/pulse/api/changeuserroleingroup",
       "text": "Change User Role in a Group",
       "category": "Groups",
@@ -2178,9 +2178,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/removeuserfromgroup___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/removeuserfromgroup",
       "text": "Remove User from a Group",
       "category": "Groups",
@@ -2231,9 +2231,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/changepartitionstatus___POST": {
+    {
       "provider_alias_intent": "/pulse/api/changepartitionstatus",
       "text": "Archive & Un-archive a Group",
       "category": "Groups",
@@ -2289,9 +2289,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deletepartition___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deletepartition",
       "text": "Delete Group",
       "category": "Groups",
@@ -2337,9 +2337,9 @@
       "response_type": "",
       "scope": "zohopulse.grouplist.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/mymanuals___GET": {
+    {
       "provider_alias_intent": "/pulse/api/mymanuals",
       "text": "Get My Manuals",
       "category": "Manuals",
@@ -2388,9 +2388,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/myarticles___GET": {
+    {
       "provider_alias_intent": "/pulse/api/myarticles",
       "text": "Get My Articles",
       "category": "Manuals",
@@ -2439,9 +2439,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/publishmanual___POST": {
+    {
       "provider_alias_intent": "/pulse/api/publishmanual",
       "text": "Publish a Manual",
       "category": "Manuals",
@@ -2496,9 +2496,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/partitionarticles___GET": {
+    {
       "provider_alias_intent": "/pulse/api/partitionarticles",
       "text": "Get Group Articals",
       "category": "Manuals",
@@ -2556,9 +2556,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/partitionmanuals___GET": {
+    {
       "provider_alias_intent": "/pulse/api/partitionmanuals",
       "text": "Get Group Manuals",
       "category": "Manuals",
@@ -2615,9 +2615,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/followingmanuals___GET": {
+    {
       "provider_alias_intent": "/pulse/api/followingmanuals",
       "text": "Get User Following Articles",
       "category": "Manuals",
@@ -2665,9 +2665,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/publisharticle___POST": {
+    {
       "provider_alias_intent": "/pulse/api/publisharticle",
       "text": "Publish an Article",
       "category": "Manuals",
@@ -2716,9 +2716,9 @@
       "response_type": "",
       "scope": "zohopulse.pagelist.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/allscopes___GET": {
+    {
       "provider_alias_intent": "/pulse/api/allscopes",
       "text": "Get all Networks",
       "category": "Network",
@@ -2753,9 +2753,9 @@
       "response_type": "",
       "scope": "zohopulse.networklist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/orgmembers___GET": {
+    {
       "provider_alias_intent": "/pulse/api/orgmembers",
       "text": "Get all network members",
       "category": "Network",
@@ -2796,9 +2796,9 @@
       "response_type": "",
       "scope": "zohopulse.networklist.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/inviteuserstonetwork___POST": {
+    {
       "provider_alias_intent": "/pulse/api/inviteuserstonetwork",
       "text": "Invite users to a network",
       "category": "Network",
@@ -2849,9 +2849,9 @@
       "response_type": "",
       "scope": "zohopulse.networkAdmin.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteuserfromnetwork___POST": {
+    {
       "provider_alias_intent": "/pulse/api/deleteuserfromnetwork",
       "text": "Delete User from an External Network",
       "category": "Network",
@@ -2902,9 +2902,9 @@
       "response_type": "",
       "scope": "zohopulse.networkAdmin.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addboard___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addboard",
       "text": "Create a board",
       "category": "Tasks & Boards",
@@ -2958,9 +2958,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addmemberstoboard___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addmemberstoboard",
       "text": "Add Members to a Board",
       "category": "Tasks & Boards",
@@ -3010,9 +3010,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deletememberfromboard___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deletememberfromboard",
       "text": "Delete Board Member",
       "category": "Tasks & Boards",
@@ -3062,9 +3062,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updateboard___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updateboard",
       "text": "Updating a Board",
       "category": "Tasks & Boards",
@@ -3117,9 +3117,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteboard___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deleteboard",
       "text": "Delete a Board",
       "category": "Tasks & Boards",
@@ -3164,9 +3164,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addtask___POST": {
+    {
       "provider_alias_intent": "/pulse/api/addtask",
       "text": "Create a Task",
       "category": "Tasks & Boards",
@@ -3326,9 +3326,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/addboardsection___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/addboardsection",
       "text": "Add Section to a Board",
       "category": "Tasks & Boards",
@@ -3383,9 +3383,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deleteboardsection___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deleteboardsection",
       "text": "Delete Board Section",
       "category": "Tasks & Boards",
@@ -3430,9 +3430,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/deletetask___DELETE": {
+    {
       "provider_alias_intent": "/pulse/api/deletetask",
       "text": "Delete Task",
       "category": "Tasks & Boards",
@@ -3477,9 +3477,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/boardsections___GET": {
+    {
       "provider_alias_intent": "/pulse/api/boardsections",
       "text": "Get Board Section",
       "category": "Tasks & Boards",
@@ -3524,9 +3524,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/myboards___GET": {
+    {
       "provider_alias_intent": "/pulse/api/myboards",
       "text": "Get my Boards",
       "category": "Tasks & Boards",
@@ -3570,9 +3570,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updateboardsection___PUT": {
+    {
       "provider_alias_intent": "/pulse/api/updateboardsection",
       "text": "Update Board Section",
       "category": "Tasks & Boards",
@@ -3625,9 +3625,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/updatetask___POST": {
+    {
       "provider_alias_intent": "/pulse/api/updatetask",
       "text": "Update a Task",
       "category": "Tasks & Boards",
@@ -3714,9 +3714,9 @@
       "response_type": "",
       "scope": "zohopulse.tasks.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/useractivities___GET": {
+    {
       "provider_alias_intent": "/pulse/api/useractivities",
       "text": "Get User Activity",
       "category": "User",
@@ -3766,9 +3766,9 @@
       "response_type": "",
       "scope": "zohopulse.userDetail.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/v1/userstreams___GET": {
+    {
       "provider_alias_intent": "/pulse/api/v1/userstreams",
       "text": "Get User Feed",
       "category": "User",
@@ -3830,9 +3830,9 @@
       "response_type": "",
       "scope": "zohopulse.userDetail.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     },
-    "zohoconnect__/pulse/api/usergroups___GET": {
+    {
       "provider_alias_intent": "/pulse/api/usergroups",
       "text": "Get User Groups",
       "category": "User",
@@ -3878,7 +3878,7 @@
       "response_type": "",
       "scope": "zohopulse.userDetail.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.004Z"
+      "updated_at": "2025-11-11T15:37:35.835Z"
     }
-  }
+  ]
 }

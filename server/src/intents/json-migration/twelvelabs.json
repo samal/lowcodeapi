@@ -33,8 +33,8 @@
     "total_api": 38,
     "credential_link": "https://dashboard.twelvelabs.io/home"
   },
-  "routes": {
-    "twelvelabs__/v1.2/search-v22___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1.2/search-v22",
       "text": "Make any-to-video search requests",
       "category": "Any-to-video search",
@@ -121,9 +121,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/search-v2/page-token___GET": {
+    {
       "provider_alias_intent": "/v1.2/search-v2/page-token",
       "text": "Retrieve a specific page of search results",
       "category": "Any-to-video search",
@@ -163,9 +163,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/classify___POST": {
+    {
       "provider_alias_intent": "/v1.2/classify",
       "text": "Classify a set of videos",
       "category": "Classify",
@@ -238,9 +238,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/classify/bulk___POST": {
+    {
       "provider_alias_intent": "/v1.2/classify/bulk",
       "text": "Classify all the videos in an index",
       "category": "Classify",
@@ -313,9 +313,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/classify/page_token___GET": {
+    {
       "provider_alias_intent": "/v1.2/classify/page_token",
       "text": "Retrieve a specific page of results",
       "category": "Classify",
@@ -355,9 +355,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/engines___GET": {
+    {
       "provider_alias_intent": "/v1.2/engines",
       "text": "List engines",
       "category": "Engines",
@@ -385,9 +385,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/engines/engine-id___GET": {
+    {
       "provider_alias_intent": "/v1.2/engines/engine-id",
       "text": "Retrieve an engine",
       "category": "Engines",
@@ -421,9 +421,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/gist___POST": {
+    {
       "provider_alias_intent": "/v1.2/gist",
       "text": "Titles, topics, or hashtags",
       "category": "Generate text from video",
@@ -462,9 +462,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/summarize___POST": {
+    {
       "provider_alias_intent": "/v1.2/summarize",
       "text": "Summaries, chapters, or highlights",
       "category": "Generate text from video",
@@ -511,9 +511,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/generate___POST": {
+    {
       "provider_alias_intent": "/v1.2/generate",
       "text": "Open-ended texts",
       "category": "Generate text from video",
@@ -556,9 +556,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes___POST": {
+    {
       "provider_alias_intent": "/v1.2/indexes",
       "text": "Create an index",
       "category": "Indexes",
@@ -597,9 +597,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes",
       "text": "List indexes",
       "category": "Indexes",
@@ -660,9 +660,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id",
       "text": "Retrieve an index",
       "category": "Indexes",
@@ -702,9 +702,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id___PUT": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id",
       "text": "Update an index",
       "category": "Indexes",
@@ -750,9 +750,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id___DELETE": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id",
       "text": "Delete an index",
       "category": "Indexes",
@@ -792,9 +792,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos",
       "text": "List videos",
       "category": "Indexes/Videos",
@@ -890,9 +890,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id",
       "text": "Retrieve video information",
       "category": "Indexes/Videos",
@@ -942,9 +942,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id___PUT": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id",
       "text": "Update video information",
       "category": "Indexes/Videos",
@@ -1003,9 +1003,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id___DELETE": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id",
       "text": "Delete video information",
       "category": "Indexes/Videos",
@@ -1065,9 +1065,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id/transcription___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id/transcription",
       "text": "Retrieve a transcription",
       "category": "Indexes/Videos",
@@ -1125,9 +1125,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id/text-in-video___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id/text-in-video",
       "text": "Retrieve text recognized in video (OCR)",
       "category": "Indexes/Videos",
@@ -1185,9 +1185,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index-id/videos/video-id/logo___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index-id/videos/video-id/logo",
       "text": "Extract logos",
       "category": "Indexes/Videos",
@@ -1245,9 +1245,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/indexes/index_id/videos/video_id/thumbnail___GET": {
+    {
       "provider_alias_intent": "/v1.2/indexes/index_id/videos/video_id/thumbnail",
       "text": "Retrieve a thumbnail",
       "category": "Indexes/Videos",
@@ -1301,9 +1301,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks___POST": {
+    {
       "provider_alias_intent": "/v1.2/tasks",
       "text": "Create a video indexing task",
       "category": "Tasks",
@@ -1372,9 +1372,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks___GET": {
+    {
       "provider_alias_intent": "/v1.2/tasks",
       "text": "List video indexing tasks",
       "category": "Tasks",
@@ -1455,9 +1455,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks/task_id___GET": {
+    {
       "provider_alias_intent": "/v1.2/tasks/task_id",
       "text": "Retrieve a video indexing task",
       "category": "Tasks",
@@ -1497,9 +1497,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks/task_id___DELETE": {
+    {
       "provider_alias_intent": "/v1.2/tasks/task_id",
       "text": "Delete a video indexing task",
       "category": "Tasks",
@@ -1539,9 +1539,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks/status___GET": {
+    {
       "provider_alias_intent": "/v1.2/tasks/status",
       "text": "Retrieve tasks by status",
       "category": "Tasks",
@@ -1575,9 +1575,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks/external-provider___POST": {
+    {
       "provider_alias_intent": "/v1.2/tasks/external-provider",
       "text": "Upload videos from external providers",
       "category": "Tasks",
@@ -1616,9 +1616,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/tasks/transfers___POST": {
+    {
       "provider_alias_intent": "/v1.2/tasks/transfers",
       "text": "Make a cloud-to-cloud transfer",
       "category": "Tasks/Transfers",
@@ -1651,9 +1651,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/embed___POST": {
+    {
       "provider_alias_intent": "/v1.2/embed",
       "text": "Create text embeddings",
       "category": "Text embeddings",
@@ -1696,9 +1696,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/search___POST": {
+    {
       "provider_alias_intent": "/v1.2/search",
       "text": "Make a text-to-video search request",
       "category": "Text-to-video search",
@@ -1774,9 +1774,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/search/combined___POST": {
+    {
       "provider_alias_intent": "/v1.2/search/combined",
       "text": "Make a combined search request",
       "category": "Text-to-video search",
@@ -1839,9 +1839,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/search/page-token___GET": {
+    {
       "provider_alias_intent": "/v1.2/search/page-token",
       "text": "Retrieve a specific page of search results",
       "category": "Text-to-video search",
@@ -1881,9 +1881,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/search/combined/page-token___GET": {
+    {
       "provider_alias_intent": "/v1.2/search/combined/page-token",
       "text": "Retrieve a specific page of combined search results",
       "category": "Text-to-video search",
@@ -1923,9 +1923,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/embed/tasks___POST": {
+    {
       "provider_alias_intent": "/v1.2/embed/tasks",
       "text": "Create a video embedding task",
       "category": "Video embeddings",
@@ -1983,9 +1983,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/embed/tasks/task_id/status___GET": {
+    {
       "provider_alias_intent": "/v1.2/embed/tasks/task_id/status",
       "text": "Retrieve the status of a video embedding task",
       "category": "Video embeddings",
@@ -2025,9 +2025,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     },
-    "twelvelabs__/v1.2/embed/tasks/task_id___GET": {
+    {
       "provider_alias_intent": "/v1.2/embed/tasks/task_id",
       "text": "Retrieve video embeddings",
       "category": "Video embeddings",
@@ -2067,7 +2067,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.891Z"
+      "updated_at": "2025-11-11T15:37:35.536Z"
     }
-  }
+  ]
 }

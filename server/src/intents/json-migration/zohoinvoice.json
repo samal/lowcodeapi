@@ -22,8 +22,8 @@
     "total_api": 258,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoinvoice__/invoice/v3/contacts/contactpersons___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contactpersons",
       "text": "Create a contact person",
       "category": "Contact Persons",
@@ -103,9 +103,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/contactpersons",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contactpersons/contact_person_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contactpersons/contact_person_id",
       "text": "Update a contact person",
       "category": "Contact Persons",
@@ -198,9 +198,9 @@
       "scope": "ZohoInvoice.contacts.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/contactpersons/{contact_person_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contactpersons/contact_person_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contactpersons/contact_person_id",
       "text": "Delete a contact person",
       "category": "Contact Persons",
@@ -242,9 +242,9 @@
       "scope": "ZohoInvoice.contacts.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/contactpersons/{contact_person_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/contactpersons___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/contactpersons",
       "text": "List contact persons",
       "category": "Contact Persons",
@@ -286,9 +286,9 @@
       "scope": "ZohoInvoice.contacts.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/contactpersons",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/contactpersons/contact_person_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/contactpersons/contact_person_id",
       "text": "Get a contact person",
       "category": "Contact Persons",
@@ -340,9 +340,9 @@
       "scope": "ZohoInvoice.contacts.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/contactpersons/{contact_person_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contactpersons/contact_person_id/primary___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contactpersons/contact_person_id/primary",
       "text": "Mark as primary contact person",
       "category": "Contact Persons",
@@ -384,9 +384,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/contactpersons/{contact_person_id}/primary",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts",
       "text": "Create a Contact",
       "category": "Contacts",
@@ -558,9 +558,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts",
       "text": "List Contacts",
       "category": "Contacts",
@@ -640,9 +640,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id",
       "text": "Update a Contact",
       "category": "Contacts",
@@ -826,9 +826,9 @@
       "scope": "ZohoInvoice.contacts.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id",
       "text": "Get a Contact",
       "category": "Contacts",
@@ -870,9 +870,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id",
       "text": "Delete a Contact",
       "category": "Contacts",
@@ -914,9 +914,9 @@
       "scope": "ZohoInvoice.contacts.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/active___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/active",
       "text": "Mark as Active",
       "category": "Contacts",
@@ -958,9 +958,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/active",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/inactive___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/inactive",
       "text": "Mark as Inactive",
       "category": "Contacts",
@@ -1002,9 +1002,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/inactive",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/portal/enable___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/portal/enable",
       "text": "Enable Portal Access",
       "category": "Contacts",
@@ -1052,9 +1052,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/portal/enable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/clientreviews___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/clientreviews",
       "text": "View All Client Reviews",
       "category": "Contacts",
@@ -1089,9 +1089,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/clientreviews",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/clientreviews/comment_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/clientreviews/comment_id",
       "text": "Details of a Particular Client Review",
       "category": "Contacts",
@@ -1137,9 +1137,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/clientreviews/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/clientreviews/comment_id/comment___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/clientreviews/comment_id/comment",
       "text": "Reply a Client Review",
       "category": "Contacts",
@@ -1190,9 +1190,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/clientreviews/{comment_id}/comment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/paymentreminder/enable___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/paymentreminder/enable",
       "text": "Enable Payment Reminders",
       "category": "Contacts",
@@ -1234,9 +1234,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/paymentreminder/enable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/paymentreminder/disable___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/paymentreminder/disable",
       "text": "Disable Payment Reminders",
       "category": "Contacts",
@@ -1278,9 +1278,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/paymentreminder/disable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/statements/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/statements/email",
       "text": "Email Statement",
       "category": "Contacts",
@@ -1362,9 +1362,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/statements/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/statements/email___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/statements/email",
       "text": "Get Statement Mail Content",
       "category": "Contacts",
@@ -1414,9 +1414,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/statements/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/email",
       "text": "Email Contact",
       "category": "Contacts",
@@ -1482,9 +1482,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/comments",
       "text": "List Comments",
       "category": "Contacts",
@@ -1526,9 +1526,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/address___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/address",
       "text": "Add Additional Address",
       "category": "Contacts",
@@ -1607,9 +1607,9 @@
       "scope": "ZohoInvoice.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/address",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/address___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/address",
       "text": "Get Contact Addresses",
       "category": "Contacts",
@@ -1651,9 +1651,9 @@
       "scope": "ZohoInvoice.contacts.READ\n",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/address",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/address/address_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/address/address_id",
       "text": "Edit Additional Address",
       "category": "Contacts",
@@ -1747,9 +1747,9 @@
       "scope": "ZohoInvoice.contacts.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/address/{address_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/address/address_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/address/address_id",
       "text": "Delete Additional Address",
       "category": "Contacts",
@@ -1801,9 +1801,9 @@
       "scope": "ZohoInvoice.contacts.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/address/{address_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/contacts/contact_id/refunds___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/contacts/contact_id/refunds",
       "text": "List Refunds",
       "category": "Contacts",
@@ -1845,9 +1845,9 @@
       "scope": "ZohoInvoice.contacts.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/contacts/{contact_id}/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes",
       "text": "Create a credit note",
       "category": "Credit Notes\n",
@@ -1982,9 +1982,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes",
       "text": "List Credit Notes",
       "category": "Credit Notes\n",
@@ -2063,9 +2063,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id",
       "text": "Update a credit note",
       "category": "Credit Notes\n",
@@ -2208,9 +2208,9 @@
       "scope": "ZohoInvoice.creditnotes.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id",
       "text": "Get a credit note",
       "category": "Credit Notes\n",
@@ -2260,9 +2260,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id",
       "text": "Delete a credit note",
       "category": "Credit Notes\n",
@@ -2304,9 +2304,9 @@
       "scope": "ZohoInvoice.creditnotes.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/email",
       "text": "Email a credit note",
       "category": "Credit Notes\n",
@@ -2376,9 +2376,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/void___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/void",
       "text": "Void a credit note",
       "category": "Credit Notes\n",
@@ -2420,9 +2420,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/void",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/converttoopen___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/converttoopen",
       "text": "Open a voided credit note",
       "category": "Credit Notes\n",
@@ -2464,9 +2464,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/converttoopen",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/emailhistory___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/emailhistory",
       "text": "Email history",
       "category": "Credit Notes\n",
@@ -2508,9 +2508,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/emailhistory",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/address/billing___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/address/billing",
       "text": "Update billing address",
       "category": "Credit Notes\n",
@@ -2577,9 +2577,9 @@
       "scope": "ZohoInvoice.creditnotes.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/address/billing",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/address/shipping___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/address/shipping",
       "text": "Update Shipping address",
       "category": "Credit Notes\n",
@@ -2646,9 +2646,9 @@
       "scope": "ZohoInvoice.creditnotes.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/address/shipping\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/templates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/templates",
       "text": "List credit note templates",
       "category": "Credit Notes\n",
@@ -2678,9 +2678,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/templates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/templates/template_id",
       "text": "Update a credit note template",
       "category": "Credit Notes\n",
@@ -2732,9 +2732,9 @@
       "scope": "ZohoInvoice.creditnotes.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/templates/{template_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/invoices___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/invoices",
       "text": "Credit to an invoice",
       "category": "Credit Notes\n",
@@ -2781,9 +2781,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/invoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/invoices___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/invoices",
       "text": "List invoices credited",
       "category": "Credit Notes\n",
@@ -2825,9 +2825,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/invoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/invoices/creditnote_invoice_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/invoices/creditnote_invoice_id",
       "text": "Delete invoices credited",
       "category": "Credit Notes\n",
@@ -2879,9 +2879,9 @@
       "scope": "ZohoInvoice.creditnotes.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/invoices/{creditnote_invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/comments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/comments",
       "text": "Add a comment",
       "category": "Credit Notes\n",
@@ -2928,9 +2928,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/comments",
       "text": "List credit note comments & history",
       "category": "Credit Notes\n",
@@ -2972,9 +2972,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/comments/comment_id",
       "text": "Delete a Comment",
       "category": "Credit Notes\n",
@@ -3026,9 +3026,9 @@
       "scope": "ZohoInvoice.creditnotes.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/refunds___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/refunds",
       "text": "List credit note refunds",
       "category": "Credit Notes\n",
@@ -3067,9 +3067,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/refunds___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/refunds",
       "text": "Refund credit note",
       "category": "Credit Notes\n",
@@ -3136,9 +3136,9 @@
       "scope": "ZohoInvoice.creditnotes.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/refunds___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/refunds",
       "text": "List refunds of a credit note",
       "category": "Credit Notes\n",
@@ -3180,9 +3180,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id",
       "text": "Update credit note refund",
       "category": "Credit Notes\n",
@@ -3259,9 +3259,9 @@
       "scope": "ZohoInvoice.creditnotes.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/refunds/{creditnote_refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id",
       "text": "Get credit note refund",
       "category": "Credit Notes\n",
@@ -3313,9 +3313,9 @@
       "scope": "ZohoInvoice.creditnotes.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/refunds/{creditnote_refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/creditnotes/creditnote_id/refunds/creditnote_refund_id",
       "text": "Delete credit note refund",
       "category": "Credit Notes\n",
@@ -3367,9 +3367,9 @@
       "scope": "ZohoInvoice.creditnotes.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/creditnotes/{creditnote_id}/refunds/{creditnote_refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies",
       "text": "Create a Currency",
       "category": "Currency\n",
@@ -3418,9 +3418,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies",
       "text": "List Currencies",
       "category": "Currency\n",
@@ -3455,9 +3455,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id",
       "text": "Update a Currency",
       "category": "Currency\n",
@@ -3518,9 +3518,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id",
       "text": "Get a Currency",
       "category": "Currency\n",
@@ -3562,9 +3562,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id",
       "text": "Delete a currency",
       "category": "Currency\n",
@@ -3606,9 +3606,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id/exchangerates___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id/exchangerates",
       "text": "Create an exchange rate",
       "category": "Currency\n",
@@ -3659,9 +3659,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}/exchangerates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id/exchangerates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id/exchangerates",
       "text": "List exchange rates",
       "category": "Currency\n",
@@ -3715,9 +3715,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}/exchangerates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id",
       "text": "Update an exchange rate",
       "category": "Currency\n",
@@ -3778,9 +3778,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}/exchangerates/{exchange_rate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id",
       "text": "Get an exchange rate.",
       "category": "Currency\n",
@@ -3832,9 +3832,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}/exchangerates/{exchange_rate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/currencies/currency_id/exchangerates/exchange_rate_id",
       "text": "Delete an exchage rate",
       "category": "Currency\n",
@@ -3886,9 +3886,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/currencies/{currency_id}/exchangerates/{exchange_rate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments",
       "text": "Create a payment",
       "category": "Customer Payments",
@@ -3968,9 +3968,9 @@
       "scope": "ZohoInvoice.customerpayments.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments",
       "text": "List Customer Payments",
       "category": "Customer Payments",
@@ -4037,9 +4037,9 @@
       "scope": "ZohoInvoice.customerpayments.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/payment_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/payment_id",
       "text": "Update a payment",
       "category": "Customer Payments",
@@ -4131,9 +4131,9 @@
       "scope": "ZohoInvoice.customerpayments.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{payment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/payment_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/payment_id",
       "text": "Retrieve a payment",
       "category": "Customer Payments",
@@ -4175,9 +4175,9 @@
       "scope": "ZohoInvoice.customerpayments.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{payment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/payment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/payment_id",
       "text": "Delete a payment",
       "category": "Customer Payments",
@@ -4219,9 +4219,9 @@
       "scope": "ZohoInvoice.customerpayments.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{payment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/customer_payment_id/refunds___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/customer_payment_id/refunds",
       "text": "Refund an excess customer payment",
       "category": "Customer Payments",
@@ -4294,9 +4294,9 @@
       "scope": "ZohoInvoice.customerpayments.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{customer_payment_id}/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/customer_payment_id/refunds___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/customer_payment_id/refunds",
       "text": "List refunds of a customer payment",
       "category": "Customer Payments",
@@ -4338,9 +4338,9 @@
       "scope": "ZohoInvoice.customerpayments.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{customer_payment_id}/refunds",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id",
       "text": "Update a refund",
       "category": "Customer Payments",
@@ -4423,9 +4423,9 @@
       "scope": "ZohoInvoice.customerpayments.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{customer_payment_id}/refunds/{refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id",
       "text": "Details of a refund",
       "category": "Customer Payments",
@@ -4477,9 +4477,9 @@
       "scope": "ZohoInvoice.customerpayments.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{customer_payment_id}/refunds/{refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/customerpayments/customer_payment_id/refunds/refund_id",
       "text": "Delete a Refund",
       "category": "Customer Payments",
@@ -4531,9 +4531,9 @@
       "scope": "ZohoInvoice.customerpayments.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/customerpayments/{customer_payment_id}/refunds/{refund_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates",
       "text": "Create an Estimate",
       "category": "Estimates",
@@ -4718,9 +4718,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates",
       "text": "List estimates",
       "category": "Estimates",
@@ -4755,9 +4755,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id",
       "text": "Update an Estimate",
       "category": "Estimates",
@@ -4950,9 +4950,9 @@
       "scope": "ZohoInvoice.estimates.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id",
       "text": "Get an estimate",
       "category": "Estimates",
@@ -5002,9 +5002,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id",
       "text": "Delete an Estimate",
       "category": "Estimates",
@@ -5046,9 +5046,9 @@
       "scope": "ZohoInvoice.estimates.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/status/sent___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/status/sent",
       "text": "Mark an estimate as sent",
       "category": "Estimates",
@@ -5090,9 +5090,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/status/sent",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/status/accepted___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/status/accepted",
       "text": "Mark an estimate as accepted",
       "category": "Estimates",
@@ -5134,9 +5134,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/status/accepted",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/status/declined___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/status/declined",
       "text": "Mark an estimate as declined",
       "category": "Estimates",
@@ -5178,9 +5178,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/status/declined",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/email",
       "text": "Email an estimate",
       "category": "Estimates",
@@ -5252,9 +5252,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/email___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/email",
       "text": "Get estimate email content",
       "category": "Estimates",
@@ -5301,9 +5301,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/email",
       "text": "Email multiple estimates",
       "category": "Estimates",
@@ -5339,9 +5339,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/pdf___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/pdf",
       "text": "Bulk export estimates",
       "category": "Estimates",
@@ -5377,9 +5377,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/pdf",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/print___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/print",
       "text": "Bulk print estimates",
       "category": "Estimates",
@@ -5415,9 +5415,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/print",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/address/billing___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/address/billing",
       "text": "Update billing address",
       "category": "Estimates",
@@ -5484,9 +5484,9 @@
       "scope": "ZohoInvoice.estimates.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/address/billing",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/address/shipping___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/address/shipping",
       "text": "Update shipping address",
       "category": "Estimates",
@@ -5553,9 +5553,9 @@
       "scope": "ZohoInvoice.estimates.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/address/shipping",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/templates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/templates",
       "text": "List estimate templates",
       "category": "Estimates",
@@ -5585,9 +5585,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/templates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/templates/template_id",
       "text": "Update estimate template",
       "category": "Estimates",
@@ -5639,9 +5639,9 @@
       "scope": "ZohoInvoice.estimates.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/templates/{template_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/comments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/comments",
       "text": "Add Comments",
       "category": "Estimates",
@@ -5696,9 +5696,9 @@
       "scope": "ZohoInvoice.estimates.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/comments",
       "text": "List estimate comments & history",
       "category": "Estimates",
@@ -5740,9 +5740,9 @@
       "scope": "ZohoInvoice.estimates.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/comments/comment_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/comments/comment_id",
       "text": "Update comment",
       "category": "Estimates",
@@ -5807,9 +5807,9 @@
       "scope": "ZohoInvoice.estimates.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/estimates/estimate_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/estimates/estimate_id/comments/comment_id",
       "text": "Delete a comment",
       "category": "Estimates",
@@ -5861,9 +5861,9 @@
       "scope": "ZohoInvoice.estimates.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/estimates/{estimate_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories",
       "text": "Create an expense category",
       "category": "Expense Category\n",
@@ -5902,9 +5902,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories",
       "text": "List expense categories",
       "category": "Expense Category\n",
@@ -5943,9 +5943,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories/category_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories/category_id",
       "text": "Update an expense category",
       "category": "Expense Category\n",
@@ -5996,9 +5996,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories/{category_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories/category_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories/category_id",
       "text": "Get an expense category",
       "category": "Expense Category\n",
@@ -6040,9 +6040,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories/{category_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories/category_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories/category_id",
       "text": "Delete an expense category",
       "category": "Expense Category\n",
@@ -6084,9 +6084,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories/{category_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories/category_id/active___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories/category_id/active",
       "text": "Mark an expense category as active",
       "category": "Expense Category\n",
@@ -6133,9 +6133,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories/{categoryid}/active\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expensecategories/category_id/inactive___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/expensecategories/category_id/inactive",
       "text": "Mark an expense category as inactive",
       "category": "Expense Category\n",
@@ -6182,9 +6182,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expensecategories/{categoryid}/inactive\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expenses___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/expenses",
       "text": "Create an Expense",
       "category": "Expenses\n",
@@ -6369,9 +6369,9 @@
       "scope": "ZohoInvoice.expenses.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expenses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expenses___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/expenses",
       "text": "List Expenses",
       "category": "Expenses\n",
@@ -6442,9 +6442,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/expenses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expenses/expense_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/expenses/expense_id",
       "text": "Update an Expense",
       "category": "Expenses\n",
@@ -6645,9 +6645,9 @@
       "scope": "ZohoInvoice.expenses.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expenses/{expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoice/v3/expenses/expense_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoice/v3/expenses/expense_id",
       "text": "Get an Expense",
       "category": "Expenses\n",
@@ -6689,9 +6689,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3{endpoint}/invoice/v3/expenses/{expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expenses/expense_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/expenses/expense_id",
       "text": "Delete an Expense",
       "category": "Expenses\n",
@@ -6733,9 +6733,9 @@
       "scope": "ZohoInvoice.expenses.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/expenses/{expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/expenses/expense_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/expenses/expense_id/comments",
       "text": "List expense History & Comments",
       "category": "Expenses\n",
@@ -6777,9 +6777,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/expenses/{expense_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/employees___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/employees",
       "text": "Create an employee",
       "category": "Expenses\n",
@@ -6820,9 +6820,9 @@
       "scope": "ZohoInvoice.expenses.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/employees",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/employees___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/employees",
       "text": "List employees",
       "category": "Expenses\n",
@@ -6852,9 +6852,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/employees",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/employees/employee_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/employees/employee_id",
       "text": "Get an employee",
       "category": "Expenses\n",
@@ -6896,9 +6896,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/employees/{employee_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/employees/employee_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/employees/employee_id",
       "text": "Delete an employee",
       "category": "Expenses\n",
@@ -6940,9 +6940,9 @@
       "scope": "ZohoInvoice.expenses.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/employees/{employee_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices",
       "text": "Create an invoice",
       "category": "Invoices",
@@ -7159,9 +7159,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices",
       "text": "List invoices",
       "category": "Invoices",
@@ -7268,9 +7268,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id",
       "text": "Update an invoice",
       "category": "Invoices",
@@ -7495,9 +7495,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id",
       "text": "Get an invoice",
       "category": "Invoices",
@@ -7547,9 +7547,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id",
       "text": "Delete an invoice",
       "category": "Invoices",
@@ -7591,9 +7591,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/status/sent___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/status/sent",
       "text": "Mark an invoice as sent",
       "category": "Invoices",
@@ -7635,9 +7635,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/status/sent",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/status/void___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/status/void",
       "text": "Void an invoice",
       "category": "Invoices",
@@ -7679,9 +7679,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/status/void",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/status/draft___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/status/draft",
       "text": "Mark as draft",
       "category": "Invoices",
@@ -7723,9 +7723,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/status/draft",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.105Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/email",
       "text": "Email an invoice",
       "category": "Invoices",
@@ -7805,9 +7805,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/email___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/email",
       "text": "Get invoice email content",
       "category": "Invoices",
@@ -7853,9 +7853,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.977Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/email",
       "text": "Email invoices",
       "category": "Invoices",
@@ -7896,9 +7896,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/paymentreminder___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/paymentreminder",
       "text": "Remind Customer",
       "category": "Invoices",
@@ -7974,9 +7974,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/paymentreminder",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/paymentreminder___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/paymentreminder",
       "text": "Get payment reminder mail content",
       "category": "Invoices",
@@ -8018,9 +8018,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/paymentreminder",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/paymentreminder___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/paymentreminder",
       "text": "Bulk invoice reminder",
       "category": "Invoices",
@@ -8056,9 +8056,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/paymentreminder",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/pdf___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/pdf",
       "text": "Bulk export Invoices",
       "category": "Invoices",
@@ -8094,9 +8094,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/pdf",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/print___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/print",
       "text": "Bulk print invoices",
       "category": "Invoices",
@@ -8132,9 +8132,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/print",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/paymentreminder/disable___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/paymentreminder/disable",
       "text": "Disable payment reminder",
       "category": "Invoices",
@@ -8176,9 +8176,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/paymentreminder/disable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/paymentreminder/enable___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/paymentreminder/enable",
       "text": "Enable payment reminder",
       "category": "Invoices",
@@ -8220,9 +8220,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/paymentreminder/enable",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/writeoff___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/writeoff",
       "text": "Write off invoice",
       "category": "Invoices",
@@ -8264,9 +8264,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/writeoff",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/writeoff/cancel___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/writeoff/cancel",
       "text": "Cancel write off",
       "category": "Invoices",
@@ -8308,9 +8308,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/writeoff/cancel",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/address/billing___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/address/billing",
       "text": "Update billing address",
       "category": "Invoices",
@@ -8377,9 +8377,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/address/billing",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/address/shipping___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/address/shipping",
       "text": "Update shipping address",
       "category": "Invoices",
@@ -8446,9 +8446,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/address/shipping",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/templates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/templates",
       "text": "List invoice templates",
       "category": "Invoices",
@@ -8478,9 +8478,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/templates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/templates/template_id",
       "text": "Update invoice template",
       "category": "Invoices",
@@ -8532,9 +8532,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/templates/{template_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/payments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/payments",
       "text": "List invoice payments",
       "category": "Invoices",
@@ -8576,9 +8576,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/payments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/creditsapplied___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/creditsapplied",
       "text": "List credits applied",
       "category": "Invoices",
@@ -8620,9 +8620,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/creditsapplied",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/creditsapplied___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/creditsapplied",
       "text": "Apply credits",
       "category": "Invoices",
@@ -8673,9 +8673,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/creditsapplied",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/payments/invoice_payment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/payments/invoice_payment_id",
       "text": "Delete a payment",
       "category": "Invoices",
@@ -8727,9 +8727,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/payments/{invoice_payment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/creditsapplied/creditnotes_invoice_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/creditsapplied/creditnotes_invoice_id",
       "text": "Delete applied credit",
       "category": "Invoices",
@@ -8781,9 +8781,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/creditsapplied/{creditnotes_invoice_id}\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/attachment___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/attachment",
       "text": "Add attachment to an invoice",
       "category": "Invoices",
@@ -8834,9 +8834,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/attachment___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/attachment",
       "text": "Update attachment preference",
       "category": "Invoices",
@@ -8884,9 +8884,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/attachment___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/attachment",
       "text": "Get an invoice attachment",
       "category": "Invoices",
@@ -8932,9 +8932,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/attachment___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/attachment",
       "text": "Delete an attachment",
       "category": "Invoices",
@@ -8976,9 +8976,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/expenses/expense_id/receipt___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/expenses/expense_id/receipt",
       "text": "Delete the expense receipt",
       "category": "Invoices",
@@ -9020,9 +9020,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/expenses/{expense_id}/receipt",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/comments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/comments",
       "text": "Add comment",
       "category": "Invoices",
@@ -9077,9 +9077,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/comments",
       "text": "List invoice comments & history",
       "category": "Invoices",
@@ -9121,9 +9121,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/comments/comment_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/comments/comment_id",
       "text": "Update comment",
       "category": "Invoices",
@@ -9184,9 +9184,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/invoices/invoice_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/invoices/invoice_id/comments/comment_id",
       "text": "Delete a comment",
       "category": "Invoices",
@@ -9238,9 +9238,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/invoices/{invoice_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/items",
       "text": "Create an Item",
       "category": "Items",
@@ -9329,9 +9329,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/items",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/items",
       "text": "List Contacts",
       "category": "Items",
@@ -9390,9 +9390,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/items",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items/item_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/items/item_id",
       "text": "Update an Item",
       "category": "Items",
@@ -9491,9 +9491,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/items/{item_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items/item_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/items/item_id",
       "text": "Retrieve an item",
       "category": "Items",
@@ -9535,9 +9535,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/items/{item_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items/item_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/items/item_id",
       "text": "Delete an item",
       "category": "Items",
@@ -9579,9 +9579,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/items/{item_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items/item_id/active___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/items/item_id/active",
       "text": "Mark as active",
       "category": "Items",
@@ -9623,9 +9623,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/items/{item_id}/active",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/items/item_id/inactive___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/items/item_id/inactive",
       "text": "Mark as inactive",
       "category": "Items",
@@ -9667,9 +9667,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/items/{item_id}/inactive",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/pricebooks___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/pricebooks",
       "text": "Create a Price List",
       "category": "Price Lists",
@@ -9732,9 +9732,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/pricebooks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/pricebooks___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/pricebooks",
       "text": "List of all the Price Lists",
       "category": "Price Lists",
@@ -9764,9 +9764,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/pricebooks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/pricebooks/pricebook_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/pricebooks/pricebook_id",
       "text": "Update a Price List",
       "category": "Price Lists",
@@ -9841,9 +9841,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/pricebooks/{pricebook_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/pricebooks/pricebook_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/pricebooks/pricebook_id",
       "text": "Retrieve a Price list",
       "category": "Price Lists",
@@ -9885,9 +9885,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/pricebooks/{pricebook_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/pricebooks/pricebook_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/pricebooks/pricebook_id",
       "text": "Delete a Price List",
       "category": "Price Lists",
@@ -9929,9 +9929,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/pricebooks/{pricebook_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects",
       "text": "Create a project",
       "category": "Projects",
@@ -10010,9 +10010,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects",
       "text": "List projects",
       "category": "Projects",
@@ -10055,9 +10055,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id",
       "text": "Update a project",
       "category": "Projects",
@@ -10148,9 +10148,9 @@
       "scope": "ZohoInvoice.projects.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id",
       "text": "Get a project",
       "category": "Projects",
@@ -10192,9 +10192,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id",
       "text": "Delete project",
       "category": "Projects",
@@ -10236,9 +10236,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/active___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/active",
       "text": "Activate a project",
       "category": "Projects",
@@ -10280,9 +10280,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/active",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/inactive___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/inactive",
       "text": "Deactivate a project",
       "category": "Projects",
@@ -10324,9 +10324,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/inactive",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/clone___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/clone",
       "text": "Clone a project",
       "category": "Projects",
@@ -10378,9 +10378,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/clone",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users",
       "text": "Assign users",
       "category": "Projects",
@@ -10436,9 +10436,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users",
       "text": "List Users",
       "category": "Projects",
@@ -10480,9 +10480,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users/invite___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users/invite",
       "text": "Invite user",
       "category": "Projects",
@@ -10547,9 +10547,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users/invite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users/user_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users/user_id",
       "text": "Update user",
       "category": "Projects",
@@ -10618,9 +10618,9 @@
       "scope": "ZohoInvoice.projects.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users/user_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users/user_id",
       "text": "Get a User",
       "category": "Projects",
@@ -10672,9 +10672,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/users/user_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/users/user_id",
       "text": "Delete user",
       "category": "Projects",
@@ -10726,9 +10726,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/comments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/comments",
       "text": "Post comment",
       "category": "Projects",
@@ -10776,9 +10776,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/comments",
       "text": "List comments",
       "category": "Projects",
@@ -10820,9 +10820,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/comments/comment_id",
       "text": "Delete comment",
       "category": "Projects",
@@ -10874,9 +10874,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/invoices___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/invoices",
       "text": "List invoices",
       "category": "Projects",
@@ -10922,9 +10922,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/invoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses",
       "text": "Create a recurring expense",
       "category": "Recurring Expenses",
@@ -11066,9 +11066,9 @@
       "scope": "ZohoInvoice.expenses.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses",
       "text": "List recurring expenses",
       "category": "Recurring Expenses",
@@ -11151,9 +11151,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id",
       "text": "Update a recurring expense",
       "category": "Recurring Expenses",
@@ -11307,9 +11307,9 @@
       "scope": "ZohoInvoice.expenses.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id",
       "text": "Get a recurring expense",
       "category": "Recurring Expenses",
@@ -11351,9 +11351,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id",
       "text": "Delete a recurring expense",
       "category": "Recurring Expenses",
@@ -11395,9 +11395,9 @@
       "scope": "ZohoInvoice.expenses.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id/status/stop___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id/status/stop",
       "text": "Resume a recurring Expense",
       "category": "Recurring Expenses",
@@ -11439,9 +11439,9 @@
       "scope": "ZohoInvoice.expenses.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}/status/stop\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id/expenses___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id/expenses",
       "text": "List child expenses created",
       "category": "Recurring Expenses",
@@ -11487,9 +11487,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}/expenses",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringexpenses/recurring_expense_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringexpenses/recurring_expense_id/comments",
       "text": "List recurring expense history",
       "category": "Recurring Expenses",
@@ -11531,9 +11531,9 @@
       "scope": "ZohoInvoice.expenses.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringexpenses/{recurring_expense_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices",
       "text": "Create a Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11667,9 +11667,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices",
       "text": "List Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11712,9 +11712,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id",
       "text": "Update Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11860,9 +11860,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id",
       "text": "Get a Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11904,9 +11904,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id",
       "text": "Delete a Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11948,9 +11948,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id/status/stop___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id/status/stop",
       "text": "Stop a Recurring Invoice",
       "category": "Recurring Invoices",
@@ -11997,9 +11997,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}/status/stop",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id/status/resume___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id/status/resume",
       "text": "Resume a Recurring Invoice",
       "category": "Recurring Invoices",
@@ -12046,9 +12046,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}/status/resume",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id/templates/template_id",
       "text": "Update Recurring Invoice template",
       "category": "Recurring Invoices",
@@ -12109,9 +12109,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}/templates/{template_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/recurringinvoices/recurring_invoice_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/recurringinvoices/recurring_invoice_id/comments",
       "text": "List Recurring Invoice History",
       "category": "Recurring Invoices",
@@ -12153,9 +12153,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/recurringinvoices/{recurring_invoice_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices",
       "text": "Create a retainer invoice",
       "category": "Retainer Invoices",
@@ -12236,9 +12236,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices",
       "text": "List Retainer invoices",
       "category": "Retainer Invoices",
@@ -12289,9 +12289,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id",
       "text": "Update a retainer invoice",
       "category": "Retainer Invoices",
@@ -12384,9 +12384,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id",
       "text": "Get a retainer invoice",
       "category": "Retainer Invoices",
@@ -12428,9 +12428,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id",
       "text": "Delete a retainer invoice",
       "category": "Retainer Invoices",
@@ -12472,9 +12472,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/status/sent___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/status/sent",
       "text": "Mark a retainer invoice as sent",
       "category": "Retainer Invoices",
@@ -12516,9 +12516,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/status/sent",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/templates/template_id",
       "text": "Update retainer invoice template",
       "category": "Retainer Invoices",
@@ -12570,9 +12570,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/templates/{template_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/status/void___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/status/void",
       "text": "Void a retainer invoice",
       "category": "Retainer Invoices",
@@ -12614,9 +12614,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/status/void",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/reatinerinvoice_id/status/draft___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/reatinerinvoice_id/status/draft",
       "text": "Mark as draft",
       "category": "Retainer Invoices",
@@ -12658,9 +12658,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{reatinerinvoice_id}/status/draft",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/email___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/email",
       "text": "Email a retainer invoice",
       "category": "Retainer Invoices",
@@ -12736,9 +12736,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/email___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/email",
       "text": "Get retainer invoice email content",
       "category": "Retainer Invoices",
@@ -12780,9 +12780,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/email",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/address/billing___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/address/billing",
       "text": "Update billing address",
       "category": "Retainer Invoices",
@@ -12849,9 +12849,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/address/billing",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/templates___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/templates",
       "text": "List retainer invoice templates",
       "category": "Retainer Invoices",
@@ -12881,9 +12881,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/templates",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/attachment___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/attachment",
       "text": "Add attachment to a retainer invoice",
       "category": "Retainer Invoices",
@@ -12938,9 +12938,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/attachment___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/attachment",
       "text": "Get a retainer invoice attachment",
       "category": "Retainer Invoices",
@@ -12982,9 +12982,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/attachment",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/documents/document_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/documents/document_id",
       "text": "Delete an attachment",
       "category": "Retainer Invoices",
@@ -13036,9 +13036,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/documents/{document_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/comments___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/comments",
       "text": "Add comment",
       "category": "Retainer Invoices",
@@ -13097,9 +13097,9 @@
       "scope": "ZohoInvoice.invoices.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/comments___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/comments",
       "text": "List retainer invoice comments & history",
       "category": "Retainer Invoices",
@@ -13141,9 +13141,9 @@
       "scope": "ZohoInvoice.invoices.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/comments",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/comments/comment_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/comments/comment_id",
       "text": "Update comment",
       "category": "Retainer Invoices",
@@ -13208,9 +13208,9 @@
       "scope": "ZohoInvoice.invoices.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/retainerinvoices/retainerinvoice_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/retainerinvoices/retainerinvoice_id/comments/comment_id",
       "text": "Delete a comment",
       "category": "Retainer Invoices",
@@ -13262,9 +13262,9 @@
       "scope": "ZohoInvoice.invoices.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/retainerinvoices/{retainerinvoice_id}/comments/{comment_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/tasks___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/tasks",
       "text": "Add a task",
       "category": "Tasks\n",
@@ -13324,9 +13324,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/tasks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/tasks___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/tasks",
       "text": "List tasks",
       "category": "Tasks\n",
@@ -13368,9 +13368,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/tasks",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/tasks/task_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/tasks/task_id",
       "text": "Update a task",
       "category": "Tasks\n",
@@ -13440,9 +13440,9 @@
       "scope": "ZohoInvoice.projects.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/tasks/{task_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/tasks/task_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/tasks/task_id",
       "text": "Get a task",
       "category": "Tasks\n",
@@ -13494,9 +13494,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/tasks/{task_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/project_id/tasks/task_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/project_id/tasks/task_id",
       "text": "Delete a Task",
       "category": "Tasks\n",
@@ -13548,9 +13548,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/{project_id}/tasks/{task_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxes___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxes",
       "text": "Create a tax",
       "category": "Taxes\n",
@@ -13617,9 +13617,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxes",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxes___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxes",
       "text": "List taxes",
       "category": "Taxes\n",
@@ -13649,9 +13649,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxes",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxes/tax_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxes/tax_id",
       "text": "Update a tax",
       "category": "Taxes\n",
@@ -13730,9 +13730,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxes/{tax_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxes/tax_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxes/tax_id",
       "text": "Get a tax",
       "category": "Taxes\n",
@@ -13774,9 +13774,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxes/{tax_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxes/tax_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxes/tax_id",
       "text": "Delete a tax",
       "category": "Taxes\n",
@@ -13818,9 +13818,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxes/{tax_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxgroups/tax_group_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxgroups/tax_group_id",
       "text": "Update a tax group",
       "category": "Taxes\n",
@@ -13871,9 +13871,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxgroups/{tax_group_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxgroups/tax_group_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxgroups/tax_group_id",
       "text": "Get a tax group",
       "category": "Taxes\n",
@@ -13915,9 +13915,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxgroups/{tax_group_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxgroups/tax_group_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxgroups/tax_group_id",
       "text": "Delete a tax group",
       "category": "Taxes\n",
@@ -13959,9 +13959,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxgroups/{tax_group_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxgroups___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxgroups",
       "text": "Create a tax group",
       "category": "Taxes\n",
@@ -14000,9 +14000,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxgroups",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxexemptions___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxexemptions",
       "text": "Create Tax Exemption",
       "category": "Taxes\n",
@@ -14047,9 +14047,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxexemptions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxexemptions___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxexemptions",
       "text": "List Tax Exemptions",
       "category": "Taxes\n",
@@ -14079,9 +14079,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxexemptions",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxexemptions/tax_exemption_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxexemptions/tax_exemption_id",
       "text": "Update Tax Exemption",
       "category": "Taxes\n",
@@ -14138,9 +14138,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxexemptions/{tax_exemption_id}\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxexemptions/tax_exemption_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxexemptions/tax_exemption_id",
       "text": "Delete Tax Exemption",
       "category": "Taxes\n",
@@ -14182,9 +14182,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxexemptions/{tax_exemption_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxauthorities___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxauthorities",
       "text": "Create Tax Authority.",
       "category": "Taxes\n",
@@ -14232,9 +14232,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxauthorities",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxauthorities___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxauthorities",
       "text": "List Tax Authorities",
       "category": "Taxes\n",
@@ -14264,9 +14264,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxauthorities",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxauthorities/tax_authority_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxauthorities/tax_authority_id",
       "text": "Update Tax Authority.",
       "category": "Taxes\n",
@@ -14326,9 +14326,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxauthorities/{tax_authority_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/settings/taxauthorities/tax_authority_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/settings/taxauthorities/tax_authority_id",
       "text": "Update Tax Authority.",
       "category": "Taxes\n",
@@ -14370,9 +14370,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/settings/taxauthorities/{tax_authority_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries",
       "text": "Log time entries",
       "category": "Time Entries\n",
@@ -14447,9 +14447,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries",
       "text": "List time entries.",
       "category": "Time Entries\n",
@@ -14504,9 +14504,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries",
       "text": "Delete time entries",
       "category": "Time Entries\n",
@@ -14536,9 +14536,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/time_entry_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/time_entry_id",
       "text": "Update time entry",
       "category": "Time Entries\n",
@@ -14625,9 +14625,9 @@
       "scope": "ZohoInvoice.projects.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/{time_entry_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/time_entry_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/time_entry_id",
       "text": "Get a time entry",
       "category": "Time Entries\n",
@@ -14669,9 +14669,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/{time_entry_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/time_entry_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/time_entry_id",
       "text": "Delete time entry",
       "category": "Time Entries\n",
@@ -14713,9 +14713,9 @@
       "scope": "ZohoInvoice.projects.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/{time_entry_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/timer/start___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/timer/start",
       "text": "Start timer",
       "category": "Time Entries\n",
@@ -14745,9 +14745,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/timer/start",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/timer/stop___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/timer/stop",
       "text": "Stop timer",
       "category": "Time Entries\n",
@@ -14777,9 +14777,9 @@
       "scope": "ZohoInvoice.projects.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/timer/stop",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/projects/timeentries/runningtimer/me___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/projects/timeentries/runningtimer/me",
       "text": "Get timer",
       "category": "Time Entries\n",
@@ -14809,9 +14809,9 @@
       "scope": "ZohoInvoice.projects.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/projects/timeentries/runningtimer/me",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/users",
       "text": "Create a user",
       "category": "Users\n",
@@ -14856,9 +14856,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/users",
       "text": "List Users",
       "category": "Users\n",
@@ -14897,9 +14897,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/users\n",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id___PUT": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id",
       "text": "Update a user",
       "category": "Users\n",
@@ -14956,9 +14956,9 @@
       "scope": "ZohoInvoice.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id",
       "text": "Get a user",
       "category": "Users\n",
@@ -15000,9 +15000,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id___DELETE": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id",
       "text": "Delete a user",
       "category": "Users\n",
@@ -15044,9 +15044,9 @@
       "scope": "ZohoInvoice.settings.DELETE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/me___GET": {
+    {
       "provider_alias_intent": "/invoice/v3/users/me",
       "text": "Get current user",
       "category": "Users\n",
@@ -15076,9 +15076,9 @@
       "scope": "ZohoInvoice.settings.READ",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/me",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id/invite___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id/invite",
       "text": "Invite a user",
       "category": "Users\n",
@@ -15120,9 +15120,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}/invite",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id/active___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id/active",
       "text": "Mark user as active",
       "category": "Users\n",
@@ -15164,9 +15164,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}/active",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/users/user_id/inactive___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/users/user_id/inactive",
       "text": "Mark user as inactive",
       "category": "Users\n",
@@ -15208,9 +15208,9 @@
       "scope": "ZohoInvoice.settings.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/users/{user_id}/inactive",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/crm/account/crm_account_id/import___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/crm/account/crm_account_id/import",
       "text": "Import a customer using the CRM account ID",
       "category": "ZOHO CRM Integration",
@@ -15252,9 +15252,9 @@
       "scope": "ZohoInvoices.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/crm/account/{crm_account_id}/import",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     },
-    "zohoinvoice__/invoice/v3/crm/contact/crm_contact_id/import___POST": {
+    {
       "provider_alias_intent": "/invoice/v3/crm/contact/crm_contact_id/import",
       "text": "Import a customer using CRM contact ID",
       "category": "ZOHO CRM Integration\n",
@@ -15296,7 +15296,7 @@
       "scope": "ZohoInvoices.contacts.CREATE",
       "api_endpoint_src": "{endpoint}/invoice/v3/crm/contact/{crm_contact_id}/import",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.106Z"
+      "updated_at": "2025-11-11T15:37:35.978Z"
     }
-  }
+  ]
 }

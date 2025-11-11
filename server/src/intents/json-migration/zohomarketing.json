@@ -76,8 +76,8 @@
     "total_api": 46,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohomarketing__/api/v1/getcampaigndetails___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/getcampaigndetails",
       "text": "Campaign reports",
       "category": "Campaign Management APIs",
@@ -123,9 +123,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getcampaigndetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getcampaigndetails___POST": {
+    {
       "provider_alias_intent": "/api/v1/getcampaigndetails",
       "text": "Campaign reports",
       "category": "Campaign Management APIs",
@@ -171,9 +171,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getcampaigndetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/createcampaign___POST": {
+    {
       "provider_alias_intent": "/api/v1/createcampaign",
       "text": "Create Campaign",
       "category": "Campaign Management APIs",
@@ -242,9 +242,9 @@
       "scope": "ZohoMarketingAutomation.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/createCampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/sendcampaign___POST": {
+    {
       "provider_alias_intent": "/api/v1/sendcampaign",
       "text": "Schedule campaign",
       "category": "Campaign Management APIs",
@@ -321,9 +321,9 @@
       "scope": "ZohoMarketingAutomation.campaign.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/sendcampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/json/clonecampaign___GET": {
+    {
       "provider_alias_intent": "/api/v1/json/clonecampaign",
       "text": "Clone campaign",
       "category": "Campaign Management APIs",
@@ -373,9 +373,9 @@
       "scope": "ZohoMarketingAutomation.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/json/clonecampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/json/clonecampaign___POST": {
+    {
       "provider_alias_intent": "/api/v1/json/clonecampaign",
       "text": "Clone campaign",
       "category": "Campaign Management APIs",
@@ -425,9 +425,9 @@
       "scope": "ZohoMarketingAutomation.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/json/clonecampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.117Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/recentcampaigns___GET": {
+    {
       "provider_alias_intent": "/api/v1/recentcampaigns",
       "text": "Recent campaigns",
       "category": "Campaign Management APIs",
@@ -484,9 +484,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/recentcampaigns",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/recentcampaigns___POST": {
+    {
       "provider_alias_intent": "/api/v1/recentcampaigns",
       "text": "Recent campaigns",
       "category": "Campaign Management APIs",
@@ -543,9 +543,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/recentcampaigns",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/recentsentcampaigns___GET": {
+    {
       "provider_alias_intent": "/api/v1/recentsentcampaigns",
       "text": "Recently sent campaigns",
       "category": "Campaign Management APIs",
@@ -595,9 +595,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/recentsentcampaigns",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getlastcampaignreport___POST": {
+    {
       "provider_alias_intent": "/api/v1/getlastcampaignreport",
       "text": "Get Last campaign report",
       "category": "Campaign Management APIs",
@@ -638,9 +638,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getlastcampaignreport",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getcampaignrecipientsdata___POST": {
+    {
       "provider_alias_intent": "/api/v1/getcampaignrecipientsdata",
       "text": "Get campaign recipients' data",
       "category": "Campaign Management APIs",
@@ -691,9 +691,9 @@
       "scope": "ZohoMarketingAutomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getcampaignrecipientsdata",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/coupon/coupondetails___GET": {
+    {
       "provider_alias_intent": "/api/v1/coupon/coupondetails",
       "text": "View Coupon Details",
       "category": "Campaign Management APIs",
@@ -739,9 +739,9 @@
       "scope": "ZohoMarketingautomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/coupon/coupondetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/coupon/coupondetails___POST": {
+    {
       "provider_alias_intent": "/api/v1/coupon/coupondetails",
       "text": "View Coupon Details",
       "category": "Campaign Management APIs",
@@ -787,9 +787,9 @@
       "scope": "ZohoMarketingautomation.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1/coupon/coupondetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/coupon/changestatus___GET": {
+    {
       "provider_alias_intent": "/api/v1/coupon/changestatus",
       "text": "Change coupon status",
       "category": "Campaign Management APIs",
@@ -835,9 +835,9 @@
       "scope": "ZohoMarketingAutomation.campaign.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/coupon/changestatus",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/coupon/changestatus___POST": {
+    {
       "provider_alias_intent": "/api/v1/coupon/changestatus",
       "text": "Change coupon status",
       "category": "Campaign Management APIs",
@@ -883,9 +883,9 @@
       "scope": "ZohoMarketingAutomation.campaign.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/coupon/changestatus",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/deletecampaign___GET": {
+    {
       "provider_alias_intent": "/api/v1/deletecampaign",
       "text": "Delete Campaign",
       "category": "Campaign Management APIs",
@@ -931,9 +931,9 @@
       "scope": "ZohoMarketingAutomation.campaign.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/deletecampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/deletecampaign___POST": {
+    {
       "provider_alias_intent": "/api/v1/deletecampaign",
       "text": "Delete Campaign",
       "category": "Campaign Management APIs",
@@ -979,9 +979,9 @@
       "scope": "ZohoMarketingAutomation.campaign.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/deletecampaign",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/journeys___GET": {
+    {
       "provider_alias_intent": "/api/v1/journeys",
       "text": "Get open journeys",
       "category": "Journey Management API",
@@ -1042,9 +1042,9 @@
       "scope": "ZohoMarketingAutomation.journey.READ",
       "api_endpoint_src": "{endpoint}/api/v1/journeys",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/journeys/journey_key/action/trigger___POST": {
+    {
       "provider_alias_intent": "/api/v1/journeys/journey_key/action/trigger",
       "text": "Trigger leads",
       "category": "Journey Management API",
@@ -1112,9 +1112,9 @@
       "scope": "ZohoMarketingAutomation.journey.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/journeys/[journeykey]/action/trigger",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getmailinglists___POST": {
+    {
       "provider_alias_intent": "/api/v1/getmailinglists",
       "text": "Get mailing lists",
       "category": "Lead Management APIs",
@@ -1167,9 +1167,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getmailinglists",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getlistadvanceddetails___GET": {
+    {
       "provider_alias_intent": "/api/v1/getlistadvanceddetails",
       "text": "Get list advanced details",
       "category": "Lead Management APIs",
@@ -1227,9 +1227,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getlistadvanceddetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getlistadvanceddetails___POST": {
+    {
       "provider_alias_intent": "/api/v1/getlistadvanceddetails",
       "text": "Get list advanced details",
       "category": "Lead Management APIs",
@@ -1287,9 +1287,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getlistadvanceddetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getleads___GET": {
+    {
       "provider_alias_intent": "/api/v1/getleads",
       "text": "Get list leads",
       "category": "Lead Management APIs",
@@ -1351,9 +1351,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getleads",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getleads___POST": {
+    {
       "provider_alias_intent": "/api/v1/getleads",
       "text": "Get list leads",
       "category": "Lead Management APIs",
@@ -1415,9 +1415,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getleads",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/lead/allfields___GET": {
+    {
       "provider_alias_intent": "/api/v1/lead/allfields",
       "text": "Get all lead fields",
       "category": "Lead Management APIs",
@@ -1458,9 +1458,9 @@
       "scope": "ZohoMarketingAutomtion.lead.READ\n",
       "api_endpoint_src": "{endpoint}/api/v1/lead/allfields",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getsegmentdetails___GET": {
+    {
       "provider_alias_intent": "/api/v1/getsegmentdetails",
       "text": "Get segment details",
       "category": "Lead Management APIs",
@@ -1511,9 +1511,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getsegmentdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/getsegmentleads___POST": {
+    {
       "provider_alias_intent": "/api/v1/getsegmentleads",
       "text": "Get segment leads",
       "category": "Lead Management APIs",
@@ -1559,9 +1559,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/getsegmentleads",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/updatelistdetails___POST": {
+    {
       "provider_alias_intent": "/api/updatelistdetails",
       "text": "Update List",
       "category": "Lead Management APIs",
@@ -1617,9 +1617,9 @@
       "scope": "ZohoMarketingAutomation.lead.UPDATE",
       "api_endpoint_src": "{endpoint}/api/updatelistdetails",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/deletemailinglist___GET": {
+    {
       "provider_alias_intent": "/api/v1/deletemailinglist",
       "text": "Delete mailing list",
       "category": "Lead Management APIs",
@@ -1669,9 +1669,9 @@
       "scope": "ZohoMarketingAutomation.lead.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/deletemailinglist",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/deletemailinglist___POST": {
+    {
       "provider_alias_intent": "/api/v1/deletemailinglist",
       "text": "Delete mailing list",
       "category": "Lead Management APIs",
@@ -1721,9 +1721,9 @@
       "scope": "ZohoMarketingAutomation.lead.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/deletemailinglist",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/tag/delete___POST": {
+    {
       "provider_alias_intent": "/api/v1/tag/delete",
       "text": "Delete Lead Tags",
       "category": "Lead Management APIs",
@@ -1765,9 +1765,9 @@
       "scope": "ZohoMarketingAutomation.lead.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1/tag/delete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/leadscount___GET": {
+    {
       "provider_alias_intent": "/api/v1/leadscount",
       "text": "Total leads",
       "category": "Lead Management APIs",
@@ -1817,9 +1817,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/leadscount",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/json/listsubscribe___POST": {
+    {
       "provider_alias_intent": "/api/v1/json/listsubscribe",
       "text": "Subscribe",
       "category": "Lead Management APIs",
@@ -1878,9 +1878,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/json/listsubscribe",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/json/listunsubscribe___POST": {
+    {
       "provider_alias_intent": "/api/v1/json/listunsubscribe",
       "text": "Unsubscribe",
       "category": "Lead Management APIs",
@@ -1935,9 +1935,9 @@
       "scope": "ZohoMarketingAutomation.lead.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/json/listunsubscribe",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/json/leaddonotmail___POST": {
+    {
       "provider_alias_intent": "/api/v1/json/leaddonotmail",
       "text": "Move to Do-Not-Mail",
       "category": "Lead Management APIs",
@@ -1983,9 +1983,9 @@
       "scope": "ZohoMarketingAutomation.lead.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/json/leaddonotmail",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/tag/deassociate___POST": {
+    {
       "provider_alias_intent": "/api/v1/tag/deassociate",
       "text": "Untag leads",
       "category": "Lead Management APIs",
@@ -2032,9 +2032,9 @@
       "scope": "ZohoMarketingAutomation.lead.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/tag/deassociate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/addlistandleads___POST": {
+    {
       "provider_alias_intent": "/api/v1/addlistandleads",
       "text": "Add New List and Leads",
       "category": "Lead Management APIs",
@@ -2103,9 +2103,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/addlistandleads",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/addleadsinbulk___POST": {
+    {
       "provider_alias_intent": "/api/v1/addleadsinbulk",
       "text": "Add leads in existing list",
       "category": "Lead Management APIs",
@@ -2160,9 +2160,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/addleadsinbulk",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/tag/associate___POST": {
+    {
       "provider_alias_intent": "/api/v1/tag/associate",
       "text": "Assign lead tags",
       "category": "Lead Management APIs",
@@ -2209,9 +2209,9 @@
       "scope": "ZohoMarketingAutomation.lead.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1/tag/associate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/custom/add___POST": {
+    {
       "provider_alias_intent": "/api/v1/custom/add",
       "text": "Create custom fields",
       "category": "Lead Management APIs",
@@ -2267,9 +2267,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/custom/add",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/merge/create___POST": {
+    {
       "provider_alias_intent": "/api/v1/merge/create",
       "text": "Create merge tags",
       "category": "Lead Management APIs",
@@ -2334,9 +2334,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/merge/create",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/tag/add___POST": {
+    {
       "provider_alias_intent": "/api/v1/tag/add",
       "text": "Create lead tags",
       "category": "Lead Management APIs",
@@ -2386,9 +2386,9 @@
       "scope": "ZohoMarketingAutomation.lead.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1/tag/add",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/topics___GET": {
+    {
       "provider_alias_intent": "/api/v1/topics",
       "text": "Get Topics",
       "category": "Topic Management API",
@@ -2433,9 +2433,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/topics",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/topics/products___GET": {
+    {
       "provider_alias_intent": "/api/v1/topics/products",
       "text": "Get Product",
       "category": "Topic Management API",
@@ -2480,9 +2480,9 @@
       "scope": "ZohoMarketingAutomation.lead.READ",
       "api_endpoint_src": "{endpoint}/api/v1/topics/products",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/domains___GET": {
+    {
       "provider_alias_intent": "/api/v1/domains",
       "text": "Get all domains",
       "category": "Web Assistant APIs",
@@ -2518,9 +2518,9 @@
       "scope": "ZohoMarketingAutomation.wa.READ",
       "api_endpoint_src": "{endpoint}/api/v1/domains",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     },
-    "zohomarketing__/api/v1/domains/key/code___GET": {
+    {
       "provider_alias_intent": "/api/v1/domains/key/code",
       "text": "Get tracking code",
       "category": "Web Assistant APIs",
@@ -2568,7 +2568,7 @@
       "scope": "ZohoMarketingAutomation.wa.READ",
       "api_endpoint_src": "{endpoint}/api/v1/domains/<key>/code",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.118Z"
+      "updated_at": "2025-11-11T15:37:36.003Z"
     }
-  }
+  ]
 }

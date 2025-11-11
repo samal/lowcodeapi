@@ -16,8 +16,8 @@
     "total_api": 63,
     "credential_link": "https://beta.hume.ai/settings/keys"
   },
-  "routes": {
-    "humeai__/v0/batch/jobs___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v0/batch/jobs",
       "text": "Chat",
       "category": "Chat",
@@ -64,9 +64,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/batch/jobs___POST": {
+    {
       "provider_alias_intent": "/v0/batch/jobs",
       "text": "Start inference job",
       "category": "Batch",
@@ -121,9 +121,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/batch/jobs/id___GET": {
+    {
       "provider_alias_intent": "/v0/batch/jobs/id",
       "text": "Get job details",
       "category": "Batch",
@@ -159,9 +159,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/batch/jobs/id/predictions___GET": {
+    {
       "provider_alias_intent": "/v0/batch/jobs/id/predictions",
       "text": "Get job predictions",
       "category": "Batch",
@@ -197,9 +197,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/batch/jobs/id/artifacts___GET": {
+    {
       "provider_alias_intent": "/v0/batch/jobs/id/artifacts",
       "text": "Get job artifacts",
       "category": "Batch",
@@ -235,9 +235,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/chat_groups___GET": {
+    {
       "provider_alias_intent": "/v0/evi/chat_groups",
       "text": "List chat_groups",
       "category": "Chat Groups",
@@ -280,9 +280,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/chat_groups/id/events___GET": {
+    {
       "provider_alias_intent": "/v0/evi/chat_groups/id/events",
       "text": "List chat events from a specific chat_group",
       "category": "Chat Groups",
@@ -334,9 +334,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/chats___GET": {
+    {
       "provider_alias_intent": "/v0/evi/chats",
       "text": "List chats",
       "category": "Chats",
@@ -379,9 +379,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/chats/id___GET": {
+    {
       "provider_alias_intent": "/v0/evi/chats/id",
       "text": "List chat events",
       "category": "Chats",
@@ -433,9 +433,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs___GET": {
+    {
       "provider_alias_intent": "/v0/evi/configs",
       "text": "List configs",
       "category": "Configs",
@@ -478,9 +478,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs___POST": {
+    {
       "provider_alias_intent": "/v0/evi/configs",
       "text": "Create config",
       "category": "Configs",
@@ -544,9 +544,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id___GET": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id",
       "text": "List config versions",
       "category": "Configs",
@@ -600,9 +600,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id___POST": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id",
       "text": "Create config version",
       "category": "Configs",
@@ -673,9 +673,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id",
       "text": "Delete config",
       "category": "Configs",
@@ -713,9 +713,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id",
       "text": "Update config name",
       "category": "Configs",
@@ -759,9 +759,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id/version/version___GET": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id/version/version",
       "text": "Get config version",
       "category": "Configs",
@@ -809,9 +809,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id/version/version___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id/version/version",
       "text": "Delete config version",
       "category": "Configs",
@@ -859,9 +859,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/configs/id/version/version___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/configs/id/version/version",
       "text": "Update config description",
       "category": "Configs",
@@ -914,9 +914,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets",
       "text": "List datasets",
       "category": "Datasets",
@@ -963,9 +963,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets___POST": {
+    {
       "provider_alias_intent": "/v0/registry/datasets",
       "text": "Create dataset",
       "category": "Datasets",
@@ -1005,9 +1005,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/id___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/id",
       "text": "Get dataset",
       "category": "Datasets",
@@ -1045,9 +1045,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/id___POST": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/id",
       "text": "Create dataset version",
       "category": "Datasets",
@@ -1094,9 +1094,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/id___DELETE": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/id",
       "text": "Delete dataset",
       "category": "Datasets",
@@ -1134,9 +1134,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/id/versions___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/id/versions",
       "text": "List dataset versions",
       "category": "Datasets",
@@ -1190,9 +1190,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/id/files___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/id/files",
       "text": "List dataset files",
       "category": "Datasets",
@@ -1246,9 +1246,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/version/id___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/version/id",
       "text": "Get dataset version",
       "category": "Datasets",
@@ -1286,9 +1286,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/datasets/version/id/files___GET": {
+    {
       "provider_alias_intent": "/v0/registry/datasets/version/id/files",
       "text": "List dataset version files",
       "category": "Datasets",
@@ -1342,9 +1342,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files___GET": {
+    {
       "provider_alias_intent": "/v0/registry/files",
       "text": "List files",
       "category": "Files",
@@ -1387,9 +1387,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files___POST": {
+    {
       "provider_alias_intent": "/v0/registry/files",
       "text": "Create files",
       "category": "Files",
@@ -1425,9 +1425,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files/upload___POST": {
+    {
       "provider_alias_intent": "/v0/registry/files/upload",
       "text": "Upload file",
       "category": "Files",
@@ -1462,9 +1462,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files/id___GET": {
+    {
       "provider_alias_intent": "/v0/registry/files/id",
       "text": "Get file",
       "category": "Files",
@@ -1502,9 +1502,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files/id___DELETE": {
+    {
       "provider_alias_intent": "/v0/registry/files/id",
       "text": "Delete file",
       "category": "Files",
@@ -1542,9 +1542,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/registry/files/id",
       "text": "Update file name",
       "category": "Files",
@@ -1588,9 +1588,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/files/id/predictions___GET": {
+    {
       "provider_alias_intent": "/v0/registry/files/id/predictions",
       "text": "Get file predictions",
       "category": "Files",
@@ -1628,9 +1628,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/v0/batch/jobs/tl/train___POST": {
+    {
       "provider_alias_intent": "/v0/registry/v0/batch/jobs/tl/train",
       "text": "Start training job",
       "category": "Jobs",
@@ -1695,9 +1695,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/v0/batch/jobs/tl/inference___POST": {
+    {
       "provider_alias_intent": "/v0/registry/v0/batch/jobs/tl/inference",
       "text": "Start custom models inference job",
       "category": "Jobs",
@@ -1749,9 +1749,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models___GET": {
+    {
       "provider_alias_intent": "/v0/registry/models",
       "text": "List models",
       "category": "Models",
@@ -1798,9 +1798,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models/id___GET": {
+    {
       "provider_alias_intent": "/v0/registry/models/id",
       "text": "Get model details",
       "category": "Models",
@@ -1838,9 +1838,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/registry/models/id",
       "text": "Update model name",
       "category": "Models",
@@ -1884,9 +1884,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models/version___GET": {
+    {
       "provider_alias_intent": "/v0/registry/models/version",
       "text": "List model versions",
       "category": "Models",
@@ -1933,9 +1933,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models/version/id___GET": {
+    {
       "provider_alias_intent": "/v0/registry/models/version/id",
       "text": "Get model version",
       "category": "Models",
@@ -1981,9 +1981,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/registry/models/version/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/registry/models/version/id",
       "text": "Update model description",
       "category": "Models",
@@ -2021,9 +2021,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/privacy/settings___GET": {
+    {
       "provider_alias_intent": "/v0/evi/privacy/settings",
       "text": "Get User Privacy Settings",
       "category": "Privacy",
@@ -2049,9 +2049,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/privacy/settings___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/privacy/settings",
       "text": "Patch User Privacy Settings",
       "category": "Privacy",
@@ -2094,9 +2094,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/privacy___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/privacy",
       "text": "Delete User Data",
       "category": "Privacy",
@@ -2122,9 +2122,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts___GET": {
+    {
       "provider_alias_intent": "/v0/evi/prompts",
       "text": "List prompts",
       "category": "Prompts",
@@ -2167,9 +2167,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts___POST": {
+    {
       "provider_alias_intent": "/v0/evi/prompts",
       "text": "Create prompt",
       "category": "Prompts",
@@ -2210,9 +2210,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id___GET": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id",
       "text": "List prompt versions",
       "category": "Prompts",
@@ -2266,9 +2266,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id___POST": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id",
       "text": "Create prompt version",
       "category": "Prompts",
@@ -2316,9 +2316,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id",
       "text": "Delete prompt",
       "category": "Prompts",
@@ -2356,9 +2356,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id",
       "text": "Update prompt name",
       "category": "Prompts",
@@ -2402,9 +2402,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id/version/version___GET": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id/version/version",
       "text": "Get prompt version",
       "category": "Prompts",
@@ -2452,9 +2452,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id/version/version___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id/version/version",
       "text": "Delete prompt version",
       "category": "Prompts",
@@ -2502,9 +2502,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/prompts/id/version/version___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/prompts/id/version/version",
       "text": "Update prompt description",
       "category": "Prompts",
@@ -2557,9 +2557,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools___GET": {
+    {
       "provider_alias_intent": "/v0/evi/tools",
       "text": "List tools",
       "category": "Tools",
@@ -2602,9 +2602,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools___POST": {
+    {
       "provider_alias_intent": "/v0/evi/tools",
       "text": "Create tool",
       "category": "Tools",
@@ -2653,9 +2653,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id___GET": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id",
       "text": "List tool versions",
       "category": "Tools",
@@ -2709,9 +2709,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id___POST": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id",
       "text": "Create tool version",
       "category": "Tools",
@@ -2767,9 +2767,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id",
       "text": "Delete tool",
       "category": "Tools",
@@ -2807,9 +2807,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id",
       "text": "Update tool name",
       "category": "Tools",
@@ -2853,9 +2853,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id/version/version___GET": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id/version/version",
       "text": "Get tool version",
       "category": "Tools",
@@ -2903,9 +2903,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id/version/version___DELETE": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id/version/version",
       "text": "Delete tool version",
       "category": "Tools",
@@ -2953,9 +2953,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     },
-    "humeai__/v0/evi/tools/id/version/version___PATCH": {
+    {
       "provider_alias_intent": "/v0/evi/tools/id/version/version",
       "text": "Update tool description",
       "category": "Tools",
@@ -3008,7 +3008,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.638Z"
+      "updated_at": "2025-11-11T15:37:35.163Z"
     }
-  }
+  ]
 }

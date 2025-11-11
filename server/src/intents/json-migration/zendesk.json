@@ -47,8 +47,8 @@
     "total_api": 2,
     "credential_link": ""
   },
-  "routes": {
-    "zendesk__/api/v2/tickets/ticket_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v2/tickets/ticket_id",
       "text": "Show Ticket",
       "category": "Tickets",
@@ -86,9 +86,9 @@
         "api_ref": ""
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.938Z"
+      "updated_at": "2025-11-11T15:37:35.674Z"
     },
-    "zendesk__/api/v2/users___GET": {
+    {
       "provider_alias_intent": "/api/v2/users",
       "text": "List Users",
       "category": "Users",
@@ -114,7 +114,7 @@
         "api_ref": ""
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.938Z"
+      "updated_at": "2025-11-11T15:37:35.674Z"
     }
-  }
+  ]
 }

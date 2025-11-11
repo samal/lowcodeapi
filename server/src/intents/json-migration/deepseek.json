@@ -33,8 +33,8 @@
     "total_api": 4,
     "credential_link": "NA"
   },
-  "routes": {
-    "deepseek__/chat/completions___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/chat/completions",
       "text": "Create Chat Completion",
       "category": "Chat",
@@ -119,9 +119,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.150Z"
+      "updated_at": "2025-11-11T15:37:34.849Z"
     },
-    "deepseek__/beta/completions___POST": {
+    {
       "provider_alias_intent": "/beta/completions",
       "text": "Create FIM Completion (Beta)",
       "category": "Completions",
@@ -198,9 +198,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.150Z"
+      "updated_at": "2025-11-11T15:37:34.850Z"
     },
-    "deepseek__/models___GET": {
+    {
       "provider_alias_intent": "/models",
       "text": "Lists Models",
       "category": "Models",
@@ -222,9 +222,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.150Z"
+      "updated_at": "2025-11-11T15:37:34.850Z"
     },
-    "deepseek__/user/balance___GET": {
+    {
       "provider_alias_intent": "/user/balance",
       "text": "Get User Balance",
       "category": "Others",
@@ -246,7 +246,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.150Z"
+      "updated_at": "2025-11-11T15:37:34.850Z"
     }
-  }
+  ]
 }

@@ -33,8 +33,8 @@
     "total_api": 3,
     "credential_link": ""
   },
-  "routes": {
-    "writerai__/v1/models___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/models",
       "text": "List Models",
       "category": "Writer API",
@@ -62,9 +62,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.936Z"
+      "updated_at": "2025-11-11T15:37:35.660Z"
     },
-    "writerai__/v1/completions___POST": {
+    {
       "provider_alias_intent": "/v1/completions",
       "text": "Text Generation",
       "category": "Writer API",
@@ -135,9 +135,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.936Z"
+      "updated_at": "2025-11-11T15:37:35.660Z"
     },
-    "writerai__/v1/chat___POST": {
+    {
       "provider_alias_intent": "/v1/chat",
       "text": "Chat Completion",
       "category": "Writer API",
@@ -204,7 +204,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.936Z"
+      "updated_at": "2025-11-11T15:37:35.660Z"
     }
-  }
+  ]
 }

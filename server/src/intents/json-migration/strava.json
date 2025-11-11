@@ -56,8 +56,8 @@
     "total_api": 34,
     "credential_link": "https://www.strava.com/settings/api"
   },
-  "routes": {
-    "strava__/api/v3/activities___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v3/activities",
       "text": "Create an Activity",
       "category": "Activities",
@@ -126,9 +126,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id",
       "text": "Get Activity",
       "category": "Activities",
@@ -176,9 +176,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id/comments___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id/comments",
       "text": "List Activity Comments",
       "category": "Activities",
@@ -234,9 +234,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id/kudos___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id/kudos",
       "text": "List Activity Kudoers",
       "category": "Activities",
@@ -284,9 +284,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id/laps___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id/laps",
       "text": "List Activity Laps",
       "category": "Activities",
@@ -326,9 +326,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/athlete/activities___GET": {
+    {
       "provider_alias_intent": "/api/v3/athlete/activities",
       "text": "List Athlete Activities",
       "category": "Activities",
@@ -373,9 +373,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id/zones___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id/zones",
       "text": "Get Activity Zones",
       "category": "Activities",
@@ -415,9 +415,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/activities/id___PUT": {
+    {
       "provider_alias_intent": "/api/v3/activities/id",
       "text": "Update Activity",
       "category": "Activities",
@@ -457,9 +457,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/athlete___GET": {
+    {
       "provider_alias_intent": "/api/v3/athlete",
       "text": "Get Authenticated Athlete",
       "category": "Athletes",
@@ -487,9 +487,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.508Z"
     },
-    "strava__/api/v3/athlete/zones___GET": {
+    {
       "provider_alias_intent": "/api/v3/athlete/zones",
       "text": "Get Zones",
       "category": "Athletes",
@@ -519,9 +519,9 @@
       "response_type": "",
       "scope": "profile:read_all",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/athletes/id/stats___GET": {
+    {
       "provider_alias_intent": "/api/v3/athletes/id/stats",
       "text": "Get Athlete Stats",
       "category": "Athletes",
@@ -561,9 +561,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/athlete___PUT": {
+    {
       "provider_alias_intent": "/api/v3/athlete",
       "text": "Update Athlete",
       "category": "Athletes",
@@ -603,9 +603,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/clubs/id/activities___GET": {
+    {
       "provider_alias_intent": "/api/v3/clubs/id/activities",
       "text": "List Club Activities",
       "category": "Clubs",
@@ -653,9 +653,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/clubs/id/admins___GET": {
+    {
       "provider_alias_intent": "/api/v3/clubs/id/admins",
       "text": "List Club Administrators",
       "category": "Clubs",
@@ -703,9 +703,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/clubs/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/clubs/id",
       "text": "Get Club",
       "category": "Clubs",
@@ -745,9 +745,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/clubs/id/members___GET": {
+    {
       "provider_alias_intent": "/api/v3/clubs/id/members",
       "text": "List Club Members",
       "category": "Clubs",
@@ -795,9 +795,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/athlete/clubs___GET": {
+    {
       "provider_alias_intent": "/api/v3/athlete/clubs",
       "text": "List Athlete Clubs",
       "category": "Clubs",
@@ -834,9 +834,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/gear/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/gear/id",
       "text": "Get Equipment",
       "category": "Gears",
@@ -876,9 +876,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/routes/id/export_gpx___GET": {
+    {
       "provider_alias_intent": "/api/v3/routes/id/export_gpx",
       "text": "Export Route GPX",
       "category": "Routes",
@@ -918,9 +918,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/routes/id/export_tcx___GET": {
+    {
       "provider_alias_intent": "/api/v3/routes/id/export_tcx",
       "text": "Export Route TCX",
       "category": "Routes",
@@ -960,9 +960,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/routes/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/routes/id",
       "text": "Get Route",
       "category": "Routes",
@@ -1002,9 +1002,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/athletes/id/routes___GET": {
+    {
       "provider_alias_intent": "/api/v3/athletes/id/routes",
       "text": "List Athlete Routes",
       "category": "Routes",
@@ -1041,9 +1041,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segment_efforts___GET": {
+    {
       "provider_alias_intent": "/api/v3/segment_efforts",
       "text": "List Segment Efforts",
       "category": "SegmentEfforts",
@@ -1089,9 +1089,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segment_efforts/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/segment_efforts/id",
       "text": "Get Segment Efforts",
       "category": "SegmentEfforts",
@@ -1131,9 +1131,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segments/explore___GET": {
+    {
       "provider_alias_intent": "/api/v3/segments/explore",
       "text": "Explore segments",
       "category": "Segments",
@@ -1183,9 +1183,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segments/starred___GET": {
+    {
       "provider_alias_intent": "/api/v3/segments/starred",
       "text": "List Starred Segments",
       "category": "Segments",
@@ -1222,9 +1222,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segments/id___GET": {
+    {
       "provider_alias_intent": "/api/v3/segments/id",
       "text": "Get Segment",
       "category": "Segments",
@@ -1264,9 +1264,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segments/id/starred___PUT": {
+    {
       "provider_alias_intent": "/api/v3/segments/id/starred",
       "text": "Star Segment",
       "category": "Segments",
@@ -1316,9 +1316,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/activities/id/streams___GET": {
+    {
       "provider_alias_intent": "/api/v3/activities/id/streams",
       "text": "Get Activity Streams",
       "category": "Streams",
@@ -1372,9 +1372,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/routes/id/streams___GET": {
+    {
       "provider_alias_intent": "/api/v3/routes/id/streams",
       "text": "Get Route Streams",
       "category": "Streams",
@@ -1414,9 +1414,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segment_efforts/id/streams___GET": {
+    {
       "provider_alias_intent": "/api/v3/segment_efforts/id/streams",
       "text": "Get Segment Effort Streams",
       "category": "Streams",
@@ -1470,9 +1470,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/segments/id/streams___GET": {
+    {
       "provider_alias_intent": "/api/v3/segments/id/streams",
       "text": "Get Segment Streams",
       "category": "Streams",
@@ -1526,9 +1526,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/uploads___POST": {
+    {
       "provider_alias_intent": "/api/v3/uploads",
       "text": "Upload Activity",
       "category": "Uploads",
@@ -1593,9 +1593,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     },
-    "strava__/api/v3/uploads/uploadid___GET": {
+    {
       "provider_alias_intent": "/api/v3/uploads/uploadid",
       "text": "Get Upload",
       "category": "Uploads",
@@ -1635,7 +1635,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.877Z"
+      "updated_at": "2025-11-11T15:37:35.509Z"
     }
-  }
+  ]
 }

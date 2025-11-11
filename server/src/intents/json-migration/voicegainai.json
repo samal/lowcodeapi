@@ -16,8 +16,8 @@
     "total_api": 26,
     "credential_link": ""
   },
-  "routes": {
-    "voicegainai__/v1/asr/transcribe___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/asr/transcribe",
       "text": "Poll by WS name",
       "category": "Transcribe",
@@ -206,9 +206,9 @@
           ]
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe___POST": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe",
       "text": "Sync Transcribe",
       "category": "Transcribe",
@@ -261,9 +261,9 @@
         },
         "capturedAudio": "5fc05d28-155d-45b9-bbd1-fb5dff697c01"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe/status/queue___GET": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe/status/queue",
       "text": "Transcribe Queue Status",
       "category": "Transcribe",
@@ -290,9 +290,9 @@
         "queueSizeLimitReached": false,
         "queueSizeLimitReachedAt": "2019-09-09T12:00:00.000Z"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe/async___POST": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe/async",
       "text": "Async Transcribe",
       "category": "Transcribe",
@@ -379,9 +379,9 @@
         ],
         "preemptible": false
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe/sessionid___DELETE": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe/sessionid",
       "text": "Delete Transcript",
       "category": "Transcribe",
@@ -429,9 +429,9 @@
           "sessionId": "dee11d4e-63c6-4d90-983c-5c9f1e79e96c"
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe/sessionid___GET": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe/sessionid",
       "text": "Poll Transcript",
       "category": "Transcribe",
@@ -628,9 +628,9 @@
           ]
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/transcribe/sessionid___PUT": {
+    {
       "provider_alias_intent": "/v1/asr/transcribe/sessionid",
       "text": "Modify Transcribe Sess.",
       "category": "Transcribe",
@@ -689,9 +689,9 @@
           "sessionId": "dee11d4e-63c6-4d90-983c-5c9f1e79e96c"
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/recognize___POST": {
+    {
       "provider_alias_intent": "/v1/asr/recognize",
       "text": "Sync Recognition",
       "category": "Recognize",
@@ -750,9 +750,9 @@
         },
         "capturedAudio": "5fc05d28-155d-45b9-bbd1-fb5dff697c01"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/recognize/async___GET": {
+    {
       "provider_alias_intent": "/v1/asr/recognize/async",
       "text": "Async Recognition",
       "category": "Recognize",
@@ -824,9 +824,9 @@
         ],
         "preemptible": false
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/asr/recognize/sessionid___GET": {
+    {
       "provider_alias_intent": "/v1/asr/recognize/sessionid",
       "text": "Poll Recognition",
       "category": "Recognize",
@@ -893,9 +893,9 @@
           "sessionId": "dee11d4e-63c6-4d90-983c-5c9f1e79e96c"
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/customer/asr-recognize-callback___POST": {
+    {
       "provider_alias_intent": "/v1/customer/asr-recognize-callback",
       "text": "Recognition Callback",
       "category": "STT Callback",
@@ -940,9 +940,9 @@
       "response_format": {
         "stop": false
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/customer/asr-transcribe-callback___POST": {
+    {
       "provider_alias_intent": "/v1/customer/asr-transcribe-callback",
       "text": "Transcription Callback",
       "category": "STT Callback",
@@ -1002,9 +1002,9 @@
       "response_format": {
         "stop": false
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/customer/aivr-callback___POST": {
+    {
       "provider_alias_intent": "/v1/customer/aivr-callback",
       "text": "New Bot Session",
       "category": "Tel Bot Callback",
@@ -1277,9 +1277,9 @@
           "right": "string"
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/customer/aivr-callback/csid___DELETE": {
+    {
       "provider_alias_intent": "/v1/customer/aivr-callback/csid",
       "text": "End Bot Session",
       "category": "Tel Bot Callback",
@@ -1350,9 +1350,9 @@
         },
         "termination": "normal"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/customer/aivr-callback/csid___PUT": {
+    {
       "provider_alias_intent": "/v1/customer/aivr-callback/csid",
       "text": "Existing Bot Session",
       "category": "Tel Bot Callback",
@@ -1572,9 +1572,9 @@
         },
         "switchLanguage": "en"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa___GET": {
+    {
       "provider_alias_intent": "/v1/sa",
       "text": "Query Sp. Analytics Data",
       "category": "Speech Analytics",
@@ -1617,9 +1617,9 @@
       },
       "auth": [],
       "response_format": [],
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa___POST": {
+    {
       "provider_alias_intent": "/v1/sa",
       "text": "New Speech Analytics Ses.",
       "category": "Speech Analytics",
@@ -1745,9 +1745,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/sasessionid/data___GET": {
+    {
       "provider_alias_intent": "/v1/sa/sasessionid/data",
       "text": "Get Sp. Analytics Data",
       "category": "Speech Analytics",
@@ -2161,9 +2161,9 @@
           "numberSpeakers": 2
         }
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/sasessionid/status___GET": {
+    {
       "provider_alias_intent": "/v1/sa/sasessionid/status",
       "text": "Poll Sp. Analytics Ses.",
       "category": "Speech Analytics",
@@ -2199,9 +2199,9 @@
         "startTime": "2019-02-06T02:06:18+0000",
         "saSessionId": "f1dbdbb5-cd6c-4d3c-abf3-0e8cbd76d282"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/sasessionid/transcript___GET": {
+    {
       "provider_alias_intent": "/v1/sa/sasessionid/transcript",
       "text": "SA Transcript Content",
       "category": "Speech Analytics",
@@ -2267,9 +2267,9 @@
           "duration": 600
         }
       ],
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/config___GET": {
+    {
       "provider_alias_intent": "/v1/sa/config",
       "text": "Query Sp. Analytics Cfg.",
       "category": "Speech Analytics",
@@ -2490,9 +2490,9 @@
         "silenceSingleDurationMaximumThreshold": 5000,
         "overtalkSingleDurationMaximumThreshold": 750
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/config/saconfigid___DELETE": {
+    {
       "provider_alias_intent": "/v1/sa/config/saconfigid",
       "text": "Delete SA Cfg.",
       "category": "Speech Analytics",
@@ -2677,9 +2677,9 @@
         "silenceSingleDurationMaximumThreshold": 5000,
         "overtalkSingleDurationMaximumThreshold": 750
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/config/saconfigid___GET": {
+    {
       "provider_alias_intent": "/v1/sa/config/saconfigid",
       "text": "Get Sp. Analytics Cfg.",
       "category": "Speech Analytics",
@@ -2864,9 +2864,9 @@
         "silenceSingleDurationMaximumThreshold": 5000,
         "overtalkSingleDurationMaximumThreshold": 750
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/sa/config/saconfigid___PUT": {
+    {
       "provider_alias_intent": "/v1/sa/config/saconfigid",
       "text": "Mod Sp. Analytics Cfg.",
       "category": "Speech Analytics",
@@ -3127,9 +3127,9 @@
         "silenceSingleDurationMaximumThreshold": 5000,
         "overtalkSingleDurationMaximumThreshold": 750
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     },
-    "voicegainai__/v1/text/redact___POST": {
+    {
       "provider_alias_intent": "/v1/text/redact",
       "text": "Redact Text",
       "category": "Text",
@@ -3247,7 +3247,7 @@
         ],
         "redactedText": "My SSN is ***-***-6789 and my CC is ****-****-9012-3456"
       },
-      "updated_at": "2025-11-11T12:00:08.912Z"
+      "updated_at": "2025-11-11T15:37:35.607Z"
     }
-  }
+  ]
 }

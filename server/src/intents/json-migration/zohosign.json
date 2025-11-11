@@ -76,8 +76,8 @@
     "total_api": 4,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohosign__/api/v1/requests___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/requests",
       "text": "Create document",
       "category": "Document Management",
@@ -146,9 +146,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/v1/requests",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.130Z"
+      "updated_at": "2025-11-11T15:37:36.036Z"
     },
-    "zohosign__/api/v1/requests/request_id___PUT": {
+    {
       "provider_alias_intent": "/api/v1/requests/request_id",
       "text": "Update document",
       "category": "Document Management",
@@ -233,9 +233,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/v1/requests/[Request Id]",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.130Z"
+      "updated_at": "2025-11-11T15:37:36.036Z"
     },
-    "zohosign__/api/v1/templates/template_id___PUT": {
+    {
       "provider_alias_intent": "/api/v1/templates/template_id",
       "text": "Update template",
       "category": "Template Management",
@@ -324,9 +324,9 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/v1/templates/[Template Id]",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.130Z"
+      "updated_at": "2025-11-11T15:37:36.036Z"
     },
-    "zohosign__/api/v1/templates/template_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/templates/template_id",
       "text": "Get template details",
       "category": "Template Management",
@@ -374,7 +374,7 @@
       "scope": "",
       "api_endpoint_src": "{endpoint}/api/v1/templates/[Template_ID]",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.130Z"
+      "updated_at": "2025-11-11T15:37:36.036Z"
     }
-  }
+  ]
 }

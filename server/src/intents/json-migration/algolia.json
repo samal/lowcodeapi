@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "algolia__/2/abtests___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/2/abtests",
       "text": "Add A/B test 🚧",
       "category": "A/B Testing",
@@ -34,9 +34,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.006Z"
+      "updated_at": "2025-11-11T15:37:34.762Z"
     },
-    "algolia__/2/abtests/id___GET": {
+    {
       "provider_alias_intent": "/2/abtests/id",
       "text": "Get A/B test 🚧",
       "category": "A/B Testing",
@@ -69,9 +69,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.007Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/abtests___GET": {
+    {
       "provider_alias_intent": "/2/abtests",
       "text": "List A/B tests 🚧",
       "category": "A/B Testing",
@@ -104,9 +104,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.007Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/abtests/id/stop___POST": {
+    {
       "provider_alias_intent": "/2/abtests/id/stop",
       "text": "Stop A/B test 🚧",
       "category": "A/B Testing",
@@ -139,9 +139,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.007Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/abtests/id___DELETE": {
+    {
       "provider_alias_intent": "/2/abtests/id",
       "text": "Delete A/B test 🚧",
       "category": "A/B Testing",
@@ -174,9 +174,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/status___GET": {
+    {
       "provider_alias_intent": "/2/status",
       "text": "Get status 🚧",
       "category": "Analytics",
@@ -209,9 +209,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/searches___GET": {
+    {
       "provider_alias_intent": "/2/searches",
       "text": "Get top searches 🚧",
       "category": "Analytics",
@@ -244,9 +244,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/searches/count___GET": {
+    {
       "provider_alias_intent": "/2/searches/count",
       "text": "Get count of searches 🚧",
       "category": "Analytics",
@@ -279,9 +279,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/searches/noResults___GET": {
+    {
       "provider_alias_intent": "/2/searches/noResults",
       "text": "Get top searches with no results 🚧",
       "category": "Analytics",
@@ -314,9 +314,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.763Z"
     },
-    "algolia__/2/searches/noClicks___GET": {
+    {
       "provider_alias_intent": "/2/searches/noClicks",
       "text": "Get top searches with no clicks 🚧",
       "category": "Analytics",
@@ -349,9 +349,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.764Z"
     },
-    "algolia__/2/searches/noResultRate___GET": {
+    {
       "provider_alias_intent": "/2/searches/noResultRate",
       "text": "Get rate of no results 🚧",
       "category": "Analytics",
@@ -384,9 +384,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.008Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/searches/noClickRate___GET": {
+    {
       "provider_alias_intent": "/2/searches/noClickRate",
       "text": "Get rate of no clicks 🚧",
       "category": "Analytics",
@@ -419,9 +419,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/hits___GET": {
+    {
       "provider_alias_intent": "/2/hits",
       "text": "Get top hits 🚧",
       "category": "Analytics",
@@ -454,9 +454,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/hits?search=___GET": {
+    {
       "provider_alias_intent": "/2/hits?search=",
       "text": "Get top hits for a search 🚧",
       "category": "Analytics",
@@ -489,9 +489,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/users/count___GET": {
+    {
       "provider_alias_intent": "/2/users/count",
       "text": "Get count of users 🚧",
       "category": "Analytics",
@@ -524,9 +524,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/filters___GET": {
+    {
       "provider_alias_intent": "/2/filters",
       "text": "Get top filter attributes 🚧",
       "category": "Analytics",
@@ -559,9 +559,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/filters/noResults___GET": {
+    {
       "provider_alias_intent": "/2/filters/noResults",
       "text": "Get top filters for a no result search 🚧",
       "category": "Analytics",
@@ -594,9 +594,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/filters?search=___GET": {
+    {
       "provider_alias_intent": "/2/filters?search=",
       "text": "Get top filter attributes for a search 🚧",
       "category": "Analytics",
@@ -629,9 +629,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/filters/attribute list?search=___GET": {
+    {
       "provider_alias_intent": "/2/filters/attribute list?search=",
       "text": "Get top filters for attributes and search 🚧",
       "category": "Analytics",
@@ -664,9 +664,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/filters/attribute___GET": {
+    {
       "provider_alias_intent": "/2/filters/attribute",
       "text": "Get top filters for an attribute 🚧",
       "category": "Analytics",
@@ -699,9 +699,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/countries___GET": {
+    {
       "provider_alias_intent": "/2/countries",
       "text": "Get top countries 🚧",
       "category": "Analytics",
@@ -734,9 +734,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/clicks/averageClickPosition___GET": {
+    {
       "provider_alias_intent": "/2/clicks/averageClickPosition",
       "text": "Get average click position 🚧",
       "category": "Analytics",
@@ -769,9 +769,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/clicks/positions___GET": {
+    {
       "provider_alias_intent": "/2/clicks/positions",
       "text": "Get click positions 🚧",
       "category": "Analytics",
@@ -804,9 +804,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/clicks/clickThroughRate___GET": {
+    {
       "provider_alias_intent": "/2/clicks/clickThroughRate",
       "text": "Get click-through rate 🚧",
       "category": "Analytics",
@@ -839,9 +839,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/2/conversions/conversionRate___GET": {
+    {
       "provider_alias_intent": "/2/conversions/conversionRate",
       "text": "Get conversion rate 🚧",
       "category": "Analytics",
@@ -874,9 +874,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers",
       "text": "Create a crawler 🚧",
       "category": "Crawler ",
@@ -909,9 +909,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers___GET": {
+    {
       "provider_alias_intent": "/api/1/crawlers",
       "text": "Get available crawlers 🚧",
       "category": "Crawler ",
@@ -944,9 +944,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id___GET": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id",
       "text": "Get a crawler 🚧",
       "category": "Crawler ",
@@ -979,9 +979,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id___PATCH": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id",
       "text": "Partially update a crawler 🚧",
       "category": "Crawler ",
@@ -1014,9 +1014,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/config___PATCH": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/config",
       "text": "Partially update a crawler's configuration 🚧",
       "category": "Crawler ",
@@ -1049,9 +1049,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/run___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/run",
       "text": "Run a crawler 🚧",
       "category": "Crawler ",
@@ -1084,9 +1084,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/pause___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/pause",
       "text": "Pause a crawler's run 🚧",
       "category": "Crawler ",
@@ -1119,9 +1119,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/reindex___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/reindex",
       "text": "Reindex with a crawler 🚧",
       "category": "Crawler ",
@@ -1154,9 +1154,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/stats/urls___GET": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/stats/urls",
       "text": "Get statistics on a crawler 🚧",
       "category": "Crawler ",
@@ -1189,9 +1189,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/urls/crawl___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/urls/crawl",
       "text": "Crawl specific URLs 🚧",
       "category": "Crawler ",
@@ -1224,9 +1224,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/test___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/test",
       "text": "Test a URL on a crawler 🚧",
       "category": "Crawler ",
@@ -1259,9 +1259,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/tasks/tid___GET": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/tasks/tid",
       "text": "Get status of a task 🚧",
       "category": "Crawler ",
@@ -1294,9 +1294,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/crawlers/id/tasks/tid/cancel___POST": {
+    {
       "provider_alias_intent": "/api/1/crawlers/id/tasks/tid/cancel",
       "text": "Cancel a blocking task 🚧",
       "category": "Crawler ",
@@ -1329,9 +1329,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/api/1/domains___GET": {
+    {
       "provider_alias_intent": "/api/1/domains",
       "text": "Get registered domains 🚧",
       "category": "Crawler ",
@@ -1364,9 +1364,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/events___POST": {
+    {
       "provider_alias_intent": "/1/events",
       "text": "Push events 🚧",
       "category": "Insights",
@@ -1399,9 +1399,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/infrastructure/metric/period/period___GET": {
+    {
       "provider_alias_intent": "/1/infrastructure/metric/period/period",
       "text": "Get Infrastructure metrics 🚧",
       "category": "Monitoring / Infrastructure",
@@ -1434,9 +1434,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/inventory/servers___GET": {
+    {
       "provider_alias_intent": "/1/inventory/servers",
       "text": "Inventory servers 🚧",
       "category": "Monitoring / Monitoring",
@@ -1469,9 +1469,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/latency/servers___GET": {
+    {
       "provider_alias_intent": "/1/latency/servers",
       "text": "Average latency 🚧",
       "category": "Monitoring / Monitoring",
@@ -1504,9 +1504,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexing/servers___GET": {
+    {
       "provider_alias_intent": "/1/indexing/servers",
       "text": "Get indexing time 🚧",
       "category": "Monitoring / Monitoring",
@@ -1539,9 +1539,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/reachability/servers/probes___GET": {
+    {
       "provider_alias_intent": "/1/reachability/servers/probes",
       "text": "Server reachability 🚧",
       "category": "Monitoring / Monitoring",
@@ -1574,9 +1574,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/status___GET": {
+    {
       "provider_alias_intent": "/1/status",
       "text": "Get current API status 🚧",
       "category": "Monitoring / Status ",
@@ -1609,9 +1609,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/status/servers___GET": {
+    {
       "provider_alias_intent": "/1/status/servers",
       "text": "Current status servers 🚧",
       "category": "Monitoring / Status ",
@@ -1644,9 +1644,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/incidents___GET": {
+    {
       "provider_alias_intent": "/1/incidents",
       "text": "List last incidents 🚧",
       "category": "Monitoring / Status ",
@@ -1679,9 +1679,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/incidents/servers___GET": {
+    {
       "provider_alias_intent": "/1/incidents/servers",
       "text": "List last incidents servers 🚧",
       "category": "Monitoring / Status ",
@@ -1714,9 +1714,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/profiles/personalization/userToken___GET": {
+    {
       "provider_alias_intent": "/1/profiles/personalization/userToken",
       "text": "Get a usertoken profile 🚧",
       "category": "Personalization",
@@ -1749,9 +1749,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/profiles/userToken___DELETE": {
+    {
       "provider_alias_intent": "/1/profiles/userToken",
       "text": "Delete a user profile 🚧",
       "category": "Personalization",
@@ -1784,9 +1784,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/strategies/personalization___GET": {
+    {
       "provider_alias_intent": "/1/strategies/personalization",
       "text": "Get the current personalization strategy 🚧",
       "category": "Personalization",
@@ -1819,9 +1819,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/strategies/personalization___POST": {
+    {
       "provider_alias_intent": "/1/strategies/personalization",
       "text": "Set a new personalization strategy 🚧",
       "category": "Personalization",
@@ -1854,9 +1854,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs___POST": {
+    {
       "provider_alias_intent": "/1/configs",
       "text": "Create a configuration 🚧",
       "category": "Query Suggestions",
@@ -1889,9 +1889,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs/indexName___PUT": {
+    {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Update a configuration 🚧",
       "category": "Query Suggestions",
@@ -1924,9 +1924,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs/indexName___DELETE": {
+    {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Delete a configuration 🚧",
       "category": "Query Suggestions",
@@ -1959,9 +1959,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs/indexName___GET": {
+    {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Get a single configuration 🚧",
       "category": "Query Suggestions",
@@ -1994,9 +1994,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs/indexName/status___GET": {
+    {
       "provider_alias_intent": "/1/configs/indexName/status",
       "text": "Get configuration status 🚧",
       "category": "Query Suggestions",
@@ -2029,9 +2029,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/configs___GET": {
+    {
       "provider_alias_intent": "/1/configs",
       "text": "Get all configurations 🚧",
       "category": "Query Suggestions",
@@ -2064,9 +2064,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/logs/indexName___GET": {
+    {
       "provider_alias_intent": "/1/logs/indexName",
       "text": "Get a log file 🚧",
       "category": "Query Suggestions",
@@ -2099,9 +2099,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/*/recommendations___POST": {
+    {
       "provider_alias_intent": "/1/indexes/*/recommendations",
       "text": "Get Recommendations 🚧",
       "category": "Recommend / Endpoints",
@@ -2134,9 +2134,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/model/recommend/rules/batch___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/batch",
       "text": "Batch Recommend Rules 🚧",
       "category": "Recommend / Endpoints",
@@ -2169,9 +2169,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/model/recommend/rules/objectID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/objectID",
       "text": "Get Recommend Rule 🚧",
       "category": "Recommend / Endpoints",
@@ -2204,9 +2204,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/model/recommend/rules/objectID___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/objectID",
       "text": "Delete Recommend Rule 🚧",
       "category": "Recommend / Endpoints",
@@ -2239,9 +2239,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/model/recommend/rules/search___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/search",
       "text": "Search Recommend Rules 🚧",
       "category": "Recommend / Endpoints",
@@ -2274,9 +2274,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/model/task/taskID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/model/task/taskID",
       "text": "Get a Recommend task's status 🚧",
       "category": "Recommend / Endpoints",
@@ -2309,9 +2309,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/logs___GET": {
+    {
       "provider_alias_intent": "/1/logs",
       "text": "Get logs 🚧",
       "category": "Search / Advanced",
@@ -2344,9 +2344,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/task/taskID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/task/taskID",
       "text": "Get a task's status 🚧",
       "category": "Search / Advanced",
@@ -2379,9 +2379,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/dictionaryName/batch___POST": {
+    {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/batch",
       "text": "Add or delete entries in batches 🚧",
       "category": "Search / Dictionaries",
@@ -2414,9 +2414,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/dictionaryName/search___GET": {
+    {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/search",
       "text": "Search dictionary entries (GET) 🚧",
       "category": "Search / Dictionaries",
@@ -2449,9 +2449,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/dictionaryName/search___POST": {
+    {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/search",
       "text": "Search dictionary entries (POST) 🚧",
       "category": "Search / Dictionaries",
@@ -2484,9 +2484,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/*/settings___PUT": {
+    {
       "provider_alias_intent": "/1/dictionaries/*/settings",
       "text": "Set dictionary settings 🚧",
       "category": "Search / Dictionaries",
@@ -2519,9 +2519,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/*/settings___GET": {
+    {
       "provider_alias_intent": "/1/dictionaries/*/settings",
       "text": "Get dictionary settings 🚧",
       "category": "Search / Dictionaries",
@@ -2554,9 +2554,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/dictionaries/*/languages___GET": {
+    {
       "provider_alias_intent": "/1/dictionaries/*/languages",
       "text": "Get available languages 🚧",
       "category": "Search / Dictionaries",
@@ -2589,9 +2589,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys___POST": {
+    {
       "provider_alias_intent": "/1/keys",
       "text": "Add API Key 🚧",
       "category": "Search / Keys",
@@ -2624,9 +2624,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys/key___PUT": {
+    {
       "provider_alias_intent": "/1/keys/key",
       "text": "Update API Key 🚧",
       "category": "Search / Keys",
@@ -2659,9 +2659,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys___GET": {
+    {
       "provider_alias_intent": "/1/keys",
       "text": "List API Keys 🚧",
       "category": "Search / Keys",
@@ -2694,9 +2694,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys/key___GET": {
+    {
       "provider_alias_intent": "/1/keys/key",
       "text": "Get API Key permissions 🚧",
       "category": "Search / Keys",
@@ -2729,9 +2729,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys/key___DELETE": {
+    {
       "provider_alias_intent": "/1/keys/key",
       "text": "Delete API Key 🚧",
       "category": "Search / Keys",
@@ -2764,9 +2764,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/keys/key/restore___POST": {
+    {
       "provider_alias_intent": "/1/keys/key/restore",
       "text": "Restore API Key 🚧",
       "category": "Search / Keys",
@@ -2799,9 +2799,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/keys___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/keys",
       "text": "Add index API key 🚧",
       "category": "Search / Keys",
@@ -2834,9 +2834,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/keys/key___PUT": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Update index API key 🚧",
       "category": "Search / Keys",
@@ -2869,9 +2869,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/keys___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/keys",
       "text": "List index API keys (for all index) 🚧",
       "category": "Search / Keys",
@@ -2904,9 +2904,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/*/keys___GET": {
+    {
       "provider_alias_intent": "/1/indexes/*/keys",
       "text": "List index API keys (for all indices) 🚧",
       "category": "Search / Keys",
@@ -2939,9 +2939,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/keys/key___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Get index API key 🚧",
       "category": "Search / Keys",
@@ -2974,9 +2974,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/keys/key___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Delete index API key 🚧",
       "category": "Search / Keys",
@@ -3009,9 +3009,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Delete index 🚧",
       "category": "Search / Manage indices",
@@ -3044,9 +3044,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/operation___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/operation",
       "text": "Copy/move index 🚧",
       "category": "Search / Manage indices",
@@ -3079,9 +3079,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes___GET": {
+    {
       "provider_alias_intent": "/1/indexes",
       "text": "List Indices 🚧",
       "category": "Search / Manage indices",
@@ -3114,9 +3114,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping___POST": {
+    {
       "provider_alias_intent": "/1/clusters/mapping",
       "text": "Assign or Move userID 🚧",
       "category": "Search / MultiClusters",
@@ -3149,9 +3149,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/batch___POST": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/batch",
       "text": "Batch assign userIDs 🚧",
       "category": "Search / MultiClusters",
@@ -3184,9 +3184,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/top___GET": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/top",
       "text": "Get top userID 🚧",
       "category": "Search / MultiClusters",
@@ -3219,9 +3219,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/$userID___GET": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/$userID",
       "text": "Get userID 🚧",
       "category": "Search / MultiClusters",
@@ -3254,9 +3254,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters___GET": {
+    {
       "provider_alias_intent": "/1/clusters",
       "text": "List clusters 🚧",
       "category": "Search / MultiClusters",
@@ -3289,9 +3289,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping___GET": {
+    {
       "provider_alias_intent": "/1/clusters/mapping",
       "text": "List userIDs 🚧",
       "category": "Search / MultiClusters",
@@ -3324,9 +3324,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/$userID___DELETE": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/$userID",
       "text": "Remove userID 🚧",
       "category": "Search / MultiClusters",
@@ -3359,9 +3359,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/search___POST": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/search",
       "text": "Search userID 🚧",
       "category": "Search / MultiClusters",
@@ -3394,9 +3394,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/clusters/mapping/pending___GET": {
+    {
       "provider_alias_intent": "/1/clusters/mapping/pending",
       "text": "Has pending mappings 🚧",
       "category": "Search / MultiClusters",
@@ -3429,9 +3429,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Add object(without ID) 🚧",
       "category": "Search / Objects ",
@@ -3464,9 +3464,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/objectID___PUT": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Add/update object (with ID) 🚧",
       "category": "Search / Objects ",
@@ -3499,9 +3499,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/objectID___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Delete object 🚧",
       "category": "Search / Objects ",
@@ -3534,9 +3534,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/deleteByQuery___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/deleteByQuery",
       "text": "Delete by 🚧",
       "category": "Search / Objects ",
@@ -3569,9 +3569,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/clear___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/clear",
       "text": "Clear objects 🚧",
       "category": "Search / Objects ",
@@ -3604,9 +3604,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/objectID/partial___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/objectID/partial",
       "text": "Partially update object 🚧",
       "category": "Search / Objects ",
@@ -3639,9 +3639,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/batch___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/batch",
       "text": "Batch write operations 🚧",
       "category": "Search / Objects ",
@@ -3674,9 +3674,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/*/batch___POST": {
+    {
       "provider_alias_intent": "/1/indexes/*/batch",
       "text": "Batch write operations (multiple indices) 🚧",
       "category": "Search / Objects ",
@@ -3709,9 +3709,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/*/objects___POST": {
+    {
       "provider_alias_intent": "/1/indexes/*/objects",
       "text": "Get objects 🚧",
       "category": "Search / Objects ",
@@ -3744,9 +3744,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/objectID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Get object 🚧",
       "category": "Search / Objects ",
@@ -3779,9 +3779,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/objectID___PUT": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/objectID",
       "text": "Save rule 🚧",
       "category": "Search / Rules",
@@ -3814,9 +3814,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/batch___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/batch",
       "text": "Batch Rules 🚧",
       "category": "Search / Rules",
@@ -3849,9 +3849,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/objectID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/objectID",
       "text": "Get Rule 🚧",
       "category": "Search / Rules",
@@ -3884,9 +3884,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/",
       "text": "Delete Rule 🚧",
       "category": "Search / Rules",
@@ -3919,9 +3919,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/clear___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/clear",
       "text": "Clear Rules 🚧",
       "category": "Search / Rules",
@@ -3954,9 +3954,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/rules/search___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/rules/search",
       "text": "Search rules 🚧",
       "category": "Search / Rules",
@@ -3989,9 +3989,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Search index 🚧",
       "category": "Search / Search ",
@@ -4024,9 +4024,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/*/queries___POST": {
+    {
       "provider_alias_intent": "/1/indexes/*/queries",
       "text": "Search multiple indices 🚧",
       "category": "Search / Search ",
@@ -4059,9 +4059,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/facets/facetName/query___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/facets/facetName/query",
       "text": "Search for facet values 🚧",
       "category": "Search / Search ",
@@ -4094,9 +4094,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/browse___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/browse",
       "text": "Browse index 🚧",
       "category": "Search / Search ",
@@ -4129,9 +4129,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/settings___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/settings",
       "text": "Get settings 🚧",
       "category": "Search / Settings",
@@ -4164,9 +4164,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/settings___PUT": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/settings",
       "text": "Set settings 🚧",
       "category": "Search / Settings",
@@ -4199,9 +4199,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/objectID___PUT": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Save synonym 🚧",
       "category": "Search / Synonyms",
@@ -4234,9 +4234,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/batch___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/batch",
       "text": "Save synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4269,9 +4269,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/objectID___GET": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Get synonym 🚧",
       "category": "Search / Synonyms",
@@ -4304,9 +4304,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/clear___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/clear",
       "text": "Clear all synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4339,9 +4339,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/objectID___DELETE": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Delete synonym 🚧",
       "category": "Search / Synonyms",
@@ -4374,9 +4374,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/indexes/indexName/synonyms/search___POST": {
+    {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/search",
       "text": "Search synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4409,9 +4409,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/security/sources___GET": {
+    {
       "provider_alias_intent": "/1/security/sources",
       "text": "List allowed sources 🚧",
       "category": "Search / Vault",
@@ -4444,9 +4444,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/security/sources___PUT": {
+    {
       "provider_alias_intent": "/1/security/sources",
       "text": "Replace the list of allowed sources 🚧",
       "category": "Search / Vault",
@@ -4479,9 +4479,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/security/sources/append___POST": {
+    {
       "provider_alias_intent": "/1/security/sources/append",
       "text": "Add a source to the allowed sources 🚧",
       "category": "Search / Vault",
@@ -4514,9 +4514,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/security/sources/source___DELETE": {
+    {
       "provider_alias_intent": "/1/security/sources/source",
       "text": "Delete one allowed source 🚧",
       "category": "Search / Vault",
@@ -4549,9 +4549,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/usage/statistic___GET": {
+    {
       "provider_alias_intent": "/1/usage/statistic",
       "text": "Get usage 🚧",
       "category": "Usage",
@@ -4584,9 +4584,9 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     },
-    "algolia__/1/usage/statistic/index___GET": {
+    {
       "provider_alias_intent": "/1/usage/statistic/index",
       "text": "Get usage for an index 🚧",
       "category": "Usage",
@@ -4619,7 +4619,7 @@
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
       },
-      "updated_at": "2025-11-11T12:00:08.009Z"
+      "updated_at": "2025-11-11T15:37:34.765Z"
     }
-  }
+  ]
 }

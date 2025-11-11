@@ -16,8 +16,8 @@
     "total_api": 10,
     "credential_link": "https://developers.facebook.com/docs/whatsapp"
   },
-  "routes": {
-    "whatsapp__/v17.0/from_phone_number_id/messages___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/messages",
       "text": "Send a message",
       "category": "Messages",
@@ -144,9 +144,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/media_id/media___POST": {
+    {
       "provider_alias_intent": "/v17.0/media_id/media",
       "text": "Upload media",
       "category": "Media",
@@ -202,9 +202,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/media_id___GET": {
+    {
       "provider_alias_intent": "/v17.0/media_id",
       "text": "Retrieve Media URL",
       "category": "Media",
@@ -248,9 +248,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/media_id___DELETE": {
+    {
       "provider_alias_intent": "/v17.0/media_id",
       "text": "Delete a specific media.",
       "category": "Media",
@@ -294,9 +294,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/media_url___GET": {
+    {
       "provider_alias_intent": "/v17.0/media_url",
       "text": "Download media from a media URL.",
       "category": "Media",
@@ -336,9 +336,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id/request_code___POST": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/request_code",
       "text": "Verify Phone Number",
       "category": "Phone Numbers",
@@ -389,9 +389,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id/register___POST": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/register",
       "text": "Migrate account",
       "category": "Account Migration",
@@ -452,9 +452,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id___POST": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id",
       "text": "Set Two-Step Verification",
       "category": "Two-Step Verification",
@@ -500,9 +500,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id/whatsapp_business_profile___GET": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/whatsapp_business_profile",
       "text": "Get Business Profile",
       "category": "Business Profiles",
@@ -574,9 +574,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id/whatsapp_business_profile___POST": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/whatsapp_business_profile",
       "text": "Update Business Profile",
       "category": "Business Profiles",
@@ -650,9 +650,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     },
-    "whatsapp__/v17.0/from_phone_number_id/deregister___POST": {
+    {
       "provider_alias_intent": "/v17.0/from_phone_number_id/deregister",
       "text": "Deregister a Business Phone Number",
       "category": "Registration",
@@ -691,7 +691,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.914Z"
+      "updated_at": "2025-11-11T15:37:35.623Z"
     }
-  }
+  ]
 }

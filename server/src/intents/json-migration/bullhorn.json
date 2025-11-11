@@ -50,8 +50,8 @@
     "total_api": 3,
     "credential_link": ""
   },
-  "routes": {
-    "bullhorn__/rest-services/corptoken/entity/entitytype/entityid___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/rest-services/corptoken/entity/entitytype/entityid",
       "text": "Gets one or more entities or to-many associations.",
       "category": "Entity",
@@ -79,9 +79,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.076Z"
+      "updated_at": "2025-11-11T15:37:34.816Z"
     },
-    "bullhorn__/rest-services/corptoken/entity/entitytype___PUT": {
+    {
       "provider_alias_intent": "/rest-services/corptoken/entity/entitytype",
       "text": "create new entities",
       "category": "Entity",
@@ -109,9 +109,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.076Z"
+      "updated_at": "2025-11-11T15:37:34.816Z"
     },
-    "bullhorn__/rest-services/corptoken/allcorpnotes___GET": {
+    {
       "provider_alias_intent": "/rest-services/corptoken/allcorpnotes",
       "text": "Returns all Notes in the specified ClientCorporation",
       "category": "allCorpNotes",
@@ -139,7 +139,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.076Z"
+      "updated_at": "2025-11-11T15:37:34.816Z"
     }
-  }
+  ]
 }

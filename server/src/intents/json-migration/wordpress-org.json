@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "wordpress-org__/wp/v2/users/_user_id/application-passwords/_uuid___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
       "text": "Retrieve a Application Password",
       "category": "All",
@@ -30,9 +30,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.628Z"
     },
-    "wordpress-org__/wp/v2/users/_user_id/application-passwords___POST": {
+    {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords",
       "text": "Create a Application Password",
       "category": "All",
@@ -61,9 +61,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.628Z"
     },
-    "wordpress-org__/wp/v2/users/_user_id/application-passwords/_uuid___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
       "text": "Delete a Application Password",
       "category": "All",
@@ -92,9 +92,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.628Z"
     },
-    "wordpress-org__/wp/v2/users/_user_id/application-passwords/_uuid___POST": {
+    {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
       "text": "Update a Application Password",
       "category": "All",
@@ -123,9 +123,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.628Z"
     },
-    "wordpress-org__/wp/v2/block-types/_namespace/_name___GET": {
+    {
       "provider_alias_intent": "/wp/v2/block-types/_namespace/_name",
       "text": "Retrieve a Block Type",
       "category": "All",
@@ -154,9 +154,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks___GET": {
+    {
       "provider_alias_intent": "/wp/v2/blocks",
       "text": "List Editor Blocks",
       "category": "All",
@@ -185,9 +185,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks___POST": {
+    {
       "provider_alias_intent": "/wp/v2/blocks",
       "text": "Create a Editor Block",
       "category": "All",
@@ -216,9 +216,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/blocks/_id",
       "text": "Retrieve a Editor Block",
       "category": "All",
@@ -247,9 +247,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/blocks/_id",
       "text": "Update a Editor Block",
       "category": "All",
@@ -278,9 +278,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/blocks/_id",
       "text": "Delete a Editor Block",
       "category": "All",
@@ -309,9 +309,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks/_parent/autosaves/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/blocks/_parent/autosaves/_id",
       "text": "Retrieve a Block Revision",
       "category": "All",
@@ -340,9 +340,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/blocks/_id/autosaves___POST": {
+    {
       "provider_alias_intent": "/wp/v2/blocks/_id/autosaves",
       "text": "Create a Block Revision",
       "category": "All",
@@ -371,9 +371,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/block-renderer/_name___POST": {
+    {
       "provider_alias_intent": "/wp/v2/block-renderer/_name",
       "text": "Create a Rendered Block",
       "category": "All",
@@ -402,9 +402,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/categories___GET": {
+    {
       "provider_alias_intent": "/wp/v2/categories",
       "text": "List Categories",
       "category": "All",
@@ -433,9 +433,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/categories___POST": {
+    {
       "provider_alias_intent": "/wp/v2/categories",
       "text": "Create a Category",
       "category": "All",
@@ -464,9 +464,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/categories/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/categories/_id",
       "text": "Retrieve a Category",
       "category": "All",
@@ -495,9 +495,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/categories/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/categories/_id",
       "text": "Update a Category",
       "category": "All",
@@ -526,9 +526,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/categories/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/categories/_id",
       "text": "Delete a Category",
       "category": "All",
@@ -557,9 +557,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/comments___GET": {
+    {
       "provider_alias_intent": "/wp/v2/comments",
       "text": "List Comments",
       "category": "All",
@@ -588,9 +588,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/comments___POST": {
+    {
       "provider_alias_intent": "/wp/v2/comments",
       "text": "Create a Comment",
       "category": "All",
@@ -619,9 +619,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/comments/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/comments/_id",
       "text": "Retrieve a Comment",
       "category": "All",
@@ -650,9 +650,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/comments/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/comments/_id",
       "text": "Update a Comment",
       "category": "All",
@@ -681,9 +681,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/comments/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/comments/_id",
       "text": "Delete a Comment",
       "category": "All",
@@ -712,9 +712,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/media___GET": {
+    {
       "provider_alias_intent": "/wp/v2/media",
       "text": "List Media",
       "category": "All",
@@ -743,9 +743,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/media___POST": {
+    {
       "provider_alias_intent": "/wp/v2/media",
       "text": "Create a Media Item",
       "category": "All",
@@ -774,9 +774,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/media/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/media/_id",
       "text": "Retrieve a Media Item",
       "category": "All",
@@ -805,9 +805,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/media/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/media/_id",
       "text": "Update a Media Item",
       "category": "All",
@@ -836,9 +836,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/media/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/media/_id",
       "text": "Delete a Media Item",
       "category": "All",
@@ -867,9 +867,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages___GET": {
+    {
       "provider_alias_intent": "/wp/v2/pages",
       "text": "List Pages",
       "category": "All",
@@ -898,9 +898,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages___POST": {
+    {
       "provider_alias_intent": "/wp/v2/pages",
       "text": "Create a Page",
       "category": "All",
@@ -929,9 +929,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_id",
       "text": "Retrieve a Page",
       "category": "All",
@@ -960,9 +960,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_id",
       "text": "Update a Page",
       "category": "All",
@@ -991,9 +991,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_id",
       "text": "Delete a Page",
       "category": "All",
@@ -1022,9 +1022,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_parent/revisions___GET": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_parent/revisions",
       "text": "List Page Revisions",
       "category": "All",
@@ -1053,9 +1053,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_parent/autosaves/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_parent/autosaves/_id",
       "text": "Retrieve a Page Revision",
       "category": "All",
@@ -1084,9 +1084,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_parent/revisions/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_parent/revisions/_id",
       "text": "Delete a Page Revision",
       "category": "All",
@@ -1115,9 +1115,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/pages/_id/autosaves___POST": {
+    {
       "provider_alias_intent": "/wp/v2/pages/_id/autosaves",
       "text": "Create a Page Revision",
       "category": "All",
@@ -1146,9 +1146,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts___GET": {
+    {
       "provider_alias_intent": "/wp/v2/posts",
       "text": "List Posts",
       "category": "All",
@@ -1177,9 +1177,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts___POST": {
+    {
       "provider_alias_intent": "/wp/v2/posts",
       "text": "Create a Post",
       "category": "All",
@@ -1208,9 +1208,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_id",
       "text": "Retrieve a Post",
       "category": "All",
@@ -1239,9 +1239,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_id",
       "text": "Update a Post",
       "category": "All",
@@ -1270,9 +1270,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_id",
       "text": "Delete a Post",
       "category": "All",
@@ -1301,9 +1301,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_parent/revisions___GET": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_parent/revisions",
       "text": "List Post Revisions",
       "category": "All",
@@ -1332,9 +1332,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_parent/autosaves/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_parent/autosaves/_id",
       "text": "Retrieve a Post Revision",
       "category": "All",
@@ -1363,9 +1363,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_parent/revisions/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_parent/revisions/_id",
       "text": "Delete a Post Revision",
       "category": "All",
@@ -1394,9 +1394,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/posts/_id/autosaves___POST": {
+    {
       "provider_alias_intent": "/wp/v2/posts/_id/autosaves",
       "text": "Create a Post Revision",
       "category": "All",
@@ -1425,9 +1425,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/search___GET": {
+    {
       "provider_alias_intent": "/wp/v2/search",
       "text": "List Search Results",
       "category": "All",
@@ -1456,9 +1456,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/settings___GET": {
+    {
       "provider_alias_intent": "/wp/v2/settings",
       "text": "Retrieve a Site Setting",
       "category": "All",
@@ -1487,9 +1487,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/settings___POST": {
+    {
       "provider_alias_intent": "/wp/v2/settings",
       "text": "Update a Site Setting",
       "category": "All",
@@ -1518,9 +1518,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/statuses/_status___GET": {
+    {
       "provider_alias_intent": "/wp/v2/statuses/_status",
       "text": "Retrieve a Status",
       "category": "All",
@@ -1549,9 +1549,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/tags___GET": {
+    {
       "provider_alias_intent": "/wp/v2/tags",
       "text": "List Tags",
       "category": "All",
@@ -1580,9 +1580,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/tags___POST": {
+    {
       "provider_alias_intent": "/wp/v2/tags",
       "text": "Create a Tag",
       "category": "All",
@@ -1611,9 +1611,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/tags/_id___GET": {
+    {
       "provider_alias_intent": "/wp/v2/tags/_id",
       "text": "Retrieve a Tag",
       "category": "All",
@@ -1642,9 +1642,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/tags/_id___POST": {
+    {
       "provider_alias_intent": "/wp/v2/tags/_id",
       "text": "Update a Tag",
       "category": "All",
@@ -1673,9 +1673,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/tags/_id___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/tags/_id",
       "text": "Delete a Tag",
       "category": "All",
@@ -1704,9 +1704,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/taxonomies/_taxonomy___GET": {
+    {
       "provider_alias_intent": "/wp/v2/taxonomies/_taxonomy",
       "text": "Retrieve a Taxonomy",
       "category": "All",
@@ -1735,9 +1735,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/themes___GET": {
+    {
       "provider_alias_intent": "/wp/v2/themes",
       "text": "List Themes",
       "category": "All",
@@ -1766,9 +1766,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/types/_type___GET": {
+    {
       "provider_alias_intent": "/wp/v2/types/_type",
       "text": "Retrieve a Type",
       "category": "All",
@@ -1797,9 +1797,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/users___GET": {
+    {
       "provider_alias_intent": "/wp/v2/users",
       "text": "List Users",
       "category": "All",
@@ -1828,9 +1828,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/users___POST": {
+    {
       "provider_alias_intent": "/wp/v2/users",
       "text": "Create a User",
       "category": "All",
@@ -1859,9 +1859,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/users/me___GET": {
+    {
       "provider_alias_intent": "/wp/v2/users/me",
       "text": "Retrieve a User",
       "category": "All",
@@ -1890,9 +1890,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/users/me___POST": {
+    {
       "provider_alias_intent": "/wp/v2/users/me",
       "text": "Update a User",
       "category": "All",
@@ -1921,9 +1921,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/users/me___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/users/me",
       "text": "Delete a User",
       "category": "All",
@@ -1952,9 +1952,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/block-directory/search___GET": {
+    {
       "provider_alias_intent": "/wp/v2/block-directory/search",
       "text": "List Block Directory Items",
       "category": "All",
@@ -1983,9 +1983,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/plugins/_plugin___GET": {
+    {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
       "text": "Retrieve a Plugin",
       "category": "All",
@@ -2014,9 +2014,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/plugins___POST": {
+    {
       "provider_alias_intent": "/wp/v2/plugins",
       "text": "Create a Plugin",
       "category": "All",
@@ -2045,9 +2045,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/plugins/_plugin___POST": {
+    {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
       "text": "Update a Plugin",
       "category": "All",
@@ -2076,9 +2076,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     },
-    "wordpress-org__/wp/v2/plugins/_plugin___DELETE": {
+    {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
       "text": "Delete a Plugin",
       "category": "All",
@@ -2107,7 +2107,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.918Z"
+      "updated_at": "2025-11-11T15:37:35.629Z"
     }
-  }
+  ]
 }

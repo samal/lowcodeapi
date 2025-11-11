@@ -64,8 +64,8 @@
     "total_api": 59,
     "credential_link": "https://ap.www.namecheap.com/settings/tools/apiaccess/"
   },
-  "routes": {
-    "namecheap__/users.address.create___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/users.address.create",
       "text": "Creates a new address for the user",
       "category": "Address",
@@ -173,9 +173,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.address.delete___GET": {
+    {
       "provider_alias_intent": "/users.address.delete",
       "text": "Deletes the particular address for the user",
       "category": "Address",
@@ -210,9 +210,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.address.getinfo___GET": {
+    {
       "provider_alias_intent": "/users.address.getinfo",
       "text": "Gets information for the requested addressID",
       "category": "Address",
@@ -247,9 +247,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.address.getlist___GET": {
+    {
       "provider_alias_intent": "/users.address.getlist",
       "text": "Retrieve user account's addressIDs and names",
       "category": "Address",
@@ -278,9 +278,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.address.setdefault___GET": {
+    {
       "provider_alias_intent": "/users.address.setdefault",
       "text": "Sets default address for the user",
       "category": "Address",
@@ -315,9 +315,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.address.update___GET": {
+    {
       "provider_alias_intent": "/users.address.update",
       "text": "Updates the particular address of the user",
       "category": "Address",
@@ -431,9 +431,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/whoisguard.changeemailaddress___GET": {
+    {
       "provider_alias_intent": "/whoisguard.changeemailaddress",
       "text": "Changes domain privacy email address",
       "category": "Domain Privacy",
@@ -468,9 +468,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/whoisguard.enable___GET": {
+    {
       "provider_alias_intent": "/whoisguard.enable",
       "text": "Enables domain privacy protection",
       "category": "Domain Privacy",
@@ -510,9 +510,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/whoisguard.disable___GET": {
+    {
       "provider_alias_intent": "/whoisguard.disable",
       "text": "Disables domain privacy protection",
       "category": "Domain Privacy",
@@ -547,9 +547,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/whoisguard.getlist___GET": {
+    {
       "provider_alias_intent": "/whoisguard.getlist",
       "text": "Gets the list of domain privacy protection",
       "category": "Domain Privacy",
@@ -591,9 +591,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/whoisguard.renew___GET": {
+    {
       "provider_alias_intent": "/whoisguard.renew",
       "text": "Renews domain privacy protection",
       "category": "Domain Privacy",
@@ -637,9 +637,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.getlist___GET": {
+    {
       "provider_alias_intent": "/domains.getlist",
       "text": "Get user's domains as a list",
       "category": "Domains",
@@ -689,9 +689,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.getcontacts___GET": {
+    {
       "provider_alias_intent": "/domains.getcontacts",
       "text": "Gets contact info for requested domain",
       "category": "Domains",
@@ -726,9 +726,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.create___GET": {
+    {
       "provider_alias_intent": "/domains.create",
       "text": "Registers a new domain name",
       "category": "Domains",
@@ -1137,9 +1137,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.gettldlist___GET": {
+    {
       "provider_alias_intent": "/domains.gettldlist",
       "text": "Returns a list of tlds",
       "category": "Domains",
@@ -1168,9 +1168,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.setcontacts___GET": {
+    {
       "provider_alias_intent": "/domains.setcontacts",
       "text": "Sets contact information for the domain",
       "category": "Domains",
@@ -1486,9 +1486,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.check___GET": {
+    {
       "provider_alias_intent": "/domains.check",
       "text": "Checks the availability of domains",
       "category": "Domains",
@@ -1523,9 +1523,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.reactivate___GET": {
+    {
       "provider_alias_intent": "/domains.reactivate",
       "text": "Reactivates an expired domain",
       "category": "Domains",
@@ -1580,9 +1580,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.renew___GET": {
+    {
       "provider_alias_intent": "/domains.renew",
       "text": "Renews an expiring domain",
       "category": "Domains",
@@ -1638,9 +1638,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.getregistrarlock___GET": {
+    {
       "provider_alias_intent": "/domains.getregistrarlock",
       "text": "Check domain lock status with RegistrarLock API",
       "category": "Domains",
@@ -1675,9 +1675,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.setregistrarlock___GET": {
+    {
       "provider_alias_intent": "/domains.setregistrarlock",
       "text": "Sets the RegistrarLock status for a domain",
       "category": "Domains",
@@ -1716,9 +1716,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.getinfo___GET": {
+    {
       "provider_alias_intent": "/domains.getinfo",
       "text": "Returns information about the requested domain",
       "category": "Domains",
@@ -1757,9 +1757,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.setdefault___GET": {
+    {
       "provider_alias_intent": "/domains.dns.setdefault",
       "text": "Set default DNS for free services: host management, URL forwarding, email forwarding, dynamic DNS",
       "category": "Domains DNS",
@@ -1799,9 +1799,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.setcustom___GET": {
+    {
       "provider_alias_intent": "/domains.dns.setcustom",
       "text": "Use custom DNS servers for domain; disable URL/email forwarding, Dynamic DNS won't work",
       "category": "Domains DNS",
@@ -1846,9 +1846,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.getlist___GET": {
+    {
       "provider_alias_intent": "/domains.dns.getlist",
       "text": "Retrieve DNS servers for requested domain",
       "category": "Domains DNS",
@@ -1888,9 +1888,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.gethosts___GET": {
+    {
       "provider_alias_intent": "/domains.dns.gethosts",
       "text": "Get DNS host records for domain",
       "category": "Domains DNS",
@@ -1930,9 +1930,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.getemailforwarding___GET": {
+    {
       "provider_alias_intent": "/domains.dns.getemailforwarding",
       "text": "Retrieve domain's email forwarding settings",
       "category": "Domains DNS",
@@ -1967,9 +1967,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.setemailforwarding___GET": {
+    {
       "provider_alias_intent": "/domains.dns.setemailforwarding",
       "text": "Enable email forwarding for a domain",
       "category": "Domains DNS",
@@ -2016,9 +2016,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.dns.sethosts___GET": {
+    {
       "provider_alias_intent": "/domains.dns.sethosts",
       "text": "Sets DNS host records settings for the requested domain",
       "category": "Domains DNS",
@@ -2095,9 +2095,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.ns.create___GET": {
+    {
       "provider_alias_intent": "/domains.ns.create",
       "text": "Creates a new nameserver",
       "category": "Domains NS",
@@ -2147,9 +2147,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.ns.delete___GET": {
+    {
       "provider_alias_intent": "/domains.ns.delete",
       "text": "Deletes a nameserver associated with the requested domain",
       "category": "Domains NS",
@@ -2194,9 +2194,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.ns.getinfo___GET": {
+    {
       "provider_alias_intent": "/domains.ns.getinfo",
       "text": "Retrieves information about a registered nameserver",
       "category": "Domains NS",
@@ -2241,9 +2241,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.ns.update___GET": {
+    {
       "provider_alias_intent": "/domains.ns.update",
       "text": "Updates the IP address of a registered nameserver",
       "category": "Domains NS",
@@ -2298,9 +2298,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.transfer.create___GET": {
+    {
       "provider_alias_intent": "/domains.transfer.create",
       "text": "Transfers a domain to Namecheap",
       "category": "Domains Transfer",
@@ -2357,9 +2357,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.transfer.getstatus___GET": {
+    {
       "provider_alias_intent": "/domains.transfer.getstatus",
       "text": "Gets the status of a particular transfer",
       "category": "Domains Transfer",
@@ -2394,9 +2394,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.transfer.updatestatus___GET": {
+    {
       "provider_alias_intent": "/domains.transfer.updatestatus",
       "text": "Updates the status of a particular transfer",
       "category": "Domains Transfer",
@@ -2436,9 +2436,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/domains.transfer.getlist___GET": {
+    {
       "provider_alias_intent": "/domains.transfer.getlist",
       "text": "Gets the list of domain transfers",
       "category": "Domains Transfer",
@@ -2488,9 +2488,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.create___GET": {
+    {
       "provider_alias_intent": "/ssl.create",
       "text": "Creates a new SSL certificate",
       "category": "SSL",
@@ -2538,9 +2538,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.getlist___GET": {
+    {
       "provider_alias_intent": "/ssl.getlist",
       "text": "Returns a list of SSL certificates for the particular user",
       "category": "SSL",
@@ -2590,9 +2590,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.parsecsr___GET": {
+    {
       "provider_alias_intent": "/ssl.parsecsr",
       "text": "Parsers the CSR",
       "category": "SSL",
@@ -2631,9 +2631,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.getapproveremaillist___GET": {
+    {
       "provider_alias_intent": "/ssl.getapproveremaillist",
       "text": "Gets approver email list for the requested certificate",
       "category": "SSL",
@@ -2673,9 +2673,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.activate___GET": {
+    {
       "provider_alias_intent": "/ssl.activate",
       "text": "Activates a newly purchased SSL certificate",
       "category": "SSL",
@@ -2704,9 +2704,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.resendapproveremail___GET": {
+    {
       "provider_alias_intent": "/ssl.resendapproveremail",
       "text": "Resends the approver email",
       "category": "SSL",
@@ -2741,9 +2741,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.getinfo___GET": {
+    {
       "provider_alias_intent": "/ssl.getinfo",
       "text": "Retrieves information about the requested SSL certificate",
       "category": "SSL",
@@ -2778,9 +2778,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.renew___GET": {
+    {
       "provider_alias_intent": "/ssl.renew",
       "text": "Renews an SSL certificate",
       "category": "SSL",
@@ -2829,9 +2829,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.reissue___GET": {
+    {
       "provider_alias_intent": "/ssl.reissue",
       "text": "Reissues an SSL certificate",
       "category": "SSL",
@@ -2860,9 +2860,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.resendfulfillmentemail___GET": {
+    {
       "provider_alias_intent": "/ssl.resendfulfillmentemail",
       "text": "Resends the fulfilment email containing the certificate",
       "category": "SSL",
@@ -2897,9 +2897,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.purchasemoresans___GET": {
+    {
       "provider_alias_intent": "/ssl.purchasemoresans",
       "text": "Buy additional domains for existing certificate",
       "category": "SSL",
@@ -2939,9 +2939,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.revokecertificate___GET": {
+    {
       "provider_alias_intent": "/ssl.revokecertificate",
       "text": "Revokes a re-issued SSL certificate",
       "category": "SSL",
@@ -2981,9 +2981,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/ssl.editdcvmethod___GET": {
+    {
       "provider_alias_intent": "/ssl.editdcvmethod",
       "text": "Update certificate validation method or retry mechanism",
       "category": "SSL",
@@ -3033,9 +3033,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.getpricing___GET": {
+    {
       "provider_alias_intent": "/users.getpricing",
       "text": "Returns pricing information for a requested product type",
       "category": "Users",
@@ -3086,9 +3086,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.getbalances___GET": {
+    {
       "provider_alias_intent": "/users.getbalances",
       "text": "Get account fund details: balances, earnings, withdrawals",
       "category": "Users",
@@ -3117,9 +3117,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.changepassword___GET": {
+    {
       "provider_alias_intent": "/users.changepassword",
       "text": "Changes password of the particular user's account",
       "category": "Users",
@@ -3159,9 +3159,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.update___GET": {
+    {
       "provider_alias_intent": "/users.update",
       "text": "Updates user account information for the particular user",
       "category": "Users",
@@ -3256,9 +3256,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.createaddfundsrequest___GET": {
+    {
       "provider_alias_intent": "/users.createaddfundsrequest",
       "text": "Creates a request to add funds through a credit card",
       "category": "Users",
@@ -3308,9 +3308,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.getaddfundsstatus___GET": {
+    {
       "provider_alias_intent": "/users.getaddfundsstatus",
       "text": "Gets the status of add funds request",
       "category": "Users",
@@ -3345,9 +3345,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.create___GET": {
+    {
       "provider_alias_intent": "/users.create",
       "text": "Creates a new account at NameCheap under this ApiUser",
       "category": "Users",
@@ -3465,9 +3465,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.login___GET": {
+    {
       "provider_alias_intent": "/users.login",
       "text": "Verify user account credentials with namecheap.users.create API",
       "category": "Users",
@@ -3502,9 +3502,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     },
-    "namecheap__/users.resetpassword___GET": {
+    {
       "provider_alias_intent": "/users.resetpassword",
       "text": "API sends password reset link via email",
       "category": "Users",
@@ -3561,7 +3561,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.759Z"
+      "updated_at": "2025-11-11T15:37:35.239Z"
     }
-  }
+  ]
 }

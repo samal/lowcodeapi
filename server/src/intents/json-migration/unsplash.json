@@ -33,8 +33,8 @@
     "total_api": 33,
     "credential_link": "https://unsplash.com/oauth/applications"
   },
-  "routes": {
-    "unsplash__/collections___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/collections",
       "text": "List collections",
       "category": "Collections",
@@ -77,9 +77,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/id___GET": {
+    {
       "provider_alias_intent": "/collections/id",
       "text": "Get a collection",
       "category": "Collections",
@@ -119,9 +119,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/id/photos___GET": {
+    {
       "provider_alias_intent": "/collections/id/photos",
       "text": "Get a collection's photos",
       "category": "Collections",
@@ -179,9 +179,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/id/related___GET": {
+    {
       "provider_alias_intent": "/collections/id/related",
       "text": "List a collection's related collections",
       "category": "Collections",
@@ -221,9 +221,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections___POST": {
+    {
       "provider_alias_intent": "/collections",
       "text": "Create a new collection",
       "category": "Collections",
@@ -269,9 +269,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/id___PUT": {
+    {
       "provider_alias_intent": "/collections/id",
       "text": "Update an existing collection",
       "category": "Collections",
@@ -324,9 +324,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/id___DELETE": {
+    {
       "provider_alias_intent": "/collections/id",
       "text": "Delete a collection",
       "category": "Collections",
@@ -366,9 +366,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/collection_id/add___POST": {
+    {
       "provider_alias_intent": "/collections/collection_id/add",
       "text": "Add a photo to a collection",
       "category": "Collections",
@@ -414,9 +414,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/collections/collection_id/remove___GET": {
+    {
       "provider_alias_intent": "/collections/collection_id/remove",
       "text": "Remove a photo from a collection",
       "category": "Collections",
@@ -461,9 +461,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/me___GET": {
+    {
       "provider_alias_intent": "/me",
       "text": "Get the users profile",
       "category": "Current user",
@@ -491,9 +491,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/me___PUT": {
+    {
       "provider_alias_intent": "/me",
       "text": "Update the current user's profile",
       "category": "Current user",
@@ -554,9 +554,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos___GET": {
+    {
       "provider_alias_intent": "/photos",
       "text": "List photos",
       "category": "Photos",
@@ -597,9 +597,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id___GET": {
+    {
       "provider_alias_intent": "/photos/id",
       "text": "Get a photo",
       "category": "Photos",
@@ -639,9 +639,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/random___GET": {
+    {
       "provider_alias_intent": "/photos/random",
       "text": "Get a random photo",
       "category": "Photos",
@@ -700,9 +700,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id/statistics___GET": {
+    {
       "provider_alias_intent": "/photos/id/statistics",
       "text": "Get a photo's statistics",
       "category": "Photos",
@@ -750,9 +750,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id/download___GET": {
+    {
       "provider_alias_intent": "/photos/id/download",
       "text": "Track a photo download",
       "category": "Photos",
@@ -792,9 +792,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id___PUT": {
+    {
       "provider_alias_intent": "/photos/id",
       "text": "Update a photo",
       "category": "Photos",
@@ -891,9 +891,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id/like___POST": {
+    {
       "provider_alias_intent": "/photos/id/like",
       "text": "Like a photo",
       "category": "Photos",
@@ -933,9 +933,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/photos/id/like___DELETE": {
+    {
       "provider_alias_intent": "/photos/id/like",
       "text": "Unlike a photo",
       "category": "Photos",
@@ -975,9 +975,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/search/photos___GET": {
+    {
       "provider_alias_intent": "/search/photos",
       "text": "Search photos",
       "category": "Search",
@@ -1055,9 +1055,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/search/collections___GET": {
+    {
       "provider_alias_intent": "/search/collections",
       "text": "Search collections",
       "category": "Search",
@@ -1098,9 +1098,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/search/users___GET": {
+    {
       "provider_alias_intent": "/search/users",
       "text": "Search users",
       "category": "Search",
@@ -1147,9 +1147,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/stats/total___GET": {
+    {
       "provider_alias_intent": "/stats/total",
       "text": "Totals",
       "category": "Stats",
@@ -1177,9 +1177,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/stats/month___GET": {
+    {
       "provider_alias_intent": "/stats/month",
       "text": "Month",
       "category": "Stats",
@@ -1207,9 +1207,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/topics___GET": {
+    {
       "provider_alias_intent": "/topics",
       "text": "List topics",
       "category": "Topics",
@@ -1265,9 +1265,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/topics/id_or_slug___GET": {
+    {
       "provider_alias_intent": "/topics/id_or_slug",
       "text": "Get a topic",
       "category": "Topics",
@@ -1307,9 +1307,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/topics/id_or_slug/photos___GET": {
+    {
       "provider_alias_intent": "/topics/id_or_slug/photos",
       "text": "Get a topic's photos",
       "category": "Topics",
@@ -1373,9 +1373,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username___GET": {
+    {
       "provider_alias_intent": "/users/username",
       "text": "Get a user's public profile",
       "category": "Users",
@@ -1415,9 +1415,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username/portfolio___GET": {
+    {
       "provider_alias_intent": "/users/username/portfolio",
       "text": "Get a user's portfolio link",
       "category": "Users",
@@ -1457,9 +1457,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username/photos___GET": {
+    {
       "provider_alias_intent": "/users/username/photos",
       "text": "List a user’s photos",
       "category": "Users",
@@ -1542,9 +1542,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username/likes___GET": {
+    {
       "provider_alias_intent": "/users/username/likes",
       "text": "List a user's liked photos",
       "category": "Users",
@@ -1609,9 +1609,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username/collections___GET": {
+    {
       "provider_alias_intent": "/users/username/collections",
       "text": "List a user's collections",
       "category": "Users",
@@ -1665,9 +1665,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     },
-    "unsplash__/users/username/statistics___GET": {
+    {
       "provider_alias_intent": "/users/username/statistics",
       "text": "Get a user's statistics",
       "category": "Users",
@@ -1721,7 +1721,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.911Z"
+      "updated_at": "2025-11-11T15:37:35.595Z"
     }
-  }
+  ]
 }

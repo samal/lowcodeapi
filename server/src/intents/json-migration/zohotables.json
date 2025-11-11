@@ -76,8 +76,8 @@
     "total_api": 32,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohotables__/api/v1/bases___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/bases",
       "text": "List Base",
       "category": "Base",
@@ -123,9 +123,9 @@
       "response_type": "",
       "scope": "ZohoTables.bases.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/bases___POST": {
+    {
       "provider_alias_intent": "/api/v1/bases",
       "text": "Duplicate Base",
       "category": "Base",
@@ -191,9 +191,9 @@
       "response_type": "",
       "scope": "ZohoTables.bases.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/bases___PUT": {
+    {
       "provider_alias_intent": "/api/v1/bases",
       "text": "Update Base",
       "category": "Base",
@@ -254,9 +254,9 @@
       "response_type": "",
       "scope": "ZohoTables.bases.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/searchbases___GET": {
+    {
       "provider_alias_intent": "/api/v1/searchbases",
       "text": "Search Base",
       "category": "Base",
@@ -301,9 +301,9 @@
       "response_type": "",
       "scope": "ZohoTables.bases.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/records___GET": {
+    {
       "provider_alias_intent": "/api/v1/records",
       "text": "List Data",
       "category": "Data",
@@ -365,9 +365,9 @@
       "response_type": "",
       "scope": "ZohoTables.records.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/data___PUT": {
+    {
       "provider_alias_intent": "/api/v1/data",
       "text": "Update Data",
       "category": "Data",
@@ -427,9 +427,9 @@
       "response_type": "",
       "scope": "ZohoTables.data.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/exports___GET": {
+    {
       "provider_alias_intent": "/api/v1/exports",
       "text": "Export",
       "category": "Export",
@@ -493,9 +493,9 @@
       "response_type": "",
       "scope": "ZohoTables.bases.READ,\nZohoTables.tables.READ,\nZohoTables.views.READ,\nWorkDrive.files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/fields___GET": {
+    {
       "provider_alias_intent": "/api/v1/fields",
       "text": "List Fields",
       "category": "Fields",
@@ -545,9 +545,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/fields___POST": {
+    {
       "provider_alias_intent": "/api/v1/fields",
       "text": "Create Field",
       "category": "Fields",
@@ -597,9 +597,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/fields___PUT": {
+    {
       "provider_alias_intent": "/api/v1/fields",
       "text": "Update Field",
       "category": "Fields",
@@ -657,9 +657,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/fields___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/fields",
       "text": "Delete Field",
       "category": "Fields",
@@ -709,9 +709,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/selectionoptions___POST": {
+    {
       "provider_alias_intent": "/api/v1/selectionoptions",
       "text": "Create Selection Options",
       "category": "Fields",
@@ -769,9 +769,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/selectionoptions___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/selectionoptions",
       "text": "Delete Selection Options",
       "category": "Fields",
@@ -825,9 +825,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/selectionoptions___PUT": {
+    {
       "provider_alias_intent": "/api/v1/selectionoptions",
       "text": "Update Selection Options",
       "category": "Fields",
@@ -889,9 +889,9 @@
       "response_type": "",
       "scope": "ZohoTables.fields.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/import___POST": {
+    {
       "provider_alias_intent": "/api/v1/import",
       "text": "Import",
       "category": "Import",
@@ -952,9 +952,9 @@
       "response_type": "",
       "scope": "ZohoTables.import.CREATE,\nWorkDrive.teamfolders.ALL,\nWorkDrive.files.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/portals___GET": {
+    {
       "provider_alias_intent": "/api/v1/portals",
       "text": "List Portal",
       "category": "Portal",
@@ -989,9 +989,9 @@
       "response_type": "",
       "scope": "ZohoTables.portals.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/records___POST": {
+    {
       "provider_alias_intent": "/api/v1/records",
       "text": "Create Record With Data",
       "category": "Record",
@@ -1049,9 +1049,9 @@
       "response_type": "",
       "scope": "ZohoTables.records.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/records___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/records",
       "text": "Delete Record",
       "category": "Record",
@@ -1101,9 +1101,9 @@
       "response_type": "",
       "scope": "ZohoTables.records.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/records___PUT": {
+    {
       "provider_alias_intent": "/api/v1/records",
       "text": "Update Records with Criteria",
       "category": "Record",
@@ -1210,9 +1210,9 @@
       "response_type": "",
       "scope": "ZohoTables.records.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/fetchrecordswithcriteria___POST": {
+    {
       "provider_alias_intent": "/api/v1/fetchrecordswithcriteria",
       "text": "Fetch Records with Criteria",
       "category": "Record",
@@ -1310,9 +1310,9 @@
       "response_type": "",
       "scope": "ZohoTables.records.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.135Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/tables___GET": {
+    {
       "provider_alias_intent": "/api/v1/tables",
       "text": "List Tables",
       "category": "Tables",
@@ -1353,9 +1353,9 @@
       "response_type": "",
       "scope": "ZohoTables.tables.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/tables___POST": {
+    {
       "provider_alias_intent": "/api/v1/tables",
       "text": "Duplicate Table",
       "category": "Tables",
@@ -1415,9 +1415,9 @@
       "response_type": "",
       "scope": "ZohoTables.tables.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/tables___PUT": {
+    {
       "provider_alias_intent": "/api/v1/tables",
       "text": "Update Table",
       "category": "Tables",
@@ -1468,9 +1468,9 @@
       "response_type": "",
       "scope": "ZohoTables.tables.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/tables___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/tables",
       "text": "Delete Table",
       "category": "Tables",
@@ -1516,9 +1516,9 @@
       "response_type": "",
       "scope": "ZohoTables.tables.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/views___GET": {
+    {
       "provider_alias_intent": "/api/v1/views",
       "text": "List Views",
       "category": "Views",
@@ -1564,9 +1564,9 @@
       "response_type": "",
       "scope": "ZohoTables.views.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspaces___GET": {
+    {
       "provider_alias_intent": "/api/v1/workspaces",
       "text": "List Workspaces",
       "category": "Workspaces",
@@ -1607,9 +1607,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspaces___POST": {
+    {
       "provider_alias_intent": "/api/v1/workspaces",
       "text": "Create Workspace",
       "category": "Workspaces",
@@ -1655,9 +1655,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspaces___PUT": {
+    {
       "provider_alias_intent": "/api/v1/workspaces",
       "text": "Update Workspace",
       "category": "Workspaces",
@@ -1708,9 +1708,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspaces___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/workspaces",
       "text": "Delete Workspace",
       "category": "Workspaces",
@@ -1756,9 +1756,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspacemembers___GET": {
+    {
       "provider_alias_intent": "/api/v1/workspacemembers",
       "text": "List Workspace Members",
       "category": "Workspaces",
@@ -1804,9 +1804,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspacemembers___POST": {
+    {
       "provider_alias_intent": "/api/v1/workspacemembers",
       "text": "Add Workspace Member",
       "category": "Workspaces",
@@ -1862,9 +1862,9 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     },
-    "zohotables__/api/v1/workspacemembers___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/workspacemembers",
       "text": "Delete Workspace Members",
       "category": "Workspaces",
@@ -1915,7 +1915,7 @@
       "response_type": "",
       "scope": "ZohoTables.workspaces.DELETE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.136Z"
+      "updated_at": "2025-11-11T15:37:36.051Z"
     }
-  }
+  ]
 }

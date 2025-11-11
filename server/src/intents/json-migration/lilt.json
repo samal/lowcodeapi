@@ -42,8 +42,8 @@
     "total_api": 47,
     "credential_link": ""
   },
-  "routes": {
-    "lilt__/v2/create___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/create",
       "text": "Get Lilt Create content",
       "category": "Create",
@@ -66,9 +66,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.200Z"
     },
-    "lilt__/v2/create___POST": {
+    {
       "provider_alias_intent": "/v2/create",
       "text": "Generate new Lilt Create content",
       "category": "Create",
@@ -115,9 +115,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/contentid___GET": {
+    {
       "provider_alias_intent": "/v2/create/contentid",
       "text": "Get Lilt Create content by ID",
       "category": "Create",
@@ -152,9 +152,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/terms-and-conditions___POST": {
+    {
       "provider_alias_intent": "/v2/create/terms-and-conditions",
       "text": "Sign the Lilt Create terms and conditions",
       "category": "Create",
@@ -187,9 +187,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/preferences___PUT": {
+    {
       "provider_alias_intent": "/v2/create/preferences",
       "text": "Update Lilt Create preferences",
       "category": "Create",
@@ -240,9 +240,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/contentid___PUT": {
+    {
       "provider_alias_intent": "/v2/create/contentid",
       "text": "Update Lilt Create content",
       "category": "Create",
@@ -305,9 +305,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/preferences___GET": {
+    {
       "provider_alias_intent": "/v2/create/preferences",
       "text": "Get Lilt Create preferences",
       "category": "Create",
@@ -330,9 +330,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/contentid/create___GET": {
+    {
       "provider_alias_intent": "/v2/create/contentid/create",
       "text": "Regenerate Lilt Create content",
       "category": "Create",
@@ -367,9 +367,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/create/contentid___DELETE": {
+    {
       "provider_alias_intent": "/v2/create/contentid",
       "text": "Delete Lilt Create content",
       "category": "Create",
@@ -404,9 +404,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/documents/files___POST": {
+    {
       "provider_alias_intent": "/v2/documents/files",
       "text": "Upload a File",
       "category": "Documents",
@@ -429,9 +429,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files___POST": {
+    {
       "provider_alias_intent": "/v2/files",
       "text": "Upload a File",
       "category": "Files",
@@ -484,9 +484,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files___GET": {
+    {
       "provider_alias_intent": "/v2/files",
       "text": "Retrieve a File",
       "category": "Files",
@@ -518,9 +518,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/documents/files___GET": {
+    {
       "provider_alias_intent": "/v2/documents/files",
       "text": "Download a Document",
       "category": "Documents",
@@ -557,9 +557,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files___DELETE": {
+    {
       "provider_alias_intent": "/v2/files",
       "text": "Delete a File",
       "category": "Files",
@@ -588,9 +588,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files/download___GET": {
+    {
       "provider_alias_intent": "/v2/files/download",
       "text": "Download file",
       "category": "Files",
@@ -619,9 +619,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files/labels___POST": {
+    {
       "provider_alias_intent": "/v2/files/labels",
       "text": "Add Label to File",
       "category": "Files",
@@ -656,9 +656,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/files/labels___DELETE": {
+    {
       "provider_alias_intent": "/v2/files/labels",
       "text": "Remove Label from File",
       "category": "Files",
@@ -692,9 +692,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs___GET": {
+    {
       "provider_alias_intent": "/v2/jobs",
       "text": "Retrieve all Jobs",
       "category": "Jobs",
@@ -742,9 +742,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs___POST": {
+    {
       "provider_alias_intent": "/v2/jobs",
       "text": "Create a Job",
       "category": "Jobs",
@@ -808,9 +808,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid___GET": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid",
       "text": "Retrieve a Job",
       "category": "Jobs",
@@ -845,9 +845,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/stats___POST": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/stats",
       "text": "Retrieve Job Leverage Stats",
       "category": "Jobs",
@@ -882,9 +882,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid___DELETE": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid",
       "text": "Delete a Job",
       "category": "Jobs",
@@ -919,9 +919,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/archive___POST": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/archive",
       "text": "Archive a Job",
       "category": "Jobs",
@@ -956,9 +956,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid___PUT": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid",
       "text": "Update a Job",
       "category": "Jobs",
@@ -1016,9 +1016,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/unarchive___POST": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/unarchive",
       "text": "Unarchive a Job",
       "category": "Jobs",
@@ -1053,9 +1053,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/deliver___POST": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/deliver",
       "text": "Deliver a Job",
       "category": "Jobs",
@@ -1090,9 +1090,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/reactivate___POST": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/reactivate",
       "text": "Reactivate a Job",
       "category": "Jobs",
@@ -1127,9 +1127,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/export___GET": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/export",
       "text": "Export a Job",
       "category": "Jobs",
@@ -1169,9 +1169,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/jobs/jobid/downlod___GET": {
+    {
       "provider_alias_intent": "/v2/jobs/jobid/downlod",
       "text": "Download a Job",
       "category": "Jobs",
@@ -1206,9 +1206,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories___GET": {
+    {
       "provider_alias_intent": "/v2/memories",
       "text": "Retrieve a Memory",
       "category": "Memories",
@@ -1237,9 +1237,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories___POST": {
+    {
       "provider_alias_intent": "/v2/memories",
       "text": "Create a Memory",
       "category": "Memories",
@@ -1288,9 +1288,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/languages___GET": {
+    {
       "provider_alias_intent": "/v2/languages",
       "text": "Retrieve supported languages",
       "category": "Languages",
@@ -1313,9 +1313,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories___DELETE": {
+    {
       "provider_alias_intent": "/v2/memories",
       "text": "Delete a Memory",
       "category": "Memories",
@@ -1344,9 +1344,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories/query___GET": {
+    {
       "provider_alias_intent": "/v2/memories/query",
       "text": "Query a Memory",
       "category": "Memories",
@@ -1385,9 +1385,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories/import___POST": {
+    {
       "provider_alias_intent": "/v2/memories/import",
       "text": "File import for a Memory",
       "category": "Memories",
@@ -1410,9 +1410,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories/termbase/export___POST": {
+    {
       "provider_alias_intent": "/v2/memories/termbase/export",
       "text": "Termbase export for a Memory",
       "category": "Memories",
@@ -1445,9 +1445,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories___PUT": {
+    {
       "provider_alias_intent": "/v2/memories",
       "text": "Update the name of a Memory",
       "category": "Memories",
@@ -1481,9 +1481,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories/termbase/download___GET": {
+    {
       "provider_alias_intent": "/v2/memories/termbase/download",
       "text": "Termbase download for a Memory",
       "category": "Memories",
@@ -1512,9 +1512,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/memories/segment___DELETE": {
+    {
       "provider_alias_intent": "/v2/memories/segment",
       "text": "Delete a segment from a memory",
       "category": "Memories",
@@ -1548,9 +1548,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.651Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/projects___GET": {
+    {
       "provider_alias_intent": "/v2/projects",
       "text": "Retrieve a Project",
       "category": "Projects",
@@ -1610,9 +1610,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/projects___POST": {
+    {
       "provider_alias_intent": "/v2/projects",
       "text": "Create a Project",
       "category": "Projects",
@@ -1662,9 +1662,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/translate___POST": {
+    {
       "provider_alias_intent": "/v2/translate",
       "text": "Translate a segment",
       "category": "Translate",
@@ -1737,9 +1737,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/projects___DELETE": {
+    {
       "provider_alias_intent": "/v2/projects",
       "text": "Delete a Project",
       "category": "Projects",
@@ -1767,9 +1767,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/translate/file___POST": {
+    {
       "provider_alias_intent": "/v2/translate/file",
       "text": "Translate a File",
       "category": "Translate",
@@ -1815,9 +1815,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/translate/file___GET": {
+    {
       "provider_alias_intent": "/v2/translate/file",
       "text": "Monitor file translation",
       "category": "Translate",
@@ -1857,9 +1857,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/translate/files___DELETE": {
+    {
       "provider_alias_intent": "/v2/translate/files",
       "text": "Download translated file",
       "category": "Translate",
@@ -1888,9 +1888,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     },
-    "lilt__/v2/workflows/templates___GET": {
+    {
       "provider_alias_intent": "/v2/workflows/templates",
       "text": "Retrieve workflow templates",
       "category": "Workflows",
@@ -1912,7 +1912,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.652Z"
+      "updated_at": "2025-11-11T15:37:35.201Z"
     }
-  }
+  ]
 }

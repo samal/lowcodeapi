@@ -76,8 +76,8 @@
     "total_api": 72,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohofsm__/fsm/v1/assets/record_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/fsm/v1/assets/record_id",
       "text": "Get an Asset",
       "category": "Asset",
@@ -124,9 +124,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Assets.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/assets/___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/assets/",
       "text": "Create an Asset",
       "category": "Asset",
@@ -182,9 +182,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Assets.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/assets/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/assets/record_id",
       "text": "Edit an Asset",
       "category": "Asset",
@@ -231,9 +231,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Assets.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/attendance/actions/checkin___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/attendance/actions/checkin",
       "text": "Check In User",
       "category": "Attendance",
@@ -277,9 +277,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Attendance.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/attendance/actions/checkout___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/attendance/actions/checkout",
       "text": "Check Out User",
       "category": "Attendance",
@@ -323,9 +323,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Attendance.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/companies___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/companies",
       "text": "List Companies",
       "category": "Companies",
@@ -369,9 +369,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Companies.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/companies/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/companies/record_id",
       "text": "Get a Company",
       "category": "Companies",
@@ -418,9 +418,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Companies.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/companies___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/companies",
       "text": "Create a Company",
       "category": "Companies",
@@ -504,9 +504,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Companies.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/companies/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/companies/record_id",
       "text": "Edit a Company",
       "category": "Companies",
@@ -553,9 +553,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Companies.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/contacts___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/contacts",
       "text": "List Contacts",
       "category": "Contacts",
@@ -599,9 +599,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Contacts.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/contacts/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/contacts/record_id",
       "text": "Get a Contact",
       "category": "Contact",
@@ -648,9 +648,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Contacts.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/contacts___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/contacts",
       "text": "Create a Contact",
       "category": "Contact",
@@ -750,9 +750,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Contacts.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/contacts/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/contacts/record_id",
       "text": "Edit a Contact",
       "category": "Contact",
@@ -799,9 +799,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Contacts.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates",
       "text": "List Estimates",
       "category": "Estimates",
@@ -845,9 +845,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates/record_id",
       "text": "Get an Estimate",
       "category": "Estimates",
@@ -894,9 +894,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates",
       "text": "Create an Estimate",
       "category": "Estimates",
@@ -962,9 +962,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates/record_id",
       "text": "Add Parts to a Service of an Estimate",
       "category": "Estimates",
@@ -1011,9 +1011,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates/record_id/actions/blueprint/transitions___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates/record_id/actions/blueprint/transitions",
       "text": "List Estimate Transitions",
       "category": "Estimates",
@@ -1060,9 +1060,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/estimates/record_id/actions/blueprint___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/estimates/record_id/actions/blueprint",
       "text": "Perform an Estimate Transition",
       "category": "Estimates",
@@ -1118,9 +1118,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Estimates.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/files___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/files",
       "text": "Upload a file to ZFS (Zoho File System)",
       "category": "Files",
@@ -1155,9 +1155,9 @@
       "response_type": "",
       "scope": "ZohoFSM.files.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/files___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/files",
       "text": "Download a file",
       "category": "Files",
@@ -1197,9 +1197,9 @@
       "response_type": "",
       "scope": "ZohoFSM.files.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__to fetch the list of all available invoices___GET": {
+    {
       "provider_alias_intent": "to fetch the list of all available invoices",
       "text": "List Invoices",
       "category": "Invoice ",
@@ -1243,9 +1243,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.custom.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/invoices___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/invoices",
       "text": "Create Invoices",
       "category": "Invoice ",
@@ -1325,9 +1325,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.custom.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/invoices/record_id/actions/send_invoice___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/invoices/record_id/actions/send_invoice",
       "text": "Send Invoice",
       "category": "Invoice ",
@@ -1396,9 +1396,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.custom.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/notes___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/notes",
       "text": "List Notes",
       "category": "Notes",
@@ -1455,9 +1455,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/notes/note_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/notes/note_id",
       "text": "Get a Note",
       "category": "Notes",
@@ -1524,9 +1524,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/notes___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/notes",
       "text": "Create a Note",
       "category": "Notes",
@@ -1596,9 +1596,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/notes/note_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/notes/note_id",
       "text": "Edit a Note",
       "category": "Notes",
@@ -1665,9 +1665,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/notes/note_id/attachments___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/notes/note_id/attachments",
       "text": "Add an Attachment",
       "category": "Notes",
@@ -1725,9 +1725,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.notes.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/notifications/actions/send___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/notifications/actions/send",
       "text": "Create a Notification",
       "category": "Notification",
@@ -1783,9 +1783,9 @@
       "response_type": "",
       "scope": "ZohoFSM.notifications.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/search___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/search",
       "text": "Search Records",
       "category": "Records",
@@ -1854,9 +1854,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/related_list_api_name___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/related_list_api_name",
       "text": "Get Related Records",
       "category": "Records",
@@ -1931,9 +1931,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/actions/process_sync___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/actions/process_sync",
       "text": "Associate Records with Integrated Service",
       "category": "Records",
@@ -1996,9 +1996,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/module_api_name/record_id/actions/download___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/module_api_name/record_id/actions/download",
       "text": "Download a record",
       "category": "Records",
@@ -2061,9 +2061,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.<module_name>.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/requests___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/requests",
       "text": "List Requests",
       "category": "Requests",
@@ -2107,9 +2107,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Requests.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/requests/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/requests/record_id",
       "text": "Get a Request",
       "category": "Requests",
@@ -2156,9 +2156,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Requests.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/requests___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/requests",
       "text": "Create a Request",
       "category": "Requests",
@@ -2220,9 +2220,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Requests.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances",
       "text": "List Scheduled Maintenances",
       "category": "Scheduled Maintenance",
@@ -2266,9 +2266,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances/record_id",
       "text": "Get a Scheduled Maintenance",
       "category": "Scheduled Maintenance",
@@ -2315,9 +2315,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances",
       "text": "Create a Scheduled Maintenance",
       "category": "Scheduled Maintenance",
@@ -2381,9 +2381,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances",
       "text": "Edit a Scheduled Maintenance",
       "category": "Scheduled Maintenance",
@@ -2439,9 +2439,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances/record_id/enable___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances/record_id/enable",
       "text": "Enable a Scheduled Maintenance",
       "category": "Scheduled Maintenance",
@@ -2488,9 +2488,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/scheduled_maintenances/record_id/disable___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/scheduled_maintenances/record_id/disable",
       "text": "Disable a Scheduled Maintenance",
       "category": "Scheduled Maintenance",
@@ -2537,9 +2537,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ScheduledMaintenances.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments",
       "text": "List Service Appointments",
       "category": "Service Appointment",
@@ -2583,9 +2583,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ServiceAppointments.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments/record_id",
       "text": "Get a Service Appointment",
       "category": "Service Appointment",
@@ -2632,9 +2632,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ServiceAppointments.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments",
       "text": "Create a Service Appointment",
       "category": "Service Appointment",
@@ -2702,9 +2702,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ServiceAppointments.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments",
       "text": "Edit a Service Appointment",
       "category": "Service Appointment",
@@ -2739,9 +2739,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ServiceAppointments.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments/record_id/actions/reschedule___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments/record_id/actions/reschedule",
       "text": "Reschedule a Service Appointment",
       "category": "Service Appointment",
@@ -2805,9 +2805,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.serviceappointments.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments/record_id/actions/blueprint/transitions___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments/record_id/actions/blueprint/transitions",
       "text": "List Service Appointment Transitions",
       "category": "Service Appointment",
@@ -2854,9 +2854,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.serviceappointments.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments/record_id/actions/blueprint/___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments/record_id/actions/blueprint/",
       "text": "Dispatch a Service Appointment",
       "category": "Service Appointment",
@@ -2909,9 +2909,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.serviceappointments.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_appointments/record_id/actions/blueprint___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/service_appointments/record_id/actions/blueprint",
       "text": "Terminate a Service Appointment",
       "category": "Service Appointment",
@@ -2969,9 +2969,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.serviceappointments.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__fsm/v1/service_appointments/record_id/actions/blueprint___PUT": {
+    {
       "provider_alias_intent": "fsm/v1/service_appointments/record_id/actions/blueprint",
       "text": "Complete Work for Service Appointment",
       "category": "Service Appointment",
@@ -3040,9 +3040,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.serviceappointments.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.071Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/territories___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/territories",
       "text": "List Service Territories",
       "category": "Service Territories",
@@ -3086,9 +3086,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Territories.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.087Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/territories/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/territories/record_id",
       "text": "Get a Service Territory",
       "category": "Service Territories",
@@ -3135,9 +3135,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Territories.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.087Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/territories/search___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/territories/search",
       "text": "Search Service Territories",
       "category": "Service Territories",
@@ -3191,9 +3191,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Territories.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.087Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_and_parts___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/service_and_parts",
       "text": "List Services/Parts",
       "category": "Services/Parts",
@@ -3237,9 +3237,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Service_And_Parts.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.087Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_and_parts/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/service_and_parts/record_id",
       "text": "Get a Service/Part",
       "category": "Services/Parts",
@@ -3286,9 +3286,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Service_And_Parts.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_and_parts___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/service_and_parts",
       "text": "Create a Service/Part",
       "category": "Services/Parts",
@@ -3368,9 +3368,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Service_And_Parts.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/service_and_parts/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/service_and_parts/record_id",
       "text": "Edit a Service/Part",
       "category": "Services/Parts",
@@ -3417,9 +3417,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.Service_And_Parts.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/users/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/users/record_id",
       "text": "Get an User",
       "category": "User",
@@ -3466,9 +3466,9 @@
       "response_type": "",
       "scope": "ZohoFSM.users.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/users___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/users",
       "text": "List Users",
       "category": "Users ",
@@ -3503,9 +3503,9 @@
       "response_type": "",
       "scope": "ZohoFSM.users.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/users___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/users",
       "text": "Create a User",
       "category": "Users ",
@@ -3556,9 +3556,9 @@
       "response_type": "",
       "scope": "ZohoFSM.users.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/users___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/users",
       "text": "Edit a User",
       "category": "Users ",
@@ -3593,9 +3593,9 @@
       "response_type": "",
       "scope": "ZohoFSM.users.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/settings/profiles___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/settings/profiles",
       "text": "List Profiles",
       "category": "Users ",
@@ -3630,9 +3630,9 @@
       "response_type": "",
       "scope": "ZohoFSM.settings.profiles.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_orders___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/work_orders",
       "text": "List Work Orders",
       "category": "Work",
@@ -3676,9 +3676,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_orders/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/work_orders/record_id",
       "text": "Get a Work Order",
       "category": "Work",
@@ -3725,9 +3725,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_orders___POST": {
+    {
       "provider_alias_intent": "/fsm/v1/work_orders",
       "text": "Create a Work Order",
       "category": "Work",
@@ -3798,9 +3798,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.CREATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_orders/record_id___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/work_orders/record_id",
       "text": "Edit a Work Order",
       "category": "Work",
@@ -3847,9 +3847,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__fsm/v1/work_orders/record_id/actions/blueprint/transitions___GET": {
+    {
       "provider_alias_intent": "fsm/v1/work_orders/record_id/actions/blueprint/transitions",
       "text": "List Work Order Transitions",
       "category": "Work",
@@ -3896,9 +3896,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_orders/record_id/actions/blueprint___PUT": {
+    {
       "provider_alias_intent": "/fsm/v1/work_orders/record_id/actions/blueprint",
       "text": "Perform a Work Order Transition",
       "category": "Work",
@@ -3954,9 +3954,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.WorkOrders.UPDATE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_types___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/work_types",
       "text": "List Work Types",
       "category": "Work Types",
@@ -3991,9 +3991,9 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     },
-    "zohofsm__/fsm/v1/work_types/record_id___GET": {
+    {
       "provider_alias_intent": "/fsm/v1/work_types/record_id",
       "text": "Get a Work Type",
       "category": "Work Types",
@@ -4040,7 +4040,7 @@
       "response_type": "",
       "scope": "ZohoFSM.modules.ALL",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.088Z"
+      "updated_at": "2025-11-11T15:37:35.941Z"
     }
-  }
+  ]
 }

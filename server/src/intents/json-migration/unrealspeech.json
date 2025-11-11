@@ -33,8 +33,8 @@
     "total_api": 4,
     "credential_link": "https://unrealspeech.com/dashboard"
   },
-  "routes": {
-    "unrealspeech__/stream___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/stream",
       "text": "Stream",
       "category": "Test to Speech",
@@ -121,9 +121,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.909Z"
+      "updated_at": "2025-11-11T15:37:35.585Z"
     },
-    "unrealspeech__/speech___POST": {
+    {
       "provider_alias_intent": "/speech",
       "text": "Speech",
       "category": "Test to Speech",
@@ -204,9 +204,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.909Z"
+      "updated_at": "2025-11-11T15:37:35.585Z"
     },
-    "unrealspeech__/synthesistasks___POST": {
+    {
       "provider_alias_intent": "/synthesistasks",
       "text": "SynthesisTasks",
       "category": "Test to Speech",
@@ -291,9 +291,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.909Z"
+      "updated_at": "2025-11-11T15:37:35.585Z"
     },
-    "unrealspeech__/synthesistasks/taskid___GET": {
+    {
       "provider_alias_intent": "/synthesistasks/taskid",
       "text": "SynthesisTasks-Check",
       "category": "Test to Speech",
@@ -337,7 +337,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.909Z"
+      "updated_at": "2025-11-11T15:37:35.585Z"
     }
-  }
+  ]
 }

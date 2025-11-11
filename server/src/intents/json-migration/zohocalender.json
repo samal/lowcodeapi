@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "zohocalender__/api/v1/calendars___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/calendars",
       "text": "Get calendar list",
       "category": "Calendars API",
@@ -37,9 +37,9 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.000Z"
+      "updated_at": "2025-11-11T15:37:35.822Z"
     },
-    "zohocalender__api/v1/calendars/calendar_uid/events___GET": {
+    {
       "provider_alias_intent": "api/v1/calendars/calendar_uid/events",
       "text": "Get events list",
       "category": "Events API",
@@ -75,9 +75,9 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.000Z"
+      "updated_at": "2025-11-11T15:37:35.822Z"
     },
-    "zohocalender__/api/v1/calendars/calendar_uid/share___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/share",
       "text": "Get shared calendar details",
       "category": "Share API",
@@ -113,7 +113,7 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.000Z"
+      "updated_at": "2025-11-11T15:37:35.822Z"
     }
-  }
+  ]
 }

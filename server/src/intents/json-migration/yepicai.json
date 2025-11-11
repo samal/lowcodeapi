@@ -33,8 +33,8 @@
     "total_api": 17,
     "credential_link": "https://studio.yepic.ai"
   },
-  "routes": {
-    "yepicai__/v1/assets___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/assets",
       "text": "Get All Assets",
       "category": "Asset Endpoints",
@@ -71,9 +71,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/avatars___GET": {
+    {
       "provider_alias_intent": "/v1/avatars",
       "text": "Get All Avatars",
       "category": "Asset Endpoints",
@@ -110,9 +110,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/id___GET": {
+    {
       "provider_alias_intent": "/v1/assets/id",
       "text": "Get a Single Asset",
       "category": "Asset Endpoints",
@@ -152,9 +152,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/assets/id",
       "text": "Update an Asset Partially",
       "category": "Asset Endpoints",
@@ -194,9 +194,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/assets/id",
       "text": "Delete an Asset",
       "category": "Asset Endpoints",
@@ -236,9 +236,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/import/file___POST": {
+    {
       "provider_alias_intent": "/v1/assets/import/file",
       "text": "Create a New Asset (HTML form file upload)",
       "category": "Asset Endpoints",
@@ -279,9 +279,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/import/json___POST": {
+    {
       "provider_alias_intent": "/v1/assets/import/json",
       "text": "Create a New Asset (JSON base64 data)",
       "category": "Asset Endpoints",
@@ -322,9 +322,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/assets/import/url___POST": {
+    {
       "provider_alias_intent": "/v1/assets/import/url",
       "text": "Create a New Asset (URL)",
       "category": "Asset Endpoints",
@@ -365,9 +365,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/avatars___POST": {
+    {
       "provider_alias_intent": "/v1/avatars",
       "text": "Create an Avatar",
       "category": "Avatar Endpoints",
@@ -395,9 +395,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/avatars/id___GET": {
+    {
       "provider_alias_intent": "/v1/avatars/id",
       "text": "Get Avatars",
       "category": "Avatar Endpoints",
@@ -437,9 +437,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/avatars/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/avatars/id",
       "text": "Update an Avatar",
       "category": "Avatar Endpoints",
@@ -479,9 +479,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/talkingphotos___GET": {
+    {
       "provider_alias_intent": "/v1/talkingphotos",
       "text": "Retrieve a studio pro video by ID",
       "category": "Studio Pro Videos",
@@ -521,9 +521,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/talkingphotos___POST": {
+    {
       "provider_alias_intent": "/v1/talkingphotos",
       "text": "Create a studio pro video",
       "category": "Studio Pro Videos",
@@ -600,9 +600,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/talkingphotos___PATCH": {
+    {
       "provider_alias_intent": "/v1/talkingphotos",
       "text": "Update a studio pro video",
       "category": "Studio Pro Videos",
@@ -642,9 +642,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/talkingphotos___DELETE": {
+    {
       "provider_alias_intent": "/v1/talkingphotos",
       "text": "Delete a studio pro video",
       "category": "Studio Pro Videos",
@@ -684,9 +684,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/talkingphotos___PUT": {
+    {
       "provider_alias_intent": "/v1/talkingphotos",
       "text": "Replace a draft studio pro video",
       "category": "Studio Pro Videos",
@@ -771,9 +771,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     },
-    "yepicai__/v1/videos/requeue/id___POST": {
+    {
       "provider_alias_intent": "/v1/videos/requeue/id",
       "text": "Requeue a studio pro video by ID",
       "category": "Studio Pro Videos",
@@ -813,7 +813,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.937Z"
+      "updated_at": "2025-11-11T15:37:35.664Z"
     }
-  }
+  ]
 }

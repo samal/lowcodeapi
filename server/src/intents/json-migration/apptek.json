@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "apptek__/v2/userlexicon/suggest/model___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/userlexicon/suggest/model",
       "text": "Request similar sounding words",
       "category": "Custom Vocabulary Management",
@@ -50,9 +50,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/userlexicon/build/model___POST": {
+    {
       "provider_alias_intent": "/v2/userlexicon/build/model",
       "text": "Build a new User Lexicon",
       "category": "Custom Vocabulary Management",
@@ -105,9 +105,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/userlexicon/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/userlexicon/request_id",
       "text": "Query the status of a Custom Vocabulary request and retrieve results",
       "category": "Custom Vocabulary Management",
@@ -151,9 +151,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/userlexicon/list___GET": {
+    {
       "provider_alias_intent": "/v2/userlexicon/list\n",
       "text": "Query available User Lexicons",
       "category": "Custom Vocabulary Management",
@@ -185,9 +185,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/userlexicon/lexicon_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/userlexicon/lexicon_id",
       "text": "Remove an existing User Lexicon",
       "category": "Custom Vocabulary Management",
@@ -231,9 +231,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/language_id___POST": {
+    {
       "provider_alias_intent": "/v2/language_id",
       "text": "Perform language identification",
       "category": "Language Identification",
@@ -270,9 +270,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/language_id/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/language_id/request_id\n",
       "text": "Query language identification request status and retrieve results",
       "category": "Language Identification",
@@ -316,9 +316,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/language_id/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/language_id/request_id\n",
       "text": "Remove language identification results",
       "category": "Language Identification",
@@ -362,9 +362,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/audio_align/model___POST": {
+    {
       "provider_alias_intent": "/v2/audio_align/model",
       "text": "Perform audio alignment",
       "category": "Language Identification",
@@ -417,9 +417,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/audio_align/models___GET": {
+    {
       "provider_alias_intent": "/v2/audio_align/models",
       "text": "Query available audio alignment models",
       "category": "Language Identification",
@@ -451,9 +451,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/audio_align/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/audio_align/request_id",
       "text": "Query audio alignment request status and retrieve results",
       "category": "Language Identification",
@@ -507,9 +507,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/audio_align/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/audio_align/request_id",
       "text": "Remove audio alignment results",
       "category": "Language Identification",
@@ -553,9 +553,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/translate/model___POST": {
+    {
       "provider_alias_intent": "/v2/translate/model",
       "text": "Translate a text file",
       "category": "Machine Translation",
@@ -608,9 +608,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/translate/models___GET": {
+    {
       "provider_alias_intent": "/v2/translate/models",
       "text": "Query available translation models",
       "category": "Machine Translation",
@@ -642,9 +642,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/translate/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/translate/request_id\n",
       "text": "Query translation request status and retrieve results",
       "category": "Machine Translation",
@@ -688,9 +688,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/translate/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/translate/request_id",
       "text": "Remove translation results",
       "category": "Machine Translation",
@@ -734,9 +734,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/iextract/language___POST": {
+    {
       "provider_alias_intent": "/v2/iextract/language\n",
       "text": "Perform NLP Information Extraction",
       "category": "NLP Information Extraction",
@@ -790,9 +790,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/iextract/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/iextract/request_id\n",
       "text": "Query NLP Information Extraction request status and retrieve results",
       "category": "NLP Information Extraction",
@@ -836,9 +836,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/iextract/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/iextract/request_id",
       "text": "Remove NLP Information Extraction results",
       "category": "NLP Information Extraction",
@@ -882,9 +882,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/namedentity/language___POST": {
+    {
       "provider_alias_intent": "/v2/namedentity/language",
       "text": "Perform Named Entity Identification",
       "category": "Named Entity Identification",
@@ -938,9 +938,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/namedentity/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/namedentity/request_id",
       "text": "Query Named Entity Identification request status and retrieve results",
       "category": "Named Entity Identification",
@@ -984,9 +984,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/namedentity/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/namedentity/request_id\n",
       "text": "Remove Named Entity Identification results",
       "category": "Named Entity Identification",
@@ -1030,9 +1030,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/sentiment/language___POST": {
+    {
       "provider_alias_intent": "/v2/sentiment/language",
       "text": "Perform Sentiment Analysis",
       "category": "Sentiment Analysis",
@@ -1086,9 +1086,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/sentiment/models___GET": {
+    {
       "provider_alias_intent": "/v2/sentiment/models",
       "text": "Query available sentiment models",
       "category": "Sentiment Analysis",
@@ -1120,9 +1120,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/sentiment/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/sentiment/request_id",
       "text": "Query Sentiment Analysis request status and retrieve results",
       "category": "Sentiment Analysis",
@@ -1166,9 +1166,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/sentiment/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/sentiment/request_id",
       "text": "Remove Sentiment Analysis results",
       "category": "Sentiment Analysis",
@@ -1212,9 +1212,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/services___GET": {
+    {
       "provider_alias_intent": "/v2/services",
       "text": "Query available services and models",
       "category": "Services and Models",
@@ -1272,9 +1272,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe/model___POST": {
+    {
       "provider_alias_intent": "/v2/transcribe/model",
       "text": "Transcribe an audio/video file",
       "category": "Speech to Text",
@@ -1369,9 +1369,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe___POST": {
+    {
       "provider_alias_intent": "/v2/transcribe",
       "text": "Transcribe an audio/video file from a remote url",
       "category": "Speech to Text",
@@ -1408,9 +1408,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe/models___GET": {
+    {
       "provider_alias_intent": "/v2/transcribe/models",
       "text": "Query available transcribe models",
       "category": "Speech to Text",
@@ -1442,9 +1442,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/transcribe/request_id",
       "text": "Query transcribe request status and retrieve results",
       "category": "Speech to Text",
@@ -1492,9 +1492,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/transcribe/request_id",
       "text": "Remove transcription results",
       "category": "Speech to Text",
@@ -1538,9 +1538,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/transcribe/reformat___POST": {
+    {
       "provider_alias_intent": "/v2/transcribe/reformat",
       "text": "Reformat ASR results",
       "category": "Speech to Text",
@@ -1588,9 +1588,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/texttospeech/model___POST": {
+    {
       "provider_alias_intent": "/v2/texttospeech/model\n",
       "text": "Perform text to synthesized speech",
       "category": "Text to Speech",
@@ -1644,9 +1644,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/texttospeech/adapted/model___POST": {
+    {
       "provider_alias_intent": "/v2/texttospeech/adapted/model",
       "text": "Perform text to adapted synthesize speech",
       "category": "Text to Speech",
@@ -1699,9 +1699,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/texttospeech/models___GET": {
+    {
       "provider_alias_intent": "/v2/texttospeech/models",
       "text": "Query available text to speech models",
       "category": "Text to Speech",
@@ -1733,9 +1733,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/texttospeech/request_id___GET": {
+    {
       "provider_alias_intent": "/v2/texttospeech/request_id",
       "text": "Query text to speech request status and retrieve results",
       "category": "Text to Speech",
@@ -1779,9 +1779,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     },
-    "apptek__/v2/texttospeech/request_id___DELETE": {
+    {
       "provider_alias_intent": "/v2/texttospeech/request_id",
       "text": "Remove text to speech results",
       "category": "Text to Speech",
@@ -1825,7 +1825,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.022Z"
+      "updated_at": "2025-11-11T15:37:34.776Z"
     }
-  }
+  ]
 }

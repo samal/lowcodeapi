@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "dodopayments__/payments___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/payments",
       "text": "List Payments",
       "category": "Payments",
@@ -32,9 +32,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/payments/payment_id___GET": {
+    {
       "provider_alias_intent": "/payments/payment_id",
       "text": "Get Payment Detail",
       "category": "Payments",
@@ -111,9 +111,9 @@
         "subscription_id": "<string>",
         "payment_method_type": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/licenses/activate___POST": {
+    {
       "provider_alias_intent": "/licenses/activate",
       "text": "Activate License",
       "category": "Licenses",
@@ -146,9 +146,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/licenses/deactivate___POST": {
+    {
       "provider_alias_intent": "/licenses/deactivate",
       "text": "Deactivate License",
       "category": "Licenses",
@@ -181,9 +181,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/licenses/validate___POST": {
+    {
       "provider_alias_intent": "/licenses/validate",
       "text": "Validate License",
       "category": "Licenses",
@@ -215,9 +215,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_keys___GET": {
+    {
       "provider_alias_intent": "/license_keys",
       "text": "Get License Keys",
       "category": "Licenses",
@@ -260,9 +260,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_keys/id___GET": {
+    {
       "provider_alias_intent": "/license_keys/id",
       "text": "Get License Key",
       "category": "Licenses",
@@ -290,9 +290,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_keys/id___PATCH": {
+    {
       "provider_alias_intent": "/license_keys/id",
       "text": "Update License Key",
       "category": "Licenses",
@@ -333,9 +333,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/subscriptions/subscription_id___GET": {
+    {
       "provider_alias_intent": "/subscriptions/subscription_id",
       "text": "Get Subscription Detail",
       "category": "Subscriptions",
@@ -383,9 +383,9 @@
         "payment_frequency_interval": "Day",
         "subscription_period_interval": "Day"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_key_instances___GET": {
+    {
       "provider_alias_intent": "/license_key_instances",
       "text": "Get License Key Instances",
       "category": "Licenses",
@@ -432,9 +432,9 @@
           ]
         }
       ],
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_key_instances/id___PATCH": {
+    {
       "provider_alias_intent": "/license_key_instances/id",
       "text": "Update License Key Instance",
       "category": "Licenses",
@@ -468,9 +468,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/customers___POST": {
+    {
       "provider_alias_intent": "/customers",
       "text": "Create Customer",
       "category": "Customers",
@@ -514,9 +514,9 @@
         "customer_id": "<string>",
         "phone_number": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/customers___GET": {
+    {
       "provider_alias_intent": "/customers",
       "text": "List Customers",
       "category": "Customers",
@@ -558,9 +558,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/customers/customer_id___GET": {
+    {
       "provider_alias_intent": "/customers/customer_id",
       "text": "Get Customer Detail",
       "category": "Customers",
@@ -595,9 +595,9 @@
         "customer_id": "<string>",
         "phone_number": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/customers/customer_id___PATCH": {
+    {
       "provider_alias_intent": "/customers/customer_id",
       "text": "Patch Customer",
       "category": "Customers",
@@ -641,9 +641,9 @@
         "customer_id": "<string>",
         "phone_number": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/webhook_events___GET": {
+    {
       "provider_alias_intent": "/webhook_events",
       "text": "List Webhook Events",
       "category": "Webhooks",
@@ -703,9 +703,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/webhook_events/webhook_event_id___GET": {
+    {
       "provider_alias_intent": "/webhook_events/webhook_event_id",
       "text": "Get Webhook Event Detail",
       "category": "Webhooks",
@@ -742,9 +742,9 @@
         "business_id": "<string>",
         "latest_attempted_at": "2023-11-07T05:31:56Z"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/your-webhook-url___POST": {
+    {
       "provider_alias_intent": "/your-webhook-url",
       "text": "Outgoing Webhooks",
       "category": "Webhooks",
@@ -787,9 +787,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/products/id/images___PUT": {
+    {
       "provider_alias_intent": "/products/id/images",
       "text": "Update Product Images",
       "category": "Products",
@@ -819,9 +819,9 @@
       "response_format": {
         "url": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/refunds___GET": {
+    {
       "provider_alias_intent": "/refunds",
       "text": "List Refunds",
       "category": "Refunds",
@@ -865,9 +865,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/refunds___POST": {
+    {
       "provider_alias_intent": "/refunds",
       "text": "Create Refund",
       "category": "Refunds",
@@ -912,9 +912,9 @@
         "payment_id": "<string>",
         "business_id": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/refunds/refund_id___GET": {
+    {
       "provider_alias_intent": "/refunds/refund_id",
       "text": "Get Refund Detail",
       "category": "Refunds",
@@ -951,9 +951,9 @@
         "payment_id": "<string>",
         "business_id": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/disputes___GET": {
+    {
       "provider_alias_intent": "/disputes",
       "text": "List Disputes",
       "category": "Disputes",
@@ -997,9 +997,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/disputes/dispute_id___GET": {
+    {
       "provider_alias_intent": "/disputes/dispute_id",
       "text": "Get Dispute Detail",
       "category": "Disputes",
@@ -1036,9 +1036,9 @@
         "dispute_stage": "pre_dispute",
         "dispute_status": "dispute_opened"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/payouts___GET": {
+    {
       "provider_alias_intent": "/payouts",
       "text": "List Payouts",
       "category": "Payouts",
@@ -1089,9 +1089,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/checkout/supported_countries___GET": {
+    {
       "provider_alias_intent": "/checkout/supported_countries",
       "text": "Supported Countries",
       "category": "Miscellaneous",
@@ -1113,9 +1113,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/subscriptions/subscription_id___PATCH": {
+    {
       "provider_alias_intent": "/subscriptions/subscription_id",
       "text": "Update Subscription",
       "category": "Subscriptions",
@@ -1174,9 +1174,9 @@
         "payment_frequency_interval": "Day",
         "subscription_period_interval": "Day"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/subscriptions___GET": {
+    {
       "provider_alias_intent": "/subscriptions",
       "text": "List subscriptions",
       "category": "Subscriptions",
@@ -1224,9 +1224,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/subscriptions___POST": {
+    {
       "provider_alias_intent": "/subscriptions",
       "text": "Create Subscription",
       "category": "Subscriptions",
@@ -1281,9 +1281,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/license_key_instances/id___GET": {
+    {
       "provider_alias_intent": "/license_key_instances/id",
       "text": "Get License Key Instance",
       "category": "Licenses",
@@ -1344,9 +1344,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/products___GET": {
+    {
       "provider_alias_intent": "/products",
       "text": "List Products",
       "category": "Products",
@@ -1392,9 +1392,9 @@
           }
         ]
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/products___POST": {
+    {
       "provider_alias_intent": "/products",
       "text": "Create Product",
       "category": "Products",
@@ -1451,9 +1451,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/products/id___GET": {
+    {
       "provider_alias_intent": "/products/id",
       "text": "Get Product Detail",
       "category": "Products",
@@ -1505,9 +1505,9 @@
         "license_key_activations_limit": 123,
         "license_key_activation_message": "<string>"
       },
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     },
-    "dodopayments__/products/id___PATCH": {
+    {
       "provider_alias_intent": "/products/id",
       "text": "Update Product",
       "category": "Products",
@@ -1564,7 +1564,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.198Z"
+      "updated_at": "2025-11-11T15:37:34.876Z"
     }
-  }
+  ]
 }

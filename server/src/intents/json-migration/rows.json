@@ -33,8 +33,8 @@
     "total_api": 8,
     "credential_link": "https://rows.com"
   },
-  "routes": {
-    "rows__/v1/beta1/spreadsheets/spreadsheet_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets/spreadsheet_id",
       "text": "Get spreadsheet information",
       "category": "Spreadsheet",
@@ -74,9 +74,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/values/range___GET": {
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/values/range",
       "text": "Get values from range",
       "category": "Spreadsheet",
@@ -144,9 +144,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/cells/range___GET": {
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/cells/range",
       "text": "Get cells from range",
       "category": "Spreadsheet",
@@ -214,9 +214,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/cells/range___POST": {
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/cells/range",
       "text": "Overwrite cells in range",
       "category": "Spreadsheet",
@@ -282,9 +282,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/values/range-append___POST": {
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets/spreadsheet_id/tables/table_id/values/range-append",
       "text": "Append values to range",
       "category": "Spreadsheet",
@@ -350,9 +350,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/workspaces___GET": {
+    {
       "provider_alias_intent": "/v1/beta1/workspaces",
       "text": "Get workspace information",
       "category": "Workspace",
@@ -380,9 +380,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/folders___GET": {
+    {
       "provider_alias_intent": "/v1/beta1/folders",
       "text": "List folders",
       "category": "Workspace",
@@ -419,9 +419,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     },
-    "rows__/v1/beta1/spreadsheets___GET": {
+    {
       "provider_alias_intent": "/v1/beta1/spreadsheets",
       "text": "List spreadsheets",
       "category": "Workspace",
@@ -462,7 +462,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.432Z"
     }
-  }
+  ]
 }

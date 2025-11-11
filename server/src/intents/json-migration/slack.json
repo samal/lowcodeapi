@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "slack__/admin.apps.approve___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/admin.apps.approve",
       "text": "Approve an app for installation on a workspace. 🚧",
       "category": "Admin Apps",
@@ -49,9 +49,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.848Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.apps.restrict___POST": {
+    {
       "provider_alias_intent": "/admin.apps.restrict",
       "text": "Restrict an app for installation on a workspace. 🚧",
       "category": "Admin Apps",
@@ -99,9 +99,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.apps.approved.list___GET": {
+    {
       "provider_alias_intent": "/admin.apps.approved.list",
       "text": "List approved apps for an org or workspace. 🚧",
       "category": "Admin Apps Approved",
@@ -151,9 +151,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.apps.requests.list___GET": {
+    {
       "provider_alias_intent": "/admin.apps.requests.list",
       "text": "List app requests for a team/workspace. 🚧",
       "category": "Admin Apps Requests",
@@ -200,9 +200,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.apps.restricted.list___GET": {
+    {
       "provider_alias_intent": "/admin.apps.restricted.list",
       "text": "List restricted apps for an org or workspace. 🚧",
       "category": "Admin Apps Restricted",
@@ -252,9 +252,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.archive___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.archive",
       "text": "Archive a public or private channel.",
       "category": "Admin Conversations",
@@ -295,9 +295,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.converttoprivate___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.converttoprivate",
       "text": "Convert a public channel to a private channel.",
       "category": "Admin Conversations",
@@ -338,9 +338,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.create___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.create",
       "text": "Create a public or private channel-based conversation.",
       "category": "Admin Conversations",
@@ -406,9 +406,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.delete___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.delete",
       "text": "Delete a public or private channel.",
       "category": "Admin Conversations",
@@ -449,9 +449,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.disconnectshared___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.disconnectshared",
       "text": "Disconnect a connected channel from one or more workspaces.",
       "category": "Admin Conversations",
@@ -496,9 +496,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.getconversationprefs___GET": {
+    {
       "provider_alias_intent": "/admin.conversations.getconversationprefs",
       "text": "Get conversation preferences for a public or private channel.",
       "category": "Admin Conversations",
@@ -539,9 +539,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.getteams___GET": {
+    {
       "provider_alias_intent": "/admin.conversations.getteams",
       "text": "Get all the workspaces a given public or private channel is connected to within this Enterprise org.",
       "category": "Admin Conversations",
@@ -590,9 +590,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.invite___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.invite",
       "text": "Invite a user to a public or private channel.",
       "category": "Admin Conversations",
@@ -638,9 +638,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.rename___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.rename",
       "text": "Rename a public or private channel.",
       "category": "Admin Conversations",
@@ -685,9 +685,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.search___GET": {
+    {
       "provider_alias_intent": "/admin.conversations.search",
       "text": "Search for public or private channels in an Enterprise organization.",
       "category": "Admin Conversations",
@@ -751,9 +751,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.setconversationprefs___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.setconversationprefs",
       "text": "Set the posting permissions for a public or private channel.",
       "category": "Admin Conversations",
@@ -799,9 +799,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.setteams___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.setteams",
       "text": "Set the workspaces in an Enterprise grid org that connect to a public or private channel.",
       "category": "Admin Conversations",
@@ -858,9 +858,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.unarchive___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.unarchive",
       "text": "Unarchive a public or private channel.",
       "category": "Admin Conversations",
@@ -901,9 +901,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.ekm.listoriginalconnectedchannelinfo___GET": {
+    {
       "provider_alias_intent": "/admin.conversations.ekm.listoriginalconnectedchannelinfo",
       "text": "List all disconnected channels—i.e. channels that were once connected to other workspaces and then disconnected—and the corresponding original channel IDs for key revocation with EKM.",
       "category": "Admin Conversations Ekm",
@@ -954,9 +954,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.restrictaccess.addgroup___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.restrictaccess.addgroup",
       "text": "Add an allowlist of IDP groups for accessing a channel",
       "category": "Admin Conversations RestrictAccess",
@@ -1010,9 +1010,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.restrictaccess.listgroups___GET": {
+    {
       "provider_alias_intent": "/admin.conversations.restrictaccess.listgroups",
       "text": "List all IDP Groups linked to a channel",
       "category": "Admin Conversations RestrictAccess",
@@ -1055,9 +1055,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.conversations.restrictaccess.removegroup___POST": {
+    {
       "provider_alias_intent": "/admin.conversations.restrictaccess.removegroup",
       "text": "Remove a linked IDP group linked from a private channel",
       "category": "Admin Conversations RestrictAccess",
@@ -1112,9 +1112,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.emoji.add___POST": {
+    {
       "provider_alias_intent": "/admin.emoji.add",
       "text": "Add an emoji.",
       "category": "Admin Emoji",
@@ -1159,9 +1159,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.emoji.addalias___POST": {
+    {
       "provider_alias_intent": "/admin.emoji.addalias",
       "text": "Add an emoji alias.",
       "category": "Admin Emoji",
@@ -1206,9 +1206,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.emoji.list___GET": {
+    {
       "provider_alias_intent": "/admin.emoji.list",
       "text": "List emoji for an Enterprise Grid organization.",
       "category": "Admin Emoji",
@@ -1251,9 +1251,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.emoji.remove___POST": {
+    {
       "provider_alias_intent": "/admin.emoji.remove",
       "text": "Remove an emoji across an Enterprise Grid organization",
       "category": "Admin Emoji",
@@ -1293,9 +1293,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.emoji.rename___POST": {
+    {
       "provider_alias_intent": "/admin.emoji.rename",
       "text": "Rename an emoji.",
       "category": "Admin Emoji",
@@ -1340,9 +1340,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.inviterequests.approve___POST": {
+    {
       "provider_alias_intent": "/admin.inviterequests.approve",
       "text": "Approve a workspace invite request.",
       "category": "Admin InviteRequests",
@@ -1387,9 +1387,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.inviterequests.deny___POST": {
+    {
       "provider_alias_intent": "/admin.inviterequests.deny",
       "text": "Deny a workspace invite request. 🚧",
       "category": "Admin InviteRequests",
@@ -1435,9 +1435,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.inviterequests.list___GET": {
+    {
       "provider_alias_intent": "/admin.inviterequests.list",
       "text": "List all pending workspace invite requests. 🚧",
       "category": "Admin InviteRequests",
@@ -1486,9 +1486,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.inviterequests.approved.list___GET": {
+    {
       "provider_alias_intent": "/admin.inviterequests.approved.list",
       "text": "List all approved workspace invite requests. 🚧",
       "category": "Admin InviteRequests Approved",
@@ -1537,9 +1537,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.inviterequests.denied.list___GET": {
+    {
       "provider_alias_intent": "/admin.inviterequests.denied.list",
       "text": "List all denied workspace invite requests. 🚧",
       "category": "Admin InviteRequests Denied",
@@ -1588,9 +1588,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.create___POST": {
+    {
       "provider_alias_intent": "/admin.teams.create",
       "text": "Create an Enterprise team. 🚧",
       "category": "Admin Teams",
@@ -1645,9 +1645,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.list___GET": {
+    {
       "provider_alias_intent": "/admin.teams.list",
       "text": "List all teams on an Enterprise organization 🚧",
       "category": "Admin Teams",
@@ -1692,9 +1692,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.admins.list___GET": {
+    {
       "provider_alias_intent": "/admin.teams.admins.list",
       "text": "List all of the admins on a given workspace. 🚧",
       "category": "Admin Teams Admins",
@@ -1742,9 +1742,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.owners.list___GET": {
+    {
       "provider_alias_intent": "/admin.teams.owners.list",
       "text": "List all of the owners on a given workspace. 🚧",
       "category": "Admin Teams Owners",
@@ -1792,9 +1792,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.info___GET": {
+    {
       "provider_alias_intent": "/admin.teams.settings.info",
       "text": "Fetch information about settings in a workspace 🚧",
       "category": "Admin Teams Settings",
@@ -1835,9 +1835,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.setdefaultchannels___POST": {
+    {
       "provider_alias_intent": "/admin.teams.settings.setdefaultchannels",
       "text": "Set the default channels of a workspace. 🚧",
       "category": "Admin Teams Settings",
@@ -1883,9 +1883,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.setdescription___POST": {
+    {
       "provider_alias_intent": "/admin.teams.settings.setdescription",
       "text": "Set the description of a given workspace. 🚧",
       "category": "Admin Teams Settings",
@@ -1932,9 +1932,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.setdiscoverability___POST": {
+    {
       "provider_alias_intent": "/admin.teams.settings.setdiscoverability",
       "text": "An API method that allows admins to set the discoverability of a given workspace 🚧",
       "category": "Admin Teams Settings",
@@ -1981,9 +1981,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.seticon___POST": {
+    {
       "provider_alias_intent": "/admin.teams.settings.seticon",
       "text": "Sets the icon of a workspace. 🚧",
       "category": "Admin Teams Settings",
@@ -2029,9 +2029,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.teams.settings.setname___POST": {
+    {
       "provider_alias_intent": "/admin.teams.settings.setname",
       "text": "Set the name of a given workspace. 🚧",
       "category": "Admin Teams Settings",
@@ -2078,9 +2078,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.usergroups.addchannels___POST": {
+    {
       "provider_alias_intent": "/admin.usergroups.addchannels",
       "text": "Add one or more default channels to an IDP group. 🚧",
       "category": "Admin Usergroups",
@@ -2131,9 +2131,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.usergroups.addteams___POST": {
+    {
       "provider_alias_intent": "/admin.usergroups.addteams",
       "text": "Associate one or more default workspaces with an organization-wide IDP group. 🚧",
       "category": "Admin Usergroups",
@@ -2188,9 +2188,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.usergroups.listchannels___GET": {
+    {
       "provider_alias_intent": "/admin.usergroups.listchannels",
       "text": "List the channels linked to an org-level IDP group (user group). 🚧",
       "category": "Admin Usergroups",
@@ -2244,9 +2244,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.usergroups.removechannels___POST": {
+    {
       "provider_alias_intent": "/admin.usergroups.removechannels",
       "text": "Remove one or more default channels from an org-level IDP group (user group). 🚧",
       "category": "Admin Usergroups",
@@ -2293,9 +2293,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.assign___POST": {
+    {
       "provider_alias_intent": "/admin.users.assign",
       "text": "Add an Enterprise user to a workspace. 🚧",
       "category": "Admin Users",
@@ -2362,9 +2362,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.invite___POST": {
+    {
       "provider_alias_intent": "/admin.users.invite",
       "text": "Invite a user to a workspace. 🚧",
       "category": "Admin Users",
@@ -2450,9 +2450,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.list___GET": {
+    {
       "provider_alias_intent": "/admin.users.list",
       "text": "List users on a workspace 🚧",
       "category": "Admin Users",
@@ -2502,9 +2502,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.remove___POST": {
+    {
       "provider_alias_intent": "/admin.users.remove",
       "text": "Remove a user from a workspace. 🚧",
       "category": "Admin Users",
@@ -2551,9 +2551,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.setadmin___POST": {
+    {
       "provider_alias_intent": "/admin.users.setadmin",
       "text": "Set an existing guest regular user or owner to be an admin user. 🚧",
       "category": "Admin Users",
@@ -2600,9 +2600,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.setexpiration___POST": {
+    {
       "provider_alias_intent": "/admin.users.setexpiration",
       "text": "Set an expiration for a guest user 🚧",
       "category": "Admin Users",
@@ -2654,9 +2654,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.setowner___POST": {
+    {
       "provider_alias_intent": "/admin.users.setowner",
       "text": "Set an existing guest regular user or admin user to be a workspace owner. 🚧",
       "category": "Admin Users",
@@ -2703,9 +2703,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.setregular___POST": {
+    {
       "provider_alias_intent": "/admin.users.setregular",
       "text": "Set an existing guest user admin user or owner to be a regular user. 🚧",
       "category": "Admin Users",
@@ -2752,9 +2752,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.session.invalidate___POST": {
+    {
       "provider_alias_intent": "/admin.users.session.invalidate",
       "text": "Invalidate a single session for a user by session_id 🚧",
       "category": "Admin Users Session",
@@ -2800,9 +2800,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/admin.users.session.reset___POST": {
+    {
       "provider_alias_intent": "/admin.users.session.reset",
       "text": "Wipes all valid sessions on all devices for a given user 🚧",
       "category": "Admin Users Session",
@@ -2858,9 +2858,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/api.test___GET": {
+    {
       "provider_alias_intent": "/api.test",
       "text": "Checks API calling code. 🚧",
       "category": "Api",
@@ -2899,9 +2899,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.uninstall___GET": {
+    {
       "provider_alias_intent": "/apps.uninstall",
       "text": "Uninstalls your app from a workspace.",
       "category": "Apps",
@@ -2943,9 +2943,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.event.authorizations.list___GET": {
+    {
       "provider_alias_intent": "/apps.event.authorizations.list",
       "text": "Get a list of authorizations for the given event context. Each authorization represents an app installation that the event is visible to. 🚧",
       "category": "Apps Event Authorizations",
@@ -2992,9 +2992,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.info___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.info",
       "text": "Returns list of permissions this app has on a team. 🚧",
       "category": "Apps Permissions",
@@ -3029,9 +3029,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.request___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.request",
       "text": "Allows an app to request additional scopes 🚧",
       "category": "Apps Permissions",
@@ -3077,9 +3077,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.resources.list___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.resources.list",
       "text": "Returns list of resource grants this app has on a team. 🚧",
       "category": "Apps Permissions Resources",
@@ -3123,9 +3123,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.scopes.list___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.scopes.list",
       "text": "Returns list of scopes this app has on a team. 🚧",
       "category": "Apps Permissions Scopes",
@@ -3161,9 +3161,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.users.list___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.users.list",
       "text": "Returns list of user grants and corresponding scopes this app has on a team. 🚧",
       "category": "Apps Permissions Users",
@@ -3207,9 +3207,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/apps.permissions.users.request___GET": {
+    {
       "provider_alias_intent": "/apps.permissions.users.request",
       "text": "Enables an app to trigger a permissions modal to grant an app access to a user access scope. 🚧",
       "category": "Apps Permissions Users",
@@ -3260,9 +3260,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/auth.revoke___GET": {
+    {
       "provider_alias_intent": "/auth.revoke",
       "text": "Revokes a token.",
       "category": "Auth",
@@ -3305,9 +3305,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/auth.test___GET": {
+    {
       "provider_alias_intent": "/auth.test",
       "text": "Checks authentication & identity.",
       "category": "Auth",
@@ -3342,9 +3342,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/bots.info___GET": {
+    {
       "provider_alias_intent": "/bots.info",
       "text": "Gets information about a bot user.",
       "category": "Bots",
@@ -3383,9 +3383,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.add___POST": {
+    {
       "provider_alias_intent": "/calls.add",
       "text": "Registers a new Call.",
       "category": "Calls",
@@ -3455,9 +3455,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.end___POST": {
+    {
       "provider_alias_intent": "/calls.end",
       "text": "Ends a Call.",
       "category": "Calls",
@@ -3502,9 +3502,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.info___GET": {
+    {
       "provider_alias_intent": "/calls.info",
       "text": "Returns information about a Call.",
       "category": "Calls",
@@ -3545,9 +3545,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.update___POST": {
+    {
       "provider_alias_intent": "/calls.update",
       "text": "Updates information about a Call.",
       "category": "Calls",
@@ -3600,9 +3600,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.participants.add___POST": {
+    {
       "provider_alias_intent": "/calls.participants.add",
       "text": "Registers new participants added to a Call.",
       "category": "Calls Participants",
@@ -3648,9 +3648,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/calls.participants.remove___POST": {
+    {
       "provider_alias_intent": "/calls.participants.remove",
       "text": "Registers participants removed from a Call.",
       "category": "Calls Participants",
@@ -3696,9 +3696,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.delete___POST": {
+    {
       "provider_alias_intent": "/chat.delete",
       "text": "Deletes a message.",
       "category": "Chat",
@@ -3748,9 +3748,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.deletescheduledmessage___POST": {
+    {
       "provider_alias_intent": "/chat.deletescheduledmessage",
       "text": "Deletes a pending scheduled message from the queue.",
       "category": "Chat",
@@ -3803,9 +3803,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.getpermalink___GET": {
+    {
       "provider_alias_intent": "/chat.getpermalink",
       "text": "Retrieve a permalink URL for a specific extant message",
       "category": "Chat",
@@ -3850,9 +3850,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.memessage___POST": {
+    {
       "provider_alias_intent": "/chat.memessage",
       "text": "Share a me message into a channel.",
       "category": "Chat",
@@ -3895,9 +3895,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.postephemeral___POST": {
+    {
       "provider_alias_intent": "/chat.postephemeral",
       "text": "Sends an ephemeral message to a user in a channel.",
       "category": "Chat",
@@ -3991,9 +3991,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.postmessage___POST": {
+    {
       "provider_alias_intent": "/chat.postmessage",
       "text": "Sends a message to a channel.",
       "category": "Chat",
@@ -4110,9 +4110,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.schedulemessage___POST": {
+    {
       "provider_alias_intent": "/chat.schedulemessage",
       "text": "Schedules a message to be sent to a channel.",
       "category": "Chat",
@@ -4215,9 +4215,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.unfurl___POST": {
+    {
       "provider_alias_intent": "/chat.unfurl",
       "text": "Provide custom unfurl behavior for user-posted URLs",
       "category": "Chat",
@@ -4283,9 +4283,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.update___POST": {
+    {
       "provider_alias_intent": "/chat.update",
       "text": "Updates a message.",
       "category": "Chat",
@@ -4355,9 +4355,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/chat.scheduledmessages.list___GET": {
+    {
       "provider_alias_intent": "/chat.scheduledmessages.list",
       "text": "Returns a list of scheduled messages.",
       "category": "Chat ScheduledMessages",
@@ -4412,9 +4412,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.archive___POST": {
+    {
       "provider_alias_intent": "/conversations.archive",
       "text": "Archives a conversation.",
       "category": "Conversations",
@@ -4453,9 +4453,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.close___POST": {
+    {
       "provider_alias_intent": "/conversations.close",
       "text": "Closes a direct message or multi-person direct message.",
       "category": "Conversations",
@@ -4494,9 +4494,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.create___POST": {
+    {
       "provider_alias_intent": "/conversations.create",
       "text": "Initiates a public or private channel-based conversation",
       "category": "Conversations",
@@ -4543,9 +4543,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.history___GET": {
+    {
       "provider_alias_intent": "/conversations.history",
       "text": "Fetches a conversation's history of messages and events.",
       "category": "Conversations",
@@ -4607,9 +4607,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.info___GET": {
+    {
       "provider_alias_intent": "/conversations.info",
       "text": "Retrieve information about a conversation.",
       "category": "Conversations",
@@ -4663,9 +4663,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.invite___POST": {
+    {
       "provider_alias_intent": "/conversations.invite",
       "text": "Invites users to a channel.",
       "category": "Conversations",
@@ -4708,9 +4708,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.join___POST": {
+    {
       "provider_alias_intent": "/conversations.join",
       "text": "Joins an existing conversation.",
       "category": "Conversations",
@@ -4749,9 +4749,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.kick___POST": {
+    {
       "provider_alias_intent": "/conversations.kick",
       "text": "Removes a user from a conversation.",
       "category": "Conversations",
@@ -4794,9 +4794,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.leave___POST": {
+    {
       "provider_alias_intent": "/conversations.leave",
       "text": "Leaves a conversation.",
       "category": "Conversations",
@@ -4835,9 +4835,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.list___GET": {
+    {
       "provider_alias_intent": "/conversations.list",
       "text": "Lists all channels in a Slack team.",
       "category": "Conversations",
@@ -4891,9 +4891,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.mark___POST": {
+    {
       "provider_alias_intent": "/conversations.mark",
       "text": "Sets the read cursor in a channel.",
       "category": "Conversations",
@@ -4936,9 +4936,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.members___GET": {
+    {
       "provider_alias_intent": "/conversations.members",
       "text": "Retrieve members of a conversation.",
       "category": "Conversations",
@@ -4984,9 +4984,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.open___POST": {
+    {
       "provider_alias_intent": "/conversations.open",
       "text": "Opens or resumes a direct message or multi-person direct message.",
       "category": "Conversations",
@@ -5037,9 +5037,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.rename___POST": {
+    {
       "provider_alias_intent": "/conversations.rename",
       "text": "Renames a conversation.",
       "category": "Conversations",
@@ -5082,9 +5082,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.replies___GET": {
+    {
       "provider_alias_intent": "/conversations.replies",
       "text": "Retrieve a thread of messages posted to a conversation",
       "category": "Conversations",
@@ -5150,9 +5150,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.setpurpose___POST": {
+    {
       "provider_alias_intent": "/conversations.setpurpose",
       "text": "Sets the purpose for a conversation.",
       "category": "Conversations",
@@ -5195,9 +5195,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.settopic___POST": {
+    {
       "provider_alias_intent": "/conversations.settopic",
       "text": "Sets the topic for a conversation.",
       "category": "Conversations",
@@ -5240,9 +5240,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/conversations.unarchive___POST": {
+    {
       "provider_alias_intent": "/conversations.unarchive",
       "text": "Reverses conversation archival.",
       "category": "Conversations",
@@ -5281,9 +5281,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dialog.open___GET": {
+    {
       "provider_alias_intent": "/dialog.open",
       "text": "Open a dialog with a user",
       "category": "Dialog",
@@ -5329,9 +5329,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dnd.enddnd___POST": {
+    {
       "provider_alias_intent": "/dnd.enddnd",
       "text": "Ends the current user's Do Not Disturb session immediately.",
       "category": "Dnd",
@@ -5366,9 +5366,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dnd.endsnooze___POST": {
+    {
       "provider_alias_intent": "/dnd.endsnooze",
       "text": "Ends the current user's snooze mode immediately.",
       "category": "Dnd",
@@ -5403,9 +5403,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dnd.info___GET": {
+    {
       "provider_alias_intent": "/dnd.info",
       "text": "Retrieves a user's current Do Not Disturb status.",
       "category": "Dnd",
@@ -5443,9 +5443,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dnd.setsnooze___POST": {
+    {
       "provider_alias_intent": "/dnd.setsnooze",
       "text": "Turns on Do Not Disturb mode for the current user or changes its duration.",
       "category": "Dnd",
@@ -5485,9 +5485,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.487Z"
     },
-    "slack__/dnd.teaminfo___GET": {
+    {
       "provider_alias_intent": "/dnd.teaminfo",
       "text": "Retrieves the Do Not Disturb status for up to 50 users on a team.",
       "category": "Dnd",
@@ -5525,9 +5525,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/emoji.list___GET": {
+    {
       "provider_alias_intent": "/emoji.list",
       "text": "Lists custom emoji for a team.",
       "category": "Emoji",
@@ -5562,9 +5562,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.delete___POST": {
+    {
       "provider_alias_intent": "/files.delete",
       "text": "Deletes a file.",
       "category": "Files",
@@ -5603,9 +5603,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.info___GET": {
+    {
       "provider_alias_intent": "/files.info",
       "text": "Gets information about a file.",
       "category": "Files",
@@ -5657,9 +5657,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.list___GET": {
+    {
       "provider_alias_intent": "/files.list",
       "text": "List for a team in a channel or from a user with applied filters.",
       "category": "Files",
@@ -5727,9 +5727,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.revokepublicurl___POST": {
+    {
       "provider_alias_intent": "/files.revokepublicurl",
       "text": "Revokes public/external sharing access for a file",
       "category": "Files",
@@ -5768,9 +5768,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.sharedpublicurl___POST": {
+    {
       "provider_alias_intent": "/files.sharedpublicurl",
       "text": "Enables a file for public/external sharing.",
       "category": "Files",
@@ -5809,9 +5809,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.upload___POST": {
+    {
       "provider_alias_intent": "/files.upload",
       "text": "Uploads or creates a file.",
       "category": "Files",
@@ -5877,9 +5877,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.comments.delete___POST": {
+    {
       "provider_alias_intent": "/files.comments.delete",
       "text": "Deletes an existing comment on a file.",
       "category": "Files Comments",
@@ -5922,9 +5922,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.add___POST": {
+    {
       "provider_alias_intent": "/files.remote.add",
       "text": "Adds a file from a remote service",
       "category": "Files Remote",
@@ -5982,9 +5982,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.info___GET": {
+    {
       "provider_alias_intent": "/files.remote.info",
       "text": "Retrieve information about a remote file added to Slack",
       "category": "Files Remote",
@@ -6026,9 +6026,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.list___GET": {
+    {
       "provider_alias_intent": "/files.remote.list",
       "text": "Retrieve information about a remote file added to Slack",
       "category": "Files Remote",
@@ -6082,9 +6082,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.remove___POST": {
+    {
       "provider_alias_intent": "/files.remote.remove",
       "text": "Remove a remote file.",
       "category": "Files Remote",
@@ -6126,9 +6126,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.share___GET": {
+    {
       "provider_alias_intent": "/files.remote.share",
       "text": "Share a remote file into a channel.",
       "category": "Files Remote",
@@ -6174,9 +6174,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/files.remote.update___POST": {
+    {
       "provider_alias_intent": "/files.remote.update",
       "text": "Updates an existing remote file.",
       "category": "Files Remote",
@@ -6238,9 +6238,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/migration.exchange___GET": {
+    {
       "provider_alias_intent": "/migration.exchange",
       "text": "For Enterprise Grid workspaces map local user IDs to global user IDs",
       "category": "Migration",
@@ -6292,9 +6292,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/oauth.access___GET": {
+    {
       "provider_alias_intent": "/oauth.access",
       "text": "Exchanges a temporary OAuth verifier code for an access token.",
       "category": "Oauth",
@@ -6348,9 +6348,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/oauth.token___GET": {
+    {
       "provider_alias_intent": "/oauth.token",
       "text": "Exchanges a temporary OAuth verifier code for a workspace token.",
       "category": "Oauth",
@@ -6404,9 +6404,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/oauth.v2.access___GET": {
+    {
       "provider_alias_intent": "/oauth.v2.access",
       "text": "Exchanges a temporary OAuth verifier code for an access token.",
       "category": "Oauth V2",
@@ -6453,9 +6453,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/pins.add___POST": {
+    {
       "provider_alias_intent": "/pins.add",
       "text": "Pins an item to a channel.",
       "category": "Pins",
@@ -6500,9 +6500,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/pins.list___GET": {
+    {
       "provider_alias_intent": "/pins.list",
       "text": "Lists items pinned to a channel.",
       "category": "Pins",
@@ -6542,9 +6542,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/pins.remove___POST": {
+    {
       "provider_alias_intent": "/pins.remove",
       "text": "Un-pins an item from a channel.",
       "category": "Pins",
@@ -6589,9 +6589,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reactions.add___POST": {
+    {
       "provider_alias_intent": "/reactions.add",
       "text": "Adds a reaction to an item.",
       "category": "Reactions",
@@ -6642,9 +6642,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reactions.get___GET": {
+    {
       "provider_alias_intent": "/reactions.get",
       "text": "Gets reactions for an item.",
       "category": "Reactions",
@@ -6703,9 +6703,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reactions.list___GET": {
+    {
       "provider_alias_intent": "/reactions.list",
       "text": "Lists reactions made by a user.",
       "category": "Reactions",
@@ -6766,9 +6766,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reactions.remove___POST": {
+    {
       "provider_alias_intent": "/reactions.remove",
       "text": "Removes a reaction from an item.",
       "category": "Reactions",
@@ -6825,9 +6825,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reminders.add___POST": {
+    {
       "provider_alias_intent": "/reminders.add",
       "text": "Creates a reminder.",
       "category": "Reminders",
@@ -6880,9 +6880,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reminders.complete___POST": {
+    {
       "provider_alias_intent": "/reminders.complete",
       "text": "Marks a reminder as complete.",
       "category": "Reminders",
@@ -6921,9 +6921,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reminders.delete___POST": {
+    {
       "provider_alias_intent": "/reminders.delete",
       "text": "Deletes a reminder.",
       "category": "Reminders",
@@ -6962,9 +6962,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reminders.info___GET": {
+    {
       "provider_alias_intent": "/reminders.info",
       "text": "Gets information about a reminder.",
       "category": "Reminders",
@@ -7002,9 +7002,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/reminders.list___GET": {
+    {
       "provider_alias_intent": "/reminders.list",
       "text": "Lists all reminders created by or for a given user.",
       "category": "Reminders",
@@ -7038,9 +7038,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/rtm.connect___GET": {
+    {
       "provider_alias_intent": "/rtm.connect",
       "text": "Starts a Real Time Messaging session.",
       "category": "Rtm",
@@ -7091,9 +7091,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/search.messages___GET": {
+    {
       "provider_alias_intent": "/search.messages",
       "text": "Searches for messages matching a query.",
       "category": "Search",
@@ -7156,9 +7156,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/stars.add___POST": {
+    {
       "provider_alias_intent": "/stars.add",
       "text": "Adds a star to an item.",
       "category": "Stars",
@@ -7210,9 +7210,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/stars.list___GET": {
+    {
       "provider_alias_intent": "/stars.list",
       "text": "Lists stars for a user.",
       "category": "Stars",
@@ -7260,9 +7260,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/stars.remove___POST": {
+    {
       "provider_alias_intent": "/stars.remove",
       "text": "Removes a star from an item.",
       "category": "Stars",
@@ -7314,9 +7314,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/team.accesslogs___GET": {
+    {
       "provider_alias_intent": "/team.accesslogs",
       "text": "Gets the access logs for the current team.",
       "category": "Team",
@@ -7361,9 +7361,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/team.billableinfo___GET": {
+    {
       "provider_alias_intent": "/team.billableinfo",
       "text": "Gets billable users information for the current team.",
       "category": "Team",
@@ -7402,9 +7402,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/team.info___GET": {
+    {
       "provider_alias_intent": "/team.info",
       "text": "Gets information about the current team.",
       "category": "Team",
@@ -7443,9 +7443,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/team.integrationlogs___GET": {
+    {
       "provider_alias_intent": "/team.integrationlogs",
       "text": "Gets the integration logs for the current team.",
       "category": "Team",
@@ -7502,9 +7502,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/team.profile.get___GET": {
+    {
       "provider_alias_intent": "/team.profile.get",
       "text": "Retrieve a team's profile.",
       "category": "Team Profile",
@@ -7543,9 +7543,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.create___POST": {
+    {
       "provider_alias_intent": "/usergroups.create",
       "text": "Create a User Group",
       "category": "Usergroups",
@@ -7606,9 +7606,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.disable___POST": {
+    {
       "provider_alias_intent": "/usergroups.disable",
       "text": "Disable an existing User Group",
       "category": "Usergroups",
@@ -7657,9 +7657,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.enable___POST": {
+    {
       "provider_alias_intent": "/usergroups.enable",
       "text": "Enable a User Group",
       "category": "Usergroups",
@@ -7708,9 +7708,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.list___GET": {
+    {
       "provider_alias_intent": "/usergroups.list",
       "text": "List all User Groups for a team",
       "category": "Usergroups",
@@ -7769,9 +7769,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.update___POST": {
+    {
       "provider_alias_intent": "/usergroups.update",
       "text": "Update an existing User Group",
       "category": "Usergroups",
@@ -7836,9 +7836,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.users.list___GET": {
+    {
       "provider_alias_intent": "/usergroups.users.list",
       "text": "List all users in a User Group",
       "category": "Usergroups Users",
@@ -7886,9 +7886,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/usergroups.users.update___POST": {
+    {
       "provider_alias_intent": "/usergroups.users.update",
       "text": "Update the list of users for a User Group",
       "category": "Usergroups Users",
@@ -7942,9 +7942,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.conversations___GET": {
+    {
       "provider_alias_intent": "/users.conversations",
       "text": "List conversations the calling user may access.",
       "category": "Users",
@@ -8002,9 +8002,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.deletephoto___POST": {
+    {
       "provider_alias_intent": "/users.deletephoto",
       "text": "Delete the user profile photo",
       "category": "Users",
@@ -8039,9 +8039,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.getpresence___GET": {
+    {
       "provider_alias_intent": "/users.getpresence",
       "text": "Gets user presence information.",
       "category": "Users",
@@ -8080,9 +8080,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.identity___GET": {
+    {
       "provider_alias_intent": "/users.identity",
       "text": "Get a user's identity.",
       "category": "Users",
@@ -8116,9 +8116,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.info___GET": {
+    {
       "provider_alias_intent": "/users.info",
       "text": "Gets information about a user.",
       "category": "Users",
@@ -8165,9 +8165,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.list___GET": {
+    {
       "provider_alias_intent": "/users.list",
       "text": "Lists all users in a Slack team.",
       "category": "Users",
@@ -8217,9 +8217,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.lookupbyemail___GET": {
+    {
       "provider_alias_intent": "/users.lookupbyemail",
       "text": "Find a user with an email address.",
       "category": "Users",
@@ -8259,9 +8259,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.setactive___POST": {
+    {
       "provider_alias_intent": "/users.setactive",
       "text": "Marked a user as active. Deprecated and non-functional.",
       "category": "Users",
@@ -8296,9 +8296,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.setphoto___POST": {
+    {
       "provider_alias_intent": "/users.setphoto",
       "text": "Set the user profile photo",
       "category": "Users",
@@ -8349,9 +8349,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.setpresence___POST": {
+    {
       "provider_alias_intent": "/users.setpresence",
       "text": "Manually sets user presence.",
       "category": "Users",
@@ -8392,9 +8392,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.profile.get___GET": {
+    {
       "provider_alias_intent": "/users.profile.get",
       "text": "Retrieves a user's profile information.",
       "category": "Users Profile",
@@ -8441,9 +8441,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/users.profile.set___POST": {
+    {
       "provider_alias_intent": "/users.profile.set",
       "text": "Set the profile information for a user.",
       "category": "Users Profile",
@@ -8498,9 +8498,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/views.open___GET": {
+    {
       "provider_alias_intent": "/views.open",
       "text": "Open a view for a user.",
       "category": "Views",
@@ -8546,9 +8546,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/views.publish___GET": {
+    {
       "provider_alias_intent": "/views.publish",
       "text": "Publish a static view for a User.",
       "category": "Views",
@@ -8598,9 +8598,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/views.push___GET": {
+    {
       "provider_alias_intent": "/views.push",
       "text": "Push a view onto the stack of a root view.",
       "category": "Views",
@@ -8646,9 +8646,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/views.update___GET": {
+    {
       "provider_alias_intent": "/views.update",
       "text": "Update an existing view.",
       "category": "Views",
@@ -8700,9 +8700,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/workflows.stepcompleted___GET": {
+    {
       "provider_alias_intent": "/workflows.stepcompleted",
       "text": "Indicate that an app's step in a workflow completed execution.",
       "category": "Workflows",
@@ -8747,9 +8747,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/workflows.stepfailed___GET": {
+    {
       "provider_alias_intent": "/workflows.stepfailed",
       "text": "Indicate that an app's step in a workflow failed to execute.",
       "category": "Workflows",
@@ -8795,9 +8795,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     },
-    "slack__/workflows.updatestep___GET": {
+    {
       "provider_alias_intent": "/workflows.updatestep",
       "text": "Update the configuration for a workflow extension step.",
       "category": "Workflows",
@@ -8854,7 +8854,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.849Z"
+      "updated_at": "2025-11-11T15:37:35.488Z"
     }
-  }
+  ]
 }

@@ -41,8 +41,8 @@
     "total_api": 67,
     "credential_link": "https://app.cal.com/settings/developer/api-keys"
   },
-  "routes": {
-    "cal__/v1/attendees___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/attendees",
       "text": "Find all attendees",
       "category": "Attendees",
@@ -68,9 +68,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/attendees___POST": {
+    {
       "provider_alias_intent": "/v1/attendees",
       "text": "Create a new attendee",
       "category": "Attendees",
@@ -117,9 +117,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/attendees/id___GET": {
+    {
       "provider_alias_intent": "/v1/attendees/id",
       "text": "Find an attendee",
       "category": "Attendees",
@@ -157,9 +157,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/attendees/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/attendees/id",
       "text": "Edit an existing attendee",
       "category": "Attendees",
@@ -214,9 +214,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/attendees/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/attendees/id",
       "text": "Remove an existing attendee",
       "category": "Attendees",
@@ -254,9 +254,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/availabilities___POST": {
+    {
       "provider_alias_intent": "/v1/availabilities",
       "text": "Create a new availability",
       "category": "Availabilities",
@@ -303,9 +303,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/availabilities/id___GET": {
+    {
       "provider_alias_intent": "/v1/availabilities/id",
       "text": "Find an availability",
       "category": "Availabilities",
@@ -343,9 +343,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/availabilities/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/availabilities/id",
       "text": "Edit an existing availability",
       "category": "Availabilities",
@@ -404,9 +404,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/availabilities/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/availabilities/id",
       "text": "Remove an existing availability",
       "category": "Availabilities",
@@ -444,9 +444,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/booking-references___GET": {
+    {
       "provider_alias_intent": "/v1/booking-references",
       "text": "Find all booking references",
       "category": "Booking References",
@@ -472,9 +472,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/booking-references___POST": {
+    {
       "provider_alias_intent": "/v1/booking-references",
       "text": "Create a new booking reference",
       "category": "Booking References",
@@ -534,9 +534,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/booking-references/id___GET": {
+    {
       "provider_alias_intent": "/v1/booking-references/id",
       "text": "Find a booking reference",
       "category": "Booking References",
@@ -574,9 +574,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/booking-references/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/booking-references/id",
       "text": "Edit an existing booking reference",
       "category": "Booking References",
@@ -639,9 +639,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/booking-references/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/booking-references/id",
       "text": "Remove an existing booking reference",
       "category": "Booking References",
@@ -679,9 +679,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/bookings___GET": {
+    {
       "provider_alias_intent": "/v1/bookings",
       "text": "Find all bookings",
       "category": "Bookings",
@@ -714,9 +714,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/bookings___POST": {
+    {
       "provider_alias_intent": "/v1/bookings",
       "text": "Create a new booking",
       "category": "Bookings",
@@ -808,9 +808,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/bookings/id___GET": {
+    {
       "provider_alias_intent": "/v1/bookings/id",
       "text": "Find a booking",
       "category": "Bookings",
@@ -844,9 +844,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/bookings/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/bookings/id",
       "text": "Edit an existing booking",
       "category": "Bookings",
@@ -903,9 +903,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/bookings/id/cancel___DELETE": {
+    {
       "provider_alias_intent": "/v1/bookings/id/cancel",
       "text": "Remove an existing booking",
       "category": "Bookings",
@@ -952,9 +952,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/custom-inputs___GET": {
+    {
       "provider_alias_intent": "/v1/custom-inputs",
       "text": "Find all custom inputs",
       "category": "Custom Inputs",
@@ -980,9 +980,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/custom-inputs___POST": {
+    {
       "provider_alias_intent": "/v1/custom-inputs",
       "text": "Create a new custom input",
       "category": "Custom Inputs",
@@ -1038,9 +1038,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/custom-inputs/id___GET": {
+    {
       "provider_alias_intent": "/v1/custom-inputs/id",
       "text": "Find a custom input",
       "category": "Custom Inputs",
@@ -1078,9 +1078,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/custom-inputs/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/custom-inputs/id",
       "text": "Edit an existing custom input",
       "category": "Custom Inputs",
@@ -1152,9 +1152,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/custom-inputs/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/custom-inputs/id",
       "text": "Remove an existing custom input",
       "category": "Custom Inputs",
@@ -1192,9 +1192,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/destination-calendars___GET": {
+    {
       "provider_alias_intent": "/v1/destination-calendars\r\n",
       "text": "Find all destination calendars",
       "category": "Destination Calendars",
@@ -1220,9 +1220,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/destination-calendars___POST": {
+    {
       "provider_alias_intent": "/v1/destination-calendars",
       "text": "Create a new destination calendar",
       "category": "Destination Calendars",
@@ -1267,9 +1267,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/destination-calendars/id___GET": {
+    {
       "provider_alias_intent": "/v1/destination-calendars/id",
       "text": "Find a destination calendar",
       "category": "Destination Calendars",
@@ -1307,9 +1307,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/destination-calendars/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/destination-calendars/id",
       "text": "Edit an existing destination calendar",
       "category": "Destination Calendars",
@@ -1347,9 +1347,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/destination-calendars/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/destination-calendars/id",
       "text": "Remove an existing destination calendar",
       "category": "Destination Calendars",
@@ -1387,9 +1387,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/event-types___GET": {
+    {
       "provider_alias_intent": "/v1/event-types",
       "text": "Find all event types",
       "category": "Event Types",
@@ -1415,9 +1415,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/event-types___POST": {
+    {
       "provider_alias_intent": "/v1/event-types",
       "text": "Create a new event type",
       "category": "Event Types",
@@ -1549,9 +1549,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/event-types/id___GET": {
+    {
       "provider_alias_intent": "/v1/event-types/id",
       "text": "Find an event type",
       "category": "Event Types",
@@ -1589,9 +1589,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/event-types/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/event-types/id",
       "text": "Edit an existing event type",
       "category": "Event Types",
@@ -1630,9 +1630,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/event-types/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/event-types/id",
       "text": "Remove an existing event type",
       "category": "Event Types",
@@ -1670,9 +1670,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/memberships___GET": {
+    {
       "provider_alias_intent": "/v1/memberships",
       "text": "Find all memberships",
       "category": "Memberships",
@@ -1698,9 +1698,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/memberships___POST": {
+    {
       "provider_alias_intent": "/v1/memberships",
       "text": "Create a new membership",
       "category": "Memberships",
@@ -1727,9 +1727,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/memberships/userId_teamId___GET": {
+    {
       "provider_alias_intent": "/v1/memberships/userId_teamId",
       "text": "Find a membership",
       "category": "Memberships",
@@ -1777,9 +1777,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/memberships/userId_teamId___PATCH": {
+    {
       "provider_alias_intent": "/v1/memberships/userId_teamId",
       "text": "Edit an existing membership",
       "category": "Memberships",
@@ -1828,9 +1828,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/memberships/userId_teamId___DELETE": {
+    {
       "provider_alias_intent": "/v1/memberships/userId_teamId",
       "text": "Remove an existing membership",
       "category": "Memberships",
@@ -1878,9 +1878,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/payments___GET": {
+    {
       "provider_alias_intent": "/v1/payments",
       "text": "Find all payments",
       "category": "Payments",
@@ -1906,9 +1906,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/payments/id___GET": {
+    {
       "provider_alias_intent": "/v1/payments/id",
       "text": "Find a payment",
       "category": "Payments",
@@ -1946,9 +1946,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/schedules___GET": {
+    {
       "provider_alias_intent": "/v1/schedules",
       "text": "Find all schedules",
       "category": "Schedules",
@@ -1974,9 +1974,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/schedules___POST": {
+    {
       "provider_alias_intent": "/v1/schedules",
       "text": "Create a new schedule",
       "category": "Schedules",
@@ -2014,9 +2014,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/schedules/id___GET": {
+    {
       "provider_alias_intent": "/v1/schedules/id",
       "text": "Find a schedule",
       "category": "Schedules",
@@ -2054,9 +2054,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/schedules/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/schedules/id",
       "text": "Edit an existing schedule",
       "category": "Schedules",
@@ -2106,9 +2106,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/schedules/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/schedules/id",
       "text": "Remove an existing schedule",
       "category": "Schedules",
@@ -2146,9 +2146,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/selected-calendars___GET": {
+    {
       "provider_alias_intent": "/v1/selected-calendars",
       "text": "Find all selected calendars",
       "category": "Selected Calendars",
@@ -2174,9 +2174,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/selected-calendars___POST": {
+    {
       "provider_alias_intent": "/v1/selected-calendars",
       "text": "Create a new selected calendar",
       "category": "Selected Calendars",
@@ -2216,9 +2216,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/selected-calendars/userId_integration_externalId___GET": {
+    {
       "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
       "text": "Find a selected calendar",
       "category": "Selected Calendars",
@@ -2276,9 +2276,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/selected-calendars/userId_integration_externalId___PATCH": {
+    {
       "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
       "text": "Edit an existing selected calendar",
       "category": "Selected Calendars",
@@ -2337,9 +2337,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/selected-calendars/userId_integration_externalId___DELETE": {
+    {
       "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
       "text": "Remove an existing selected calendar",
       "category": "Selected Calendars",
@@ -2397,9 +2397,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams___GET": {
+    {
       "provider_alias_intent": "/v1/teams",
       "text": "Find all teams",
       "category": "Teams",
@@ -2425,9 +2425,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams___POST": {
+    {
       "provider_alias_intent": "/v1/teams",
       "text": "Create a new team",
       "category": "Teams",
@@ -2467,9 +2467,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams/teamId___GET": {
+    {
       "provider_alias_intent": "/v1/teams/teamId",
       "text": "Find a team",
       "category": "Teams",
@@ -2507,9 +2507,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams/teamId___PATCH": {
+    {
       "provider_alias_intent": "/v1/teams/teamId",
       "text": "Edit an existing team",
       "category": "Teams",
@@ -2557,9 +2557,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams/teamId___DELETE": {
+    {
       "provider_alias_intent": "/v1/teams/teamId",
       "text": "Remove an existing team",
       "category": "Teams",
@@ -2597,9 +2597,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/teams/teamId/availability___GET": {
+    {
       "provider_alias_intent": "/v1/teams/teamId/availability",
       "text": "Get team availability",
       "category": "Teams",
@@ -2637,9 +2637,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/users___GET": {
+    {
       "provider_alias_intent": "/v1/users",
       "text": "Find all users",
       "category": "Users",
@@ -2665,9 +2665,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/users/userId___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId",
       "text": "Find a user",
       "category": "Users",
@@ -2705,9 +2705,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/users/userId___PATCH": {
+    {
       "provider_alias_intent": "/v1/users/userId",
       "text": "Edit an existing user",
       "category": "Users",
@@ -2784,9 +2784,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/users/userId___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId",
       "text": "Remove an existing user",
       "category": "Users",
@@ -2824,9 +2824,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/users___POST": {
+    {
       "provider_alias_intent": "/v1/users",
       "text": "Create a new user",
       "category": "Users",
@@ -2894,9 +2894,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/hooks___GET": {
+    {
       "provider_alias_intent": "/v1/hooks",
       "text": "Find all webhooks",
       "category": "Webhooks",
@@ -2922,9 +2922,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/hooks___POST": {
+    {
       "provider_alias_intent": "/v1/hooks",
       "text": "Create a new webhook",
       "category": "Webhooks",
@@ -3001,9 +3001,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/hooks/id___GET": {
+    {
       "provider_alias_intent": "/v1/hooks/id",
       "text": "Find a webhook",
       "category": "Webhooks",
@@ -3041,9 +3041,9 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/hooks/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/hooks/id",
       "text": "Edit an existing webhook",
       "category": "Webhooks",
@@ -3106,9 +3106,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     },
-    "cal__/v1/hooks/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/hooks/id",
       "text": "Delete a webhook",
       "category": "Webhooks",
@@ -3146,7 +3146,7 @@
         ]
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.091Z"
+      "updated_at": "2025-11-11T15:37:34.821Z"
     }
-  }
+  ]
 }

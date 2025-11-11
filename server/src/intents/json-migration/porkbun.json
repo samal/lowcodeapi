@@ -42,8 +42,8 @@
     "total_api": 14,
     "credential_link": ""
   },
-  "routes": {
-    "porkbun__/api/json/v3/dns/create/domain___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/json/v3/dns/create/domain",
       "text": "DNS Create Record",
       "category": "DNS Functionality",
@@ -115,9 +115,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/edit/domain/id___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/edit/domain/id",
       "text": "DNS Edit Record by Domain and ID",
       "category": "DNS Functionality",
@@ -199,9 +199,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/editbynametype/domain/type/subdomain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/editbynametype/domain/type/subdomain",
       "text": "DNS Edit Record by Domain, Subdomain and Type",
       "category": "DNS Functionality",
@@ -270,9 +270,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/delete/domain/id___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/delete/domain/id",
       "text": "DNS Delete Record by Domain and ID",
       "category": "DNS Functionality",
@@ -321,9 +321,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/deletebynametype/domain/type/subdomain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/deletebynametype/domain/type/subdomain",
       "text": "DNS Delete Records by Domain, Subdomain and Type",
       "category": "DNS Functionality",
@@ -382,9 +382,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/retrieve/domain/id___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/retrieve/domain/id",
       "text": "DNS Retrieve Records by Domain or ID",
       "category": "DNS Functionality",
@@ -433,9 +433,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/dns/retrievebynametype/domain/type/subdomain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/dns/retrievebynametype/domain/type/subdomain",
       "text": "DNS Retrieve Records by Domain, Subdomain and Type",
       "category": "DNS Functionality",
@@ -494,9 +494,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/updatens/domain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/updatens/domain",
       "text": "Domain Update Name Servers",
       "category": "Domain Functionality",
@@ -541,9 +541,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/getns/domain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/getns/domain",
       "text": "Domain Get Name Servers",
       "category": "Domain Functionality",
@@ -582,9 +582,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/listall___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/listall",
       "text": "Domain List All",
       "category": "Domain Functionality",
@@ -624,9 +624,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/addurlforward/domain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/addurlforward/domain",
       "text": "Domain Add URL Forward",
       "category": "Domain Functionality",
@@ -694,9 +694,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/geturlforwarding/domain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/geturlforwarding/domain",
       "text": "Domain Get URL Forwarding",
       "category": "Domain Functionality",
@@ -735,9 +735,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/domain/addurlforward/domain/record_id___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/domain/addurlforward/domain/record_id",
       "text": "Domain Delete URL Forward",
       "category": "Domain Functionality",
@@ -786,9 +786,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     },
-    "porkbun__/api/json/v3/ssl/retrieve/domain___POST": {
+    {
       "provider_alias_intent": "/api/json/v3/ssl/retrieve/domain",
       "text": "SSL Retrieve Bundle by Domain",
       "category": "SSL Functionality",
@@ -827,7 +827,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.800Z"
+      "updated_at": "2025-11-11T15:37:35.411Z"
     }
-  }
+  ]
 }

@@ -33,8 +33,8 @@
     "total_api": 1,
     "credential_link": "https://help.linguix.com/docs/linguix-api/linguix-checker-rest-api/"
   },
-  "routes": {
-    "linguix__/v1/projects___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/projects",
       "text": "",
       "category": "Linguix API",
@@ -63,7 +63,7 @@
       },
       "response_type": "{\n    \"status\": 200,\n    \"alerts\": [\n        {\n            \"length\": 6,\n            \"offset\": 60,\n            \"message\": \"Possible grammar mistake found.\",\n            \"category\": \"Noun Number\",\n            \"replacements\": [\n                \"uploads\"\n            ]\n        },\n        {\n            \"length\": 3,\n            \"offset\": 92,\n            \"message\": \"Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short).\",\n            \"category\": \"Punctuation\",\n            \"replacements\": [\n                \", so\"\n            ]\n        },\n        {\n            \"length\": 4,\n            \"offset\": 121,\n            \"message\": \"Possible grammar mistake found.\",\n            \"category\": \"Noun Number\",\n            \"replacements\": [\n                \"cases\"\n            ]\n        }\n    ],\n    \"stats\": {\n        \"wordsCount\": 26,\n        \"charsCount\": 115,\n        \"sentencesCount\": 1,\n        \"avgWordLength\": 4.346153846153846,\n        \"avgSentenceLength\": 26,\n        \"fleschIndex\": 47.037307692307735,\n        \"readingTimeSeconds\": 8,\n        \"speakingTimeSeconds\": 12,\n        \"textScore\": 5\n    }\n}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.653Z"
+      "updated_at": "2025-11-11T15:37:35.202Z"
     }
-  }
+  ]
 }

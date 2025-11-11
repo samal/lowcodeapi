@@ -46,8 +46,8 @@
     "total_api": 2,
     "credential_link": "https://app.mailjet.com/account/apikeys"
   },
-  "routes": {
-    "mailjet__/v3/send___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v3/send",
       "text": "Send message v3",
       "category": "Send Emails",
@@ -202,9 +202,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.657Z"
+      "updated_at": "2025-11-11T15:37:35.210Z"
     },
-    "mailjet__/v3.1/send___POST": {
+    {
       "provider_alias_intent": "/v3.1/send",
       "text": "Send message v3.1",
       "category": "Send Emails",
@@ -297,7 +297,7 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.657Z"
+      "updated_at": "2025-11-11T15:37:35.210Z"
     }
-  }
+  ]
 }

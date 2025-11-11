@@ -76,8 +76,8 @@
     "total_api": 10,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoworkely__/workelry/v2/settings/fields___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/workelry/v2/settings/fields",
       "text": "Fields",
       "category": "Meta Data API",
@@ -117,9 +117,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.settings.fields.read,\nZohoWorkerly.settings.fields.all\nZohoWorkerly.settings.all",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/settings/layouts/module_id___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/settings/layouts/module_id",
       "text": "Layouts",
       "category": "Meta Data API",
@@ -159,9 +159,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.settings.layouts.read,\nZohoWorkerly.settings.layouts.all,\nZohoWorkerly.settings.all",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/settings/modules/module_api_name___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/settings/modules/module_api_name",
       "text": "Custom Views Meta Data",
       "category": "Meta Data API",
@@ -201,9 +201,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.settings.custom_views.read, ZohoWorkerly.settings.custom_views.all\nZohoWorkerly.settings.all",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/settings/related_lists___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/settings/related_lists",
       "text": "Related Lists Meta Data",
       "category": "Meta Data API",
@@ -243,9 +243,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.settings.related_lists.read,\nZohoWorkerly.settings.related_lists.all,\nZohoWorkerly.settings.all",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name",
       "text": "Get Records",
       "category": "Records",
@@ -325,9 +325,9 @@
       "response_type": "",
       "scope": "ZohoWORKERLY.modules.all, ZohoWORKERLY.modules.{module_name}.{operation_type}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name___POST": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name",
       "text": "Insert Records",
       "category": "Records",
@@ -439,9 +439,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.modules.all, ZohoWorkerly.modules.{module_name}.{operation_type}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name___PUT": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name",
       "text": "Update Records",
       "category": "Records",
@@ -553,9 +553,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.modules.all,  ZohoWorkerly.modules.{module_name}.{operation_type}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name___DELETE": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name",
       "text": "Delete Records",
       "category": "Records",
@@ -603,9 +603,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.modules.all, ZohoWorkerly.modules.{module_name}.{operation_type}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name/deleted___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name/deleted",
       "text": "List of Deleted Records",
       "category": "Records",
@@ -657,9 +657,9 @@
       "response_type": "",
       "scope": "ZohoWorkerly.modules.all, ZohoWorkerly.modules.{module_name}.{operation_type}",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     },
-    "zohoworkely__/workerly/v2/module_api_name/search___GET": {
+    {
       "provider_alias_intent": "/workerly/v2/module_api_name/search",
       "text": "Search Records",
       "category": "Records",
@@ -727,7 +727,7 @@
       "response_type": "",
       "scope": "ZohoWorkerly.modules.all,  ZohoWorkerly.modules.{module_name}.{operation_type}\n(and) note: Additionally, the API supports activated marketplace,extensions, ZohoSearch.securesearch .READ",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.145Z"
+      "updated_at": "2025-11-11T15:37:36.075Z"
     }
-  }
+  ]
 }

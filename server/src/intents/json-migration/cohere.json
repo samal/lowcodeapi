@@ -33,8 +33,8 @@
     "total_api": 31,
     "credential_link": "https://dashboard.cohere.com/api-keys"
   },
-  "routes": {
-    "cohere__/v1/chat___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/chat",
       "text": "Chat",
       "category": "Chat",
@@ -168,9 +168,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/check-api-key___POST": {
+    {
       "provider_alias_intent": "/v1/check-api-key",
       "text": "Check API key",
       "category": "Check API key",
@@ -198,9 +198,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/classify___POST": {
+    {
       "provider_alias_intent": "/v1/classify",
       "text": "Classify",
       "category": "Classify",
@@ -250,9 +250,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors___GET": {
+    {
       "provider_alias_intent": "/v1/connectors",
       "text": "List Connectors",
       "category": "Connectors",
@@ -289,9 +289,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors___POST": {
+    {
       "provider_alias_intent": "/v1/connectors",
       "text": "Create a Connector",
       "category": "Connectors",
@@ -362,9 +362,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors/connector_id___GET": {
+    {
       "provider_alias_intent": "/v1/connectors/connector_id",
       "text": "Get a Connector",
       "category": "Connectors",
@@ -404,9 +404,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors/connector_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/connectors/connector_id",
       "text": "Update a Connector",
       "category": "Connectors",
@@ -483,9 +483,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors/connector_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/connectors/connector_id",
       "text": "Delete a Connector",
       "category": "Connectors",
@@ -525,9 +525,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/connectors/connector_id/oauth/authorize___POST": {
+    {
       "provider_alias_intent": "/v1/connectors/connector_id/oauth/authorize",
       "text": "Authorize with oAuth",
       "category": "Connectors",
@@ -571,9 +571,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/datasets___POST": {
+    {
       "provider_alias_intent": "/v1/datasets",
       "text": "Create a Dataset",
       "category": "Datasets",
@@ -654,9 +654,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/datasets___GET": {
+    {
       "provider_alias_intent": "/v1/datasets",
       "text": "List Datasets",
       "category": "Datasets",
@@ -709,9 +709,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/datasets/usage___GET": {
+    {
       "provider_alias_intent": "/v1/datasets/usage",
       "text": "Get Dataset Usage",
       "category": "Datasets",
@@ -739,9 +739,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/datasets/dataset_id___GET": {
+    {
       "provider_alias_intent": "/v1/datasets/dataset_id",
       "text": "Get a Dataset",
       "category": "Datasets",
@@ -781,9 +781,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/datasets/dataset_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/datasets/dataset_id",
       "text": "Delete a Dataset",
       "category": "Datasets",
@@ -823,9 +823,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/detokenize___POST": {
+    {
       "provider_alias_intent": "/v1/detokenize",
       "text": "Detokenize",
       "category": "De-tokenize",
@@ -864,9 +864,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/embed___POST": {
+    {
       "provider_alias_intent": "/v1/embed",
       "text": "Embed",
       "category": "Embed",
@@ -916,9 +916,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/embed-jobs___POST": {
+    {
       "provider_alias_intent": "/v1/embed-jobs",
       "text": "Create an Embed Job",
       "category": "Embed Jobs",
@@ -974,9 +974,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/embed-jobs___GET": {
+    {
       "provider_alias_intent": "/v1/embed-jobs",
       "text": "List Embed Jobs",
       "category": "Embed Jobs",
@@ -1004,9 +1004,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/embed-jobs/job_id___GET": {
+    {
       "provider_alias_intent": "/v1/embed-jobs/job_id",
       "text": "Fetch an Embed Job",
       "category": "Embed Jobs",
@@ -1046,9 +1046,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/embed-jobs/job_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/embed-jobs/job_id/cancel",
       "text": "Cancel an Embed Job",
       "category": "Embed Jobs",
@@ -1088,9 +1088,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models___GET": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models",
       "text": "Lists fine-tuned models",
       "category": "Fine-tuning",
@@ -1131,9 +1131,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models___POST": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models",
       "text": "Trains and deploys a fine-tuned model",
       "category": "Fine-tuning",
@@ -1170,9 +1170,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models/finetuned_model_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models/finetuned_model_id",
       "text": "Updates a fine-tuned model",
       "category": "Fine-tuning",
@@ -1223,9 +1223,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models/finetuned_model_id___GET": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models/finetuned_model_id",
       "text": "Returns a fine-tuned model by ID",
       "category": "Fine-tuning",
@@ -1265,9 +1265,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models/finetuned_model_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models/finetuned_model_id",
       "text": "Deletes a fine-tuned model",
       "category": "Fine-tuning",
@@ -1307,9 +1307,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__v1/finetuning/finetuned-models/parent_finetuned_model_id/events___GET": {
+    {
       "provider_alias_intent": "v1/finetuning/finetuned-models/parent_finetuned_model_id/events",
       "text": "Retrieves the chronology of statuses the fine-tuned model has been through",
       "category": "Fine-tuning",
@@ -1361,9 +1361,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/finetuning/finetuned-models/parent_finetuned_model_id/training-step-metrics___GET": {
+    {
       "provider_alias_intent": "/v1/finetuning/finetuned-models/parent_finetuned_model_id/training-step-metrics",
       "text": "Retrieves metrics measured during the training of a fine-tuned model",
       "category": "Fine-tuning",
@@ -1411,9 +1411,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/models/model___GET": {
+    {
       "provider_alias_intent": "/v1/models/model",
       "text": "Get a Model",
       "category": "Models",
@@ -1453,9 +1453,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/models___GET": {
+    {
       "provider_alias_intent": "/v1/models",
       "text": "List Models",
       "category": "Models",
@@ -1504,9 +1504,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/rerank___POST": {
+    {
       "provider_alias_intent": "/v1/rerank",
       "text": "Rerank",
       "category": "Re-rank",
@@ -1569,9 +1569,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     },
-    "cohere__/v1/tokenize___POST": {
+    {
       "provider_alias_intent": "/v1/tokenize",
       "text": "Tokenize",
       "category": "Tokenize",
@@ -1610,7 +1610,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.133Z"
+      "updated_at": "2025-11-11T15:37:34.837Z"
     }
-  }
+  ]
 }

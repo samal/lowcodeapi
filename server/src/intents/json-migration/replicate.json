@@ -33,8 +33,8 @@
     "total_api": 29,
     "credential_link": "https://replicate.com/account/api-tokens"
   },
-  "routes": {
-    "replicate__/v1/models/model_owner/model_name___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/models/model_owner/model_name",
       "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}",
       "text": "Get a model",
@@ -75,9 +75,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/collections/collection_slug___GET": {
+    {
       "provider_alias_intent": "/v1/collections/collection_slug",
       "provider_proxy_intent": "/v1/collections/{collection_slug}",
       "text": "Get a collection of models",
@@ -113,9 +113,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/models/model_owner/model_name/versions___GET": {
+    {
       "provider_alias_intent": "/v1/models/model_owner/model_name/versions",
       "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions",
       "text": "List model versions",
@@ -156,9 +156,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/models/model_owner/model_name/versions/version_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id",
       "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}",
       "text": "Delete a model version",
@@ -204,9 +204,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/collections___GET": {
+    {
       "provider_alias_intent": "/v1/collections",
       "provider_proxy_intent": "/v1/collections",
       "text": "List collections of models",
@@ -236,9 +236,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/models/model_owner/model_name/versions/version_id___GET": {
+    {
       "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id",
       "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}",
       "text": "Get a model version",
@@ -284,9 +284,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/predictions___GET": {
+    {
       "provider_alias_intent": "/v1/predictions",
       "provider_proxy_intent": "/v1/predictions",
       "text": "List predictions",
@@ -316,9 +316,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/models/model_owner/model_name/versions/version_id/trainings___POST": {
+    {
       "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id/trainings",
       "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}/trainings",
       "text": "Create a training",
@@ -377,9 +377,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/predictions___POST": {
+    {
       "provider_alias_intent": "/v1/predictions",
       "provider_proxy_intent": "/v1/predictions",
       "text": "Create a prediction",
@@ -426,9 +426,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/predictions/prediction_id___GET": {
+    {
       "provider_alias_intent": "/v1/predictions/prediction_id",
       "provider_proxy_intent": "/v1/predictions/{prediction_id}",
       "text": "Get a prediction",
@@ -464,9 +464,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/predictions/prediction_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/predictions/prediction_id/cancel",
       "provider_proxy_intent": "/v1/predictions/{prediction_id}/cancel",
       "text": "Cancel a prediction",
@@ -502,9 +502,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/trainings___GET": {
+    {
       "provider_alias_intent": "/v1/trainings",
       "provider_proxy_intent": "/v1/trainings",
       "text": "List trainings",
@@ -534,9 +534,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/trainings/training_id___GET": {
+    {
       "provider_alias_intent": "/v1/trainings/training_id",
       "provider_proxy_intent": "/v1/trainings/{training_id}",
       "text": "Get a training",
@@ -572,9 +572,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/trainings/training_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/trainings/training_id/cancel",
       "provider_proxy_intent": "/v1/trainings/{training_id}/cancel",
       "text": "Cancel a training",
@@ -610,9 +610,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.420Z"
     },
-    "replicate__/v1/users___GET": {
+    {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "Get the signing secret for the default webhook",
@@ -635,9 +635,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.421Z"
     },
-    "replicate__/v1/users___DELETE": {
+    {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "Delete a model",
@@ -671,9 +671,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.421Z"
     },
-    "replicate__/v1/users___POST": {
+    {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "Create a prediction using an official model",
@@ -707,9 +707,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.421Z"
     },
-    "replicate__/v1/models___POST": {
+    {
       "provider_alias_intent": "/v1/models",
       "provider_proxy_intent": "/v1/models",
       "text": "Create a model",
@@ -773,7 +773,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.804Z"
+      "updated_at": "2025-11-11T15:37:35.421Z"
     }
-  }
+  ]
 }

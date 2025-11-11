@@ -98,8 +98,8 @@
     "total_api": 68,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "gmail__/v1/users/userId/messages/send___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/users/userId/messages/send",
       "text": "Send email",
       "category": "Send",
@@ -159,9 +159,9 @@
       "response_type": "",
       "provider_intent_unknown": "send",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/upload/v1/users/userId/messages/send___POST": {
+    {
       "provider_alias_intent": "/upload/v1/users/userId/messages/send",
       "text": "Send email with attachement",
       "category": "Send",
@@ -228,9 +228,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesSend",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/profile___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/profile",
       "text": "Gets the current user's Gmail profile",
       "category": "Users",
@@ -278,9 +278,9 @@
       "response_type": "",
       "provider_intent_unknown": "userGetProfile",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/stop___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/stop",
       "text": "User mailbox push notification receiver",
       "category": "Users",
@@ -328,9 +328,9 @@
       "response_type": "",
       "provider_intent_unknown": "userStop",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/watch___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/watch",
       "text": "Configure push notification for user mailbox",
       "category": "Users",
@@ -395,9 +395,9 @@
       "response_type": "",
       "provider_intent_unknown": "userWatch",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/history___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/history",
       "text": "Mailbox change history list",
       "category": "Users",
@@ -468,9 +468,9 @@
       "response_type": "",
       "provider_intent_unknown": "userHistoryList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts",
       "text": "Creates draft with DRAFT label",
       "category": "Draft",
@@ -518,9 +518,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
       "text": "Deletes the specified draft",
       "category": "Draft",
@@ -576,9 +576,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
       "text": "Gets the specified draft",
       "category": "Draft",
@@ -639,9 +639,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts",
       "text": "Lists the drafts in the user's mailbox",
       "category": "Draft",
@@ -712,9 +712,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts/send___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts/send",
       "text": "Send draft to specified recipients",
       "category": "Draft",
@@ -762,9 +762,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftSend",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/drafts/id___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
       "text": "Replaces a draft's content",
       "category": "Draft",
@@ -820,9 +820,9 @@
       "response_type": "",
       "provider_intent_unknown": "userDraftUpdate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels",
       "text": "Creates a new label",
       "category": "Labels",
@@ -870,9 +870,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels/id",
       "text": "Delete label, remove permanently",
       "category": "Labels",
@@ -928,9 +928,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels/id",
       "text": "Gets the specified label",
       "category": "Labels",
@@ -986,9 +986,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels",
       "text": "Lists all labels in the user's mailbox",
       "category": "Labels",
@@ -1036,9 +1036,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels/id___PATCH": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels/id",
       "text": "Patch the specified label",
       "category": "Labels",
@@ -1094,9 +1094,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelPatch",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.044Z"
     },
-    "gmail__/v1/users/userId/labels/id___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/labels/id",
       "text": "Updates the specified label",
       "category": "Labels",
@@ -1152,9 +1152,9 @@
       "response_type": "",
       "provider_intent_unknown": "userLabelUpdate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/batchDelete___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/batchDelete",
       "text": "Delete messages by message ID",
       "category": "Messages",
@@ -1207,9 +1207,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesBatchDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/batchModify___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/batchModify",
       "text": "Label modification for specified messages",
       "category": "Messages",
@@ -1265,9 +1265,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesBatchModify",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/id",
       "text": "Instantly erases specified message, permanently",
       "category": "Messages",
@@ -1323,9 +1323,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/id",
       "text": "Gets the specified message.",
       "category": "Messages",
@@ -1391,9 +1391,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/import___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/import",
       "text": "Message imported to user's mailbox",
       "category": "Messages",
@@ -1449,9 +1449,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesImport",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages",
       "text": "Message insertion into user's mailbox",
       "category": "Messages",
@@ -1507,9 +1507,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesInsert",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages",
       "text": "Listing user's mailbox messages",
       "category": "Messages",
@@ -1581,9 +1581,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/id/modify___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/id/modify",
       "text": "Message label modification",
       "category": "Messages",
@@ -1647,9 +1647,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesModify",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/id/trash___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/id/trash",
       "text": "Moves message to the trash",
       "category": "Messages",
@@ -1705,9 +1705,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesTrash",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/id/untrash___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/id/untrash",
       "text": "Delete message from trash",
       "category": "Messages",
@@ -1747,9 +1747,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesUntrash",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/messages/messageId/attachments/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/messages/messageId/attachments/id",
       "text": "Gets the specified message attachment",
       "category": "Messages",
@@ -1809,9 +1809,9 @@
       "response_type": "",
       "provider_intent_unknown": "userMessagesAttachmentsGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/autoForwarding___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/autoForwarding",
       "text": "Retrieve auto-forwarding setting for account",
       "category": "Settings",
@@ -1859,9 +1859,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingGetAutoForwarding",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/imap___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/imap",
       "text": "Gets IMAP settings",
       "category": "Settings",
@@ -1909,9 +1909,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingGetImap",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/language___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/language",
       "text": "Gets language settings",
       "category": "Settings",
@@ -1959,9 +1959,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingGetLanguage",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/pop___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/pop",
       "text": "Gets POP settings",
       "category": "Settings",
@@ -2009,9 +2009,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingGetPop",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/vacation___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/vacation",
       "text": "Gets vacation responder settings",
       "category": "Settings",
@@ -2059,9 +2059,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingGetVacation",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/autoForwarding___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/autoForwarding",
       "text": "Account auto-forwarding setting updated",
       "category": "Settings",
@@ -2109,9 +2109,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingUpdateAutoForwarding",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/imap___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/imap",
       "text": "Updates IMAP settings",
       "category": "Settings",
@@ -2159,9 +2159,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingUpdateImap",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/language___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/language",
       "text": "Updates language settings",
       "category": "Settings",
@@ -2209,9 +2209,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingUpdateLanguage",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/pop___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/pop",
       "text": "Updates POP settings",
       "category": "Settings",
@@ -2259,9 +2259,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingUpdatePop",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/vacation___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/vacation",
       "text": "Updates vacation responder settings",
       "category": "Settings",
@@ -2309,9 +2309,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingUpdateVacation",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/delegates___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/delegates",
       "text": "Adds a delegate",
       "category": "Settings",
@@ -2359,9 +2359,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/delegates/delegateEmail___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/delegates/delegateEmail",
       "text": "Removes the specified delegate",
       "category": "Settings",
@@ -2417,9 +2417,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/delegates/delegateEmail___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/delegates/delegateEmail",
       "text": "Gets the specified delegate",
       "category": "Settings",
@@ -2459,9 +2459,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/delegates___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/delegates",
       "text": "Account delegates listing",
       "category": "Settings",
@@ -2509,9 +2509,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/filters___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/filters",
       "text": "Creates a filter",
       "category": "Settings",
@@ -2561,9 +2561,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingFiltersCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/filters/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/filters/id",
       "text": "Instantly erases specified filter permanently",
       "category": "Settings",
@@ -2619,9 +2619,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingFiltersDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/filters/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/filters/id",
       "text": "Gets a filter",
       "category": "Settings",
@@ -2677,9 +2677,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingFiltersGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/filters___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/filters",
       "text": "Lists the message filters of a Gmail user",
       "category": "Settings",
@@ -2723,9 +2723,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingFiltersList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.402Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/forwardingAddresses___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
       "text": "Creates a forwarding address",
       "category": "Settings",
@@ -2773,9 +2773,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingforwardingAddressesCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/forwardingAddresses___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
       "text": "Deletes the specified forwarding address",
       "category": "Settings",
@@ -2831,9 +2831,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/forwardingAddresses/forwardingEmail___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses/forwardingEmail",
       "text": "Gets the specified forwarding address",
       "category": "Settings",
@@ -2889,9 +2889,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/forwardingAddresses___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
       "text": "Forwarding address list for specified account",
       "category": "Settings",
@@ -2939,9 +2939,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs",
       "text": "Creates a custom \"from\" send-as alias",
       "category": "Settings",
@@ -2989,9 +2989,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsCreate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
       "text": "Deletes the specified send-as alias",
       "category": "Settings",
@@ -3047,9 +3047,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingsendAsDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
       "text": "Gets the specified send-as alias",
       "category": "Settings",
@@ -3105,9 +3105,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingsendAsGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs",
       "text": "Send-as aliases listed for account",
       "category": "Settings",
@@ -3151,9 +3151,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingsendAsList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail___PATCH": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
       "text": "Patch the specified send-as alias",
       "category": "Settings",
@@ -3209,9 +3209,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsPatch",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail___PUT": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
       "text": "Updates a send-as alias",
       "category": "Settings",
@@ -3267,9 +3267,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsUpdate",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/verify___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/verify",
       "text": "Verify send-as alias with email",
       "category": "Settings",
@@ -3309,9 +3309,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsVerify",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
       "text": "S/MIME config deletion for send-as alias",
       "category": "Settings",
@@ -3375,9 +3375,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoDelete",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
       "text": "Gets S/MIME config for send-as alias",
       "category": "Settings",
@@ -3441,9 +3441,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
       "text": "Upload S/MIME config for send-as alias",
       "category": "Settings",
@@ -3499,9 +3499,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoInsert",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
       "text": "Lists S/MIME configs for send-as alias",
       "category": "Settings",
@@ -3557,9 +3557,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id/setDefault___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id/setDefault",
       "text": "Default S/MIME config for send-as alias",
       "category": "Settings",
@@ -3623,9 +3623,9 @@
       "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoSetDefault",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/threads/id___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/threads/id",
       "text": "Gets the specified thread",
       "category": "Thread",
@@ -3692,9 +3692,9 @@
       "response_type": "",
       "provider_intent_unknown": "userThreadGet",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/threads___GET": {
+    {
       "provider_alias_intent": "/v1/users/userId/threads",
       "text": "Lists the threads in the user's mailbox",
       "category": "Thread",
@@ -3766,9 +3766,9 @@
       "response_type": "",
       "provider_intent_unknown": "userThreadList",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/threads/id/modify___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/threads/id/modify",
       "text": "Modifies the labels applied to the thread",
       "category": "Thread",
@@ -3832,9 +3832,9 @@
       "response_type": "",
       "provider_intent_unknown": "userThreadModify",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/threads/id/trash___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/threads/id/trash",
       "text": "Moves the specified thread to the trash",
       "category": "Thread",
@@ -3890,9 +3890,9 @@
       "response_type": "",
       "provider_intent_unknown": "userThreadTrash",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     },
-    "gmail__/v1/users/userId/threads/id/untrash___POST": {
+    {
       "provider_alias_intent": "/v1/users/userId/threads/id/untrash",
       "text": "Removes the specified thread from the trash",
       "category": "Thread",
@@ -3948,7 +3948,7 @@
       "response_type": "",
       "provider_intent_unknown": "userThreadUntrash",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.403Z"
+      "updated_at": "2025-11-11T15:37:35.045Z"
     }
-  }
+  ]
 }

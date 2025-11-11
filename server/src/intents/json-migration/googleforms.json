@@ -78,8 +78,8 @@
     "total_api": 9,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "googleforms__/v1/forms___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/forms",
       "text": "Generate a form with the provided message title.",
       "category": "Forms",
@@ -118,9 +118,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid___GET": {
+    {
       "provider_alias_intent": "/v1/forms/formid",
       "text": "Get a form.",
       "category": "Forms",
@@ -160,9 +160,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid-batchupdate___POST": {
+    {
       "provider_alias_intent": "/v1/forms/formid-batchupdate",
       "text": "Update form with batch updates.",
       "category": "Forms",
@@ -236,9 +236,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/responses___GET": {
+    {
       "provider_alias_intent": "/v1/forms/formid/responses",
       "text": "List a form's responses.",
       "category": "Forms Responses",
@@ -300,9 +300,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/responses/responseid___GET": {
+    {
       "provider_alias_intent": "/v1/forms/formid/responses/responseid",
       "text": "Get a single form response.",
       "category": "Forms Responses",
@@ -352,9 +352,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/watches___GET": {
+    {
       "provider_alias_intent": "/v1/forms/formid/watches",
       "text": "List project's owned watches.",
       "category": "Forms Watches",
@@ -394,9 +394,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/watches___POST": {
+    {
       "provider_alias_intent": "/v1/forms/formid/watches",
       "text": "Create a new watch.",
       "category": "Forms Watches",
@@ -460,9 +460,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/watches/watchid___DELETE": {
+    {
       "provider_alias_intent": "/v1/forms/formid/watches/watchid",
       "text": "Delete a watch.",
       "category": "Forms Watches",
@@ -512,9 +512,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     },
-    "googleforms__/v1/forms/formid/watches/watchid-renew___POST": {
+    {
       "provider_alias_intent": "/v1/forms/formid/watches/watchid-renew",
       "text": "Renew an existing watch for seven days.",
       "category": "Forms Watches",
@@ -564,7 +564,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.419Z"
+      "updated_at": "2025-11-11T15:37:35.058Z"
     }
-  }
+  ]
 }

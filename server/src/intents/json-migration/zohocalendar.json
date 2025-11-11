@@ -76,8 +76,8 @@
     "total_api": 28,
     "credential_link": " https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohocalendar__/api/v1/organization/activity___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v1/organization/activity",
       "text": "Activity logs",
       "category": "Activity logs",
@@ -113,9 +113,9 @@
       "scope": "ZohoCalendar.activity.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars",
       "text": "Get calendar list",
       "category": "Calendars API",
@@ -151,9 +151,9 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid|default|primary___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid|default|primary",
       "text": "Get calendar details",
       "category": "Calendars API",
@@ -217,9 +217,9 @@
       "scope": "ZohoCalendar.calendar.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars___POST": {
+    {
       "provider_alias_intent": "/api/v1/calendars",
       "text": "Create new calendar",
       "category": "Calendars API",
@@ -255,9 +255,9 @@
       "scope": "ZohoCalendar.calendar.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendaruid___PUT": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendaruid",
       "text": "Update calendar",
       "category": "Calendars API",
@@ -293,9 +293,9 @@
       "scope": "ZohoCalendar.calendar.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendaruid___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendaruid",
       "text": "Delete calendar",
       "category": "Calendars API",
@@ -337,9 +337,9 @@
       "scope": "ZohoCalendar.calendar.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events",
       "text": "Get events list",
       "category": "Events API",
@@ -375,9 +375,9 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events/event_uid___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events/event_uid",
       "text": "Get event details",
       "category": "Events API",
@@ -423,9 +423,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/cal_uid/events/event_uid/attachment/file_id___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/cal_uid/events/event_uid/attachment/file_id",
       "text": "Get attachment details",
       "category": "Events API",
@@ -461,9 +461,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events/event_uid/groupattendeestatus___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events/event_uid/groupattendeestatus",
       "text": "Get group attendees details",
       "category": "Events API",
@@ -499,9 +499,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events/event_uid/byinstance___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events/event_uid/byinstance",
       "text": "Get Event By Instance",
       "category": "Events API",
@@ -537,9 +537,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events___POST": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events",
       "text": "Create a new event",
       "category": "Events API",
@@ -575,9 +575,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/attachment___POST": {
+    {
       "provider_alias_intent": "/api/v1/attachment",
       "text": "Attach file",
       "category": "Events API",
@@ -613,9 +613,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events/event_uid___PUT": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events/event_uid",
       "text": "Delete attachment",
       "category": "Events API",
@@ -651,9 +651,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/events/event_uid___DELETE": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/events/event_uid",
       "text": "Delete event",
       "category": "Events API",
@@ -689,9 +689,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendaruid/events/eventuid___PUT": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendaruid/events/eventuid",
       "text": "Move event",
       "category": "Events API",
@@ -727,9 +727,9 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/freebusy___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/freebusy",
       "text": "Get user's free/ busy details",
       "category": "Free/ Busy API",
@@ -765,9 +765,9 @@
       "scope": "ZohoCalendar.freebusy.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/groups___GET": {
+    {
       "provider_alias_intent": "/api/v1/groups",
       "text": "Get Group Calendar list",
       "category": "Groups API",
@@ -803,9 +803,9 @@
       "scope": "ZohoCalendar.group.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/notification___GET": {
+    {
       "provider_alias_intent": "/api/v1/notification",
       "text": "Get notification details",
       "category": "Notification API",
@@ -841,9 +841,9 @@
       "scope": "ZohoCalendar.notification.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/notification___PUT": {
+    {
       "provider_alias_intent": "/api/v1/notification",
       "text": "Update notification details",
       "category": "Notification API",
@@ -879,9 +879,9 @@
       "scope": "ZohoCalendar.notification.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendaruid/search___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendaruid/search",
       "text": "Get event through search",
       "category": "Search API",
@@ -917,9 +917,9 @@
       "scope": "ZohoCalendar.search.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/settings___GET": {
+    {
       "provider_alias_intent": "/api/v1/settings",
       "text": "Get calendar settings",
       "category": "Settings API",
@@ -955,9 +955,9 @@
       "scope": "ZohoCalendar.settings.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/settings___PUT": {
+    {
       "provider_alias_intent": "/api/v1/settings",
       "text": "Update calendar settings",
       "category": "Settings API",
@@ -993,9 +993,9 @@
       "scope": "ZohoCalendar.settings.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/share___GET": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/share",
       "text": "Get shared calendar details",
       "category": "Share API",
@@ -1043,9 +1043,9 @@
       "scope": "ZohoCalendar.calendar.ALL,\nZohoCalendar.calendar.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/calendars/calendar_uid/share___PUT": {
+    {
       "provider_alias_intent": "/api/v1/calendars/calendar_uid/share",
       "text": "Share calendar",
       "category": "Share API",
@@ -1093,9 +1093,9 @@
       "scope": "ZohoCalendar.calendar.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     },
-    "zohocalendar__/api/v1/smartadd___POST": {
+    {
       "provider_alias_intent": "/api/v1/smartadd",
       "text": "Create event using Smart Add",
       "category": "Smart Add API",
@@ -1131,7 +1131,7 @@
       "scope": "ZohoCalendar.event.ALL",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.999Z"
+      "updated_at": "2025-11-11T15:37:35.821Z"
     }
-  }
+  ]
 }

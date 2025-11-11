@@ -47,8 +47,8 @@
     "total_api": 28,
     "credential_link": "https://app.scenario.com/team"
   },
-  "routes": {
-    "scenario__/v1/images/erase-background___PUT": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/images/erase-background",
       "text": "Remove the background of a given image",
       "category": "Images Edition",
@@ -109,9 +109,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/images/pixelate___PUT": {
+    {
       "provider_alias_intent": "/v1/images/pixelate",
       "text": "Pixelate a given image",
       "category": "Images Edition",
@@ -188,9 +188,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/images/remove-background___PUT": {
+    {
       "provider_alias_intent": "/v1/images/remove-background",
       "text": "Remove Background of a given image",
       "category": "Images Edition",
@@ -235,9 +235,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/images/upscale___PUT": {
+    {
       "provider_alias_intent": "/v1/images/upscale",
       "text": "Upscale a given image",
       "category": "Images Edition",
@@ -310,9 +310,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/inferences___GET": {
+    {
       "provider_alias_intent": "/v1/inferences",
       "text": "Get all inferences",
       "category": "Images Generation",
@@ -353,9 +353,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models___GET": {
+    {
       "provider_alias_intent": "/v1/models",
       "text": "List all models",
       "category": "Models",
@@ -404,9 +404,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models___POST": {
+    {
       "provider_alias_intent": "/v1/models",
       "text": "Create a new model",
       "category": "Models",
@@ -447,9 +447,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId",
       "text": "Get a model's details including its training status and training progress if available",
       "category": "Models",
@@ -493,9 +493,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId___PUT": {
+    {
       "provider_alias_intent": "/v1/models/modelId",
       "text": "Update a particular model",
       "category": "Models",
@@ -539,9 +539,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId",
       "text": "Delete a model",
       "category": "Models",
@@ -585,9 +585,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/categories___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId/categories",
       "text": "List all categories of a model",
       "category": "Models",
@@ -631,9 +631,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/classes___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId/classes",
       "text": "List all classes for a model and category",
       "category": "Models",
@@ -689,9 +689,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/copy___POST": {
+    {
       "provider_alias_intent": "/v1/models/modelId/copy",
       "text": "Copy a model to a new model including all of its training images",
       "category": "Models",
@@ -733,9 +733,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/train___PUT": {
+    {
       "provider_alias_intent": "/v1/models/modelId/train",
       "text": "Trigger a model training",
       "category": "Models",
@@ -783,9 +783,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/training-images___POST": {
+    {
       "provider_alias_intent": "/v1/models/modelId/training-images",
       "text": "Add a new training image to a model",
       "category": "Models",
@@ -838,9 +838,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/training-images/trainingImageId___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/training-images/trainingImageId",
       "text": "Delete a training image from a model",
       "category": "Models",
@@ -894,9 +894,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/transfer___POST": {
+    {
       "provider_alias_intent": "/v1/models/modelId/transfer",
       "text": "Transfer (with a copy or a full ownership change) a model to a new owner including all of its training images",
       "category": "Models",
@@ -951,9 +951,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/images___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/images",
       "text": "Delete a training image",
       "category": "Models / Images",
@@ -1002,9 +1002,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences",
       "text": "Get all inferences for a particular model",
       "category": "Models / Images",
@@ -1056,9 +1056,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences___POST": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences",
       "text": "Create a new inference for a specific model",
       "category": "Models / Images",
@@ -1106,9 +1106,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences",
       "text": "Delete an inference",
       "category": "Models / Images",
@@ -1155,9 +1155,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences/all___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences/all",
       "text": "Delete all inferences of a model",
       "category": "Models / Images",
@@ -1201,9 +1201,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences/inferenceId___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences/inferenceId",
       "text": "Get an inference including its status",
       "category": "Models / Images",
@@ -1257,9 +1257,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences/inferenceId___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences/inferenceId",
       "text": "Delete an inference and all its generated images",
       "category": "Models / Images",
@@ -1313,9 +1313,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences/inferenceId/images/imageId___GET": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences/inferenceId/images/imageId",
       "text": "Get a particular image of an inference",
       "category": "Models / Images",
@@ -1379,9 +1379,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/models/modelId/inferences/inferenceId/images/imageId___DELETE": {
+    {
       "provider_alias_intent": "/v1/models/modelId/inferences/inferenceId/images/imageId",
       "text": "Delete an image from an inference",
       "category": "Models / Images",
@@ -1445,9 +1445,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/tags___GET": {
+    {
       "provider_alias_intent": "/v1/tags",
       "text": "List all tags",
       "category": "Tags",
@@ -1488,9 +1488,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     },
-    "scenario__/v1/usages___GET": {
+    {
       "provider_alias_intent": "/v1/usages",
       "text": "Get usages. Maximum time range with custom startDate and endDate is 120 days. Granularity is calculated based on the time range.",
       "category": "Usage",
@@ -1535,7 +1535,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.813Z"
+      "updated_at": "2025-11-11T15:37:35.437Z"
     }
-  }
+  ]
 }

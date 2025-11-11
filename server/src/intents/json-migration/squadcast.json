@@ -33,8 +33,8 @@
     "total_api": 19,
     "credential_link": "https://app.squadcast.fm/account/developers"
   },
-  "routes": {
-    "squadcast__/v2/organizations___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/organizations",
       "text": "Get Organization ID",
       "category": "Organization",
@@ -62,9 +62,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/organizations/balance___GET": {
+    {
       "provider_alias_intent": "/v2/organizations/balance",
       "text": "Get Balance",
       "category": "Organization",
@@ -92,9 +92,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/organizations/team___GET": {
+    {
       "provider_alias_intent": "/v2/organizations/team",
       "text": "Get all Team Members",
       "category": "Organization",
@@ -122,9 +122,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions___GET": {
+    {
       "provider_alias_intent": "/v2/sessions",
       "text": "Get all Sessions",
       "category": "Sessions",
@@ -157,9 +157,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions___POST": {
+    {
       "provider_alias_intent": "/v2/sessions",
       "text": "Create new Session",
       "category": "Sessions",
@@ -244,9 +244,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id___GET": {
+    {
       "provider_alias_intent": "/v2/sessions/id",
       "text": "Get a Session",
       "category": "Sessions",
@@ -286,9 +286,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id___PUT": {
+    {
       "provider_alias_intent": "/v2/sessions/id",
       "text": "Update a Session",
       "category": "Sessions",
@@ -369,9 +369,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id___DELETE": {
+    {
       "provider_alias_intent": "/v2/sessions/id",
       "text": "Delete a Session",
       "category": "Sessions",
@@ -411,9 +411,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id/recordings___GET": {
+    {
       "provider_alias_intent": "/v2/sessions/id/recordings",
       "text": "Get All Recordings from Session",
       "category": "Sessions",
@@ -453,9 +453,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.874Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id/recordings/recordingid___GET": {
+    {
       "provider_alias_intent": "/v2/sessions/id/recordings/recordingid",
       "text": "Get A Recording from Session",
       "category": "Sessions",
@@ -505,9 +505,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/sessions/id/invitelink___GET": {
+    {
       "provider_alias_intent": "/v2/sessions/id/invitelink",
       "text": "Get InviteLinks from Session",
       "category": "Sessions",
@@ -547,9 +547,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/shows___GET": {
+    {
       "provider_alias_intent": "/v2/shows",
       "text": "Get all Shows",
       "category": "Shows",
@@ -577,9 +577,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/shows/id___GET": {
+    {
       "provider_alias_intent": "/v2/shows/id",
       "text": "Get a Show",
       "category": "Shows",
@@ -619,9 +619,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/shows/id/team___GET": {
+    {
       "provider_alias_intent": "/v2/shows/id/team",
       "text": "Get Team",
       "category": "Shows",
@@ -661,9 +661,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/webhooks___GET": {
+    {
       "provider_alias_intent": "/v2/webhooks",
       "text": "Get all Webhooks",
       "category": "Webhooks",
@@ -702,9 +702,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/webhooks___POST": {
+    {
       "provider_alias_intent": "/v2/webhooks",
       "text": "Create a Webhook",
       "category": "Webhooks",
@@ -732,9 +732,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/webhooks/id___GET": {
+    {
       "provider_alias_intent": "/v2/webhooks/id",
       "text": "Get specific Webhook",
       "category": "Webhooks",
@@ -774,9 +774,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/webhooks/id___DELETE": {
+    {
       "provider_alias_intent": "/v2/webhooks/id",
       "text": "Delete specific Webhook",
       "category": "Webhooks",
@@ -816,9 +816,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     },
-    "squadcast__/v2/webhooks/id___PUT": {
+    {
       "provider_alias_intent": "/v2/webhooks/id",
       "text": "Update specific Webhook",
       "category": "Webhooks",
@@ -858,7 +858,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.875Z"
+      "updated_at": "2025-11-11T15:37:35.503Z"
     }
-  }
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "bundle__/gmail/v1/users/userId/messages/send___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/gmail/v1/users/userId/messages/send",
       "text": "Send email using gmail",
       "category": "Gmail",
@@ -45,9 +45,9 @@
       "provider": "gmail",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.817Z"
     },
-    "bundle__/googlesheets/spreadsheetid/get___GET": {
+    {
       "provider_alias_intent": "/googlesheets/spreadsheetid/get",
       "text": "Fetch Googlesheets data",
       "category": "Googlesheets",
@@ -92,9 +92,9 @@
       "auth_config": "{\n      \"auth_link\": \"/auth/github\",\n      \"setup\": [\n        {\n          \"name\": \"client_id\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client ID\",\n          \"message\": \"Github OAuth2.0 Client Id\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"\"\n        },\n        {\n          \"name\": \"client_secret\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client Secret\",\n          \"message\": \"Github OAuth2.0 Client Secret\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"xxxxxxxxxxxxx\"\n        }\n      ]\n    }",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/googlesheets/spreadsheetid/update___POST": {
+    {
       "provider_alias_intent": "/googlesheets/spreadsheetid/update",
       "text": "Replace / Override data of Googlesheets",
       "category": "Googlesheets",
@@ -158,9 +158,9 @@
       "auth_config": "{\n      \"auth_link\": \"/auth/github\",\n      \"setup\": [\n        {\n          \"name\": \"client_id\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client ID\",\n          \"message\": \"Github OAuth2.0 Client Id\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"\"\n        },\n        {\n          \"name\": \"client_secret\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client Secret\",\n          \"message\": \"Github OAuth2.0 Client Secret\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"xxxxxxxxxxxxx\"\n        }\n      ]\n    }",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/googlesheets/spreadsheetid/append___POST": {
+    {
       "provider_alias_intent": "/googlesheets/spreadsheetid/append",
       "text": "Append Googlesheets",
       "category": "Googlesheets",
@@ -223,9 +223,9 @@
       "auth_config": "{\n      \"auth_link\": \"/auth/github\",\n      \"setup\": [\n        {\n          \"name\": \"client_id\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client ID\",\n          \"message\": \"Github OAuth2.0 Client Id\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"\"\n        },\n        {\n          \"name\": \"client_secret\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client Secret\",\n          \"message\": \"Github OAuth2.0 Client Secret\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"xxxxxxxxxxxxx\"\n        }\n      ]\n    }",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/googlesheets/spreadsheetid/clear___POST": {
+    {
       "provider_alias_intent": "/googlesheets/spreadsheetid/clear",
       "text": "Clear Googlesheets",
       "category": "Googlesheets",
@@ -274,9 +274,9 @@
       "auth_config": "{\n      \"auth_link\": \"/auth/github\",\n      \"setup\": [\n        {\n          \"name\": \"client_id\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client ID\",\n          \"message\": \"Github OAuth2.0 Client Id\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"\"\n        },\n        {\n          \"name\": \"client_secret\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client Secret\",\n          \"message\": \"Github OAuth2.0 Client Secret\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"xxxxxxxxxxxxx\"\n        }\n      ]\n    }",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/googlesheets/spreadsheetid/add___POST": {
+    {
       "provider_alias_intent": "/googlesheets/spreadsheetid/add",
       "text": "Add new sheet/tab in Googlesheets",
       "category": "Googlesheets",
@@ -329,9 +329,9 @@
       "auth_config": "{\n      \"auth_link\": \"/auth/github\",\n      \"setup\": [\n        {\n          \"name\": \"client_id\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client ID\",\n          \"message\": \"Github OAuth2.0 Client Id\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"\"\n        },\n        {\n          \"name\": \"client_secret\",\n          \"type\": \"input\",\n          \"field\": \"input\",\n          \"label\": \"Client Secret\",\n          \"message\": \"Github OAuth2.0 Client Secret\",\n          \"required\": true,\n          \"className\": \"\",\n          \"placeholder\": \"xxxxxxxxxxxxx\"\n        }\n      ]\n    }",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/mailgun/v3/sendingdomain/messages___POST": {
+    {
       "provider_alias_intent": "/mailgun/v3/sendingdomain/messages",
       "text": "Send Email using mailgun",
       "category": "Mailgun",
@@ -429,9 +429,9 @@
       "auth_config": "[\n            {\n                \"name\": \"api_key\",\n                \"type\": \"input\",\n                \"field\": \"input\",\n                \"label\": \"API Key\",\n                \"message\": \"This API key will be used for accessing APIs.\",\n                \"required\": true,\n                \"className\": \"\",\n                \"placeholder\": \"\"\n            },\n            {\n                \"name\": \"sendingdomain\",\n                \"type\": \"input\",\n                \"field\": \"input\",\n                \"label\": \"Sending Domain\",\n                \"message\": \"We will use this domain to send email on your behalf.\",\n                \"required\": false,\n                \"className\": \"\",\n                \"placeholder\": \"\"\n            },\n            {\n                \"name\": \"from\",\n                \"type\": \"input\",\n                \"field\": \"input\",\n                \"label\": \"From Email\",\n                \"message\": \"We will use this email address to send email on your behalf.\",\n                \"required\": false,\n                \"className\": \"\",\n                \"placeholder\": \"\"\n            }\n]",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/openai/v1/chat/completions___POST": {
+    {
       "provider_alias_intent": "/openai/v1/chat/completions",
       "text": "Create chat completion",
       "category": "OpenAI",
@@ -540,9 +540,9 @@
       "auth_config": "[\n            {\n                \"name\": \"api_key\",\n                \"type\": \"input\",\n                \"field\": \"input\",\n                \"label\": \"OpenAI API Key\",\n                \"message\": \"This API key will be used for accessing OpenAI APIs.\",\n                \"required\": true,\n                \"className\": \"\",\n                \"placeholder\": \"sk-xxxxx\"\n            }\n]",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/telegram/bot-token/sendmessage___POST": {
+    {
       "provider_alias_intent": "/telegram/bot-token/sendmessage",
       "text": "Send message using telegram",
       "category": "Telegram",
@@ -625,9 +625,9 @@
       "auth_config": "[\n            {\n                \"name\": \"api_key\",\n                \"type\": \"input\",\n                \"field\": \"input\",\n                \"label\": \"Telegram bot API Key\",\n                \"message\": \"Telegram bot API Key will be used for sending text, images, audio, video, poll.\",\n                \"required\": true,\n                \"className\": \"\",\n                \"placeholder\": \"\"\n            }\n]",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/awss3/signed-url/get-object___GET": {
+    {
       "provider_alias_intent": "/awss3/signed-url/get-object",
       "text": "Generate signed url for reading",
       "category": "AWSS3",
@@ -657,9 +657,9 @@
       "auth": [],
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/awss3/signed-url/put-object___GET": {
+    {
       "provider_alias_intent": "/awss3/signed-url/put-object",
       "text": "Generate signed url for uploading",
       "category": "AWSS4",
@@ -689,9 +689,9 @@
       "auth": [],
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/awsses/v2/email/outbound-emails___POST": {
+    {
       "provider_alias_intent": "/awsses/v2/email/outbound-emails",
       "text": "Sends an email using AWS SES",
       "category": "AWSSES",
@@ -814,9 +814,9 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/screenshot___GET": {
+    {
       "provider_alias_intent": "/screenshot",
       "text": "Create image of website",
       "category": "Website to Image",
@@ -855,9 +855,9 @@
       "response_type": "binary",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     },
-    "bundle__/web/extract___GET": {
+    {
       "provider_alias_intent": "/web/extract",
       "text": "Website to Image and JSON",
       "category": "Website to Image & JSON",
@@ -896,7 +896,7 @@
       "response_type": "json",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.086Z"
+      "updated_at": "2025-11-11T15:37:34.818Z"
     }
-  }
+  ]
 }

@@ -42,8 +42,8 @@
     "total_api": 3,
     "credential_link": "https://support.freshdesk.com/en/support/solutions/articles/215517-how-to-find-your-api-key"
   },
-  "routes": {
-    "freshdesk__/api/v2/account___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/v2/account",
       "text": "View Account",
       "category": "Account",
@@ -75,9 +75,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.305Z"
+      "updated_at": "2025-11-11T15:37:34.927Z"
     },
-    "freshdesk__/api/v2/skills/id___GET": {
+    {
       "provider_alias_intent": "/api/v2/skills/id",
       "text": "View a Skill",
       "category": "Skill",
@@ -104,9 +104,9 @@
       },
       "auth": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.305Z"
+      "updated_at": "2025-11-11T15:37:34.927Z"
     },
-    "freshdesk__/api/v2/tickets___GET": {
+    {
       "provider_alias_intent": "/api/v2/tickets",
       "text": "List All Tickets",
       "category": "Tickets",
@@ -138,7 +138,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.305Z"
+      "updated_at": "2025-11-11T15:37:34.927Z"
     }
-  }
+  ]
 }

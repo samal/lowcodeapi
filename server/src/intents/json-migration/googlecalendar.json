@@ -143,8 +143,8 @@
     "total_api": 37,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl/ruleid___PUT": {
+  "routes": [
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl/ruleid",
       "text": "Updates an access control rule.",
       "category": "ACL",
@@ -202,9 +202,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl/ruleid___DELETE": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl/ruleid",
       "text": "Deletes an access control rule.",
       "category": "ACL",
@@ -254,9 +254,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl",
       "text": "Returns the rules in the access control list for the calendar.",
       "category": "ACL",
@@ -316,9 +316,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl/ruleid___PATCH": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl/ruleid",
       "text": "Updates an access control rule.",
       "category": "ACL",
@@ -376,9 +376,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl/watch___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl/watch",
       "text": "Watch for changes to ACL resources.",
       "category": "ACL",
@@ -438,9 +438,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl/ruleid___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl/ruleid",
       "text": "Returns an access control rule.",
       "category": "ACL",
@@ -490,9 +490,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/acl___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/acl",
       "text": "Creates an access control rule.",
       "category": "ACL",
@@ -540,9 +540,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist",
       "text": "Inserts an existing calendar into the user's calendar list.",
       "category": "Calendar List",
@@ -579,9 +579,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist/calendarid___PATCH": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist/calendarid",
       "text": "Updates an existing calendar on the user's calendar list.",
       "category": "Calendar List",
@@ -629,9 +629,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist/calendarid___PUT": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist/calendarid",
       "text": "Updates an existing calendar on the user's calendar list.",
       "category": "Calendar List",
@@ -679,9 +679,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist/calendarid___DELETE": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist/calendarid",
       "text": "Removes a calendar from the user's calendar list.",
       "category": "Calendar List",
@@ -721,9 +721,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist/calendarid___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist/calendarid",
       "text": "Returns a calendar from the user's calendar list.",
       "category": "Calendar List",
@@ -763,9 +763,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist/watch___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist/watch",
       "text": "Watch for changes to CalendarList resources.",
       "category": "Calendar List",
@@ -826,9 +826,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/users/me/calendarlist___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/calendarlist",
       "text": "Returns the calendars on the user's calendar list.",
       "category": "Calendar List",
@@ -889,9 +889,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid___PATCH": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid",
       "text": "Updates metadata for a calendar.",
       "category": "Calendars",
@@ -931,9 +931,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars",
       "text": "Creates a secondary calendar.",
       "category": "Calendars",
@@ -961,9 +961,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid___DELETE": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid",
       "text": "Deletes a secondary calendar.",
       "category": "Calendars",
@@ -1003,9 +1003,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid",
       "text": "Returns metadata for a calendar.",
       "category": "Calendars",
@@ -1045,9 +1045,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid___PUT": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid",
       "text": "Updates metadata for a calendar.",
       "category": "Calendars",
@@ -1087,9 +1087,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/channels/stop___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/channels/stop",
       "text": "Stop watching resources through this channel.",
       "category": "Channels",
@@ -1117,9 +1117,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/colors___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/colors",
       "text": "Returns the color definitions for calendars and events.",
       "category": "Colors",
@@ -1147,9 +1147,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid___PUT": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid",
       "text": "Updates an event.",
       "category": "Events",
@@ -1238,9 +1238,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.051Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid___DELETE": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid",
       "text": "Deletes an event.",
       "category": "Events",
@@ -1302,9 +1302,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid___PATCH": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid",
       "text": "Updates an event.",
       "category": "Events",
@@ -1393,9 +1393,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events",
       "text": "Returns events on the specified calendar.",
       "category": "Events",
@@ -1535,9 +1535,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events",
       "text": "Creates an event.",
       "category": "Events",
@@ -1605,9 +1605,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/import___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/import",
       "text": "Imports an event.",
       "category": "Events",
@@ -1659,9 +1659,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid/instances___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid/instances",
       "text": "Returns instances of the specified recurring event.",
       "category": "Events",
@@ -1755,9 +1755,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid/move___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid/move",
       "text": "Moves an event to another calendar i.",
       "category": "Events",
@@ -1824,9 +1824,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/quickadd___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/quickadd",
       "text": "Creates an event based on a simple text string.",
       "category": "Events",
@@ -1883,9 +1883,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/watch___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/watch",
       "text": "Watch for changes to Events resources.",
       "category": "Events",
@@ -2025,9 +2025,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/events/eventid___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/events/eventid",
       "text": "Returns an event based on its Google Calendar ID.",
       "category": "Events",
@@ -2093,9 +2093,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/freebusy___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/freebusy",
       "text": "Returns free/busy information for a set of calendars.",
       "category": "Freebusy",
@@ -2123,9 +2123,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/users/me/settings/watch___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/settings/watch",
       "text": "Watch for changes to Settings resources.",
       "category": "Settings",
@@ -2166,9 +2166,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/users/me/settings/setting___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/settings/setting",
       "text": "Returns a single user setting.",
       "category": "Settings",
@@ -2208,9 +2208,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/users/me/settings___GET": {
+    {
       "provider_alias_intent": "/calendar/v3/users/me/settings",
       "text": "Returns all user settings for the authenticated user.",
       "category": "Settings",
@@ -2251,9 +2251,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     },
-    "googlecalendar__/calendar/v3/calendars/calendarid/clear___POST": {
+    {
       "provider_alias_intent": "/calendar/v3/calendars/calendarid/clear",
       "text": "Clears a primary calendar.",
       "category": "calendars",
@@ -2293,7 +2293,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.404Z"
+      "updated_at": "2025-11-11T15:37:35.052Z"
     }
-  }
+  ]
 }

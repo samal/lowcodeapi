@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "spotify__/albums/{id}___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/albums/{id}",
       "text": "Get Album",
       "category": "Albums",
@@ -39,9 +39,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/albums/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/albums___GET": {
+    {
       "provider_alias_intent": "/albums",
       "text": "Get Several Albums",
       "category": "Albums",
@@ -74,9 +74,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/albums",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/albums/{id}/tracks___GET": {
+    {
       "provider_alias_intent": "/albums/{id}/tracks",
       "text": "Get Album Tracks",
       "category": "Albums",
@@ -120,9 +120,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/albums/{id}/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/albums___GET": {
+    {
       "provider_alias_intent": "/me/albums",
       "text": "Get User's Saved Albums",
       "category": "Albums",
@@ -157,9 +157,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/albums",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/albums___PUT": {
+    {
       "provider_alias_intent": "/me/albums",
       "text": "Save Albums for Current User",
       "category": "Albums",
@@ -194,9 +194,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/albums",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/albums___DELETE": {
+    {
       "provider_alias_intent": "/me/albums",
       "text": "Remove Users' Saved Albums",
       "category": "Albums",
@@ -231,9 +231,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/albums",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/albums/contains___GET": {
+    {
       "provider_alias_intent": "/me/albums/contains",
       "text": "Check User's Saved Albums",
       "category": "Albums",
@@ -263,9 +263,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/albums/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/browse/new-releases___GET": {
+    {
       "provider_alias_intent": "/browse/new-releases",
       "text": "Get New Releases",
       "category": "Albums",
@@ -300,9 +300,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/browse/new-releases",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/artists/{id}___GET": {
+    {
       "provider_alias_intent": "/artists/{id}",
       "text": "Get Artist",
       "category": "Artists",
@@ -337,9 +337,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/artists/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/artists___GET": {
+    {
       "provider_alias_intent": "/artists",
       "text": "Get Several Artists",
       "category": "Artists",
@@ -369,9 +369,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/artists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/artists/{id}/albums___GET": {
+    {
       "provider_alias_intent": "/artists/{id}/albums",
       "text": "Get Artist's Albums",
       "category": "Artists",
@@ -418,9 +418,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/artists/{id}/albums",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/artists/{id}/top-tracks___GET": {
+    {
       "provider_alias_intent": "/artists/{id}/top-tracks",
       "text": "Get Artist's Top Tracks",
       "category": "Artists",
@@ -458,9 +458,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/artists/{id}/top-tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/artists/{id}/related-artists___GET": {
+    {
       "provider_alias_intent": "/artists/{id}/related-artists",
       "text": "Get Artist's Related Artists",
       "category": "Artists",
@@ -495,9 +495,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/artists/{id}/related-artists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audiobooks/{id}___GET": {
+    {
       "provider_alias_intent": "/audiobooks/{id}",
       "text": "Get an Audiobook",
       "category": "Audiobooks",
@@ -535,9 +535,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audiobooks/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audiobooks___GET": {
+    {
       "provider_alias_intent": "/audiobooks",
       "text": "Get Several Audiobooks",
       "category": "Audiobooks",
@@ -570,9 +570,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audiobooks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audiobooks/{id}/chapters___GET": {
+    {
       "provider_alias_intent": "/audiobooks/{id}/chapters",
       "text": "Get Audiobook Chapters",
       "category": "Audiobooks",
@@ -616,9 +616,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audiobooks/{id}/chapters",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/audiobooks___GET": {
+    {
       "provider_alias_intent": "/me/audiobooks",
       "text": "Get User's Saved Audiobooks",
       "category": "Audiobooks",
@@ -650,9 +650,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/audiobooks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/audiobooks___PUT": {
+    {
       "provider_alias_intent": "/me/audiobooks",
       "text": "Save Audiobooks for Current User",
       "category": "Audiobooks",
@@ -682,9 +682,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/audiobooks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/audiobooks___DELETE": {
+    {
       "provider_alias_intent": "/me/audiobooks",
       "text": "Remove User's Saved Audiobooks",
       "category": "Audiobooks",
@@ -714,9 +714,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/audiobooks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/audiobooks/contains___GET": {
+    {
       "provider_alias_intent": "/me/audiobooks/contains",
       "text": "Check User's Saved Audiobooks",
       "category": "Audiobooks",
@@ -746,9 +746,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/audiobooks/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/browse/categories___GET": {
+    {
       "provider_alias_intent": "/browse/categories",
       "text": "Get Several Browse Categories",
       "category": "Categories",
@@ -786,9 +786,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/browse/categories",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/browse/categories/{category_id}___GET": {
+    {
       "provider_alias_intent": "/browse/categories/{category_id}",
       "text": "Get Single Browse Category",
       "category": "Categories",
@@ -829,9 +829,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/browse/categories/{category_id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/chapters/{id}___GET": {
+    {
       "provider_alias_intent": "/chapters/{id}",
       "text": "Get a Chapter",
       "category": "Chapters",
@@ -869,9 +869,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/chapters/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/chapters___GET": {
+    {
       "provider_alias_intent": "/chapters",
       "text": "Get Several Chapters",
       "category": "Chapters",
@@ -904,9 +904,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/chapters",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/episodes/{id}___GET": {
+    {
       "provider_alias_intent": "/episodes/{id}",
       "text": "Get Episode",
       "category": "Episodes",
@@ -944,9 +944,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/episodes/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/episodes___GET": {
+    {
       "provider_alias_intent": "/episodes",
       "text": "Get Several Episodes",
       "category": "Episodes",
@@ -979,9 +979,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/episodes",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/episodes___GET": {
+    {
       "provider_alias_intent": "/me/episodes",
       "text": "Get User's Saved Episodes",
       "category": "Episodes",
@@ -1016,9 +1016,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/episodes",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/episodes___PUT": {
+    {
       "provider_alias_intent": "/me/episodes",
       "text": "Save Episodes for Current User",
       "category": "Episodes",
@@ -1053,9 +1053,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/episodes",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/episodes___DELETE": {
+    {
       "provider_alias_intent": "/me/episodes",
       "text": "Remove User's Saved Episodes",
       "category": "Episodes",
@@ -1090,9 +1090,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/episodes",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/episodes/contains___GET": {
+    {
       "provider_alias_intent": "/me/episodes/contains",
       "text": "Check User's Saved Episodes",
       "category": "Episodes",
@@ -1122,9 +1122,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/episodes/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/recommendations/available-genre-seeds___GET": {
+    {
       "provider_alias_intent": "/recommendations/available-genre-seeds",
       "text": "Get Available Genre Seeds",
       "category": "Genres",
@@ -1149,9 +1149,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/recommendations/available-genre-seeds",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/markets___GET": {
+    {
       "provider_alias_intent": "/markets",
       "text": "Get Available Markets",
       "category": "Markets",
@@ -1176,9 +1176,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/markets",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player___GET": {
+    {
       "provider_alias_intent": "/me/player",
       "text": "Get Playback State",
       "category": "Player",
@@ -1210,9 +1210,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player___PUT": {
+    {
       "provider_alias_intent": "/me/player",
       "text": "Transfer Playback",
       "category": "Player",
@@ -1251,9 +1251,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/devices___GET": {
+    {
       "provider_alias_intent": "/me/player/devices",
       "text": "Get Available Devices",
       "category": "Player",
@@ -1278,9 +1278,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/devices",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/currently-playing___GET": {
+    {
       "provider_alias_intent": "/me/player/currently-playing",
       "text": "Get Currently Playing Track",
       "category": "Player",
@@ -1312,9 +1312,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/currently-playing",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/play___PUT": {
+    {
       "provider_alias_intent": "/me/player/play",
       "text": "Start/Resume Playback",
       "category": "Player",
@@ -1360,9 +1360,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/play",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/pause___PUT": {
+    {
       "provider_alias_intent": "/me/player/pause",
       "text": "Pause Playback",
       "category": "Player",
@@ -1391,9 +1391,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/pause",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/next___POST": {
+    {
       "provider_alias_intent": "/me/player/next",
       "text": "Skip To Next",
       "category": "Player",
@@ -1422,9 +1422,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/next",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/previous___POST": {
+    {
       "provider_alias_intent": "/me/player/previous",
       "text": "Skip To Previous",
       "category": "Player",
@@ -1453,9 +1453,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/previous",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/seek___PUT": {
+    {
       "provider_alias_intent": "/me/player/seek",
       "text": "Seek To Position",
       "category": "Player",
@@ -1488,9 +1488,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/seek",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/repeat___PUT": {
+    {
       "provider_alias_intent": "/me/player/repeat",
       "text": "Set Repeat Mode",
       "category": "Player",
@@ -1523,9 +1523,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/repeat",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/volume___PUT": {
+    {
       "provider_alias_intent": "/me/player/volume",
       "text": "Set Playback Volume",
       "category": "Player",
@@ -1558,9 +1558,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/volume",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/shuffle___PUT": {
+    {
       "provider_alias_intent": "/me/player/shuffle",
       "text": "Toggle Playback Shuffle",
       "category": "Player",
@@ -1597,9 +1597,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/shuffle",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/recently-played___GET": {
+    {
       "provider_alias_intent": "/me/player/recently-played",
       "text": "Get Recently Played Tracks",
       "category": "Player",
@@ -1634,9 +1634,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/recently-played",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/queue___GET": {
+    {
       "provider_alias_intent": "/me/player/queue",
       "text": "Get the User's Queue",
       "category": "Player",
@@ -1661,9 +1661,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/queue",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/player/queue___POST": {
+    {
       "provider_alias_intent": "/me/player/queue",
       "text": "Add Item to Playback Queue",
       "category": "Player",
@@ -1696,9 +1696,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/player/queue",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}___GET": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}",
       "text": "Get Playlist",
       "category": "Playlists",
@@ -1742,9 +1742,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}___PUT": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}",
       "text": "Change Playlist Details",
       "category": "Playlists",
@@ -1804,9 +1804,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/tracks___GET": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/tracks",
       "text": "Get Playlist Items",
       "category": "Playlists",
@@ -1856,9 +1856,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/tracks___POST": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/tracks",
       "text": "Add Items to Playlist",
       "category": "Playlists",
@@ -1908,9 +1908,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/tracks___PUT": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/tracks",
       "text": "Update Playlist Items",
       "category": "Playlists",
@@ -1968,9 +1968,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/tracks___DELETE": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/tracks",
       "text": "Remove Playlist Items",
       "category": "Playlists",
@@ -2015,9 +2015,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/playlists___GET": {
+    {
       "provider_alias_intent": "/me/playlists",
       "text": "Get Current User's Playlists",
       "category": "Playlists",
@@ -2049,9 +2049,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/playlists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/users/{user_id}/playlists___GET": {
+    {
       "provider_alias_intent": "/users/{user_id}/playlists",
       "text": "Get User's Playlists",
       "category": "Playlists",
@@ -2092,9 +2092,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/users/{user_id}/playlists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/users/{user_id}/playlists___POST": {
+    {
       "provider_alias_intent": "/users/{user_id}/playlists",
       "text": "Create Playlist",
       "category": "Playlists",
@@ -2155,9 +2155,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/users/{user_id}/playlists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/browse/featured-playlists___GET": {
+    {
       "provider_alias_intent": "/browse/featured-playlists",
       "text": "Get Featured Playlists",
       "category": "Playlists",
@@ -2198,9 +2198,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/browse/featured-playlists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/browse/categories/{category_id}/playlists___GET": {
+    {
       "provider_alias_intent": "/browse/categories/{category_id}/playlists",
       "text": "Get Category's Playlists",
       "category": "Playlists",
@@ -2244,9 +2244,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/browse/categories/{category_id}/playlists",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/images___GET": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/images",
       "text": "Get Playlist Cover Image",
       "category": "Playlists",
@@ -2281,9 +2281,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/images",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/images___PUT": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/images",
       "text": "Add Custom Playlist Cover Image",
       "category": "Playlists",
@@ -2318,9 +2318,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/images",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/search___GET": {
+    {
       "provider_alias_intent": "/search",
       "text": "Search for Item",
       "category": "Search",
@@ -2366,9 +2366,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/search",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/shows/{id}___GET": {
+    {
       "provider_alias_intent": "/shows/{id}",
       "text": "Get Show",
       "category": "Shows",
@@ -2406,9 +2406,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/shows/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/shows___GET": {
+    {
       "provider_alias_intent": "/shows",
       "text": "Get Several Shows",
       "category": "Shows",
@@ -2441,9 +2441,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/shows",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/shows/{id}/episodes___GET": {
+    {
       "provider_alias_intent": "/shows/{id}/episodes",
       "text": "Get Show Episodes",
       "category": "Shows",
@@ -2487,9 +2487,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/shows/{id}/episodes",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/shows___GET": {
+    {
       "provider_alias_intent": "/me/shows",
       "text": "Get User's Saved Shows",
       "category": "Shows",
@@ -2521,9 +2521,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/shows",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/shows___PUT": {
+    {
       "provider_alias_intent": "/me/shows",
       "text": "Save Shows for Current User",
       "category": "Shows",
@@ -2553,9 +2553,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/shows",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/shows___DELETE": {
+    {
       "provider_alias_intent": "/me/shows",
       "text": "Remove User's Saved Shows",
       "category": "Shows",
@@ -2588,9 +2588,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/shows",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/shows/contains___GET": {
+    {
       "provider_alias_intent": "/me/shows/contains",
       "text": "Check User's Saved Shows",
       "category": "Shows",
@@ -2620,9 +2620,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/shows/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/tracks/{id}___GET": {
+    {
       "provider_alias_intent": "/tracks/{id}",
       "text": "Get Track",
       "category": "Tracks",
@@ -2660,9 +2660,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/tracks/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/tracks___GET": {
+    {
       "provider_alias_intent": "/tracks",
       "text": "Get Several Tracks",
       "category": "Tracks",
@@ -2695,9 +2695,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/tracks___GET": {
+    {
       "provider_alias_intent": "/me/tracks",
       "text": "Get User's Saved Tracks",
       "category": "Tracks",
@@ -2732,9 +2732,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/tracks___PUT": {
+    {
       "provider_alias_intent": "/me/tracks",
       "text": "Save Tracks for Current User",
       "category": "Tracks",
@@ -2769,9 +2769,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/tracks___DELETE": {
+    {
       "provider_alias_intent": "/me/tracks",
       "text": "Remove User's Saved Tracks",
       "category": "Tracks",
@@ -2806,9 +2806,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/tracks",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/tracks/contains___GET": {
+    {
       "provider_alias_intent": "/me/tracks/contains",
       "text": "Check User's Saved Tracks",
       "category": "Tracks",
@@ -2838,9 +2838,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/tracks/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audio-features___GET": {
+    {
       "provider_alias_intent": "/audio-features",
       "text": "Get Tracks' Audio Features",
       "category": "Tracks",
@@ -2870,9 +2870,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audio-features",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audio-features/{id}___GET": {
+    {
       "provider_alias_intent": "/audio-features/{id}",
       "text": "Get Track's Audio Features",
       "category": "Tracks",
@@ -2907,9 +2907,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audio-features/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/audio-analysis/{id}___GET": {
+    {
       "provider_alias_intent": "/audio-analysis/{id}",
       "text": "Get Track's Audio Analysis",
       "category": "Tracks",
@@ -2944,9 +2944,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/audio-analysis/{id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/recommendations___GET": {
+    {
       "provider_alias_intent": "/recommendations",
       "text": "Get Recommendations",
       "category": "Tracks",
@@ -3116,9 +3116,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/recommendations",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me___GET": {
+    {
       "provider_alias_intent": "/me",
       "text": "Get Current User's Profile",
       "category": "Users",
@@ -3143,9 +3143,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/top/{type}___GET": {
+    {
       "provider_alias_intent": "/me/top/{type}",
       "text": "Get User's Top Items",
       "category": "Users",
@@ -3189,9 +3189,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/top/{type}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/users/{user_id}___GET": {
+    {
       "provider_alias_intent": "/users/{user_id}",
       "text": "Get User's Profile",
       "category": "Users",
@@ -3226,9 +3226,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/users/{user_id}",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/followers___PUT": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/followers",
       "text": "Follow Playlist",
       "category": "Users",
@@ -3272,9 +3272,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/followers",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/followers___DELETE": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/followers",
       "text": "Unfollow Playlist",
       "category": "Users",
@@ -3309,9 +3309,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/followers",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/following___GET": {
+    {
       "provider_alias_intent": "/me/following",
       "text": "Get Followed Artists",
       "category": "Users",
@@ -3347,9 +3347,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/following",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/following___PUT": {
+    {
       "provider_alias_intent": "/me/following",
       "text": "Follow Artists or Users",
       "category": "Users",
@@ -3389,9 +3389,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/following",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/following___DELETE": {
+    {
       "provider_alias_intent": "/me/following",
       "text": "Unfollow Artists or Users",
       "category": "Users",
@@ -3430,9 +3430,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/following",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/me/following/contains___GET": {
+    {
       "provider_alias_intent": "/me/following/contains",
       "text": "Check If User Follows Artists or Users",
       "category": "Users",
@@ -3466,9 +3466,9 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/me/following/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     },
-    "spotify__/playlists/{playlist_id}/followers/contains___GET": {
+    {
       "provider_alias_intent": "/playlists/{playlist_id}/followers/contains",
       "text": "Check if Users Follow Playlist",
       "category": "Users",
@@ -3507,7 +3507,7 @@
       "alias_web_url": "https://lowcodeapi.com/api.spotify.com/playlists/{playlist_id}/followers/contains",
       "duplicate_check": "FALSE",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.853Z"
+      "updated_at": "2025-11-11T15:37:35.499Z"
     }
-  }
+  ]
 }

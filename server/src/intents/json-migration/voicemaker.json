@@ -33,8 +33,8 @@
     "total_api": 2,
     "credential_link": "https://developer.voicemaker.in/"
   },
-  "routes": {
-    "voicemaker__/voice/api___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/voice/api",
       "text": "Generate Audio",
       "category": "Audio",
@@ -172,9 +172,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.913Z"
+      "updated_at": "2025-11-11T15:37:35.612Z"
     },
-    "voicemaker__/voice/list___POST": {
+    {
       "provider_alias_intent": "/voice/list",
       "text": "Get List of All Voices",
       "category": "Audio",
@@ -208,7 +208,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.913Z"
+      "updated_at": "2025-11-11T15:37:35.612Z"
     }
-  }
+  ]
 }

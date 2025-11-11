@@ -52,8 +52,8 @@
     "total_api": 2,
     "credential_link": "https://developers.gorgias.com/docs/access-tokens-api-keys"
   },
-  "routes": {
-    "gorgias__/api/account___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/api/account",
       "text": "Retrieve your account",
       "category": "Account",
@@ -85,9 +85,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.425Z"
+      "updated_at": "2025-11-11T15:37:35.061Z"
     },
-    "gorgias__/api/customers___GET": {
+    {
       "provider_alias_intent": "/api/customers",
       "text": "List customers",
       "category": "ooo",
@@ -119,7 +119,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.425Z"
+      "updated_at": "2025-11-11T15:37:35.061Z"
     }
-  }
+  ]
 }

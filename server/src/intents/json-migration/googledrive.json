@@ -148,8 +148,8 @@
     "total_api": 45,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "googledrive__/drive/v3/about___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/drive/v3/about",
       "text": "Gets information about the user the user's Drive and system capabilities.",
       "category": "About",
@@ -177,9 +177,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/apps/app_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/apps/app_id",
       "text": "Gets a specific app.",
       "category": "Apps",
@@ -219,9 +219,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/apps___GET": {
+    {
       "provider_alias_intent": "/drive/v3/apps",
       "text": "Lists a user's installed apps.",
       "category": "Apps",
@@ -262,9 +262,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/changes/startpagetoken___GET": {
+    {
       "provider_alias_intent": "/drive/v3/changes/startpagetoken",
       "text": "Gets the starting pageToken for listing future changes.",
       "category": "Changes",
@@ -305,9 +305,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/changes___GET": {
+    {
       "provider_alias_intent": "/drive/v3/changes",
       "text": "Lists the changes for a user or shared drive.",
       "category": "Changes",
@@ -401,9 +401,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/changes/watch___POST": {
+    {
       "provider_alias_intent": "/drive/v3/changes/watch",
       "text": "Subscribes to changes for a user.",
       "category": "Changes",
@@ -548,9 +548,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/channels/stop___POST": {
+    {
       "provider_alias_intent": "/drive/v3/channels/stop",
       "text": "Stop watching resources through this channel.",
       "category": "Channels",
@@ -629,9 +629,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments",
       "text": "Creates a comment on a file.",
       "category": "Comments",
@@ -685,9 +685,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
       "text": "Deletes a comment.",
       "category": "Comments",
@@ -737,9 +737,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
       "text": "Gets a comment by ID.",
       "category": "Comments",
@@ -797,9 +797,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments",
       "text": "Lists a file's comments.",
       "category": "Comments",
@@ -859,9 +859,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
       "text": "Updates a comment with patch semantics.",
       "category": "Comments",
@@ -925,9 +925,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives___POST": {
+    {
       "provider_alias_intent": "/drive/v3/drives",
       "text": "Creates a shared drive.",
       "category": "Drives",
@@ -991,9 +991,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives/drive_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
       "text": "Permanently deletes a shared drive for which the user is an organizer.",
       "category": "Drives",
@@ -1049,9 +1049,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives/drive_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
       "text": "Gets a shared drive's metadata by ID.",
       "category": "Drives",
@@ -1099,9 +1099,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives/drive_id/hide___POST": {
+    {
       "provider_alias_intent": "/drive/v3/drives/drive_id/hide",
       "text": "Hides a shared drive from the default view.",
       "category": "Drives",
@@ -1141,9 +1141,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives___GET": {
+    {
       "provider_alias_intent": "/drive/v3/drives",
       "text": "Lists the user's shared drives.",
       "category": "Drives",
@@ -1192,9 +1192,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives/drive_id/unhide___POST": {
+    {
       "provider_alias_intent": "/drive/v3/drives/drive_id/unhide",
       "text": "Restores a shared drive to the default view.",
       "category": "Drives",
@@ -1234,9 +1234,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/drives/drive_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
       "text": "Updates the metadata for a shared drive.",
       "category": "Drives",
@@ -1314,9 +1314,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/copy___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/copy",
       "text": "Creates a copy of a file and applies any requested updates with patch semantics.",
       "category": "Files",
@@ -1484,9 +1484,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files",
       "text": "Creates a file.",
       "category": "Files",
@@ -1657,9 +1657,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id",
       "text": "Permanently deletes a file owned by the user without moving it to the trash.",
       "category": "Files",
@@ -1707,9 +1707,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/trash___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/trash",
       "text": "Permanently deletes all trashed files of a user or shared drive.",
       "category": "Files",
@@ -1742,9 +1742,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/export___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/export",
       "text": "Exports a Google Workspace document to the requested MIME type and returns exported byte content.",
       "category": "Files",
@@ -1789,9 +1789,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/generateids___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/generateids",
       "text": "Generates a set of file IDs which can be provided in create or copy requests.",
       "category": "Files",
@@ -1840,9 +1840,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id",
       "text": "Gets a file's metadata or content by ID.",
       "category": "Files",
@@ -1909,9 +1909,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files",
       "text": "Lists or searches files.",
       "category": "Files",
@@ -1992,9 +1992,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/listlabels___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/listlabels",
       "text": "Lists the labels on a file.",
       "category": "Files",
@@ -2042,9 +2042,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/modifylabels___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/modifylabels",
       "text": "Modifies the set of labels on a file.",
       "category": "Files",
@@ -2093,9 +2093,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id",
       "text": "Updates a file's metadata and/or content.",
       "category": "Files",
@@ -2277,9 +2277,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/watch___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/watch",
       "text": "Subscribe to changes on a file.",
       "category": "Files",
@@ -2394,9 +2394,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/permissions___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions",
       "text": "Creates a permission for a file or shared drive.",
       "category": "Permissions",
@@ -2511,9 +2511,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/permissions/permission_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
       "text": "Deletes a permission.",
       "category": "Permissions",
@@ -2579,9 +2579,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/permissions/permission_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
       "text": "Gets a permission by ID.",
       "category": "Permissions",
@@ -2647,9 +2647,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/permissions___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions",
       "text": "Lists a file's or shared drive's permissions.",
       "category": "Permissions",
@@ -2717,9 +2717,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/permissions/permission_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
       "text": "Updates a permission with patch semantics.",
       "category": "Permissions",
@@ -2832,9 +2832,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id/replies___POST": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
       "text": "Creates a reply to a comment.",
       "category": "Replies",
@@ -2894,9 +2894,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id/replies/reply_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
       "text": "Deletes a reply.",
       "category": "Replies",
@@ -2956,9 +2956,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id/replies/reply_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
       "text": "Gets a reply by ID.",
       "category": "Replies",
@@ -3026,9 +3026,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id/replies___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
       "text": "Lists a comment's replies.",
       "category": "Replies",
@@ -3094,9 +3094,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/comments/comment_id/replies/reply_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
       "text": "Updates a reply with patch semantics.",
       "category": "Replies",
@@ -3166,9 +3166,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/revisions/revision_id___DELETE": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
       "text": "Permanently deletes a file version.",
       "category": "Revisions",
@@ -3218,9 +3218,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/revisions/revision_id___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
       "text": "Gets a revision's metadata or content by ID.",
       "category": "Revisions",
@@ -3278,9 +3278,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/revisions___GET": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions",
       "text": "Lists a file's revisions.",
       "category": "Revisions",
@@ -3328,9 +3328,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     },
-    "googledrive__/drive/v3/files/file_id/revisions/revision_id___PATCH": {
+    {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
       "text": "Updates a revision with patch semantics.",
       "category": "Revisions",
@@ -3413,7 +3413,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.416Z"
+      "updated_at": "2025-11-11T15:37:35.056Z"
     }
-  }
+  ]
 }

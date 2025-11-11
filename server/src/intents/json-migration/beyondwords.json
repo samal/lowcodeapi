@@ -16,8 +16,8 @@
     "total_api": 75,
     "credential_link": "https://dash.beyondwords.io/dashboard"
   },
-  "routes": {
-    "beyondwords__/v1/projects/project_id/ads___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads",
       "text": "List",
       "category": "Ads",
@@ -63,9 +63,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads",
       "text": "Create",
       "category": "Ads",
@@ -192,9 +192,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads/id___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
       "text": "Update",
       "category": "Ads",
@@ -346,9 +346,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
       "text": "Show",
       "category": "Ads",
@@ -396,9 +396,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
       "text": "Delete",
       "category": "Ads",
@@ -446,9 +446,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/organization/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/organization/analytics",
       "text": "Organization analytics",
       "category": "Analytics",
@@ -503,9 +503,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/analytics",
       "text": "Projects analytics",
       "category": "Analytics",
@@ -569,9 +569,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/id/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/id/analytics",
       "text": "Project analytics",
       "category": "Analytics",
@@ -637,9 +637,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/analytics\n",
       "text": "Contents analytics",
       "category": "Analytics",
@@ -714,9 +714,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id/analytics",
       "text": "Content analytics",
       "category": "Analytics",
@@ -792,9 +792,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads/analytics",
       "text": "Ads analytics",
       "category": "Analytics",
@@ -873,9 +873,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/ads/id/analytics___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/ads/id/analytics\n",
       "text": "Ad analytics",
       "category": "Analytics",
@@ -939,9 +939,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/background_tracks___GET": {
+    {
       "provider_alias_intent": "/v1/background_tracks",
       "text": "List",
       "category": "Background tracks",
@@ -988,9 +988,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/background_tracks___POST": {
+    {
       "provider_alias_intent": "/v1/background_tracks",
       "text": "Create",
       "category": "Background tracks",
@@ -1045,9 +1045,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/background_tracks/id___PUT": {
+    {
       "provider_alias_intent": "/v1/background_tracks/id",
       "text": "Update",
       "category": "Background tracks",
@@ -1114,9 +1114,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/background_tracks/id___GET": {
+    {
       "provider_alias_intent": "/v1/background_tracks/id",
       "text": "Show",
       "category": "Background tracks",
@@ -1154,9 +1154,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/background_tracks/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/background_tracks/id",
       "text": "Delete",
       "category": "Background tracks",
@@ -1194,9 +1194,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content",
       "text": "List",
       "category": "Content",
@@ -1295,9 +1295,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content\n",
       "text": "Create",
       "category": "Content",
@@ -1441,9 +1441,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
       "text": "Update",
       "category": "Content",
@@ -1587,9 +1587,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
       "text": "Show",
       "category": "Content",
@@ -1645,9 +1645,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
       "text": "Delete",
       "category": "Content",
@@ -1695,9 +1695,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id/regenerate___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id/regenerate",
       "text": "Regenerate",
       "category": "Content",
@@ -1745,9 +1745,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/search_fields___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/search_fields",
       "text": "Search fields",
       "category": "Content",
@@ -1785,9 +1785,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/content/id/summarize___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/content/id/summarize",
       "text": "Summarize",
       "category": "Content",
@@ -1844,9 +1844,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/html_filters___GET": {
+    {
       "provider_alias_intent": "/v1/html_filters",
       "text": "List",
       "category": "Html filters",
@@ -1885,9 +1885,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/html_filters___POST": {
+    {
       "provider_alias_intent": "/v1/html_filters",
       "text": "Create",
       "category": "Html filters",
@@ -1956,9 +1956,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/html_filters/id___PUT": {
+    {
       "provider_alias_intent": "/v1/html_filters/id",
       "text": "Update",
       "category": "Html filters",
@@ -2039,9 +2039,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/html_filters/id___GET": {
+    {
       "provider_alias_intent": "/v1/html_filters/id\n",
       "text": "Show",
       "category": "Html filters",
@@ -2079,9 +2079,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/html_filters/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/html_filters/id\n",
       "text": "Delete",
       "category": "Html filters",
@@ -2119,9 +2119,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/organization/languages___GET": {
+    {
       "provider_alias_intent": "/v1/organization/languages",
       "text": "List",
       "category": "Languages",
@@ -2147,9 +2147,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player/by_content_id/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player/by_content_id/id",
       "text": "Show",
       "category": "Player",
@@ -2201,9 +2201,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player/by_playlist_id/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player/by_playlist_id/id\n",
       "text": "Show",
       "category": "Player",
@@ -2251,9 +2251,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player/by_source_id/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player/by_source_id/id",
       "text": "Show",
       "category": "Player",
@@ -2305,9 +2305,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player/by_source_url/url___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player/by_source_url/url",
       "text": "Show",
       "category": "Player",
@@ -2359,9 +2359,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player/by_identifiers/array___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player/by_identifiers/array",
       "text": "Show",
       "category": "Player",
@@ -2409,9 +2409,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player_settings___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player_settings",
       "text": "Show",
       "category": "Player settings",
@@ -2449,9 +2449,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/player_settings___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/player_settings",
       "text": "Update",
       "category": "Player settings",
@@ -2720,9 +2720,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects___GET": {
+    {
       "provider_alias_intent": "/v1/projects\n",
       "text": "List",
       "category": "Projects",
@@ -2757,9 +2757,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects___POST": {
+    {
       "provider_alias_intent": "/v1/projects",
       "text": "Create",
       "category": "Projects",
@@ -2832,9 +2832,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/id___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/id",
       "text": "Update",
       "category": "Projects",
@@ -2919,9 +2919,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/id",
       "text": "Show",
       "category": "Projects",
@@ -2959,9 +2959,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/projects/id\n",
       "text": "Delete",
       "category": "Projects",
@@ -2999,9 +2999,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds",
       "text": "List",
       "category": "RSS Feed",
@@ -3047,9 +3047,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds",
       "text": "Create",
       "category": "RSS Feed",
@@ -3174,9 +3174,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds/id___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id",
       "text": "Update",
       "category": "RSS Feed",
@@ -3311,9 +3311,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id\n",
       "text": "Delete",
       "category": "RSS Feed",
@@ -3361,9 +3361,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds/id/run___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id/run",
       "text": "Run",
       "category": "RSS Feed",
@@ -3411,9 +3411,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/integrations/rss_importer/feeds/test___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/test",
       "text": "Test",
       "category": "RSS Feed",
@@ -3538,9 +3538,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules___GET": {
+    {
       "provider_alias_intent": "/v1/rules",
       "text": "List",
       "category": "Rules",
@@ -3608,9 +3608,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules___POST": {
+    {
       "provider_alias_intent": "/v1/rules",
       "text": "Create",
       "category": "Rules",
@@ -3688,9 +3688,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/id___PUT": {
+    {
       "provider_alias_intent": "/v1/rules/id",
       "text": "Update",
       "category": "Rules",
@@ -3780,9 +3780,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/id___GET": {
+    {
       "provider_alias_intent": "/v1/rules/id\n",
       "text": "Show",
       "category": "Rules",
@@ -3820,9 +3820,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/rules/id\n",
       "text": "Delete",
       "category": "Rules",
@@ -3860,9 +3860,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/id/regenerate_preview___POST": {
+    {
       "provider_alias_intent": "/v1/rules/id/regenerate_preview\n",
       "text": "Regenerate preview",
       "category": "Rules",
@@ -3900,9 +3900,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/preview___POST": {
+    {
       "provider_alias_intent": "/v1/rules/preview",
       "text": "Preview",
       "category": "Rules",
@@ -3990,9 +3990,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/rules/phonemes___GET": {
+    {
       "provider_alias_intent": "/v1/rules/phonemes",
       "text": "Phonemes",
       "category": "Rules",
@@ -4018,9 +4018,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/summarization_settings___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/summarization_settings",
       "text": "Show",
       "category": "Summarization settings",
@@ -4058,9 +4058,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/summarization_settings___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/summarization_settings",
       "text": "Update",
       "category": "Summarization settings",
@@ -4111,9 +4111,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/upload___POST": {
+    {
       "provider_alias_intent": "/v1/upload",
       "text": "Upload",
       "category": "Upload",
@@ -4145,9 +4145,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/video_settings___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/video_settings",
       "text": "Show",
       "category": "Video Settings",
@@ -4185,9 +4185,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/video_settings___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/video_settings",
       "text": "Update",
       "category": "Video Settings",
@@ -4290,9 +4290,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/voice_issues___GET": {
+    {
       "provider_alias_intent": "/v1/voice_issues",
       "text": "List",
       "category": "Voice issues",
@@ -4358,9 +4358,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/voice_issues___POST": {
+    {
       "provider_alias_intent": "/v1/voice_issues",
       "text": "Create",
       "category": "Voice issues",
@@ -4437,9 +4437,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/voice_issues/id___PUT": {
+    {
       "provider_alias_intent": "/v1/voice_issues/id",
       "text": "Update",
       "category": "Voice issues",
@@ -4528,9 +4528,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/voice_issues/id___GET": {
+    {
       "provider_alias_intent": "/v1/voice_issues/id",
       "text": "Show",
       "category": "Voice issues",
@@ -4568,9 +4568,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/voice_issues/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/voice_issues/id",
       "text": "Delete",
       "category": "Voice issues",
@@ -4608,9 +4608,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/organization/voices___GET": {
+    {
       "provider_alias_intent": "/v1/organization/voices",
       "text": "List",
       "category": "Voices",
@@ -4649,9 +4649,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/organization/voices/id___PUT": {
+    {
       "provider_alias_intent": "/v1/organization/voices/id",
       "text": "Update",
       "category": "Voices",
@@ -4695,9 +4695,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks\n",
       "text": "List",
       "category": "Webhooks",
@@ -4743,9 +4743,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks",
       "text": "Create",
       "category": "Webhooks",
@@ -4790,9 +4790,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks/id___PUT": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks/id\n",
       "text": "Update",
       "category": "Webhooks",
@@ -4858,9 +4858,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks/id___GET": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks/id\n",
       "text": "Show",
       "category": "Webhooks",
@@ -4908,9 +4908,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks/id",
       "text": "Delete",
       "category": "Webhooks",
@@ -4958,9 +4958,9 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     },
-    "beyondwords__/v1/projects/project_id/webhooks/test___POST": {
+    {
       "provider_alias_intent": "/v1/projects/project_id/webhooks/test\n",
       "text": "Test",
       "category": "Webhooks",
@@ -5007,7 +5007,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.067Z"
+      "updated_at": "2025-11-11T15:37:34.807Z"
     }
-  }
+  ]
 }

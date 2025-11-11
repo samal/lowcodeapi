@@ -56,8 +56,8 @@
     "total_api": 68,
     "credential_link": "https://developer.wordpress.org/apps"
   },
-  "routes": {
-    "wordpress__/rest/v1.3/batch___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/rest/v1.3/batch",
       "text": "Get data from multiple endpoints",
       "category": "Batch",
@@ -123,9 +123,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id",
       "text": "Get a single comment",
       "category": "Comment",
@@ -207,9 +207,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id",
       "text": "Edit a comment",
       "category": "Comment",
@@ -292,9 +292,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments",
       "text": "Get a list of recent comments",
       "category": "Comment",
@@ -410,9 +410,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/replies___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/replies",
       "text": "Get a list of recent comments on a post",
       "category": "Comment",
@@ -538,9 +538,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/replies/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/replies/new",
       "text": "Create a comment on a post",
       "category": "Comment",
@@ -623,9 +623,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/replies/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/replies/new",
       "text": "Reply to a comment with another comment",
       "category": "Comment",
@@ -708,9 +708,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/delete",
       "text": "Delete a comment",
       "category": "Comment",
@@ -793,9 +793,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comment-counts___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comment-counts",
       "text": "Get comment counts for all statuses",
       "category": "Comment",
@@ -872,9 +872,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comment-history/comment_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comment-history/comment_id",
       "text": "Get comment's audit history",
       "category": "Comment",
@@ -956,9 +956,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/likes___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes",
       "text": "Get the likes for a comment",
       "category": "Comment",
@@ -1040,9 +1040,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/likes/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes/new",
       "text": "Like a comment.",
       "category": "Comment",
@@ -1125,9 +1125,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/likes/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes/mine/delete",
       "text": "Remove your like from a comment",
       "category": "Comment",
@@ -1210,9 +1210,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/comments/comment_id/likes/mine/deletee___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes/mine/deletee",
       "text": "Get your like status for a comment",
       "category": "Comment",
@@ -1294,9 +1294,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/kill-switch/comment-likes___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/kill-switch/comment-likes",
       "text": "Kill comment likes",
       "category": "Comment",
@@ -1357,9 +1357,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/follows___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/follows",
       "text": "Get followers in reverse order for site",
       "category": "Follow",
@@ -1447,9 +1447,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/follows/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/follows/new",
       "text": "Follow a blog",
       "category": "Follow",
@@ -1527,9 +1527,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/follows/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/follows/mine/delete",
       "text": "Unfollow a blog",
       "category": "Follow",
@@ -1602,9 +1602,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/follows/mine/delete___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/follows/mine/delete",
       "text": "Get user's blog follow status",
       "category": "Follow",
@@ -1676,9 +1676,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/freshly-pressed/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/freshly-pressed/",
       "text": "Get a list of Freshly Pressed posts",
       "category": "Freshly Pressed",
@@ -1763,9 +1763,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/insights___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/insights",
       "text": "Get accessible user stats metrics insights",
       "category": "Insights",
@@ -1826,9 +1826,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/insights/slug___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/insights/slug",
       "text": "Get raw data for a particular graph",
       "category": "Insights",
@@ -1912,9 +1912,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/media/media_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/media/media_id/delete",
       "text": "Delete a piece of media",
       "category": "Media",
@@ -1997,9 +1997,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/media/media_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/media/media_id",
       "text": "Get a single media item (by ID)",
       "category": "Media",
@@ -2081,9 +2081,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/media/media_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/media/media_id",
       "text": "Edit basic information about a media item",
       "category": "Media",
@@ -2166,9 +2166,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/media/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/media/",
       "text": "Get a list of items in the media library",
       "category": "Media",
@@ -2282,9 +2282,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/media/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/media/new",
       "text": "Upload a new piece of media",
       "category": "Media",
@@ -2367,9 +2367,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site/media/media_id/edit___POST": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site/media/media_id/edit",
       "text": "Edit a media item",
       "category": "Media",
@@ -2492,9 +2492,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/menus/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/menus/new",
       "text": "Create a new navigation menu",
       "category": "Menu",
@@ -2567,9 +2567,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/menus/menu_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/menus/menu_id",
       "text": "Update a navigation menu",
       "category": "Menu",
@@ -2652,9 +2652,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/menus/menu_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/menus/menu_id",
       "text": "Get a single navigation menu",
       "category": "Menu",
@@ -2736,9 +2736,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/menus___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/menus",
       "text": "Get a list of all navigation menus",
       "category": "Menu",
@@ -2810,9 +2810,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/menus/menu_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/menus/menu_id/delete",
       "text": "Delete a navigation menu",
       "category": "Menu",
@@ -2895,9 +2895,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/notifications/seen___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/notifications/seen",
       "text": "Update latest notification timestamp",
       "category": "Notification",
@@ -2958,9 +2958,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/notifications/read___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/notifications/read",
       "text": "Mark a set of notifications as read",
       "category": "Notification",
@@ -3021,9 +3021,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id",
       "text": "Get a single post (by ID)",
       "category": "Post",
@@ -3101,9 +3101,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site/posts/post_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site/posts/post_id",
       "text": "Edit a post",
       "category": "Post",
@@ -3190,9 +3190,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/slug-post_slug___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/slug-post_slug",
       "text": "Get a single post (by slug)",
       "category": "Post",
@@ -3274,9 +3274,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/",
       "text": "Get a list of matching posts",
       "category": "Post",
@@ -3451,9 +3451,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site/posts/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site/posts/new",
       "text": "Create a post",
       "category": "Post",
@@ -3535,9 +3535,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/delete",
       "text": "Delete a post",
       "category": "Post",
@@ -3620,9 +3620,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/restore___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/restore",
       "text": "Recover trashed content to its previous state",
       "category": "Post",
@@ -3705,9 +3705,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/delete",
       "text": "Delete multiple posts",
       "category": "Post",
@@ -3780,9 +3780,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/restore___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/restore",
       "text": "Restore multiple posts",
       "category": "Post",
@@ -3855,9 +3855,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/posts___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/posts",
       "text": "Get a list of posts across all the user's sites",
       "category": "Post",
@@ -3982,9 +3982,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/likes___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/likes",
       "text": "Get a list of the likes for a post",
       "category": "Post",
@@ -4066,9 +4066,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/likes/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/likes/new",
       "text": "Like a post",
       "category": "Post",
@@ -4151,9 +4151,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/likes/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/likes/mine/delete",
       "text": "Unlike a post",
       "category": "Post",
@@ -4236,9 +4236,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/likes/mine/delete___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/likes/mine/delete",
       "text": "Get the current user's like status for a post",
       "category": "Post",
@@ -4320,9 +4320,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/subscribers___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/subscribers",
       "text": "Get post subscribers list",
       "category": "Post",
@@ -4404,9 +4404,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/subscribers/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/subscribers/mine",
       "text": "Get user's subscription status for specified post",
       "category": "Post",
@@ -4488,9 +4488,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/subscribers/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/subscribers/new",
       "text": "Subscribe user for post comment notifications",
       "category": "Post",
@@ -4573,9 +4573,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/subscribers/mine/update___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/subscribers/mine/update",
       "text": "Subscribe user for post comment notifications",
       "category": "Post",
@@ -4658,9 +4658,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/subscribers/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/subscribers/mine/delete",
       "text": "Unsubscribe user from specified post",
       "category": "Post",
@@ -4743,9 +4743,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/reblogs/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/reblogs/new",
       "text": "Reblog a post",
       "category": "Post",
@@ -4828,9 +4828,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post_id/reblogs/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post_id/reblogs/mine",
       "text": "Get reblog status for a post",
       "category": "Post",
@@ -4912,9 +4912,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/posts/post/related___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/posts/post/related",
       "text": "Search within a site for related posts",
       "category": "Post",
@@ -4997,9 +4997,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/menu/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/menu/",
       "text": "Get default reader menu",
       "category": "Reader",
@@ -5060,9 +5060,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/feed/feed_url_or_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/feed/feed_url_or_id",
       "text": "Get details about a feed",
       "category": "Reader",
@@ -5132,9 +5132,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/read/sites/site/posts/post_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.2/read/sites/site/posts/post_id",
       "text": "Get a single post (by ID)",
       "category": "Reader",
@@ -5216,9 +5216,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/following/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/following/",
       "text": "Get posts from user's followed blogs",
       "category": "Reader",
@@ -5298,9 +5298,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/liked/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/liked/",
       "text": "Get posts from user's followed likes",
       "category": "Reader",
@@ -5380,9 +5380,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/tags/tag/posts___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/tags/tag/posts",
       "text": "Get details about a specified tag.",
       "category": "Reader",
@@ -5454,9 +5454,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/read/tags___GET": {
+    {
       "provider_alias_intent": "/rest/v1.2/read/tags",
       "text": "Get user's subscribed tag list",
       "category": "Reader",
@@ -5517,9 +5517,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/read/trending/tags___GET": {
+    {
       "provider_alias_intent": "/rest/v1.2/read/trending/tags",
       "text": "Get trending tags in a list",
       "category": "Reader",
@@ -5588,9 +5588,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/tags/tag/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/tags/tag/mine",
       "text": "Get user's subscription status for a specific tag",
       "category": "Reader",
@@ -5662,9 +5662,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/tags/tag/mine/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/tags/tag/mine/new",
       "text": "Subscribe to a new tag",
       "category": "Reader",
@@ -5737,9 +5737,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/tags/tag/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/tags/tag/mine/delete",
       "text": "Unsubscribe from a tag",
       "category": "Reader",
@@ -5812,9 +5812,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/following/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/following/mine",
       "text": "Get a list of the feeds the user is following",
       "category": "Reader",
@@ -5875,9 +5875,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/following/mine/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/following/mine/new",
       "text": "Follow the specified blog",
       "category": "Reader",
@@ -5948,9 +5948,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/following/mine/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/following/mine/delete",
       "text": "Unfollow the specified blog",
       "category": "Reader",
@@ -6021,9 +6021,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/feed/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/feed/",
       "text": "Get IDs and subscribe URLs for matching feeds",
       "category": "Reader",
@@ -6122,9 +6122,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/read/recommendations/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/read/recommendations/mine",
       "text": "Getblog suggestions for the user",
       "category": "Reader",
@@ -6206,9 +6206,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/sharing-buttons___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/sharing-buttons",
       "text": "site's sharing buttons list",
       "category": "Sharing",
@@ -6294,9 +6294,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/sharing-buttons___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/sharing-buttons",
       "text": "Modify site's sharing buttons",
       "category": "Sharing",
@@ -6369,9 +6369,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/meta/external-services___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/meta/external-services",
       "text": "List third-party integrations available for WordPress.com and Jetpack sites via Keyring",
       "category": "Sharing",
@@ -6436,9 +6436,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/meta/external-services/service___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/meta/external-services/service",
       "text": "Get service info for WordPress.com or Jetpack integration",
       "category": "Sharing",
@@ -6510,9 +6510,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/publicize-connections/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/publicize-connections/",
       "text": "Get user's publicize connection list",
       "category": "Sharing",
@@ -6585,9 +6585,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/publicize-connections/publicize_connection_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/publicize-connections/publicize_connection_id",
       "text": "Get user's active publicize connection",
       "category": "Sharing",
@@ -6648,9 +6648,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/publicize-connections/publicize_connection_idd___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/publicize-connections/publicize_connection_idd",
       "text": "Update user's publicize connection",
       "category": "Sharing",
@@ -6735,9 +6735,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/publicize-connections/publicize_connection_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/publicize-connections/publicize_connection_id/delete",
       "text": "Delete a publicize connection",
       "category": "Sharing",
@@ -6810,9 +6810,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/publicize-connections/___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/publicize-connections/",
       "text": "Get publicize connections for a specific site",
       "category": "Sharing",
@@ -6896,9 +6896,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/publicize-connections/publicize_connection_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/publicize-connections/publicize_connection_id",
       "text": "Get publicize connection for specific site",
       "category": "Sharing",
@@ -6980,9 +6980,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/publicize-connections/publicize_connection_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/publicize-connections/publicize_connection_id",
       "text": "Update site's publicize connection",
       "category": "Sharing",
@@ -7065,9 +7065,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/publicize-connections/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/publicize-connections/new",
       "text": "Create publicize connection for specified site",
       "category": "Sharing",
@@ -7140,9 +7140,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/publicize-connections/publicize_connection_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/publicize-connections/publicize_connection_id/delete",
       "text": "Delete the specified publicize connection",
       "category": "Sharing",
@@ -7225,9 +7225,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/meta/sharing-buttons___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/meta/sharing-buttons",
       "text": "Get supported sharing button services list",
       "category": "Sharing",
@@ -7288,9 +7288,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/shortcodes/render___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/shortcodes/render",
       "text": "Get site's rendered shortcode",
       "category": "Site",
@@ -7367,9 +7367,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/shortcodes___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/shortcodes",
       "text": "Get site's available shortcodes",
       "category": "Site",
@@ -7441,9 +7441,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/embeds/render___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/embeds/render",
       "text": "Get site's rendered embed",
       "category": "Site",
@@ -7520,9 +7520,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/embeds___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/embeds",
       "text": "Get site's available embeds in a list",
       "category": "Site",
@@ -7594,9 +7594,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site___GET": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site",
       "text": "Get site details and information",
       "category": "Site",
@@ -7672,9 +7672,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/page-templates___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/page-templates",
       "text": "Get supported site page templates",
       "category": "Site",
@@ -7746,9 +7746,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/post-types___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/post-types",
       "text": "Get site's available post types list",
       "category": "Site",
@@ -7828,9 +7828,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site/post-counts/post_type___GET": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site/post-counts/post_type",
       "text": "Count posts by status in post type groups",
       "category": "Site",
@@ -7912,9 +7912,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/widgets___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/widgets",
       "text": "Get active and inactive site widgets",
       "category": "Site",
@@ -7986,9 +7986,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/widgets/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/widgets/new",
       "text": "Activate a widget on a site.",
       "category": "Site",
@@ -8061,9 +8061,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/settings___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/settings",
       "text": "Get WordAds site settings information in detail",
       "category": "Site",
@@ -8135,9 +8135,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/settings___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/settings",
       "text": "Update WordAds settings for a site",
       "category": "Site",
@@ -8210,9 +8210,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/earnings___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/earnings",
       "text": "Get site's WordAds earnings details",
       "category": "Site",
@@ -8284,9 +8284,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/tos___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/tos",
       "text": "Get site's WordAds TOS information",
       "category": "Site",
@@ -8358,9 +8358,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/tos___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/tos",
       "text": "Update site's WordAds TOS setting",
       "category": "Site",
@@ -8433,9 +8433,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/approve___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/approve",
       "text": "Simplify joining WordAds program approval request",
       "category": "Site",
@@ -8508,9 +8508,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/wordads/stats___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/wordads/stats",
       "text": "Get site's WordAds statistics",
       "category": "Site",
@@ -8598,9 +8598,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/sites___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/sites",
       "text": "Get user's site list in list",
       "category": "Site",
@@ -8681,9 +8681,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/sites/plugins___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/sites/plugins",
       "text": "Get plugins for user's sites",
       "category": "Site",
@@ -8744,9 +8744,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.2/sites/site/search___POST": {
+    {
       "provider_alias_intent": "/rest/v1.2/sites/site/search",
       "text": "Site Search with Elasticsearch Query API",
       "category": "Site",
@@ -8819,9 +8819,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/widgets/widget-id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/widgets/widget-id",
       "text": "Retrieve a widget on a site by its ID",
       "category": "Site",
@@ -8899,9 +8899,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/widgets/widget-id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/widgets/widget-id",
       "text": "Update a widget on a site by its ID",
       "category": "Site",
@@ -8980,9 +8980,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/widgets/widget-id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/widgets/widget-id/delete",
       "text": "Deactivate widget by ID, delete if already deactivated",
       "category": "Site",
@@ -9060,9 +9060,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/headers/theme_slug___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/headers/theme_slug",
       "text": "Get custom header options for specific theme",
       "category": "Site",
@@ -9140,9 +9140,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/headers/mine___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/headers/mine",
       "text": "Get site's custom header options",
       "category": "Site",
@@ -9214,9 +9214,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/headers/mine___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/headers/mine",
       "text": "Customize site header options",
       "category": "Site",
@@ -9289,9 +9289,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats",
       "text": "Get a site's stats",
       "category": "Stats",
@@ -9363,9 +9363,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/summary___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/summary",
       "text": "Summarize site's views, visitors, likes, and comments",
       "category": "Stats",
@@ -9453,9 +9453,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/top-posts___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/top-posts",
       "text": "View a site's top posts and pages by views",
       "category": "Stats",
@@ -9551,9 +9551,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/video/post_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/video/post_id",
       "text": "View the details of a single video",
       "category": "Stats",
@@ -9644,9 +9644,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/referrers___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/referrers",
       "text": "View a site's referrers",
       "category": "Stats",
@@ -9750,9 +9750,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/clicks___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/clicks",
       "text": "View a site's outbound clicks",
       "category": "Stats",
@@ -9856,9 +9856,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/tags___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/tags",
       "text": "View a site's views by tags and categories",
       "category": "Stats",
@@ -9937,9 +9937,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/top-authors___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/top-authors",
       "text": "View a site's top authors",
       "category": "Stats",
@@ -10043,9 +10043,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/comments___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/comments",
       "text": "View a site's top comment authors and most-commented posts",
       "category": "Stats",
@@ -10117,9 +10117,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/video-plays___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/video-plays",
       "text": "View a site's video plays",
       "category": "Stats",
@@ -10211,9 +10211,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/file-downloads___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/file-downloads",
       "text": "View a site's file downloads",
       "category": "Stats",
@@ -10313,9 +10313,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.928Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/post/post_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/post/post_id",
       "text": "View a post's views",
       "category": "Stats",
@@ -10397,9 +10397,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/country-views___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/country-views",
       "text": "View a site's views by country",
       "category": "Stats",
@@ -10507,9 +10507,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/followers___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/followers",
       "text": "View a site's followers",
       "category": "Stats",
@@ -10598,9 +10598,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/comment-followers___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/comment-followers",
       "text": "View a site's comment followers",
       "category": "Stats",
@@ -10682,9 +10682,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/referrers/spam/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/referrers/spam/new",
       "text": "Report a referrer as spam",
       "category": "Stats",
@@ -10762,9 +10762,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/referrers/spam/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/referrers/spam/delete",
       "text": "Unreport a referrer as spam",
       "category": "Stats",
@@ -10842,9 +10842,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/publicize___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/publicize",
       "text": "View a site's publicize follower counts",
       "category": "Stats",
@@ -10916,9 +10916,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/search-terms___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/search-terms",
       "text": "View search terms used to find the site",
       "category": "Stats",
@@ -11023,9 +11023,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/views/posts___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/views/posts",
       "text": "View the total number of views for each post 🚧",
       "category": "Stats",
@@ -11054,9 +11054,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/stats/streak___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/stats/streak",
       "text": "Get stats for Calendar Heatmap",
       "category": "Stats",
@@ -11143,9 +11143,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/categories___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/categories",
       "text": "Get a list of a site's categories",
       "category": "Taxonomy",
@@ -11246,9 +11246,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/tags___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/tags",
       "text": "Get a list of a site's tags",
       "category": "Taxonomy",
@@ -11349,9 +11349,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/categories/slug-category___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/categories/slug-category",
       "text": "Get information about a single category",
       "category": "Taxonomy",
@@ -11433,9 +11433,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/categories/slug-category___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/categories/slug-category",
       "text": "Edit a category",
       "category": "Taxonomy",
@@ -11518,9 +11518,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/tags/slug-tag___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/tags/slug-tag",
       "text": "Get details for single tag",
       "category": "Taxonomy",
@@ -11602,9 +11602,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/tags/slug-tag___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/tags/slug-tag",
       "text": "Edit a tag",
       "category": "Taxonomy",
@@ -11687,9 +11687,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug",
       "text": "Get details for a specific term",
       "category": "Taxonomy",
@@ -11781,9 +11781,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug",
       "text": "Edit a term",
       "category": "Taxonomy",
@@ -11876,9 +11876,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/post-types/post_type/taxonomies___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/post-types/post_type/taxonomies",
       "text": "Get post type's associated taxonomies",
       "category": "Taxonomy",
@@ -11960,9 +11960,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/taxonomies/taxonomy/terms___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/taxonomies/taxonomy/terms",
       "text": "Get a list of a site's terms by taxonomy",
       "category": "Taxonomy",
@@ -12073,9 +12073,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/categories/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/categories/new",
       "text": "Create a new category",
       "category": "Taxonomy",
@@ -12148,9 +12148,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/tags/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/tags/new",
       "text": "Create a new tag",
       "category": "Taxonomy",
@@ -12223,9 +12223,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/categories/slug-category/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/categories/slug-category/delete",
       "text": "Delete a category",
       "category": "Taxonomy",
@@ -12308,9 +12308,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/tags/slug-tag/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/tags/slug-tag/delete",
       "text": "Delete a tag",
       "category": "Taxonomy",
@@ -12393,9 +12393,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/taxonomies/taxonomy/terms/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/taxonomies/taxonomy/terms/new",
       "text": "Create a new term",
       "category": "Taxonomy",
@@ -12478,9 +12478,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/taxonomies/taxonomy/terms/slug-slug/delete",
       "text": "Delete a term",
       "category": "Taxonomy",
@@ -12573,9 +12573,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/users___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/users",
       "text": "Get site user's list",
       "category": "Users",
@@ -12689,9 +12689,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/users/user_id___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/users/user_id",
       "text": "Update user's details on a site",
       "category": "Users",
@@ -12774,9 +12774,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/users/login-user_id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/users/login-user_id",
       "text": "Get site user's information using their login",
       "category": "Users",
@@ -12858,9 +12858,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/sites/site/users/user_id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/sites/site/users/user_id/delete",
       "text": "Delete or removes user's from site",
       "category": "Users",
@@ -12943,9 +12943,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/users/suggest___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/users/suggest",
       "text": "Fetch suggested user's list for mentions",
       "category": "Users",
@@ -13027,9 +13027,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me",
       "text": "Get metadata about the current user's",
       "category": "Users",
@@ -13095,9 +13095,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/billing-history___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/billing-history",
       "text": "Get user's billing history and upcoming charges",
       "category": "Users",
@@ -13158,9 +13158,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings",
       "text": "Get user's settings",
       "category": "Users",
@@ -13221,9 +13221,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings",
       "text": "Update user's settings",
       "category": "Users",
@@ -13284,9 +13284,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/preferences___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/preferences",
       "text": "Get user's settings",
       "category": "Users",
@@ -13347,9 +13347,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/preferences___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/preferences",
       "text": "Update user's preferences",
       "category": "Users",
@@ -13410,9 +13410,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings/password/validate___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings/password/validate",
       "text": "Check user's new password strength",
       "category": "Users",
@@ -13473,9 +13473,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings/profile-links___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings/profile-links",
       "text": "Get user's profile links",
       "category": "Users",
@@ -13536,9 +13536,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings/profile-links/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings/profile-links/new",
       "text": "Add a link to user's profile",
       "category": "Users",
@@ -13599,9 +13599,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/settings/profile-links/slug/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/settings/profile-links/slug/delete",
       "text": "Delete user profile link",
       "category": "Users",
@@ -13674,9 +13674,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/connected-applications___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/connected-applications",
       "text": "Get user's linked applications",
       "category": "Users",
@@ -13737,9 +13737,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/connected-applications/id___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/connected-applications/id",
       "text": "Get one of current user's connected applications",
       "category": "Users",
@@ -13811,9 +13811,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/connected-applications/id/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/connected-applications/id/delete",
       "text": "Delete one of current user's connected application access tokens",
       "category": "Users",
@@ -13886,9 +13886,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/two-step___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/two-step",
       "text": "Get user's two-factor authentication details",
       "category": "Users",
@@ -13949,9 +13949,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/two-step/sms/new___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/two-step/sms/new",
       "text": "Sends SMS verification code to user",
       "category": "Users",
@@ -14012,9 +14012,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/me/likes___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/me/likes",
       "text": "Get current user's liked items list",
       "category": "Users",
@@ -14103,9 +14103,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid",
       "text": "Get the metadata for a specified VideoPress video",
       "category": "Videos",
@@ -14193,9 +14193,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid/poster___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid/poster",
       "text": "Get the poster for a specified VideoPress video",
       "category": "Videos",
@@ -14267,9 +14267,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid/posterr___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid/posterr",
       "text": "Upload and set a poster for a specified VideoPress video",
       "category": "Videos",
@@ -14342,9 +14342,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid/playlist/format___GET": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid/playlist/format",
       "text": "Get the poster for a specified VideoPress video",
       "category": "Videos",
@@ -14430,9 +14430,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid/tracks___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid/tracks",
       "text": "Add subtitles to a VideoPress video",
       "category": "Videos",
@@ -14505,9 +14505,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     },
-    "wordpress__/rest/v1.1/videos/guid/tracks/delete___POST": {
+    {
       "provider_alias_intent": "/rest/v1.1/videos/guid/tracks/delete",
       "text": "Delete subtitle track for VideoPress video",
       "category": "Videos",
@@ -14580,7 +14580,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.929Z"
+      "updated_at": "2025-11-11T15:37:35.647Z"
     }
-  }
+  ]
 }

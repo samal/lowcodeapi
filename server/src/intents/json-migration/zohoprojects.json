@@ -66,8 +66,8 @@
     "total_api": 15,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "routes": {
-    "zohoprojects__/restapi/portals___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/restapi/portals",
       "text": "All Portals",
       "category": "Portals",
@@ -103,9 +103,9 @@
       "scope": "ZohoProjects.portals.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.027Z"
     },
-    "zohoprojects__/restapi/portal/portalid___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid",
       "text": "Portal Details",
       "category": "Portals",
@@ -149,9 +149,9 @@
       "scope": "ZohoProjects.portals.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/api/v3/portal/portal_id/portal_export___POST": {
+    {
       "provider_alias_intent": "/api/v3/portal/portal_id/portal_export",
       "text": "Schedule Portal Data Backup",
       "category": "Portals",
@@ -201,9 +201,9 @@
       "scope": "ZohoProjects.portals.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/api/v3/portal/portal_id+/portal_export/export_id/status___GET": {
+    {
       "provider_alias_intent": "/api/v3/portal/portal_id+/portal_export/export_id/status",
       "text": "Portal Data Backup Status",
       "category": "Portals",
@@ -253,9 +253,9 @@
       "scope": "ZohoProjects.portals.READ, ZohoFiles.files.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects",
       "text": "All Projects",
       "category": "Projects",
@@ -299,9 +299,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects/projectid___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects/projectid",
       "text": "Project Details",
       "category": "Projects",
@@ -351,9 +351,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/module/projects/layouts___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/module/projects/layouts",
       "text": "Get Project Layouts",
       "category": "Projects",
@@ -403,9 +403,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/module/projects/layouts/layoutid___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/module/projects/layouts/layoutid",
       "text": "Get Layout Details",
       "category": "Projects",
@@ -449,9 +449,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects/customfields___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects/customfields",
       "text": "Get Project Custom Fields",
       "category": "Projects",
@@ -495,9 +495,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/module/projects/status___GET": {
+    {
       "provider_alias_intent": " /restapi/portal/portalid/module/projects/status",
       "text": "Get Project Custom Status",
       "category": "Projects",
@@ -541,9 +541,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects/groups___GET": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects/groups",
       "text": "Get Project Groups",
       "category": "Projects",
@@ -587,9 +587,9 @@
       "scope": "ZohoProjects.projects.READ",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projectgroups___POST": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projectgroups",
       "text": "Create a Project Group",
       "category": "Projects",
@@ -633,9 +633,9 @@
       "scope": "ZohoProjects.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects___POST": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects",
       "text": "Create a Project",
       "category": "Projects",
@@ -679,9 +679,9 @@
       "scope": "ZohoProjects.projects.CREATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects/projectid___POST": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects/projectid",
       "text": "Update a Project",
       "category": "Projects",
@@ -731,9 +731,9 @@
       "scope": "ZohoProjects.projects.UPDATE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     },
-    "zohoprojects__/restapi/portal/portalid/projects/projectid___DELETE": {
+    {
       "provider_alias_intent": "/restapi/portal/portalid/projects/projectid",
       "text": "Delete a Project",
       "category": "Projects",
@@ -783,7 +783,7 @@
       "scope": "ZohoProjects.projects.DELETE",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:09.127Z"
+      "updated_at": "2025-11-11T15:37:36.028Z"
     }
-  }
+  ]
 }

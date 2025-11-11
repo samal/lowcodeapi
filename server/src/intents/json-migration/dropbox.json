@@ -50,8 +50,8 @@
     "total_api": 189,
     "credential_link": "https://www.dropbox.com/developers/apps"
   },
-  "routes": {
-    "dropbox__/2/account/set_profile_photo___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/2/account/set_profile_photo",
       "text": "Sets a user's profile photo",
       "category": "Account",
@@ -85,9 +85,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.209Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/add___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/add",
       "text": "Add property groups to a Dropbox file",
       "category": "File Properties",
@@ -129,9 +129,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.209Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/overwrite___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/overwrite",
       "text": "Overwrite property groups associated with a file",
       "category": "File Properties",
@@ -173,9 +173,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.209Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/remove___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/remove",
       "text": "Permanently removes the specified property group from the file",
       "category": "File Properties",
@@ -222,9 +222,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.209Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/search___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/search",
       "text": "Search across property templates for particular property field values",
       "category": "File Properties",
@@ -263,9 +263,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/search/continue___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/search/continue",
       "text": "use this to paginate through all search results.",
       "category": "File Properties",
@@ -299,9 +299,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/properties/update___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/properties/update",
       "text": "Add, update or remove properties associated with the supplied file and templates",
       "category": "File Properties",
@@ -343,9 +343,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/add_for_user___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/add_for_user",
       "text": "Add a template associated with a user",
       "category": "File Properties",
@@ -389,9 +389,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/list_for_user___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/list_for_user",
       "text": "Get the template identifiers for a team",
       "category": "File Properties",
@@ -419,9 +419,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/remove_for_user___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/remove_for_user",
       "text": "Permanently removes the specified template",
       "category": "File Properties",
@@ -458,9 +458,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/update_for_user___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/update_for_user",
       "text": "Update a template associated with a user",
       "category": "File Properties",
@@ -509,9 +509,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/get_for_team___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/get_for_team",
       "text": "Get the schema for a specified template",
       "category": "File Properties",
@@ -548,9 +548,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/remove_for_team___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/remove_for_team",
       "text": "Permanently removes the specified template created from templates/add_for_user",
       "category": "File Properties",
@@ -587,9 +587,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/update_for_team___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/update_for_team",
       "text": "Update a template associated with a team",
       "category": "File Properties",
@@ -635,9 +635,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_properties/templates/add_for_team___POST": {
+    {
       "provider_alias_intent": "/2/file_properties/templates/add_for_team",
       "text": "Add a template associated with a team",
       "category": "File Properties",
@@ -681,9 +681,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/count___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/count",
       "text": "Returns the total number of file requests owned by this user",
       "category": "File Request",
@@ -711,9 +711,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/create___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/create",
       "text": "Creates a file request for this user",
       "category": "File Request",
@@ -764,9 +764,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/delete___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/delete",
       "text": "Delete a batch of closed file requests",
       "category": "File Request",
@@ -800,9 +800,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/delete_all_closed___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/delete_all_closed",
       "text": "Delete all closed file requests owned by this user",
       "category": "File Request",
@@ -830,9 +830,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/get___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/get",
       "text": "Returns the specified file request.",
       "category": "File Request",
@@ -866,9 +866,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/list_v2___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/list_v2",
       "text": "Returns a list of file requests owned by this user",
       "category": "File Request",
@@ -902,9 +902,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/list/continue",
       "text": "use this to paginate through all file requests",
       "category": "File Request",
@@ -938,9 +938,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/file_requests/update___POST": {
+    {
       "provider_alias_intent": "/2/file_requests/update",
       "text": "Update a file request",
       "category": "File Request",
@@ -999,9 +999,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/copy_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/copy_v2",
       "text": "Copy a file or folder to a different location in the user's Dropbox",
       "category": "Files",
@@ -1066,9 +1066,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/copy_batch_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/copy_batch_v2",
       "text": "Copy multiple files or folders to different locations at once in the user's Dropbox",
       "category": "Files",
@@ -1111,9 +1111,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/copy_batch/check_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/copy_batch/check_v2",
       "text": "Returns the status of an asynchronous job for Files",
       "category": "Files",
@@ -1147,9 +1147,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/copy_reference/get___POST": {
+    {
       "provider_alias_intent": "/2/files/copy_reference/get",
       "text": "Get a copy reference to a file or folder",
       "category": "Files",
@@ -1186,9 +1186,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/copy_reference/save___POST": {
+    {
       "provider_alias_intent": "/2/files/copy_reference/save",
       "text": "Save a copy reference returned by copy_reference/get",
       "category": "Files",
@@ -1227,9 +1227,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/create_folder_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/create_folder_v2",
       "text": "Create a folder at a given path",
       "category": "Files",
@@ -1276,9 +1276,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/create_folder_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/create_folder_batch",
       "text": "Create multiple folders at once",
       "category": "Files",
@@ -1334,9 +1334,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/create_folder_batch/check___POST": {
+    {
       "provider_alias_intent": "/2/files/create_folder_batch/check",
       "text": "Returns the status of an asynchronous job for create_folder_batch",
       "category": "Files",
@@ -1370,9 +1370,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/delete_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/delete_v2",
       "text": "Delete the file or folder at a given path",
       "category": "Files",
@@ -1414,9 +1414,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/delete_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/delete_batch",
       "text": "Delete multiple files or folders at once",
       "category": "Files",
@@ -1449,9 +1449,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/delete_batch/check___POST": {
+    {
       "provider_alias_intent": "/2/files/delete_batch/check",
       "text": "Returns the status of an asynchronous job for delete_batch",
       "category": "Files",
@@ -1485,9 +1485,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/download___POST": {
+    {
       "provider_alias_intent": "/2/files/download",
       "text": "Download a file from a user's Dropbox",
       "category": "Files",
@@ -1524,9 +1524,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/download_zip___POST": {
+    {
       "provider_alias_intent": "/2/files/download_zip",
       "text": "Download a folder from the user's Dropbox, as a zip file",
       "category": "Files",
@@ -1563,9 +1563,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/export___POST": {
+    {
       "provider_alias_intent": "/2/files/export",
       "text": "Export a file from a user's Dropbox",
       "category": "Files",
@@ -1606,9 +1606,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_file_lock_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/get_file_lock_batch",
       "text": "Return the lock metadata for the given list of paths",
       "category": "Files",
@@ -1642,9 +1642,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_preview___POST": {
+    {
       "provider_alias_intent": "/2/files/get_preview",
       "text": "Get a preview for a file",
       "category": "Files",
@@ -1681,9 +1681,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_temporary_link___POST": {
+    {
       "provider_alias_intent": "/2/files/get_temporary_link",
       "text": "Get a temporary link to stream content of a file",
       "category": "Files",
@@ -1720,9 +1720,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_temporary_upload_link___POST": {
+    {
       "provider_alias_intent": "/2/files/get_temporary_upload_link",
       "text": "Get a one-time use temporary upload link to upload a file",
       "category": "Files",
@@ -1761,9 +1761,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_thumbnail_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/get_thumbnail_v2",
       "text": "Get a thumbnail for an image",
       "category": "Files",
@@ -1812,9 +1812,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/get_thumbnail_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/get_thumbnail_batch",
       "text": "Get thumbnails for a list of images",
       "category": "Files",
@@ -1848,9 +1848,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/list_folder___POST": {
+    {
       "provider_alias_intent": "/2/files/list_folder",
       "text": "Starts returning the contents of a folder",
       "category": "Files",
@@ -1946,9 +1946,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/list_folder/continue___POST": {
+    {
       "provider_alias_intent": "/2/files/list_folder/continue",
       "text": "use this to paginate through all files and retrieve updates to the folder",
       "category": "Files",
@@ -1982,9 +1982,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/list_folder/get_latest_cursor___POST": {
+    {
       "provider_alias_intent": "/2/files/list_folder/get_latest_cursor",
       "text": "A way to quickly get a cursor for the folder's state",
       "category": "Files",
@@ -2081,9 +2081,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/list_folder/longpoll___POST": {
+    {
       "provider_alias_intent": "/2/files/list_folder/longpoll",
       "text": "A longpoll endpoint to wait for changes on an account",
       "category": "Files",
@@ -2122,9 +2122,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/list_revisions___POST": {
+    {
       "provider_alias_intent": "/2/files/list_revisions",
       "text": "Returns revisions for files based on a file path or a file id",
       "category": "Files",
@@ -2171,9 +2171,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/lock_file_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/lock_file_batch",
       "text": "Lock the files at the given paths",
       "category": "Files",
@@ -2207,9 +2207,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/move_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/move_v2",
       "text": "Move a file or folder to a different location",
       "category": "Files",
@@ -2274,9 +2274,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/move_batch_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/move_batch_v2",
       "text": "Move multiple files or folders to different locations at once",
       "category": "Files",
@@ -2328,9 +2328,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/move_batch/check_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/move_batch/check_v2",
       "text": "It returns list of results for each entry",
       "category": "Files",
@@ -2364,9 +2364,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/paper/create___POST": {
+    {
       "provider_alias_intent": "/2/files/paper/create",
       "text": "Creates a new Paper doc with the provided content",
       "category": "Files",
@@ -2405,9 +2405,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/paper/update___POST": {
+    {
       "provider_alias_intent": "/2/files/paper/update",
       "text": "Updates an existing Paper doc with the provided content",
       "category": "Files",
@@ -2459,9 +2459,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/permanently_delete___POST": {
+    {
       "provider_alias_intent": "/2/files/permanently_delete",
       "text": "Permanently delete the file or folder at a given path",
       "category": "Files",
@@ -2503,9 +2503,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/restore___POST": {
+    {
       "provider_alias_intent": "/2/files/restore",
       "text": "Restore a specific revision of a file to the given path",
       "category": "Files",
@@ -2548,9 +2548,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/save_url___POST": {
+    {
       "provider_alias_intent": "/2/files/save_url",
       "text": "Save the data from a specified URL into a file",
       "category": "Files",
@@ -2589,9 +2589,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/save_url/check_job_status___POST": {
+    {
       "provider_alias_intent": "/2/files/save_url/check_job_status",
       "text": "Check the status of a save url job",
       "category": "Files",
@@ -2625,9 +2625,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/search_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/search_v2",
       "text": "Searches for files and folders",
       "category": "Files",
@@ -2669,9 +2669,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/search/continue_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/search/continue_v2",
       "text": "Fetches the next page of search results returned from search",
       "category": "Files",
@@ -2708,9 +2708,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/tags/add___POST": {
+    {
       "provider_alias_intent": "/2/files/tags/add",
       "text": "Add a tag to an item",
       "category": "Files",
@@ -2749,9 +2749,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/tags/get___POST": {
+    {
       "provider_alias_intent": "/2/files/tags/get",
       "text": "Get list of tags assigned to items",
       "category": "Files",
@@ -2785,9 +2785,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/tags/remove___POST": {
+    {
       "provider_alias_intent": "/2/files/tags/remove",
       "text": "Remove a tag from an item",
       "category": "Files",
@@ -2826,9 +2826,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/unlock_file_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/unlock_file_batch",
       "text": "Unlock the files at the given paths",
       "category": "Files",
@@ -2862,9 +2862,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__https://content.dropboxapi.com/2/files/upload___POST": {
+    {
       "provider_alias_intent": "https://content.dropboxapi.com/2/files/upload",
       "text": "Create a new file with the contents provided in the request",
       "category": "Files",
@@ -2945,9 +2945,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__https://content.dropboxapi.com/2/files/upload_session/append_v2___POST": {
+    {
       "provider_alias_intent": "https://content.dropboxapi.com/2/files/upload_session/append_v2",
       "text": "Append more data to an upload session",
       "category": "Files",
@@ -2994,9 +2994,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__https://content.dropboxapi.com/2/files/upload_session/finish___POST": {
+    {
       "provider_alias_intent": "https://content.dropboxapi.com/2/files/upload_session/finish",
       "text": "Finish an upload session and save the uploaded data to the given file path",
       "category": "Files",
@@ -3039,9 +3039,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/upload_session/finish_batch_v2___POST": {
+    {
       "provider_alias_intent": "/2/files/upload_session/finish_batch_v2",
       "text": "This route helps you commit many files at once into a user's Dropbox",
       "category": "Files",
@@ -3075,9 +3075,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/upload_session/finish_batch/check___POST": {
+    {
       "provider_alias_intent": "/2/files/upload_session/finish_batch/check",
       "text": "Returns the status of an asynchronous job for upload_session/finish_batch",
       "category": "Files",
@@ -3111,9 +3111,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__https://content.dropboxapi.com/2/files/upload_session/start___POST": {
+    {
       "provider_alias_intent": "https://content.dropboxapi.com/2/files/upload_session/start",
       "text": "Upload sessions allow you to upload a single file in one or more requests",
       "category": "Files",
@@ -3160,9 +3160,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/files/upload_session/start_batch___POST": {
+    {
       "provider_alias_intent": "/2/files/upload_session/start_batch",
       "text": "This route starts batch of upload_sessions",
       "category": "Files",
@@ -3200,9 +3200,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/add_file_member___POST": {
+    {
       "provider_alias_intent": "/2/sharing/add_file_member",
       "text": "Adds specified members to a file",
       "category": "Sharing",
@@ -3271,9 +3271,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/add_folder_member___POST": {
+    {
       "provider_alias_intent": "/2/sharing/add_folder_member",
       "text": "Allows an owner or editor of a shared folder to add another member",
       "category": "Sharing",
@@ -3328,9 +3328,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/check_job_status___POST": {
+    {
       "provider_alias_intent": "/2/sharing/check_job_status",
       "text": "Returns the status of an asynchronous job",
       "category": "Sharing",
@@ -3364,9 +3364,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/check_share_job_status___POST": {
+    {
       "provider_alias_intent": "/check_share_job_status",
       "text": "Returns the status of an asynchronous job for sharing a folder",
       "category": "Sharing",
@@ -3400,9 +3400,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/create_shared_link_with_settings___POST": {
+    {
       "provider_alias_intent": "/2/sharing/create_shared_link_with_settings",
       "text": "Create a shared link with custom settings",
       "category": "Sharing",
@@ -3443,9 +3443,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/get_file_metadata___POST": {
+    {
       "provider_alias_intent": "/2/sharing/get_file_metadata",
       "text": "Returns shared file metadata",
       "category": "Sharing",
@@ -3486,9 +3486,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/get_folder_metadata___POST": {
+    {
       "provider_alias_intent": "/2/sharing/get_folder_metadata",
       "text": "Returns shared folder metadata by its folder ID",
       "category": "Sharing",
@@ -3529,9 +3529,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/get_shared_link_file___POST": {
+    {
       "provider_alias_intent": "/2/sharing/get_shared_link_file",
       "text": "Download the shared link's file from a user's Dropbox",
       "category": "Sharing",
@@ -3573,9 +3573,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/get_shared_link_metadata___POST": {
+    {
       "provider_alias_intent": "/2/sharing/get_shared_link_metadata",
       "text": "Get the shared link's metadata",
       "category": "Sharing",
@@ -3617,9 +3617,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_file_members___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_file_members",
       "text": "Use to obtain the members who have been invited to a file",
       "category": "Sharing",
@@ -3674,9 +3674,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_file_members/batch___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_file_members/batch",
       "text": "Get members of multiple files at once",
       "category": "Sharing",
@@ -3718,9 +3718,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_file_members/continue___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_file_members/continue",
       "text": "use this to paginate through all shared folder members",
       "category": "Sharing",
@@ -3754,9 +3754,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_folder_members___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_folder_members",
       "text": "Return the list of all shared folders the current user has access to",
       "category": "Sharing",
@@ -3794,9 +3794,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_folder_members/continue___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_folder_members/continue",
       "text": "use this to paginate through all shared folders",
       "category": "Sharing",
@@ -3830,9 +3830,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_folders___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_folders",
       "text": "Return the list of all shared folders the current user can mount or unmount",
       "category": "Sharing",
@@ -3870,9 +3870,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_folders/continue___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_folders/continue",
       "text": "use this to paginate through all mountable shared folders",
       "category": "Sharing",
@@ -3906,9 +3906,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_mountable_folders___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_mountable_folders",
       "text": "Returns a list of all files shared with current user",
       "category": "Sharing",
@@ -3946,9 +3946,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_received_files/continue___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_received_files/continue",
       "text": "Get more results with a cursor from list_received_files",
       "category": "Sharing",
@@ -3982,9 +3982,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/list_shared_links___POST": {
+    {
       "provider_alias_intent": "/2/sharing/list_shared_links",
       "text": "List shared links of this user",
       "category": "Sharing",
@@ -4032,9 +4032,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/modify_shared_link_settings___POST": {
+    {
       "provider_alias_intent": "/2/sharing/modify_shared_link_settings",
       "text": "Modify the shared link's settings",
       "category": "Sharing",
@@ -4082,9 +4082,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/mount_folder___POST": {
+    {
       "provider_alias_intent": "/2/sharing/mount_folder\n",
       "text": "The current user mounts the designated folder",
       "category": "Sharing",
@@ -4121,9 +4121,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/relinquish_file_membership___POST": {
+    {
       "provider_alias_intent": "/2/sharing/relinquish_file_membership",
       "text": "The current user relinquishes their membership in the designated file",
       "category": "Sharing",
@@ -4160,9 +4160,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/relinquish_folder_membership___POST": {
+    {
       "provider_alias_intent": "/2/sharing/relinquish_folder_membership",
       "text": "The current user relinquishes their membership in the designated shared folder",
       "category": "Sharing",
@@ -4208,9 +4208,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/remove_file_member_2___POST": {
+    {
       "provider_alias_intent": "/2/sharing/remove_file_member_2",
       "text": "Removes a specified member from the file",
       "category": "Sharing",
@@ -4252,9 +4252,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/remove_folder_member___POST": {
+    {
       "provider_alias_intent": "/2/sharing/remove_folder_member",
       "text": "Allows an owner or editor of a shared folder to remove another member",
       "category": "Sharing",
@@ -4305,9 +4305,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/revoke_shared_link___POST": {
+    {
       "provider_alias_intent": "/2/sharing/revoke_shared_link",
       "text": "Revoke a shared link",
       "category": "Sharing",
@@ -4341,9 +4341,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.885Z"
     },
-    "dropbox__/2/sharing/set_access_inheritance___POST": {
+    {
       "provider_alias_intent": "/2/sharing/set_access_inheritance",
       "text": "Change the inheritance policy of an existing Shared Folder",
       "category": "Sharing",
@@ -4385,9 +4385,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/share_folder___POST": {
+    {
       "provider_alias_intent": "/2/sharing/share_folder",
       "text": "Share a folder with collaborators",
       "category": "Sharing",
@@ -4462,9 +4462,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/transfer_folder___POST": {
+    {
       "provider_alias_intent": "/2/sharing/transfer_folder",
       "text": "Transfer ownership of a shared folder to a member of the shared folder",
       "category": "Sharing",
@@ -4506,9 +4506,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/unmount_folder___POST": {
+    {
       "provider_alias_intent": "/2/sharing/unmount_folder",
       "text": "The current user unmounts the designated folder",
       "category": "Sharing",
@@ -4545,9 +4545,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/unshare_file___POST": {
+    {
       "provider_alias_intent": "/2/sharing/unshare_file",
       "text": "Remove all members from this file",
       "category": "Sharing",
@@ -4584,9 +4584,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/unshare_folder___POST": {
+    {
       "provider_alias_intent": "/2/sharing/unshare_folder",
       "text": "Allows a shared folder owner to unshare the folder",
       "category": "Sharing",
@@ -4632,9 +4632,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/update_file_member___POST": {
+    {
       "provider_alias_intent": "/2/sharing/update_file_member",
       "text": "Changes a member's access on a shared file",
       "category": "Sharing",
@@ -4681,9 +4681,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/update_folder_member___POST": {
+    {
       "provider_alias_intent": "/2/sharing/update_folder_member",
       "text": "Allows an owner or editor of a shared folder to update another member's permissions",
       "category": "Sharing",
@@ -4730,9 +4730,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/sharing/update_folder_policy___POST": {
+    {
       "provider_alias_intent": "/2/sharing/update_folder_policy",
       "text": "Update the sharing policies for a shared folder",
       "category": "Sharing",
@@ -4793,9 +4793,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/devices/list_member_devices___POST": {
+    {
       "provider_alias_intent": "/2/team/devices/list_member_devices",
       "text": "List all device sessions of a team's member",
       "category": "Team",
@@ -4856,9 +4856,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/devices/list_members_devices___POST": {
+    {
       "provider_alias_intent": "/2/team/devices/list_members_devices",
       "text": "List all device sessions of a team",
       "category": "Team",
@@ -4918,9 +4918,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/devices/revoke_device_session___POST": {
+    {
       "provider_alias_intent": "/2/team/devices/revoke_device_session",
       "text": "Revoke a device session of a team's member",
       "category": "Team",
@@ -4964,9 +4964,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/devices/revoke_device_session_batch___POST": {
+    {
       "provider_alias_intent": "/2/team/devices/revoke_device_session_batch",
       "text": "Revoke a list of device sessions of team members",
       "category": "Team",
@@ -5000,9 +5000,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/features/get_values___POST": {
+    {
       "provider_alias_intent": "/2/team/features/get_values",
       "text": "Get the values for one or more featues",
       "category": "Team",
@@ -5036,9 +5036,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/get_info___POST": {
+    {
       "provider_alias_intent": "/2/team/get_info",
       "text": "Retrieves information about a team",
       "category": "Team",
@@ -5066,9 +5066,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/create___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/create",
       "text": "Creates a new, empty group, with a requested name",
       "category": "Team",
@@ -5119,9 +5119,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/delete___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/delete",
       "text": "Deletes a group ,The group is deleted immediately",
       "category": "Team",
@@ -5160,9 +5160,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/get_info___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/get_info",
       "text": "Retrieves information about one or more groups",
       "category": "Team",
@@ -5201,9 +5201,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/job_status/get___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/job_status/get",
       "text": "use this method to poll the status of granting/revoking group members' access to group-owned resources",
       "category": "Team",
@@ -5237,9 +5237,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/list___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/list",
       "text": "Lists groups on a team",
       "category": "Team",
@@ -5273,9 +5273,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/list/continue",
       "text": "retrieved from groups/list, use this to paginate through all groups",
       "category": "Team",
@@ -5309,9 +5309,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/members/add___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/members/add",
       "text": "Adds members to a group. The members are added immediately",
       "category": "Team",
@@ -5359,9 +5359,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/members/list___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/members/list",
       "text": "Lists members of a group. Permission : Team Information",
       "category": "Team",
@@ -5400,9 +5400,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/members/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/members/list/continue",
       "text": "use this to paginate through all members of the group",
       "category": "Team",
@@ -5436,9 +5436,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/members/remove___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/members/remove",
       "text": "Removes members from a group. The members are removed immediately",
       "category": "Team",
@@ -5486,9 +5486,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/members/set_access_type___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/members/set_access_type",
       "text": "Sets a member's access type in a group",
       "category": "Team",
@@ -5541,9 +5541,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/groups/update___POST": {
+    {
       "provider_alias_intent": "/2/team/groups/update",
       "text": "Updates a group's name and/or external ID",
       "category": "Team",
@@ -5598,9 +5598,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/create_policy___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/create_policy",
       "text": "Creates new legal hold policy",
       "category": "Team",
@@ -5657,9 +5657,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/get_policy___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/get_policy",
       "text": "Gets a legal hold by Id",
       "category": "Team",
@@ -5695,9 +5695,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/list_held_revisions___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/list_held_revisions",
       "text": "List the file metadata that's under the hold",
       "category": "Team",
@@ -5734,9 +5734,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/list_held_revisions_continue___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/list_held_revisions_continue",
       "text": "Continue listing the file metadata that's under the hold",
       "category": "Team",
@@ -5777,9 +5777,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/list_policies___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/list_policies",
       "text": "Lists legal holds on a team.",
       "category": "Team",
@@ -5817,9 +5817,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/release_policy___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/release_policy",
       "text": "Releases a legal hold by Id",
       "category": "Team",
@@ -5856,9 +5856,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/legal_holds/update_policy___POST": {
+    {
       "provider_alias_intent": "/2/team/legal_holds/update_policy",
       "text": "Updates a legal hold",
       "category": "Team",
@@ -5907,9 +5907,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/linked_apps/list_member_linked_apps___POST": {
+    {
       "provider_alias_intent": "/2/team/linked_apps/list_member_linked_apps",
       "text": "List all linked applications of the team member",
       "category": "Team",
@@ -5943,9 +5943,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/linked_apps/list_members_linked_apps___POST": {
+    {
       "provider_alias_intent": "/2/team/linked_apps/list_members_linked_apps",
       "text": "List all applications linked to the team members' accounts",
       "category": "Team",
@@ -5978,9 +5978,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/linked_apps/revoke_linked_app___POST": {
+    {
       "provider_alias_intent": "/2/team/linked_apps/revoke_linked_app",
       "text": "Revoke a linked application of the team member",
       "category": "Team",
@@ -6019,9 +6019,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/linked_apps/revoke_linked_app_batch___POST": {
+    {
       "provider_alias_intent": "/2/team/linked_apps/revoke_linked_app_batch",
       "text": "Revoke a list of linked applications of the team members",
       "category": "Team",
@@ -6055,9 +6055,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/excluded_users/add___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/excluded_users/add",
       "text": "Add users to member space limits excluded users list",
       "category": "Team",
@@ -6090,9 +6090,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/excluded_users/list___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/excluded_users/list",
       "text": "List member space limits excluded users",
       "category": "Team",
@@ -6126,9 +6126,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/excluded_users/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/excluded_users/list/continue",
       "text": "Continue listing member space limits excluded users",
       "category": "Team",
@@ -6162,9 +6162,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/excluded_users/remove___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/excluded_users/remove",
       "text": "Remove users from member space limits excluded users list",
       "category": "Team",
@@ -6197,9 +6197,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/get_custom_quota___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/get_custom_quota",
       "text": "Get users custom quota. A maximum of 1000 members can be specified in a single call.",
       "category": "Team",
@@ -6233,9 +6233,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/remove_custom_quota___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/remove_custom_quota",
       "text": "Remove users custom quota. A maximum of 1000 members can be specified in a single call",
       "category": "Team",
@@ -6269,9 +6269,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/member_space_limits/set_custom_quota___POST": {
+    {
       "provider_alias_intent": "/2/team/member_space_limits/set_custom_quota",
       "text": "Set users custom quota. Custom quota has to be at least 15GB.",
       "category": "Team",
@@ -6305,9 +6305,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/add_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/add_v2",
       "text": "Adds members to a team.",
       "category": "Team",
@@ -6350,9 +6350,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/add/job_status/get_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/add/job_status/get_v2",
       "text": "Once an async_job_id is returned from members/add:2 , use this to poll the status of the asynchronous request.",
       "category": "Team",
@@ -6386,9 +6386,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/delete_profile_photo_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/delete_profile_photo_v2",
       "text": "Deletes a team member's profile photo.",
       "category": "Team",
@@ -6422,9 +6422,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/get_available_team_member_roles___POST": {
+    {
       "provider_alias_intent": "/2/team/members/get_available_team_member_roles",
       "text": "Get available TeamMemberRoles for the connected team.",
       "category": "Team",
@@ -6452,9 +6452,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/get_info_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/get_info_v2",
       "text": "Returns information about multiple team members.",
       "category": "Team",
@@ -6488,9 +6488,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/list_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/list_v2",
       "text": "Lists members of a team.",
       "category": "Team",
@@ -6533,9 +6533,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/list/continue_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/list/continue_v2",
       "text": "Once a cursor has been retrieved from members/list:2 use this to paginate through all team members.",
       "category": "Team",
@@ -6569,9 +6569,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/move_former_member_files___POST": {
+    {
       "provider_alias_intent": "/2/team/members/move_former_member_files",
       "text": "Moves removed member's files to a different member.",
       "category": "Team",
@@ -6615,9 +6615,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/move_former_member_files/job_status/check___POST": {
+    {
       "provider_alias_intent": "/2/team/members/move_former_member_files/job_status/check",
       "text": "Once an async_job_id is returned from members/move_former_member_files , use this to poll the status of the asynchronous request.",
       "category": "Team",
@@ -6651,9 +6651,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/recover___POST": {
+    {
       "provider_alias_intent": "/2/team/members/recover",
       "text": "Recover a deleted member.",
       "category": "Team",
@@ -6687,9 +6687,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/remove___POST": {
+    {
       "provider_alias_intent": "/2/team/members/remove",
       "text": "Removes a member from a team.",
       "category": "Team",
@@ -6758,9 +6758,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/remove/job_status/get___POST": {
+    {
       "provider_alias_intent": "/2/team/members/remove/job_status/get",
       "text": "Once an async_job_id is returned from members/remove; use this to poll the status of the asynchronous request.",
       "category": "Team",
@@ -6794,9 +6794,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/secondary_emails/add___POST": {
+    {
       "provider_alias_intent": "/2/team/members/secondary_emails/add",
       "text": "Add secondary emails to users.",
       "category": "Team",
@@ -6830,9 +6830,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/secondary_emails/delete___POST": {
+    {
       "provider_alias_intent": "/2/team/members/secondary_emails/delete",
       "text": "Delete secondary emails from users.",
       "category": "Team",
@@ -6866,9 +6866,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/secondary_emails/resend_verification_emails___POST": {
+    {
       "provider_alias_intent": "/2/team/members/secondary_emails/resend_verification_emails",
       "text": "Resend secondary email verification emails.",
       "category": "Team",
@@ -6902,9 +6902,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/send_welcome_email___POST": {
+    {
       "provider_alias_intent": "/2/team/members/send_welcome_email",
       "text": "Sends welcome email to pending team member.",
       "category": "Team",
@@ -6948,9 +6948,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/set_admin_permissions_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/set_admin_permissions_v2",
       "text": "Updates a team member's permissions.",
       "category": "Team",
@@ -6991,9 +6991,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/set_profile_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/set_profile_v2",
       "text": "Updates a team member's profile.",
       "category": "Team",
@@ -7061,9 +7061,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/set_profile_photo_v2___POST": {
+    {
       "provider_alias_intent": "/2/team/members/set_profile_photo_v2",
       "text": "Updates a team member's profile photo.",
       "category": "Team",
@@ -7102,9 +7102,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/suspend___POST": {
+    {
       "provider_alias_intent": "/2/team/members/suspend",
       "text": "Suspend a member from a team.",
       "category": "Team",
@@ -7147,9 +7147,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/members/unsuspend___POST": {
+    {
       "provider_alias_intent": "/2/team/members/unsuspend",
       "text": "Unsuspend a member from a team.",
       "category": "Team",
@@ -7183,9 +7183,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/namespaces/list___POST": {
+    {
       "provider_alias_intent": "/2/team/namespaces/list",
       "text": "Returns a list of all team-accessible namespaces.",
       "category": "Team",
@@ -7213,9 +7213,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/namespaces/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/namespaces/list/continue",
       "text": "Once a cursor has been retrieved from namespaces/list; use this to paginate through all team-accessible namespaces. Duplicates may occur in the list.",
       "category": "Team",
@@ -7249,9 +7249,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/sharing_allowlist/add___POST": {
+    {
       "provider_alias_intent": "/2/team/sharing_allowlist/add",
       "text": "Endpoint adds Approve List entries.",
       "category": "Team",
@@ -7288,9 +7288,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/sharing_allowlist/list___POST": {
+    {
       "provider_alias_intent": "/2/team/sharing_allowlist/list",
       "text": "Lists Approve List entries for given team; from newest to oldest; returning up to `limit` entries at a time.",
       "category": "Team",
@@ -7324,9 +7324,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/sharing_allowlist/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/sharing_allowlist/list/continue",
       "text": "Lists entries associated with given team; starting from a the cursor.",
       "category": "Team",
@@ -7360,9 +7360,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/sharing_allowlist/remove___POST": {
+    {
       "provider_alias_intent": "/2/team/sharing_allowlist/remove",
       "text": "Endpoint removes Approve List entries.",
       "category": "Team",
@@ -7399,9 +7399,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/activate___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/activate",
       "text": "Sets an archived team folder's status to active.",
       "category": "Team",
@@ -7462,9 +7462,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/archive___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/archive",
       "text": "Sets an active team folder's status to archived and removes all folder and file members. This endpoint cannot be used for teams that have a shared team space.",
       "category": "Team",
@@ -7510,9 +7510,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/archive/check___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/archive/check",
       "text": "Returns the status of an asynchronous job for archiving a team folder.",
       "category": "Team",
@@ -7546,9 +7546,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/create___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/create",
       "text": "Creates a new; active; team folder with no members. This endpoint can only be used for teams that do not already have a shared team space.",
       "category": "Team",
@@ -7586,9 +7586,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/get_info___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/get_info",
       "text": "Retrieves metadata for team folders.",
       "category": "Team",
@@ -7625,9 +7625,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/list___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/list",
       "text": "Lists all team folders.",
       "category": "Team",
@@ -7661,9 +7661,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/list/continue___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/list/continue",
       "text": "Once a cursor has been retrieved from team_folder/list; use this to paginate through all team folders.",
       "category": "Team",
@@ -7697,9 +7697,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/permanently_delete___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/permanently_delete",
       "text": "Permanently deletes an archived team folder. This endpoint cannot be used for teams that have a shared team space.",
       "category": "Team",
@@ -7736,9 +7736,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/rename___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/rename",
       "text": "Changes an active team folder's name.",
       "category": "Team",
@@ -7780,9 +7780,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/team_folder/update_sync_settings___POST": {
+    {
       "provider_alias_intent": "/2/team/team_folder/update_sync_settings",
       "text": "Updates the sync settings on a team folder or its contents. Use of this endpoint requires that the team has team selective sync enabled.",
       "category": "Team",
@@ -7827,9 +7827,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team/token/get_authenticated_admin___POST": {
+    {
       "provider_alias_intent": "/2/team/token/get_authenticated_admin",
       "text": "Returns the member profile of the admin who generated the team access token used to make the call.",
       "category": "Team",
@@ -7857,9 +7857,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team_log/get_events___POST": {
+    {
       "provider_alias_intent": "/2/team_log/get_events",
       "text": "Retrieves team events.",
       "category": "Team Log",
@@ -7909,9 +7909,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/team_log/get_events/continue___POST": {
+    {
       "provider_alias_intent": "/2/team_log/get_events/continue",
       "text": "Once a cursor has been retrieved from get_events; use this to paginate through all events.",
       "category": "Team Log",
@@ -7945,9 +7945,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/users/features/get_values___POST": {
+    {
       "provider_alias_intent": "/2/users/features/get_values",
       "text": "Get a list of feature values that may be configured for the current account",
       "category": "Users",
@@ -7981,9 +7981,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/users/get_account___POST": {
+    {
       "provider_alias_intent": "/2/users/get_account",
       "text": "Get information about a user's account",
       "category": "Users",
@@ -8017,9 +8017,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/users/get_account_batch___POST": {
+    {
       "provider_alias_intent": "/2/users/get_account_batch",
       "text": "Get information about multiple user accounts",
       "category": "Users",
@@ -8053,9 +8053,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/users/get_current_account___POST": {
+    {
       "provider_alias_intent": "/2/users/get_current_account",
       "text": "Get information about the current user's account",
       "category": "Users",
@@ -8083,9 +8083,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/users/get_space_usage___POST": {
+    {
       "provider_alias_intent": "/2/users/get_space_usage",
       "text": "Get the space usage information for the current user's account",
       "category": "Users",
@@ -8113,9 +8113,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/contacts/delete_manual_contacts___POST": {
+    {
       "provider_alias_intent": "/2/contacts/delete_manual_contacts",
       "text": "Removes all manually added contacts",
       "category": "contacts",
@@ -8143,9 +8143,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     },
-    "dropbox__/2/contacts/delete_manual_contacts_batch___POST": {
+    {
       "provider_alias_intent": "/2/contacts/delete_manual_contacts_batch",
       "text": "Removes manually added contacts from the given list",
       "category": "contacts",
@@ -8179,7 +8179,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.210Z"
+      "updated_at": "2025-11-11T15:37:34.886Z"
     }
-  }
+  ]
 }

@@ -35,8 +35,8 @@
     "total_api": 3,
     "credential_link": "https://dev.runwayml.com/organization/3143d26a-fb91-4372-9de3-cee667139314/api-keys"
   },
-  "routes": {
-    "runwayml__/v1/image_to_video___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/image_to_video",
       "text": "Generate a video from an image",
       "category": "Start generating",
@@ -101,9 +101,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.433Z"
     },
-    "runwayml__/v1/tasks/id___GET": {
+    {
       "provider_alias_intent": "/v1/tasks/id",
       "text": "Get task detail",
       "category": "Task management",
@@ -131,9 +131,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.433Z"
     },
-    "runwayml__/v1/tasks/id___DELETE": {
+    {
       "provider_alias_intent": "/v1/tasks/id",
       "text": "Cancel or delete a task",
       "category": "Task management",
@@ -161,7 +161,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.812Z"
+      "updated_at": "2025-11-11T15:37:35.433Z"
     }
-  }
+  ]
 }

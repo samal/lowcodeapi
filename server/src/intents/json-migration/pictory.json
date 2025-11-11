@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "pictory__/pictoryapis/v1/awsconnections___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections",
       "text": "Create a new AWS connection",
       "category": "Private AWS Connections API",
@@ -48,9 +48,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/awsconnections___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections",
       "text": "Get all AWS connections",
       "category": "Private AWS Connections API",
@@ -77,9 +77,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/awsconnections/connectionid___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Get details of a specific AWS connection",
       "category": "Private AWS Connections API",
@@ -107,9 +107,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/awsconnections/connectionid___PUT": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Update an existing AWS connection",
       "category": "Private AWS Connections API",
@@ -163,9 +163,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/awsconnections/connectionid___DELETE": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Delete an AWS connection",
       "category": "Private AWS Connections API",
@@ -193,9 +193,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/media/generateurl___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/media/generateurl",
       "text": "Generate a signed URL for file upload",
       "category": " Upload Media Files to Blob Storage",
@@ -228,9 +228,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/voiceovers/tracks___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/voiceovers/tracks",
       "text": "Get voiceover tracks",
       "category": "VoiceOvers API",
@@ -252,9 +252,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/voiceovers/tracks___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/voiceovers/tracks",
       "text": "Add a new voiceover track",
       "category": "VoiceOvers API",
@@ -329,9 +329,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/video/storyboard___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/video/storyboard",
       "text": "Storyboard",
       "category": "Video Generation API",
@@ -391,9 +391,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/video/render___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/video/render",
       "text": "Render Video",
       "category": "Video Generation API",
@@ -438,9 +438,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/video/render/job_id___PUT": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/video/render/job_id",
       "text": "Render Video (PUT)",
       "category": "Video Generation API",
@@ -473,9 +473,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v2/transcription/highlights___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v2/transcription/highlights",
       "text": "Video-Summary",
       "category": "Video Summary and Transcription API",
@@ -509,9 +509,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v2/transcription___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v2/transcription",
       "text": "Transcription API",
       "category": "Video Summary and Transcription API",
@@ -556,9 +556,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/templates___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/templates",
       "text": "Create Template API",
       "category": "Bulk Video Generation",
@@ -585,9 +585,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/video/from-template___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/video/from-template",
       "text": "Template Video-Preview API",
       "category": "Bulk Video Generation",
@@ -618,9 +618,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/templates___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/templates",
       "text": "Get All Template API",
       "category": "Bulk Video Generation",
@@ -642,9 +642,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/templates/templateid___PUT": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Update Template API",
       "category": "Bulk Video Generation",
@@ -677,9 +677,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/templates/templateid___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Get Template by Id",
       "category": "Bulk Video Generation",
@@ -706,9 +706,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/templates/templateid___DELETE": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Delete Template by Id",
       "category": "Bulk Video Generation",
@@ -735,9 +735,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/brands/editvideo___POST": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/brands/editvideo",
       "text": "Create Brand API",
       "category": "Brand Kit APIs",
@@ -770,9 +770,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/v1/brands/editvideo___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/v1/brands/editvideo",
       "text": "Get Brand API",
       "category": "Brand Kit APIs",
@@ -794,9 +794,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/brands/editvideo/brandid___GET": {
+    {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Get Brand by Id",
       "category": "Brand Kit APIs",
@@ -823,9 +823,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/brands/editvideo/brandid___PUT": {
+    {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Update Brand",
       "category": "Brand Kit APIs",
@@ -850,9 +850,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     },
-    "pictory__/pictoryapis/brands/editvideo/brandid___DELETE": {
+    {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Delete Brand By Id",
       "category": "Brand Kit APIs",
@@ -879,7 +879,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T12:00:08.781Z"
+      "updated_at": "2025-11-11T15:37:35.379Z"
     }
-  }
+  ]
 }

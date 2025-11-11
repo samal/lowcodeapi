@@ -33,8 +33,8 @@
     "total_api": 2,
     "credential_link": "https://www.weatherunion.com/"
   },
-  "routes": {
-    "weatherunion__/gw/weather/external/v0/get_weather_data___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/gw/weather/external/v0/get_weather_data",
       "text": "API for current weather data at a lat, long",
       "category": "weather data",
@@ -71,9 +71,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.913Z"
+      "updated_at": "2025-11-11T15:37:35.620Z"
     },
-    "weatherunion__/gw/weather/external/v0/get_locality_weather_data___GET": {
+    {
       "provider_alias_intent": "/gw/weather/external/v0/get_locality_weather_data",
       "text": "API for current weather data in a locality",
       "category": "weather data",
@@ -106,7 +106,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.913Z"
+      "updated_at": "2025-11-11T15:37:35.620Z"
     }
-  }
+  ]
 }

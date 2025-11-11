@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "cloudinary__/v1_1/cloud_name/folders___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1_1/cloud_name/folders",
       "text": "Get root folders",
       "category": "Admin / Folders",
@@ -41,9 +41,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.124Z"
+      "updated_at": "2025-11-11T15:37:34.831Z"
     },
-    "cloudinary__/v1_1/cloud_name/folders/folder___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Get subfolders",
       "category": "Admin / Folders",
@@ -101,9 +101,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.124Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/folders/folder___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Create folder",
       "category": "Admin / Folders",
@@ -153,9 +153,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.124Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/folders/folder___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Delete folder",
       "category": "Admin / Folders",
@@ -205,9 +205,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
       "text": "Get metadata field",
       "category": "Structured metadata / Metadata",
@@ -247,9 +247,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
       "text": "Get a metadata field by external ID",
       "category": "Structured metadata / Metadata",
@@ -299,9 +299,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
       "text": "Create a metadata field",
       "category": "Structured metadata / Metadata",
@@ -347,9 +347,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource_restore___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource_restore",
       "text": "Restore entries in a metadata field datasource",
       "category": "Structured metadata / Metadata",
@@ -405,9 +405,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
       "text": "Update a metadata field by external ID",
       "category": "Structured metadata / Metadata",
@@ -463,9 +463,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
       "text": "Update a metadata field datasource",
       "category": "Structured metadata / Metadata",
@@ -521,9 +521,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
       "text": "Delete a metadata field by external ID",
       "category": "Structured metadata / Metadata",
@@ -573,9 +573,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
       "text": "Delete entries in a metadata field datasource",
       "category": "Structured metadata / Metadata",
@@ -630,9 +630,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_rules___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
       "text": "Get metadata rules",
       "category": "Structured metadata / Conditional metadata rules",
@@ -672,9 +672,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_rules___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
       "text": "Create a metadata rule",
       "category": "Structured metadata / Conditional metadata rules",
@@ -735,9 +735,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_rules/external_id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
       "text": "Update a metadata rule by id",
       "category": "Structured metadata / Conditional metadata rules",
@@ -808,9 +808,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/metadata_rules/external_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
       "text": "Delete a metadata rule by id",
       "category": "Structured metadata / Conditional metadata rules",
@@ -860,9 +860,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/ping___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/ping",
       "text": "Pings Cloudinary servers",
       "category": "Admin / Ping",
@@ -902,9 +902,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/tags/tag___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/tags/tag",
       "text": "Lists resources (assets) with a specified tag",
       "category": "Admin / Resources",
@@ -998,9 +998,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/context___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/context",
       "text": "Retrieves resources (assets) with a specified contextual metadata key",
       "category": "Admin / Resources",
@@ -1093,9 +1093,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/moderations/moderation_kind/status___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/moderations/moderation_kind/status",
       "text": "Retrieves resources (assets) with a particular status from a specified moderation type",
       "category": "Admin / Resources",
@@ -1195,9 +1195,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/public_id___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/public_id",
       "text": "Return details of the requested resource (asset) as well as all its derived assets",
       "category": "Admin / Resources",
@@ -1371,9 +1371,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/search___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/search",
       "text": "Find the specific assets in your product environment",
       "category": "Search / Search method",
@@ -1437,9 +1437,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/public_id___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/public_id",
       "text": "Update one or more of the attributes associated with a specified resource (asset)",
       "category": "Admin / Resources",
@@ -1586,9 +1586,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/restore___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/restore",
       "text": "Restores one or more resources (assets) from backup",
       "category": "Admin / Resources",
@@ -1654,9 +1654,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/upload/update_access_mode___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/upload/update_access_mode",
       "text": "Update the access_mode of resources (assets) by public_id(s), by tag, or by prefix",
       "category": "Admin / Resources",
@@ -1725,9 +1725,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id",
       "text": "Relates an asset to other assets by public IDs",
       "category": "Admin / Resources",
@@ -1803,9 +1803,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id",
       "text": "Unrelates related assets by public IDs",
       "category": "Admin / Resources",
@@ -1880,9 +1880,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/type___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type",
       "text": "Deletes resources by public IDs",
       "category": "Admin / Resources",
@@ -1981,9 +1981,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resources/resource_type/tags/tag___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/tags/tag",
       "text": "Deletes resources by tags",
       "category": "Admin / Resources",
@@ -2065,9 +2065,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.125Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/derived_resources___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/derived_resources",
       "text": "Deletes derived resources",
       "category": "Admin / Resources",
@@ -2112,9 +2112,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/streaming_profiles___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles",
       "text": "Lists the List streaming profiles",
       "category": "Admin / Streaming profiles",
@@ -2154,9 +2154,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Lists the details of a single streaming profile by name",
       "category": "Admin / Streaming profiles",
@@ -2206,9 +2206,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/streaming_profiles___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles",
       "text": "Create a new streaming profile",
       "category": "Admin / Streaming profiles",
@@ -2268,9 +2268,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Update the specified existing streaming profile",
       "category": "Admin / Streaming profiles",
@@ -2335,9 +2335,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Deletes and reverts the specified streaming profiles",
       "category": "Admin / Streaming profiles",
@@ -2387,9 +2387,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/tags___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/tags",
       "text": "List tags used for a specified resource_type",
       "category": "Admin / Tags",
@@ -2445,9 +2445,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/transformations___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/transformations",
       "text": "List all transformations",
       "category": "Admin / Transformations",
@@ -2503,9 +2503,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/transformations/transformation___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "List details of a single transformation specified by names or prameters",
       "category": "Admin / Transformations",
@@ -2563,9 +2563,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/transformations/name___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/name",
       "text": "Create a new named transformation",
       "category": "Admin / Transformations",
@@ -2629,9 +2629,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/transformations/transformation___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "Update a specific transformation",
       "category": "Admin / Transformations",
@@ -2694,9 +2694,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/transformations/transformation___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "Delete a specified transformation",
       "category": "Admin / Transformations",
@@ -2746,9 +2746,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_mappings___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "List all upload mappings by folder",
       "category": "Admin / Upload mappings",
@@ -2796,9 +2796,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name//upload_mappings/folder___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name//upload_mappings/folder",
       "text": "List the details of single upload mapping",
       "category": "Admin / Upload mappings",
@@ -2848,9 +2848,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_mappings___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "Create a new upload mapping folder and its template(URL)",
       "category": "Admin / Upload mappings",
@@ -2901,9 +2901,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_mappings___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "Update an existing upload mapping folder with a new template (URL)",
       "category": "Admin / Upload mappings",
@@ -2954,9 +2954,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_mappings/folder___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings/folder",
       "text": "Delete an upload mapping by folder name",
       "category": "Admin / Upload mappings",
@@ -3006,9 +3006,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_presets___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets",
       "text": "Lists the upload presets defined for your product environment",
       "category": "Admin / Upload presets",
@@ -3056,9 +3056,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_presets/name___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Lists the details of a single upload preset",
       "category": "Admin / Upload presets",
@@ -3108,9 +3108,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_presets___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets",
       "text": "Create a new upload preset",
       "category": "Admin / Upload presets",
@@ -3199,9 +3199,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_presets/name___PUT": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Update an existing upload preset",
       "category": "Admin / Upload presets",
@@ -3286,9 +3286,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/upload_presets/name___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Delete an existing upload preset",
       "category": "Admin / Upload presets",
@@ -3338,9 +3338,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/usage___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/usage",
       "text": "Lists product environment usage details",
       "category": "Admin / Usages",
@@ -3384,9 +3384,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/invalidate___POST": {
+    {
       "provider_alias_intent": "/v1_1/invalidate",
       "text": "Invalidate all caches",
       "category": "Media Optimizer / Cache invalidation",
@@ -3420,9 +3420,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cache_warm_up___POST": {
+    {
       "provider_alias_intent": "/v1_1/cache_warm_up",
       "text": "Warm up the cache",
       "category": "Media Optimizer / Cache warmup",
@@ -3460,9 +3460,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/domains___GET": {
+    {
       "provider_alias_intent": "/v1_1/domains",
       "text": "Get all domains",
       "category": "Media Optimizer / Domains",
@@ -3490,9 +3490,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/mapping_functions___GET": {
+    {
       "provider_alias_intent": "/v1_1/mapping_functions",
       "text": "Get all mapping functions",
       "category": "Media Optimizer / Mapping functions",
@@ -3520,9 +3520,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/mapping_functions/id___GET": {
+    {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Get details of a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3562,9 +3562,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/mapping_functions___POST": {
+    {
       "provider_alias_intent": "/v1_1/mapping_functions",
       "text": "Create a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3603,9 +3603,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/mapping_functions/id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Update a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3654,9 +3654,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/mapping_functions/id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Delete a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3696,9 +3696,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/media_sources___GET": {
+    {
       "provider_alias_intent": "/v1_1/media_sources",
       "text": "Get all media sources",
       "category": "Media Optimizer / Media sources",
@@ -3726,9 +3726,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/media_sources/id___GET": {
+    {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Get details of a media source",
       "category": "Media Optimizer / Media sources",
@@ -3768,9 +3768,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/media_sources___POST": {
+    {
       "provider_alias_intent": "/v1_1/media_sources",
       "text": "Create a media source",
       "category": "Media Optimizer / Media sources",
@@ -3814,9 +3814,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/media_sources/id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Update  a media source",
       "category": "Media Optimizer / Media sources",
@@ -3869,9 +3869,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/media_sources/id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Delete a media source",
       "category": "Media Optimizer / Media sources",
@@ -3911,9 +3911,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/delivery_profiles___GET": {
+    {
       "provider_alias_intent": "/v1_1/delivery_profiles",
       "text": "Get optimization profiles",
       "category": "Media Optimizer / Optimization profiles",
@@ -3941,9 +3941,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/delivery_profiles/id___GET": {
+    {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Get optimization profile details",
       "category": "Media Optimizer / Optimization profiles",
@@ -3983,9 +3983,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/delivery_profiles___POST": {
+    {
       "provider_alias_intent": "/v1_1/delivery_profiles",
       "text": "Create an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4042,9 +4042,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/delivery_profiles/id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Update an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4117,9 +4117,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/delivery_profiles/id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Delete an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4159,9 +4159,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/ping___GET": {
+    {
       "provider_alias_intent": "/v1_1/ping",
       "text": "Ping Media Optimizer servers",
       "category": "Media Optimizer / Ping",
@@ -4189,9 +4189,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/transformations___GET": {
+    {
       "provider_alias_intent": "/v1_1/transformations",
       "text": "Get all transformations",
       "category": "Media Optimizer / Transformations",
@@ -4228,9 +4228,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/transformations/transformation_name___GET": {
+    {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Get details of a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4270,9 +4270,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/transformations/transformation_name___POST": {
+    {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Create a named transformation",
       "category": "Media Optimizer / Transformations",
@@ -4322,9 +4322,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/transformations/transformation_name___PUT": {
+    {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Update a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4370,9 +4370,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/transformations/transformation_name___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Delete a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4412,9 +4412,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/usage___GET": {
+    {
       "provider_alias_intent": "/v1_1/usage",
       "text": "Get account usage details",
       "category": "Media Optimizer / Usages",
@@ -4447,9 +4447,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Get product environments",
       "category": "Provisioning / Product environments",
@@ -4503,9 +4503,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/sub_accounts___POST": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts",
       "text": "Create product environment",
       "category": "Provisioning / Product environments",
@@ -4567,9 +4567,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Update product environment",
       "category": "Provisioning / Product environments",
@@ -4644,9 +4644,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Delete product environment",
       "category": "Provisioning / Product environments",
@@ -4700,9 +4700,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups",
       "text": "Get user groups",
       "category": "Provisioning / User group",
@@ -4746,9 +4746,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Get a user group",
       "category": "Provisioning / User group",
@@ -4802,9 +4802,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users",
       "text": "Get the users in a user group",
       "category": "Provisioning / User group",
@@ -4858,9 +4858,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups___POST": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups",
       "text": "Create a user group",
       "category": "Provisioning / User group",
@@ -4910,9 +4910,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users/user_id___POST": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users/user_id",
       "text": "Add a user to a group",
       "category": "Provisioning / User group",
@@ -4977,9 +4977,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Update a user group",
       "category": "Provisioning / User group",
@@ -5039,9 +5039,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Delete a user group",
       "category": "Provisioning / User group",
@@ -5095,9 +5095,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users/user_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users/user_id",
       "text": "Remove a user group",
       "category": "Provisioning / User group",
@@ -5161,9 +5161,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/users___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/users",
       "text": "Get users",
       "category": "Provisioning / Users",
@@ -5227,9 +5227,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/users/user_id___GET": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/users/user_id",
       "text": "Get user",
       "category": "Provisioning / Users",
@@ -5283,9 +5283,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/users___POST": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/users",
       "text": "Create user",
       "category": "Provisioning / Users",
@@ -5357,9 +5357,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/sub_accounts/user_id___PUT": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/user_id",
       "text": "Update user",
       "category": "Provisioning / Users",
@@ -5438,9 +5438,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/accounts/account_id/users/user_id___DELETE": {
+    {
       "provider_alias_intent": "/v1_1/accounts/account_id/users/user_id",
       "text": "Delete user",
       "category": "Provisioning / Users",
@@ -5494,9 +5494,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/image/create_collage___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/image/create_collage",
       "text": "Creates a collage from existing assets",
       "category": "Upload / Assets generation",
@@ -5576,9 +5576,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/create_slideshow___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/create_slideshow",
       "text": "Creates a slideshow from existing assets",
       "category": "Upload / Assets generation",
@@ -5618,9 +5618,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/video/create_video___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/video/create_video",
       "text": "Creates a video from existing assets",
       "category": "Upload / Assets generation",
@@ -5698,9 +5698,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/image/explode___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/image/explode",
       "text": "Derives images for the individual pages in a muli-page file",
       "category": "Upload / Assets generation",
@@ -5768,9 +5768,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/generate_archive___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/generate_archive",
       "text": "Creates a archive file from existing assets",
       "category": "Upload / Assets generation",
@@ -5927,9 +5927,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/image/multi___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/image/multi",
       "text": "Generates animated images, videos, or PDFs from existing images",
       "category": "Upload / Assets generation",
@@ -6008,9 +6008,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/image/sprite___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/image/sprite",
       "text": "Creates a sprite from existing assets",
       "category": "Upload / Assets generation",
@@ -6086,9 +6086,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/image/text___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/image/text",
       "text": "Dynamically generates an image from a given textual string",
       "category": "Upload / Assets generation",
@@ -6175,9 +6175,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/upload___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/upload",
       "text": "Uploads an assets to a Cloudinary product enviroment",
       "category": "Upload / Assets management",
@@ -6530,9 +6530,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/explicit___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/explicit",
       "text": "Applies actions to alerady uploaded assets",
       "category": "Upload / Assets management",
@@ -6733,9 +6733,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/rename___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/rename",
       "text": "Rename an assets",
       "category": "Upload / Assets management",
@@ -6839,9 +6839,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/destroy___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/destroy",
       "text": "Destroy an assets",
       "category": "Upload / Assets management",
@@ -6912,9 +6912,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/download_backup___GET": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/download_backup",
       "text": "Gets a specific version of a backed-up assets",
       "category": "Upload / Assets management",
@@ -6964,9 +6964,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/context___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/context",
       "text": "Remove Context",
       "category": "Upload / Metadata management",
@@ -7039,9 +7039,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/metadata___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/metadata",
       "text": "Adds values to metadata fields",
       "category": "Upload / Metadata management",
@@ -7109,9 +7109,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     },
-    "cloudinary__/v1_1/cloud_name/resource_type/tags___POST": {
+    {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/tags",
       "text": "Manages the tags applied to your assets",
       "category": "Upload / Metadata management",
@@ -7184,7 +7184,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.126Z"
+      "updated_at": "2025-11-11T15:37:34.832Z"
     }
-  }
+  ]
 }

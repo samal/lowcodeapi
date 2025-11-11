@@ -1,7 +1,7 @@
 {
   "config": {},
-  "routes": {
-    "bitly__/v4/apps/client_id___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v4/apps/client_id",
       "text": "Retrieve OAuth App",
       "category": "App",
@@ -42,9 +42,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/overrides___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/overrides",
       "text": "Group Overrides",
       "category": "BSDs",
@@ -100,9 +100,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bsds___GET": {
+    {
       "provider_alias_intent": "/v4/bsds",
       "text": "Get BSDs",
       "category": "BSDs",
@@ -131,9 +131,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/countries___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/countries",
       "text": "Get Metrics for a Bitlink by Country",
       "category": "Bitlinks",
@@ -192,9 +192,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/clicks/summary___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/clicks/summary",
       "text": "Get a Clicks Summary for a Bitlink",
       "category": "Bitlinks",
@@ -249,9 +249,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/expand___POST": {
+    {
       "provider_alias_intent": "/v4/expand",
       "text": "Expand a Bitlink",
       "category": "Bitlinks",
@@ -284,9 +284,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink___DELETE": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink",
       "text": "Delete a Bitlink",
       "category": "Bitlinks",
@@ -327,9 +327,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink___PATCH": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink",
       "text": "Update a Bitlink",
       "category": "Bitlinks",
@@ -387,9 +387,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink",
       "text": "Retrieve a Bitlink",
       "category": "Bitlinks",
@@ -430,9 +430,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/qr___POST": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/qr",
       "text": "Create a QR Code",
       "category": "Bitlinks",
@@ -502,9 +502,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/qr___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/qr",
       "text": "Retrieve a QR Code",
       "category": "Bitlinks",
@@ -549,9 +549,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/qr___PATCH": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/qr",
       "text": "Update a QR Code",
       "category": "Bitlinks",
@@ -621,9 +621,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/cities___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/cities",
       "text": "Get Metrics for a Bitlink by City",
       "category": "Bitlinks",
@@ -682,9 +682,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/devices___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/devices",
       "text": "Get Metrics for a Bitlink by Device Type",
       "category": "Bitlinks",
@@ -743,9 +743,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/referrers_by_domains___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/referrers_by_domains",
       "text": "Get Metrics for a Bitlink by Referrers by Domain",
       "category": "Bitlinks",
@@ -804,9 +804,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/bitlinks/sort___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/bitlinks/sort",
       "text": "Retrieve Sorted Bitlinks for Group",
       "category": "Bitlinks",
@@ -873,9 +873,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks___POST": {
+    {
       "provider_alias_intent": "/v4/bitlinks",
       "text": "Create a Bitlink",
       "category": "Bitlinks",
@@ -925,9 +925,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/clicks___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/clicks",
       "text": "Get Clicks for a Bitlink",
       "category": "Bitlinks",
@@ -982,9 +982,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/bitlinks___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/bitlinks",
       "text": "Retrieve Bitlinks by Group",
       "category": "Bitlinks",
@@ -1084,9 +1084,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/bitlinks___PATCH": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/bitlinks",
       "text": "Bulk update bitlinks",
       "category": "Bitlinks",
@@ -1150,9 +1150,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/referrers___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/referrers",
       "text": "Get Metrics for a Bitlink by Referrers",
       "category": "Bitlinks",
@@ -1211,9 +1211,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/bitlinks/bitlink/referring_domains___GET": {
+    {
       "provider_alias_intent": "/v4/bitlinks/bitlink/referring_domains",
       "text": "Get Metrics for a Bitlink by Referring Domains",
       "category": "Bitlinks",
@@ -1272,9 +1272,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/shorten___POST": {
+    {
       "provider_alias_intent": "/v4/shorten",
       "text": "Shorten a Link",
       "category": "Bitlinks",
@@ -1314,9 +1314,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/channels___POST": {
+    {
       "provider_alias_intent": "/v4/channels",
       "text": "Create Channel",
       "category": "Campaigns",
@@ -1345,9 +1345,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/channels___GET": {
+    {
       "provider_alias_intent": "/v4/channels",
       "text": "Retrieve Channels",
       "category": "Campaigns",
@@ -1385,9 +1385,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.072Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/campaigns/campaign_guid___GET": {
+    {
       "provider_alias_intent": "/v4/campaigns/campaign_guid",
       "text": "Retrieve a Campaign",
       "category": "Campaigns",
@@ -1428,9 +1428,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/campaigns/campaign_guid___PATCH": {
+    {
       "provider_alias_intent": "/v4/campaigns/campaign_guid",
       "text": "Update Campaign",
       "category": "Campaigns",
@@ -1484,9 +1484,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/campaigns___POST": {
+    {
       "provider_alias_intent": "/v4/campaigns",
       "text": "Create Campaign",
       "category": "Campaigns",
@@ -1528,9 +1528,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/campaigns___GET": {
+    {
       "provider_alias_intent": "/v4/campaigns",
       "text": "Retrieve Campaigns",
       "category": "Campaigns",
@@ -1564,9 +1564,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/channels/channel_guid___GET": {
+    {
       "provider_alias_intent": "/v4/channels/channel_guid",
       "text": "Get a Channel",
       "category": "Campaigns",
@@ -1607,9 +1607,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/channels/channel_guid___PATCH": {
+    {
       "provider_alias_intent": "/v4/channels/channel_guid",
       "text": "Update a Channel",
       "category": "Campaigns",
@@ -1650,9 +1650,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/custom_bitlinks___POST": {
+    {
       "provider_alias_intent": "/v4/custom_bitlinks",
       "text": "Add Custom Bitlink",
       "category": "Custom Bitlinks",
@@ -1688,9 +1688,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/custom_bitlinks/custom_bitlink/clicks_by_destination___GET": {
+    {
       "provider_alias_intent": "/v4/custom_bitlinks/custom_bitlink/clicks_by_destination",
       "text": "Get Metrics for a Custom Bitlink by Destination",
       "category": "Custom Bitlinks",
@@ -1745,9 +1745,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/custom_bitlinks/custom_bitlink/clicks___GET": {
+    {
       "provider_alias_intent": "/v4/custom_bitlinks/custom_bitlink/clicks",
       "text": "Get Clicks for a Custom Bitlink's Entire History",
       "category": "Custom Bitlinks",
@@ -1802,9 +1802,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/custom_bitlinks/custom_bitlink___PATCH": {
+    {
       "provider_alias_intent": "/v4/custom_bitlinks/custom_bitlink",
       "text": "Update Custom Bitlink",
       "category": "Custom Bitlinks",
@@ -1849,9 +1849,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/custom_bitlinks/custom_bitlink___GET": {
+    {
       "provider_alias_intent": "/v4/custom_bitlinks/custom_bitlink",
       "text": "Retrieve Custom Bitlink",
       "category": "Custom Bitlinks",
@@ -1892,9 +1892,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/referring_networks___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/referring_networks",
       "text": "Get Click Metrics for a Group by Referring Networks",
       "category": "Groups",
@@ -1935,9 +1935,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/clicks___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/clicks",
       "text": "Get clicks by group",
       "category": "Groups",
@@ -1992,9 +1992,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/devices___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/devices",
       "text": "Get Click Metrics for a Group by Device Type",
       "category": "Groups",
@@ -2053,9 +2053,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/countries___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/countries",
       "text": "Get Click Metrics for a Group by Country",
       "category": "Groups",
@@ -2114,9 +2114,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/qr/images___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/qr/images",
       "text": "Retrieve QR Code Logo Images",
       "category": "Groups",
@@ -2157,9 +2157,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid___PATCH": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid",
       "text": "Update a Group",
       "category": "Groups",
@@ -2210,9 +2210,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid",
       "text": "Retrieve a Group",
       "category": "Groups",
@@ -2253,9 +2253,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/cities___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/cities",
       "text": "Get Click Metrics for a Group by City",
       "category": "Groups",
@@ -2314,9 +2314,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/shorten_counts___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/shorten_counts",
       "text": "Retrieve Group Shorten Counts",
       "category": "Groups",
@@ -2371,9 +2371,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups___GET": {
+    {
       "provider_alias_intent": "/v4/groups",
       "text": "Retrieve Groups",
       "category": "Groups",
@@ -2407,9 +2407,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/preferences___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/preferences",
       "text": "Retrieve Group Preferences",
       "category": "Groups",
@@ -2450,9 +2450,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/preferences___PATCH": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/preferences",
       "text": "Update Group Preferences",
       "category": "Groups",
@@ -2500,9 +2500,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/groups/group_guid/tags___GET": {
+    {
       "provider_alias_intent": "/v4/groups/group_guid/tags",
       "text": "Retrieve Tags by Group",
       "category": "Groups",
@@ -2543,9 +2543,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/organizations/organization_guid/shorten_counts___GET": {
+    {
       "provider_alias_intent": "/v4/organizations/organization_guid/shorten_counts",
       "text": "Get Shorten Counts for an Organization",
       "category": "Organizations",
@@ -2600,9 +2600,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/organizations/organization_guid___GET": {
+    {
       "provider_alias_intent": "/v4/organizations/organization_guid",
       "text": "Retrieve an Organization",
       "category": "Organizations",
@@ -2643,9 +2643,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/organizations/organization_guid/plan_limits___GET": {
+    {
       "provider_alias_intent": "/v4/organizations/organization_guid/plan_limits",
       "text": "Get Plan Limits",
       "category": "Organizations",
@@ -2686,9 +2686,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/organizations___GET": {
+    {
       "provider_alias_intent": "/v4/organizations",
       "text": "Retrieve Organizations",
       "category": "Organizations",
@@ -2717,9 +2717,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/user___PATCH": {
+    {
       "provider_alias_intent": "/v4/user",
       "text": "Update a User",
       "category": "User",
@@ -2755,9 +2755,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/user___GET": {
+    {
       "provider_alias_intent": "/v4/user",
       "text": "Retrieve a User",
       "category": "User",
@@ -2786,9 +2786,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/user/platform_limits___GET": {
+    {
       "provider_alias_intent": "/v4/user/platform_limits",
       "text": "Get Platform Limits",
       "category": "User",
@@ -2822,9 +2822,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/webhooks/webhook_guid/verify___POST": {
+    {
       "provider_alias_intent": "/v4/webhooks/webhook_guid/verify",
       "text": "Verify Webhook",
       "category": "Webhooks",
@@ -2865,9 +2865,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/webhooks/webhook_guid___GET": {
+    {
       "provider_alias_intent": "/v4/webhooks/webhook_guid",
       "text": "Retrieve Webhook",
       "category": "Webhooks",
@@ -2908,9 +2908,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/webhooks/webhook_guid___PATCH": {
+    {
       "provider_alias_intent": "/v4/webhooks/webhook_guid",
       "text": "Update Webhook",
       "category": "Webhooks",
@@ -2994,9 +2994,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/webhooks/webhook_guid___DELETE": {
+    {
       "provider_alias_intent": "/v4/webhooks/webhook_guid",
       "text": "Delete Webhook",
       "category": "Webhooks",
@@ -3037,9 +3037,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/webhooks___POST": {
+    {
       "provider_alias_intent": "/v4/webhooks",
       "text": "Create Webhook",
       "category": "Webhooks",
@@ -3111,9 +3111,9 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     },
-    "bitly__/v4/organizations/organization_guid/webhooks___GET": {
+    {
       "provider_alias_intent": "/v4/organizations/organization_guid/webhooks",
       "text": "Get Webhooks",
       "category": "Webhooks",
@@ -3154,7 +3154,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T12:00:08.073Z"
+      "updated_at": "2025-11-11T15:37:34.812Z"
     }
-  }
+  ]
 }
