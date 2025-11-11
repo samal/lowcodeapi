@@ -31,8 +31,8 @@
     "total_api": 32,
     "credential_link": "https://telegram.me/botfather"
   },
-  "routes": {
-    "telegram__/bot-token/sendmessage___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/bot-token/sendmessage",
       "provider_proxy_intent": "/bot{token}/sendMessage",
       "text": "Send message",
@@ -119,9 +119,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getupdates___GET": {
+    {
       "provider_alias_intent": "/bot-token/getupdates",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getUpdates",
       "text": "Get incoming updates",
@@ -167,9 +167,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bottoken/forwardmessage___POST": {
+    {
       "provider_alias_intent": "/bottoken/forwardmessage",
       "provider_proxy_intent": "/bot{token}/forwardMessage",
       "text": "Forward message",
@@ -225,9 +225,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/setwebhook___POST": {
+    {
       "provider_alias_intent": "/bot-token/setwebhook",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/setWebhook",
       "text": "Set or update webhook",
@@ -285,9 +285,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/deletewebhook___POST": {
+    {
       "provider_alias_intent": "/bot-token/deletewebhook",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/deleteWebhook",
       "text": "Remove webhook",
@@ -320,9 +320,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/copymessage___POST": {
+    {
       "provider_alias_intent": "/bot-token/copymessage",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/copyMessage",
       "text": "Copy message",
@@ -402,9 +402,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getwebhookinfo___GET": {
+    {
       "provider_alias_intent": "/bot-token/getwebhookinfo",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getWebhookInfo",
       "text": "Get current webhook status",
@@ -476,9 +476,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendphoto___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendphoto",
       "provider_proxy_intent": "/bot{token}/sendPhoto",
       "text": "Send photo",
@@ -561,9 +561,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendvideo___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendvideo",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendVideo",
       "text": "Send video",
@@ -664,9 +664,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendvideonote___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendvideonote",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendVideoNote",
       "text": "Send video note",
@@ -747,9 +747,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/senddocument___POST": {
+    {
       "provider_alias_intent": "/bot-token/senddocument",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendDocument",
       "text": "Send general files",
@@ -838,9 +838,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendanimation___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendanimation",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendAnimation",
       "text": "Send animated file",
@@ -937,9 +937,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendvoice___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendvoice",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendVoice",
       "text": "Send voice message",
@@ -1018,9 +1018,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/senddice___POST": {
+    {
       "provider_alias_intent": "/bot-token/senddice",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendDice",
       "text": "Send a random animated emoji",
@@ -1082,9 +1082,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendcontact___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendcontact",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendContact",
       "text": "Send phone contact",
@@ -1160,9 +1160,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/deletemessage___POST": {
+    {
       "provider_alias_intent": "/bot-token/deletemessage",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/deleteMessage",
       "text": "Delete messages, including service messages",
@@ -1201,9 +1201,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendmediagroup___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendmediagroup",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendMediaGroup",
       "text": "Send multiple media files as an album.",
@@ -1262,9 +1262,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getfile___GET": {
+    {
       "provider_alias_intent": "/bot-token/getfile",
       "provider_proxy_intent": "/bot{token}/getFile",
       "text": "Get file info",
@@ -1298,9 +1298,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getstickerset___GET": {
+    {
       "provider_alias_intent": "/bot-token/getstickerset",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getStickerSet",
       "text": "Get a sticker set",
@@ -1334,9 +1334,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendsticker___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendsticker",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendSticker",
       "text": "Send static WEBP, animated TGS, or video WEBM stickers",
@@ -1399,9 +1399,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/sendaudio___POST": {
+    {
       "provider_alias_intent": "/bot-token/sendaudio",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/sendAudio",
       "text": "Send audio file",
@@ -1498,9 +1498,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getcustomemojistickers___GET": {
+    {
       "provider_alias_intent": "/bot-token/getcustomemojistickers",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getCustomEmojiStickers",
       "text": "Get custom emoji sticker info by their identifiers",
@@ -1534,9 +1534,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/uploadstickerfile___POST": {
+    {
       "provider_alias_intent": "/bot-token/uploadstickerfile",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/uploadStickerFile",
       "text": "Upload sticker PNG for future use in sticker sets",
@@ -1575,9 +1575,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/createnewstickerset___POST": {
+    {
       "provider_alias_intent": "/bot-token/createnewstickerset",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/createNewStickerSet",
       "text": "Make a user's new sticker set",
@@ -1658,9 +1658,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/addstickertoset___POST": {
+    {
       "provider_alias_intent": "/bot-token/addstickertoset",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/addStickerToSet",
       "text": "Bot creates set. Add new sticker",
@@ -1732,9 +1732,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/setstickerpositioninset___POST": {
+    {
       "provider_alias_intent": "/bot-token/setstickerpositioninset",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/setStickerPositionInSet",
       "text": "Bot moves sticker to specific position in set",
@@ -1773,9 +1773,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/deletestickerfromset___POST": {
+    {
       "provider_alias_intent": "/bot-token/deletestickerfromset",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/deleteStickerFromSet",
       "text": "Remove bot-created set sticker",
@@ -1809,9 +1809,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/setstickersetthumb___POST": {
+    {
       "provider_alias_intent": "/bot-token/setstickersetthumb",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/setStickerSetThumb",
       "text": "Set sticker set thumbnail: animated for animations",
@@ -1860,9 +1860,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getme___GET": {
+    {
       "provider_alias_intent": "/bot-token/getme",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getMe",
       "text": "Get bot details",
@@ -1890,9 +1890,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/logout___POST": {
+    {
       "provider_alias_intent": "/bot-token/logout",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/logOut",
       "text": "Logout from Cloud Bot API before running locally",
@@ -1920,9 +1920,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/close___POST": {
+    {
       "provider_alias_intent": "/bot-token/close",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/close",
       "text": "Close bot instance",
@@ -1950,9 +1950,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     },
-    "telegram__/bot-token/getuserprofilephotos___GET": {
+    {
       "provider_alias_intent": "/bot-token/getuserprofilephotos",
       "provider_proxy_intent": "https://api.telegram.org/bot{token}/getUserProfilePhotos",
       "text": "Get user profile pictures",
@@ -1994,7 +1994,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.867Z"
+      "updated_at": "2025-11-11T15:34:13.488Z"
     }
-  }
+  ]
 }

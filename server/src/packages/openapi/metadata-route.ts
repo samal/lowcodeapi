@@ -26,8 +26,9 @@ const metadata = async (req: Request, res: Response) => {
   const routesArr = Array.isArray(routes) ? routes : Object.keys(routes);
 
   routesArr.forEach((route) => {
-    const intent = routes[route];
-    const method = intent.method.toLowerCase();
+    const intent = typeof route === 'string' ? routes[route] : route;
+    const method = intent?.method.toLowerCase();
+    if (!method) return;
     if (categories[intent.category]) {
       categories[intent.category].paths.push(intent.provider_alias_intent, `${intent.provider_alias_intent}~${method}`);
     } else {

@@ -52,8 +52,8 @@
     "total_api": 3,
     "credential_link": "https://dash.cloudflare.com/"
   },
-  "routes": {
-    "cloudflare-r2__/signed-url___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/signed-url",
       "text": "Generate signed url for R2",
       "category": "Signed URL",
@@ -93,9 +93,9 @@
       },
       "auth": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.828Z"
+      "updated_at": "2025-11-11T15:34:13.441Z"
     },
-    "cloudflare-r2__/signed-url/for-fetch___GET": {
+    {
       "provider_alias_intent": "/signed-url/for-fetch",
       "text": "Signed url for fetching file object",
       "category": "Signed URL",
@@ -128,9 +128,9 @@
       },
       "auth": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.828Z"
+      "updated_at": "2025-11-11T15:34:13.441Z"
     },
-    "cloudflare-r2__/signed-url/for-upload___GET": {
+    {
       "provider_alias_intent": "/signed-url/for-upload",
       "text": "Signed url for uploading file object",
       "category": "Signed URL",
@@ -175,7 +175,7 @@
       },
       "auth": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.828Z"
+      "updated_at": "2025-11-11T15:34:13.441Z"
     }
-  }
+  ]
 }

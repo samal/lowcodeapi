@@ -141,7 +141,7 @@ router.get('/:m1gonaon/intents-seed', async (req: Request, res: Response) => {
           key,
           intent,
           routes[key].text || '',
-          key || '',
+          routes[key].provider_alias_intent || '',
           routes[key].provider_alias_intent || '',
           routes[key].category || '',
           routes[key].type || '',
@@ -159,7 +159,7 @@ router.get('/:m1gonaon/intents-seed', async (req: Request, res: Response) => {
           routes[key].wip || 0,
         ];
         const placeholders = new Array(temp.length).fill('?').join(',');
-        await connection.query(`INSERT INTO providers_intents (ref_id, provider_id, text, provider_intent, provider_alias_intent, category, type, request_type, method, query_params, path_params, body, custom_headers,domain_params, meta, auth, response_format, status, active) values (${placeholders})`, {
+        await connection.query(`INSERT INTO providers_intents (ref_id, provider_id, text, provider_alias_intent, category, type, request_type, method, query_params, path_params, body, custom_headers,domain_params, meta, auth, response_format, status, active) values (${placeholders})`, {
           replacements: temp,
         });
       })]);

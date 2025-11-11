@@ -42,8 +42,8 @@
     "total_api": 178,
     "credential_link": "https://razorpay.com/docs/payments/dashboard/account-settings/api-keys"
   },
-  "routes": {
-    "razorpay__/v1/customers___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/customers",
       "text": "Create a Customer",
       "category": "Customers",
@@ -99,9 +99,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/customers___GET": {
+    {
       "provider_alias_intent": "/v1/customers",
       "text": "Fetch all Customers",
       "category": "Customers",
@@ -137,9 +137,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/customers/cust_id___GET": {
+    {
       "provider_alias_intent": "/v1/customers/cust_id",
       "text": "Fetch Customer by ID",
       "category": "Customers",
@@ -178,9 +178,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/customers/cust_id___PUT": {
+    {
       "provider_alias_intent": "/v1/customers/cust_id",
       "text": "Edit a Customer",
       "category": "Customers",
@@ -231,9 +231,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/disputes___GET": {
+    {
       "provider_alias_intent": "/v1/disputes",
       "text": "Fetch All Disputes",
       "category": "Disputes",
@@ -260,9 +260,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/disputes/id___GET": {
+    {
       "provider_alias_intent": "/v1/disputes/id",
       "text": "Fetch a Dispute by ID",
       "category": "Disputes",
@@ -301,9 +301,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices___POST": {
+    {
       "provider_alias_intent": "/v1/invoices",
       "text": "Create an Invoice",
       "category": "Invoice",
@@ -380,9 +380,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id___GET": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id",
       "text": "Fetch Invoice by Id",
       "category": "Invoice",
@@ -419,9 +419,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices___GET": {
+    {
       "provider_alias_intent": "/v1/invoices",
       "text": "Fetch All Invoices for a Subscription",
       "category": "Subscriptions",
@@ -453,9 +453,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id",
       "text": "Update an Invoice",
       "category": "Invoice",
@@ -494,9 +494,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id/issue___POST": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id/issue",
       "text": "Issue an Invoice",
       "category": "Invoice",
@@ -535,9 +535,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id/notify_by/medium___POST": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id/notify_by/medium",
       "text": "Send or Resend Notification",
       "category": "Invoice",
@@ -595,9 +595,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id/cancel",
       "text": "Cancel an Invoice",
       "category": "Invoice",
@@ -636,9 +636,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/invoices/inv_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/invoices/inv_id",
       "text": "Delete an Invoice",
       "category": "Invoice",
@@ -677,9 +677,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/items___POST": {
+    {
       "provider_alias_intent": "/v1/items",
       "text": "Create an Item",
       "category": "Items",
@@ -726,9 +726,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/items___GET": {
+    {
       "provider_alias_intent": "/v1/items",
       "text": "Fetch Items",
       "category": "Items",
@@ -776,9 +776,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/items/item_id___GET": {
+    {
       "provider_alias_intent": "/v1/items/item_id",
       "text": "Fetch Item by ID",
       "category": "Items",
@@ -817,9 +817,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/items/item_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/items/item_id",
       "text": "Update an Item",
       "category": "Items",
@@ -883,9 +883,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/items/item_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/items/item_id",
       "text": "Delete an Item",
       "category": "Items",
@@ -924,9 +924,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/orders___POST": {
+    {
       "provider_alias_intent": "/v1/orders",
       "text": "Create an Order",
       "category": "Order",
@@ -984,9 +984,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/orders___GET": {
+    {
       "provider_alias_intent": "/v1/orders",
       "text": "Fetch Orders",
       "category": "Order",
@@ -1046,9 +1046,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/orders/order_id___GET": {
+    {
       "provider_alias_intent": "/v1/orders/order_id",
       "text": "Fetch Orders by ID",
       "category": "Order",
@@ -1087,9 +1087,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/orders/order_id/payments___GET": {
+    {
       "provider_alias_intent": "/v1/orders/order_id/payments",
       "text": "Fetch Payment based on Order",
       "category": "Payments",
@@ -1128,9 +1128,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/orders/order_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/orders/order_id",
       "text": "Update Order",
       "category": "Order",
@@ -1175,9 +1175,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links/plink_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/payment_links/plink_id",
       "text": "Update a Payment Link",
       "category": "Payment Links",
@@ -1237,9 +1237,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links/plink_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/payment_links/plink_id/cancel",
       "text": "Cancel a Payment Link",
       "category": "Payment Links",
@@ -1278,9 +1278,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links___GET": {
+    {
       "provider_alias_intent": "/v1/payment_links",
       "text": "Fetch all Payment Links",
       "category": "Payment Links",
@@ -1316,9 +1316,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links/plink_id/notify_by/medium___POST": {
+    {
       "provider_alias_intent": "/v1/payment_links/plink_id/notify_by/medium",
       "text": "Resend a Payment Link",
       "category": "Payment Links",
@@ -1367,9 +1367,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links/plink_id___GET": {
+    {
       "provider_alias_intent": "/v1/payment_links/plink_id",
       "text": "Fetch a Payment Link",
       "category": "Payment Links",
@@ -1408,9 +1408,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payment_links___POST": {
+    {
       "provider_alias_intent": "/v1/payment_links",
       "text": "Create a Payment Link",
       "category": "Payment Links",
@@ -1510,9 +1510,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/___GET": {
+    {
       "provider_alias_intent": "/v1/payments/",
       "text": "Fetch all Payments",
       "category": "Payments",
@@ -1560,9 +1560,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id___GET": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id",
       "text": "Fetch Payment by ID",
       "category": "Payments",
@@ -1605,9 +1605,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id/card___GET": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id/card",
       "text": "Fetch Card Details for a Payment",
       "category": "Payments",
@@ -1646,9 +1646,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id",
       "text": "Update Payment",
       "category": "Payments",
@@ -1693,9 +1693,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id/capture___POST": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id/capture",
       "text": "Capture a Payment",
       "category": "Payments",
@@ -1744,9 +1744,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments___GET": {
+    {
       "provider_alias_intent": "/v1/payments",
       "text": "Fetch Expanded Card or EMI Details for Payments",
       "category": "Payments",
@@ -1773,9 +1773,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/plans___POST": {
+    {
       "provider_alias_intent": "/v1/plans",
       "text": "Create Plan",
       "category": "Plans",
@@ -1817,9 +1817,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/plans___GET": {
+    {
       "provider_alias_intent": "/v1/plans",
       "text": "Fetch All Plans",
       "category": "Plans",
@@ -1863,9 +1863,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/plans/plan_id___GET": {
+    {
       "provider_alias_intent": "/v1/plans/plan_id",
       "text": "Fetch Plans by ID",
       "category": "Plans",
@@ -1904,9 +1904,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id/refund___POST": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id/refund",
       "text": "Create an Instant Refund",
       "category": "Refunds",
@@ -1959,9 +1959,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/refunds___GET": {
+    {
       "provider_alias_intent": "/v1/refunds",
       "text": "Fetch Refunds",
       "category": "Refunds",
@@ -2005,9 +2005,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/refunds/rfnd_id___GET": {
+    {
       "provider_alias_intent": "/v1/refunds/rfnd_id",
       "text": "Fetch Refund by ID",
       "category": "Refunds",
@@ -2046,9 +2046,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id/refunds/rfnd_id___GET": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id/refunds/rfnd_id",
       "text": "Fetch a Specific Refund for a Payment",
       "category": "Refunds",
@@ -2097,9 +2097,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/payments/pay_id/refunds___GET": {
+    {
       "provider_alias_intent": "/v1/payments/pay_id/refunds",
       "text": "Fetch Multiple Refunds for a Payment",
       "category": "Refunds",
@@ -2154,9 +2154,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/refunds/rfnd_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/refunds/rfnd_id",
       "text": "Update Refund",
       "category": "Refunds",
@@ -2201,9 +2201,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements/ondemand___POST": {
+    {
       "provider_alias_intent": "/v1/settlements/ondemand",
       "text": "Create Instant Settlement",
       "category": "Settlements",
@@ -2252,9 +2252,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements/ondemand___GET": {
+    {
       "provider_alias_intent": "/v1/settlements/ondemand",
       "text": "Fetch all Instant Settlements",
       "category": "Settlements",
@@ -2302,9 +2302,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements/ondemand/sod_id___GET": {
+    {
       "provider_alias_intent": "/v1/settlements/ondemand/sod_id",
       "text": "Fetch Instant Settlement by ID",
       "category": "Settlements",
@@ -2347,9 +2347,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements/recon/combined___GET": {
+    {
       "provider_alias_intent": "/v1/settlements/recon/combined",
       "text": "Settlements Recon",
       "category": "Settlements",
@@ -2398,9 +2398,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements/setl_id___GET": {
+    {
       "provider_alias_intent": "/v1/settlements/setl_id",
       "text": "Fetch Settlement by ID",
       "category": "Settlements",
@@ -2439,9 +2439,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/settlements___GET": {
+    {
       "provider_alias_intent": "/v1/settlements",
       "text": "Fetch All Settlements",
       "category": "Settlements",
@@ -2484,9 +2484,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions___POST": {
+    {
       "provider_alias_intent": "/v1/subscriptions",
       "text": "Create Subscription Link",
       "category": "Subscriptions",
@@ -2556,9 +2556,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions___GET": {
+    {
       "provider_alias_intent": "/v1/subscriptions",
       "text": "Fetch All Subscriptions",
       "category": "Subscriptions",
@@ -2606,9 +2606,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id___GET": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id",
       "text": "Fetch Subscriptions by ID",
       "category": "Subscriptions",
@@ -2647,9 +2647,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/cancel___POST": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/cancel",
       "text": "Cancel Subscription",
       "category": "Subscriptions",
@@ -2697,9 +2697,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id___PATCH": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id",
       "text": "Update Subscription",
       "category": "Subscriptions",
@@ -2771,9 +2771,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/retrieve_scheduled_changes___GET": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/retrieve_scheduled_changes",
       "text": "Fetch Details of a Pending Update",
       "category": "Subscriptions",
@@ -2812,9 +2812,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/cancel_scheduled_changes___POST": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/cancel_scheduled_changes",
       "text": "Cancel Pending Update",
       "category": "Subscriptions",
@@ -2853,9 +2853,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/pause___POST": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/pause",
       "text": "Pause a Subscription",
       "category": "Subscriptions",
@@ -2899,9 +2899,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/resume___POST": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/resume",
       "text": "Resume a Subscription",
       "category": "Subscriptions",
@@ -2943,9 +2943,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     },
-    "razorpay__/v1/subscriptions/sub_id/offer_id___DELETE": {
+    {
       "provider_alias_intent": "/v1/subscriptions/sub_id/offer_id",
       "text": "Delete an Offer Linked to a Subscription",
       "category": "Subscriptions",
@@ -2994,7 +2994,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.851Z"
+      "updated_at": "2025-11-11T15:34:13.471Z"
     }
-  }
+  ]
 }

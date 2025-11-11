@@ -4,7 +4,7 @@ import generic from '../../../api-dispatch';
 import intents from '../../../intents';
 
 async function postIntent(
-  route: { provider_intent: string | number, text: string },
+  route: { provider_alias_intent: string | number, text: string },
   keys: { [key: string]: any },
 ) {
   const {
@@ -20,7 +20,7 @@ async function postIntent(
 
   const providerConfig : { [key: string]: any } = {};
 
-  apiParams[route.provider_intent].query_params.forEach((param : string | number) => {
+  apiParams[route.provider_alias_intent].query_params.forEach((param : string | number) => {
     if (query[param]) {
       providerConfig[param] = query[param];
     }

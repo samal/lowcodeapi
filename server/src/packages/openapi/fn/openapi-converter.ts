@@ -43,8 +43,8 @@ export default ({
     detail = false;
   }
 
-  routeArr.forEach((item : string) => {
-    const lookup: { [key: string]: any } = routes[item];
+  routeArr.forEach((item : string | { [key: string]: any}) => {
+    const lookup: { [key: string]: any } = typeof item === 'string' ? routes[item] : item;
 
     if (v) {
       if (versions.includes(v) && lookup.meta.version !== v) {
@@ -215,7 +215,7 @@ export default ({
       const isUpload = lookup.type && ['file', 'upload'].includes(lookup.type.toLowerCase());
       const body = Object.keys(lookup.body || {});
       let contentBlock = '';
-      if (/media/.test(item) || isUpload) {
+      if (/media/.test(lookup.provider_alias_intent) || isUpload) {
         contentBlock = 'multipart/form-data';
         getObject.requestBody = {
           description: '',
@@ -280,7 +280,7 @@ export default ({
       }
     }
 
-    const keyLookup = routes[item].provider_alias_intent;
+    const keyLookup = lookup.provider_alias_intent;
     if (pathLookup[keyLookup]) {
       pathLookup[keyLookup][method] = getObject;
     } else {

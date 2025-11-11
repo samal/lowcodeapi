@@ -52,8 +52,8 @@
     "total_api": 120,
     "credential_link": "https://help.mailgun.com/hc/en-us/articles/203380100-Where-can-I-find-my-API-keys-and-SMTP-credentials#h_01HVM3GKEPNTB5TR11JGDHY367"
   },
-  "routes": {
-    "mailgun__/v3/domain_name/messages___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v3/domain_name/messages",
       "text": "Send an email",
       "category": "Messages",
@@ -160,9 +160,9 @@
       },
       "response_type": "",
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain_name/messages.mime___POST": {
+    {
       "provider_alias_intent": "/v3/domain_name/messages.mime",
       "text": "Send an email in MIME format",
       "category": "Messages",
@@ -221,9 +221,9 @@
       },
       "response_type": "",
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain_name/sending_queues___GET": {
+    {
       "provider_alias_intent": "/v3/domains/domain_name/sending_queues",
       "text": "Get messages queue status",
       "category": "Messages",
@@ -270,9 +270,9 @@
       },
       "response_type": "",
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain_name/envelopes___DELETE": {
+    {
       "provider_alias_intent": "/v3/domain_name/envelopes",
       "text": "Delete scheduled and undelivered mail",
       "category": "Messages",
@@ -319,9 +319,9 @@
       },
       "response_type": "",
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "Insert multiple complaint records provided in JSON format",
       "category": "Complaints",
@@ -370,9 +370,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/bounces/address___GET": {
+    {
       "provider_alias_intent": " /v3/domainid/bounces/address",
       "text": "View single bounce event",
       "category": "Bounces",
@@ -411,9 +411,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/bounces/address___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/bounces/address",
       "text": "Clear a single bounce",
       "category": "Bounces",
@@ -452,9 +452,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/bounces___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "View all bounces",
       "category": "Bounces",
@@ -503,9 +503,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/bounces___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "Insert bounce records to the bounces list",
       "category": "Bounces",
@@ -562,9 +562,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/bounces___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "Delete entire bounce list",
       "category": "Bounces",
@@ -603,9 +603,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints/import___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints/import",
       "text": "Import list of complaints",
       "category": "Complaints",
@@ -654,9 +654,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints/address___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints/address",
       "text": "View a single complaint record",
       "category": "Complaints",
@@ -695,9 +695,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints/address___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints/address",
       "text": "Clear a single complaint event",
       "category": "Complaints",
@@ -736,9 +736,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "View all complaints",
       "category": "Complaints",
@@ -790,9 +790,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/complaints___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "Delete entire complaints list",
       "category": "Complaints",
@@ -831,9 +831,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/connection___GET": {
+    {
       "provider_alias_intent": "/v3/domains/name/connection",
       "text": "Get connection's details",
       "category": "Domain Connection",
@@ -872,9 +872,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/connection___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/connection",
       "text": "Update domain connection settings",
       "category": "Domain Connection",
@@ -930,9 +930,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v1/dkim/keys___GET": {
+    {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "List domain keys",
       "category": "Domain Keys",
@@ -978,9 +978,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v1/dkim/keys___POST": {
+    {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "Create a domain key",
       "category": "Domain Keys",
@@ -1026,9 +1026,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v1/dkim/keys___DELETE": {
+    {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "Delete a domain key",
       "category": "Domain Keys",
@@ -1066,9 +1066,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/authority_name/keys/selector/activate___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/authority_name/keys/selector/activate",
       "text": "Activate a domain key",
       "category": "Domain Keys",
@@ -1106,9 +1106,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/authority_name/keys___GET": {
+    {
       "provider_alias_intent": "/v4/domains/authority_name/keys",
       "text": "List domain keys",
       "category": "Domain Keys",
@@ -1147,9 +1147,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/authority_name/keys/selector/deactivate___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/authority_name/keys/selector/deactivate",
       "text": "Deactivate a domain key",
       "category": "Domain Keys",
@@ -1198,9 +1198,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/dkim_authority___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/dkim_authority",
       "text": "Update DKIM authority",
       "category": "Domain Keys",
@@ -1249,9 +1249,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/dkim_selector___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/dkim_selector",
       "text": "Update a DKIM selector",
       "category": "Domain Keys",
@@ -1295,9 +1295,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/tracking___GET": {
+    {
       "provider_alias_intent": "/v3/domains/name/tracking",
       "text": "Get tracking status",
       "category": "Domain Tracking",
@@ -1336,9 +1336,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/tracking/click___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/tracking/click",
       "text": "Update click tracking settings",
       "category": "Domain Tracking",
@@ -1383,9 +1383,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/tracking/open___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/tracking/open",
       "text": "Update open tracking settings",
       "category": "Domain Tracking",
@@ -1443,9 +1443,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/tracking/unsubscribe___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/tracking/unsubscribe",
       "text": "Update unsubscribe tracking settings",
       "category": "Domain Tracking",
@@ -1504,9 +1504,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains___GET": {
+    {
       "provider_alias_intent": "/v4/domains",
       "text": "Get domains",
       "category": "Domains",
@@ -1559,9 +1559,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains___POST": {
+    {
       "provider_alias_intent": "/v4/domains",
       "text": "Create a domain",
       "category": "Domains",
@@ -1660,9 +1660,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/name___GET": {
+    {
       "provider_alias_intent": "/v4/domains/name",
       "text": "Get domain details",
       "category": "Domains",
@@ -1701,9 +1701,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/name___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/name",
       "text": "Update a domain",
       "category": "Domains",
@@ -1763,9 +1763,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v4/domains/name/verify___PUT": {
+    {
       "provider_alias_intent": "/v4/domains/name/verify",
       "text": "Set verification state",
       "category": "Domains",
@@ -1804,9 +1804,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name___DELETE": {
+    {
       "provider_alias_intent": "/v3/domains/name",
       "text": "Delete a domain",
       "category": "Domains",
@@ -1845,9 +1845,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/message_ttl___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/message_ttl\n",
       "text": "Update the message TTL",
       "category": "Domains",
@@ -1892,9 +1892,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/mailfrom_host___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/mailfrom_host",
       "text": "Update the mailfrom hostname",
       "category": "Domains",
@@ -1939,9 +1939,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/web_prefix___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/name/web_prefix",
       "text": "Update domains web prefix",
       "category": "Domains",
@@ -1985,9 +1985,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain_name/events___GET": {
+    {
       "provider_alias_intent": "/v3/domain_name/events",
       "text": "Retrieves a paginated list of events",
       "category": "Events",
@@ -2092,9 +2092,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/ips/ip___DELETE": {
+    {
       "provider_alias_intent": "/v3/domains/name/ips/ip",
       "text": "Remove an IP from the domain pool, unlink a DIPP or remove the domain pool",
       "category": "IPs",
@@ -2146,9 +2146,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/name/pool/ip___DELETE": {
+    {
       "provider_alias_intent": "/v3/domains/name/pool/ip",
       "text": "Remove an IP from the domain pool, unlink a DIPP or remove the domain pool",
       "category": "IPs",
@@ -2200,9 +2200,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools___POST": {
+    {
       "provider_alias_intent": "/v3/ip_pools",
       "text": "Add a new DIPP to the account",
       "category": "IP Pools",
@@ -2244,9 +2244,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id___GET": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Get DIPP details",
       "category": "IP Pools",
@@ -2285,9 +2285,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id___DELETE": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Delete the DIPP",
       "category": "IP Pools",
@@ -2331,9 +2331,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id___PATCH": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Edit DIPP",
       "category": "IP Pools",
@@ -2389,9 +2389,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id/ips/ip___PUT": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips/ip",
       "text": "Add an IP to a DIPP",
       "category": "IP Pools",
@@ -2440,9 +2440,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id/ips/ip___DELETE": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips/ip",
       "text": "Remove an IP from a DIPP",
       "category": "IP Pools",
@@ -2491,9 +2491,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ip_pools/pool_id/ips.json___POST": {
+    {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips.json",
       "text": "Add multiple IPs to the DIPP",
       "category": "IP Pools",
@@ -2538,9 +2538,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips___GET": {
+    {
       "provider_alias_intent": "/v3/ips",
       "text": "List account IPs",
       "category": "IPs",
@@ -2584,9 +2584,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips/ip___GET": {
+    {
       "provider_alias_intent": "/v3/ips/ip",
       "text": "Get details about account IP",
       "category": "IPs",
@@ -2625,9 +2625,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips/ip/domains___GET": {
+    {
       "provider_alias_intent": "/v3/ips/ip/domains",
       "text": "Get all domains of an account where a specific IP is assigned",
       "category": "IPs",
@@ -2681,9 +2681,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips/addr/ip_band___POST": {
+    {
       "provider_alias_intent": "/v3/ips/addr/ip_band",
       "text": "Place account IP into a dedicated IP band",
       "category": "IPs",
@@ -2728,9 +2728,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips/request/new___GET": {
+    {
       "provider_alias_intent": "/v3/ips/request/new",
       "text": "Return the number of IPs available to the account per its billing plan",
       "category": "IPs",
@@ -2762,9 +2762,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/ips/request/new___POST": {
+    {
       "provider_alias_intent": "/v3/ips/request/new",
       "text": "Add a new dedicated IP to the account",
       "category": "IPs",
@@ -2791,9 +2791,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists___POST": {
+    {
       "provider_alias_intent": "/v3/lists",
       "text": "Create a mailing list",
       "category": "Mailing Lists\n",
@@ -2842,9 +2842,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists___GET": {
+    {
       "provider_alias_intent": "/v3/lists",
       "text": "Get mailing lists",
       "category": "Mailing Lists\n",
@@ -2884,9 +2884,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members___GET": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members",
       "text": "Get mailing lists members",
       "category": "Mailing Lists\n",
@@ -2925,9 +2925,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members___POST": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members",
       "text": "Create a mailing list member",
       "category": "Mailing Lists\n",
@@ -2995,9 +2995,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members.json___POST": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members.json",
       "text": "Bulk upload members to a mailing list (JSON)",
       "category": "Mailing Lists\n",
@@ -3036,9 +3036,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members.csv___POST": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members.csv",
       "text": "Bulk upload members to a mailing list (CSV)",
       "category": "Mailing Lists\n",
@@ -3098,9 +3098,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members/member_address___GET": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Get a member",
       "category": "Mailing Lists\n",
@@ -3149,9 +3149,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members/member_address___PUT": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Update a mailing list member",
       "category": "Mailing Lists\n",
@@ -3200,9 +3200,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members/member_address___DELETE": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Delete a member",
       "category": "Mailing Lists\n",
@@ -3251,9 +3251,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address___PUT": {
+    {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Update a mailing list",
       "category": "Mailing Lists\n",
@@ -3292,9 +3292,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address___DELETE": {
+    {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Delete mailing list",
       "category": "Mailing Lists\n",
@@ -3333,9 +3333,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address___GET": {
+    {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Get a mailing list by address",
       "category": "Mailing Lists\n",
@@ -3374,9 +3374,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/pages___GET": {
+    {
       "provider_alias_intent": "/v3/lists/pages",
       "text": "Get mailing lists by page",
       "category": "Mailing Lists\n",
@@ -3408,9 +3408,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/lists/list_address/members/pages___GET": {
+    {
       "provider_alias_intent": "/v3/lists/list_address/members/pages",
       "text": "Get members by page",
       "category": "Mailing Lists\n",
@@ -3449,9 +3449,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes___POST": {
+    {
       "provider_alias_intent": "/v3/routes",
       "text": "Create a route",
       "category": "Routes",
@@ -3495,9 +3495,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes___GET": {
+    {
       "provider_alias_intent": "/v3/routes",
       "text": "Get all routes",
       "category": "Routes",
@@ -3533,9 +3533,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes/id___GET": {
+    {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Get a route",
       "category": "Routes",
@@ -3574,9 +3574,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes/id___PUT": {
+    {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Update a route",
       "category": "Routes",
@@ -3636,9 +3636,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes/id___DELETE": {
+    {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Delete a route",
       "category": "Routes",
@@ -3677,9 +3677,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/routes/match___GET": {
+    {
       "provider_alias_intent": "/v3/routes/match",
       "text": "Match address to route",
       "category": "Routes",
@@ -3711,9 +3711,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v2/x509/domain/status___GET": {
+    {
       "provider_alias_intent": "/v2/x509/domain/status",
       "text": "Status of x509 TLS certificate",
       "category": "Secure tracking",
@@ -3752,9 +3752,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v2/x509/domain___PUT": {
+    {
       "provider_alias_intent": "/v2/x509/domain",
       "text": "Initiate regeneration of an expired x509 TLS certificate",
       "category": "Secure tracking",
@@ -3793,9 +3793,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v2/x509/domain___POST": {
+    {
       "provider_alias_intent": "/v2/x509/domain",
       "text": "Initiate generation of an x509 TLS certificate",
       "category": "Secure tracking",
@@ -3834,9 +3834,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/stats/total___GET": {
+    {
       "provider_alias_intent": "/v3/stats/total",
       "text": "Totals for entire account",
       "category": "Stats",
@@ -3887,9 +3887,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/stats/total___GET": {
+    {
       "provider_alias_intent": "/v3/domain/stats/total",
       "text": "Totals for entire domain",
       "category": "Stats",
@@ -3951,9 +3951,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/stats/total/domains___GET": {
+    {
       "provider_alias_intent": "/v3/stats/total/domains",
       "text": "Totals for account domains for a single time resolution",
       "category": "Stats",
@@ -4000,9 +4000,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/stats/filter___GET": {
+    {
       "provider_alias_intent": "/v3/stats/filter",
       "text": "Filtered/grouped totals for entire account",
       "category": "Stats",
@@ -4061,9 +4061,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/aggregates/providers___GET": {
+    {
       "provider_alias_intent": "/v3/domain/aggregates/providers",
       "text": "Aggregate counts by ESP",
       "category": "Stats",
@@ -4102,9 +4102,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/aggregates/devices___GET": {
+    {
       "provider_alias_intent": "/v3/domain/aggregates/devices",
       "text": "Aggregate counts by devices triggering events",
       "category": "Stats",
@@ -4143,9 +4143,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/aggregates/countries___GET": {
+    {
       "provider_alias_intent": "/v3/domain/aggregates/countries",
       "text": "Aggregate counts by country",
       "category": "Stats",
@@ -4184,9 +4184,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tags___GET": {
+    {
       "provider_alias_intent": "/v3/domain/tags",
       "text": "List all tags",
       "category": "Tags",
@@ -4241,9 +4241,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tag___GET": {
+    {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Get a tag",
       "category": "Tags",
@@ -4287,9 +4287,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tag___PUT": {
+    {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Update tag",
       "category": "Tags",
@@ -4338,9 +4338,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tag___DELETE": {
+    {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Delete tag",
       "category": "Tags",
@@ -4383,9 +4383,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tag/stats/aggregates___GET": {
+    {
       "provider_alias_intent": "/v3/domain/tag/stats/aggregates",
       "text": "Get aggregate stat types by tag",
       "category": "Tags",
@@ -4434,9 +4434,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domain/tag/stats___GET": {
+    {
       "provider_alias_intent": "/v3/domain/tag/stats",
       "text": "Get stats by tag",
       "category": "Tags",
@@ -4513,9 +4513,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain/limits/tag___GET": {
+    {
       "provider_alias_intent": "/v3/domains/domain/limits/tag",
       "text": "Get tag limits",
       "category": "Tags",
@@ -4554,9 +4554,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Get templates",
       "category": "Templates",
@@ -4610,9 +4610,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Create a template",
       "category": "Templates",
@@ -4689,9 +4689,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Delete all templates",
       "category": "Templates",
@@ -4730,9 +4730,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions",
       "text": "Get all template versions",
       "category": "Templates",
@@ -4796,9 +4796,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions",
       "text": "Create a template version",
       "category": "Templates",
@@ -4878,9 +4878,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Get template",
       "category": "Templates",
@@ -4933,9 +4933,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid___PUT": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Update template",
       "category": "Templates",
@@ -4989,9 +4989,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Delete a template",
       "category": "Templates",
@@ -5040,9 +5040,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions/versionid___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Get a version",
       "category": "Templates",
@@ -5101,9 +5101,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions/versionid___PUT": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Update a version",
       "category": "Templates",
@@ -5187,9 +5187,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions/versionid___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Delete a version",
       "category": "Templates",
@@ -5248,9 +5248,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/templates/templateid/versions/versionid/copy/versionidto___PUT": {
+    {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid/copy/versionidto",
       "text": "Copy a version",
       "category": "Templates",
@@ -5324,9 +5324,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes/import___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes/import",
       "text": "Import list of unsubscribes",
       "category": "Unsubscribe",
@@ -5381,9 +5381,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes/address___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes/address",
       "text": "View a single unsubscribe",
       "category": "Unsubscribe",
@@ -5422,9 +5422,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes/address___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes/address",
       "text": "Clear a given unsubscribe event",
       "category": "Unsubscribe",
@@ -5463,9 +5463,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "View all unsubscribes",
       "category": "Unsubscribe",
@@ -5517,9 +5517,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "Insert multiple unsubscribe records via JSON",
       "category": "Unsubscribe",
@@ -5572,9 +5572,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/unsubscribes___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "Delete entire unsubscribe list",
       "category": "Unsubscribe",
@@ -5613,9 +5613,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain/webhooks___GET": {
+    {
       "provider_alias_intent": "/v3/domains/domain/webhooks",
       "text": "Get all webhooks",
       "category": "Webhooks",
@@ -5654,9 +5654,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain/webhooks___POST": {
+    {
       "provider_alias_intent": "/v3/domains/domain/webhooks",
       "text": "Create a webhook",
       "category": "Webhooks",
@@ -5706,9 +5706,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___GET": {
+    {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Get webhooks by type",
       "category": "Webhooks",
@@ -5759,9 +5759,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___PUT": {
+    {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Update a webhook",
       "category": "Webhooks",
@@ -5818,9 +5818,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___DELETE": {
+    {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Remove all webhooks by webhook type",
       "category": "Webhooks",
@@ -5871,9 +5871,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists/value___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists/value",
       "text": "View a single whitelist records",
       "category": "Whitelist",
@@ -5912,9 +5912,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists/value___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists/value",
       "text": "Remove a record from whitelist",
       "category": "Whitelist",
@@ -5953,9 +5953,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists___GET": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "View all whitelist records for a domain",
       "category": "Whitelist",
@@ -6007,9 +6007,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "Add a single whitelist record",
       "category": "Whitelist",
@@ -6058,9 +6058,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists___DELETE": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "Clear domains whitelist",
       "category": "Whitelist",
@@ -6109,9 +6109,9 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     },
-    "mailgun__/v3/domainid/whitelists/import___POST": {
+    {
       "provider_alias_intent": "/v3/domainid/whitelists/import",
       "text": "Import list of whitelisted addresses/domains",
       "category": "Whitelist",
@@ -6160,7 +6160,7 @@
         }
       },
       "payload_type": "formdata",
-      "updated_at": "2025-11-11T11:55:18.839Z"
+      "updated_at": "2025-11-11T15:34:13.456Z"
     }
-  }
+  ]
 }

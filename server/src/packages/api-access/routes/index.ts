@@ -220,13 +220,13 @@ Object.keys(providers).forEach((provider) => {
     });
   });
 
-  const providerRoutes = Object.keys(routes);
+  const providerRoutes = Array.isArray(routes) ? routes : Object.keys(routes);
 
-  providerRoutes.forEach((intent) => {
-    const { params, method } = routes[intent];
+  providerRoutes.forEach((route : string | { [key:string]: any}) => {
+    const { params, method, provider_alias_intent } = typeof route === 'string' ? routes[route] : route;
     const query_params = params ? Object.keys(params) : [];
     if (METHODS.includes(method.toUpperCase())) {
-      apiParams[method.toUpperCase()][intent] = {
+      apiParams[method.toUpperCase()][provider_alias_intent] = {
         method,
         query_params,
       };
@@ -234,8 +234,8 @@ Object.keys(providers).forEach((provider) => {
   });
 
   const UPLOAD = ['file', 'upload', 'media'];
-  providerRoutes.forEach((route) => {
-    const intent = routes[route];
+  providerRoutes.forEach((route : string | { [key:string]: any}) => {
+    const intent = typeof route === 'string' ? routes[route] : route;
 
     const routePath = `/${provider}${intent.provider_alias_intent}`;
     const method = intent.method.toLowerCase();
@@ -290,10 +290,10 @@ Object.keys(providers).forEach((provider) => {
         const {
           query, params, body, file, headers,
         } = req;
-        req.route = route;
+        req.route = intent.provider_alias_intent;
         req.api_mount = req.params.mount;
 
-        const routeMap = routes[req.route.replace('/', '')];
+        const routeMap = intent;
 
         if (!routeMap.auth || !routeMap.auth.length) {
           if (auth) {

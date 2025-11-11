@@ -55,8 +55,8 @@
     "total_api": 2,
     "credential_link": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html"
   },
-  "routes": {
-    "awsses__/v2/email/outbound-emails___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/v2/email/outbound-emails",
       "text": "Sends an email message",
       "category": "Email",
@@ -167,9 +167,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.826Z"
+      "updated_at": "2025-11-11T15:34:13.438Z"
     },
-    "awsses__/v2/email/outbound-bulk-emails___POST": {
+    {
       "provider_alias_intent": "/v2/email/outbound-bulk-emails",
       "text": "Send bulk email",
       "category": "Email",
@@ -293,7 +293,7 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.827Z"
+      "updated_at": "2025-11-11T15:34:13.438Z"
     }
-  }
+  ]
 }
