@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohoshifts API",
-    "description": "",
-    "api_base": "/zohoshifts",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_all_employees": {
-      "provider_intent": "get_all_employees",
+    "zohoshifts__/api/v1/org_id/employees___GET": {
       "provider_alias_intent": "/api/v1/org_id/employees",
       "text": "Get all employees",
       "category": "Employees",
@@ -45,13 +34,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoShifts.employees.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.129Z"
     },
-    "get_all_time_entries": {
-      "provider_intent": "get_all_time_entries",
+    "zohoshifts__/api/v1/org_id/timesheets___GET": {
       "provider_alias_intent": "/api/v1/org_id/timesheets",
       "text": "Get all time entries",
       "category": "Entries",
@@ -84,10 +72,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoShifts.timesheets.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.129Z"
     }
   }
 }

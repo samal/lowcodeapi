@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Facebook API",
-    "description": "",
-    "api_base": "/facebook",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "post_message": {
-      "provider_intent": "post_message",
+    "facebook__/v16.0/page_id/feed___POST": {
       "provider_alias_intent": "/v16.0/page_id/feed",
       "text": "Post message 🚧",
       "category": "API",
@@ -53,12 +42,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.304Z"
     },
-    "get_page_access_token": {
-      "provider_intent": "get_page_access_token",
+    "facebook__/page_id___POST": {
       "provider_alias_intent": "/page_id",
       "text": "Get Page Access Token 🚧",
       "category": "API",
@@ -98,9 +86,9 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.304Z"
     }
   }
 }

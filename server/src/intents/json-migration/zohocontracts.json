@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohocontracts__api__v1__contracts__contract_api_name__collaborators___get": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__collaborators___get",
+    "zohocontracts__/api/v1/contracts/contract_api_name/collaborators___GET": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/collaborators",
       "text": "Get Collaborators",
       "category": "Collaborators",
@@ -123,15 +122,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/collaborators",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__collaborators___post": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__collaborators___post",
+    "zohocontracts__/api/v1/contracts/contract_api_name/collaborators___POST": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/collaborators",
       "text": "Create Collaborators",
       "category": "Collaborators",
@@ -201,15 +197,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/collaborators",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__collaborators___put": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__collaborators___put",
+    "zohocontracts__/api/v1/contracts/contract_api_name/collaborators___PUT": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/collaborators",
       "text": "Update Collaborators",
       "category": "Collaborators",
@@ -263,15 +256,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/collaborators",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__users__user_id__collaborators___delete": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__users__user_id__collaborators___delete",
+    "zohocontracts__/api/v1/contracts/contract_api_name/users/user_id/collaborators___DELETE": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/users/user_id/collaborators",
       "text": "Delete Collaborator",
       "category": "Collaborators",
@@ -326,15 +316,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/users/{user_id}/collaborators",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracttypes__api_name___get": {
-      "provider_intent": "zohocontracts__api__v1__contracttypes__api_name___get",
+    "zohocontracts__/api/v1/contracttypes/api_name___GET": {
       "provider_alias_intent": "/api/v1/contracttypes/api_name",
       "text": "Get Contract Type",
       "category": "Contract Types",
@@ -379,15 +366,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracttypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes__api_name___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes__api_name___get",
+    "zohocontracts__/api/v1/admin/contracttypes/api_name___GET": {
       "provider_alias_intent": "/api/v1/admin/contracttypes/api_name",
       "text": "Get Contract Type using Admin privilege",
       "category": "Contract Types",
@@ -432,15 +416,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracttypes___get": {
-      "provider_intent": "zohocontracts__api__v1__contracttypes___get",
+    "zohocontracts__/api/v1/contracttypes___GET": {
       "provider_alias_intent": "/api/v1/contracttypes",
       "text": "Get Contract Types List",
       "category": "Contract Types",
@@ -473,15 +454,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracttypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes___get",
+    "zohocontracts__/api/v1/admin/contracttypes___GET": {
       "provider_alias_intent": "/api/v1/admin/contracttypes",
       "text": "Get Contract Types List using Admin privilege",
       "category": "Contract Types",
@@ -514,15 +492,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes__master-services-agreement__fields___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes__master-services-agreement__fields___get",
+    "zohocontracts__/api/v1/admin/contracttypes/master-services-agreement/fields___GET": {
       "provider_alias_intent": "/api/v1/admin/contracttypes/master-services-agreement/fields",
       "text": "Get Contract Type Template Fields",
       "category": "Contract Types",
@@ -555,15 +530,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes/master-services-agreement/fields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes___post": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes___post",
+    "zohocontracts__/api/v1/admin/contracttypes___POST": {
       "provider_alias_intent": "/api/v1/admin/contracttypes",
       "text": "Create Contract Type",
       "category": "Contract Types",
@@ -637,15 +609,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes__api_name___put",
+    "zohocontracts__/api/v1/admin/contracttypes/api_name___PUT": {
       "provider_alias_intent": "/api/v1/admin/contracttypes/api_name",
       "text": "Update Contract Type",
       "category": "Contract Types",
@@ -695,15 +664,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__contracttypes__api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__admin__contracttypes__api_name___delete",
+    "zohocontracts__/api/v1/admin/contracttypes/api_name___DELETE": {
       "provider_alias_intent": "/api/v1/admin/contracttypes/api_name",
       "text": "Delete Contract Type",
       "category": "Contract Types",
@@ -748,15 +714,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/contracttypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__api_name___get": {
-      "provider_intent": "zohocontracts__api__v1__contracts__api_name___get",
+    "zohocontracts__/api/v1/contracts/api_name___GET": {
       "provider_alias_intent": "/api/v1/contracts/api_name",
       "text": "Get Contract",
       "category": "Contracts/Create and Manage",
@@ -801,15 +764,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts___post": {
-      "provider_intent": "zohocontracts__api__v1__contracts___post",
+    "zohocontracts__/api/v1/contracts___POST": {
       "provider_alias_intent": "/api/v1/contracts",
       "text": "Create Contract",
       "category": "Contracts/Create and Manage",
@@ -883,15 +843,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__createcontract___post": {
-      "provider_intent": "zohocontracts__api__v1__createcontract___post",
+    "zohocontracts__/api/v1/createcontract___POST": {
       "provider_alias_intent": "/api/v1/createcontract",
       "text": "Create Contract with Values for Document Fields",
       "category": "Contracts/Create and Manage",
@@ -965,15 +922,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/createcontract",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__contracts__api_name___put",
+    "zohocontracts__/api/v1/contracts/api_name___PUT": {
       "provider_alias_intent": "/api/v1/contracts/api_name",
       "text": "Update Contract",
       "category": "Contracts/Create and Manage",
@@ -1043,15 +997,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__contracts__api_name___delete",
+    "zohocontracts__/api/v1/contracts/api_name___DELETE": {
       "provider_alias_intent": "/api/v1/contracts/api_name",
       "text": "Delete Contract",
       "category": "Contracts/Create and Manage",
@@ -1096,15 +1047,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__signers___get": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__signers___get",
+    "zohocontracts__/api/v1/contracts/contract_api_name/signers___GET": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/signers",
       "text": "Get Signers List",
       "category": "Contracts/Create and Manage",
@@ -1149,15 +1097,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/signers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__allcontracts___get": {
-      "provider_intent": "zohocontracts__api__v1__allcontracts___get",
+    "zohocontracts__/api/v1/allcontracts___GET": {
       "provider_alias_intent": "/api/v1/allcontracts",
       "text": "Get All Contracts List",
       "category": "Contracts/Listing",
@@ -1190,15 +1135,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.GET,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/allcontracts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__contracts___get": {
-      "provider_intent": "zohocontracts__api__v1__contracts___get",
+    "zohocontracts__/api/v1/contracts___GET": {
       "provider_alias_intent": "/api/v1/contracts",
       "text": "Get Contracts List",
       "category": "Contracts/Listing",
@@ -1231,15 +1173,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.GET,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__sharedcontracts___get": {
-      "provider_intent": "zohocontracts__api__v1__sharedcontracts___get",
+    "zohocontracts__/api/v1/sharedcontracts___GET": {
       "provider_alias_intent": "/api/v1/sharedcontracts",
       "text": "Get Shared Contracts List",
       "category": "Contracts/Listing",
@@ -1272,15 +1211,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.GET,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/sharedcontracts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__obligationcontracts___get": {
-      "provider_intent": "zohocontracts__api__v1__obligationcontracts___get",
+    "zohocontracts__/api/v1/obligationcontracts___GET": {
       "provider_alias_intent": "/api/v1/obligationcontracts",
       "text": "Get Obligation Contracts List",
       "category": "Contracts/Listing",
@@ -1313,15 +1249,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.GET,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/obligationcontracts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name___get": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name___get",
+    "zohocontracts__/api/v1/counterparties/organization_api_name___GET": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name",
       "text": "Get Counterparty",
       "category": "Counterparties",
@@ -1366,15 +1299,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties___get": {
-      "provider_intent": "zohocontracts__api__v1__counterparties___get",
+    "zohocontracts__/api/v1/counterparties___GET": {
       "provider_alias_intent": "/api/v1/counterparties",
       "text": "Get Counterparties List",
       "category": "Counterparties",
@@ -1407,15 +1337,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties___post": {
-      "provider_intent": "zohocontracts__api__v1__counterparties___post",
+    "zohocontracts__/api/v1/counterparties___POST": {
       "provider_alias_intent": "/api/v1/counterparties",
       "text": "Create Counterparty",
       "category": "Counterparties",
@@ -1489,15 +1416,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name___put",
+    "zohocontracts__/api/v1/counterparties/organization_api_name___PUT": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name",
       "text": "Update Counterparty",
       "category": "Counterparties",
@@ -1555,15 +1479,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name___delete",
+    "zohocontracts__/api/v1/counterparties/organization_api_name___DELETE": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name",
       "text": "Delete Counterparty",
       "category": "Counterparties",
@@ -1608,15 +1529,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers___get": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers___get",
+    "zohocontracts__/api/v1/counterparties/organization_api_name/counterpartyusers___GET": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name/counterpartyusers",
       "text": "Get Counterparty Contacts",
       "category": "Counterparty Contacts",
@@ -1661,15 +1579,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}/counterpartyusers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers___post": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers___post",
+    "zohocontracts__/api/v1/counterparties/organization_api_name/counterpartyusers___POST": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name/counterpartyusers",
       "text": "Create Counterparty Contact",
       "category": "Counterparty Contacts",
@@ -1731,15 +1646,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}/counterpartyusers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers__email_id___put": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers__email_id___put",
+    "zohocontracts__/api/v1/counterparties/organization_api_name/counterpartyusers/email_id___PUT": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name/counterpartyusers/email_id",
       "text": "Update Counterparty Contact",
       "category": "Counterparty Contacts",
@@ -1803,15 +1715,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}/counterpartyusers/{emailId}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers__email_id___delete": {
-      "provider_intent": "zohocontracts__api__v1__counterparties__organization_api_name__counterpartyusers__email_id___delete",
+    "zohocontracts__/api/v1/counterparties/organization_api_name/counterpartyusers/email_id___DELETE": {
       "provider_alias_intent": "/api/v1/counterparties/organization_api_name/counterpartyusers/email_id",
       "text": "Delete Counterparty Contact",
       "category": "Counterparty Contacts",
@@ -1866,15 +1775,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterparties/{organizationApiName}/counterpartyusers/{emailId}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__counterpartytypes___get": {
-      "provider_intent": "zohocontracts__api__v1__counterpartytypes___get",
+    "zohocontracts__/api/v1/counterpartytypes___GET": {
       "provider_alias_intent": "/api/v1/counterpartytypes",
       "text": "Get Counterparty Types List",
       "category": "Counterparty Types",
@@ -1907,15 +1813,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/counterpartytypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__counterpartytypes___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__counterpartytypes___get",
+    "zohocontracts__/api/v1/admin/counterpartytypes___GET": {
       "provider_alias_intent": "/api/v1/admin/counterpartytypes",
       "text": "Get Counterparty Types List using Admin Privilege",
       "category": "Counterparty Types",
@@ -1948,15 +1851,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/counterpartytypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__counterpartytypes___post": {
-      "provider_intent": "zohocontracts__api__v1__admin__counterpartytypes___post",
+    "zohocontracts__/api/v1/admin/counterpartytypes___POST": {
       "provider_alias_intent": "/api/v1/admin/counterpartytypes",
       "text": "Create Counterparty Type",
       "category": "Counterparty Types",
@@ -1994,15 +1894,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/counterpartytypes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__counterpartytypes__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__admin__counterpartytypes__api_name___put",
+    "zohocontracts__/api/v1/admin/counterpartytypes/api_name___PUT": {
       "provider_alias_intent": "/api/v1/admin/counterpartytypes/api_name",
       "text": "Update Counterparty Type",
       "category": "Counterparty Types",
@@ -2052,15 +1949,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/counterpartytypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__counterpartytypes__api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__admin__counterpartytypes__api_name___delete",
+    "zohocontracts__/api/v1/admin/counterpartytypes/api_name___DELETE": {
       "provider_alias_intent": "/api/v1/admin/counterpartytypes/api_name",
       "text": "Delete Counterparty Type",
       "category": "Counterparty Types",
@@ -2105,15 +1999,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.DELETE, contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/counterpartytypes/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__departments___get": {
-      "provider_intent": "zohocontracts__api__v1__departments___get",
+    "zohocontracts__/api/v1/departments___GET": {
       "provider_alias_intent": "/api/v1/departments",
       "text": "Get Departments List",
       "category": "Departments",
@@ -2146,15 +2037,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/departments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.007Z"
     },
-    "zohocontracts__api__v1__admin__departments___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__departments___get",
+    "zohocontracts__/api/v1/admin/departments___GET": {
       "provider_alias_intent": "/api/v1/admin/departments",
       "text": "Get Departments List using Admin privilege",
       "category": "Departments",
@@ -2187,15 +2075,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/departments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__departments___post": {
-      "provider_intent": "zohocontracts__api__v1__admin__departments___post",
+    "zohocontracts__/api/v1/admin/departments___POST": {
       "provider_alias_intent": "/api/v1/admin/departments",
       "text": "Create Department",
       "category": "Departments",
@@ -2233,15 +2118,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/departments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__departments__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__admin__departments__api_name___put",
+    "zohocontracts__/api/v1/admin/departments/api_name___PUT": {
       "provider_alias_intent": "/api/v1/admin/departments/api_name",
       "text": "Update Department",
       "category": "Departments",
@@ -2291,15 +2173,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/departments/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__departments__api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__admin__departments__api_name___delete",
+    "zohocontracts__/api/v1/admin/departments/api_name___DELETE": {
       "provider_alias_intent": "/api/v1/admin/departments/api_name",
       "text": "Delete Department",
       "category": "Departments",
@@ -2344,15 +2223,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/departments/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__obligationcategories___get": {
-      "provider_intent": "zohocontracts__api__v1__obligationcategories___get",
+    "zohocontracts__/api/v1/obligationcategories___GET": {
       "provider_alias_intent": "/api/v1/obligationcategories",
       "text": "Get Obligation Categories List",
       "category": "Obligation Category",
@@ -2385,15 +2261,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/obligationcategories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__obligationcategories___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__obligationcategories___get",
+    "zohocontracts__/api/v1/admin/obligationcategories___GET": {
       "provider_alias_intent": "/api/v1/admin/obligationcategories",
       "text": "Get Obligation Categories List using Admin privilege",
       "category": "Obligation Category",
@@ -2426,15 +2299,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/admin/obligationcategories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__obligationcategories___post": {
-      "provider_intent": "zohocontracts__api__v1__admin__obligationcategories___post",
+    "zohocontracts__/api/v1/admin/obligationcategories___POST": {
       "provider_alias_intent": "/api/v1/admin/obligationcategories",
       "text": "Create Obligation Category",
       "category": "Obligation Category",
@@ -2472,15 +2342,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/obligationcategories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__obligationcategories__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__admin__obligationcategories__api_name___put",
+    "zohocontracts__/api/v1/admin/obligationcategories/api_name___PUT": {
       "provider_alias_intent": "/api/v1/admin/obligationcategories/api_name",
       "text": "Update Obligation Category",
       "category": "Obligation Category",
@@ -2530,15 +2397,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/obligationcategories/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__obligationcategories__api_name___delete": {
-      "provider_intent": "zohocontracts__api__v1__admin__obligationcategories__api_name___delete",
+    "zohocontracts__/api/v1/admin/obligationcategories/api_name___DELETE": {
       "provider_alias_intent": "/api/v1/admin/obligationcategories/api_name",
       "text": "Delete Obligation Category",
       "category": "Obligation Category",
@@ -2583,15 +2447,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/obligationcategories/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontractsapi__v1__actions__contracts__api_name__obligations___get": {
-      "provider_intent": "zohocontractsapi__v1__actions__contracts__api_name__obligations___get",
+    "zohocontracts__api/v1/actions/contracts/api_name/obligations___GET": {
       "provider_alias_intent": "api/v1/actions/contracts/api_name/obligations",
       "text": "Get Obligations List",
       "category": "Obligations/Create and Manage",
@@ -2636,15 +2497,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}api/v1/actions/contracts/{apiName}/obligations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__obligations___post": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__obligations___post",
+    "zohocontracts__/api/v1/contracts/contract_api_name/obligations___POST": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/obligations",
       "text": "Create Obligation",
       "category": "Obligations/Create and Manage",
@@ -2762,15 +2620,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.CREATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{contractApiName}/obligations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__contracts__contract_api_name__obligations__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__contracts__contract_api_name__obligations__api_name___put",
+    "zohocontracts__/api/v1/contracts/contract_api_name/obligations/api_name___PUT": {
       "provider_alias_intent": "/api/v1/contracts/contract_api_name/obligations/api_name",
       "text": "Update Obligation",
       "category": "Obligations/Create and Manage",
@@ -2842,15 +2697,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/contracts/{apiName}/obligations/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__actions__updatestatus__contracts__contract_api_name__obligations__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__actions__updatestatus__contracts__contract_api_name__obligations__api_name___put",
+    "zohocontracts__/api/v1/actions/updatestatus/contracts/contract_api_name/obligations/api_name___PUT": {
       "provider_alias_intent": "/api/v1/actions/updatestatus/contracts/contract_api_name/obligations/api_name",
       "text": "Update Obligation Status",
       "category": "Obligations/Create and Manage",
@@ -2914,15 +2766,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.UPDATE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/actions/updatestatus/contracts/{contractApiName}/obligations/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontractsapi__v1__contracts__contract_api_name__obligations__api_name___delete": {
-      "provider_intent": "zohocontractsapi__v1__contracts__contract_api_name__obligations__api_name___delete",
+    "zohocontracts__api/v1/contracts/contract_api_name/obligations/api_name___DELETE": {
       "provider_alias_intent": "api/v1/contracts/contract_api_name/obligations/api_name",
       "text": "Delete Obligation",
       "category": "Obligations/Create and Manage",
@@ -2977,15 +2826,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.DELETE,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}api/v1/contracts/{apiName}/obligations/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__myobligations___get": {
-      "provider_intent": "zohocontracts__api__v1__myobligations___get",
+    "zohocontracts__/api/v1/myobligations___GET": {
       "provider_alias_intent": "/api/v1/myobligations",
       "text": "Get All Obligations List",
       "category": "Obligations/Obligation Owner",
@@ -3018,15 +2864,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/myobligations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__pendingobligations___get": {
-      "provider_intent": "zohocontracts__api__v1__pendingobligations___get",
+    "zohocontracts__/api/v1/pendingobligations___GET": {
       "provider_alias_intent": "/api/v1/pendingobligations",
       "text": "Get Pending Obligations List",
       "category": "Obligations/Obligation Owner",
@@ -3059,15 +2902,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ, contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/pendingobligations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__myobligations__api_name__tasks___get": {
-      "provider_intent": "zohocontracts__api__v1__myobligations__api_name__tasks___get",
+    "zohocontracts__/api/v1/myobligations/api_name/tasks___GET": {
       "provider_alias_intent": "/api/v1/myobligations/api_name/tasks",
       "text": "Get Tasks List of an Obligation",
       "category": "Obligations/Obligation Owner",
@@ -3112,15 +2952,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL\n",
       "api_endpoint_src": "{endpoint}/api/v1/myobligations/{apiName}/tasks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__pendingobligations__api_name__tasks___get": {
-      "provider_intent": "zohocontracts__api__v1__pendingobligations__api_name__tasks___get",
+    "zohocontracts__/api/v1/pendingobligations/api_name/tasks___GET": {
       "provider_alias_intent": "/api/v1/pendingobligations/api_name/tasks",
       "text": "Get Tasks List of a Pending Obligation",
       "category": "Obligations/Obligation Owner",
@@ -3165,15 +3002,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.contracts.READ,contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/pendingobligations/{apiName}/tasks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__orginfo___get": {
-      "provider_intent": "zohocontracts__api__v1__admin__orginfo___get",
+    "zohocontracts__/api/v1/admin/orginfo___GET": {
       "provider_alias_intent": "/api/v1/admin/orginfo",
       "text": "Get Organization Info",
       "category": "Organization",
@@ -3206,15 +3040,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ, contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/orginfo",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__admin__orginfo__api_name___put": {
-      "provider_intent": "zohocontracts__api__v1__admin__orginfo__api_name___put",
+    "zohocontracts__/api/v1/admin/orginfo/api_name___PUT": {
       "provider_alias_intent": "/api/v1/admin/orginfo/api_name",
       "text": "Update Organization Info",
       "category": "Organization",
@@ -3288,15 +3119,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.UPDATE, contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/admin/orginfo/{apiName}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     },
-    "zohocontracts__api__v1__activeusers___get": {
-      "provider_intent": "zohocontracts__api__v1__activeusers___get",
+    "zohocontracts__/api/v1/activeusers___GET": {
       "provider_alias_intent": "/api/v1/activeusers",
       "text": "Get Active Users",
       "category": "Users",
@@ -3329,12 +3157,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "contracts.meta.READ, contracts.contracts.ALL",
       "api_endpoint_src": "{endpoint}/api/v1/activeusers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.008Z"
     }
   }
 }

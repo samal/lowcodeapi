@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohorecruit API",
-    "description": "",
-    "api_base": "/zohorecruit",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_list_of_modules": {
-      "provider_intent": "get_list_of_modules",
+    "zohorecruit__recruit/v2/settings/modules___GET": {
       "provider_alias_intent": "recruit/v2/settings/modules",
       "text": "Get list of modules",
       "category": "Modules",
@@ -45,13 +34,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoRecruit.setup.operation.all",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.127Z"
     },
-    "get_roles": {
-      "provider_intent": "get_roles",
+    "zohorecruit__/recruit/v2/settings/roles___GET": {
       "provider_alias_intent": "/recruit/v2/settings/roles",
       "text": "Get roles",
       "category": "Roles",
@@ -84,10 +72,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoRECRUIT.settings.roles.ALL,\nZohoRECRUIT.settings.roles.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.127Z"
     }
   }
 }

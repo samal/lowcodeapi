@@ -1,7 +1,7 @@
 {
+  "config": {},
   "routes": {
-    "gooseai__v1__engines___get": {
-      "provider_intent": "gooseai__v1__engines___get",
+    "gooseai__/v1/engines___Get": {
       "provider_alias_intent": "/v1/engines",
       "provider_proxy_intent": "https://api.goose.ai/v1/engines",
       "text": "List engines",
@@ -31,10 +31,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.423Z"
     },
-    "gooseai__v1__engines__engine_id___get": {
-      "provider_intent": "gooseai__v1__engines__engine_id___get",
+    "gooseai__/v1/engines/engine_id___Get": {
       "provider_alias_intent": "/v1/engines/engine_id",
       "provider_proxy_intent": "https://api.goose.ai/v1/engines/{engine_id}",
       "text": "Get engines",
@@ -70,10 +69,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:32:03.000Z"
+      "updated_at": "2025-11-11T12:00:08.423Z"
     },
-    "gooseai__v1__engines__engine_id__completions___post": {
-      "provider_intent": "gooseai__v1__engines__engine_id__completions___post",
+    "gooseai__/v1/engines/engine_id/completions___POST": {
       "provider_alias_intent": "/v1/engines/engine_id/completions",
       "provider_proxy_intent": "https://api.goose.ai/v1/engines/{engine_id}/completions",
       "text": "Create completion",
@@ -198,7 +196,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:31:39.000Z"
+      "updated_at": "2025-11-11T12:00:08.423Z"
     }
   }
 }

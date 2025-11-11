@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohomail__api__accounts__account_id___get": {
-      "provider_intent": "zohomail__api__accounts__account_id___get",
+    "zohomail__/api/accounts/account_id___GET": {
       "provider_alias_intent": "/api/accounts/account_id",
       "text": "User account details Accounts",
       "category": "Accounts",
@@ -123,14 +122,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id___put": {
-      "provider_intent": "zohomail__api__accounts__account_id___put",
+    "zohomail__/api/accounts/account_id___PUT": {
       "provider_alias_intent": "/api/accounts/account_id",
       "text": "Change POP Status (Using User Authentication)",
       "category": "Users",
@@ -190,14 +186,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id​___put": {
-      "provider_intent": "zohomail__api__accounts__account_id​___put",
+    "zohomail__/api/accounts/account_id​___PUT": {
       "provider_alias_intent": "/api/accounts/account_id​",
       "text": "Delete Vacation Reply (Using User Authentication)",
       "category": "Accounts",
@@ -248,14 +241,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountid>​",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__accounts__account_id___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__accounts__account_id___put",
+    "zohomail__/api/organization/zo_id/accounts/account_id___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/accounts/account_id",
       "text": "To Disable User",
       "category": "Users (Organization)",
@@ -345,14 +335,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/accounts/<accountid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me___get": {
-      "provider_intent": "zohomail__api__links__me___get",
+    "zohomail__/api/links/me___GET": {
       "provider_alias_intent": "/api/links/me",
       "text": "Get all Bookmarks",
       "category": "Bookmarks",
@@ -398,14 +385,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me___post": {
-      "provider_intent": "zohomail__api__links__me___post",
+    "zohomail__/api/links/me___POST": {
       "provider_alias_intent": "/api/links/me",
       "text": "Add a new Bookmark",
       "category": "Bookmarks",
@@ -456,14 +440,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__entity_id___get": {
-      "provider_intent": "zohomail__api__links__me__entity_id___get",
+    "zohomail__/api/links/me/entity_id___GET": {
       "provider_alias_intent": "/api/links/me/entity_id",
       "text": "Get a Bookmark",
       "category": "Bookmarks",
@@ -512,14 +493,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__entity_id___put": {
-      "provider_intent": "zohomail__api__links__me__entity_id___put",
+    "zohomail__/api/links/me/entity_id___PUT": {
       "provider_alias_intent": "/api/links/me/entity_id",
       "text": "Edit a Bookmark",
       "category": "Bookmarks",
@@ -581,14 +559,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__entity_id__favorite___put": {
-      "provider_intent": "zohomail__api__links__me__entity_id__favorite___put",
+    "zohomail__/api/links/me/entity_id/favorite___PUT": {
       "provider_alias_intent": "/api/links/me/entity_id/favorite",
       "text": "Mark a Bookmark as favorite",
       "category": "Bookmarks",
@@ -633,14 +608,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__entity_id__favorite___delete": {
-      "provider_intent": "zohomail__api__links__me__entity_id__favorite___delete",
+    "zohomail__/api/links/me/entity_id/favorite___DELETE": {
       "provider_alias_intent": "/api/links/me/entity_id/favorite",
       "text": "Unmark a Bookmark as favorites",
       "category": "Bookmarks",
@@ -685,14 +657,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__entity_id___delete": {
-      "provider_intent": "zohomail__api__links__me__entity_id___delete",
+    "zohomail__/api/links/me/entity_id___DELETE": {
       "provider_alias_intent": "/api/links/me/entity_id",
       "text": "Delete a Bookmark",
       "category": "Bookmarks",
@@ -737,14 +706,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__collections___get": {
-      "provider_intent": "zohomail__api__links__me__collections___get",
+    "zohomail__/api/links/me/collections___GET": {
       "provider_alias_intent": "/api/links/me/collections",
       "text": "Get all collections",
       "category": "Bookmarks",
@@ -777,14 +743,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/collections",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__collections___post": {
-      "provider_intent": "zohomail__api__links__me__collections___post",
+    "zohomail__/api/links/me/collections___POST": {
       "provider_alias_intent": "/api/links/me/collections",
       "text": "Create a collection",
       "category": "Bookmarks",
@@ -817,14 +780,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/collections",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__collections__collection_id___put": {
-      "provider_intent": "zohomail__api__links__me__collections__collection_id___put",
+    "zohomail__/api/links/me/collections/collection_id___PUT": {
       "provider_alias_intent": "/api/links/me/collections/collection_id",
       "text": "Edit a collection",
       "category": "Bookmarks",
@@ -869,14 +829,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/collections/<collectionID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__collections__collection_id___delete": {
-      "provider_intent": "zohomail__api__links__me__collections__collection_id___delete",
+    "zohomail__/api/links/me/collections/collection_id___DELETE": {
       "provider_alias_intent": "/api/links/me/collections/collection_id",
       "text": "Delete a collection",
       "category": "Bookmarks",
@@ -921,14 +878,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/collections/<collectionId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__me__collections__collection_id___get": {
-      "provider_intent": "zohomail__api__links__me__collections__collection_id___get",
+    "zohomail__/api/links/me/collections/collection_id___GET": {
       "provider_alias_intent": "/api/links/me/collections/collection_id",
       "text": "Get all Bookmarks in a collection",
       "category": "Bookmarks",
@@ -985,14 +939,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/me/collections/<collectionId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups___get": {
-      "provider_intent": "zohomail__api__links__groups___get",
+    "zohomail__/api/links/groups___GET": {
       "provider_alias_intent": "/api/links/groups",
       "text": "Get all Groups",
       "category": "Bookmarks (Group)",
@@ -1025,14 +976,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id___get": {
-      "provider_intent": "zohomail__api__links__groups__group_id___get",
+    "zohomail__/api/links/groups/group_id___GET": {
       "provider_alias_intent": "/api/links/groups/group_id",
       "text": "Get all Bookmarks for Group",
       "category": "Bookmarks (Group)",
@@ -1089,14 +1037,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomailapi__links__groups__group_id___post": {
-      "provider_intent": "zohomailapi__links__groups__group_id___post",
+    "zohomail__api/links/groups/group_id___POST": {
       "provider_alias_intent": "api/links/groups/group_id",
       "text": "Add a new Bookmark for Group",
       "category": "Bookmarks (Group)",
@@ -1158,14 +1103,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}api/links/groups/<GroupID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__entity_id___get": {
-      "provider_intent": "zohomail__api__links__groups__group_id__entity_id___get",
+    "zohomail__/api/links/groups/group_id/entity_id___GET": {
       "provider_alias_intent": "/api/links/groups/group_id/entity_id",
       "text": "Get a Bookmark for Group",
       "category": "Bookmarks (Group)",
@@ -1224,14 +1166,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__entity_id___put": {
-      "provider_intent": "zohomail__api__links__groups__group_id__entity_id___put",
+    "zohomail__/api/links/groups/group_id/entity_id___PUT": {
       "provider_alias_intent": "/api/links/groups/group_id/entity_id",
       "text": "Edit a Bookmark for Group",
       "category": "Bookmarks (Group)",
@@ -1303,14 +1242,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__entity_id__favorite___put": {
-      "provider_intent": "zohomail__api__links__groups__group_id__entity_id__favorite___put",
+    "zohomail__/api/links/groups/group_id/entity_id/favorite___PUT": {
       "provider_alias_intent": "/api/links/groups/group_id/entity_id/favorite",
       "text": "Mark a Bookmark as favorite for Group",
       "category": "Bookmarks (Group)",
@@ -1365,14 +1301,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__entity_id__favorite___delete": {
-      "provider_intent": "zohomail__api__links__groups__group_id__entity_id__favorite___delete",
+    "zohomail__/api/links/groups/group_id/entity_id/favorite___DELETE": {
       "provider_alias_intent": "/api/links/groups/group_id/entity_id/favorite",
       "text": "Unmark a Bookmark as favorites for Group",
       "category": "Bookmarks (Group)",
@@ -1427,14 +1360,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__entity_id___delete": {
-      "provider_intent": "zohomail__api__links__groups__group_id__entity_id___delete",
+    "zohomail__/api/links/groups/group_id/entity_id___DELETE": {
       "provider_alias_intent": "/api/links/groups/group_id/entity_id",
       "text": "Delete a Bookmark for Group",
       "category": "Bookmarks (Group)",
@@ -1489,14 +1419,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__collections___get": {
-      "provider_intent": "zohomail__api__links__groups__group_id__collections___get",
+    "zohomail__/api/links/groups/group_id/collections___GET": {
       "provider_alias_intent": "/api/links/groups/group_id/collections",
       "text": "Get all collections for Group",
       "category": "Bookmarks (Group)",
@@ -1541,14 +1468,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/collections",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__collections___post": {
-      "provider_intent": "zohomail__api__links__groups__group_id__collections___post",
+    "zohomail__/api/links/groups/group_id/collections___POST": {
       "provider_alias_intent": "/api/links/groups/group_id/collections",
       "text": "Create a collection for Group",
       "category": "Bookmarks (Group)",
@@ -1603,14 +1527,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/collections",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__collections__collection_id___put": {
-      "provider_intent": "zohomail__api__links__groups__group_id__collections__collection_id___put",
+    "zohomail__/api/links/groups/group_id/collections/collection_id___PUT": {
       "provider_alias_intent": "/api/links/groups/group_id/collections/collection_id",
       "text": "Edit a collection for Group",
       "category": "Bookmarks (Group)",
@@ -1671,14 +1592,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/collections/<collectionID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__collections__collection_id___delete": {
-      "provider_intent": "zohomail__api__links__groups__group_id__collections__collection_id___delete",
+    "zohomail__/api/links/groups/group_id/collections/collection_id___DELETE": {
       "provider_alias_intent": "/api/links/groups/group_id/collections/collection_id",
       "text": "Delete a collection for Group",
       "category": "Bookmarks (Group)",
@@ -1733,14 +1651,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/collections/<collectionId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__links__groups__group_id__collections__collection_id___get": {
-      "provider_intent": "zohomail__api__links__groups__group_id__collections__collection_id___get",
+    "zohomail__/api/links/groups/group_id/collections/collection_id___GET": {
       "provider_alias_intent": "/api/links/groups/group_id/collections/collection_id",
       "text": "Get all Bookmarks in a collection for Group",
       "category": "Bookmarks (Group)",
@@ -1807,14 +1722,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/links/groups/<groupid>/collections/<collectionId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains___get",
+    "zohomail__/api/organization/zo_id/domains___GET": {
       "provider_alias_intent": "/api/organization/zo_id/domains",
       "text": "All Domain Details",
       "category": "Domain",
@@ -1859,14 +1771,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains__domain_name___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains__domain_name___get",
+    "zohomail__/api/organization/zo_id/domains/domain_name___GET": {
       "provider_alias_intent": "/api/organization/zo_id/domains/domain_name",
       "text": "Retrieve details about a single Domain",
       "category": "Domain",
@@ -1925,14 +1834,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains/<domainName>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains___post": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains___post",
+    "zohomail__/api/organization/zo_id/domains___POST": {
       "provider_alias_intent": "/api/organization/zo_id/domains",
       "text": "Add domain to an Organization",
       "category": "Domain",
@@ -1981,14 +1887,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains__domain_name__verifydomain___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains__domain_name__verifydomain___put",
+    "zohomail__/api/organization/zo_id/domains/domain_name/verifydomain___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/domains/domain_name/verifydomain",
       "text": "Verify the Domain added to the Organization",
       "category": "Domain",
@@ -2049,14 +1952,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains/<domainName>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains__domain_name___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains__domain_name___put",
+    "zohomail__/api/organization/zo_id/domains/domain_name___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/domains/domain_name",
       "text": "To verify MX Record",
       "category": "Domain",
@@ -2117,14 +2017,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains/<domainName>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__domains__domain_name___delete": {
-      "provider_intent": "zohomail__api__organization__zo_id__domains__domain_name___delete",
+    "zohomail__/api/organization/zo_id/domains/domain_name___DELETE": {
       "provider_alias_intent": "/api/organization/zo_id/domains/domain_name",
       "text": "Remove domain from Organization",
       "category": "Domain",
@@ -2179,14 +2076,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/domains/<domainName>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages___post": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages___post",
+    "zohomail__/api/accounts/account_id/messages___POST": {
       "provider_alias_intent": "/api/accounts/account_id/messages",
       "text": "Save Draft / Template",
       "category": "Email Messages",
@@ -2263,14 +2157,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/messages",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages__view___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages__view___get",
+    "zohomail__/api/accounts/account_id/messages/view___GET": {
       "provider_alias_intent": "/api/accounts/account_id/messages/view",
       "text": "Get all/ view based emails in a folder",
       "category": "Email Messages",
@@ -2387,14 +2278,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/messages/view",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages__search___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages__search___get",
+    "zohomail__/api/accounts/account_id/messages/search___GET": {
       "provider_alias_intent": "/api/accounts/account_id/messages/search",
       "text": "Get emails based on search conditions",
       "category": "Email Messages",
@@ -2468,14 +2356,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/messages/search",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__details___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__details___get",
+    "zohomail__/api/accounts/account_id/folders/folder_id/messages/message_id/details___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id/messages/message_id/details",
       "text": "Get meta data of a particular email",
       "category": "Email Messages",
@@ -2540,14 +2425,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/<folderid>/messages/<messageId>/details",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folderid__messages__message_id__attachmentinfo___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folderid__messages__message_id__attachmentinfo___get",
+    "zohomail__/api/accounts/account_id/folders/folderid/messages/message_id/attachmentinfo___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folderid/messages/message_id/attachmentinfo",
       "text": "Get attachment info",
       "category": "Email Messages",
@@ -2612,14 +2494,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/folderid/messages/<messageId>/attachmentinfo",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__attachments__attachment_id___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__attachments__attachment_id___get",
+    "zohomail__/api/accounts/account_id/folders/folder_id/messages/message_id/attachments/attachment_id___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id/messages/message_id/attachments/attachment_id",
       "text": "Get email attachment content",
       "category": "Email Messages",
@@ -2694,14 +2573,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/<folderId>/messages/<messageId>/attachments/<attachId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__header___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id__messages__message_id__header___get",
+    "zohomail__/api/accounts/account_id/folders/folder_id/messages/message_id/header___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id/messages/message_id/header",
       "text": "Get email headers",
       "category": "Email Messages",
@@ -2766,14 +2642,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "/api/accounts/{accountId}/folders/{folderId}/messages/{messageId}/header",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__updatemessage___put": {
-      "provider_intent": "zohomail__api__accounts__account_id__updatemessage___put",
+    "zohomail__/api/accounts/account_id/updatemessage___PUT": {
       "provider_alias_intent": "/api/accounts/account_id/updatemessage",
       "text": "Mark email as not spam",
       "category": "Email Messages",
@@ -2845,14 +2718,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/updatemessage",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages__attachments___post": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages__attachments___post",
+    "zohomail__/api/accounts/account_id/messages/attachments___POST": {
       "provider_alias_intent": "/api/accounts/account_id/messages/attachments",
       "text": "Upload attachment",
       "category": "Email Messages",
@@ -2911,14 +2781,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/messages/attachments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages__message_id___post": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages__message_id___post",
+    "zohomail__/api/accounts/account_id/messages/message_id___POST": {
       "provider_alias_intent": "/api/accounts/account_id/messages/message_id",
       "text": "Reply to an email",
       "category": "Email Messages",
@@ -3008,14 +2875,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/messages/<messageId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__foldersfolder_id__messages___delete": {
-      "provider_intent": "zohomail__api__accounts__account_id__foldersfolder_id__messages___delete",
+    "zohomail__/api/accounts/account_id/foldersfolder_id/messages___DELETE": {
       "provider_alias_intent": "/api/accounts/account_id/foldersfolder_id/messages",
       "text": "Delete email",
       "category": "Email Messages",
@@ -3070,14 +2934,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders<folderId>/messages",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__messages__message_id___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__messages__message_id___get",
+    "zohomail__/api/accounts/account_id/messages/message_id___GET": {
       "provider_alias_intent": "/api/accounts/account_id/messages/message_id",
       "text": "Get original message",
       "category": "Email Messages",
@@ -3122,14 +2983,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountid>/messages/<messageid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders___get",
+    "zohomail__/api/accounts/account_id/folders___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders",
       "text": "Get all Folder Details",
       "category": "Folder",
@@ -3174,14 +3032,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id___get",
+    "zohomail__/api/accounts/account_id/folders/folder_id___GET": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id",
       "text": "Get Details of a Single Folder",
       "category": "Folder",
@@ -3236,14 +3091,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/<folderid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders___post": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders___post",
+    "zohomail__/api/accounts/account_id/folders___POST": {
       "provider_alias_intent": "/api/accounts/account_id/folders",
       "text": "Create a new Folder",
       "category": "Folder",
@@ -3298,14 +3150,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id___put": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id___put",
+    "zohomail__/api/accounts/account_id/folders/folder_id___PUT": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id",
       "text": "Empty Folder",
       "category": "Folder",
@@ -3366,14 +3215,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/<folderid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__folders__folder_id___delete": {
-      "provider_intent": "zohomail__api__accounts__account_id__folders__folder_id___delete",
+    "zohomail__/api/accounts/account_id/folders/folder_id___DELETE": {
       "provider_alias_intent": "/api/accounts/account_id/folders/folder_id",
       "text": "Delete Folder",
       "category": "Folder",
@@ -3418,14 +3264,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/folders/<folderid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups___get",
+    "zohomail__/api/organization/zo_id/groups___GET": {
       "provider_alias_intent": "/api/organization/zo_id/groups",
       "text": "Details of all the groups",
       "category": "Groups",
@@ -3486,14 +3329,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id​___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id​___get",
+    "zohomail__/api/organization/zo_id/groups/group_id​___GET": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id​",
       "text": "Single group details",
       "category": "Groups",
@@ -3548,14 +3388,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>​",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups___post": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups___post",
+    "zohomail__/api/organization/zo_id/groups___POST": {
       "provider_alias_intent": "/api/organization/zo_id/groups",
       "text": "Add group",
       "category": "Groups",
@@ -3627,14 +3464,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id___put",
+    "zohomail__/api/organization/zo_id/groups/group_id___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id",
       "text": "Remove group email alias",
       "category": "Groups",
@@ -3700,14 +3534,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id__messages___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id__messages___get",
+    "zohomail__/api/organization/zo_id/groups/group_id/messages___GET": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id/messages",
       "text": "Get emails for moderation",
       "category": "Groups",
@@ -3762,14 +3593,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>/messages",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id__messages__message_id___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id__messages__message_id___get",
+    "zohomail__/api/organization/zo_id/groups/group_id/messages/message_id___GET": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id/messages/message_id",
       "text": "Get moderation email content",
       "category": "Groups",
@@ -3842,14 +3670,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>/messages/<messageId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id__messages___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id__messages___put",
+    "zohomail__/api/organization/zo_id/groups/group_id/messages___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id/messages",
       "text": "Moderate group email",
       "category": "Groups",
@@ -3904,14 +3729,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>/messages",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__groups__group_id___delete": {
-      "provider_intent": "zohomail__api__organization__zo_id__groups__group_id___delete",
+    "zohomail__/api/organization/zo_id/groups/group_id___DELETE": {
       "provider_alias_intent": "/api/organization/zo_id/groups/group_id",
       "text": "Delete group",
       "category": "Groups",
@@ -3966,14 +3788,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/groups/<groupId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__labels___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__labels___get",
+    "zohomail__/api/accounts/account_id/labels___GET": {
       "provider_alias_intent": "/api/accounts/account_id/labels",
       "text": "Get all Label Details",
       "category": "Label",
@@ -4018,14 +3837,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/labels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__labels__label_id___get": {
-      "provider_intent": "zohomail__api__accounts__account_id__labels__label_id___get",
+    "zohomail__/api/accounts/account_id/labels/label_id___GET": {
       "provider_alias_intent": "/api/accounts/account_id/labels/label_id",
       "text": "Get Single Label Details",
       "category": "Label",
@@ -4080,14 +3896,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/labels/<labelid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__pi__accounts__account_id__labels___post": {
-      "provider_intent": "zohomail__pi__accounts__account_id__labels___post",
+    "zohomail__/pi/accounts/account_id/labels___POST": {
       "provider_alias_intent": "/pi/accounts/account_id/labels",
       "text": "Create a new Label",
       "category": "Label",
@@ -4146,14 +3959,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/pi/accounts/<accountId>/labels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__labels__label_id___put": {
-      "provider_intent": "zohomail__api__accounts__account_id__labels__label_id___put",
+    "zohomail__/api/accounts/account_id/labels/label_id___PUT": {
       "provider_alias_intent": "/api/accounts/account_id/labels/label_id",
       "text": "Update a Label",
       "category": "Label",
@@ -4222,14 +4032,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/labels/<labelid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__labels__label_id___delete": {
-      "provider_intent": "zohomail__api__accounts__account_id__labels__label_id___delete",
+    "zohomail__/api/accounts/account_id/labels/label_id___DELETE": {
       "provider_alias_intent": "/api/accounts/account_id/labels/label_id",
       "text": "Delete Label",
       "category": "Label",
@@ -4284,14 +4091,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/labels/<labelid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups___get": {
-      "provider_intent": "zohomail__api__notes__groups___get",
+    "zohomail__/api/notes/groups___GET": {
       "provider_alias_intent": "/api/notes/groups",
       "text": "Get all Groups (Notes)",
       "category": "Notes",
@@ -4324,14 +4128,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me___get": {
-      "provider_intent": "zohomail__api__notes__me___get",
+    "zohomail__/api/notes/me___GET": {
       "provider_alias_intent": "/api/notes/me",
       "text": "Create a Note",
       "category": "Notes",
@@ -4383,14 +4184,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id___get": {
-      "provider_intent": "zohomail__api__notes__me__entity_id___get",
+    "zohomail__/api/notes/me/entity_id___GET": {
       "provider_alias_intent": "/api/notes/me/entity_id",
       "text": "Get a Note",
       "category": "Notes",
@@ -4435,14 +4233,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id___put": {
-      "provider_intent": "zohomail__api__notes__me__entity_id___put",
+    "zohomail__/api/notes/me/entity_id___PUT": {
       "provider_alias_intent": "/api/notes/me/entity_id",
       "text": "Edit a note",
       "category": "Notes",
@@ -4487,14 +4282,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id__attachments__attachment_id___get": {
-      "provider_intent": "zohomail__api__notes__me__entity_id__attachments__attachment_id___get",
+    "zohomail__/api/notes/me/entity_id/attachments/attachment_id___GET": {
       "provider_alias_intent": "/api/notes/me/entity_id/attachments/attachment_id",
       "text": "Get an attachment",
       "category": "Notes",
@@ -4553,14 +4345,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>/attachments/<attachmentId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id__attachments_____post": {
-      "provider_intent": "zohomail__api__notes__me__entity_id__attachments_____post",
+    "zohomail__/api/notes/me/entity_id/attachments/___POST": {
       "provider_alias_intent": "/api/notes/me/entity_id/attachments/",
       "text": "Add an attachment to a note",
       "category": "Notes",
@@ -4611,14 +4400,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>/attachments/",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id__attachments__attachment_id___delete": {
-      "provider_intent": "zohomail__api__notes__me__entity_id__attachments__attachment_id___delete",
+    "zohomail__/api/notes/me/entity_id/attachments/attachment_id___DELETE": {
       "provider_alias_intent": "/api/notes/me/entity_id/attachments/attachment_id",
       "text": "Delete an attachment",
       "category": "Notes",
@@ -4673,14 +4459,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>/attachments/<attachmentId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id___delete": {
-      "provider_intent": "zohomail__api__notes__me__entity_id___delete",
+    "zohomail__/api/notes/me/entity_id___DELETE": {
       "provider_alias_intent": "/api/notes/me/entity_id",
       "text": "Delete a Note",
       "category": "Notes",
@@ -4725,14 +4508,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__books___get": {
-      "provider_intent": "zohomail__api__notes__me__books___get",
+    "zohomail__/api/notes/me/books___GET": {
       "provider_alias_intent": "/api/notes/me/books",
       "text": "Get all Books",
       "category": "Notes",
@@ -4771,14 +4551,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/books",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__books___post": {
-      "provider_intent": "zohomail__api__notes__me__books___post",
+    "zohomail__/api/notes/me/books___POST": {
       "provider_alias_intent": "/api/notes/me/books",
       "text": "Create a new Book",
       "category": "Notes",
@@ -4817,14 +4594,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/books",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__books__book_id___put": {
-      "provider_intent": "zohomail__api__notes__me__books__book_id___put",
+    "zohomail__/api/notes/me/books/book_id___PUT": {
       "provider_alias_intent": "/api/notes/me/books/book_id",
       "text": "Edit a Book",
       "category": "Notes",
@@ -4875,14 +4649,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__books__book_id___delete": {
-      "provider_intent": "zohomail__api__notes__me__books__book_id___delete",
+    "zohomail__/api/notes/me/books/book_id___DELETE": {
       "provider_alias_intent": "/api/notes/me/books/book_id",
       "text": "Delete a Book",
       "category": "Notes",
@@ -4921,14 +4692,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__books__book_id___get": {
-      "provider_intent": "zohomail__api__notes__me__books__book_id___get",
+    "zohomail__/api/notes/me/books/book_id___GET": {
       "provider_alias_intent": "/api/notes/me/books/book_id",
       "text": "Get all Notes in a Book",
       "category": "Notes",
@@ -4993,14 +4761,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id__favorite___put": {
-      "provider_intent": "zohomail__api__notes__me__entity_id__favorite___put",
+    "zohomail__/api/notes/me/entity_id/favorite___PUT": {
       "provider_alias_intent": "/api/notes/me/entity_id/favorite",
       "text": "Mark a note as favourite",
       "category": "Notes",
@@ -5045,14 +4810,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__me__entity_id__favorite___delete": {
-      "provider_intent": "zohomail__api__notes__me__entity_id__favorite___delete",
+    "zohomail__/api/notes/me/entity_id/favorite___DELETE": {
       "provider_alias_intent": "/api/notes/me/entity_id/favorite",
       "text": "Unmark a note a favorite",
       "category": "Notes",
@@ -5097,14 +4859,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/me/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id___get": {
-      "provider_intent": "zohomail__api__notes__groups__group_id___get",
+    "zohomail__/api/notes/groups/group_id___GET": {
       "provider_alias_intent": "/api/notes/groups/group_id",
       "text": "Create a Note for Group",
       "category": "Notes (Group)",
@@ -5167,14 +4926,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<GroupID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id___get": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id___get",
+    "zohomail__/api/notes/groups/group_id/entity_id___GET": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id",
       "text": "Get a Note for Group",
       "category": "Notes (Group)",
@@ -5229,14 +4985,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id___put": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id___put",
+    "zohomail__/api/notes/groups/group_id/entity_id___PUT": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id",
       "text": "Edit a note for Group",
       "category": "Notes (Group)",
@@ -5291,14 +5044,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id__attachments__attachment_id___get": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id__attachments__attachment_id___get",
+    "zohomail__/api/notes/groups/group_id/entity_id/attachments/attachment_id___GET": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id/attachments/attachment_id",
       "text": "Get an attachment for Group",
       "category": "Notes (Group)",
@@ -5367,14 +5117,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>/attachments/<attachmentId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id__attachments_____post": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id__attachments_____post",
+    "zohomail__/api/notes/groups/group_id/entity_id/attachments/___POST": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id/attachments/",
       "text": "Add an attachment to a note for Group",
       "category": "Notes (Group)",
@@ -5429,14 +5176,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>/attachments/",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id__attachments__attachment_id___delete": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id__attachments__attachment_id___delete",
+    "zohomail__/api/notes/groups/group_id/entity_id/attachments/attachment_id___DELETE": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id/attachments/attachment_id",
       "text": "Delete an attachment for Group",
       "category": "Notes (Group)",
@@ -5501,14 +5245,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>/attachments/<attachmentId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id___delete": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id___delete",
+    "zohomail__/api/notes/groups/group_id/entity_id___DELETE": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id",
       "text": "Delete a Note for Group",
       "category": "Notes (Group)",
@@ -5563,14 +5304,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__books___get": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__books___get",
+    "zohomail__/api/notes/groups/group_id/books___GET": {
       "provider_alias_intent": "/api/notes/groups/group_id/books",
       "text": "Get all Books for Group",
       "category": "Notes (Group)",
@@ -5615,14 +5353,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/books",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__books___post": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__books___post",
+    "zohomail__/api/notes/groups/group_id/books___POST": {
       "provider_alias_intent": "/api/notes/groups/group_id/books",
       "text": "Create a new Book for Group",
       "category": "Notes (Group)",
@@ -5673,14 +5408,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/books",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__books__book_id___put": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__books__book_id___put",
+    "zohomail__/api/notes/groups/group_id/books/book_id___PUT": {
       "provider_alias_intent": "/api/notes/groups/group_id/books/book_id",
       "text": "Edit a Book for Group",
       "category": "Notes (Group)",
@@ -5741,14 +5473,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__books__book_id___delete": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__books__book_id___delete",
+    "zohomail__/api/notes/groups/group_id/books/book_id___DELETE": {
       "provider_alias_intent": "/api/notes/groups/group_id/books/book_id",
       "text": "Delete a Book for Group",
       "category": "Notes (Group)",
@@ -5803,14 +5532,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__books__book_id___get": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__books__book_id___get",
+    "zohomail__/api/notes/groups/group_id/books/book_id___GET": {
       "provider_alias_intent": "/api/notes/groups/group_id/books/book_id",
       "text": "Get all Notes in a Book for Group",
       "category": "Notes (Group)",
@@ -5885,14 +5611,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/books/<bookId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id__favorite___put": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id__favorite___put",
+    "zohomail__/api/notes/groups/group_id/entity_id/favorite___PUT": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id/favorite",
       "text": "Mark a note as favourite for Group",
       "category": "Notes (Group)",
@@ -5947,14 +5670,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__notes__groups__group_id__entity_id__favorite___delete": {
-      "provider_intent": "zohomail__api__notes__groups__group_id__entity_id__favorite___delete",
+    "zohomail__/api/notes/groups/group_id/entity_id/favorite___DELETE": {
       "provider_alias_intent": "/api/notes/groups/group_id/entity_id/favorite",
       "text": "Unmark a note a favorite for Group",
       "category": "Notes (Group)",
@@ -6009,14 +5729,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/notes/groups/<groupid>/<entityId>/favorite",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization___post": {
-      "provider_intent": "zohomail__api__organization___post",
+    "zohomail__/api/organization___POST": {
       "provider_alias_intent": "/api/organization",
       "text": "Add child organization to a Partner Portal",
       "category": "Organization",
@@ -6083,14 +5800,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zoid___get": {
-      "provider_intent": "zohomail__api__organization__zoid___get",
+    "zohomail__/api/organization/zoid___GET": {
       "provider_alias_intent": "/api/organization/zoid",
       "text": "Organization details",
       "category": "Organization",
@@ -6135,14 +5849,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__storage___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__storage___get",
+    "zohomail__/api/organization/zo_id/storage___GET": {
       "provider_alias_intent": "/api/organization/zo_id/storage",
       "text": "Organization Subscription Details",
       "category": "Organization",
@@ -6203,14 +5914,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/storage",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__storage__zu_id___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__storage__zu_id___get",
+    "zohomail__/api/organization/zo_id/storage/zu_id___GET": {
       "provider_alias_intent": "/api/organization/zo_id/storage/zu_id",
       "text": "User Storage Details",
       "category": "Organization",
@@ -6265,14 +5973,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/storage/<zuid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__storage__zu_id___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__storage__zu_id___put",
+    "zohomail__/api/organization/zo_id/storage/zu_id___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/storage/zu_id",
       "text": "Update Storage for a User",
       "category": "Organization",
@@ -6341,14 +6046,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/storage/<zuid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id___put": {
-      "provider_intent": "zohomail__api__organization__zo_id___put",
+    "zohomail__/api/organization/zo_id___PUT": {
       "provider_alias_intent": "/api/organization/zo_id",
       "text": "Update Organization Spam Processing Type",
       "category": "Organization",
@@ -6409,14 +6111,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__antispam__data___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__antispam__data___get",
+    "zohomail__/api/organization/zo_id/antispam/data___GET": {
       "provider_alias_intent": "/api/organization/zo_id/antispam/data",
       "text": "Organization Spam Listing Info",
       "category": "Organization",
@@ -6479,14 +6178,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/antispam/data",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__antispam__data___put": {
-      "provider_intent": "zohomail__api__organization__zo_id__antispam__data___put",
+    "zohomail__/api/organization/zo_id/antispam/data___PUT": {
       "provider_alias_intent": "/api/organization/zo_id/antispam/data",
       "text": "Add/ Update Organization Spam Listing Info",
       "category": "Organization",
@@ -6542,14 +6238,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/antispam/data",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__antispam__data___delete": {
-      "provider_intent": "zohomail__api__organization__zo_id__antispam__data___delete",
+    "zohomail__/api/organization/zo_id/antispam/data___DELETE": {
       "provider_alias_intent": "/api/organization/zo_id/antispam/data",
       "text": "Remove Organization Spam Listing Info",
       "category": "Organization",
@@ -6604,14 +6297,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/antispam/data",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__allowedips___post": {
-      "provider_intent": "zohomail__api__organization__zo_id__allowedips___post",
+    "zohomail__/api/organization/zo_id/allowedips___POST": {
       "provider_alias_intent": "/api/organization/zo_id/allowedips",
       "text": "Add Allowed IPs",
       "category": "Organization",
@@ -6672,14 +6362,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/allowedIps",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__allowedips___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__allowedips___get",
+    "zohomail__/api/organization/zo_id/allowedips___GET": {
       "provider_alias_intent": "/api/organization/zo_id/allowedips",
       "text": "Allowed IPs list",
       "category": "Organization",
@@ -6724,14 +6411,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/allowedIps",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__allowedips___delete": {
-      "provider_intent": "zohomail__api__organization__zo_id__allowedips___delete",
+    "zohomail__/api/organization/zo_id/allowedips___DELETE": {
       "provider_alias_intent": "/api/organization/zo_id/allowedips",
       "text": "Allowed IPs API",
       "category": "Organization",
@@ -6796,14 +6480,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/allowedIps",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id___get",
+    "zohomail__/api/tasks/groups/group_id___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id",
       "text": "Get all Tasks with given status",
       "category": "Tasks",
@@ -6861,14 +6542,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__me___get": {
-      "provider_intent": "zohomail__api__tasks__me___get",
+    "zohomail__/api/tasks/me___GET": {
       "provider_alias_intent": "/api/tasks/me",
       "text": "Get personal Tasks",
       "category": "Tasks",
@@ -6910,14 +6588,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/me",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks___get": {
-      "provider_intent": "zohomail__api__tasks___get",
+    "zohomail__/api/tasks___GET": {
       "provider_alias_intent": "/api/tasks",
       "text": "Get all Tasks created by you",
       "category": "Tasks",
@@ -6969,14 +6644,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__me__entity_id___get": {
-      "provider_intent": "zohomail__api__tasks__me__entity_id___get",
+    "zohomail__/api/tasks/me/entity_id___GET": {
       "provider_alias_intent": "/api/tasks/me/entity_id",
       "text": "Get single Task",
       "category": "Tasks",
@@ -7021,14 +6693,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__entity_id___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__entity_id___get",
+    "zohomail__/api/tasks/groups/group_id/entity_id___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id/entity_id",
       "text": "Get single Task for Group",
       "category": "Tasks",
@@ -7083,14 +6752,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__me__entity_id__subtasks___get": {
-      "provider_intent": "zohomail__api__tasks__me__entity_id__subtasks___get",
+    "zohomail__/api/tasks/me/entity_id/subtasks___GET": {
       "provider_alias_intent": "/api/tasks/me/entity_id/subtasks",
       "text": "Get all subtasks",
       "category": "Tasks",
@@ -7135,14 +6801,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/me/<entityId>/subtasks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__entity_id__subtasks___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__entity_id__subtasks___get",
+    "zohomail__/api/tasks/groups/group_id/entity_id/subtasks___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id/entity_id/subtasks",
       "text": "Get all subtasks for Groups",
       "category": "Tasks",
@@ -7197,14 +6860,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/<entityId>/subtasks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__projects__project_id___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__projects__project_id___get",
+    "zohomail__/api/tasks/groups/group_id/projects/project_id___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id/projects/project_id",
       "text": "Get all Tasks in a project with a given status",
       "category": "Tasks (Group)",
@@ -7262,14 +6922,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/projects/<projectId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id___post": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id___post",
+    "zohomail__/api/tasks/groups/group_id___POST": {
       "provider_alias_intent": "/api/tasks/groups/group_id",
       "text": "Add a new group Task",
       "category": "Tasks",
@@ -7489,14 +7146,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__me___post": {
-      "provider_intent": "zohomail__api__tasks__me___post",
+    "zohomail__/api/tasks/me___POST": {
       "provider_alias_intent": "/api/tasks/me",
       "text": "Add a new personal Task",
       "category": "Tasks",
@@ -7704,14 +7358,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/me",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__me__entity_id___put": {
-      "provider_intent": "zohomail__api__tasks__me__entity_id___put",
+    "zohomail__/api/tasks/me/entity_id___PUT": {
       "provider_alias_intent": "/api/tasks/me/entity_id",
       "text": "Change or set recurring Task",
       "category": "Tasks",
@@ -7801,14 +7452,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomailapi__tasks__me__entity_id___put": {
-      "provider_intent": "zohomailapi__tasks__me__entity_id___put",
+    "zohomail__api/tasks/me/entity_id___PUT": {
       "provider_alias_intent": "api/tasks/me/entity_id",
       "text": "Change Task priority",
       "category": "Tasks",
@@ -7859,14 +7507,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}api/tasks/me/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__entity_id​___delete": {
-      "provider_intent": "zohomail__api__tasks__entity_id​___delete",
+    "zohomail__/api/tasks/entity_id​___DELETE": {
       "provider_alias_intent": "/api/tasks/entity_id​",
       "text": "Delete a Task assigned to you/ created by you",
       "category": "Tasks",
@@ -7911,14 +7556,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/<entityId>​",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups_____get": {
-      "provider_intent": "zohomail__api__tasks__groups_____get",
+    "zohomail__/api/tasks/groups/___GET": {
       "provider_alias_intent": "/api/tasks/groups/",
       "text": "Get all groups",
       "category": "Tasks",
@@ -7951,14 +7593,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__entity_id___put": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__entity_id___put",
+    "zohomail__/api/tasks/groups/group_id/entity_id___PUT": {
       "provider_alias_intent": "/api/tasks/groups/group_id/entity_id",
       "text": "Set/ change Task Reminder for Group",
       "category": "Tasks (Group)",
@@ -8035,14 +7674,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/<entityId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__entity_id​___put": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__entity_id​___put",
+    "zohomail__/api/tasks/groups/group_id/entity_id​___PUT": {
       "provider_alias_intent": "/api/tasks/groups/group_id/entity_id​",
       "text": "Change or set recurring Task for Group",
       "category": "Tasks (Group)",
@@ -8142,14 +7778,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/<entityId>​",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__entity_id​___delete": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__entity_id​___delete",
+    "zohomail__/api/tasks/groups/group_id/entity_id​___DELETE": {
       "provider_alias_intent": "/api/tasks/groups/group_id/entity_id​",
       "text": "Delete a group Task",
       "category": "Tasks (Group)",
@@ -8204,14 +7837,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/<entityId>​",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__projects___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__projects___get",
+    "zohomail__/api/tasks/groups/group_id/projects___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id/projects",
       "text": "Get all projects in a group",
       "category": "Tasks (Group)",
@@ -8256,14 +7886,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/projects",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__projects___post": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__projects___post",
+    "zohomail__/api/tasks/groups/group_id/projects___POST": {
       "provider_alias_intent": "/api/tasks/groups/group_id/projects",
       "text": "Add a new project",
       "category": "Tasks (Group)",
@@ -8314,14 +7941,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<groupID>/projects",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__projects__project_id___put": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__projects__project_id___put",
+    "zohomail__/api/tasks/groups/group_id/projects/project_id___PUT": {
       "provider_alias_intent": "/api/tasks/groups/group_id/projects/project_id",
       "text": "Edit a project",
       "category": "Tasks (Group)",
@@ -8378,14 +8002,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/projects/<projectId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__projects__project_id___delete": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__projects__project_id___delete",
+    "zohomail__/api/tasks/groups/group_id/projects/project_id___DELETE": {
       "provider_alias_intent": "/api/tasks/groups/group_id/projects/project_id",
       "text": "Delete a project",
       "category": "Tasks (Group)",
@@ -8440,14 +8061,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/projects/<projectId>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__tasks__groups__group_id__members___get": {
-      "provider_intent": "zohomail__api__tasks__groups__group_id__members___get",
+    "zohomail__/api/tasks/groups/group_id/members___GET": {
       "provider_alias_intent": "/api/tasks/groups/group_id/members",
       "text": "Get member details in a group",
       "category": "Tasks (Group)",
@@ -8492,14 +8110,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/tasks/groups/<GroupID>/members",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__accounts__account_id__updatethread___put": {
-      "provider_intent": "zohomail__api__accounts__account_id__updatethread___put",
+    "zohomail__/api/accounts/account_id/updatethread___PUT": {
       "provider_alias_intent": "/api/accounts/account_id/updatethread",
       "text": "Mark thread as not spam",
       "category": "Threads",
@@ -8575,14 +8190,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/accounts/<accountId>/updatethread",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__accounts___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__accounts___get",
+    "zohomail__/api/organization/zo_id/accounts___GET": {
       "provider_alias_intent": "/api/organization/zo_id/accounts",
       "text": "User Account Details",
       "category": "Users (Organization)",
@@ -8635,14 +8247,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/accounts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__accounts___post": {
-      "provider_intent": "zohomail__api__organization__zo_id__accounts___post",
+    "zohomail__/api/organization/zo_id/accounts___POST": {
       "provider_alias_intent": "/api/organization/zo_id/accounts",
       "text": "Add User to Organization",
       "category": "Users (Organization)",
@@ -8761,14 +8370,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/accounts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__accounts__zuid___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__accounts__zuid___get",
+    "zohomail__/api/organization/zo_id/accounts/zuid___GET": {
       "provider_alias_intent": "/api/organization/zo_id/accounts/zuid",
       "text": "Single User Details",
       "category": "Users (Organization)",
@@ -8823,14 +8429,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/accounts/<accountid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__zo_id__accounts__emailaddress___get": {
-      "provider_intent": "zohomail__api__organization__zo_id__accounts__emailaddress___get",
+    "zohomail__/api/organization/zo_id/accounts/emailaddress___GET": {
       "provider_alias_intent": "/api/organization/zo_id/accounts/emailaddress",
       "text": "Single User Details",
       "category": "Users (Organization)",
@@ -8885,14 +8488,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/<zoid>/accounts/<accountid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     },
-    "zohomail__api__organization__accounts__account_id___delete": {
-      "provider_intent": "zohomail__api__organization__accounts__account_id___delete",
+    "zohomail__/api/organization/accounts/account_id___DELETE": {
       "provider_alias_intent": "/api/organization/accounts/account_id",
       "text": "Delete User Accounts",
       "category": "Users (Organization)",
@@ -8925,11 +8525,9 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "api_endpoint_src": "{endpoint}/api/organization/accounts/<accountid>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.114Z"
     }
   }
 }

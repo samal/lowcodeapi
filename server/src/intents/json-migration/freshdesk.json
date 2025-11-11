@@ -43,8 +43,7 @@
     "credential_link": "https://support.freshdesk.com/en/support/solutions/articles/215517-how-to-find-your-api-key"
   },
   "routes": {
-    "freshdesk__api__v2__account___get": {
-      "provider_intent": "freshdesk__api__v2__account___get",
+    "freshdesk__/api/v2/account___GET": {
       "provider_alias_intent": "/api/v2/account",
       "text": "View Account",
       "category": "Account",
@@ -75,13 +74,10 @@
           "password": "X"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.305Z"
     },
-    "freshdesk__api__v2__skills__id___get": {
-      "provider_intent": "freshdesk__api__v2__skills__id___get",
+    "freshdesk__/api/v2/skills/id___GET": {
       "provider_alias_intent": "/api/v2/skills/id",
       "text": "View a Skill",
       "category": "Skill",
@@ -107,13 +103,10 @@
         "api_ref": "https://developers.freshdesk.com/api/#view_skill"
       },
       "auth": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.305Z"
     },
-    "freshdesk__api__v2__tickets___get": {
-      "provider_intent": "freshdesk__api__v2__tickets___get",
+    "freshdesk__/api/v2/tickets___GET": {
       "provider_alias_intent": "/api/v2/tickets",
       "text": "List All Tickets",
       "category": "Tickets",
@@ -144,10 +137,8 @@
           "password": "X"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.305Z"
     }
   }
 }

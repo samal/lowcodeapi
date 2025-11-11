@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Ghost API",
-    "description": "",
-    "api_base": "/ghost",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "the_image_object": {
-      "provider_intent": "the_image_object",
+    "ghost__/admin/images/upload___POST": {
       "provider_alias_intent": "/admin/images/upload",
       "text": "The image object 🚧",
       "category": "Admin/Images",
@@ -34,12 +23,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "uploading_an_image": {
-      "provider_intent": "uploading_an_image",
+    "ghost__/admin/images/upload___": {
       "provider_alias_intent": "/admin/images/upload",
       "text": "Uploading an Image 🚧",
       "category": "Admin/Images",
@@ -61,12 +49,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_a_member": {
-      "provider_intent": "creating_a_member",
+    "ghost__/admin/members___POST": {
       "provider_alias_intent": "/admin/members",
       "text": "Creating a member 🚧",
       "category": "Admin/Member",
@@ -88,12 +75,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_member": {
-      "provider_intent": "updating_a_member",
+    "ghost__/admin/members/id___PUT": {
       "provider_alias_intent": "/admin/members/id",
       "text": "Updating a member 🚧",
       "category": "Admin/Member",
@@ -115,12 +101,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_a_newsletter": {
-      "provider_intent": "creating_a_newsletter",
+    "ghost__/admin/newsletters___POST": {
       "provider_alias_intent": "/admin/newsletters",
       "text": "Creating a Newsletter 🚧",
       "category": "Admin/Newsletter",
@@ -142,39 +127,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_newsletter": {
-      "provider_intent": "updating_a_newsletter",
-      "provider_alias_intent": "/admin/newsletters",
-      "text": "Updating a Newsletter 🚧",
-      "category": "Admin/Newsletter",
-      "method": "PUT",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "",
-        "auth": [],
-        "description": "Updating a Newsletter",
-        "rate_limit": [],
-        "api_endpoint": "https://demo.ghost.io/ghost/api/admin/newsletters",
-        "alias_endpoint": "/ghost/admin/newsletters",
-        "api_ref": "https://ghost.org/docs/admin-api/#updating-a-newsletter"
-      },
-      "auth": [],
-      "response_type": "",
-      "wip": 1,
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "sender_email_validation": {
-      "provider_intent": "sender_email_validation",
+    "ghost__/admin/newsletters___PUT": {
       "provider_alias_intent": "/admin/newsletters",
       "text": "Sender email validation 🚧",
       "category": "Admin/Newsletter",
@@ -196,12 +153,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "the_offer_object": {
-      "provider_intent": "the_offer_object",
+    "ghost__/admin/offers___GET": {
       "provider_alias_intent": "/admin/offers",
       "text": "The offer object 🚧",
       "category": "Admin/Offers",
@@ -223,12 +179,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_an_offer": {
-      "provider_intent": "creating_an_offer",
+    "ghost__/admin/offers___POST": {
       "provider_alias_intent": "/admin/offers",
       "text": "Creating an Offer",
       "category": "Admin/Offers",
@@ -250,11 +205,10 @@
       },
       "auth": [],
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_an_offer": {
-      "provider_intent": "updating_an_offer",
+    "ghost__/admin/offers/id___PUT": {
       "provider_alias_intent": "/admin/offers/id",
       "text": "Updating an Offer",
       "category": "Admin/Offers",
@@ -276,11 +230,10 @@
       },
       "auth": [],
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "the_post_object": {
-      "provider_intent": "the_post_object",
+    "ghost__/admin/posts___GET": {
       "provider_alias_intent": "/admin/posts",
       "text": "The post object",
       "category": "Admin/Posts",
@@ -302,11 +255,10 @@
       },
       "auth": [],
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_a_post": {
-      "provider_intent": "creating_a_post",
+    "ghost__/admin/posts___POST": {
       "provider_alias_intent": "/admin/posts",
       "text": "Creating a Post 🚧",
       "category": "Admin/Posts",
@@ -328,12 +280,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "copying_a_post": {
-      "provider_intent": "copying_a_post",
+    "ghost__admin/posts/id/copy___POST": {
       "provider_alias_intent": "admin/posts/id/copy",
       "text": "Copying a Post 🚧",
       "category": "Admin/Posts",
@@ -355,12 +306,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_post": {
-      "provider_intent": "updating_a_post",
+    "ghost__/admin/posts/id___PUT": {
       "provider_alias_intent": "/admin/posts/id",
       "text": "Updating a Post 🚧",
       "category": "Admin/Posts",
@@ -382,12 +332,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "deleting_a_post": {
-      "provider_intent": "deleting_a_post",
+    "ghost__/admin/posts/id___DELETE": {
       "provider_alias_intent": "/admin/posts/id",
       "text": "Deleting a Post 🚧",
       "category": "Admin/Posts",
@@ -409,12 +358,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "publishing_and_scheduling_posts": {
-      "provider_intent": "publishing_and_scheduling_posts",
+    "ghost__/admin/posts___PUT": {
       "provider_alias_intent": "/admin/posts",
       "text": "Publishing and scheduling posts",
       "category": "Admin/Posts",
@@ -436,11 +384,10 @@
       },
       "auth": [],
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "the_site_object": {
-      "provider_intent": "the_site_object",
+    "ghost__admin/site___GET": {
       "provider_alias_intent": "admin/site",
       "text": "The site object 🚧",
       "category": "Admin/Site",
@@ -462,12 +409,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "uploading_a_theme": {
-      "provider_intent": "uploading_a_theme",
+    "ghost__/admin/themes/upload___": {
       "provider_alias_intent": "/admin/themes/upload",
       "text": "Uploading a theme 🚧",
       "category": "Admin/Thems",
@@ -489,12 +435,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_a_tier": {
-      "provider_intent": "creating_a_tier",
+    "ghost__/admin/tiers___POST": {
       "provider_alias_intent": "/admin/tiers",
       "text": "Creating a Tier 🚧",
       "category": "Admin/Tiers",
@@ -516,12 +461,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_tier": {
-      "provider_intent": "updating_a_tier",
+    "ghost__/admin/tiers/id___PUT": {
       "provider_alias_intent": "/admin/tiers/id",
       "text": "Updating a Tier 🚧",
       "category": "Admin/Tiers",
@@ -543,12 +487,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "fetch_users": {
-      "provider_intent": "fetch_users",
+    "ghost__/admin/users___GET": {
       "provider_alias_intent": "/admin/users",
       "text": "Fetch users 🚧",
       "category": "Admin/Users",
@@ -570,12 +513,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "the_roles_resource_provides_an_endpoint_for_fetching_role_data": {
-      "provider_intent": "the_roles_resource_provides_an_endpoint_for_fetching_role_data",
+    "ghost__/admin/roles___GET": {
       "provider_alias_intent": "/admin/roles",
       "text": "The roles resource provides an endpoint for fetching role data 🚧",
       "category": "Admin/Users",
@@ -597,12 +539,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "create_a_staff_user_invite": {
-      "provider_intent": "create_a_staff_user_invite",
+    "ghost__/admin/invites___POST": {
       "provider_alias_intent": "/admin/invites",
       "text": "Create a staff user invite 🚧",
       "category": "Admin/Users",
@@ -624,12 +565,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_user": {
-      "provider_intent": "updating_a_user",
+    "ghost__/admin/users/id___PUT": {
       "provider_alias_intent": "/admin/users/id",
       "text": "Updating a user 🚧",
       "category": "Admin/Users",
@@ -651,12 +591,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "deleting_a_user": {
-      "provider_intent": "deleting_a_user",
+    "ghost__/admin/users/id___DELETE": {
       "provider_alias_intent": "/admin/users/id",
       "text": "Deleting a user 🚧",
       "category": "Admin/Users",
@@ -678,12 +617,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "creating_a_webhook": {
-      "provider_intent": "creating_a_webhook",
+    "ghost__/admin/webhooks___POST": {
       "provider_alias_intent": "/admin/webhooks",
       "text": "Creating a Webhook 🚧",
       "category": "Admin/Webhooks",
@@ -705,12 +643,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "updating_a_webhook": {
-      "provider_intent": "updating_a_webhook",
+    "ghost__/admin/webhooks/id___PUT": {
       "provider_alias_intent": "/admin/webhooks/id",
       "text": "Updating a Webhook 🚧",
       "category": "Admin/Webhooks",
@@ -732,12 +669,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "deleting_a_webhook": {
-      "provider_intent": "deleting_a_webhook",
+    "ghost__/admin/webhooks/id___DELETE": {
       "provider_alias_intent": "/admin/webhooks/id",
       "text": "Deleting a Webhook 🚧",
       "category": "Admin/Webhooks",
@@ -759,12 +695,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_pages": {
-      "provider_intent": "browse_pages",
+    "ghost__/content/pages___GET": {
       "provider_alias_intent": "/content/pages",
       "text": "Browse pages 🚧",
       "category": "Content/Pages",
@@ -786,12 +721,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_page_by_id": {
-      "provider_intent": "read_a_page_by_id",
+    "ghost__/content/pages/id___GET": {
       "provider_alias_intent": "/content/pages/id",
       "text": "Read a page by ID 🚧",
       "category": "Content/Pages",
@@ -813,12 +747,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_page_by_slug": {
-      "provider_intent": "read_a_page_by_slug",
+    "ghost__/content/pages/slug/slug___GET": {
       "provider_alias_intent": "/content/pages/slug/slug",
       "text": "Read a page by slug 🚧",
       "category": "Content/Pages",
@@ -840,12 +773,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_posts": {
-      "provider_intent": "browse_posts",
+    "ghost__/content/posts___GET": {
       "provider_alias_intent": "/content/posts",
       "text": "Browse posts 🚧",
       "category": "Content/Posts",
@@ -867,12 +799,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_post_by_id": {
-      "provider_intent": "read_a_post_by_id",
+    "ghost__/content/posts/id___GET": {
       "provider_alias_intent": "/content/posts/id",
       "text": "Read a post by ID 🚧",
       "category": "Content/Posts",
@@ -894,12 +825,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_post_by_slug": {
-      "provider_intent": "read_a_post_by_slug",
+    "ghost__/content/posts/slug/slug___GET": {
       "provider_alias_intent": "/content/posts/slug/slug",
       "text": "Read a post by slug 🚧",
       "category": "Content/Posts",
@@ -921,12 +851,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_settings": {
-      "provider_intent": "browse_settings",
+    "ghost__/content/settings___GET": {
       "provider_alias_intent": "/content/settings",
       "text": "Browse settings 🚧",
       "category": "Content/Settings",
@@ -948,12 +877,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_tags": {
-      "provider_intent": "browse_tags",
+    "ghost__/content/tags___GET": {
       "provider_alias_intent": "/content/tags",
       "text": "Browse tags 🚧",
       "category": "Content/Tags",
@@ -975,12 +903,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_tag_by_id": {
-      "provider_intent": "read_a_tag_by_id",
+    "ghost__/content/tags/id___GET": {
       "provider_alias_intent": "/content/tags/id",
       "text": "Read a tag by ID 🚧",
       "category": "Content/Tags",
@@ -1002,12 +929,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_tag_by_slug": {
-      "provider_intent": "read_a_tag_by_slug",
+    "ghost__/content/tags/slug/slug___GET": {
       "provider_alias_intent": "/content/tags/slug/slug",
       "text": "Read a tag by slug 🚧",
       "category": "Content/Tags",
@@ -1029,12 +955,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_tiers": {
-      "provider_intent": "browse_tiers",
+    "ghost__/content/tiers___GET": {
       "provider_alias_intent": "/content/tiers",
       "text": "Browse tiers 🚧",
       "category": "Content/Tires",
@@ -1056,12 +981,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "browse_authors": {
-      "provider_intent": "browse_authors",
+    "ghost__content/authors___GET": {
       "provider_alias_intent": "content/authors",
       "text": "Browse authors 🚧",
       "category": "ContentAuthors",
@@ -1083,12 +1007,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_an_author_by_id": {
-      "provider_intent": "read_an_author_by_id",
+    "ghost__/content/authors/id___GET": {
       "provider_alias_intent": "/content/authors/id",
       "text": "Read an author by ID 🚧",
       "category": "ContentAuthors",
@@ -1110,12 +1033,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     },
-    "read_a_author_by_slug": {
-      "provider_intent": "read_a_author_by_slug",
+    "ghost__/content/authors/slug/slug___GET": {
       "provider_alias_intent": "/content/authors/slug/slug",
       "text": "Read a author by slug 🚧",
       "category": "ContentAuthors",
@@ -1137,9 +1059,9 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.307Z"
     }
   }
 }

@@ -16,20 +16,8 @@
     "total_api": 10,
     "credential_link": "https://developers.facebook.com/docs/whatsapp"
   },
-  "app": {
-    "title": "WhatsApp Business API",
-    "description": "",
-    "api_base": "/whatsapp",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
   "routes": {
-    "send_a_message": {
-      "provider_intent": "send_a_message",
+    "whatsapp__/v17.0/from_phone_number_id/messages___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/messages",
       "text": "Send a message",
       "category": "Messages",
@@ -154,12 +142,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "upload_media": {
-      "provider_intent": "upload_media",
+    "whatsapp__/v17.0/media_id/media___POST": {
       "provider_alias_intent": "/v17.0/media_id/media",
       "text": "Upload media",
       "category": "Media",
@@ -213,12 +200,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "retrieve_media_url": {
-      "provider_intent": "retrieve_media_url",
+    "whatsapp__/v17.0/media_id___GET": {
       "provider_alias_intent": "/v17.0/media_id",
       "text": "Retrieve Media URL",
       "category": "Media",
@@ -260,12 +246,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "delete_a_specific_media.": {
-      "provider_intent": "delete_a_specific_media.",
+    "whatsapp__/v17.0/media_id___DELETE": {
       "provider_alias_intent": "/v17.0/media_id",
       "text": "Delete a specific media.",
       "category": "Media",
@@ -307,12 +292,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "download_media_from_a_media_url.": {
-      "provider_intent": "download_media_from_a_media_url.",
+    "whatsapp__/v17.0/media_url___GET": {
       "provider_alias_intent": "/v17.0/media_url",
       "text": "Download media from a media URL.",
       "category": "Media",
@@ -350,12 +334,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "verify_phone_number": {
-      "provider_intent": "verify_phone_number",
+    "whatsapp__/v17.0/from_phone_number_id/request_code___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/request_code",
       "text": "Verify Phone Number",
       "category": "Phone Numbers",
@@ -404,15 +387,14 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "register_a_business_phone_number": {
-      "provider_intent": "register_a_business_phone_number",
+    "whatsapp__/v17.0/from_phone_number_id/register___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/register",
-      "text": "Register a Business Phone Number",
-      "category": "Registration",
+      "text": "Migrate account",
+      "category": "Account Migration",
       "method": "POST",
       "type": "API",
       "params": {
@@ -425,12 +407,22 @@
       "body": {
         "messaging_product": {
           "type": "string",
-          "text": "Messaging service used",
+          "text": "Messaging service used for the reques",
           "required": true
         },
         "pin": {
-          "type": "number",
-          "text": "If your verified business phone number already has two-step verification enabled set this value to your number's 6-digit two-step verification PIN.",
+          "type": "string",
+          "text": "A 6-digit pin you have previously set up",
+          "required": true
+        },
+        "backup.data": {
+          "type": "string",
+          "text": "The data value you get when you backup your on-premise deployment",
+          "required": true
+        },
+        "backup.password": {
+          "type": "string",
+          "text": "The password you used in the backup API of your On-Premises deployment.",
           "required": true
         }
       },
@@ -444,11 +436,11 @@
       "meta": {
         "version": "v17.0",
         "auth": [],
-        "description": "Register a Business Phone Number",
+        "description": "Migrate account",
         "rate_limit": [],
         "api_endpoint": "https://graph.facebook.com/v17.0/<FROM_PHONE_NUMBER_ID>/register",
         "alias_endpoint": "/whatsapp/v17.0/from_phone_number_id/register",
-        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/registration"
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/account-migration"
       },
       "auth": {
         "header": {
@@ -458,12 +450,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "set_two-step_verification": {
-      "provider_intent": "set_two-step_verification",
+    "whatsapp__/v17.0/from_phone_number_id___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id",
       "text": "Set Two-Step Verification",
       "category": "Two-Step Verification",
@@ -507,12 +498,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "get_business_profile": {
-      "provider_intent": "get_business_profile",
+    "whatsapp__/v17.0/from_phone_number_id/whatsapp_business_profile___GET": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/whatsapp_business_profile",
       "text": "Get Business Profile",
       "category": "Business Profiles",
@@ -582,12 +572,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "update_business_profile": {
-      "provider_intent": "update_business_profile",
+    "whatsapp__/v17.0/from_phone_number_id/whatsapp_business_profile___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/whatsapp_business_profile",
       "text": "Update Business Profile",
       "category": "Business Profiles",
@@ -659,76 +648,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     },
-    "migrate_account": {
-      "provider_intent": "migrate_account",
-      "provider_alias_intent": "/v17.0/from_phone_number_id/register",
-      "text": "Migrate account",
-      "category": "Account Migration",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "FROM_PHONE_NUMBER_ID": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "messaging_product": {
-          "type": "string",
-          "text": "Messaging service used for the reques",
-          "required": true
-        },
-        "pin": {
-          "type": "string",
-          "text": "A 6-digit pin you have previously set up",
-          "required": true
-        },
-        "backup.data": {
-          "type": "string",
-          "text": "The data value you get when you backup your on-premise deployment",
-          "required": true
-        },
-        "backup.password": {
-          "type": "string",
-          "text": "The password you used in the backup API of your On-Premises deployment.",
-          "required": true
-        }
-      },
-      "path": {
-        "FROM_PHONE_NUMBER_ID": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v17.0",
-        "auth": [],
-        "description": "Migrate account",
-        "rate_limit": [],
-        "api_endpoint": "https://graph.facebook.com/v17.0/<FROM_PHONE_NUMBER_ID>/register",
-        "alias_endpoint": "/whatsapp/v17.0/from_phone_number_id/register",
-        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/account-migration"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "deregister_a_business_phone_number": {
-      "provider_intent": "deregister_a_business_phone_number",
+    "whatsapp__/v17.0/from_phone_number_id/deregister___POST": {
       "provider_alias_intent": "/v17.0/from_phone_number_id/deregister",
       "text": "Deregister a Business Phone Number",
       "category": "Registration",
@@ -766,8 +690,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.914Z"
     }
   }
 }

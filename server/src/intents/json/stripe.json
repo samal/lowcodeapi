@@ -34,8 +34,7 @@
     "credential_link": "https://dashboard.stripe.com"
   },
   "routes": {
-    "PostCoupons": {
-      "provider_intent": "PostCoupons",
+    "stripe__/v1/coupons___POST": {
       "provider_alias_intent": "/v1/coupons",
       "text": "Create a coupon",
       "category": "Coupons",
@@ -117,14 +116,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCoupons",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.862Z"
     },
-    "GetCouponsCoupon": {
-      "provider_intent": "GetCouponsCoupon",
+    "stripe__/v1/coupons/id___GET": {
       "provider_alias_intent": "/v1/coupons/id",
       "text": "Retrieve a coupon",
       "category": "Coupons",
@@ -164,14 +160,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCouponsCoupon",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.862Z"
     },
-    "PostCouponsCoupon": {
-      "provider_intent": "PostCouponsCoupon",
+    "stripe__/v1/coupons/id___POST": {
       "provider_alias_intent": "/v1/coupons/id",
       "text": "Update a coupon",
       "category": "Coupons",
@@ -224,14 +217,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCouponsCoupon",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.862Z"
     },
-    "DeleteCouponsCoupon": {
-      "provider_intent": "DeleteCouponsCoupon",
+    "stripe__/v1/coupons/id___DELETE": {
       "provider_alias_intent": "/v1/coupons/id",
       "text": "Delete a coupon",
       "category": "Coupons",
@@ -271,14 +261,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "DeleteCouponsCoupon",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.862Z"
     },
-    "GetCoupons": {
-      "provider_intent": "GetCoupons",
+    "stripe__/v1/coupons___GET": {
       "provider_alias_intent": "/v1/coupons",
       "text": "List all coupons",
       "category": "Coupons",
@@ -323,14 +310,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCoupons",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.862Z"
     },
-    "stripe__v1__customers__id__discount___delete": {
-      "provider_intent": "stripe__v1__customers__id__discount___delete",
+    "stripe__/v1/customers/id/discount___DELETE": {
       "provider_alias_intent": "/v1/customers/id/discount",
       "text": "Delete a customer discount",
       "category": "Discounts",
@@ -370,13 +354,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "stripe__v1__subscriptions__id__discount___delete": {
-      "provider_intent": "stripe__v1__subscriptions__id__discount___delete",
+    "stripe__/v1/subscriptions/id/discount___DELETE": {
       "provider_alias_intent": "/v1/subscriptions/id/discount",
       "text": "Delete a subscription discount",
       "category": "Discounts",
@@ -416,13 +397,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPrices": {
-      "provider_intent": "PostPrices",
+    "stripe__/v1/prices___POST": {
       "provider_alias_intent": "/v1/prices",
       "text": "Create a price",
       "category": "Prices",
@@ -538,14 +516,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPrices",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPricesPrice": {
-      "provider_intent": "GetPricesPrice",
+    "stripe__/v1/prices/id___GET": {
       "provider_alias_intent": "/v1/prices/id",
       "text": "Retrieve a price",
       "category": "Prices",
@@ -585,14 +560,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPricesPrice",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPricesPrice": {
-      "provider_intent": "PostPricesPrice",
+    "stripe__/v1/prices/id___POST": {
       "provider_alias_intent": "/v1/prices/id",
       "text": "Update a price",
       "category": "Prices",
@@ -669,14 +641,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPricesPrice",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPrices": {
-      "provider_intent": "GetPrices",
+    "stripe__/v1/prices___GET": {
       "provider_alias_intent": "/v1/prices",
       "text": "List all prices",
       "category": "Prices",
@@ -749,14 +718,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPrices",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPricesSearch": {
-      "provider_intent": "GetPricesSearch",
+    "stripe__/v1/prices/search___GET": {
       "provider_alias_intent": "/v1/prices/search",
       "text": "Search prices",
       "category": "Prices",
@@ -798,14 +764,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPricesSearch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostProducts": {
-      "provider_intent": "PostProducts",
+    "stripe__/v1/products___POST": {
       "provider_alias_intent": "/v1/products",
       "text": "Create a product",
       "category": "Product",
@@ -858,14 +821,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostProducts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetProductsId": {
-      "provider_intent": "GetProductsId",
+    "stripe__/v1/products/id___GET": {
       "provider_alias_intent": "/v1/products/id",
       "text": "Retrieve a product",
       "category": "Product",
@@ -905,14 +865,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetProductsId",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostProductsId": {
-      "provider_intent": "PostProductsId",
+    "stripe__/v1/products/id___POST": {
       "provider_alias_intent": "/v1/products/id",
       "text": "Update a product",
       "category": "Product",
@@ -973,14 +930,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostProductsId",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetProducts": {
-      "provider_intent": "GetProducts",
+    "stripe__/v1/products___GET": {
       "provider_alias_intent": "/v1/products",
       "text": "List all products",
       "category": "Product",
@@ -1045,14 +999,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetProducts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "DeleteProductsId": {
-      "provider_intent": "DeleteProductsId",
+    "stripe__/v1/products/id___DELETE": {
       "provider_alias_intent": "/v1/products/id",
       "text": "Delete a product",
       "category": "Product",
@@ -1092,14 +1043,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "DeleteProductsId",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetProductsSearch": {
-      "provider_intent": "GetProductsSearch",
+    "stripe__/v1/products/search___GET": {
       "provider_alias_intent": "/v1/products/search",
       "text": "Search products",
       "category": "Product",
@@ -1141,14 +1089,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetProductsSearch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPromotionCodes": {
-      "provider_intent": "PostPromotionCodes",
+    "stripe__/v1/promotion_codes___POST": {
       "provider_alias_intent": "/v1/promotion_codes",
       "text": "Create a promotion code",
       "category": "Promotion Code",
@@ -1214,14 +1159,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPromotionCodes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPromotionCodesPromotionCode": {
-      "provider_intent": "PostPromotionCodesPromotionCode",
+    "stripe__/v1/promotion_codes/id___POST": {
       "provider_alias_intent": "/v1/promotion_codes/id",
       "text": "Update a promotion code",
       "category": "Promotion Code",
@@ -1278,14 +1220,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPromotionCodesPromotionCode",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPromotionCodesPromotionCode": {
-      "provider_intent": "GetPromotionCodesPromotionCode",
+    "stripe__/v1/promotion_codes/id___GET": {
       "provider_alias_intent": "/v1/promotion_codes/id",
       "text": "Retrieve a promotion code",
       "category": "Promotion Code",
@@ -1325,14 +1264,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPromotionCodesPromotionCode",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPromotionCodes": {
-      "provider_intent": "GetPromotionCodes",
+    "stripe__/v1/promotion_codes___GET": {
       "provider_alias_intent": "/v1/promotion_codes",
       "text": "List all promotion codes",
       "category": "Promotion Code",
@@ -1397,14 +1333,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPromotionCodes",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostSources": {
-      "provider_intent": "PostSources",
+    "stripe__/v1/sources___POST": {
       "provider_alias_intent": "/v1/sources",
       "text": "Create a source",
       "category": "Source ",
@@ -1513,14 +1446,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostSources",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetSourcesSource": {
-      "provider_intent": "GetSourcesSource",
+    "stripe__/v1/sources/id___GET": {
       "provider_alias_intent": "/v1/sources/id",
       "text": "Retrieve a source",
       "category": "Source ",
@@ -1560,14 +1490,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetSourcesSource",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostSourcesSource": {
-      "provider_intent": "PostSourcesSource",
+    "stripe__/v1/sources/id___POST": {
       "provider_alias_intent": "/v1/sources/id",
       "text": "Update a source",
       "category": "Source ",
@@ -1607,14 +1534,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostSourcesSource",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostCharges": {
-      "provider_intent": "PostCharges",
+    "stripe__/v1/charges___POST": {
       "provider_alias_intent": "/v1/charges",
       "text": "Create a charge",
       "category": "Charges",
@@ -1684,14 +1608,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCharges",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetChargesCharge": {
-      "provider_intent": "GetChargesCharge",
+    "stripe__/v1/charges/id___GET": {
       "provider_alias_intent": "/v1/charges/id",
       "text": "Retrieve a charge",
       "category": "Charges",
@@ -1731,14 +1652,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetChargesCharge",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostChargesCharge": {
-      "provider_intent": "PostChargesCharge",
+    "stripe__/v1/charges/id___POST": {
       "provider_alias_intent": "/v1/charges/id",
       "text": "Update a charge",
       "category": "Charges",
@@ -1807,14 +1725,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostChargesCharge",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostChargesChargeCapture": {
-      "provider_intent": "PostChargesChargeCapture",
+    "stripe__/v1/charges/id/capture___POST": {
       "provider_alias_intent": "/v1/charges/id/capture",
       "text": "Capture a charge",
       "category": "Charges",
@@ -1883,14 +1798,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostChargesChargeCapture",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCharges": {
-      "provider_intent": "GetCharges",
+    "stripe__/v1/charges___GET": {
       "provider_alias_intent": "/v1/charges",
       "text": "List all charges",
       "category": "Charges",
@@ -1947,14 +1859,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCharges",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetChargesSearch": {
-      "provider_intent": "GetChargesSearch",
+    "stripe__/v1/charges/search___GET": {
       "provider_alias_intent": "/v1/charges/search",
       "text": "Search charges",
       "category": "Charges",
@@ -1992,14 +1901,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetChargesSearch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostCustomers": {
-      "provider_intent": "PostCustomers",
+    "stripe__/v1/customers___POST": {
       "provider_alias_intent": "/v1/customers",
       "text": "Create a customer",
       "category": "Customers",
@@ -2104,14 +2010,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCustomers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCustomersCustomer": {
-      "provider_intent": "GetCustomersCustomer",
+    "stripe__/v1/customers/id___GET": {
       "provider_alias_intent": "/v1/customers/id",
       "text": "Retrieve a customer",
       "category": "Customers",
@@ -2151,14 +2054,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCustomersCustomer",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostCustomersCustomer": {
-      "provider_intent": "PostCustomersCustomer",
+    "stripe__/v1/customers/id___POST": {
       "provider_alias_intent": "/v1/customers/id",
       "text": "Update a customer",
       "category": "Customers",
@@ -2274,14 +2174,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCustomersCustomer",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "DeleteCustomersCustomer": {
-      "provider_intent": "DeleteCustomersCustomer",
+    "stripe__/v1/customers/id___DELETE": {
       "provider_alias_intent": "/v1/customers/id",
       "text": "Delete a customer",
       "category": "Customers",
@@ -2321,14 +2218,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "DeleteCustomersCustomer",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCustomers": {
-      "provider_intent": "GetCustomers",
+    "stripe__/v1/customers___GET": {
       "provider_alias_intent": "/v1/customers",
       "text": "List all customers",
       "category": "Customers",
@@ -2381,14 +2275,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCustomers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCustomersSearch": {
-      "provider_intent": "GetCustomersSearch",
+    "stripe__/v1/customers/search___GET": {
       "provider_alias_intent": "/v1/customers/search",
       "text": "Search customers",
       "category": "Customers",
@@ -2430,14 +2321,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCustomersSearch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostWebhookEndpoints": {
-      "provider_intent": "PostWebhookEndpoints",
+    "stripe__/v1/webhook_endpoints___POST": {
       "provider_alias_intent": "/v1/webhook_endpoints",
       "text": "Create a webhook endpoint",
       "category": "Webhook Endpoints",
@@ -2497,14 +2385,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostWebhookEndpoints",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetWebhookEndpointsWebhookEndpoint": {
-      "provider_intent": "GetWebhookEndpointsWebhookEndpoint",
+    "stripe__/v1/webhook_endpoints/id___GET": {
       "provider_alias_intent": "/v1/webhook_endpoints/id",
       "text": "Retrieve a webhook endpoint",
       "category": "Webhook Endpoints",
@@ -2544,14 +2429,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetWebhookEndpointsWebhookEndpoint",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostWebhookEndpointsWebhookEndpoint": {
-      "provider_intent": "PostWebhookEndpointsWebhookEndpoint",
+    "stripe__/v1/webhook_endpoints/id___POST": {
       "provider_alias_intent": "/v1/webhook_endpoints/id",
       "text": "Update a webhook endpoint",
       "category": "Webhook Endpoints",
@@ -2616,14 +2498,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostWebhookEndpointsWebhookEndpoint",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetWebhookEndpoints": {
-      "provider_intent": "GetWebhookEndpoints",
+    "stripe__/v1/webhook_endpoints___GET": {
       "provider_alias_intent": "/v1/webhook_endpoints",
       "text": "List all webhook endpoints",
       "category": "Webhook Endpoints",
@@ -2664,14 +2543,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetWebhookEndpoints",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "DeleteWebhookEndpointsWebhookEndpoint": {
-      "provider_intent": "DeleteWebhookEndpointsWebhookEndpoint",
+    "stripe__/v1/webhook_endpoints/id___DELETE": {
       "provider_alias_intent": "/v1/webhook_endpoints/id",
       "text": "Delete a webhook endpoint",
       "category": "Webhook Endpoints",
@@ -2711,14 +2587,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "DeleteWebhookEndpointsWebhookEndpoint",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetBalance": {
-      "provider_intent": "GetBalance",
+    "stripe__/v1/balance___GET": {
       "provider_alias_intent": "/v1/balance",
       "text": "Retrieve balance",
       "category": "Balance",
@@ -2746,14 +2619,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetBalance",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostCheckoutSessions": {
-      "provider_intent": "PostCheckoutSessions",
+    "stripe__/v1/checkout/sessions___POST": {
       "provider_alias_intent": "/v1/checkout/sessions",
       "text": "Create a Session",
       "category": "Checkout ",
@@ -2911,14 +2781,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCheckoutSessions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostCheckoutSessionsSessionExpire": {
-      "provider_intent": "PostCheckoutSessionsSessionExpire",
+    "stripe__/v1/checkout/sessions/id/expire___POST": {
       "provider_alias_intent": "/v1/checkout/sessions/id/expire",
       "text": "Expire a Session",
       "category": "Checkout ",
@@ -2958,14 +2825,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostCheckoutSessionsSessionExpire",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCheckoutSessionsSession": {
-      "provider_intent": "GetCheckoutSessionsSession",
+    "stripe__/v1/checkout/sessions/id___GET": {
       "provider_alias_intent": "/v1/checkout/sessions/id",
       "text": "Retrieve a Session",
       "category": "Checkout ",
@@ -3005,14 +2869,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCheckoutSessionsSession",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCheckoutSessions": {
-      "provider_intent": "GetCheckoutSessions",
+    "stripe__/v1/checkout/sessions___GET": {
       "provider_alias_intent": "/v1/checkout/sessions",
       "text": "List all Checkout Sessions",
       "category": "Checkout ",
@@ -3086,14 +2947,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCheckoutSessions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetCheckoutSessionsSessionLineItems": {
-      "provider_intent": "GetCheckoutSessionsSessionLineItems",
+    "stripe__/v1/checkout/sessions/id/line_items___GET": {
       "provider_alias_intent": "/v1/checkout/sessions/id/line_items",
       "text": "Retrieve a Checkout Session's line items",
       "category": "Checkout ",
@@ -3145,14 +3003,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetCheckoutSessionsSessionLineItems",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPaymentLinks": {
-      "provider_intent": "PostPaymentLinks",
+    "stripe__/v1/payment_links___POST": {
       "provider_alias_intent": "/v1/payment_links",
       "text": "Create a payment link",
       "category": "Payment Link",
@@ -3277,14 +3132,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPaymentLinks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPaymentLinksPaymentLink": {
-      "provider_intent": "GetPaymentLinksPaymentLink",
+    "stripe__/v1/payment_links/id___GET": {
       "provider_alias_intent": "/v1/payment_links/id",
       "text": "Retrieve payment link",
       "category": "Payment Link",
@@ -3324,14 +3176,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPaymentLinksPaymentLink",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "PostPaymentLinksPaymentLink": {
-      "provider_intent": "PostPaymentLinksPaymentLink",
+    "stripe__/v1/payment_links/id___POST": {
       "provider_alias_intent": "/v1/payment_links/id",
       "text": "Update a payment link",
       "category": "Payment Link",
@@ -3424,14 +3273,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "PostPaymentLinksPaymentLink",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPaymentLinks": {
-      "provider_intent": "GetPaymentLinks",
+    "stripe__/v1/payment_links___GET": {
       "provider_alias_intent": "/v1/payment_links",
       "text": "List all payment links",
       "category": "Payment Link",
@@ -3480,14 +3326,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPaymentLinks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetPaymentLinksPaymentLinkLineItems": {
-      "provider_intent": "GetPaymentLinksPaymentLinkLineItems",
+    "stripe__/v1/payment_links/id/line_items___GET": {
       "provider_alias_intent": "/v1/payment_links/id/line_items",
       "text": "Retrieve a payment link's line items",
       "category": "Payment Link",
@@ -3539,14 +3382,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetPaymentLinksPaymentLinkLineItems",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetBalanceTransactionsId": {
-      "provider_intent": "GetBalanceTransactionsId",
+    "stripe__/v1/balance_transactions/id___GET": {
       "provider_alias_intent": "/v1/balance_transactions/id",
       "text": "Retrieve a balance transaction",
       "category": "Balance Transactions",
@@ -3586,14 +3426,11 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetBalanceTransactionsId",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     },
-    "GetBalanceTransactions": {
-      "provider_intent": "GetBalanceTransactions",
+    "stripe__/v1/balance_transactions___GET": {
       "provider_alias_intent": "/v1/balance_transactions",
       "text": "List all balance transactions",
       "category": "Balance Transactions",
@@ -3654,11 +3491,9 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "intent": "GetBalanceTransactions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.863Z"
     }
   }
 }

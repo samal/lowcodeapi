@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Message API",
-    "description": "",
-    "api_base": "/message",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "send_message_twilio": {
-      "provider_intent": "send_message_twilio",
+    "message__/twilio/message___POST": {
       "provider_alias_intent": "/twilio/message",
       "text": "",
       "method": "POST",
@@ -32,10 +21,9 @@
         "api_ref": ""
       },
       "auth": [],
-      "wip": 0
+      "updated_at": "2025-11-11T12:00:08.657Z"
     },
-    "send_message_whatsapp": {
-      "provider_intent": "send_message_whatsapp",
+    "message__/whatsapp/message___POST": {
       "provider_alias_intent": "/whatsapp/message",
       "text": "",
       "method": "POST",
@@ -55,10 +43,9 @@
         "api_ref": ""
       },
       "auth": [],
-      "wip": 0
+      "updated_at": "2025-11-11T12:00:08.657Z"
     },
-    "send_message_slack": {
-      "provider_intent": "send_message_slack",
+    "message__/slack/message___POST": {
       "provider_alias_intent": "/slack/message",
       "text": "",
       "method": "POST",
@@ -78,10 +65,9 @@
         "api_ref": ""
       },
       "auth": [],
-      "wip": 0
+      "updated_at": "2025-11-11T12:00:08.657Z"
     },
-    "send_message_telegram": {
-      "provider_intent": "send_message_telegram",
+    "message__/telegram/message___POST": {
       "provider_alias_intent": "/telegram/message",
       "text": "",
       "method": "POST",
@@ -101,7 +87,7 @@
         "api_ref": ""
       },
       "auth": [],
-      "wip": 0
+      "updated_at": "2025-11-11T12:00:08.663Z"
     }
   }
 }

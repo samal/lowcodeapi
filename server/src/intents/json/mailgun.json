@@ -53,8 +53,7 @@
     "credential_link": "https://help.mailgun.com/hc/en-us/articles/203380100-Where-can-I-find-my-API-keys-and-SMTP-credentials#h_01HVM3GKEPNTB5TR11JGDHY367"
   },
   "routes": {
-    "mailgun__v3__domain_name__messages___post": {
-      "provider_intent": "mailgun__v3__domain_name__messages___post",
+    "mailgun__/v3/domain_name/messages___POST": {
       "provider_alias_intent": "/v3/domain_name/messages",
       "text": "Send an email",
       "category": "Messages",
@@ -160,13 +159,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 1,
-      "featured": 1,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain_name__messages.mime___post": {
-      "provider_intent": "mailgun__v3__domain_name__messages.mime___post",
+    "mailgun__/v3/domain_name/messages.mime___POST": {
       "provider_alias_intent": "/v3/domain_name/messages.mime",
       "text": "Send an email in MIME format",
       "category": "Messages",
@@ -224,13 +220,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 1,
-      "featured": 1,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain_name__sending_queues___get": {
-      "provider_intent": "mailgun__v3__domains__domain_name__sending_queues___get",
+    "mailgun__/v3/domains/domain_name/sending_queues___GET": {
       "provider_alias_intent": "/v3/domains/domain_name/sending_queues",
       "text": "Get messages queue status",
       "category": "Messages",
@@ -276,13 +269,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain_name__envelopes___delete": {
-      "provider_intent": "mailgun__v3__domain_name__envelopes___delete",
+    "mailgun__/v3/domain_name/envelopes___DELETE": {
       "provider_alias_intent": "/v3/domain_name/envelopes",
       "text": "Delete scheduled and undelivered mail",
       "category": "Messages",
@@ -328,13 +318,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints___post": {
-      "provider_intent": "mailgun__v3__domainid__complaints___post",
+    "mailgun__/v3/domainid/complaints___POST": {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "Insert multiple complaint records provided in JSON format",
       "category": "Complaints",
@@ -382,13 +369,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun___v3__domainid__bounces__address___get": {
-      "provider_intent": "mailgun___v3__domainid__bounces__address___get",
+    "mailgun__/v3/domainid/bounces/address___GET": {
       "provider_alias_intent": " /v3/domainid/bounces/address",
       "text": "View single bounce event",
       "category": "Bounces",
@@ -426,13 +410,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__bounces__address___delete": {
-      "provider_intent": "mailgun__v3__domainid__bounces__address___delete",
+    "mailgun__/v3/domainid/bounces/address___DELETE": {
       "provider_alias_intent": "/v3/domainid/bounces/address",
       "text": "Clear a single bounce",
       "category": "Bounces",
@@ -470,13 +451,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__bounces___get": {
-      "provider_intent": "mailgun__v3__domainid__bounces___get",
+    "mailgun__/v3/domainid/bounces___GET": {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "View all bounces",
       "category": "Bounces",
@@ -524,13 +502,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__bounces___post": {
-      "provider_intent": "mailgun__v3__domainid__bounces___post",
+    "mailgun__/v3/domainid/bounces___POST": {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "Insert bounce records to the bounces list",
       "category": "Bounces",
@@ -586,13 +561,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__bounces___delete": {
-      "provider_intent": "mailgun__v3__domainid__bounces___delete",
+    "mailgun__/v3/domainid/bounces___DELETE": {
       "provider_alias_intent": "/v3/domainid/bounces",
       "text": "Delete entire bounce list",
       "category": "Bounces",
@@ -630,13 +602,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints__import___post": {
-      "provider_intent": "mailgun__v3__domainid__complaints__import___post",
+    "mailgun__/v3/domainid/complaints/import___POST": {
       "provider_alias_intent": "/v3/domainid/complaints/import",
       "text": "Import list of complaints",
       "category": "Complaints",
@@ -684,13 +653,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints__address___get": {
-      "provider_intent": "mailgun__v3__domainid__complaints__address___get",
+    "mailgun__/v3/domainid/complaints/address___GET": {
       "provider_alias_intent": "/v3/domainid/complaints/address",
       "text": "View a single complaint record",
       "category": "Complaints",
@@ -728,13 +694,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints__address___delete": {
-      "provider_intent": "mailgun__v3__domainid__complaints__address___delete",
+    "mailgun__/v3/domainid/complaints/address___DELETE": {
       "provider_alias_intent": "/v3/domainid/complaints/address",
       "text": "Clear a single complaint event",
       "category": "Complaints",
@@ -772,13 +735,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints___get": {
-      "provider_intent": "mailgun__v3__domainid__complaints___get",
+    "mailgun__/v3/domainid/complaints___GET": {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "View all complaints",
       "category": "Complaints",
@@ -829,13 +789,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__complaints___delete": {
-      "provider_intent": "mailgun__v3__domainid__complaints___delete",
+    "mailgun__/v3/domainid/complaints___DELETE": {
       "provider_alias_intent": "/v3/domainid/complaints",
       "text": "Delete entire complaints list",
       "category": "Complaints",
@@ -873,13 +830,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__connection___get": {
-      "provider_intent": "mailgun__v3__domains__name__connection___get",
+    "mailgun__/v3/domains/name/connection___GET": {
       "provider_alias_intent": "/v3/domains/name/connection",
       "text": "Get connection's details",
       "category": "Domain Connection",
@@ -917,13 +871,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__connection___put": {
-      "provider_intent": "mailgun__v3__domains__name__connection___put",
+    "mailgun__/v3/domains/name/connection___PUT": {
       "provider_alias_intent": "/v3/domains/name/connection",
       "text": "Update domain connection settings",
       "category": "Domain Connection",
@@ -978,13 +929,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v1__dkim__keys___get": {
-      "provider_intent": "mailgun__v1__dkim__keys___get",
+    "mailgun__/v1/dkim/keys___GET": {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "List domain keys",
       "category": "Domain Keys",
@@ -1029,13 +977,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v1__dkim__keys___post": {
-      "provider_intent": "mailgun__v1__dkim__keys___post",
+    "mailgun__/v1/dkim/keys___POST": {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "Create a domain key",
       "category": "Domain Keys",
@@ -1080,13 +1025,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v1__dkim__keys___delete": {
-      "provider_intent": "mailgun__v1__dkim__keys___delete",
+    "mailgun__/v1/dkim/keys___DELETE": {
       "provider_alias_intent": "/v1/dkim/keys",
       "text": "Delete a domain key",
       "category": "Domain Keys",
@@ -1123,13 +1065,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__authority_name__keys__selector__activate___put": {
-      "provider_intent": "mailgun__v4__domains__authority_name__keys__selector__activate___put",
+    "mailgun__/v4/domains/authority_name/keys/selector/activate___PUT": {
       "provider_alias_intent": "/v4/domains/authority_name/keys/selector/activate",
       "text": "Activate a domain key",
       "category": "Domain Keys",
@@ -1166,13 +1105,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__authority_name__keys___get": {
-      "provider_intent": "mailgun__v4__domains__authority_name__keys___get",
+    "mailgun__/v4/domains/authority_name/keys___GET": {
       "provider_alias_intent": "/v4/domains/authority_name/keys",
       "text": "List domain keys",
       "category": "Domain Keys",
@@ -1210,13 +1146,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__authority_name__keys__selector__deactivate___put": {
-      "provider_intent": "mailgun__v4__domains__authority_name__keys__selector__deactivate___put",
+    "mailgun__/v4/domains/authority_name/keys/selector/deactivate___PUT": {
       "provider_alias_intent": "/v4/domains/authority_name/keys/selector/deactivate",
       "text": "Deactivate a domain key",
       "category": "Domain Keys",
@@ -1264,13 +1197,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__dkim_authority___put": {
-      "provider_intent": "mailgun__v3__domains__name__dkim_authority___put",
+    "mailgun__/v3/domains/name/dkim_authority___PUT": {
       "provider_alias_intent": "/v3/domains/name/dkim_authority",
       "text": "Update DKIM authority",
       "category": "Domain Keys",
@@ -1318,13 +1248,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__dkim_selector___put": {
-      "provider_intent": "mailgun__v3__domains__name__dkim_selector___put",
+    "mailgun__/v3/domains/name/dkim_selector___PUT": {
       "provider_alias_intent": "/v3/domains/name/dkim_selector",
       "text": "Update a DKIM selector",
       "category": "Domain Keys",
@@ -1367,13 +1294,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__tracking___get": {
-      "provider_intent": "mailgun__v3__domains__name__tracking___get",
+    "mailgun__/v3/domains/name/tracking___GET": {
       "provider_alias_intent": "/v3/domains/name/tracking",
       "text": "Get tracking status",
       "category": "Domain Tracking",
@@ -1411,13 +1335,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__tracking__click___put": {
-      "provider_intent": "mailgun__v3__domains__name__tracking__click___put",
+    "mailgun__/v3/domains/name/tracking/click___PUT": {
       "provider_alias_intent": "/v3/domains/name/tracking/click",
       "text": "Update click tracking settings",
       "category": "Domain Tracking",
@@ -1461,13 +1382,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__tracking__open___put": {
-      "provider_intent": "mailgun__v3__domains__name__tracking__open___put",
+    "mailgun__/v3/domains/name/tracking/open___PUT": {
       "provider_alias_intent": "/v3/domains/name/tracking/open",
       "text": "Update open tracking settings",
       "category": "Domain Tracking",
@@ -1524,13 +1442,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__tracking__unsubscribe___put": {
-      "provider_intent": "mailgun__v3__domains__name__tracking__unsubscribe___put",
+    "mailgun__/v3/domains/name/tracking/unsubscribe___PUT": {
       "provider_alias_intent": "/v3/domains/name/tracking/unsubscribe",
       "text": "Update unsubscribe tracking settings",
       "category": "Domain Tracking",
@@ -1588,13 +1503,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains___get": {
-      "provider_intent": "mailgun__v4__domains___get",
+    "mailgun__/v4/domains___GET": {
       "provider_alias_intent": "/v4/domains",
       "text": "Get domains",
       "category": "Domains",
@@ -1646,13 +1558,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains___post": {
-      "provider_intent": "mailgun__v4__domains___post",
+    "mailgun__/v4/domains___POST": {
       "provider_alias_intent": "/v4/domains",
       "text": "Create a domain",
       "category": "Domains",
@@ -1750,13 +1659,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__name___get": {
-      "provider_intent": "mailgun__v4__domains__name___get",
+    "mailgun__/v4/domains/name___GET": {
       "provider_alias_intent": "/v4/domains/name",
       "text": "Get domain details",
       "category": "Domains",
@@ -1794,13 +1700,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__name___put": {
-      "provider_intent": "mailgun__v4__domains__name___put",
+    "mailgun__/v4/domains/name___PUT": {
       "provider_alias_intent": "/v4/domains/name",
       "text": "Update a domain",
       "category": "Domains",
@@ -1859,13 +1762,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v4__domains__name__verify___put": {
-      "provider_intent": "mailgun__v4__domains__name__verify___put",
+    "mailgun__/v4/domains/name/verify___PUT": {
       "provider_alias_intent": "/v4/domains/name/verify",
       "text": "Set verification state",
       "category": "Domains",
@@ -1903,13 +1803,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name___delete": {
-      "provider_intent": "mailgun__v3__domains__name___delete",
+    "mailgun__/v3/domains/name___DELETE": {
       "provider_alias_intent": "/v3/domains/name",
       "text": "Delete a domain",
       "category": "Domains",
@@ -1947,13 +1844,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__message_ttl\n___put": {
-      "provider_intent": "mailgun__v3__domains__name__message_ttl\n___put",
+    "mailgun__/v3/domains/name/message_ttl___PUT": {
       "provider_alias_intent": "/v3/domains/name/message_ttl\n",
       "text": "Update the message TTL",
       "category": "Domains",
@@ -1997,13 +1891,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__mailfrom_host___put": {
-      "provider_intent": "mailgun__v3__domains__name__mailfrom_host___put",
+    "mailgun__/v3/domains/name/mailfrom_host___PUT": {
       "provider_alias_intent": "/v3/domains/name/mailfrom_host",
       "text": "Update the mailfrom hostname",
       "category": "Domains",
@@ -2047,13 +1938,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__web_prefix___put": {
-      "provider_intent": "mailgun__v3__domains__name__web_prefix___put",
+    "mailgun__/v3/domains/name/web_prefix___PUT": {
       "provider_alias_intent": "/v3/domains/name/web_prefix",
       "text": "Update domains web prefix",
       "category": "Domains",
@@ -2096,13 +1984,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain_name__events___get": {
-      "provider_intent": "mailgun__v3__domain_name__events___get",
+    "mailgun__/v3/domain_name/events___GET": {
       "provider_alias_intent": "/v3/domain_name/events",
       "text": "Retrieves a paginated list of events",
       "category": "Events",
@@ -2206,13 +2091,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__ips__ip___delete": {
-      "provider_intent": "mailgun__v3__domains__name__ips__ip___delete",
+    "mailgun__/v3/domains/name/ips/ip___DELETE": {
       "provider_alias_intent": "/v3/domains/name/ips/ip",
       "text": "Remove an IP from the domain pool, unlink a DIPP or remove the domain pool",
       "category": "IPs",
@@ -2263,13 +2145,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__name__pool__ip___delete": {
-      "provider_intent": "mailgun__v3__domains__name__pool__ip___delete",
+    "mailgun__/v3/domains/name/pool/ip___DELETE": {
       "provider_alias_intent": "/v3/domains/name/pool/ip",
       "text": "Remove an IP from the domain pool, unlink a DIPP or remove the domain pool",
       "category": "IPs",
@@ -2320,13 +2199,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools___post": {
-      "provider_intent": "mailgun__v3__ip_pools___post",
+    "mailgun__/v3/ip_pools___POST": {
       "provider_alias_intent": "/v3/ip_pools",
       "text": "Add a new DIPP to the account",
       "category": "IP Pools",
@@ -2367,13 +2243,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id___get": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id___get",
+    "mailgun__/v3/ip_pools/pool_id___GET": {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Get DIPP details",
       "category": "IP Pools",
@@ -2411,13 +2284,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id___delete": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id___delete",
+    "mailgun__/v3/ip_pools/pool_id___DELETE": {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Delete the DIPP",
       "category": "IP Pools",
@@ -2460,13 +2330,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id___patch": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id___patch",
+    "mailgun__/v3/ip_pools/pool_id___PATCH": {
       "provider_alias_intent": "/v3/ip_pools/pool_id",
       "text": "Edit DIPP",
       "category": "IP Pools",
@@ -2521,13 +2388,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id__ips__ip___put": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id__ips__ip___put",
+    "mailgun__/v3/ip_pools/pool_id/ips/ip___PUT": {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips/ip",
       "text": "Add an IP to a DIPP",
       "category": "IP Pools",
@@ -2575,13 +2439,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id__ips__ip___delete": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id__ips__ip___delete",
+    "mailgun__/v3/ip_pools/pool_id/ips/ip___DELETE": {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips/ip",
       "text": "Remove an IP from a DIPP",
       "category": "IP Pools",
@@ -2629,13 +2490,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ip_pools__pool_id__ips.json___post": {
-      "provider_intent": "mailgun__v3__ip_pools__pool_id__ips.json___post",
+    "mailgun__/v3/ip_pools/pool_id/ips.json___POST": {
       "provider_alias_intent": "/v3/ip_pools/pool_id/ips.json",
       "text": "Add multiple IPs to the DIPP",
       "category": "IP Pools",
@@ -2679,13 +2537,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips___get": {
-      "provider_intent": "mailgun__v3__ips___get",
+    "mailgun__/v3/ips___GET": {
       "provider_alias_intent": "/v3/ips",
       "text": "List account IPs",
       "category": "IPs",
@@ -2728,13 +2583,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips__ip___get": {
-      "provider_intent": "mailgun__v3__ips__ip___get",
+    "mailgun__/v3/ips/ip___GET": {
       "provider_alias_intent": "/v3/ips/ip",
       "text": "Get details about account IP",
       "category": "IPs",
@@ -2772,13 +2624,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips__ip__domains___get": {
-      "provider_intent": "mailgun__v3__ips__ip__domains___get",
+    "mailgun__/v3/ips/ip/domains___GET": {
       "provider_alias_intent": "/v3/ips/ip/domains",
       "text": "Get all domains of an account where a specific IP is assigned",
       "category": "IPs",
@@ -2831,13 +2680,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips__addr__ip_band___post": {
-      "provider_intent": "mailgun__v3__ips__addr__ip_band___post",
+    "mailgun__/v3/ips/addr/ip_band___POST": {
       "provider_alias_intent": "/v3/ips/addr/ip_band",
       "text": "Place account IP into a dedicated IP band",
       "category": "IPs",
@@ -2881,13 +2727,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips__request__new___get": {
-      "provider_intent": "mailgun__v3__ips__request__new___get",
+    "mailgun__/v3/ips/request/new___GET": {
       "provider_alias_intent": "/v3/ips/request/new",
       "text": "Return the number of IPs available to the account per its billing plan",
       "category": "IPs",
@@ -2918,13 +2761,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__ips__request__new___post": {
-      "provider_intent": "mailgun__v3__ips__request__new___post",
+    "mailgun__/v3/ips/request/new___POST": {
       "provider_alias_intent": "/v3/ips/request/new",
       "text": "Add a new dedicated IP to the account",
       "category": "IPs",
@@ -2950,13 +2790,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists___post": {
-      "provider_intent": "mailgun__v3__lists___post",
+    "mailgun__/v3/lists___POST": {
       "provider_alias_intent": "/v3/lists",
       "text": "Create a mailing list",
       "category": "Mailing Lists\n",
@@ -3004,13 +2841,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists___get": {
-      "provider_intent": "mailgun__v3__lists___get",
+    "mailgun__/v3/lists___GET": {
       "provider_alias_intent": "/v3/lists",
       "text": "Get mailing lists",
       "category": "Mailing Lists\n",
@@ -3049,13 +2883,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members___get": {
-      "provider_intent": "mailgun__v3__lists__list_address__members___get",
+    "mailgun__/v3/lists/list_address/members___GET": {
       "provider_alias_intent": "/v3/lists/list_address/members",
       "text": "Get mailing lists members",
       "category": "Mailing Lists\n",
@@ -3093,13 +2924,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members___post": {
-      "provider_intent": "mailgun__v3__lists__list_address__members___post",
+    "mailgun__/v3/lists/list_address/members___POST": {
       "provider_alias_intent": "/v3/lists/list_address/members",
       "text": "Create a mailing list member",
       "category": "Mailing Lists\n",
@@ -3166,13 +2994,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members.json___post": {
-      "provider_intent": "mailgun__v3__lists__list_address__members.json___post",
+    "mailgun__/v3/lists/list_address/members.json___POST": {
       "provider_alias_intent": "/v3/lists/list_address/members.json",
       "text": "Bulk upload members to a mailing list (JSON)",
       "category": "Mailing Lists\n",
@@ -3210,13 +3035,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members.csv___post": {
-      "provider_intent": "mailgun__v3__lists__list_address__members.csv___post",
+    "mailgun__/v3/lists/list_address/members.csv___POST": {
       "provider_alias_intent": "/v3/lists/list_address/members.csv",
       "text": "Bulk upload members to a mailing list (CSV)",
       "category": "Mailing Lists\n",
@@ -3275,13 +3097,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members__member_address___get": {
-      "provider_intent": "mailgun__v3__lists__list_address__members__member_address___get",
+    "mailgun__/v3/lists/list_address/members/member_address___GET": {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Get a member",
       "category": "Mailing Lists\n",
@@ -3329,13 +3148,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members__member_address___put": {
-      "provider_intent": "mailgun__v3__lists__list_address__members__member_address___put",
+    "mailgun__/v3/lists/list_address/members/member_address___PUT": {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Update a mailing list member",
       "category": "Mailing Lists\n",
@@ -3383,13 +3199,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members__member_address___delete": {
-      "provider_intent": "mailgun__v3__lists__list_address__members__member_address___delete",
+    "mailgun__/v3/lists/list_address/members/member_address___DELETE": {
       "provider_alias_intent": "/v3/lists/list_address/members/member_address",
       "text": "Delete a member",
       "category": "Mailing Lists\n",
@@ -3437,13 +3250,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address___put": {
-      "provider_intent": "mailgun__v3__lists__list_address___put",
+    "mailgun__/v3/lists/list_address___PUT": {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Update a mailing list",
       "category": "Mailing Lists\n",
@@ -3481,13 +3291,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address___delete": {
-      "provider_intent": "mailgun__v3__lists__list_address___delete",
+    "mailgun__/v3/lists/list_address___DELETE": {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Delete mailing list",
       "category": "Mailing Lists\n",
@@ -3525,13 +3332,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address___get": {
-      "provider_intent": "mailgun__v3__lists__list_address___get",
+    "mailgun__/v3/lists/list_address___GET": {
       "provider_alias_intent": "/v3/lists/list_address",
       "text": "Get a mailing list by address",
       "category": "Mailing Lists\n",
@@ -3569,13 +3373,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__pages___get": {
-      "provider_intent": "mailgun__v3__lists__pages___get",
+    "mailgun__/v3/lists/pages___GET": {
       "provider_alias_intent": "/v3/lists/pages",
       "text": "Get mailing lists by page",
       "category": "Mailing Lists\n",
@@ -3606,13 +3407,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__lists__list_address__members__pages___get": {
-      "provider_intent": "mailgun__v3__lists__list_address__members__pages___get",
+    "mailgun__/v3/lists/list_address/members/pages___GET": {
       "provider_alias_intent": "/v3/lists/list_address/members/pages",
       "text": "Get members by page",
       "category": "Mailing Lists\n",
@@ -3650,13 +3448,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes___post": {
-      "provider_intent": "mailgun__v3__routes___post",
+    "mailgun__/v3/routes___POST": {
       "provider_alias_intent": "/v3/routes",
       "text": "Create a route",
       "category": "Routes",
@@ -3699,13 +3494,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes___get": {
-      "provider_intent": "mailgun__v3__routes___get",
+    "mailgun__/v3/routes___GET": {
       "provider_alias_intent": "/v3/routes",
       "text": "Get all routes",
       "category": "Routes",
@@ -3740,13 +3532,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes__id___get": {
-      "provider_intent": "mailgun__v3__routes__id___get",
+    "mailgun__/v3/routes/id___GET": {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Get a route",
       "category": "Routes",
@@ -3784,13 +3573,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes__id___put": {
-      "provider_intent": "mailgun__v3__routes__id___put",
+    "mailgun__/v3/routes/id___PUT": {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Update a route",
       "category": "Routes",
@@ -3849,13 +3635,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes__id___delete": {
-      "provider_intent": "mailgun__v3__routes__id___delete",
+    "mailgun__/v3/routes/id___DELETE": {
       "provider_alias_intent": "/v3/routes/id",
       "text": "Delete a route",
       "category": "Routes",
@@ -3893,13 +3676,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__routes__match___get": {
-      "provider_intent": "mailgun__v3__routes__match___get",
+    "mailgun__/v3/routes/match___GET": {
       "provider_alias_intent": "/v3/routes/match",
       "text": "Match address to route",
       "category": "Routes",
@@ -3930,13 +3710,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v2__x509__domain__status___get": {
-      "provider_intent": "mailgun__v2__x509__domain__status___get",
+    "mailgun__/v2/x509/domain/status___GET": {
       "provider_alias_intent": "/v2/x509/domain/status",
       "text": "Status of x509 TLS certificate",
       "category": "Secure tracking",
@@ -3974,13 +3751,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v2__x509__domain___put": {
-      "provider_intent": "mailgun__v2__x509__domain___put",
+    "mailgun__/v2/x509/domain___PUT": {
       "provider_alias_intent": "/v2/x509/domain",
       "text": "Initiate regeneration of an expired x509 TLS certificate",
       "category": "Secure tracking",
@@ -4018,13 +3792,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v2__x509__domain___post": {
-      "provider_intent": "mailgun__v2__x509__domain___post",
+    "mailgun__/v2/x509/domain___POST": {
       "provider_alias_intent": "/v2/x509/domain",
       "text": "Initiate generation of an x509 TLS certificate",
       "category": "Secure tracking",
@@ -4062,13 +3833,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__stats__total___get": {
-      "provider_intent": "mailgun__v3__stats__total___get",
+    "mailgun__/v3/stats/total___GET": {
       "provider_alias_intent": "/v3/stats/total",
       "text": "Totals for entire account",
       "category": "Stats",
@@ -4118,13 +3886,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__stats__total___get": {
-      "provider_intent": "mailgun__v3__domain__stats__total___get",
+    "mailgun__/v3/domain/stats/total___GET": {
       "provider_alias_intent": "/v3/domain/stats/total",
       "text": "Totals for entire domain",
       "category": "Stats",
@@ -4185,13 +3950,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__stats__total__domains___get": {
-      "provider_intent": "mailgun__v3__stats__total__domains___get",
+    "mailgun__/v3/stats/total/domains___GET": {
       "provider_alias_intent": "/v3/stats/total/domains",
       "text": "Totals for account domains for a single time resolution",
       "category": "Stats",
@@ -4237,13 +3999,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__stats__filter___get": {
-      "provider_intent": "mailgun__v3__stats__filter___get",
+    "mailgun__/v3/stats/filter___GET": {
       "provider_alias_intent": "/v3/stats/filter",
       "text": "Filtered/grouped totals for entire account",
       "category": "Stats",
@@ -4301,13 +4060,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__aggregates__providers___get": {
-      "provider_intent": "mailgun__v3__domain__aggregates__providers___get",
+    "mailgun__/v3/domain/aggregates/providers___GET": {
       "provider_alias_intent": "/v3/domain/aggregates/providers",
       "text": "Aggregate counts by ESP",
       "category": "Stats",
@@ -4345,13 +4101,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__aggregates__devices___get": {
-      "provider_intent": "mailgun__v3__domain__aggregates__devices___get",
+    "mailgun__/v3/domain/aggregates/devices___GET": {
       "provider_alias_intent": "/v3/domain/aggregates/devices",
       "text": "Aggregate counts by devices triggering events",
       "category": "Stats",
@@ -4389,13 +4142,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__aggregates__countries___get": {
-      "provider_intent": "mailgun__v3__domain__aggregates__countries___get",
+    "mailgun__/v3/domain/aggregates/countries___GET": {
       "provider_alias_intent": "/v3/domain/aggregates/countries",
       "text": "Aggregate counts by country",
       "category": "Stats",
@@ -4433,13 +4183,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tags___get": {
-      "provider_intent": "mailgun__v3__domain__tags___get",
+    "mailgun__/v3/domain/tags___GET": {
       "provider_alias_intent": "/v3/domain/tags",
       "text": "List all tags",
       "category": "Tags",
@@ -4493,13 +4240,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tag___get": {
-      "provider_intent": "mailgun__v3__domain__tag___get",
+    "mailgun__/v3/domain/tag___GET": {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Get a tag",
       "category": "Tags",
@@ -4542,13 +4286,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tag___put": {
-      "provider_intent": "mailgun__v3__domain__tag___put",
+    "mailgun__/v3/domain/tag___PUT": {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Update tag",
       "category": "Tags",
@@ -4596,13 +4337,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tag___delete": {
-      "provider_intent": "mailgun__v3__domain__tag___delete",
+    "mailgun__/v3/domain/tag___DELETE": {
       "provider_alias_intent": "/v3/domain/tag",
       "text": "Delete tag",
       "category": "Tags",
@@ -4644,13 +4382,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tag__stats__aggregates___get": {
-      "provider_intent": "mailgun__v3__domain__tag__stats__aggregates___get",
+    "mailgun__/v3/domain/tag/stats/aggregates___GET": {
       "provider_alias_intent": "/v3/domain/tag/stats/aggregates",
       "text": "Get aggregate stat types by tag",
       "category": "Tags",
@@ -4698,13 +4433,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domain__tag__stats___get": {
-      "provider_intent": "mailgun__v3__domain__tag__stats___get",
+    "mailgun__/v3/domain/tag/stats___GET": {
       "provider_alias_intent": "/v3/domain/tag/stats",
       "text": "Get stats by tag",
       "category": "Tags",
@@ -4780,13 +4512,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain__limits__tag___get": {
-      "provider_intent": "mailgun__v3__domains__domain__limits__tag___get",
+    "mailgun__/v3/domains/domain/limits/tag___GET": {
       "provider_alias_intent": "/v3/domains/domain/limits/tag",
       "text": "Get tag limits",
       "category": "Tags",
@@ -4824,13 +4553,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates___get": {
-      "provider_intent": "mailgun__v3__domainid__templates___get",
+    "mailgun__/v3/domainid/templates___GET": {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Get templates",
       "category": "Templates",
@@ -4883,13 +4609,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates___post": {
-      "provider_intent": "mailgun__v3__domainid__templates___post",
+    "mailgun__/v3/domainid/templates___POST": {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Create a template",
       "category": "Templates",
@@ -4965,13 +4688,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates___delete": {
-      "provider_intent": "mailgun__v3__domainid__templates___delete",
+    "mailgun__/v3/domainid/templates___DELETE": {
       "provider_alias_intent": "/v3/domainid/templates",
       "text": "Delete all templates",
       "category": "Templates",
@@ -5009,13 +4729,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions___get": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions___get",
+    "mailgun__/v3/domainid/templates/templateid/versions___GET": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions",
       "text": "Get all template versions",
       "category": "Templates",
@@ -5078,13 +4795,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions___post": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions___post",
+    "mailgun__/v3/domainid/templates/templateid/versions___POST": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions",
       "text": "Create a template version",
       "category": "Templates",
@@ -5163,13 +4877,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid___get": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid___get",
+    "mailgun__/v3/domainid/templates/templateid___GET": {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Get template",
       "category": "Templates",
@@ -5221,13 +4932,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid___put": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid___put",
+    "mailgun__/v3/domainid/templates/templateid___PUT": {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Update template",
       "category": "Templates",
@@ -5280,13 +4988,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid___delete": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid___delete",
+    "mailgun__/v3/domainid/templates/templateid___DELETE": {
       "provider_alias_intent": "/v3/domainid/templates/templateid",
       "text": "Delete a template",
       "category": "Templates",
@@ -5334,13 +5039,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions__versionid___get": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions__versionid___get",
+    "mailgun__/v3/domainid/templates/templateid/versions/versionid___GET": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Get a version",
       "category": "Templates",
@@ -5398,13 +5100,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions__versionid___put": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions__versionid___put",
+    "mailgun__/v3/domainid/templates/templateid/versions/versionid___PUT": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Update a version",
       "category": "Templates",
@@ -5487,13 +5186,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions__versionid___delete": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions__versionid___delete",
+    "mailgun__/v3/domainid/templates/templateid/versions/versionid___DELETE": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid",
       "text": "Delete a version",
       "category": "Templates",
@@ -5551,13 +5247,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__templates__templateid__versions__versionid__copy__versionidto___put": {
-      "provider_intent": "mailgun__v3__domainid__templates__templateid__versions__versionid__copy__versionidto___put",
+    "mailgun__/v3/domainid/templates/templateid/versions/versionid/copy/versionidto___PUT": {
       "provider_alias_intent": "/v3/domainid/templates/templateid/versions/versionid/copy/versionidto",
       "text": "Copy a version",
       "category": "Templates",
@@ -5630,13 +5323,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes__import___post": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes__import___post",
+    "mailgun__/v3/domainid/unsubscribes/import___POST": {
       "provider_alias_intent": "/v3/domainid/unsubscribes/import",
       "text": "Import list of unsubscribes",
       "category": "Unsubscribe",
@@ -5690,13 +5380,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes__address___get": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes__address___get",
+    "mailgun__/v3/domainid/unsubscribes/address___GET": {
       "provider_alias_intent": "/v3/domainid/unsubscribes/address",
       "text": "View a single unsubscribe",
       "category": "Unsubscribe",
@@ -5734,13 +5421,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes__address___delete": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes__address___delete",
+    "mailgun__/v3/domainid/unsubscribes/address___DELETE": {
       "provider_alias_intent": "/v3/domainid/unsubscribes/address",
       "text": "Clear a given unsubscribe event",
       "category": "Unsubscribe",
@@ -5778,13 +5462,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes___get": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes___get",
+    "mailgun__/v3/domainid/unsubscribes___GET": {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "View all unsubscribes",
       "category": "Unsubscribe",
@@ -5835,13 +5516,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes___post": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes___post",
+    "mailgun__/v3/domainid/unsubscribes___POST": {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "Insert multiple unsubscribe records via JSON",
       "category": "Unsubscribe",
@@ -5893,13 +5571,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__unsubscribes___delete": {
-      "provider_intent": "mailgun__v3__domainid__unsubscribes___delete",
+    "mailgun__/v3/domainid/unsubscribes___DELETE": {
       "provider_alias_intent": "/v3/domainid/unsubscribes",
       "text": "Delete entire unsubscribe list",
       "category": "Unsubscribe",
@@ -5937,13 +5612,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain__webhooks___get": {
-      "provider_intent": "mailgun__v3__domains__domain__webhooks___get",
+    "mailgun__/v3/domains/domain/webhooks___GET": {
       "provider_alias_intent": "/v3/domains/domain/webhooks",
       "text": "Get all webhooks",
       "category": "Webhooks",
@@ -5981,13 +5653,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain__webhooks___post": {
-      "provider_intent": "mailgun__v3__domains__domain__webhooks___post",
+    "mailgun__/v3/domains/domain/webhooks___POST": {
       "provider_alias_intent": "/v3/domains/domain/webhooks",
       "text": "Create a webhook",
       "category": "Webhooks",
@@ -6036,13 +5705,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain_name__webhooks__webhook_name___get": {
-      "provider_intent": "mailgun__v3__domains__domain_name__webhooks__webhook_name___get",
+    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___GET": {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Get webhooks by type",
       "category": "Webhooks",
@@ -6092,13 +5758,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain_name__webhooks__webhook_name___put": {
-      "provider_intent": "mailgun__v3__domains__domain_name__webhooks__webhook_name___put",
+    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___PUT": {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Update a webhook",
       "category": "Webhooks",
@@ -6154,13 +5817,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domains__domain_name__webhooks__webhook_name___delete": {
-      "provider_intent": "mailgun__v3__domains__domain_name__webhooks__webhook_name___delete",
+    "mailgun__/v3/domains/domain_name/webhooks/webhook_name___DELETE": {
       "provider_alias_intent": "/v3/domains/domain_name/webhooks/webhook_name",
       "text": "Remove all webhooks by webhook type",
       "category": "Webhooks",
@@ -6210,13 +5870,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists__value___get": {
-      "provider_intent": "mailgun__v3__domainid__whitelists__value___get",
+    "mailgun__/v3/domainid/whitelists/value___GET": {
       "provider_alias_intent": "/v3/domainid/whitelists/value",
       "text": "View a single whitelist records",
       "category": "Whitelist",
@@ -6254,13 +5911,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists__value___delete": {
-      "provider_intent": "mailgun__v3__domainid__whitelists__value___delete",
+    "mailgun__/v3/domainid/whitelists/value___DELETE": {
       "provider_alias_intent": "/v3/domainid/whitelists/value",
       "text": "Remove a record from whitelist",
       "category": "Whitelist",
@@ -6298,13 +5952,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists___get": {
-      "provider_intent": "mailgun__v3__domainid__whitelists___get",
+    "mailgun__/v3/domainid/whitelists___GET": {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "View all whitelist records for a domain",
       "category": "Whitelist",
@@ -6355,13 +6006,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists___post": {
-      "provider_intent": "mailgun__v3__domainid__whitelists___post",
+    "mailgun__/v3/domainid/whitelists___POST": {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "Add a single whitelist record",
       "category": "Whitelist",
@@ -6409,13 +6057,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists___delete": {
-      "provider_intent": "mailgun__v3__domainid__whitelists___delete",
+    "mailgun__/v3/domainid/whitelists___DELETE": {
       "provider_alias_intent": "/v3/domainid/whitelists",
       "text": "Clear domains whitelist",
       "category": "Whitelist",
@@ -6463,13 +6108,10 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     },
-    "mailgun__v3__domainid__whitelists__import___post": {
-      "provider_intent": "mailgun__v3__domainid__whitelists__import___post",
+    "mailgun__/v3/domainid/whitelists/import___POST": {
       "provider_alias_intent": "/v3/domainid/whitelists/import",
       "text": "Import list of whitelisted addresses/domains",
       "category": "Whitelist",
@@ -6517,10 +6159,8 @@
           "password": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": "formdata"
+      "payload_type": "formdata",
+      "updated_at": "2025-11-11T11:55:18.839Z"
     }
   }
 }

@@ -34,8 +34,7 @@
     "credential_link": "https://account.postmarkapp.com/login"
   },
   "routes": {
-    "postmark__email___post": {
-      "provider_intent": "postmark__email___post",
+    "postmark__/email___POST": {
       "provider_alias_intent": "/email",
       "text": "Send a single email",
       "category": "Email",
@@ -139,13 +138,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__email__batch___post": {
-      "provider_intent": "postmark__email__batch___post",
+    "postmark__/email/batch___POST": {
       "provider_alias_intent": "/email/batch",
       "text": "Send batch emails",
       "category": "Email",
@@ -240,13 +236,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id__unarchive___post": {
-      "provider_intent": "postmark__message-streams__stream_id__unarchive___post",
+    "postmark__/message-streams/stream_id/unarchive___POST": {
       "provider_alias_intent": "/message-streams/stream_id/unarchive",
       "text": "Unarchive a message stream",
       "category": "Message stream ",
@@ -286,13 +279,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound___get": {
-      "provider_intent": "postmark__messages__outbound___get",
+    "postmark__/messages/outbound___GET": {
       "provider_alias_intent": "/messages/outbound",
       "text": "Outbound message search",
       "category": "Messages",
@@ -373,13 +363,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__deliverystats___get": {
-      "provider_intent": "postmark__deliverystats___get",
+    "postmark__/deliverystats___GET": {
       "provider_alias_intent": "/deliverystats",
       "text": "Get delivery stats",
       "category": "Bounce",
@@ -406,13 +393,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__bounces___get": {
-      "provider_intent": "postmark__bounces___get",
+    "postmark__/bounces___GET": {
       "provider_alias_intent": "/bounces",
       "text": "Get bounces",
       "category": "Bounce",
@@ -488,13 +472,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__bounces__bounceid___get": {
-      "provider_intent": "postmark__bounces__bounceid___get",
+    "postmark__/bounces/bounceid___GET": {
       "provider_alias_intent": "/bounces/bounceid",
       "text": "Get a single bounce",
       "category": "Bounce",
@@ -533,13 +514,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__bounces__bounceid__dump___get": {
-      "provider_intent": "postmark__bounces__bounceid__dump___get",
+    "postmark__/bounces/bounceid/dump___GET": {
       "provider_alias_intent": "/bounces/bounceid/dump",
       "text": "Get bounce dump",
       "category": "Bounce",
@@ -578,13 +556,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__bounces__bounceid__activate___put": {
-      "provider_intent": "postmark__bounces__bounceid__activate___put",
+    "postmark__/bounces/bounceid/activate___PUT": {
       "provider_alias_intent": "/bounces/bounceid/activate",
       "text": "Activate a bounce",
       "category": "Bounce",
@@ -623,13 +598,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains___get": {
-      "provider_intent": "postmark__domains___get",
+    "postmark__/domains___GET": {
       "provider_alias_intent": "/domains",
       "text": "List domains",
       "category": "Domains",
@@ -667,13 +639,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains__domainid___get": {
-      "provider_intent": "postmark__domains__domainid___get",
+    "postmark__/domains/domainid___GET": {
       "provider_alias_intent": "/domains/domainid",
       "text": "Get a domain’s details",
       "category": "Domains",
@@ -712,13 +681,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains___post": {
-      "provider_intent": "postmark__domains___post",
+    "postmark__/domains___POST": {
       "provider_alias_intent": "/domains",
       "text": "Create a domain",
       "category": "Domains",
@@ -758,13 +724,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains__domainid___put": {
-      "provider_intent": "postmark__domains__domainid___put",
+    "postmark__/domains/domainid___PUT": {
       "provider_alias_intent": "/domains/domainid",
       "text": "Edit a domain",
       "category": "Domains",
@@ -810,13 +773,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains__domainid___delete": {
-      "provider_intent": "postmark__domains__domainid___delete",
+    "postmark__/domains/domainid___DELETE": {
       "provider_alias_intent": "/domains/domainid",
       "text": "Verify DKIM Status",
       "category": "Domains",
@@ -855,13 +815,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains__domainid__verifyreturnpath___put": {
-      "provider_intent": "postmark__domains__domainid__verifyreturnpath___put",
+    "postmark__/domains/domainid/verifyreturnpath___PUT": {
       "provider_alias_intent": "/domains/domainid/verifyreturnpath",
       "text": "Verify Return-Path Status",
       "category": "Domains",
@@ -900,13 +857,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__domains__domainid__rotatedkim___post": {
-      "provider_intent": "postmark__domains__domainid__rotatedkim___post",
+    "postmark__/domains/domainid/rotatedkim___POST": {
       "provider_alias_intent": "/domains/domainid/rotatedkim",
       "text": "Rotate DKIM keys",
       "category": "Domains",
@@ -945,13 +899,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__triggers__inboundrules___get": {
-      "provider_intent": "postmark__triggers__inboundrules___get",
+    "postmark__/triggers/inboundrules___GET": {
       "provider_alias_intent": "/triggers/inboundrules",
       "text": "List inbound rule triggers",
       "category": "Inbound rules triggers",
@@ -989,13 +940,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__triggers__inboundrules___post": {
-      "provider_intent": "postmark__triggers__inboundrules___post",
+    "postmark__/triggers/inboundrules___POST": {
       "provider_alias_intent": "/triggers/inboundrules",
       "text": "Create an inbound rule trigger",
       "category": "Inbound rules triggers",
@@ -1028,13 +976,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__triggers__inboundrules__triggerid___delete": {
-      "provider_intent": "postmark__triggers__inboundrules__triggerid___delete",
+    "postmark__/triggers/inboundrules/triggerid___DELETE": {
       "provider_alias_intent": "/triggers/inboundrules/triggerid",
       "text": "Delete a single trigger",
       "category": "Inbound rules triggers",
@@ -1073,13 +1018,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams___get": {
-      "provider_intent": "postmark__message-streams___get",
+    "postmark__/message-streams___GET": {
       "provider_alias_intent": "/message-streams",
       "text": "List message streams",
       "category": "Message stream ",
@@ -1115,13 +1057,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id___get": {
-      "provider_intent": "postmark__message-streams__stream_id___get",
+    "postmark__/message-streams/stream_id___GET": {
       "provider_alias_intent": "/message-streams/stream_id",
       "text": "Get a message stream",
       "category": "Message stream ",
@@ -1160,13 +1099,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id___patch": {
-      "provider_intent": "postmark__message-streams__stream_id___patch",
+    "postmark__/message-streams/stream_id___PATCH": {
       "provider_alias_intent": "/message-streams/stream_id",
       "text": "Edit a message stream",
       "category": "Message stream ",
@@ -1228,13 +1164,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams___post": {
-      "provider_intent": "postmark__message-streams___post",
+    "postmark__/message-streams___POST": {
       "provider_alias_intent": "/message-streams",
       "text": "Create a message stream",
       "category": "Message stream ",
@@ -1297,13 +1230,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id__archive___post": {
-      "provider_intent": "postmark__message-streams__stream_id__archive___post",
+    "postmark__/message-streams/stream_id/archive___POST": {
       "provider_alias_intent": "/message-streams/stream_id/archive",
       "text": "Archive a message stream",
       "category": "Message stream ",
@@ -1342,13 +1272,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__messageid__details___get": {
-      "provider_intent": "postmark__messages__outbound__messageid__details___get",
+    "postmark__/messages/outbound/messageid/details___GET": {
       "provider_alias_intent": "/messages/outbound/messageid/details",
       "text": "Outbound message details",
       "category": "Messages",
@@ -1387,13 +1314,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__messageid__dump___get": {
-      "provider_intent": "postmark__messages__outbound__messageid__dump___get",
+    "postmark__/messages/outbound/messageid/dump___GET": {
       "provider_alias_intent": "/messages/outbound/messageid/dump",
       "text": "Outbound message dump",
       "category": "Messages",
@@ -1432,13 +1356,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__inbound___get": {
-      "provider_intent": "postmark__messages__inbound___get",
+    "postmark__/messages/inbound___GET": {
       "provider_alias_intent": "/messages/inbound",
       "text": "Inbound message search",
       "category": "Messages",
@@ -1514,13 +1435,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__inbound__messageid__details___get": {
-      "provider_intent": "postmark__messages__inbound__messageid__details___get",
+    "postmark__/messages/inbound/messageid/details___GET": {
       "provider_alias_intent": "/messages/inbound/messageid/details",
       "text": "Inbound message details",
       "category": "Messages",
@@ -1559,13 +1477,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__inbound__messageid__bypass___put": {
-      "provider_intent": "postmark__messages__inbound__messageid__bypass___put",
+    "postmark__/messages/inbound/messageid/bypass___PUT": {
       "provider_alias_intent": "/messages/inbound/messageid/bypass",
       "text": "Bypass rules for a blocked inbound message",
       "category": "Messages",
@@ -1604,13 +1519,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__inbound__messageid__retry___put": {
-      "provider_intent": "postmark__messages__inbound__messageid__retry___put",
+    "postmark__/messages/inbound/messageid/retry___PUT": {
       "provider_alias_intent": "/messages/inbound/messageid/retry",
       "text": "Retry a failed inbound message for processing",
       "category": "Messages",
@@ -1649,13 +1561,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__opens___get": {
-      "provider_intent": "postmark__messages__outbound__opens___get",
+    "postmark__/messages/outbound/opens___GET": {
       "provider_alias_intent": "/messages/outbound/opens",
       "text": "Message opens",
       "category": "Messages",
@@ -1745,13 +1654,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__opens__messageid___get": {
-      "provider_intent": "postmark__messages__outbound__opens__messageid___get",
+    "postmark__/messages/outbound/opens/messageid___GET": {
       "provider_alias_intent": "/messages/outbound/opens/messageid",
       "text": "Opens for a single message",
       "category": "Messages",
@@ -1800,13 +1706,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__clicks___get": {
-      "provider_intent": "postmark__messages__outbound__clicks___get",
+    "postmark__/messages/outbound/clicks___GET": {
       "provider_alias_intent": "/messages/outbound/clicks",
       "text": "Message clicks",
       "category": "Messages",
@@ -1895,13 +1798,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__messages__outbound__clicks__messageid___get": {
-      "provider_intent": "postmark__messages__outbound__clicks__messageid___get",
+    "postmark__/messages/outbound/clicks/messageid___GET": {
       "provider_alias_intent": "/messages/outbound/clicks/messageid",
       "text": "Clicks for a single message",
       "category": "Messages",
@@ -1950,13 +1850,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders___get": {
-      "provider_intent": "postmark__senders___get",
+    "postmark__/senders___GET": {
       "provider_alias_intent": "/senders",
       "text": "List sender signatures",
       "category": "Sender signatures",
@@ -1994,13 +1891,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders__signatureid___get": {
-      "provider_intent": "postmark__senders__signatureid___get",
+    "postmark__/senders/signatureid___GET": {
       "provider_alias_intent": "/senders/signatureid",
       "text": "Get a sender signature’s details",
       "category": "Sender signatures",
@@ -2039,13 +1933,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders___post": {
-      "provider_intent": "postmark__senders___post",
+    "postmark__/senders___POST": {
       "provider_alias_intent": "/senders",
       "text": "Create a signature",
       "category": "Sender signatures",
@@ -2096,13 +1987,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders__signatureid___put": {
-      "provider_intent": "postmark__senders__signatureid___put",
+    "postmark__/senders/signatureid___PUT": {
       "provider_alias_intent": "/senders/signatureid",
       "text": "Edit a signature",
       "category": "Sender signatures",
@@ -2164,13 +2052,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders__signatureid___delete": {
-      "provider_intent": "postmark__senders__signatureid___delete",
+    "postmark__/senders/signatureid___DELETE": {
       "provider_alias_intent": "/senders/signatureid",
       "text": "Delete a signature",
       "category": "Sender signatures",
@@ -2209,13 +2094,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders__signatureid__resend___post": {
-      "provider_intent": "postmark__senders__signatureid__resend___post",
+    "postmark__/senders/signatureid/resend___POST": {
       "provider_alias_intent": "/senders/signatureid/resend",
       "text": "Resend a confirmation",
       "category": "Sender signatures",
@@ -2254,13 +2136,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__senders__signatureid__requestnewdkim___post": {
-      "provider_intent": "postmark__senders__signatureid__requestnewdkim___post",
+    "postmark__/senders/signatureid/requestnewdkim___POST": {
       "provider_alias_intent": "/senders/signatureid/requestnewdkim",
       "text": "Request a new DKIM",
       "category": "Sender signatures",
@@ -2299,13 +2178,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__server___get": {
-      "provider_intent": "postmark__server___get",
+    "postmark__/server___GET": {
       "provider_alias_intent": "/server",
       "text": "Get the server",
       "category": "Server",
@@ -2332,13 +2208,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__server___put": {
-      "provider_intent": "postmark__server___put",
+    "postmark__/server___PUT": {
       "provider_alias_intent": "/server",
       "text": "Edit the server",
       "category": "Server",
@@ -2462,13 +2335,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__servers__serverid___get": {
-      "provider_intent": "postmark__servers__serverid___get",
+    "postmark__/servers/serverid___GET": {
       "provider_alias_intent": "/servers/serverid",
       "text": "Get a server",
       "category": "Servers",
@@ -2507,13 +2377,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__servers___post": {
-      "provider_intent": "postmark__servers___post",
+    "postmark__/servers___POST": {
       "provider_alias_intent": "/servers",
       "text": "Create a server",
       "category": "Servers",
@@ -2632,13 +2499,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__servers__serverid___put": {
-      "provider_intent": "postmark__servers__serverid___put",
+    "postmark__/servers/serverid___PUT": {
       "provider_alias_intent": "/servers/serverid",
       "text": "Edit a server",
       "category": "Servers",
@@ -2763,13 +2627,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__servers___get": {
-      "provider_intent": "postmark__servers___get",
+    "postmark__/servers___GET": {
       "provider_alias_intent": "/servers",
       "text": "List servers",
       "category": "Servers",
@@ -2811,13 +2672,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__servers__serverid___delete": {
-      "provider_intent": "postmark__servers__serverid___delete",
+    "postmark__/servers/serverid___DELETE": {
       "provider_alias_intent": "/servers/serverid",
       "text": "Delete a server",
       "category": "Servers",
@@ -2856,13 +2714,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound___get": {
-      "provider_intent": "postmark__stats__outbound___get",
+    "postmark__/stats/outbound___GET": {
       "provider_alias_intent": "/stats/outbound",
       "text": "Get outbound overview",
       "category": "Stats",
@@ -2906,13 +2761,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__sends___get": {
-      "provider_intent": "postmark__stats__outbound__sends___get",
+    "postmark__/stats/outbound/sends___GET": {
       "provider_alias_intent": "/stats/outbound/sends",
       "text": "Get sent counts",
       "category": "Stats",
@@ -2956,13 +2808,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__bounces___get": {
-      "provider_intent": "postmark__stats__outbound__bounces___get",
+    "postmark__/stats/outbound/bounces___GET": {
       "provider_alias_intent": "/stats/outbound/bounces",
       "text": "Get bounce counts",
       "category": "Stats",
@@ -3006,13 +2855,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__spam___get": {
-      "provider_intent": "postmark__stats__outbound__spam___get",
+    "postmark__/stats/outbound/spam___GET": {
       "provider_alias_intent": "/stats/outbound/spam",
       "text": "Get spam complaints",
       "category": "Stats",
@@ -3055,13 +2901,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__tracked___get": {
-      "provider_intent": "postmark__stats__outbound__tracked___get",
+    "postmark__/stats/outbound/tracked___GET": {
       "provider_alias_intent": "/stats/outbound/tracked",
       "text": "Get tracked email counts",
       "category": "Stats",
@@ -3105,13 +2948,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__opens___get": {
-      "provider_intent": "postmark__stats__outbound__opens___get",
+    "postmark__/stats/outbound/opens___GET": {
       "provider_alias_intent": "/stats/outbound/opens",
       "text": "Get email open counts",
       "category": "Stats",
@@ -3155,13 +2995,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__opens__platforms___get": {
-      "provider_intent": "postmark__stats__outbound__opens__platforms___get",
+    "postmark__/stats/outbound/opens/platforms___GET": {
       "provider_alias_intent": "/stats/outbound/opens/platforms",
       "text": "Get email platform usage",
       "category": "Stats",
@@ -3205,13 +3042,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__opens__emailclients___get": {
-      "provider_intent": "postmark__stats__outbound__opens__emailclients___get",
+    "postmark__/stats/outbound/opens/emailclients___GET": {
       "provider_alias_intent": "/stats/outbound/opens/emailclients",
       "text": "Get email client usage",
       "category": "Stats",
@@ -3255,13 +3089,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__clicks___get": {
-      "provider_intent": "postmark__stats__outbound__clicks___get",
+    "postmark__/stats/outbound/clicks___GET": {
       "provider_alias_intent": "/stats/outbound/clicks",
       "text": "Get click counts",
       "category": "Stats",
@@ -3305,13 +3136,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__clicks__browserfamilies___get": {
-      "provider_intent": "postmark__stats__outbound__clicks__browserfamilies___get",
+    "postmark__/stats/outbound/clicks/browserfamilies___GET": {
       "provider_alias_intent": "/stats/outbound/clicks/browserfamilies",
       "text": "Get browser usage",
       "category": "Stats",
@@ -3355,13 +3183,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__clicks__platforms___get": {
-      "provider_intent": "postmark__stats__outbound__clicks__platforms___get",
+    "postmark__/stats/outbound/clicks/platforms___GET": {
       "provider_alias_intent": "/stats/outbound/clicks/platforms",
       "text": "Get browser platform usage",
       "category": "Stats",
@@ -3405,13 +3230,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__stats__outbound__clicks__location___get": {
-      "provider_intent": "postmark__stats__outbound__clicks__location___get",
+    "postmark__/stats/outbound/clicks/location___GET": {
       "provider_alias_intent": "/stats/outbound/clicks/location",
       "text": "Get click location",
       "category": "Stats",
@@ -3455,13 +3277,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id__suppressions__dump___get": {
-      "provider_intent": "postmark__message-streams__stream_id__suppressions__dump___get",
+    "postmark__/message-streams/stream_id/suppressions/dump___GET": {
       "provider_alias_intent": "/message-streams/stream_id/suppressions/dump",
       "text": "Suppression dump",
       "category": "Suppressions",
@@ -3520,13 +3339,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id__suppressions__dump___post": {
-      "provider_intent": "postmark__message-streams__stream_id__suppressions__dump___post",
+    "postmark__/message-streams/stream_id/suppressions/dump___POST": {
       "provider_alias_intent": "/message-streams/stream_id/suppressions/dump",
       "text": "Create a Suppression",
       "category": "Suppressions",
@@ -3587,13 +3403,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__message-streams__stream_id__suppressions__delete___delete": {
-      "provider_intent": "postmark__message-streams__stream_id__suppressions__delete___delete",
+    "postmark__/message-streams/stream_id/suppressions/delete___DELETE": {
       "provider_alias_intent": "/message-streams/stream_id/suppressions/delete",
       "text": "Delete a Suppression",
       "category": "Suppressions",
@@ -3654,13 +3467,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__email__withtemplate___post": {
-      "provider_intent": "postmark__email__withtemplate___post",
+    "postmark__/email/withtemplate___POST": {
       "provider_alias_intent": "/email/withtemplate",
       "text": "Send email with template",
       "category": "Templates",
@@ -3805,13 +3615,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__email__batchwithtemplates___post": {
-      "provider_intent": "postmark__email__batchwithtemplates___post",
+    "postmark__/email/batchwithtemplates___POST": {
       "provider_alias_intent": "/email/batchwithtemplates",
       "text": "Send batch with templates",
       "category": "Templates",
@@ -3955,13 +3762,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates__push___put": {
-      "provider_intent": "postmark__templates__push___put",
+    "postmark__/templates/push___PUT": {
       "provider_alias_intent": "/templates/push",
       "text": "Push templates to another server",
       "category": "Templates",
@@ -4012,13 +3816,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates__templateidoralias___get": {
-      "provider_intent": "postmark__templates__templateidoralias___get",
+    "postmark__/templates/templateidoralias___GET": {
       "provider_alias_intent": "/templates/templateidoralias",
       "text": "Get a template",
       "category": "Templates",
@@ -4057,13 +3858,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates___post": {
-      "provider_intent": "postmark__templates___post",
+    "postmark__/templates___POST": {
       "provider_alias_intent": "/templates",
       "text": "Create a template",
       "category": "Templates",
@@ -4131,13 +3929,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates__templateidoralias___put": {
-      "provider_intent": "postmark__templates__templateidoralias___put",
+    "postmark__/templates/templateidoralias___PUT": {
       "provider_alias_intent": "/templates/templateidoralias",
       "text": "Edit a template",
       "category": "Templates",
@@ -4212,13 +4007,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates___get": {
-      "provider_intent": "postmark__templates___get",
+    "postmark__/templates___GET": {
       "provider_alias_intent": "/templates",
       "text": "List templates",
       "category": "Templates",
@@ -4264,13 +4056,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates__templateidoralias___delete": {
-      "provider_intent": "postmark__templates__templateidoralias___delete",
+    "postmark__/templates/templateidoralias___DELETE": {
       "provider_alias_intent": "/templates/templateidoralias",
       "text": "Delete a template",
       "category": "Templates",
@@ -4309,13 +4098,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__templates__validate___post": {
-      "provider_intent": "postmark__templates__validate___post",
+    "postmark__/templates/validate___POST": {
       "provider_alias_intent": "/templates/validate",
       "text": "Validate a template",
       "category": "Templates",
@@ -4387,13 +4173,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__webhooks___get": {
-      "provider_intent": "postmark__webhooks___get",
+    "postmark__/webhooks___GET": {
       "provider_alias_intent": "/webhooks",
       "text": "List webhooks",
       "category": "Webhooks",
@@ -4425,13 +4208,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__webhooks__id___get": {
-      "provider_intent": "postmark__webhooks__id___get",
+    "postmark__/webhooks/id___GET": {
       "provider_alias_intent": "/webhooks/id",
       "text": "Get a webhook",
       "category": "Webhooks",
@@ -4470,13 +4250,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__webhooks___post": {
-      "provider_intent": "postmark__webhooks___post",
+    "postmark__/webhooks___POST": {
       "provider_alias_intent": "/webhooks",
       "text": "Create a webhook",
       "category": "Webhooks",
@@ -4585,13 +4362,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__webhooks__id___put": {
-      "provider_intent": "postmark__webhooks__id___put",
+    "postmark__/webhooks/id___PUT": {
       "provider_alias_intent": "/webhooks/id",
       "text": "Edit a webhook",
       "category": "Webhooks",
@@ -4671,13 +4445,10 @@
           "authKey": "api_token"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     },
-    "postmark__webhooks__id___delete": {
-      "provider_intent": "postmark__webhooks__id___delete",
+    "postmark__/webhooks/id___DELETE": {
       "provider_alias_intent": "/webhooks/id",
       "text": "Delete a webhook",
       "category": "Webhooks",
@@ -4717,10 +4488,8 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.801Z"
     }
   }
 }

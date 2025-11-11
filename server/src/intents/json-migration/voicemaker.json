@@ -34,8 +34,7 @@
     "credential_link": "https://developer.voicemaker.in/"
   },
   "routes": {
-    "voicemaker__voice__api___post": {
-      "provider_intent": "voicemaker__voice__api___post",
+    "voicemaker__/voice/api___POST": {
       "provider_alias_intent": "/voice/api",
       "text": "Generate Audio",
       "category": "Audio",
@@ -172,13 +171,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.913Z"
     },
-    "voicemaker__voice__list___post": {
-      "provider_intent": "voicemaker__voice__list___post",
+    "voicemaker__/voice/list___POST": {
       "provider_alias_intent": "/voice/list",
       "text": "Get List of All Voices",
       "category": "Audio",
@@ -211,10 +207,8 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.913Z"
     }
   }
 }

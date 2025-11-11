@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Gettyimages API",
-    "description": "",
-    "api_base": "/gettyimages",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_affiliates_search_images": {
-      "provider_intent": "get_affiliates_search_images",
+    "gettyimages__/v3/affiliates/search/images___GET": {
       "provider_alias_intent": "/v3/affiliates/search/images",
       "text": "",
       "category": "AffiliateSearch",
@@ -49,11 +38,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_affiliates_search_videos": {
-      "provider_intent": "get_affiliates_search_videos",
+    "gettyimages__/v3/affiliates/search/videos___GET": {
       "provider_alias_intent": "/v3/affiliates/search/videos",
       "text": "",
       "category": "AffiliateSearch",
@@ -85,11 +73,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_artists_images": {
-      "provider_intent": "get_artists_images",
+    "gettyimages__/v3/artists/images___GET": {
       "provider_alias_intent": "/v3/artists/images",
       "text": "Search for images by a photographer",
       "category": "Artists",
@@ -134,11 +121,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_artists_videos": {
-      "provider_intent": "get_artists_videos",
+    "gettyimages__/v3/artists/videos___GET": {
       "provider_alias_intent": "/v3/artists/videos",
       "text": "Search for videos by a photographer",
       "category": "Artists",
@@ -183,11 +169,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_asset_changes_change_sets": {
-      "provider_intent": "put_asset_changes_change_sets",
+    "gettyimages__/v3/asset-changes/change-sets___PUT": {
       "provider_alias_intent": "/v3/asset-changes/change-sets",
       "text": "Get asset change notifications.",
       "category": "AssetChanges",
@@ -224,11 +209,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "delete_asset_changes_change_sets_change_set_id": {
-      "provider_intent": "delete_asset_changes_change_sets_change_set_id",
+    "gettyimages__/v3/asset-changes/change-sets/change-set-id___DELETE": {
       "provider_alias_intent": "/v3/asset-changes/change-sets/change-set-id",
       "text": "Confirm asset change notifications.",
       "category": "AssetChanges",
@@ -268,11 +252,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_asset_changes_channels": {
-      "provider_intent": "get_asset_changes_channels",
+    "gettyimages__/v3/asset-changes/channels___GET": {
       "provider_alias_intent": "/v3/asset-changes/channels",
       "text": "Get a list of asset change notification channels.",
       "category": "AssetChanges",
@@ -300,11 +283,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "post_asset_licensing_assetid": {
-      "provider_intent": "post_asset_licensing_assetid",
+    "gettyimages__/v3/asset-licensing/assetid___POST": {
       "provider_alias_intent": "/v3/asset-licensing/assetid",
       "text": "Endpoint for acquiring extended licenses with iStock credits for an asset.",
       "category": "AssetLicensing",
@@ -357,11 +339,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_asset_management_assets_send_events": {
-      "provider_intent": "get_asset_management_assets_send_events",
+    "gettyimages__/v3/asset-management/assets/send-events___GET": {
       "provider_alias_intent": "/v3/asset-management/assets/send-events",
       "text": "",
       "category": "AssetManagement",
@@ -398,11 +379,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_boards": {
-      "provider_intent": "get_boards",
+    "gettyimages__/v3/boards___GET": {
       "provider_alias_intent": "/v3/boards",
       "text": "Get all boards that the user participates in",
       "category": "Boards",
@@ -447,11 +427,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "post_boards": {
-      "provider_intent": "post_boards",
+    "gettyimages__/v3/boards___POST": {
       "provider_alias_intent": "/v3/boards",
       "text": "Create a new board",
       "category": "Boards",
@@ -487,11 +466,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_boards_board_id": {
-      "provider_intent": "get_boards_board_id",
+    "gettyimages__/v3/boards/board_id___GET": {
       "provider_alias_intent": "/v3/boards/board_id",
       "text": "Get assets and metadata for a specific board",
       "category": "Boards",
@@ -531,11 +509,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "delete_boards_board_id": {
-      "provider_intent": "delete_boards_board_id",
+    "gettyimages__/v3/boards/board_id___DELETE": {
       "provider_alias_intent": "/v3/boards/board_id",
       "text": "Delete a board",
       "category": "Boards",
@@ -575,11 +552,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_boards_board_id": {
-      "provider_intent": "put_boards_board_id",
+    "gettyimages__/v3/boards/board_id___PUT": {
       "provider_alias_intent": "/v3/boards/board_id",
       "text": "Update a board",
       "category": "Boards",
@@ -627,11 +603,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_boards_board_id_assets": {
-      "provider_intent": "put_boards_board_id_assets",
+    "gettyimages__/v3/boards/board_id/assets___PUT": {
       "provider_alias_intent": "/v3/boards/board_id/assets",
       "text": "Add assets to a board",
       "category": "Boards",
@@ -671,11 +646,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "delete_boards_board_id_assets": {
-      "provider_intent": "delete_boards_board_id_assets",
+    "gettyimages__/v3/boards/board_id/assets___DELETE": {
       "provider_alias_intent": "/v3/boards/board_id/assets",
       "text": "Remove assets from a board",
       "category": "Boards",
@@ -719,11 +693,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_boards_board_id_assets_asset_id": {
-      "provider_intent": "put_boards_board_id_assets_asset_id",
+    "gettyimages__/v3/boards/board_id/assets/asset_id___PUT": {
       "provider_alias_intent": "/v3/boards/board_id/assets/asset_id",
       "text": "Add an asset to a board",
       "category": "Boards",
@@ -773,11 +746,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "delete_boards_board_id_assets_asset_id": {
-      "provider_intent": "delete_boards_board_id_assets_asset_id",
+    "gettyimages__/v3/boards/board_id/assets/asset_id___DELETE": {
       "provider_alias_intent": "/v3/boards/board_id/assets/asset_id",
       "text": "Remove an asset from a board",
       "category": "Boards",
@@ -827,11 +799,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_boards_board_id_comments": {
-      "provider_intent": "get_boards_board_id_comments",
+    "gettyimages__/v3/boards/board_id/comments___GET": {
       "provider_alias_intent": "/v3/boards/board_id/comments",
       "text": "Get comments from a board",
       "category": "Boards",
@@ -871,11 +842,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "post_boards_board_id_comments": {
-      "provider_intent": "post_boards_board_id_comments",
+    "gettyimages__/v3/boards/board_id/comments___POST": {
       "provider_alias_intent": "/v3/boards/board_id/comments",
       "text": "Add a comment to a board",
       "category": "Boards",
@@ -919,11 +889,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "delete_boards_board_id_comments_comment_id": {
-      "provider_intent": "delete_boards_board_id_comments_comment_id",
+    "gettyimages__/v3/boards/board_id/comments/comment_id___DELETE": {
       "provider_alias_intent": "/v3/boards/board_id/comments/comment_id",
       "text": "Delete a comment from a board",
       "category": "Boards",
@@ -973,11 +942,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_collections": {
-      "provider_intent": "get_collections",
+    "gettyimages__/v3/collections___GET": {
       "provider_alias_intent": "/v3/collections",
       "text": "Gets collections applicable for the customer.",
       "category": "Collections",
@@ -1005,11 +973,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_countries": {
-      "provider_intent": "get_countries",
+    "gettyimages__/v3/countries___GET": {
       "provider_alias_intent": "/v3/countries",
       "text": "Gets countries codes and names.",
       "category": "Countries",
@@ -1037,11 +1004,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_customers_current": {
-      "provider_intent": "get_customers_current",
+    "gettyimages__/v3/customers/current___GET": {
       "provider_alias_intent": "/v3/customers/current",
       "text": "Returns information about the current user.",
       "category": "Customers",
@@ -1069,11 +1035,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_downloads": {
-      "provider_intent": "get_downloads",
+    "gettyimages__/v3/downloads___GET": {
       "provider_alias_intent": "/v3/downloads",
       "text": "Returns information about a customer's downloaded assets.",
       "category": "Downloads",
@@ -1138,11 +1103,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "post_downloads_images_id": {
-      "provider_intent": "post_downloads_images_id",
+    "gettyimages__/v3/downloads/images/id___POST": {
       "provider_alias_intent": "/v3/downloads/images/id",
       "text": "Download an image",
       "category": "Downloads",
@@ -1221,11 +1185,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "post_downloads_videos_id": {
-      "provider_intent": "post_downloads_videos_id",
+    "gettyimages__/v3/downloads/videos/id___POST": {
       "provider_alias_intent": "/v3/downloads/videos/id",
       "text": "Download a video",
       "category": "Downloads",
@@ -1300,11 +1263,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_events": {
-      "provider_intent": "get_events",
+    "gettyimages__/v3/events___GET": {
       "provider_alias_intent": "/v3/events",
       "text": "Get metadata for multiple events",
       "category": "Events",
@@ -1341,11 +1303,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_events_id": {
-      "provider_intent": "get_events_id",
+    "gettyimages__/v3/events/id___GET": {
       "provider_alias_intent": "/v3/events/id",
       "text": "Get metadata for a single event",
       "category": "Events",
@@ -1389,11 +1350,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_images": {
-      "provider_intent": "get_images",
+    "gettyimages__/v3/images___GET": {
       "provider_alias_intent": "/v3/images",
       "text": "Get metadata for multiple images by supplying multiple image ids",
       "category": "Images",
@@ -1430,11 +1390,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_images_id": {
-      "provider_intent": "get_images_id",
+    "gettyimages__/v3/images/id___GET": {
       "provider_alias_intent": "/v3/images/id",
       "text": "Get metadata for a single image by supplying one image id",
       "category": "Images",
@@ -1478,11 +1437,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_images_id_downloadhistory": {
-      "provider_intent": "get_images_id_downloadhistory",
+    "gettyimages__/v3/images/id/downloadhistory___GET": {
       "provider_alias_intent": "/v3/images/id/downloadhistory",
       "text": "Returns information about a customer's download history for a specific asset",
       "category": "Images",
@@ -1530,11 +1488,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_images_id_same_series": {
-      "provider_intent": "get_images_id_same_series",
+    "gettyimages__/v3/images/id/same-series___GET": {
       "provider_alias_intent": "/v3/images/id/same-series",
       "text": "Retrieve creative images from the same series",
       "category": "Images",
@@ -1586,11 +1543,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_images_id_similar": {
-      "provider_intent": "get_images_id_similar",
+    "gettyimages__/v3/images/id/similar___GET": {
       "provider_alias_intent": "/v3/images/id/similar",
       "text": "Retrieve similar images",
       "category": "Images",
@@ -1642,11 +1598,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_orders_id": {
-      "provider_intent": "get_orders_id",
+    "gettyimages__/v3/orders/id___GET": {
       "provider_alias_intent": "/v3/orders/id",
       "text": "Get order metadata",
       "category": "Orders",
@@ -1686,11 +1641,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_products": {
-      "provider_intent": "get_products",
+    "gettyimages__/v3/products___GET": {
       "provider_alias_intent": "/v3/products",
       "text": "Get Products",
       "category": "Products",
@@ -1723,11 +1677,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_purchased_assets": {
-      "provider_intent": "get_purchased_assets",
+    "gettyimages__/v3/purchased-assets___GET": {
       "provider_alias_intent": "/v3/purchased-assets",
       "text": "Get Previously Purchased Images and Video",
       "category": "Purchases",
@@ -1780,11 +1733,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_events": {
-      "provider_intent": "get_search_events",
+    "gettyimages__/v3/search/events___GET": {
       "provider_alias_intent": "/v3/search/events",
       "text": "Search for events",
       "category": "Search",
@@ -1845,11 +1797,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_images_creative": {
-      "provider_intent": "get_search_images_creative",
+    "gettyimages__/v3/search/images/creative___GET": {
       "provider_alias_intent": "/v3/search/images/creative",
       "text": "Search for creative images only",
       "category": "Search",
@@ -2018,11 +1969,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_images_creative_by_image": {
-      "provider_intent": "get_search_images_creative_by_image",
+    "gettyimages__/v3/search/images/creative/by-image___GET": {
       "provider_alias_intent": "/v3/search/images/creative/by-image",
       "text": "Search for creative images based on url",
       "category": "Search",
@@ -2099,11 +2049,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_images_editorial": {
-      "provider_intent": "get_search_images_editorial",
+    "gettyimages__/v3/search/images/editorial___GET": {
       "provider_alias_intent": "/v3/search/images/editorial",
       "text": "Search for editorial images only",
       "category": "Search",
@@ -2268,11 +2217,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_videos_creative": {
-      "provider_intent": "get_search_videos_creative",
+    "gettyimages__/v3/search/videos/creative___GET": {
       "provider_alias_intent": "/v3/search/videos/creative",
       "text": "Search for creative videos",
       "category": "Search",
@@ -2441,11 +2389,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_videos_creative_by_image": {
-      "provider_intent": "get_search_videos_creative_by_image",
+    "gettyimages__/v3/search/videos/creative/by-image___GET": {
       "provider_alias_intent": "/v3/search/videos/creative/by-image",
       "text": "Search for creative videos based on url",
       "category": "Search",
@@ -2522,11 +2469,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_videos_editorial": {
-      "provider_intent": "get_search_videos_editorial",
+    "gettyimages__/v3/search/videos/editorial___GET": {
       "provider_alias_intent": "/v3/search/videos/editorial",
       "text": "Search for editorial videos",
       "category": "Search",
@@ -2679,11 +2625,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_search_by_image_uploads_file_name": {
-      "provider_intent": "put_search_by_image_uploads_file_name",
+    "gettyimages__/v3/search/by-image/uploads/file-name___PUT": {
       "provider_alias_intent": "/v3/search/by-image/uploads/file-name",
       "text": "Upload image for use by the search creative images/videos operations",
       "category": "Search",
@@ -2721,11 +2666,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_search_images": {
-      "provider_intent": "get_search_images",
+    "gettyimages__/v3/search/images___GET": {
       "provider_alias_intent": "/v3/search/images",
       "text": "Search for both creative and editorial images - *** DEPRECATED ***",
       "category": "Search",
@@ -2866,11 +2810,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "put_usage_batches_id": {
-      "provider_intent": "put_usage_batches_id",
+    "gettyimages__/v3/usage-batches/id___PUT": {
       "provider_alias_intent": "/v3/usage-batches/id",
       "text": "Report usage of assets via a batch format.",
       "category": "Usage",
@@ -2915,11 +2858,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_videos": {
-      "provider_intent": "get_videos",
+    "gettyimages__/v3/videos___GET": {
       "provider_alias_intent": "/v3/videos",
       "text": "Get metadata for multiple videos by supplying multiple video ids",
       "category": "Videos",
@@ -2956,11 +2898,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_videos_id": {
-      "provider_intent": "get_videos_id",
+    "gettyimages__/v3/videos/id___GET": {
       "provider_alias_intent": "/v3/videos/id",
       "text": "Get metadata for a single video by supplying one video id",
       "category": "Videos",
@@ -3004,11 +2945,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_videos_id_downloadhistory": {
-      "provider_intent": "get_videos_id_downloadhistory",
+    "gettyimages__/v3/videos/id/downloadhistory___GET": {
       "provider_alias_intent": "/v3/videos/id/downloadhistory",
       "text": "Returns information about a customer's download history for a specific asset",
       "category": "Videos",
@@ -3056,11 +2996,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_videos_id_same_series": {
-      "provider_intent": "get_videos_id_same_series",
+    "gettyimages__/v3/videos/id/same-series___GET": {
       "provider_alias_intent": "/v3/videos/id/same-series",
       "text": "Retrieve creative videos from the same series",
       "category": "Videos",
@@ -3112,11 +3051,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     },
-    "get_videos_id_similar": {
-      "provider_intent": "get_videos_id_similar",
+    "gettyimages__/v3/videos/id/similar___GET": {
       "provider_alias_intent": "/v3/videos/id/similar",
       "text": "Retrieve similar videos",
       "category": "Videos",
@@ -3168,8 +3106,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.306Z"
     }
   }
 }

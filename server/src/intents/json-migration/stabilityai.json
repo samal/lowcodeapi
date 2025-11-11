@@ -34,8 +34,7 @@
     "credential_link": "https://next.platform.stability.ai/account/keys"
   },
   "routes": {
-    "stabilityai__v1__engines__list___get": {
-      "provider_intent": "stabilityai__v1__engines__list___get",
+    "stabilityai__/v1/engines/list___GET": {
       "provider_alias_intent": "/v1/engines/list",
       "text": "List all engines available to your organization/user",
       "category": "Engines/list",
@@ -62,13 +61,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__generation__engine_id__image-to-image___post": {
-      "provider_intent": "stabilityai__v1__generation__engine_id__image-to-image___post",
+    "stabilityai__/v1/generation/engine_id/image-to-image___POST": {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image",
       "text": "Modify an image based on a text prompt",
       "category": "Generation/image-to-image",
@@ -210,13 +206,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__generation__engine_id__image-to-image__masking___post": {
-      "provider_intent": "stabilityai__v1__generation__engine_id__image-to-image__masking___post",
+    "stabilityai__/v1/generation/engine_id/image-to-image/masking___POST": {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image/masking",
       "text": "Selectively modify portions of an image using a mask",
       "category": "Generation/image-to-image/masking",
@@ -353,13 +346,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__generation__engine_id__image-to-image__upscale___post": {
-      "provider_intent": "stabilityai__v1__generation__engine_id__image-to-image__upscale___post",
+    "stabilityai__/v1/generation/engine_id/image-to-image/upscale___POST": {
       "provider_alias_intent": "/v1/generation/engine_id/image-to-image/upscale",
       "text": "Create a higher resolution version of an input image.",
       "category": "Generation/image-to-image/upscale",
@@ -412,13 +402,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__generation__engine_id__text-to-image___post": {
-      "provider_intent": "stabilityai__v1__generation__engine_id__text-to-image___post",
+    "stabilityai__/v1/generation/engine_id/text-to-image___POST": {
       "provider_alias_intent": "/v1/generation/engine_id/text-to-image",
       "text": "Generate a new image from a text prompt",
       "category": "Generation/text-to-image",
@@ -543,13 +530,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__user__account___get": {
-      "provider_intent": "stabilityai__v1__user__account___get",
+    "stabilityai__/v1/user/account___GET": {
       "provider_alias_intent": "/v1/user/account",
       "text": "Get information about the account associated with the provided API key",
       "category": "User/account",
@@ -576,13 +560,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     },
-    "stabilityai__v1__user__balance___get": {
-      "provider_intent": "stabilityai__v1__user__balance___get",
+    "stabilityai__/v1/user/balance___GET": {
       "provider_alias_intent": "/v1/user/balance",
       "text": "Get the credit balance of the account/organization associated with the API key",
       "category": "User/balance",
@@ -609,10 +590,8 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.876Z"
     }
   }
 }

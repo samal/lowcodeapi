@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Drip API",
-    "description": "",
-    "api_base": "/drip",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "list_all_accounts": {
-      "provider_intent": "list_all_accounts",
+    "drip__/v2/accounts___GET": {
       "provider_alias_intent": "/v2/accounts",
       "text": "List all accounts",
       "category": "Accounts",
@@ -40,11 +29,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.202Z"
     },
-    "fetch_an_account": {
-      "provider_intent": "fetch_an_account",
+    "drip__/v2/accounts/account_id___GET": {
       "provider_alias_intent": "/v2/accounts/account_id",
       "text": "Fetch an account",
       "category": "Accounts",
@@ -82,11 +70,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_batch_of_subscribers": {
-      "provider_intent": "create_or_update_a_batch_of_subscribers",
+    "drip__/v2/account_id/subscribers/batches___POST": {
       "provider_alias_intent": "/v2/account_id/subscribers/batches",
       "text": "Create or update a batch of subscribers",
       "category": "Batch API",
@@ -157,11 +144,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "unsubscribe_a_batch_of_subscribers": {
-      "provider_intent": "unsubscribe_a_batch_of_subscribers",
+    "drip__/v2/account_id/unsubscribes/batches___POST": {
       "provider_alias_intent": "/v2/account_id/unsubscribes/batches",
       "text": "Unsubscribe a batch of subscribers",
       "category": "Batch API",
@@ -217,11 +203,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "record_a_batch_of_events": {
-      "provider_intent": "record_a_batch_of_events",
+    "drip__/v2/account_id/events/batches___POST": {
       "provider_alias_intent": "/v2/account_id/events/batches",
       "text": "Record a batch of events",
       "category": "Batch API",
@@ -279,11 +264,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_batch_of_carts": {
-      "provider_intent": "create_or_update_a_batch_of_carts",
+    "drip__/v3/account_id/shopper_activity/cart/batch___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/cart/batch",
       "text": "Create or update a batch of carts",
       "category": "Batch API",
@@ -392,11 +376,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_batch_of_orders_legacy": {
-      "provider_intent": "create_or_update_a_batch_of_orders_legacy",
+    "drip__/v2/account_id/orders/batches___POST": {
       "provider_alias_intent": "/v2/account_id/orders/batches",
       "text": "Create or update a batch of orders (Legacy)",
       "category": "Batch API",
@@ -586,11 +569,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_batch_of_orders": {
-      "provider_intent": "create_or_update_a_batch_of_orders",
+    "drip__/v3/account_id/shopper_activity/order/batch___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/order/batch",
       "text": "Create or update a batch of orders",
       "category": "Batch API",
@@ -763,11 +745,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_batch_of_products": {
-      "provider_intent": "create_or_update_a_batch_of_products",
+    "drip__/v3/account_id/shopper_activity/product/batch___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/product/batch",
       "text": "Create or update a batch of products",
       "category": "Batch API",
@@ -864,11 +845,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_cart": {
-      "provider_intent": "create_or_update_a_cart",
+    "drip__/v3/account_id/shopper_activity/cart___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/cart",
       "text": "Create or update a cart",
       "category": "Cart Activity",
@@ -907,11 +887,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_conversions": {
-      "provider_intent": "list_all_conversions",
+    "drip__/v2/account_id/goals___GET": {
       "provider_alias_intent": "/v2/account_id/goals",
       "text": "List all conversions",
       "category": "Conversions",
@@ -949,11 +928,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_conversion": {
-      "provider_intent": "fetch_a_conversion",
+    "drip__/v2/account_id/goals/conversion_id___GET": {
       "provider_alias_intent": "/v2/account_id/goals/conversion_id",
       "text": "Fetch a conversion",
       "category": "Conversions",
@@ -999,11 +977,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_custom_field_identifiers_used_in_an_account": {
-      "provider_intent": "list_all_custom_field_identifiers_used_in_an_account",
+    "drip__/v2/account_id/custom_field_identifiers___GET": {
       "provider_alias_intent": "/v2/account_id/custom_field_identifiers",
       "text": "List all custom field identifiers used in an account",
       "category": "Custom Fields",
@@ -1041,11 +1018,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_email_series_campaigns": {
-      "provider_intent": "list_all_email_series_campaigns",
+    "drip__/v2/account_id/campaigns___GET": {
       "provider_alias_intent": "/v2/account_id/campaigns",
       "text": "List all Email Series Campaigns",
       "category": "Email Series Campaigns",
@@ -1083,11 +1059,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_an_email_series_campaign": {
-      "provider_intent": "fetch_an_email_series_campaign",
+    "drip__/v2/account_id/campaigns/campaign_id___GET": {
       "provider_alias_intent": "/v2/account_id/campaigns/campaign_id",
       "text": "Fetch an Email Series Campaign",
       "category": "Email Series Campaigns",
@@ -1133,11 +1108,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "activate_an_email_series_campaign": {
-      "provider_intent": "activate_an_email_series_campaign",
+    "drip__/v2/account_id/campaigns/campaign_id/activate___POST": {
       "provider_alias_intent": "/v2/account_id/campaigns/campaign_id/activate",
       "text": "Activate an Email Series Campaign",
       "category": "Email Series Campaigns",
@@ -1183,11 +1157,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "pause_an_email_series_campaign": {
-      "provider_intent": "pause_an_email_series_campaign",
+    "drip__/v2/account_id/campaigns/campaign_id/pause___POST": {
       "provider_alias_intent": "/v2/account_id/campaigns/campaign_id/pause",
       "text": "Pause an Email Series Campaign",
       "category": "Email Series Campaigns",
@@ -1233,11 +1206,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_subscribers_subscribed_to_an_email_series_campaign": {
-      "provider_intent": "list_all_subscribers_subscribed_to_an_email_series_campaign",
+    "drip__/v2/account_id/campaigns/campaign_id/subscribers___GET": {
       "provider_alias_intent": "/v2/account_id/campaigns/campaign_id/subscribers",
       "text": "List all subscribers subscribed to an Email Series Campaign",
       "category": "Email Series Campaigns",
@@ -1283,11 +1255,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "subscribe_someone_to_an_email_series_campaign": {
-      "provider_intent": "subscribe_someone_to_an_email_series_campaign",
+    "drip__/v2/account_id/campaigns/campaign_id/subscribers___POST": {
       "provider_alias_intent": "/v2/account_id/campaigns/campaign_id/subscribers",
       "text": "Subscribe someone to an Email Series Campaign",
       "category": "Email Series Campaigns",
@@ -1351,11 +1322,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_of_a_subscriber's_email_series_campaign_subscriptions": {
-      "provider_intent": "list_all_of_a_subscriber's_email_series_campaign_subscriptions",
+    "drip__/v2/account_id/subscribers/subscriber_id/campaign_subscriptions___GET": {
       "provider_alias_intent": "/v2/account_id/subscribers/subscriber_id/campaign_subscriptions",
       "text": "List all of a subscriber's Email Series Campaign subscriptions",
       "category": "Email Series Campaigns",
@@ -1401,11 +1371,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "record_an_event": {
-      "provider_intent": "record_an_event",
+    "drip__/v2/account_id/events___POST": {
       "provider_alias_intent": "/v2/account_id/events",
       "text": "Record an event",
       "category": "Events",
@@ -1459,11 +1428,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_custom_events_actions_used_in_an_account": {
-      "provider_intent": "list_all_custom_events_actions_used_in_an_account",
+    "drip__/v2/account_id/event_actions___GET": {
       "provider_alias_intent": "/v2/account_id/event_actions",
       "text": "List all custom events actions used in an account",
       "category": "Events",
@@ -1501,11 +1469,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_forms": {
-      "provider_intent": "list_all_forms",
+    "drip__/v2/account_id/forms___GET": {
       "provider_alias_intent": "/v2/account_id/forms",
       "text": "List all forms",
       "category": "Forms",
@@ -1543,11 +1510,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_form": {
-      "provider_intent": "fetch_a_form",
+    "drip__/v2/account_id/forms/form_id___GET": {
       "provider_alias_intent": "/v2/account_id/forms/form_id",
       "text": "Fetch a form",
       "category": "Forms",
@@ -1593,11 +1559,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_an_order": {
-      "provider_intent": "create_or_update_an_order",
+    "drip__/v3/account_id/shopper_activity/order___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/order",
       "text": "Create or update an order",
       "category": "Order Activity",
@@ -1636,11 +1601,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_an_order_legacy": {
-      "provider_intent": "create_or_update_an_order_legacy",
+    "drip__/v2/account_id/orders___POST": {
       "provider_alias_intent": "/v2/account_id/orders",
       "text": "Create or update an order (Legacy)",
       "category": "Orders (Legacy)",
@@ -1755,11 +1719,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_refund_legacy": {
-      "provider_intent": "create_or_update_a_refund_legacy",
+    "drip__/v2/account_id/refunds___POST": {
       "provider_alias_intent": "/v2/account_id/refunds",
       "text": "Create or update a refund (Legacy)",
       "category": "Orders (Legacy)",
@@ -1813,11 +1776,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_product": {
-      "provider_intent": "create_or_update_a_product",
+    "drip__/v3/account_id/shopper_activity/product___POST": {
       "provider_alias_intent": "/v3/account_id/shopper_activity/product",
       "text": "Create or update a product",
       "category": "Product Activity",
@@ -1856,11 +1818,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_single-email_campaigns": {
-      "provider_intent": "list_all_single-email_campaigns",
+    "drip__/v2/account_id/broadcasts___GET": {
       "provider_alias_intent": "/v2/account_id/broadcasts",
       "text": "List all Single-Email Campaigns",
       "category": "Single-Email Campaigns",
@@ -1898,11 +1859,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_single-email_campaign": {
-      "provider_intent": "fetch_a_single-email_campaign",
+    "drip__/v2/account_id/broadcasts/broadcast_id___GET": {
       "provider_alias_intent": "/v2/account_id/broadcasts/broadcast_id",
       "text": "Fetch a Single-Email Campaign",
       "category": "Single-Email Campaigns",
@@ -1948,11 +1908,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_or_update_a_subscriber": {
-      "provider_intent": "create_or_update_a_subscriber",
+    "drip__/v2/account_id/subscribers___POST": {
       "provider_alias_intent": "/v2/account_id/subscribers",
       "text": "Create or update a subscriber",
       "category": "Subscribers",
@@ -2005,11 +1964,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_subscribers": {
-      "provider_intent": "list_all_subscribers",
+    "drip__/v2/account_id/subscribers___GET": {
       "provider_alias_intent": "/v2/account_id/subscribers",
       "text": "List all subscribers",
       "category": "Subscribers",
@@ -2047,11 +2005,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_subscriber": {
-      "provider_intent": "fetch_a_subscriber",
+    "drip__/v2/account_id/subscribers/id_or_email_or_visitor_uuid___GET": {
       "provider_alias_intent": "/v2/account_id/subscribers/id_or_email_or_visitor_uuid",
       "text": "Fetch a subscriber",
       "category": "Subscribers",
@@ -2097,11 +2054,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "remove_a_subscriber_from_one_or_all_email_series_campaigns": {
-      "provider_intent": "remove_a_subscriber_from_one_or_all_email_series_campaigns",
+    "drip__/v2/account_id/subscribers/id_or_email/remove___POST": {
       "provider_alias_intent": "/v2/account_id/subscribers/id_or_email/remove",
       "text": "Remove a subscriber from one or all Email Series Campaigns",
       "category": "Subscribers",
@@ -2147,11 +2103,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "unsubscribe_from_all_mailings": {
-      "provider_intent": "unsubscribe_from_all_mailings",
+    "drip__/v2/account_id/subscribers/id_or_email/unsubscribe_all___POST": {
       "provider_alias_intent": "/v2/account_id/subscribers/id_or_email/unsubscribe_all",
       "text": "Unsubscribe from all mailings",
       "category": "Subscribers",
@@ -2197,11 +2152,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "delete_a_subscriber": {
-      "provider_intent": "delete_a_subscriber",
+    "drip__/v2/account_id/subscribers/id_or_email___DELETE": {
       "provider_alias_intent": "/v2/account_id/subscribers/id_or_email",
       "text": "Delete a subscriber",
       "category": "Subscribers",
@@ -2247,11 +2201,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_tags_used_in_an_account": {
-      "provider_intent": "list_all_tags_used_in_an_account",
+    "drip__/v2/account_id/tags___GET": {
       "provider_alias_intent": "/v2/account_id/tags",
       "text": "List all tags used in an account",
       "category": "Tags",
@@ -2289,11 +2242,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "apply_a_tag_to_a_subscriber": {
-      "provider_intent": "apply_a_tag_to_a_subscriber",
+    "drip__/v2/account_id/tags___POST": {
       "provider_alias_intent": "/v2/account_id/tags",
       "text": "Apply a tag to a subscriber",
       "category": "Tags",
@@ -2343,11 +2295,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "remove_a_tag_from_a_subscriber": {
-      "provider_intent": "remove_a_tag_from_a_subscriber",
+    "drip__/v2/account_id/subscribers/email/tags/tag___DELETE": {
       "provider_alias_intent": "/v2/account_id/subscribers/email/tags/tag",
       "text": "Remove a tag from a subscriber",
       "category": "Tags",
@@ -2401,11 +2352,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_the_authenticated_user": {
-      "provider_intent": "fetch_the_authenticated_user",
+    "drip__/v2/user___GET": {
       "provider_alias_intent": "/v2/user",
       "text": "Fetch the authenticated user",
       "category": "Users",
@@ -2443,11 +2393,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_webhooks": {
-      "provider_intent": "list_all_webhooks",
+    "drip__/v2/account_id/webhooks___GET": {
       "provider_alias_intent": "/v2/account_id/webhooks",
       "text": "List all webhooks",
       "category": "Webhooks",
@@ -2485,11 +2434,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_webhook": {
-      "provider_intent": "fetch_a_webhook",
+    "drip__/v2/account_id/webhooks/webhook_id___GET": {
       "provider_alias_intent": "/v2/account_id/webhooks/webhook_id",
       "text": "Fetch a webhook",
       "category": "Webhooks",
@@ -2535,11 +2483,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_a_new_webhook": {
-      "provider_intent": "create_a_new_webhook",
+    "drip__/v2/account_id/webhooks___POST": {
       "provider_alias_intent": "/v2/account_id/webhooks",
       "text": "Create a new webhook",
       "category": "Webhooks",
@@ -2592,11 +2539,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "destroy_a_webhook": {
-      "provider_intent": "destroy_a_webhook",
+    "drip__/v2/account_id/webhooks/webhook_id___DELETE": {
       "provider_alias_intent": "/v2/account_id/webhooks/webhook_id",
       "text": "Destroy a webhook",
       "category": "Webhooks",
@@ -2642,11 +2588,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_workflows": {
-      "provider_intent": "list_all_workflows",
+    "drip__/v2/account_id/workflows___GET": {
       "provider_alias_intent": "/v2/account_id/workflows",
       "text": "List all workflows",
       "category": "Workflows",
@@ -2684,11 +2629,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "fetch_a_workflow": {
-      "provider_intent": "fetch_a_workflow",
+    "drip__/v2/account_id/workflows/workflow_id___GET": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id",
       "text": "Fetch a workflow",
       "category": "Workflows",
@@ -2734,11 +2678,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "activate_a_workflow": {
-      "provider_intent": "activate_a_workflow",
+    "drip__/v2/account_id/workflows/workflow_id/activate___POST": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/activate",
       "text": "Activate a workflow",
       "category": "Workflows",
@@ -2784,11 +2727,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "pause_a_workflow": {
-      "provider_intent": "pause_a_workflow",
+    "drip__/v2/account_id/workflows/workflow_id/pause___POST": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/pause",
       "text": "Pause a workflow",
       "category": "Workflows",
@@ -2834,11 +2776,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "start_someone_on_a_workflow": {
-      "provider_intent": "start_someone_on_a_workflow",
+    "drip__/v2/account_id/workflows/workflow_id/subscribers___POST": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/subscribers",
       "text": "Start someone on a workflow",
       "category": "Workflows",
@@ -2899,11 +2840,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "remove_a_subscriber_from_a_workflow": {
-      "provider_intent": "remove_a_subscriber_from_a_workflow",
+    "drip__/v2/account_id/workflows/workflow_id/subscribers/id_or_email___DELETE": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/subscribers/id_or_email",
       "text": "Remove a subscriber from a workflow",
       "category": "Workflows",
@@ -2957,11 +2897,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "list_all_workflow_triggers": {
-      "provider_intent": "list_all_workflow_triggers",
+    "drip__/v2/account_id/workflows/workflow_id/triggers___GET": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/triggers",
       "text": "List all workflow triggers",
       "category": "Workflows",
@@ -3007,11 +2946,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "create_a_workflow_trigger": {
-      "provider_intent": "create_a_workflow_trigger",
+    "drip__/v2/account_id/workflows/workflow_id/triggers___POST": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/triggers",
       "text": "Create a workflow trigger",
       "category": "Workflows",
@@ -3072,11 +3010,10 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     },
-    "update_a_workflow_trigger": {
-      "provider_intent": "update_a_workflow_trigger",
+    "drip__/v2/account_id/workflows/workflow_id/triggers/trigger_id___PUT": {
       "provider_alias_intent": "/v2/account_id/workflows/workflow_id/triggers/trigger_id",
       "text": "Update a workflow trigger",
       "category": "Workflows",
@@ -3145,8 +3082,8 @@
       },
       "response_type": "",
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.203Z"
     }
   }
 }

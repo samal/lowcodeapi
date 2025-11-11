@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Asana API",
-    "description": "",
-    "api_base": "/asana",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_an_attachment": {
-      "provider_intent": "get_an_attachment",
+    "asana__/attachments/attachment_gid___GET": {
       "provider_alias_intent": "/attachments/attachment_gid",
       "text": "Get the full record for a single attachment",
       "category": "Attachments",
@@ -47,11 +36,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "delete_an_attachment": {
-      "provider_intent": "delete_an_attachment",
+    "asana__/attachments/attachment_gid___DELETE": {
       "provider_alias_intent": "/attachments/attachment_gid",
       "text": "Deletes a specific existing attachment",
       "category": "Attachments",
@@ -86,11 +74,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "get_attachments_from_an_object": {
-      "provider_intent": "get_attachments_from_an_object",
+    "asana__/attachments___GET": {
       "provider_alias_intent": "/attachments",
       "text": "Returns the compact records for all attachments on the object",
       "category": "Attachments",
@@ -134,11 +121,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "upload_an_attachment": {
-      "provider_intent": "upload_an_attachment",
+    "asana__/attachments___POST": {
       "provider_alias_intent": "/attachments",
       "text": "Upload an attachment",
       "category": "Attachments",
@@ -173,11 +159,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "submit_parallel_requests": {
-      "provider_intent": "submit_parallel_requests",
+    "asana__/batch___POST": {
       "provider_alias_intent": "/batch",
       "text": "Make multiple requests in parallel to Asana's API",
       "category": "Batch",
@@ -212,11 +197,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "create_an_enum_option": {
-      "provider_intent": "create_an_enum_option",
+    "asana__/custom_fields/custom_field_gid/enum_options___POST": {
       "provider_alias_intent": "/custom_fields/custom_field_gid/enum_options",
       "text": "Creates an enum option and adds it to this custom field’s list of enum options",
       "category": "Custom Fields",
@@ -257,11 +241,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "reorder_a_custom_field's_enum": {
-      "provider_intent": "reorder_a_custom_field's_enum",
+    "asana__/custom_fields/custom_field_gid/enum_options/insert___POST": {
       "provider_alias_intent": "/custom_fields/custom_field_gid/enum_options/insert",
       "text": "Moves a particular enum option to be either before or after another specified enum option in the custom field",
       "category": "Custom Fields",
@@ -296,11 +279,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "get_a_custom_field": {
-      "provider_intent": "get_a_custom_field",
+    "asana__/custom_fields/custom_field_gid___GET": {
       "provider_alias_intent": "/custom_fields/custom_field_gid",
       "text": "Get the complete definition of a custom field’s metadata",
       "category": "Custom Fields",
@@ -335,11 +317,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "update_a_custom_field": {
-      "provider_intent": "update_a_custom_field",
+    "asana__/custom_fields/custom_field_gid___PUT": {
       "provider_alias_intent": "/custom_fields/custom_field_gid",
       "text": "A specific existing custom field can be updated by making a PUT request on the URL for that custom field",
       "category": "Custom Fields",
@@ -374,11 +355,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "delete_a_custom_field": {
-      "provider_intent": "delete_a_custom_field",
+    "asana__/custom_fields/custom_field_gid___DELETE": {
       "provider_alias_intent": "/custom_fields/custom_field_gid",
       "text": "A specific existing custom field can be deleted by making a DELETE request on the URL for that custom field",
       "category": "Custom Fields",
@@ -413,11 +393,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "create_a_custom_field": {
-      "provider_intent": "create_a_custom_field",
+    "asana__/custom_fields___POST": {
       "provider_alias_intent": "/custom_fields",
       "text": "Creates a new custom field in a workspace",
       "category": "Custom Fields",
@@ -458,11 +437,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "update_an_enum_option": {
-      "provider_intent": "update_an_enum_option",
+    "asana__/enum_options/enum_option_gid___PUT": {
       "provider_alias_intent": "/enum_options/enum_option_gid",
       "text": "Updates an existing enum option",
       "category": "Enum Options",
@@ -497,11 +475,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "get_events_on_a_resource": {
-      "provider_intent": "get_events_on_a_resource",
+    "asana__/events___GET": {
       "provider_alias_intent": "/events",
       "text": "Returns the full record for all events that have occurred since the sync",
       "category": "Events",
@@ -542,11 +519,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "get_a_goal_relationship": {
-      "provider_intent": "get_a_goal_relationship",
+    "asana__/goal_relationships/goal_relationship_gid___GET": {
       "provider_alias_intent": "/goal_relationships/goal_relationship_gid",
       "text": "Returns the complete updated goal relationship record for a single goal relationship",
       "category": "Goal Relationships",
@@ -581,11 +557,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "update_a_goal_relationship": {
-      "provider_intent": "update_a_goal_relationship",
+    "asana__/goal_relationships/goal_relationship_gid___PUT": {
       "provider_alias_intent": "/goal_relationships/goal_relationship_gid",
       "text": "An existing goal relationship can be updated by making a PUT request on the URL for",
       "category": "Goal Relationships",
@@ -620,11 +595,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.027Z"
     },
-    "get_goal_relationships": {
-      "provider_intent": "get_goal_relationships",
+    "asana__/goal_relationships___GET": {
       "provider_alias_intent": "/goal_relationships",
       "text": "Returns compact goal relationship records",
       "category": "Goal Relationships",
@@ -665,11 +639,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_goal": {
-      "provider_intent": "get_a_goal",
+    "asana__/goals/goal_gid___GET": {
       "provider_alias_intent": "/goals/goal_gid",
       "text": "Returns the complete goal record for a single goal",
       "category": "Goals",
@@ -704,11 +677,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "update_a_goal": {
-      "provider_intent": "update_a_goal",
+    "asana__/goals/goal_gid___PUT": {
       "provider_alias_intent": "/goals/goal_gid",
       "text": "An existing goal can be updated by making a PUT request on the URL for",
       "category": "Goals",
@@ -743,11 +715,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "delete_a_goal": {
-      "provider_intent": "delete_a_goal",
+    "asana__/goals/goal_gid___DELETE": {
       "provider_alias_intent": "/goals/goal_gid",
       "text": "A specific existing goal can be deleted by making a DELETE request on the URL for that goal",
       "category": "Goals",
@@ -782,11 +753,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "add_a_supporting_goal_relationship": {
-      "provider_intent": "add_a_supporting_goal_relationship",
+    "asana__/goals/goal_gid/addsupportingrelationship___POST": {
       "provider_alias_intent": "/goals/goal_gid/addsupportingrelationship",
       "text": "Creates a goal relationship by adding a supporting resource to a given goal",
       "category": "Goals",
@@ -821,11 +791,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "removes_a_supporting_goal_relationship": {
-      "provider_intent": "removes_a_supporting_goal_relationship",
+    "asana__/goals/goal_gid/removesupportingrelationship___POST": {
       "provider_alias_intent": "/goals/goal_gid/removesupportingrelationship",
       "text": "Removes a goal relationship for a given parent goal",
       "category": "Goals",
@@ -860,11 +829,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_a_goal_metric": {
-      "provider_intent": "create_a_goal_metric",
+    "asana__/goals/goal_gid/setmetric___POST": {
       "provider_alias_intent": "/goals/goal_gid/setmetric",
       "text": "Creates and adds a goal metric to a specified goal",
       "category": "Goals",
@@ -899,11 +867,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "update_a_goal_metric": {
-      "provider_intent": "update_a_goal_metric",
+    "asana__/goals/goal_gid/setmetriccurrentvalue___POST": {
       "provider_alias_intent": "/goals/goal_gid/setmetriccurrentvalue",
       "text": "Updates a goal's existing metric's `current_number_value` if one exists",
       "category": "Goals",
@@ -938,11 +905,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "add_a_collaborator_to_a_goal": {
-      "provider_intent": "add_a_collaborator_to_a_goal",
+    "asana__/goals/goal_gid/addfollowers___POST": {
       "provider_alias_intent": "/goals/goal_gid/addfollowers",
       "text": "Adds followers to a goal",
       "category": "Goals",
@@ -977,11 +943,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "remove_a_collaborator_from_a_goal": {
-      "provider_intent": "remove_a_collaborator_from_a_goal",
+    "asana__/goals/goal_gid/removefollowers___POST": {
       "provider_alias_intent": "/goals/goal_gid/removefollowers",
       "text": "Removes followers from a goal",
       "category": "Goals",
@@ -1016,11 +981,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_parent_goals_from_a_goal": {
-      "provider_intent": "get_parent_goals_from_a_goal",
+    "asana__/goals/goal_gid/parentgoals___GET": {
       "provider_alias_intent": "/goals/goal_gid/parentgoals",
       "text": "Returns a compact representation of all of the parent goals of a goal",
       "category": "Goals",
@@ -1055,11 +1019,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_goals": {
-      "provider_intent": "get_goals",
+    "asana__/goals___GET": {
       "provider_alias_intent": "/goals",
       "text": "Returns compact goal records",
       "category": "Goals",
@@ -1118,11 +1081,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_a_goal": {
-      "provider_intent": "create_a_goal",
+    "asana__/goals___POST": {
       "provider_alias_intent": "/goals",
       "text": "Creates a new goal in a workspace or team",
       "category": "Goals",
@@ -1163,11 +1125,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_job_by_id": {
-      "provider_intent": "get_a_job_by_id",
+    "asana__/jobs/job_gid___GET": {
       "provider_alias_intent": "/jobs/job_gid",
       "text": "Returns the full record for a job",
       "category": "Jobs",
@@ -1202,11 +1163,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "delete_a_membership": {
-      "provider_intent": "delete_a_membership",
+    "asana__/memberships/membership_gid___DELETE": {
       "provider_alias_intent": "/memberships/membership_gid",
       "text": "A specific existing membership can be deleted by making a `DELETE` request",
       "category": "Memberships",
@@ -1241,11 +1201,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "update_a_membership": {
-      "provider_intent": "update_a_membership",
+    "asana__/memberships/membership_gid___PUT": {
       "provider_alias_intent": "/memberships/membership_gid",
       "text": "An existing membership can be updated by making a `PUT` request on the URL for that goal",
       "category": "Memberships",
@@ -1280,11 +1239,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_multiple_memberships": {
-      "provider_intent": "get_multiple_memberships",
+    "asana__/memberships___GET": {
       "provider_alias_intent": "/memberships",
       "text": "Returns compact membership records",
       "category": "Memberships",
@@ -1331,11 +1289,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_a_membership": {
-      "provider_intent": "create_a_membership",
+    "asana__/memberships___POST": {
       "provider_alias_intent": "/memberships",
       "text": "Creates a new membership in a `team` `project` `goal` or `portfolio`",
       "category": "Memberships",
@@ -1370,11 +1327,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_an_organization_export_request": {
-      "provider_intent": "create_an_organization_export_request",
+    "asana__/organization_exports___POST": {
       "provider_alias_intent": "/organization_exports",
       "text": "This method creates a request to export an Organization",
       "category": "Organization Exports",
@@ -1415,11 +1371,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_details_on_an_org_export_request": {
-      "provider_intent": "get_details_on_an_org_export_request",
+    "asana__/organization_exports/organization_export_gid___GET": {
       "provider_alias_intent": "/organization_exports/organization_export_gid",
       "text": "Returns details of a previously-requested Organization export",
       "category": "Organization Exports",
@@ -1454,11 +1409,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_multiple_portfolio_memberships": {
-      "provider_intent": "get_multiple_portfolio_memberships",
+    "asana__/portfolio_memberships___GET": {
       "provider_alias_intent": "/portfolio_memberships",
       "text": "Returns a list of portfolio memberships in compact representation",
       "category": "Portfolio Memberships",
@@ -1508,11 +1462,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_portfolio_membership": {
-      "provider_intent": "get_a_portfolio_membership",
+    "asana__/portfolio_memberships/portfolio_membership_gid___GET": {
       "provider_alias_intent": "/portfolio_memberships/portfolio_membership_gid",
       "text": "Returns the complete portfolio record for a single portfolio membership",
       "category": "Portfolio Memberships",
@@ -1547,11 +1500,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_portfolio": {
-      "provider_intent": "get_a_portfolio",
+    "asana__/portfolios/portfolio_gid___GET": {
       "provider_alias_intent": "/portfolios/portfolio_gid",
       "text": "Returns the complete portfolio record for a single portfolio",
       "category": "Portfolios",
@@ -1586,11 +1538,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "update_a_portfolio": {
-      "provider_intent": "update_a_portfolio",
+    "asana__/portfolios/portfolio_gid___PUT": {
       "provider_alias_intent": "/portfolios/portfolio_gid",
       "text": "An existing portfolio can be updated by making a PUT request on the URL for",
       "category": "Portfolios",
@@ -1625,11 +1576,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "delete_a_portfolio": {
-      "provider_intent": "delete_a_portfolio",
+    "asana__/portfolios/portfolio_gid___DELETE": {
       "provider_alias_intent": "/portfolios/portfolio_gid",
       "text": "An existing portfolio can be deleted by making a DELETE request on",
       "category": "Portfolios",
@@ -1664,11 +1614,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_portfolio's_custom_fields": {
-      "provider_intent": "get_a_portfolio's_custom_fields",
+    "asana__/portfolios/portfolio_gid/custom_field_settings___GET": {
       "provider_alias_intent": "/portfolios/portfolio_gid/custom_field_settings",
       "text": "Returns a list of all of the custom fields settings on a portfolio in compact form",
       "category": "Portfolios",
@@ -1709,11 +1658,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_memberships_from_a_portfolio": {
-      "provider_intent": "get_memberships_from_a_portfolio",
+    "asana__/portfolios/portfolio_gid/portfolio_memberships___GET": {
       "provider_alias_intent": "/portfolios/portfolio_gid/portfolio_memberships",
       "text": "Returns the compact portfolio membership records for the portfolio",
       "category": "Portfolios",
@@ -1757,11 +1705,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_portfolio_items": {
-      "provider_intent": "get_portfolio_items",
+    "asana__/portfolios/portfolio_gid/items___GET": {
       "provider_alias_intent": "/portfolios/portfolio_gid/items",
       "text": "Get a list of the items in compact form in a portfolio",
       "category": "Portfolios",
@@ -1802,11 +1749,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "add_a_portfolio_item": {
-      "provider_intent": "add_a_portfolio_item",
+    "asana__/portfolios/portfolio_gid/additem___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/additem",
       "text": "Add an item to a portfolio",
       "category": "Portfolios",
@@ -1841,11 +1787,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "remove_a_portfolio_item": {
-      "provider_intent": "remove_a_portfolio_item",
+    "asana__/portfolios/portfolio_gid/removeitem___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/removeitem",
       "text": "Remove an item from a portfolio",
       "category": "Portfolios",
@@ -1880,11 +1825,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "add_a_custom_field_to_a_portfolio": {
-      "provider_intent": "add_a_custom_field_to_a_portfolio",
+    "asana__/portfolios/portfolio_gid/addcustomfieldsetting___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/addcustomfieldsetting",
       "text": "Custom fields are associated with portfolios by way of custom field settings",
       "category": "Portfolios",
@@ -1916,11 +1860,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "remove_a_custom_field_from_a_portfolio": {
-      "provider_intent": "remove_a_custom_field_from_a_portfolio",
+    "asana__/portfolios/portfolio_gid/removecustomfieldsetting___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/removecustomfieldsetting",
       "text": "Removes a custom field setting from a portfolio",
       "category": "Portfolios",
@@ -1952,11 +1895,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "add_users_to_a_portfolio": {
-      "provider_intent": "add_users_to_a_portfolio",
+    "asana__/portfolios/portfolio_gid/addmembers___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/addmembers",
       "text": "Adds the specified list of users as members of the portfolio",
       "category": "Portfolios",
@@ -1991,11 +1933,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "remove_users_from_a_portfolio": {
-      "provider_intent": "remove_users_from_a_portfolio",
+    "asana__/portfolios/portfolio_gid/removemembers___POST": {
       "provider_alias_intent": "/portfolios/portfolio_gid/removemembers",
       "text": "Removes the specified list of users from members of the portfolio",
       "category": "Portfolios",
@@ -2030,11 +1971,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_multiple_portfolios": {
-      "provider_intent": "get_multiple_portfolios",
+    "asana__/portfolios___GET": {
       "provider_alias_intent": "/portfolios",
       "text": "Returns a list of the portfolios in compact representation that are owned by the current API user",
       "category": "Portfolios",
@@ -2081,11 +2021,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_a_portfolio": {
-      "provider_intent": "create_a_portfolio",
+    "asana__/portfolios___POST": {
       "provider_alias_intent": "/portfolios",
       "text": "Creates a new portfolio in the given workspace with the supplied name",
       "category": "Portfolios",
@@ -2120,11 +2059,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_project_brief": {
-      "provider_intent": "get_a_project_brief",
+    "asana__/project_briefs/project_brief_gid___GET": {
       "provider_alias_intent": "/project_briefs/project_brief_gid",
       "text": "Get the full record for a project brief",
       "category": "Project Briefs",
@@ -2159,11 +2097,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "update_a_project_brief": {
-      "provider_intent": "update_a_project_brief",
+    "asana__/project_briefs/project_brief_gid___PUT": {
       "provider_alias_intent": "/project_briefs/project_brief_gid",
       "text": "An existing project brief can be updated by making a PUT request on the URL for",
       "category": "Project Briefs",
@@ -2198,11 +2135,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "delete_a_project_brief": {
-      "provider_intent": "delete_a_project_brief",
+    "asana__/project_briefs/project_brief_gid___DELETE": {
       "provider_alias_intent": "/project_briefs/project_brief_gid",
       "text": "Deletes a specific existing project brief",
       "category": "Project Briefs",
@@ -2237,11 +2173,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_project_membership": {
-      "provider_intent": "get_a_project_membership",
+    "asana__/project_memberships/project_membership_gid___GET": {
       "provider_alias_intent": "/project_memberships/project_membership_gid",
       "text": "Returns the complete project record for a single project membership",
       "category": "Project Membership",
@@ -2276,11 +2211,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_project_status": {
-      "provider_intent": "get_a_project_status",
+    "asana__/project_statuses/project_status_gid___GET": {
       "provider_alias_intent": "/project_statuses/project_status_gid",
       "text": "*Deprecated: new integrations should prefer the `/status_updates/{status_gid}` route",
       "category": "Project Statuses",
@@ -2315,11 +2249,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "delete_a_project_status": {
-      "provider_intent": "delete_a_project_status",
+    "asana__/project_statuses/project_status_gid___DELETE": {
       "provider_alias_intent": "/project_statuses/project_status_gid",
       "text": "*Deprecated: new integrations should prefer the `/status_updates/{status_gid}` route",
       "category": "Project Statuses",
@@ -2354,11 +2287,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_a_project_template": {
-      "provider_intent": "get_a_project_template",
+    "asana__/project_templates/project_template_gid___GET": {
       "provider_alias_intent": "/project_templates/project_template_gid",
       "text": "Returns the complete project template record for a single project template",
       "category": "Project Templates",
@@ -2393,11 +2325,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "instantiate_a_project_from_a_project_template": {
-      "provider_intent": "instantiate_a_project_from_a_project_template",
+    "asana__/project_templates/project_template_gid/instantiateproject___POST": {
       "provider_alias_intent": "/project_templates/project_template_gid/instantiateproject",
       "text": "Creates and returns a job that will asynchronously handle the project instantiation",
       "category": "Project Templates",
@@ -2432,11 +2363,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_multiple_project_templates": {
-      "provider_intent": "get_multiple_project_templates",
+    "asana__/project_templates___GET": {
       "provider_alias_intent": "/project_templates",
       "text": "Returns the compact project template records for all project templates in the given team or workspace",
       "category": "Project Templates",
@@ -2483,11 +2413,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "get_statuses_from_a_project": {
-      "provider_intent": "get_statuses_from_a_project",
+    "asana__/projects/project_gid/project_statuses___GET": {
       "provider_alias_intent": "/projects/project_gid/project_statuses",
       "text": "*Deprecated: new integrations should prefer the `/status_updates` route",
       "category": "Projects",
@@ -2528,11 +2457,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.028Z"
     },
-    "create_a_project_status": {
-      "provider_intent": "create_a_project_status",
+    "asana__/projects/project_gid/project_statuses___POST": {
       "provider_alias_intent": "/projects/project_gid/project_statuses",
       "text": "*Deprecated: new integrations should prefer the `/status_updates` route",
       "category": "Projects",
@@ -2567,11 +2495,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_sections_in_a_project": {
-      "provider_intent": "get_sections_in_a_project",
+    "asana__/projects/project_gid/sections___GET": {
       "provider_alias_intent": "/projects/project_gid/sections",
       "text": "Returns the compact records for all sections in the specified project",
       "category": "Projects",
@@ -2612,11 +2539,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_section_in_a_project": {
-      "provider_intent": "create_a_section_in_a_project",
+    "asana__/projects/project_gid/sections___POST": {
       "provider_alias_intent": "/projects/project_gid/sections",
       "text": "Creates a new section in a project",
       "category": "Projects",
@@ -2651,11 +2577,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "move_or_insert_sections": {
-      "provider_intent": "move_or_insert_sections",
+    "asana__/projects/project_gid/sections/insert___POST": {
       "provider_alias_intent": "/projects/project_gid/sections/insert",
       "text": "Move sections relative to each other",
       "category": "Projects",
@@ -2690,11 +2615,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_project": {
-      "provider_intent": "get_a_project",
+    "asana__/projects/project_gid___GET": {
       "provider_alias_intent": "/projects/project_gid",
       "text": "Returns the complete project record for a single project",
       "category": "Projects",
@@ -2729,11 +2653,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_project": {
-      "provider_intent": "update_a_project",
+    "asana__/projects/project_gid___PUT": {
       "provider_alias_intent": "/projects/project_gid",
       "text": "A specific existing project can be updated by making a PUT request on",
       "category": "Projects",
@@ -2768,11 +2691,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_project": {
-      "provider_intent": "delete_a_project",
+    "asana__/projects/project_gid___DELETE": {
       "provider_alias_intent": "/projects/project_gid",
       "text": "A specific existing project can be deleted by making a DELETE request on",
       "category": "Projects",
@@ -2807,11 +2729,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_project's_custom_fields": {
-      "provider_intent": "get_a_project's_custom_fields",
+    "asana__/projects/project_gid/custom_field_settings___GET": {
       "provider_alias_intent": "/projects/project_gid/custom_field_settings",
       "text": "Returns a list of all of the custom fields settings on a project in compact form",
       "category": "Projects",
@@ -2852,11 +2773,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_project_brief": {
-      "provider_intent": "create_a_project_brief",
+    "asana__/projects/project_gid/project_briefs___POST": {
       "provider_alias_intent": "/projects/project_gid/project_briefs",
       "text": "Creates a new project brief",
       "category": "Projects",
@@ -2891,11 +2811,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_memberships_from_a_project": {
-      "provider_intent": "get_memberships_from_a_project",
+    "asana__/projects/project_gid/project_memberships___GET": {
       "provider_alias_intent": "/projects/project_gid/project_memberships",
       "text": "Returns the compact project membership records for the project",
       "category": "Projects",
@@ -2939,11 +2858,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "duplicate_a_project": {
-      "provider_intent": "duplicate_a_project",
+    "asana__/projects/project_gid/duplicate___POST": {
       "provider_alias_intent": "/projects/project_gid/duplicate",
       "text": "Creates and returns a job that will asynchronously handle the duplication",
       "category": "Projects",
@@ -2978,11 +2896,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_a_custom_field_to_a_project": {
-      "provider_intent": "add_a_custom_field_to_a_project",
+    "asana__/projects/project_gid/addcustomfieldsetting___POST": {
       "provider_alias_intent": "/projects/project_gid/addcustomfieldsetting",
       "text": "Custom fields are associated with projects by way of custom field settings",
       "category": "Projects",
@@ -3014,11 +2931,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_a_custom_field_from_a_project": {
-      "provider_intent": "remove_a_custom_field_from_a_project",
+    "asana__/projects/project_gid/removecustomfieldsetting___POST": {
       "provider_alias_intent": "/projects/project_gid/removecustomfieldsetting",
       "text": "Removes a custom field setting from a project",
       "category": "Projects",
@@ -3050,11 +2966,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_task_count_of_a_project": {
-      "provider_intent": "get_task_count_of_a_project",
+    "asana__/projects/project_gid/task_counts___GET": {
       "provider_alias_intent": "/projects/project_gid/task_counts",
       "text": "Get an object that holds task count fields",
       "category": "Projects",
@@ -3095,11 +3010,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_users_to_a_project": {
-      "provider_intent": "add_users_to_a_project",
+    "asana__/projects/project_gid/addmembers___POST": {
       "provider_alias_intent": "/projects/project_gid/addmembers",
       "text": "Adds the specified list of users as members of the project",
       "category": "Projects",
@@ -3134,11 +3048,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_users_from_a_project": {
-      "provider_intent": "remove_users_from_a_project",
+    "asana__/projects/project_gid/removemembers___POST": {
       "provider_alias_intent": "/projects/project_gid/removemembers",
       "text": "Removes the specified list of users from members of the project",
       "category": "Projects",
@@ -3173,11 +3086,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_followers_to_a_project": {
-      "provider_intent": "add_followers_to_a_project",
+    "asana__/projects/project_gid/addfollowers___POST": {
       "provider_alias_intent": "/projects/project_gid/addfollowers",
       "text": "Adds the specified list of users as followers to the project",
       "category": "Projects",
@@ -3212,11 +3124,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_followers_from_a_project": {
-      "provider_intent": "remove_followers_from_a_project",
+    "asana__/projects/project_gid/removefollowers___POST": {
       "provider_alias_intent": "/projects/project_gid/removefollowers",
       "text": "Removes the specified list of users from following the project this will not affect project membership status",
       "category": "Projects",
@@ -3251,11 +3162,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_project_template_from_a_project": {
-      "provider_intent": "create_a_project_template_from_a_project",
+    "asana__/projects/project_gid/saveastemplate___POST": {
       "provider_alias_intent": "/projects/project_gid/saveastemplate",
       "text": "Creates and returns a job that will asynchronously handle the project template creation",
       "category": "Projects",
@@ -3290,11 +3200,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_tasks_from_a_project": {
-      "provider_intent": "get_tasks_from_a_project",
+    "asana__/projects/project_gid/tasks___GET": {
       "provider_alias_intent": "/projects/project_gid/tasks",
       "text": "Returns the compact task records for all tasks within the given project ordered by their priority within the project",
       "category": "Projects",
@@ -3338,11 +3247,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_multiple_projects": {
-      "provider_intent": "get_multiple_projects",
+    "asana__/projects___GET": {
       "provider_alias_intent": "/projects",
       "text": "Returns the compact project records for some filtered set of projects",
       "category": "Projects",
@@ -3392,11 +3300,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_project": {
-      "provider_intent": "create_a_project",
+    "asana__/projects___POST": {
       "provider_alias_intent": "/projects",
       "text": "Create a new project in a workspace or team",
       "category": "Projects",
@@ -3431,11 +3338,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_section": {
-      "provider_intent": "get_a_section",
+    "asana__/sections/section_gid___GET": {
       "provider_alias_intent": "/sections/section_gid",
       "text": "Returns the complete record for a single section",
       "category": "Sections",
@@ -3470,11 +3376,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_section": {
-      "provider_intent": "update_a_section",
+    "asana__/sections/section_gid___PUT": {
       "provider_alias_intent": "/sections/section_gid",
       "text": "A specific existing section can be updated by making a PUT request on",
       "category": "Sections",
@@ -3509,11 +3414,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_section": {
-      "provider_intent": "delete_a_section",
+    "asana__/sections/section_gid___DELETE": {
       "provider_alias_intent": "/sections/section_gid",
       "text": "A specific existing section can be deleted by making a DELETE request on",
       "category": "Sections",
@@ -3548,11 +3452,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_task_to_section": {
-      "provider_intent": "add_task_to_section",
+    "asana__/sections/section_gid/addtask___POST": {
       "provider_alias_intent": "/sections/section_gid/addtask",
       "text": "Add a task to a specific existing section",
       "category": "Sections",
@@ -3587,11 +3490,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_tasks_from_a_section": {
-      "provider_intent": "get_tasks_from_a_section",
+    "asana__/sections/section_gid/tasks___GET": {
       "provider_alias_intent": "/sections/section_gid/tasks",
       "text": "*Board view only*: Returns the compact section records for all tasks within the given section",
       "category": "Sections",
@@ -3632,11 +3534,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_status_update": {
-      "provider_intent": "get_a_status_update",
+    "asana__/status_updates/status_gid___GET": {
       "provider_alias_intent": "/status_updates/status_gid",
       "text": "Returns the complete record for a single status update",
       "category": "Status Updates",
@@ -3671,11 +3572,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_status_update": {
-      "provider_intent": "delete_a_status_update",
+    "asana__/status_updates/status_gid___DELETE": {
       "provider_alias_intent": "/status_updates/status_gid",
       "text": "Deletes a specific existing status update",
       "category": "Status Updates",
@@ -3710,11 +3610,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_status_updates_from_an_object": {
-      "provider_intent": "get_status_updates_from_an_object",
+    "asana__/status_updates___GET": {
       "provider_alias_intent": "/status_updates",
       "text": "Returns the compact status update records for all updates on the object",
       "category": "Status Updates",
@@ -3761,11 +3660,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_status_update": {
-      "provider_intent": "create_a_status_update",
+    "asana__/status_updates___POST": {
       "provider_alias_intent": "/status_updates",
       "text": "Creates a new status update on an object",
       "category": "Status Updates",
@@ -3806,11 +3704,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_story": {
-      "provider_intent": "get_a_story",
+    "asana__/stories/story_gid___GET": {
       "provider_alias_intent": "/stories/story_gid",
       "text": "Returns the full record for a single story",
       "category": "Stories",
@@ -3851,11 +3748,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_story": {
-      "provider_intent": "update_a_story",
+    "asana__/stories/story_gid___PUT": {
       "provider_alias_intent": "/stories/story_gid",
       "text": "Updates the story and returns the full record for the updated story",
       "category": "Stories",
@@ -3890,11 +3786,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_story": {
-      "provider_intent": "delete_a_story",
+    "asana__/stories/story_gid___DELETE": {
       "provider_alias_intent": "/stories/story_gid",
       "text": "Deletes a story",
       "category": "Stories",
@@ -3929,11 +3824,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_tag": {
-      "provider_intent": "get_a_tag",
+    "asana__/tags/tag_gid___GET": {
       "provider_alias_intent": "/tags/tag_gid",
       "text": "Returns the complete tag record for a single tag",
       "category": "Tags",
@@ -3974,11 +3868,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_tag": {
-      "provider_intent": "update_a_tag",
+    "asana__/tags/tag_gid___PUT": {
       "provider_alias_intent": "/tags/tag_gid",
       "text": "Updates the properties of a tag",
       "category": "Tags",
@@ -4019,11 +3912,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_tag": {
-      "provider_intent": "delete_a_tag",
+    "asana__/tags/tag_gid___DELETE": {
       "provider_alias_intent": "/tags/tag_gid",
       "text": "A specific existing tag can be deleted by making a DELETE request on",
       "category": "Tags",
@@ -4064,11 +3956,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_tasks_from_a_tag": {
-      "provider_intent": "get_tasks_from_a_tag",
+    "asana__/tags/tag_gid/tasks___GET": {
       "provider_alias_intent": "/tags/tag_gid/tasks",
       "text": "Returns the compact task records for all tasks with the given tag",
       "category": "Tags",
@@ -4109,11 +4000,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_multiple_tags": {
-      "provider_intent": "get_multiple_tags",
+    "asana__/tags___GET": {
       "provider_alias_intent": "/tags",
       "text": "Returns the compact tag records for some filtered set of tags",
       "category": "Tags",
@@ -4157,11 +4047,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_tag": {
-      "provider_intent": "create_a_tag",
+    "asana__/tags___POST": {
       "provider_alias_intent": "/tags",
       "text": "Creates a new tag in a workspace or organization",
       "category": "Tags",
@@ -4196,11 +4085,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_stories_from_a_task": {
-      "provider_intent": "get_stories_from_a_task",
+    "asana__/tasks/task_gid/stories___GET": {
       "provider_alias_intent": "/tasks/task_gid/stories",
       "text": "Returns the compact records for all stories on the task",
       "category": "Tasks",
@@ -4241,11 +4129,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_story_on_a_task": {
-      "provider_intent": "create_a_story_on_a_task",
+    "asana__/tasks/task_gid/stories___POST": {
       "provider_alias_intent": "/tasks/task_gid/stories",
       "text": "Adds a story to a task",
       "category": "Tasks",
@@ -4280,11 +4167,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_subtasks_from_a_task": {
-      "provider_intent": "get_subtasks_from_a_task",
+    "asana__/tasks/task_gid/subtasks___GET": {
       "provider_alias_intent": "/tasks/task_gid/subtasks",
       "text": "Returns a compact representation of all of the subtasks of a task",
       "category": "Tasks",
@@ -4325,11 +4211,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_subtask": {
-      "provider_intent": "create_a_subtask",
+    "asana__/tasks/task_gid/subtasks___POST": {
       "provider_alias_intent": "/tasks/task_gid/subtasks",
       "text": "Creates a new subtask and adds it to the parent task",
       "category": "Tasks",
@@ -4364,11 +4249,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_task": {
-      "provider_intent": "get_a_task",
+    "asana__/tasks/task_gid___GET": {
       "provider_alias_intent": "/tasks/task_gid",
       "text": "Returns the complete task record for a single task",
       "category": "Tasks",
@@ -4403,11 +4287,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_task": {
-      "provider_intent": "update_a_task",
+    "asana__/tasks/task_gid___PUT": {
       "provider_alias_intent": "/tasks/task_gid",
       "text": "A specific existing task can be updated by making a PUT request on the",
       "category": "Tasks",
@@ -4442,11 +4325,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "delete_a_task": {
-      "provider_intent": "delete_a_task",
+    "asana__/tasks/task_gid___DELETE": {
       "provider_alias_intent": "/tasks/task_gid",
       "text": "A specific existing task can be deleted by making a DELETE request on",
       "category": "Tasks",
@@ -4481,11 +4363,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_projects_a_task_is_in": {
-      "provider_intent": "get_projects_a_task_is_in",
+    "asana__/tasks/task_gid/projects___GET": {
       "provider_alias_intent": "/tasks/task_gid/projects",
       "text": "Returns a compact representation of all of the projects the task is in",
       "category": "Tasks",
@@ -4526,11 +4407,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_task's_tags": {
-      "provider_intent": "get_a_task's_tags",
+    "asana__/tasks/task_gid/tags___GET": {
       "provider_alias_intent": "/tasks/task_gid/tags",
       "text": "Get a compact representation of all of the tags the task has",
       "category": "Tasks",
@@ -4571,11 +4451,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "duplicate_a_task": {
-      "provider_intent": "duplicate_a_task",
+    "asana__/tasks/task_gid/duplicate___POST": {
       "provider_alias_intent": "/tasks/task_gid/duplicate",
       "text": "Creates and returns a job that will asynchronously handle the duplication",
       "category": "Tasks",
@@ -4610,11 +4489,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "set_the_parent_of_a_task": {
-      "provider_intent": "set_the_parent_of_a_task",
+    "asana__/tasks/task_gid/setparent___POST": {
       "provider_alias_intent": "/tasks/task_gid/setparent",
       "text": "parent or no parent task at all",
       "category": "Tasks",
@@ -4649,11 +4527,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_dependencies_from_a_task": {
-      "provider_intent": "get_dependencies_from_a_task",
+    "asana__/tasks/task_gid/dependencies___GET": {
       "provider_alias_intent": "/tasks/task_gid/dependencies",
       "text": "Returns the compact representations of all of the dependencies of a task",
       "category": "Tasks",
@@ -4694,11 +4571,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "set_dependencies_for_a_task": {
-      "provider_intent": "set_dependencies_for_a_task",
+    "asana__/tasks/task_gid/adddependencies___POST": {
       "provider_alias_intent": "/tasks/task_gid/adddependencies",
       "text": "Marks a set of tasks as dependencies of this task if they are not already dependencies",
       "category": "Tasks",
@@ -4733,11 +4609,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "unlink_dependencies_from_a_task": {
-      "provider_intent": "unlink_dependencies_from_a_task",
+    "asana__/tasks/task_gid/removedependencies___POST": {
       "provider_alias_intent": "/tasks/task_gid/removedependencies",
       "text": "Unlinks a set of dependencies from this task",
       "category": "Tasks",
@@ -4772,11 +4647,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_dependents_from_a_task": {
-      "provider_intent": "get_dependents_from_a_task",
+    "asana__/tasks/task_gid/dependents___GET": {
       "provider_alias_intent": "/tasks/task_gid/dependents",
       "text": "Returns the compact representations of all of the dependents of a task",
       "category": "Tasks",
@@ -4817,11 +4691,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "set_dependents_for_a_task": {
-      "provider_intent": "set_dependents_for_a_task",
+    "asana__/tasks/task_gid/adddependents___POST": {
       "provider_alias_intent": "/tasks/task_gid/adddependents",
       "text": "Marks a set of tasks as dependents of this task if they are not already dependents",
       "category": "Tasks",
@@ -4856,11 +4729,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "unlink_dependents_from_a_task": {
-      "provider_intent": "unlink_dependents_from_a_task",
+    "asana__/tasks/task_gid/removedependents___POST": {
       "provider_alias_intent": "/tasks/task_gid/removedependents",
       "text": "Unlinks a set of dependents from this task",
       "category": "Tasks",
@@ -4895,11 +4767,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_a_project_to_a_task": {
-      "provider_intent": "add_a_project_to_a_task",
+    "asana__/tasks/task_gid/addproject___POST": {
       "provider_alias_intent": "/tasks/task_gid/addproject",
       "text": "Adds the task to the specified project in the optional location",
       "category": "Tasks",
@@ -4934,11 +4805,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_a_project_from_a_task": {
-      "provider_intent": "remove_a_project_from_a_task",
+    "asana__/tasks/task_gid/removeproject___POST": {
       "provider_alias_intent": "/tasks/task_gid/removeproject",
       "text": "Removes the task from the specified project",
       "category": "Tasks",
@@ -4973,11 +4843,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_a_tag_to_a_task": {
-      "provider_intent": "add_a_tag_to_a_task",
+    "asana__/tasks/task_gid/addtag___POST": {
       "provider_alias_intent": "/tasks/task_gid/addtag",
       "text": "Adds a tag to a task",
       "category": "Tasks",
@@ -5012,11 +4881,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_a_tag_from_a_task": {
-      "provider_intent": "remove_a_tag_from_a_task",
+    "asana__/tasks/task_gid/removetag___POST": {
       "provider_alias_intent": "/tasks/task_gid/removetag",
       "text": "Removes a tag from a task",
       "category": "Tasks",
@@ -5051,11 +4919,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_followers_to_a_task": {
-      "provider_intent": "add_followers_to_a_task",
+    "asana__/tasks/task_gid/addfollowers___POST": {
       "provider_alias_intent": "/tasks/task_gid/addfollowers",
       "text": "Adds followers to a task",
       "category": "Tasks",
@@ -5090,11 +4957,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_followers_from_a_task": {
-      "provider_intent": "remove_followers_from_a_task",
+    "asana__/tasks/task_gid/removefollowers___POST": {
       "provider_alias_intent": "/tasks/task_gid/removefollowers",
       "text": "Removes each of the specified followers from the task if they are following",
       "category": "Tasks",
@@ -5129,11 +4995,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_multiple_tasks": {
-      "provider_intent": "get_multiple_tasks",
+    "asana__/tasks___GET": {
       "provider_alias_intent": "/tasks",
       "text": "Returns the compact task records for some filtered set of tasks",
       "category": "Tasks",
@@ -5192,11 +5057,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_task": {
-      "provider_intent": "create_a_task",
+    "asana__/tasks___POST": {
       "provider_alias_intent": "/tasks",
       "text": "Creating a new task is as easy as POSTing to the `/tasks` endpoint with a",
       "category": "Tasks",
@@ -5231,11 +5095,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_team_memberships": {
-      "provider_intent": "get_team_memberships",
+    "asana__/team_memberships___GET": {
       "provider_alias_intent": "/team_memberships",
       "text": "Returns compact team membership records",
       "category": "Team Memberships",
@@ -5285,11 +5148,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_team_membership": {
-      "provider_intent": "get_a_team_membership",
+    "asana__/team_memberships/team_membership_gid___GET": {
       "provider_alias_intent": "/team_memberships/team_membership_gid",
       "text": "Returns the complete team membership record for a single team membership",
       "category": "Team Memberships",
@@ -5324,11 +5186,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_team's_projects": {
-      "provider_intent": "get_a_team's_projects",
+    "asana__/teams/team_gid/projects___GET": {
       "provider_alias_intent": "/teams/team_gid/projects",
       "text": "Returns the compact project records for all projects in the team",
       "category": "Teams",
@@ -5372,11 +5233,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_project_in_a_team": {
-      "provider_intent": "create_a_project_in_a_team",
+    "asana__/teams/team_gid/projects___POST": {
       "provider_alias_intent": "/teams/team_gid/projects",
       "text": "Creates a project shared with the given team",
       "category": "Teams",
@@ -5411,11 +5271,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_team": {
-      "provider_intent": "get_a_team",
+    "asana__/teams/team_gid___GET": {
       "provider_alias_intent": "/teams/team_gid",
       "text": "Returns the full record for a single team",
       "category": "Teams",
@@ -5456,11 +5315,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_team's_project_templates": {
-      "provider_intent": "get_a_team's_project_templates",
+    "asana__/teams/team_gid/project_templates___GET": {
       "provider_alias_intent": "/teams/team_gid/project_templates",
       "text": "Returns the compact project template records for all project templates in the team",
       "category": "Teams",
@@ -5501,11 +5359,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_memberships_from_a_team": {
-      "provider_intent": "get_memberships_from_a_team",
+    "asana__/teams/team_gid/team_memberships___GET": {
       "provider_alias_intent": "/teams/team_gid/team_memberships",
       "text": "Returns the compact team memberships for the team",
       "category": "Teams",
@@ -5546,11 +5403,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "add_a_user_to_a_team": {
-      "provider_intent": "add_a_user_to_a_team",
+    "asana__/teams/team_gid/adduser___POST": {
       "provider_alias_intent": "/teams/team_gid/adduser",
       "text": "The user making this call must be a member of the team in order to add others",
       "category": "Teams",
@@ -5585,11 +5441,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "remove_a_user_from_a_team": {
-      "provider_intent": "remove_a_user_from_a_team",
+    "asana__/teams/team_gid/removeuser___POST": {
       "provider_alias_intent": "/teams/team_gid/removeuser",
       "text": "The user making this call must be a member of the team in order to remove themselves or others",
       "category": "Teams",
@@ -5624,11 +5479,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_users_in_a_team": {
-      "provider_intent": "get_users_in_a_team",
+    "asana__/teams/team_gid/users___GET": {
       "provider_alias_intent": "/teams/team_gid/users",
       "text": "Returns the compact records for all users that are members of the team",
       "category": "Teams",
@@ -5666,11 +5520,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "create_a_team": {
-      "provider_intent": "create_a_team",
+    "asana__/teams___POST": {
       "provider_alias_intent": "/teams",
       "text": "Creates a team within the current workspace",
       "category": "Teams",
@@ -5711,11 +5564,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "update_a_team": {
-      "provider_intent": "update_a_team",
+    "asana__/teams___PUT": {
       "provider_alias_intent": "/teams",
       "text": "Updates a team within the current workspace",
       "category": "Teams",
@@ -5756,11 +5608,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_time_periods": {
-      "provider_intent": "get_time_periods",
+    "asana__/time_periods___GET": {
       "provider_alias_intent": "/time_periods",
       "text": "Returns compact time period records",
       "category": "Time Periods",
@@ -5810,11 +5661,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_time_period": {
-      "provider_intent": "get_a_time_period",
+    "asana__/time_periods/time_period_gid___GET": {
       "provider_alias_intent": "/time_periods/time_period_gid",
       "text": "Returns the full record for a single time period",
       "category": "Time Periods",
@@ -5849,11 +5699,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_a_user_task_list": {
-      "provider_intent": "get_a_user_task_list",
+    "asana__/user_task_lists/user_task_list_gid___GET": {
       "provider_alias_intent": "/user_task_lists/user_task_list_gid",
       "text": "Returns the full record for a user task list",
       "category": "User Task Lists",
@@ -5888,11 +5737,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.029Z"
     },
-    "get_tasks_from_a_user_task_list": {
-      "provider_intent": "get_tasks_from_a_user_task_list",
+    "asana__/user_task_lists/user_task_list_gid/tasks___GET": {
       "provider_alias_intent": "/user_task_lists/user_task_list_gid/tasks",
       "text": "Returns the compact list of tasks in a user’s My Tasks list",
       "category": "User Task Lists",
@@ -5936,11 +5784,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_user": {
-      "provider_intent": "get_a_user",
+    "asana__/users/user_gid___GET": {
       "provider_alias_intent": "/users/user_gid",
       "text": "Returns the full user record for the single user with the provided ID",
       "category": "Users",
@@ -5975,11 +5822,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_memberships_from_a_user": {
-      "provider_intent": "get_memberships_from_a_user",
+    "asana__/users/user_gid/team_memberships___GET": {
       "provider_alias_intent": "/users/user_gid/team_memberships",
       "text": "Returns the compact team membership records for the user",
       "category": "Users",
@@ -6023,11 +5869,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_teams_for_a_user": {
-      "provider_intent": "get_teams_for_a_user",
+    "asana__/users/user_gid/teams___GET": {
       "provider_alias_intent": "/users/user_gid/teams",
       "text": "Returns the compact records for all teams to which the given user is assigned",
       "category": "Users",
@@ -6071,11 +5916,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_user's_task_list": {
-      "provider_intent": "get_a_user's_task_list",
+    "asana__/users/user_gid/user_task_list___GET": {
       "provider_alias_intent": "/users/user_gid/user_task_list",
       "text": "Returns the full record for a user's task list",
       "category": "Users",
@@ -6113,11 +5957,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_user's_favorites": {
-      "provider_intent": "get_a_user's_favorites",
+    "asana__/users/user_gid/favorites___GET": {
       "provider_alias_intent": "/users/user_gid/favorites",
       "text": "Returns all of a user's favorites in the given workspace of the given type",
       "category": "Users",
@@ -6158,11 +6001,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_workspace_memberships_for_a_user": {
-      "provider_intent": "get_workspace_memberships_for_a_user",
+    "asana__/users/user_gid/workspace_memberships___GET": {
       "provider_alias_intent": "/users/user_gid/workspace_memberships",
       "text": "Returns the compact workspace membership records for the user",
       "category": "Users",
@@ -6203,11 +6045,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_multiple_users": {
-      "provider_intent": "get_multiple_users",
+    "asana__/users___GET": {
       "provider_alias_intent": "/users",
       "text": "Returns the user records for all users in all workspaces and organizations accessible to the authenticated user",
       "category": "Users",
@@ -6254,11 +6095,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_webhook": {
-      "provider_intent": "get_a_webhook",
+    "asana__/webhooks/webhook_gid___GET": {
       "provider_alias_intent": "/webhooks/webhook_gid",
       "text": "Returns the full record for the given webhook",
       "category": "Webhooks",
@@ -6293,11 +6133,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "update_a_webhook": {
-      "provider_intent": "update_a_webhook",
+    "asana__/webhooks/webhook_gid___PUT": {
       "provider_alias_intent": "/webhooks/webhook_gid",
       "text": "An existing webhook's filters can be updated by making a PUT request on the URL for that webhook",
       "category": "Webhooks",
@@ -6332,11 +6171,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "delete_a_webhook": {
-      "provider_intent": "delete_a_webhook",
+    "asana__/webhooks/webhook_gid___DELETE": {
       "provider_alias_intent": "/webhooks/webhook_gid",
       "text": "This method *permanently* removes a webhook",
       "category": "Webhooks",
@@ -6371,11 +6209,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_multiple_webhooks": {
-      "provider_intent": "get_multiple_webhooks",
+    "asana__/webhooks___GET": {
       "provider_alias_intent": "/webhooks",
       "text": "Get the compact representation of all webhooks your app has registered for the authenticated user in the given workspace",
       "category": "Webhooks",
@@ -6422,11 +6259,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "establish_a_webhook": {
-      "provider_intent": "establish_a_webhook",
+    "asana__/webhooks___POST": {
       "provider_alias_intent": "/webhooks",
       "text": "Establishing a webhook is a two-part process",
       "category": "Webhooks",
@@ -6461,11 +6297,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_workspace_membership": {
-      "provider_intent": "get_a_workspace_membership",
+    "asana__/workspace_memberships/workspace_membership_gid___GET": {
       "provider_alias_intent": "/workspace_memberships/workspace_membership_gid",
       "text": "Returns the complete workspace record for a single workspace membership",
       "category": "Workspace Membership",
@@ -6500,11 +6335,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_all_projects_in_a_workspace": {
-      "provider_intent": "get_all_projects_in_a_workspace",
+    "asana__/workspaces/workspace_gid/projects___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/projects",
       "text": "Returns the compact project records for all projects in the workspace",
       "category": "Workspaces",
@@ -6548,11 +6382,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "create_a_project_in_a_workspace": {
-      "provider_intent": "create_a_project_in_a_workspace",
+    "asana__/workspaces/workspace_gid/projects___POST": {
       "provider_alias_intent": "/workspaces/workspace_gid/projects",
       "text": "Returns the compact project records for all projects in the workspace",
       "category": "Workspaces",
@@ -6587,11 +6420,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_tags_in_a_workspace": {
-      "provider_intent": "get_tags_in_a_workspace",
+    "asana__/workspaces/workspace_gid/tags___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/tags",
       "text": "Returns the compact tag records for some filtered set of tags",
       "category": "Workspaces",
@@ -6632,11 +6464,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "create_a_tag_in_a_workspace": {
-      "provider_intent": "create_a_tag_in_a_workspace",
+    "asana__/workspaces/workspace_gid/tags___POST": {
       "provider_alias_intent": "/workspaces/workspace_gid/tags",
       "text": "Creates a new tag in a workspace or organization",
       "category": "Workspaces",
@@ -6671,11 +6502,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_workspace": {
-      "provider_intent": "get_a_workspace",
+    "asana__/workspaces/workspace_gid___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid",
       "text": "Returns the full workspace record for a single workspace",
       "category": "Workspaces",
@@ -6710,11 +6540,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "update_a_workspace": {
-      "provider_intent": "update_a_workspace",
+    "asana__/workspaces/workspace_gid___PUT": {
       "provider_alias_intent": "/workspaces/workspace_gid",
       "text": "A specific existing workspace can be updated by making a PUT request on the URL for that workspace",
       "category": "Workspaces",
@@ -6749,11 +6578,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_audit_log_events": {
-      "provider_intent": "get_audit_log_events",
+    "asana__/workspaces/workspace_gid/audit_log_events___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/audit_log_events",
       "text": "Retrieve the audit log events that have been captured in your domain",
       "category": "Workspaces",
@@ -6806,11 +6634,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_a_workspace's_custom_fields": {
-      "provider_intent": "get_a_workspace's_custom_fields",
+    "asana__/workspaces/workspace_gid/custom_fields___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/custom_fields",
       "text": "Returns a list of the compact representation of all of the custom fields in a workspace",
       "category": "Workspaces",
@@ -6851,11 +6678,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "search_tasks_in_a_workspace": {
-      "provider_intent": "search_tasks_in_a_workspace",
+    "asana__/workspaces/workspace_gid/tasks/search___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/tasks/search",
       "text": "To mirror the functionality of the Asana web app's advanced search feature the Asana API has a task search endpoint that allows you to build complex filters to find and retrieve the exact data you need",
       "category": "Workspaces",
@@ -7046,11 +6872,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_teams_in_a_workspace": {
-      "provider_intent": "get_teams_in_a_workspace",
+    "asana__/workspaces/workspace_gid/teams___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/teams",
       "text": "Returns the compact records for all teams in the workspace visible to the authorized user",
       "category": "Workspaces",
@@ -7091,11 +6916,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_objects_via_typeahead": {
-      "provider_intent": "get_objects_via_typeahead",
+    "asana__/workspaces/workspace_gid/typeahead___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/typeahead",
       "text": "Retrieves objects in the workspace based via an auto-completion/typeahead",
       "category": "Workspaces",
@@ -7142,11 +6966,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_users_in_a_workspace_or_organization": {
-      "provider_intent": "get_users_in_a_workspace_or_organization",
+    "asana__/workspaces/workspace_gid/users___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/users",
       "text": "Returns the compact records for all users in the specified workspace or organization",
       "category": "Workspaces",
@@ -7184,11 +7007,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_the_workspace_memberships_for_a_workspace": {
-      "provider_intent": "get_the_workspace_memberships_for_a_workspace",
+    "asana__/workspaces/workspace_gid/workspace_memberships___GET": {
       "provider_alias_intent": "/workspaces/workspace_gid/workspace_memberships",
       "text": "Returns the compact workspace membership records for the workspace",
       "category": "Workspaces",
@@ -7232,11 +7054,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "add_a_user_to_a_workspace_or_organization": {
-      "provider_intent": "add_a_user_to_a_workspace_or_organization",
+    "asana__/workspaces/workspace_gid/adduser___POST": {
       "provider_alias_intent": "/workspaces/workspace_gid/adduser",
       "text": "Add a user to a workspace or organization",
       "category": "Workspaces",
@@ -7271,11 +7092,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "remove_a_user_from_a_workspace_or_organization": {
-      "provider_intent": "remove_a_user_from_a_workspace_or_organization",
+    "asana__/workspaces/workspace_gid/removeuser___POST": {
       "provider_alias_intent": "/workspaces/workspace_gid/removeuser",
       "text": "Remove a user from a workspace or organization",
       "category": "Workspaces",
@@ -7310,11 +7130,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     },
-    "get_multiple_workspaces": {
-      "provider_intent": "get_multiple_workspaces",
+    "asana__/workspaces___GET": {
       "provider_alias_intent": "/workspaces",
       "text": "Returns the compact records for all workspaces visible to the authorized user",
       "category": "Workspaces",
@@ -7355,8 +7174,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.030Z"
     }
   }
 }

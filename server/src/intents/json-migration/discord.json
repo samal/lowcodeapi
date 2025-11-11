@@ -57,8 +57,7 @@
     "credential_link": "https://discord.com/"
   },
   "routes": {
-    "discord__applications__me___get": {
-      "provider_intent": "discord__applications__me___get",
+    "discord__/applications/me___GET": {
       "provider_alias_intent": "/applications/me",
       "text": "Get Current Application",
       "category": "Application",
@@ -86,13 +85,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__applications__me___patch": {
-      "provider_intent": "discord__applications__me___patch",
+    "discord__/applications/me___PATCH": {
       "provider_alias_intent": "/applications/me",
       "text": "Edit Current Application",
       "category": "Application",
@@ -159,13 +155,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__applications__application_id__role-connections__metadata___get": {
-      "provider_intent": "discord__applications__application_id__role-connections__metadata___get",
+    "discord__/applications/application_id/role-connections/metadata___GET": {
       "provider_alias_intent": "/applications/application_id/role-connections/metadata",
       "text": "Get Application Role Connection Metadata Records",
       "category": "Application Role Connection Metadata",
@@ -207,13 +200,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__applications__application_id__role-connections__metadata___put": {
-      "provider_intent": "discord__applications__application_id__role-connections__metadata___put",
+    "discord__/applications/application_id/role-connections/metadata___PUT": {
       "provider_alias_intent": "/applications/application_id/role-connections/metadata",
       "text": "Update Application Role Connection Metadata Records",
       "category": "Application Role Connection Metadata",
@@ -255,13 +245,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__audit-logs___get": {
-      "provider_intent": "discord__guilds__guild_id__audit-logs___get",
+    "discord__/guilds/guild_id/audit-logs___GET": {
       "provider_alias_intent": "/guilds/guild_id/audit-logs",
       "text": "Get Guild Audit Log",
       "category": "Audit Logs",
@@ -323,13 +310,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__auto-moderation__rules___get": {
-      "provider_intent": "discord__guilds__guild_id__auto-moderation__rules___get",
+    "discord__/guilds/guild_id/auto-moderation/rules___GET": {
       "provider_alias_intent": "/guilds/guild_id/auto-moderation/rules",
       "text": "List Auto Moderation Rules for Guild",
       "category": "Auto Moderation",
@@ -371,13 +355,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___get": {
-      "provider_intent": "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___get",
+    "discord__/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id",
       "text": "Get Auto Moderation Rule",
       "category": "Auto Moderation",
@@ -431,13 +412,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__auto-moderation__rules___post": {
-      "provider_intent": "discord__guilds__guild_id__auto-moderation__rules___post",
+    "discord__/guilds/guild_id/auto-moderation/rules___POST": {
       "provider_alias_intent": "/guilds/guild_id/auto-moderation/rules",
       "text": "Create Auto Moderation Rule",
       "category": "Auto Moderation",
@@ -517,13 +495,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___patch",
+    "discord__/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id",
       "text": "Modify Auto Moderation Rule",
       "category": "Auto Moderation",
@@ -611,13 +586,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___delete": {
-      "provider_intent": "discord__guilds__guild_id__auto-moderation__rules__auto_moderation_rule_id___delete",
+    "discord__/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/auto-moderation/rules/auto_moderation_rule_id",
       "text": "Delete Auto Moderation Rule",
       "category": "Auto Moderation",
@@ -671,13 +643,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id___get": {
-      "provider_intent": "discord__channels__channel_id___get",
+    "discord__/channels/channel_id___GET": {
       "provider_alias_intent": "/channels/channel_id",
       "text": "Get Channel",
       "category": "Channel",
@@ -719,13 +688,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id___patch": {
-      "provider_intent": "discord__channels__channel_id___patch",
+    "discord__/channels/channel_id___PATCH": {
       "provider_alias_intent": "/channels/channel_id",
       "text": "Modify Channel",
       "category": "Channel",
@@ -776,13 +742,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id___delete": {
-      "provider_intent": "discord__channels__channel_id___delete",
+    "discord__/channels/channel_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id",
       "text": "Delete/Close Channel",
       "category": "Channel",
@@ -824,13 +787,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages___get": {
-      "provider_intent": "discord__channels__channel_id__messages___get",
+    "discord__/channels/channel_id/messages___GET": {
       "provider_alias_intent": "/channels/channel_id/messages",
       "text": "Get Channel Messages",
       "category": "Channel",
@@ -887,13 +847,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id___get": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id___get",
+    "discord__/channels/channel_id/messages/message_id___GET": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id",
       "text": "Get Channel Message",
       "category": "Channel",
@@ -947,13 +904,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages___post": {
-      "provider_intent": "discord__channels__channel_id__messages___post",
+    "discord__/channels/channel_id/messages___POST": {
       "provider_alias_intent": "/channels/channel_id/messages",
       "text": "Create Message",
       "category": "Channel",
@@ -1053,13 +1007,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__crosspost___post": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__crosspost___post",
+    "discord__/channels/channel_id/messages/message_id/crosspost___POST": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/crosspost",
       "text": "Crosspost Message",
       "category": "Channel",
@@ -1113,13 +1064,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions__emoji__me___post": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions__emoji__me___post",
+    "discord__/channels/channel_id/messages/message_id/reactions/emoji/me___POST": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions/emoji/me",
       "text": "Create Reaction",
       "category": "Channel",
@@ -1183,13 +1131,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions__emoji__me___delete": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions__emoji__me___delete",
+    "discord__/channels/channel_id/messages/message_id/reactions/emoji/me___DELETE": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions/emoji/me",
       "text": "Delete Own Reaction",
       "category": "Channel",
@@ -1253,13 +1198,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions__emoji__user_id___delete": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions__emoji__user_id___delete",
+    "discord__/channels/channel_id/messages/message_id/reactions/emoji/user_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions/emoji/user_id",
       "text": "Delete User Reaction",
       "category": "Channel",
@@ -1335,13 +1277,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions__emoji___get": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions__emoji___get",
+    "discord__/channels/channel_id/messages/message_id/reactions/emoji___GET": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions/emoji",
       "text": "Get Reactions",
       "category": "Channel",
@@ -1413,13 +1352,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions___delete": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions___delete",
+    "discord__/channels/channel_id/messages/message_id/reactions___DELETE": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions",
       "text": "Delete All Reactions",
       "category": "Channel",
@@ -1473,13 +1409,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__reactions__emoji___delete": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__reactions__emoji___delete",
+    "discord__/channels/channel_id/messages/message_id/reactions/emoji___DELETE": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/reactions/emoji",
       "text": "Delete All Reactions for Emoji",
       "category": "Channel",
@@ -1543,13 +1476,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id___patch": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id___patch",
+    "discord__/channels/channel_id/messages/message_id___PATCH": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id",
       "text": "Edit Message",
       "category": "Channel",
@@ -1636,13 +1566,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id___delete": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id___delete",
+    "discord__/channels/channel_id/messages/message_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id",
       "text": "Delete Message",
       "category": "Channel",
@@ -1696,13 +1623,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__bulk-delete___post": {
-      "provider_intent": "discord__channels__channel_id__messages__bulk-delete___post",
+    "discord__/channels/channel_id/messages/bulk-delete___POST": {
       "provider_alias_intent": "/channels/channel_id/messages/bulk-delete",
       "text": "Bulk Delete Messages",
       "category": "Channel",
@@ -1748,13 +1672,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__permissions__overwrite_id___put": {
-      "provider_intent": "discord__channels__channel_id__permissions__overwrite_id___put",
+    "discord__/channels/channel_id/permissions/overwrite_id___PUT": {
       "provider_alias_intent": "/channels/channel_id/permissions/overwrite_id",
       "text": "Edit Channel Permissions",
       "category": "Channel",
@@ -1821,13 +1742,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__invites___get": {
-      "provider_intent": "discord__channels__channel_id__invites___get",
+    "discord__/channels/channel_id/invites___GET": {
       "provider_alias_intent": "/channels/channel_id/invites",
       "text": "Get Channel Invites",
       "category": "Channel",
@@ -1869,13 +1787,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__invites___post": {
-      "provider_intent": "discord__channels__channel_id__invites___post",
+    "discord__/channels/channel_id/invites___POST": {
       "provider_alias_intent": "/channels/channel_id/invites",
       "text": "Create Channel Invite",
       "category": "Channel",
@@ -1951,13 +1866,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__permissions__overwrite_id___delete": {
-      "provider_intent": "discord__channels__channel_id__permissions__overwrite_id___delete",
+    "discord__/channels/channel_id/permissions/overwrite_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/permissions/overwrite_id",
       "text": "Delete Channel Permission",
       "category": "Channel",
@@ -2011,13 +1923,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__followers___post": {
-      "provider_intent": "discord__channels__channel_id__followers___post",
+    "discord__/channels/channel_id/followers___POST": {
       "provider_alias_intent": "/channels/channel_id/followers",
       "text": "Follow Announcement Channel",
       "category": "Channel",
@@ -2064,13 +1973,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__typing___post": {
-      "provider_intent": "discord__channels__channel_id__typing___post",
+    "discord__/channels/channel_id/typing___POST": {
       "provider_alias_intent": "/channels/channel_id/typing",
       "text": "Trigger Typing Indicator",
       "category": "Channel",
@@ -2112,13 +2018,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__pins___get": {
-      "provider_intent": "discord__channels__channel_id__pins___get",
+    "discord__/channels/channel_id/pins___GET": {
       "provider_alias_intent": "/channels/channel_id/pins",
       "text": "Get Pinned Messages",
       "category": "Channel",
@@ -2160,13 +2063,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__pins__message_id___put": {
-      "provider_intent": "discord__channels__channel_id__pins__message_id___put",
+    "discord__/channels/channel_id/pins/message_id___PUT": {
       "provider_alias_intent": "/channels/channel_id/pins/message_id",
       "text": "Pin Message",
       "category": "Channel",
@@ -2220,13 +2120,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__pins__message_id___delete": {
-      "provider_intent": "discord__channels__channel_id__pins__message_id___delete",
+    "discord__/channels/channel_id/pins/message_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/pins/message_id",
       "text": "Unpin Message",
       "category": "Channel",
@@ -2280,13 +2177,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__recipients__user_id___put": {
-      "provider_intent": "discord__channels__channel_id__recipients__user_id___put",
+    "discord__/channels/channel_id/recipients/user_id___PUT": {
       "provider_alias_intent": "/channels/channel_id/recipients/user_id",
       "text": "Group DM Add Recipient",
       "category": "Channel",
@@ -2349,13 +2243,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__recipients__user_id___delete": {
-      "provider_intent": "discord__channels__channel_id__recipients__user_id___delete",
+    "discord__/channels/channel_id/recipients/user_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/recipients/user_id",
       "text": "Group DM Remove Recipient",
       "category": "Channel",
@@ -2409,13 +2300,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__messages__message_id__threads___post": {
-      "provider_intent": "discord__channels__channel_id__messages__message_id__threads___post",
+    "discord__/channels/channel_id/messages/message_id/threads___POST": {
       "provider_alias_intent": "/channels/channel_id/messages/message_id/threads",
       "text": "Start Thread from Message",
       "category": "Channel",
@@ -2482,13 +2370,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__threads___post": {
-      "provider_intent": "discord__channels__channel_id__threads___post",
+    "discord__/channels/channel_id/threads___POST": {
       "provider_alias_intent": "/channels/channel_id/threads",
       "text": "Start Thread in Forum or Media Channel",
       "category": "Channel",
@@ -2561,13 +2446,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members__me___put": {
-      "provider_intent": "discord__channels__channel_id__thread-members__me___put",
+    "discord__/channels/channel_id/thread-members/me___PUT": {
       "provider_alias_intent": "/channels/channel_id/thread-members/me",
       "text": "Join Thread",
       "category": "Channel",
@@ -2609,13 +2491,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members__user_id___put": {
-      "provider_intent": "discord__channels__channel_id__thread-members__user_id___put",
+    "discord__/channels/channel_id/thread-members/user_id___PUT": {
       "provider_alias_intent": "/channels/channel_id/thread-members/user_id",
       "text": "Add Thread Member",
       "category": "Channel",
@@ -2669,13 +2548,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members__me___delete": {
-      "provider_intent": "discord__channels__channel_id__thread-members__me___delete",
+    "discord__/channels/channel_id/thread-members/me___DELETE": {
       "provider_alias_intent": "/channels/channel_id/thread-members/me",
       "text": "Leave Thread",
       "category": "Channel",
@@ -2717,13 +2593,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members__user_id___delete": {
-      "provider_intent": "discord__channels__channel_id__thread-members__user_id___delete",
+    "discord__/channels/channel_id/thread-members/user_id___DELETE": {
       "provider_alias_intent": "/channels/channel_id/thread-members/user_id",
       "text": "Remove Thread Member",
       "category": "Channel",
@@ -2777,13 +2650,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members__user_id___get": {
-      "provider_intent": "discord__channels__channel_id__thread-members__user_id___get",
+    "discord__/channels/channel_id/thread-members/user_id___GET": {
       "provider_alias_intent": "/channels/channel_id/thread-members/user_id",
       "text": "Get Thread Member",
       "category": "Channel",
@@ -2845,13 +2715,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__thread-members___get": {
-      "provider_intent": "discord__channels__channel_id__thread-members___get",
+    "discord__/channels/channel_id/thread-members___GET": {
       "provider_alias_intent": "/channels/channel_id/thread-members",
       "text": "List Thread Members",
       "category": "Channel",
@@ -2909,13 +2776,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__threads__archived__public___get": {
-      "provider_intent": "discord__channels__channel_id__threads__archived__public___get",
+    "discord__/channels/channel_id/threads/archived/public___GET": {
       "provider_alias_intent": "/channels/channel_id/threads/archived/public",
       "text": "List Public Archived Threads",
       "category": "Channel",
@@ -2965,13 +2829,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__threads__archived__private___get": {
-      "provider_intent": "discord__channels__channel_id__threads__archived__private___get",
+    "discord__/channels/channel_id/threads/archived/private___GET": {
       "provider_alias_intent": "/channels/channel_id/threads/archived/private",
       "text": "List Private Archived Threads",
       "category": "Channel",
@@ -3021,13 +2882,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__users__me__threads__archived__private___get": {
-      "provider_intent": "discord__channels__channel_id__users__me__threads__archived__private___get",
+    "discord__/channels/channel_id/users/me/threads/archived/private___GET": {
       "provider_alias_intent": "/channels/channel_id/users/me/threads/archived/private",
       "text": "List Joined Private Archived Threads",
       "category": "Channel",
@@ -3077,13 +2935,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__emojis___get": {
-      "provider_intent": "discord__guilds__guild_id__emojis___get",
+    "discord__/guilds/guild_id/emojis___GET": {
       "provider_alias_intent": "/guilds/guild_id/emojis",
       "text": "List Guild Emojis",
       "category": "Emoji",
@@ -3125,13 +2980,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__emojis__emoji_id___get": {
-      "provider_intent": "discord__guilds__guild_id__emojis__emoji_id___get",
+    "discord__/guilds/guild_id/emojis/emoji_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/emojis/emoji_id",
       "text": "Get Guild Emoji",
       "category": "Emoji",
@@ -3185,13 +3037,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__emojis___post": {
-      "provider_intent": "discord__guilds__guild_id__emojis___post",
+    "discord__/guilds/guild_id/emojis___POST": {
       "provider_alias_intent": "/guilds/guild_id/emojis",
       "text": "Create Guild Emoji",
       "category": "Emoji",
@@ -3246,13 +3095,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__emojis__emoji_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__emojis__emoji_id___patch",
+    "discord__/guilds/guild_id/emojis/emoji_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/emojis/emoji_id",
       "text": "Modify Guild Emoji",
       "category": "Emoji",
@@ -3315,13 +3161,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__emojis__emoji_id___delete": {
-      "provider_intent": "discord__guilds__guild_id__emojis__emoji_id___delete",
+    "discord__/guilds/guild_id/emojis/emoji_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/emojis/emoji_id",
       "text": "Delete Guild Emoji",
       "category": "Emoji",
@@ -3375,13 +3218,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds___post": {
-      "provider_intent": "discord__guilds___post",
+    "discord__/guilds___POST": {
       "provider_alias_intent": "/guilds",
       "text": "Create Guild",
       "category": "Guild",
@@ -3457,13 +3297,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id___get": {
-      "provider_intent": "discord__guilds__guild_id___get",
+    "discord__/guilds/guild_id___GET": {
       "provider_alias_intent": "/guilds/guild_id",
       "text": "Get Guild",
       "category": "Guild",
@@ -3513,13 +3350,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__preview___get": {
-      "provider_intent": "discord__guilds__guild_id__preview___get",
+    "discord__/guilds/guild_id/preview___GET": {
       "provider_alias_intent": "/guilds/guild_id/preview",
       "text": "Get Guild Preview",
       "category": "Guild",
@@ -3561,13 +3395,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id___patch": {
-      "provider_intent": "discord__guilds__guild_id___patch",
+    "discord__/guilds/guild_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id",
       "text": "Modify Guild",
       "category": "Guild",
@@ -3694,13 +3525,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id___delete": {
-      "provider_intent": "discord__guilds__guild_id___delete",
+    "discord__/guilds/guild_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id",
       "text": "Delete Guild",
       "category": "Guild",
@@ -3742,13 +3570,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__channels___get": {
-      "provider_intent": "discord__guilds__guild_id__channels___get",
+    "discord__/guilds/guild_id/channels___GET": {
       "provider_alias_intent": "/guilds/guild_id/channels",
       "text": "Get Guild Channels",
       "category": "Guild",
@@ -3790,13 +3615,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__channels___post": {
-      "provider_intent": "discord__guilds__guild_id__channels___post",
+    "discord__/guilds/guild_id/channels___POST": {
       "provider_alias_intent": "/guilds/guild_id/channels",
       "text": "Create Guild Channel",
       "category": "Guild",
@@ -3917,13 +3739,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__channels___patch": {
-      "provider_intent": "discord__guilds__guild_id__channels___patch",
+    "discord__/guilds/guild_id/channels___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/channels",
       "text": "Modify Guild Channel Positions",
       "category": "Guild",
@@ -3986,13 +3805,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__threads__active___get": {
-      "provider_intent": "discord__guilds__guild_id__threads__active___get",
+    "discord__/guilds/guild_id/threads/active___GET": {
       "provider_alias_intent": "/guilds/guild_id/threads/active",
       "text": "List Active Guild Threads",
       "category": "Guild",
@@ -4034,13 +3850,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id___get": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id___get",
+    "discord__/guilds/guild_id/members/user_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id",
       "text": "Get Guild Member",
       "category": "Guild",
@@ -4092,13 +3905,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members___get": {
-      "provider_intent": "discord__guilds__guild_id__members___get",
+    "discord__/guilds/guild_id/members___GET": {
       "provider_alias_intent": "/guilds/guild_id/members",
       "text": "List Guild Members",
       "category": "Guild",
@@ -4148,13 +3958,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__search___get": {
-      "provider_intent": "discord__guilds__guild_id__members__search___get",
+    "discord__/guilds/guild_id/members/search___GET": {
       "provider_alias_intent": "/guilds/guild_id/members/search",
       "text": "Search Guild Members",
       "category": "Guild",
@@ -4204,13 +4011,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id___put": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id___put",
+    "discord__/guilds/guild_id/members/user_id___PUT": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id",
       "text": "Add Guild Member",
       "category": "Guild",
@@ -4291,13 +4095,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id___patch",
+    "discord__/guilds/guild_id/members/user_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id",
       "text": "Modify Guild Member",
       "category": "Guild",
@@ -4389,13 +4190,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__me___patch": {
-      "provider_intent": "discord__guilds__guild_id__members__me___patch",
+    "discord__/guilds/guild_id/members/me___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/members/me",
       "text": "Modify Current Member",
       "category": "Guild",
@@ -4442,13 +4240,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__me__nick___patch": {
-      "provider_intent": "discord__guilds__guild_id__members__me__nick___patch",
+    "discord__/guilds/guild_id/members/me/nick___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/members/me/nick",
       "text": "Modify Current User Nick",
       "category": "Guild",
@@ -4495,13 +4290,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id__roles__role_id___put": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id__roles__role_id___put",
+    "discord__/guilds/guild_id/members/user_id/roles/role_id___PUT": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id/roles/role_id",
       "text": "Add Guild Member Role",
       "category": "Guild",
@@ -4567,13 +4359,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id__roles__role_id___delete": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id__roles__role_id___delete",
+    "discord__/guilds/guild_id/members/user_id/roles/role_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id/roles/role_id",
       "text": "Remove Guild Member Role",
       "category": "Guild",
@@ -4639,13 +4428,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__members__user_id___delete": {
-      "provider_intent": "discord__guilds__guild_id__members__user_id___delete",
+    "discord__/guilds/guild_id/members/user_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/members/user_id",
       "text": "Remove Guild Member",
       "category": "Guild",
@@ -4699,13 +4485,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__bans___get": {
-      "provider_intent": "discord__guilds__guild_id__bans___get",
+    "discord__/guilds/guild_id/bans___GET": {
       "provider_alias_intent": "/guilds/guild_id/bans",
       "text": "Get Guild Bans",
       "category": "Guild",
@@ -4761,13 +4544,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__bans__user_id___get": {
-      "provider_intent": "discord__guilds__guild_id__bans__user_id___get",
+    "discord__/guilds/guild_id/bans/user_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/bans/user_id",
       "text": "Get Guild Ban",
       "category": "Guild",
@@ -4821,13 +4601,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__bans__user_id___put": {
-      "provider_intent": "discord__guilds__guild_id__bans__user_id___put",
+    "discord__/guilds/guild_id/bans/user_id___PUT": {
       "provider_alias_intent": "/guilds/guild_id/bans/user_id",
       "text": "Create Guild Ban",
       "category": "Guild",
@@ -4886,13 +4663,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__bans__user_id\n___delete": {
-      "provider_intent": "discord__guilds__guild_id__bans__user_id\n___delete",
+    "discord__/guilds/guild_id/bans/user_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/bans/user_id\n",
       "text": "Remove Guild Ban",
       "category": "Guild",
@@ -4946,13 +4720,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__roles___get": {
-      "provider_intent": "discord__guilds__guild_id__roles___get",
+    "discord__/guilds/guild_id/roles___GET": {
       "provider_alias_intent": "/guilds/guild_id/roles",
       "text": "Get Guild Roles",
       "category": "Guild",
@@ -4994,13 +4765,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__roles\n___post": {
-      "provider_intent": "discord__guilds__guild_id__roles\n___post",
+    "discord__/guilds/guild_id/roles___POST": {
       "provider_alias_intent": "/guilds/guild_id/roles\n",
       "text": "Create Guild Role",
       "category": "Guild",
@@ -5079,13 +4847,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__roles___patch": {
-      "provider_intent": "discord__guilds__guild_id__roles___patch",
+    "discord__/guilds/guild_id/roles___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/roles",
       "text": "Modify Guild Role Positions",
       "category": "Guild",
@@ -5136,13 +4901,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__roles__role_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__roles__role_id___patch",
+    "discord__/guilds/guild_id/roles/role_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/roles/role_id",
       "text": "Modify Guild Role",
       "category": "Guild",
@@ -5233,13 +4995,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__mfa___post": {
-      "provider_intent": "discord__guilds__guild_id__mfa___post",
+    "discord__/guilds/guild_id/mfa___POST": {
       "provider_alias_intent": "/guilds/guild_id/mfa",
       "text": "Modify Guild MFA Level",
       "category": "Guild",
@@ -5286,13 +5045,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__roles__role_id\n___delete": {
-      "provider_intent": "discord__guilds__guild_id__roles__role_id\n___delete",
+    "discord__/guilds/guild_id/roles/role_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/roles/role_id\n",
       "text": "Delete Guild Role",
       "category": "Guild",
@@ -5346,13 +5102,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__prune___get": {
-      "provider_intent": "discord__guilds__guild_id__prune___get",
+    "discord__/guilds/guild_id/prune___GET": {
       "provider_alias_intent": "/guilds/guild_id/prune",
       "text": "Get Guild Prune Count",
       "category": "Guild",
@@ -5402,13 +5155,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__prune___post": {
-      "provider_intent": "discord__guilds__guild_id__prune___post",
+    "discord__/guilds/guild_id/prune___POST": {
       "provider_alias_intent": "/guilds/guild_id/prune",
       "text": "Begin Guild Prune",
       "category": "Guild",
@@ -5467,13 +5217,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__regions___get": {
-      "provider_intent": "discord__guilds__guild_id__regions___get",
+    "discord__/guilds/guild_id/regions___GET": {
       "provider_alias_intent": "/guilds/guild_id/regions",
       "text": "Get Guild Voice Regions",
       "category": "Guild",
@@ -5515,13 +5262,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__invites___get": {
-      "provider_intent": "discord__guilds__guild_id__invites___get",
+    "discord__/guilds/guild_id/invites___GET": {
       "provider_alias_intent": "/guilds/guild_id/invites",
       "text": "Get Guild Invites",
       "category": "Guild",
@@ -5563,13 +5307,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__integrations___get": {
-      "provider_intent": "discord__guilds__guild_id__integrations___get",
+    "discord__/guilds/guild_id/integrations___GET": {
       "provider_alias_intent": "/guilds/guild_id/integrations",
       "text": "Get Guild Integrations",
       "category": "Guild",
@@ -5611,13 +5352,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__integrations__integration_id___delete": {
-      "provider_intent": "discord__guilds__guild_id__integrations__integration_id___delete",
+    "discord__/guilds/guild_id/integrations/integration_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/integrations/integration_id",
       "text": "Delete Guild Integration",
       "category": "Guild",
@@ -5671,13 +5409,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__widget___get": {
-      "provider_intent": "discord__guilds__guild_id__widget___get",
+    "discord__/guilds/guild_id/widget___GET": {
       "provider_alias_intent": "/guilds/guild_id/widget",
       "text": "Get Guild Widget Settings",
       "category": "Guild",
@@ -5719,13 +5454,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__widget___patch": {
-      "provider_intent": "discord__guilds__guild_id__widget___patch",
+    "discord__/guilds/guild_id/widget___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/widget",
       "text": "Modify Guild Widget",
       "category": "Guild",
@@ -5767,13 +5499,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__widget_json___get": {
-      "provider_intent": "discord__guilds__guild_id__widget_json___get",
+    "discord__/guilds/guild_id/widget_json___GET": {
       "provider_alias_intent": "/guilds/guild_id/widget_json",
       "text": "Get Guild Widget",
       "category": "Guild",
@@ -5815,13 +5544,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__vanity-url___get": {
-      "provider_intent": "discord__guilds__guild_id__vanity-url___get",
+    "discord__/guilds/guild_id/vanity-url___GET": {
       "provider_alias_intent": "/guilds/guild_id/vanity-url",
       "text": "Get Guild Vanity URL",
       "category": "Guild",
@@ -5863,13 +5589,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__widget_png\n___get": {
-      "provider_intent": "discord__guilds__guild_id__widget_png\n___get",
+    "discord__/guilds/guild_id/widget_png___GET": {
       "provider_alias_intent": "/guilds/guild_id/widget_png\n",
       "text": "Get Guild Widget Image",
       "category": "Guild",
@@ -5915,13 +5638,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__welcome-screen___get": {
-      "provider_intent": "discord__guilds__guild_id__welcome-screen___get",
+    "discord__/guilds/guild_id/welcome-screen___GET": {
       "provider_alias_intent": "/guilds/guild_id/welcome-screen",
       "text": "Get Guild Welcome Screen",
       "category": "Guild",
@@ -5963,13 +5683,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__welcome-screen___patch": {
-      "provider_intent": "discord__guilds__guild_id__welcome-screen___patch",
+    "discord__/guilds/guild_id/welcome-screen___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/welcome-screen",
       "text": "Modify Guild Welcome Screen",
       "category": "Guild",
@@ -6028,13 +5745,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__onboarding___get": {
-      "provider_intent": "discord__guilds__guild_id__onboarding___get",
+    "discord__/guilds/guild_id/onboarding___GET": {
       "provider_alias_intent": "/guilds/guild_id/onboarding",
       "text": "Get Guild Onboarding",
       "category": "Guild",
@@ -6076,13 +5790,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__onboarding___put": {
-      "provider_intent": "discord__guilds__guild_id__onboarding___put",
+    "discord__/guilds/guild_id/onboarding___PUT": {
       "provider_alias_intent": "/guilds/guild_id/onboarding",
       "text": "Modify Guild Onboarding",
       "category": "Guild",
@@ -6144,13 +5855,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__voice-states__me___patch": {
-      "provider_intent": "discord__guilds__guild_id__voice-states__me___patch",
+    "discord__/guilds/guild_id/voice-states/me___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/voice-states/me",
       "text": "Modify Current User Voice State",
       "category": "Guild",
@@ -6210,13 +5918,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__voice-states__user_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__voice-states__user_id___patch",
+    "discord__/guilds/guild_id/voice-states/user_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/voice-states/user_id",
       "text": "Modify User Voice State",
       "category": "Guild",
@@ -6284,13 +5989,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events___get": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events___get",
+    "discord__/guilds/guild_id/scheduled-events___GET": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events",
       "text": "List Scheduled Events for Guild",
       "category": "Guild Scheduled Event",
@@ -6340,13 +6042,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events___post": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events___post",
+    "discord__/guilds/guild_id/scheduled-events___POST": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events",
       "text": "Create Guild Scheduled Event",
       "category": "Guild Scheduled Event",
@@ -6427,13 +6126,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___get": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___get",
+    "discord__/guilds/guild_id/scheduled-events/guild_scheduled_event_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events/guild_scheduled_event_id\n",
       "text": "Get Guild Scheduled Event",
       "category": "Guild Scheduled Event",
@@ -6493,13 +6189,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___patch": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___patch",
+    "discord__/guilds/guild_id/scheduled-events/guild_scheduled_event_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events/guild_scheduled_event_id\n",
       "text": "Modify Guild Scheduled Event",
       "category": "Guild Scheduled Event",
@@ -6596,13 +6289,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___delete": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id\n___delete",
+    "discord__/guilds/guild_id/scheduled-events/guild_scheduled_event_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events/guild_scheduled_event_id\n",
       "text": "Delete Guild Scheduled Event",
       "category": "Guild Scheduled Event",
@@ -6654,13 +6344,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id__users\n___get": {
-      "provider_intent": "discord__guilds__guild_id__scheduled-events__guild_scheduled_event_id__users\n___get",
+    "discord__/guilds/guild_id/scheduled-events/guild_scheduled_event_id/users___GET": {
       "provider_alias_intent": "/guilds/guild_id/scheduled-events/guild_scheduled_event_id/users\n",
       "text": "Get Guild Scheduled Event Users",
       "category": "Guild Scheduled Event",
@@ -6734,13 +6421,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__templates__template_code___get": {
-      "provider_intent": "discord__guilds__templates__template_code___get",
+    "discord__/guilds/templates/template_code___GET": {
       "provider_alias_intent": "/guilds/templates/template_code",
       "text": "Get Guild Template",
       "category": "Guild Template",
@@ -6780,13 +6464,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__templates__template_code___post": {
-      "provider_intent": "discord__guilds__templates__template_code___post",
+    "discord__/guilds/templates/template_code___POST": {
       "provider_alias_intent": "/guilds/templates/template_code",
       "text": "Create Guild from Guild Template",
       "category": "Guild Template",
@@ -6835,13 +6516,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__templates___get": {
-      "provider_intent": "discord__guilds__guild_id__templates___get",
+    "discord__/guilds/guild_id/templates___GET": {
       "provider_alias_intent": "/guilds/guild_id/templates",
       "text": "Get Guild Templates",
       "category": "Guild Template",
@@ -6883,13 +6561,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__templates\n___post": {
-      "provider_intent": "discord__guilds__guild_id__templates\n___post",
+    "discord__/guilds/guild_id/templates___POST": {
       "provider_alias_intent": "/guilds/guild_id/templates\n",
       "text": "Create Guild Template",
       "category": "Guild Template",
@@ -6940,13 +6615,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__templates__template_code\n___put": {
-      "provider_intent": "discord__guilds__guild_id__templates__template_code\n___put",
+    "discord__/guilds/guild_id/templates/template_code___PUT": {
       "provider_alias_intent": "/guilds/guild_id/templates/template_code\n",
       "text": "Sync Guild Template",
       "category": "Guild Template",
@@ -6998,13 +6670,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__templates__template_code\n___patch": {
-      "provider_intent": "discord__guilds__guild_id__templates__template_code\n___patch",
+    "discord__/guilds/guild_id/templates/template_code___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/templates/template_code\n",
       "text": "Modify Guild Template",
       "category": "Guild Template",
@@ -7065,13 +6734,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__templates__template_code\n___delete": {
-      "provider_intent": "discord__guilds__guild_id__templates__template_code\n___delete",
+    "discord__/guilds/guild_id/templates/template_code___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/templates/template_code\n",
       "text": "Delete Guild Template",
       "category": "Guild Template",
@@ -7123,13 +6789,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__invites__invite_code___get": {
-      "provider_intent": "discord__invites__invite_code___get",
+    "discord__/invites/invite_code___GET": {
       "provider_alias_intent": "/invites/invite_code",
       "text": "Get Invite",
       "category": "Invite",
@@ -7189,13 +6852,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__invites__invite_code___delete": {
-      "provider_intent": "discord__invites__invite_code___delete",
+    "discord__/invites/invite_code___DELETE": {
       "provider_alias_intent": "/invites/invite_code",
       "text": "Delete Invite",
       "category": "Invite",
@@ -7235,13 +6895,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__stage-instances___post": {
-      "provider_intent": "discord__stage-instances___post",
+    "discord__/stage-instances___POST": {
       "provider_alias_intent": "/stage-instances",
       "text": "Create Stage Instance",
       "category": "Stage Instance",
@@ -7296,13 +6953,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__stage-instances__channel_id___get": {
-      "provider_intent": "discord__stage-instances__channel_id___get",
+    "discord__/stage-instances/channel_id___GET": {
       "provider_alias_intent": "/stage-instances/channel_id",
       "text": "Get Stage Instance",
       "category": "Stage Instance",
@@ -7344,13 +6998,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__stage-instances__channel_id___patch": {
-      "provider_intent": "discord__stage-instances__channel_id___patch",
+    "discord__/stage-instances/channel_id___PATCH": {
       "provider_alias_intent": "/stage-instances/channel_id",
       "text": "Modify Stage Instance",
       "category": "Stage Instance",
@@ -7401,13 +7052,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__stage-instances__channel_id___delete": {
-      "provider_intent": "discord__stage-instances__channel_id___delete",
+    "discord__/stage-instances/channel_id___DELETE": {
       "provider_alias_intent": "/stage-instances/channel_id",
       "text": "Delete Stage Instance",
       "category": "Stage Instance",
@@ -7449,13 +7097,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__stickers__sticker_id___get": {
-      "provider_intent": "discord__stickers__sticker_id___get",
+    "discord__/stickers/sticker_id___GET": {
       "provider_alias_intent": "/stickers/sticker_id",
       "text": "Get Sticker",
       "category": "Sticker ",
@@ -7497,13 +7142,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__sticker-packs___get": {
-      "provider_intent": "discord__sticker-packs___get",
+    "discord__/sticker-packs___GET": {
       "provider_alias_intent": "/sticker-packs",
       "text": "List Sticker Packs",
       "category": "Sticker ",
@@ -7531,13 +7173,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__stickers___get": {
-      "provider_intent": "discord__guilds__guild_id__stickers___get",
+    "discord__/guilds/guild_id/stickers___GET": {
       "provider_alias_intent": "/guilds/guild_id/stickers",
       "text": "List Guild Stickers",
       "category": "Sticker ",
@@ -7579,13 +7218,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__stickers__sticker_id\n___get": {
-      "provider_intent": "discord__guilds__guild_id__stickers__sticker_id\n___get",
+    "discord__/guilds/guild_id/stickers/sticker_id___GET": {
       "provider_alias_intent": "/guilds/guild_id/stickers/sticker_id\n",
       "text": "Get Guild Sticker",
       "category": "Sticker ",
@@ -7639,13 +7275,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__stickers___post": {
-      "provider_intent": "discord__guilds__guild_id__stickers___post",
+    "discord__/guilds/guild_id/stickers___POST": {
       "provider_alias_intent": "/guilds/guild_id/stickers",
       "text": "Create Guild Sticker",
       "category": "Sticker ",
@@ -7687,13 +7320,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__stickers__sticker_id___patch": {
-      "provider_intent": "discord__guilds__guild_id__stickers__sticker_id___patch",
+    "discord__/guilds/guild_id/stickers/sticker_id___PATCH": {
       "provider_alias_intent": "/guilds/guild_id/stickers/sticker_id",
       "text": "Modify Guild Sticker",
       "category": "Sticker ",
@@ -7760,13 +7390,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__stickers__sticker_id\n___delete": {
-      "provider_intent": "discord__guilds__guild_id__stickers__sticker_id\n___delete",
+    "discord__/guilds/guild_id/stickers/sticker_id___DELETE": {
       "provider_alias_intent": "/guilds/guild_id/stickers/sticker_id\n",
       "text": "Delete Guild Sticker",
       "category": "Sticker ",
@@ -7820,13 +7447,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me___get": {
-      "provider_intent": "discord__users__me___get",
+    "discord__/users/me___GET": {
       "provider_alias_intent": "/users/me",
       "text": "Get Current User",
       "category": "User",
@@ -7854,13 +7478,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__user_id___get": {
-      "provider_intent": "discord__users__user_id___get",
+    "discord__/users/user_id___GET": {
       "provider_alias_intent": "/users/user_id",
       "text": "Get User",
       "category": "User",
@@ -7902,13 +7523,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me___patch": {
-      "provider_intent": "discord__users__me___patch",
+    "discord__/users/me___PATCH": {
       "provider_alias_intent": "/users/me",
       "text": "Modify Current User",
       "category": "User",
@@ -7945,13 +7563,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__guilds___get": {
-      "provider_intent": "discord__users__me__guilds___get",
+    "discord__/users/me/guilds___GET": {
       "provider_alias_intent": "/users/me/guilds",
       "text": "Get Current User Guilds",
       "category": "User",
@@ -8002,13 +7617,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__guilds__guild_id__member___get": {
-      "provider_intent": "discord__users__me__guilds__guild_id__member___get",
+    "discord__/users/me/guilds/guild_id/member___GET": {
       "provider_alias_intent": "/users/me/guilds/guild_id/member",
       "text": "Get Current User Guild Member",
       "category": "User",
@@ -8050,13 +7662,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__guilds__guild_id___delete": {
-      "provider_intent": "discord__users__me__guilds__guild_id___delete",
+    "discord__/users/me/guilds/guild_id___DELETE": {
       "provider_alias_intent": "/users/me/guilds/guild_id",
       "text": "Leave Guild",
       "category": "User",
@@ -8098,13 +7707,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__channels___post": {
-      "provider_intent": "discord__users__me__channels___post",
+    "discord__/users/me/channels___POST": {
       "provider_alias_intent": "/users/me/channels",
       "text": "Create Group DM",
       "category": "User",
@@ -8141,13 +7747,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__connections___get": {
-      "provider_intent": "discord__users__me__connections___get",
+    "discord__/users/me/connections___GET": {
       "provider_alias_intent": "/users/me/connections",
       "text": "Get Current User Connections",
       "category": "User",
@@ -8175,13 +7778,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__applications__application_id__role-connection___get": {
-      "provider_intent": "discord__users__me__applications__application_id__role-connection___get",
+    "discord__/users/me/applications/application_id/role-connection___GET": {
       "provider_alias_intent": "/users/me/applications/application_id/role-connection",
       "text": "Get Current User Application Role Connection",
       "category": "User",
@@ -8223,13 +7823,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__users__me__applications__application_id__role-connection___put": {
-      "provider_intent": "discord__users__me__applications__application_id__role-connection___put",
+    "discord__/users/me/applications/application_id/role-connection___PUT": {
       "provider_alias_intent": "/users/me/applications/application_id/role-connection",
       "text": "Update Current User Application Role Connection",
       "category": "User",
@@ -8284,13 +7881,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__voice__regions___get": {
-      "provider_intent": "discord__voice__regions___get",
+    "discord__/voice/regions___GET": {
       "provider_alias_intent": "/voice/regions",
       "text": "List Voice Regions",
       "category": "Voice",
@@ -8318,13 +7912,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__webhooks___post": {
-      "provider_intent": "discord__channels__channel_id__webhooks___post",
+    "discord__/channels/channel_id/webhooks___POST": {
       "provider_alias_intent": "/channels/channel_id/webhooks",
       "text": "Create Webhook",
       "category": "Webhook ",
@@ -8375,13 +7966,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__channels__channel_id__webhooks___get": {
-      "provider_intent": "discord__channels__channel_id__webhooks___get",
+    "discord__/channels/channel_id/webhooks___GET": {
       "provider_alias_intent": "/channels/channel_id/webhooks",
       "text": "Get Channel Webhooks",
       "category": "Webhook ",
@@ -8423,13 +8011,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__guilds__guild_id__webhooks___get": {
-      "provider_intent": "discord__guilds__guild_id__webhooks___get",
+    "discord__/guilds/guild_id/webhooks___GET": {
       "provider_alias_intent": "/guilds/guild_id/webhooks",
       "text": "Get Guild Webhooks",
       "category": "Webhook ",
@@ -8471,13 +8056,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id___get": {
-      "provider_intent": "discord__webhooks__webhook_id___get",
+    "discord__/webhooks/webhook_id___GET": {
       "provider_alias_intent": "/webhooks/webhook_id",
       "text": "Get Webhook",
       "category": "Webhook ",
@@ -8519,13 +8101,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token___get": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token___get",
+    "discord__/webhooks/webhook_id/webhook_token___GET": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token",
       "text": "Get Webhook with Token",
       "category": "Webhook ",
@@ -8579,13 +8158,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id___patch": {
-      "provider_intent": "discord__webhooks__webhook_id___patch",
+    "discord__/webhooks/webhook_id___PATCH": {
       "provider_alias_intent": "/webhooks/webhook_id",
       "text": "Modify Webhook",
       "category": "Webhook ",
@@ -8641,13 +8217,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token___patch": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token___patch",
+    "discord__/webhooks/webhook_id/webhook_token___PATCH": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token",
       "text": "Modify Webhook with Token",
       "category": "Webhook ",
@@ -8701,13 +8274,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id___delete": {
-      "provider_intent": "discord__webhooks__webhook_id___delete",
+    "discord__/webhooks/webhook_id___DELETE": {
       "provider_alias_intent": "/webhooks/webhook_id",
       "text": "Delete Webhook",
       "category": "Webhook ",
@@ -8749,13 +8319,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token___delete": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token___delete",
+    "discord__/webhooks/webhook_id/webhook_token___DELETE": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token",
       "text": "Delete Webhook with Token",
       "category": "Webhook ",
@@ -8809,13 +8376,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token___post": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token___post",
+    "discord__/webhooks/webhook_id/webhook_token___POST": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token",
       "text": "Execute Webhook",
       "category": "Webhook ",
@@ -8882,13 +8446,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token__slack\n___post": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token__slack\n___post",
+    "discord__/webhooks/webhook_id/webhook_token/slack___POST": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token/slack\n",
       "text": "Execute Slack-Compatible Webhook",
       "category": "Webhook ",
@@ -8955,13 +8516,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token__github___post": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token__github___post",
+    "discord__/webhooks/webhook_id/webhook_token/github___POST": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token/github",
       "text": "Execute GitHub-Compatible Webhook",
       "category": "Webhook ",
@@ -9028,13 +8586,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token__messages__message_id___get": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token__messages__message_id___get",
+    "discord__/webhooks/webhook_id/webhook_token/messages/message_id___GET": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token/messages/message_id",
       "text": "Get Webhook Message",
       "category": "Webhook ",
@@ -9104,13 +8659,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token__messages__message_id___patch": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token__messages__message_id___patch",
+    "discord__/webhooks/webhook_id/webhook_token/messages/message_id___PATCH": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token/messages/message_id",
       "text": "Edit Webhook Message",
       "category": "Webhook ",
@@ -9181,13 +8733,10 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     },
-    "discord__webhooks__webhook_id__webhook_token__messages__message_id\n___delete": {
-      "provider_intent": "discord__webhooks__webhook_id__webhook_token__messages__message_id\n___delete",
+    "discord__/webhooks/webhook_id/webhook_token/messages/message_id___DELETE": {
       "provider_alias_intent": "/webhooks/webhook_id/webhook_token/messages/message_id\n",
       "text": "Delete Webhook Message",
       "category": "Webhook ",
@@ -9257,10 +8806,8 @@
         }
       },
       "response_type": "application/json",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.190Z"
     }
   }
 }

@@ -219,7 +219,10 @@ Object.keys(providers).forEach((provider) => {
       return res.redirect(redirect);
     });
   });
-  Object.keys(routes).forEach((intent) => {
+
+  const providerRoutes = Object.keys(routes);
+
+  providerRoutes.forEach((intent) => {
     const { params, method } = routes[intent];
     const query_params = params ? Object.keys(params) : [];
     if (METHODS.includes(method.toUpperCase())) {
@@ -230,11 +233,10 @@ Object.keys(providers).forEach((provider) => {
     }
   });
 
-  const providerRoutes = Object.keys(routes);
-
   const UPLOAD = ['file', 'upload', 'media'];
   providerRoutes.forEach((route) => {
     const intent = routes[route];
+
     const routePath = `/${provider}${intent.provider_alias_intent}`;
     const method = intent.method.toLowerCase();
 
@@ -377,7 +379,6 @@ Object.keys(providers).forEach((provider) => {
         await logIntentRequest(provider, method, intent.provider_alias_intent, user_ref_id);
       });
 
-      // New Proxy route, mimic the providers actual route
       /*
       * All API must be proxied to the provider's actual route
       */

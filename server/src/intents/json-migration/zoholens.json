@@ -76,20 +76,8 @@
     "total_api": 2,
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
-  "app": {
-    "title": "zoholens API",
-    "description": "",
-    "api_base": "/zoholens",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
   "routes": {
-    "create_a_session": {
-      "provider_intent": "create_a_session",
+    "zoholens__/api/v2/lens_session___POST": {
       "provider_alias_intent": "/api/v2/lens_session",
       "text": "Create a session",
       "category": "Session",
@@ -122,13 +110,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoLens.sessionapi.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.111Z"
     },
-    "get_user_info": {
-      "provider_intent": "get_user_info",
+    "zoholens__/api/v2/user___GET": {
       "provider_alias_intent": "/api/v2/user",
       "text": "Get user info",
       "category": "Users",
@@ -161,8 +148,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.111Z"
     }
   }
 }

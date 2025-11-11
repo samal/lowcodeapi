@@ -1,7 +1,7 @@
 {
+  "config": {},
   "routes": {
-    "pictory__pictoryapis__v1__awsconnections___post": {
-      "provider_intent": "pictory__pictoryapis__v1__awsconnections___post",
+    "pictory__/pictoryapis/v1/awsconnections___POST": {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections",
       "text": "Create a new AWS connection",
       "category": "Private AWS Connections API",
@@ -48,10 +48,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T10:39:31.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__awsconnections___get": {
-      "provider_intent": "pictory__pictoryapis__v1__awsconnections___get",
+    "pictory__/pictoryapis/v1/awsconnections___GET": {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections",
       "text": "Get all AWS connections",
       "category": "Private AWS Connections API",
@@ -78,10 +77,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T09:47:49.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__awsconnections__connectionid___get": {
-      "provider_intent": "pictory__pictoryapis__v1__awsconnections__connectionid___get",
+    "pictory__/pictoryapis/v1/awsconnections/connectionid___GET": {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Get details of a specific AWS connection",
       "category": "Private AWS Connections API",
@@ -109,10 +107,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T09:55:21.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__awsconnections__connectionid___put": {
-      "provider_intent": "pictory__pictoryapis__v1__awsconnections__connectionid___put",
+    "pictory__/pictoryapis/v1/awsconnections/connectionid___PUT": {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Update an existing AWS connection",
       "category": "Private AWS Connections API",
@@ -166,10 +163,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T10:08:55.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__awsconnections__connectionid___delete": {
-      "provider_intent": "pictory__pictoryapis__v1__awsconnections__connectionid___delete",
+    "pictory__/pictoryapis/v1/awsconnections/connectionid___DELETE": {
       "provider_alias_intent": "/pictoryapis/v1/awsconnections/connectionid",
       "text": "Delete an AWS connection",
       "category": "Private AWS Connections API",
@@ -197,10 +193,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T10:10:41.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__media__generateurl___post": {
-      "provider_intent": "pictory__pictoryapis__v1__media__generateurl___post",
+    "pictory__/pictoryapis/v1/media/generateurl___POST": {
       "provider_alias_intent": "/pictoryapis/v1/media/generateurl",
       "text": "Generate a signed URL for file upload",
       "category": " Upload Media Files to Blob Storage",
@@ -233,10 +228,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T10:14:13.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__voiceovers__tracks___get": {
-      "provider_intent": "pictory__pictoryapis__v1__voiceovers__tracks___get",
+    "pictory__/pictoryapis/v1/voiceovers/tracks___GET": {
       "provider_alias_intent": "/pictoryapis/v1/voiceovers/tracks",
       "text": "Get voiceover tracks",
       "category": "VoiceOvers API",
@@ -258,10 +252,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2024-12-28T14:44:06.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__voiceovers__tracks___post": {
-      "provider_intent": "pictory__pictoryapis__v1__voiceovers__tracks___post",
+    "pictory__/pictoryapis/v1/voiceovers/tracks___POST": {
       "provider_alias_intent": "/pictoryapis/v1/voiceovers/tracks",
       "text": "Add a new voiceover track",
       "category": "VoiceOvers API",
@@ -336,10 +329,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:02:02.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__video__storyboard___post": {
-      "provider_intent": "pictory__pictoryapis__v1__video__storyboard___post",
+    "pictory__/pictoryapis/v1/video/storyboard___POST": {
       "provider_alias_intent": "/pictoryapis/v1/video/storyboard",
       "text": "Storyboard",
       "category": "Video Generation API",
@@ -399,10 +391,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T16:51:48.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__video__render___post": {
-      "provider_intent": "pictory__pictoryapis__v1__video__render___post",
+    "pictory__/pictoryapis/v1/video/render___POST": {
       "provider_alias_intent": "/pictoryapis/v1/video/render",
       "text": "Render Video",
       "category": "Video Generation API",
@@ -447,10 +438,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T17:12:46.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__video__render__job_id___put": {
-      "provider_intent": "pictory__pictoryapis__v1__video__render__job_id___put",
+    "pictory__/pictoryapis/v1/video/render/job_id___PUT": {
       "provider_alias_intent": "/pictoryapis/v1/video/render/job_id",
       "text": "Render Video (PUT)",
       "category": "Video Generation API",
@@ -483,10 +473,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:26:20.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v2__transcription__highlights___post": {
-      "provider_intent": "pictory__pictoryapis__v2__transcription__highlights___post",
+    "pictory__/pictoryapis/v2/transcription/highlights___POST": {
       "provider_alias_intent": "/pictoryapis/v2/transcription/highlights",
       "text": "Video-Summary",
       "category": "Video Summary and Transcription API",
@@ -520,10 +509,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T17:19:47.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v2__transcription___post": {
-      "provider_intent": "pictory__pictoryapis__v2__transcription___post",
+    "pictory__/pictoryapis/v2/transcription___POST": {
       "provider_alias_intent": "/pictoryapis/v2/transcription",
       "text": "Transcription API",
       "category": "Video Summary and Transcription API",
@@ -568,10 +556,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T17:24:54.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__templates___post": {
-      "provider_intent": "pictory__pictoryapis__v1__templates___post",
+    "pictory__/pictoryapis/v1/templates___POST": {
       "provider_alias_intent": "/pictoryapis/v1/templates",
       "text": "Create Template API",
       "category": "Bulk Video Generation",
@@ -598,10 +585,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:31:18.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__video__from-template___post": {
-      "provider_intent": "pictory__pictoryapis__v1__video__from-template___post",
+    "pictory__/pictoryapis/v1/video/from-template___POST": {
       "provider_alias_intent": "/pictoryapis/v1/video/from-template",
       "text": "Template Video-Preview API",
       "category": "Bulk Video Generation",
@@ -632,10 +618,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:34:00.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__templates___get": {
-      "provider_intent": "pictory__pictoryapis__v1__templates___get",
+    "pictory__/pictoryapis/v1/templates___GET": {
       "provider_alias_intent": "/pictoryapis/v1/templates",
       "text": "Get All Template API",
       "category": "Bulk Video Generation",
@@ -657,10 +642,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2024-12-28T14:59:17.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__templates__templateid___put": {
-      "provider_intent": "pictory__pictoryapis__v1__templates__templateid___put",
+    "pictory__/pictoryapis/v1/templates/templateid___PUT": {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Update Template API",
       "category": "Bulk Video Generation",
@@ -693,10 +677,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:56:24.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__templates__templateid___get": {
-      "provider_intent": "pictory__pictoryapis__v1__templates__templateid___get",
+    "pictory__/pictoryapis/v1/templates/templateid___GET": {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Get Template by Id",
       "category": "Bulk Video Generation",
@@ -723,10 +706,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:58:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__templates__templateid___delete": {
-      "provider_intent": "pictory__pictoryapis__v1__templates__templateid___delete",
+    "pictory__/pictoryapis/v1/templates/templateid___DELETE": {
       "provider_alias_intent": "/pictoryapis/v1/templates/templateid",
       "text": "Delete Template by Id",
       "category": "Bulk Video Generation",
@@ -753,10 +735,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T11:59:07.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__brands__editvideo___post": {
-      "provider_intent": "pictory__pictoryapis__v1__brands__editvideo___post",
+    "pictory__/pictoryapis/v1/brands/editvideo___POST": {
       "provider_alias_intent": "/pictoryapis/v1/brands/editvideo",
       "text": "Create Brand API",
       "category": "Brand Kit APIs",
@@ -789,10 +770,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T12:07:16.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__v1__brands__editvideo___get": {
-      "provider_intent": "pictory__pictoryapis__v1__brands__editvideo___get",
+    "pictory__/pictoryapis/v1/brands/editvideo___GET": {
       "provider_alias_intent": "/pictoryapis/v1/brands/editvideo",
       "text": "Get Brand API",
       "category": "Brand Kit APIs",
@@ -814,10 +794,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2024-12-28T15:04:28.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__brands__editvideo__brandid___get": {
-      "provider_intent": "pictory__pictoryapis__brands__editvideo__brandid___get",
+    "pictory__/pictoryapis/brands/editvideo/brandid___GET": {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Get Brand by Id",
       "category": "Brand Kit APIs",
@@ -844,10 +823,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T12:08:41.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__brands__editvideo__brandid___put": {
-      "provider_intent": "pictory__pictoryapis__brands__editvideo__brandid___put",
+    "pictory__/pictoryapis/brands/editvideo/brandid___PUT": {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Update Brand",
       "category": "Brand Kit APIs",
@@ -872,10 +850,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T16:36:34.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     },
-    "pictory__pictoryapis__brands__editvideo__brandid___delete": {
-      "provider_intent": "pictory__pictoryapis__brands__editvideo__brandid___delete",
+    "pictory__/pictoryapis/brands/editvideo/brandid___DELETE": {
       "provider_alias_intent": "/pictoryapis/brands/editvideo/brandid",
       "text": "Delete Brand By Id",
       "category": "Brand Kit APIs",
@@ -902,7 +879,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-01-12T16:38:12.000Z"
+      "updated_at": "2025-11-11T12:00:08.781Z"
     }
   }
 }

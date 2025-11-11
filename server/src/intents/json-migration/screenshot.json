@@ -1,19 +1,7 @@
 {
-  "app": {
-    "title": "Screenshot API API",
-    "description": "",
-    "api_base": "",
-    "endpoint": "https://platform.lowcodeapi.com",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "screenshot_any_website_using_http_url": {
-      "provider_intent": "screenshot_any_website_using_http_url",
+    "screenshot__/screenshot___GET": {
       "provider_alias_intent": "/screenshot",
       "text": "Screenshot any website using http url",
       "category": "Screenshot API",
@@ -76,11 +64,11 @@
       "web_url": "/screenshot",
       "alias_web_url": "/screenshot",
       "response_type": "binary",
-      "wip": 0,
       "duplicate_intent_found": "FALSE",
       "duplicate_alias_intent_found": "FALSE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.815Z"
     }
   }
 }

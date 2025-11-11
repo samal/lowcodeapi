@@ -34,8 +34,7 @@
     "credential_link": "https://app.heygen.com/settings?nav=API"
   },
   "routes": {
-    "heygen__v2__avatars___get": {
-      "provider_intent": "heygen__v2__avatars___get",
+    "heygen__/v2/avatars___GET": {
       "provider_alias_intent": "/v2/avatars",
       "provider_proxy_intent": "https://api.heygen.com/v2/avatars",
       "text": "List All Avatars",
@@ -65,10 +64,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__voices___get": {
-      "provider_intent": "heygen__v2__voices___get",
+    "heygen__/v2/voices___GET": {
       "provider_alias_intent": "/v2/voices",
       "provider_proxy_intent": "https://api.heygen.com/v2/voices",
       "text": "List All Voices",
@@ -98,10 +96,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__avatar_group-list___get": {
-      "provider_intent": "heygen__v2__avatar_group-list___get",
+    "heygen__/v2/avatar_group.list___GET": {
       "provider_alias_intent": "/v2/avatar_group.list",
       "provider_proxy_intent": "https://api.heygen.com/v2/avatar_group.list",
       "text": "List All Avatar Groups",
@@ -141,10 +138,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__id___get": {
-      "provider_intent": "heygen__v2__photo_avatar__id___get",
+    "heygen__/v2/photo_avatar/id___GET": {
       "provider_alias_intent": "/v2/photo_avatar/id",
       "provider_proxy_intent": "https://api.heygen.com/v2/photo_avatar/{id}",
       "text": "Photo avatar details",
@@ -180,10 +176,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:22:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__avatar_group__group_id__avatars___get": {
-      "provider_intent": "heygen__v2__avatar_group__group_id__avatars___get",
+    "heygen__/v2/avatar_group/group_id/avatars___GET": {
       "provider_alias_intent": "/v2/avatar_group/group_id/avatars",
       "provider_proxy_intent": "https://api.heygen.com/v2/avatar_group/{group_id}/avatars",
       "text": "List All Avatars in one avatar group",
@@ -219,10 +214,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T10:59:31.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming-list___get": {
-      "provider_intent": "heygen__v1__streaming-list___get",
+    "heygen__/v1/streaming.list___GET": {
       "provider_alias_intent": "/v1/streaming.list",
       "provider_proxy_intent": "https://api.heygen.com/v1/streaming.list",
       "text": "List Sessions",
@@ -252,10 +246,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__generation__generation_id___get": {
-      "provider_intent": "heygen__v2__photo_avatar__generation__generation_id___get",
+    "heygen__/v2/photo_avatar/generation/generation_id___GET": {
       "provider_alias_intent": "/v2/photo_avatar/generation/generation_id",
       "provider_proxy_intent": "https://api.heygen.com/v2/photo_avatar/generation/{generation_id}",
       "text": "Check photo/look generation status",
@@ -291,10 +284,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:22:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming-create_token___post": {
-      "provider_intent": "heygen__v1__streaming-create_token___post",
+    "heygen__/v1/streaming.create_token___POST": {
       "provider_alias_intent": "/v1/streaming.create_token",
       "provider_proxy_intent": "https://api.heygen.com/v1/streaming.create_token",
       "text": "Create Session Token",
@@ -331,10 +323,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__train__status__group_id___get": {
-      "provider_intent": "heygen__v2__photo_avatar__train__status__group_id___get",
+    "heygen__/v2/photo_avatar/train/status/group_id___GET": {
       "provider_alias_intent": "/v2/photo_avatar/train/status/group_id",
       "provider_proxy_intent": "https://api.heygen.com/v2/photo_avatar/train/status/{group_id}",
       "text": "Get training job status",
@@ -370,10 +361,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:22:40.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming__avatar-list___get": {
-      "provider_intent": "heygen__v1__streaming__avatar-list___get",
+    "heygen__/v1/streaming/avatar.list___GET": {
       "provider_alias_intent": "/v1/streaming/avatar.list",
       "provider_proxy_intent": "https://api.heygen.com/v1/streaming/avatar.list",
       "text": "List Streaming Avatars",
@@ -403,10 +393,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__brand_voice__list___get": {
-      "provider_intent": "heygen__v1__brand_voice__list___get",
+    "heygen__/v1/brand_voice/list___GET": {
       "provider_alias_intent": "/v1/brand_voice/list",
       "provider_proxy_intent": "https://api.heygen.com/v1/brand_voice/list",
       "text": "List Brand Voices",
@@ -457,10 +446,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__templates___get": {
-      "provider_intent": "heygen__v2__templates___get",
+    "heygen__/v2/templates___GET": {
       "provider_alias_intent": "/v2/templates",
       "provider_proxy_intent": "https://api.heygen.com/v2/templates",
       "text": "List Templates",
@@ -490,10 +478,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__template__template_id___get": {
-      "provider_intent": "heygen__v2__template__template_id___get",
+    "heygen__/v2/template/template_id___GET": {
       "provider_alias_intent": "/v2/template/template_id",
       "provider_proxy_intent": "https://api.heygen.com/v2/template/{template_id}",
       "text": "Retrieve Template Details",
@@ -529,10 +516,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:24:25.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__user__remaining_quota___get": {
-      "provider_intent": "heygen__v2__user__remaining_quota___get",
+    "heygen__/v2/user/remaining_quota___GET": {
       "provider_alias_intent": "/v2/user/remaining_quota",
       "provider_proxy_intent": "https://api.heygen.com/v2/user/remaining_quota",
       "text": "Get Remaining Quota",
@@ -562,10 +548,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__video_status-get___get": {
-      "provider_intent": "heygen__v1__video_status-get___get",
+    "heygen__/v1/video_status.get___GET": {
       "provider_alias_intent": "/v1/video_status.get",
       "provider_proxy_intent": "https://api.heygen.com/v1/video_status.get",
       "text": "Retrieve Video Details",
@@ -601,10 +586,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__webhook__webhook-list___get": {
-      "provider_intent": "heygen__v1__webhook__webhook-list___get",
+    "heygen__/v1/webhook/webhook.list___GET": {
       "provider_alias_intent": "/v1/webhook/webhook.list",
       "provider_proxy_intent": "https://api.heygen.com/v1/webhook/webhook.list",
       "text": "List Available Webhook Events",
@@ -634,10 +618,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__video-delete___delete": {
-      "provider_intent": "heygen__v1__video-delete___delete",
+    "heygen__/v1/video.delete___DELETE": {
       "provider_alias_intent": "/v1/video.delete",
       "provider_proxy_intent": "https://api.heygen.com/v1/video.delete",
       "text": "Delete a Video",
@@ -673,10 +656,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__video-list___get": {
-      "provider_intent": "heygen__v1__video-list___get",
+    "heygen__/v1/video.list___GET": {
       "provider_alias_intent": "/v1/video.list",
       "provider_proxy_intent": "https://api.heygen.com/v1/video.list",
       "text": "Retrieve Video List",
@@ -718,10 +700,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__user__me___get": {
-      "provider_intent": "heygen__v1__user__me___get",
+    "heygen__/v1/user/me___GET": {
       "provider_alias_intent": "/v1/user/me",
       "provider_proxy_intent": "https://api.heygen.com/v1/user/me",
       "text": "Get Current User Information",
@@ -751,10 +732,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__video_translate__video_translate_id___get": {
-      "provider_intent": "heygen__v2__video_translate__video_translate_id___get",
+    "heygen__/v2/video_translate/video_translate_id___GET": {
       "provider_alias_intent": "/v2/video_translate/video_translate_id",
       "provider_proxy_intent": "https://api.heygen.com/v2/video_translate/{video_translate_id}",
       "text": "Check Translation Status",
@@ -790,10 +770,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:24:12.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__webhook__endpoint-list___get": {
-      "provider_intent": "heygen__v1__webhook__endpoint-list___get",
+    "heygen__/v1/webhook/endpoint.list___GET": {
       "provider_alias_intent": "/v1/webhook/endpoint.list",
       "provider_proxy_intent": "https://api.heygen.com/v1/webhook/endpoint.list",
       "text": "List Webhook Endpoints",
@@ -846,10 +825,9 @@
           }
         ]
       },
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__video__generate___post": {
-      "provider_intent": "heygen__v2__video__generate___post",
+    "heygen__/v2/video/generate___POST": {
       "provider_alias_intent": "/v2/video/generate",
       "provider_proxy_intent": "/v2/video/generate",
       "text": "Create Avatar Video (V2)",
@@ -905,10 +883,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-13T14:48:08.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__video.webm___post": {
-      "provider_intent": "heygen__v1__video.webm___post",
+    "heygen__/v1/video.webm___POST": {
       "provider_alias_intent": "/v1/video.webm",
       "provider_proxy_intent": "/v1/video.webm",
       "text": "Create a WebM Video",
@@ -957,10 +934,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-03-03T17:15:05.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__photo__generate___post": {
-      "provider_intent": "heygen__v2__photo_avatar__photo__generate___post",
+    "heygen__/v2/photo_avatar/photo/generate___POST": {
       "provider_alias_intent": "/v2/photo_avatar/photo/generate",
       "provider_proxy_intent": "/v2/photo_avatar/photo/generate",
       "text": "Generate photo avatar photos",
@@ -1024,10 +1000,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-03-03T17:05:10.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__template__template_id__generate___post": {
-      "provider_intent": "heygen__v2__template__template_id__generate___post",
+    "heygen__/v2/template/template_id/generate___POST": {
       "provider_alias_intent": "/v2/template/template_id/generate",
       "provider_proxy_intent": "/v2/template/{template_id}/generate",
       "text": "Generate Video from Template",
@@ -1094,10 +1069,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-13T18:04:56.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__video_translate__target_languages___get": {
-      "provider_intent": "heygen__v2__video_translate__target_languages___get",
+    "heygen__/v2/video_translate/target_languages___GET": {
       "provider_alias_intent": "/v2/video_translate/target_languages",
       "provider_proxy_intent": "/v2/video_translate/target_languages",
       "text": "List Supported Languages",
@@ -1125,10 +1099,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-03-03T15:29:23.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__video_translate___post": {
-      "provider_intent": "heygen__v2__video_translate___post",
+    "heygen__/v2/video_translate___POST": {
       "provider_alias_intent": "/v2/video_translate",
       "provider_proxy_intent": "/v2/video_translate",
       "text": "Translate Video",
@@ -1193,10 +1166,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-13T18:23:59.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming.new___post": {
-      "provider_intent": "heygen__v1__streaming.new___post",
+    "heygen__/v1/streaming.new___POST": {
       "provider_alias_intent": "/v1/streaming.new",
       "provider_proxy_intent": "/v1/streaming.new",
       "text": "New Session",
@@ -1253,10 +1225,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-13T18:42:48.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming.start___post": {
-      "provider_intent": "heygen__v1__streaming.start___post",
+    "heygen__/v1/streaming.start___POST": {
       "provider_alias_intent": "/v1/streaming.start",
       "provider_proxy_intent": "/v1/streaming.start",
       "text": "Start Session",
@@ -1296,10 +1267,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:23:47.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming.task___post": {
-      "provider_intent": "heygen__v1__streaming.task___post",
+    "heygen__/v1/streaming.task___POST": {
       "provider_alias_intent": "/v1/streaming.task",
       "provider_proxy_intent": "/v1/streaming.task",
       "text": "Send Task",
@@ -1340,10 +1310,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:34:56.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming.stop___post": {
-      "provider_intent": "heygen__v1__streaming.stop___post",
+    "heygen__/v1/streaming.stop___POST": {
       "provider_alias_intent": "/v1/streaming.stop",
       "provider_proxy_intent": "/v1/streaming.stop",
       "text": "Close Session",
@@ -1371,10 +1340,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:37:47.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__streaming.interrupt___post": {
-      "provider_intent": "heygen__v1__streaming.interrupt___post",
+    "heygen__/v1/streaming.interrupt___POST": {
       "provider_alias_intent": "/v1/streaming.interrupt",
       "provider_proxy_intent": "/v1/streaming.interrupt",
       "text": "Interrupt Task",
@@ -1402,10 +1370,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:40:26.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__avatar_group__create___post": {
-      "provider_intent": "heygen__v2__photo_avatar__avatar_group__create___post",
+    "heygen__/v2/photo_avatar/avatar_group/create___POST": {
       "provider_alias_intent": "/v2/photo_avatar/avatar_group/create",
       "provider_proxy_intent": "/v2/photo_avatar/avatar_group/create",
       "text": "Create photo avatar group",
@@ -1444,10 +1411,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:51:16.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__avatar_group__add___post": {
-      "provider_intent": "heygen__v2__photo_avatar__avatar_group__add___post",
+    "heygen__/v2/photo_avatar/avatar_group/add___POST": {
       "provider_alias_intent": "/v2/photo_avatar/avatar_group/add",
       "provider_proxy_intent": "/v2/photo_avatar/avatar_group/add",
       "text": "Add looks to photo avatar group",
@@ -1487,10 +1453,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:55:43.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__train___post": {
-      "provider_intent": "heygen__v2__photo_avatar__train___post",
+    "heygen__/v2/photo_avatar/train___POST": {
       "provider_alias_intent": "/v2/photo_avatar/train",
       "provider_proxy_intent": "/v2/photo_avatar/train",
       "text": "Train photo avatar group",
@@ -1518,10 +1483,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T05:57:37.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__look__generate___post": {
-      "provider_intent": "heygen__v2__photo_avatar__look__generate___post",
+    "heygen__/v2/photo_avatar/look/generate___POST": {
       "provider_alias_intent": "/v2/photo_avatar/look/generate",
       "provider_proxy_intent": "/v2/photo_avatar/look/generate",
       "text": "Generate photo avatar looks",
@@ -1570,10 +1534,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-03-03T15:04:13.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__add_motion___post": {
-      "provider_intent": "heygen__v2__photo_avatar__add_motion___post",
+    "heygen__/v2/photo_avatar/add_motion___POST": {
       "provider_alias_intent": "/v2/photo_avatar/add_motion",
       "provider_proxy_intent": "/v2/photo_avatar/add_motion",
       "text": "Add motion",
@@ -1601,10 +1564,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:12:49.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__add_sound_effect___post": {
-      "provider_intent": "heygen__v2__photo_avatar__add_sound_effect___post",
+    "heygen__/v2/photo_avatar/add_sound_effect___POST": {
       "provider_alias_intent": "/v2/photo_avatar/add_sound_effect",
       "provider_proxy_intent": "/v2/photo_avatar/add_sound_effect",
       "text": "Add sound effect",
@@ -1632,10 +1594,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:14:54.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v2__photo_avatar__upscale___post": {
-      "provider_intent": "heygen__v2__photo_avatar__upscale___post",
+    "heygen__/v2/photo_avatar/upscale___POST": {
       "provider_alias_intent": "/v2/photo_avatar/upscale",
       "provider_proxy_intent": "/v2/photo_avatar/upscale",
       "text": "Upscale an avatar",
@@ -1663,10 +1624,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:17:24.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygenhttps____upload.heygen.com__v1__asset___post": {
-      "provider_intent": "heygenhttps____upload.heygen.com__v1__asset___post",
+    "heygen__https//upload.heygen.com/v1/asset___POST": {
       "provider_alias_intent": "https//upload.heygen.com/v1/asset",
       "provider_proxy_intent": "https://upload.heygen.com/v1/asset",
       "text": "Upload Asset",
@@ -1694,10 +1654,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-03-03T15:28:44.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__webhook__endpoint.add___post": {
-      "provider_intent": "heygen__v1__webhook__endpoint.add___post",
+    "heygen__/v1/webhook/endpoint.add___POST": {
       "provider_alias_intent": "/v1/webhook/endpoint.add",
       "provider_proxy_intent": "/v1/webhook/endpoint.add",
       "text": "Add a Webhook Endpoint",
@@ -1733,10 +1692,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:33:08.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__webhook__endpoint.update___patch": {
-      "provider_intent": "heygen__v1__webhook__endpoint.update___patch",
+    "heygen__/v1/webhook/endpoint.update___PATCH": {
       "provider_alias_intent": "/v1/webhook/endpoint.update",
       "provider_proxy_intent": "/v1/webhook/endpoint.update",
       "text": "Update a Webhook Endpoint",
@@ -1772,10 +1730,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:36:21.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__webhook__endpoint.delete___delete": {
-      "provider_intent": "heygen__v1__webhook__endpoint.delete___delete",
+    "heygen__/v1/webhook/endpoint.delete___DELETE": {
       "provider_alias_intent": "/v1/webhook/endpoint.delete",
       "provider_proxy_intent": "/v1/webhook/endpoint.delete",
       "text": "Delete a Webhook Endpoint",
@@ -1803,10 +1760,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:53:05.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__folders___get": {
-      "provider_intent": "heygen__v1__folders___get",
+    "heygen__/v1/folders___GET": {
       "provider_alias_intent": "/v1/folders",
       "provider_proxy_intent": "/v1/folders",
       "text": "List Folders",
@@ -1850,10 +1806,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T06:58:15.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__folders__create___post": {
-      "provider_intent": "heygen__v1__folders__create___post",
+    "heygen__/v1/folders/create___POST": {
       "provider_alias_intent": "/v1/folders/create",
       "provider_proxy_intent": "/v1/folders/create",
       "text": "Create Folder",
@@ -1889,10 +1844,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T07:01:31.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__folders__folder_id___post": {
-      "provider_intent": "heygen__v1__folders__folder_id___post",
+    "heygen__/v1/folders/folder_id___POST": {
       "provider_alias_intent": "/v1/folders/folder_id",
       "provider_proxy_intent": "/v1/folders/{folder_id}",
       "text": "Update Folder (Rename Only)",
@@ -1926,10 +1880,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T07:04:30.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__folders__folder_id__trash___post": {
-      "provider_intent": "heygen__v1__folders__folder_id__trash___post",
+    "heygen__/v1/folders/folder_id/trash___POST": {
       "provider_alias_intent": "/v1/folders/folder_id/trash",
       "provider_proxy_intent": "/v1/folders/{folder_id}/trash",
       "text": "Trash Folder",
@@ -1958,10 +1911,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T07:06:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     },
-    "heygen__v1__folders__folder_id__restore___post": {
-      "provider_intent": "heygen__v1__folders__folder_id__restore___post",
+    "heygen__/v1/folders/folder_id/restore___POST": {
       "provider_alias_intent": "/v1/folders/folder_id/restore",
       "provider_proxy_intent": "/v1/folders/{folder_id}/restore",
       "text": "Restore Folder",
@@ -1990,7 +1942,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-14T07:08:00.000Z"
+      "updated_at": "2025-11-11T12:00:08.431Z"
     }
   }
 }

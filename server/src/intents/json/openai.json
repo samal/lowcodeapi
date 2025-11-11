@@ -1,5 +1,5 @@
 {
-  "config":   {
+  "config": {
     "id": "openai",
     "name": "OpenAI",
     "description": "",
@@ -34,8 +34,7 @@
     "credential_link": "https://platform.openai.com/account/api-keys"
   },
   "routes": {
-    "openai__v1__chat__completions___post": {
-      "provider_intent": "openai__v1__chat__completions___post",
+    "openai__/v1/chat/completions___POST": {
       "provider_alias_intent": "/v1/chat/completions",
       "text": "Create chat completion",
       "category": "Chat",
@@ -162,13 +161,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__audio__transcriptions___post": {
-      "provider_intent": "openai__v1__audio__transcriptions___post",
+    "openai__/v1/audio/transcriptions___POST": {
       "provider_alias_intent": "/v1/audio/transcriptions",
       "text": "Create transcription",
       "category": "Audio",
@@ -237,13 +233,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__audio__translations___post": {
-      "provider_intent": "openai__v1__audio__translations___post",
+    "openai__/v1/audio/translations___POST": {
       "provider_alias_intent": "/v1/audio/translations",
       "text": "Create translation",
       "category": "Audio",
@@ -300,13 +293,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__images__generations___post": {
-      "provider_intent": "openai__v1__images__generations___post",
+    "openai__/v1/images/generations___POST": {
       "provider_alias_intent": "/v1/images/generations",
       "text": "Create image",
       "category": "Images",
@@ -368,13 +358,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__images__edits___post": {
-      "provider_intent": "openai__v1__images__edits___post",
+    "openai__/v1/images/edits___POST": {
       "provider_alias_intent": "/v1/images/edits",
       "text": "Create image edit",
       "category": "Images",
@@ -437,13 +424,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__images__variations___post": {
-      "provider_intent": "openai__v1__images__variations___post",
+    "openai__/v1/images/variations___POST": {
       "provider_alias_intent": "/v1/images/variations",
       "text": "Create image variations",
       "category": "Images",
@@ -497,13 +481,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__assistants___post": {
-      "provider_intent": "openai__v1__assistants___post",
+    "openai__/v1/assistants___POST": {
       "provider_alias_intent": "/v1/assistants",
       "text": "Create assistant",
       "category": "Assistants",
@@ -574,13 +555,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__assistants__assistant_id___get": {
-      "provider_intent": "openai__v1__assistants__assistant_id___get",
+    "openai__/v1/assistants/assistant_id___GET": {
       "provider_alias_intent": "/v1/assistants/assistant_id",
       "text": "Retrieve assistant",
       "category": "Assistants",
@@ -621,13 +599,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__assistants__assistant_id___post": {
-      "provider_intent": "openai__v1__assistants__assistant_id___post",
+    "openai__/v1/assistants/assistant_id___POST": {
       "provider_alias_intent": "/v1/assistants/assistant_id",
       "text": "Modify assistant",
       "category": "Assistants",
@@ -709,13 +684,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__assistants__assistant_id___delete": {
-      "provider_intent": "openai__v1__assistants__assistant_id___delete",
+    "openai__/v1/assistants/assistant_id___DELETE": {
       "provider_alias_intent": "/v1/assistants/assistant_id",
       "text": "Delete assistant",
       "category": "Assistants",
@@ -756,13 +728,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__assistants___get": {
-      "provider_intent": "openai__v1__assistants___get",
+    "openai__/v1/assistants___GET": {
       "provider_alias_intent": "/v1/assistants",
       "text": "List assistants",
       "category": "Assistants",
@@ -808,13 +777,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__audio__speech___post": {
-      "provider_intent": "openai__v1__audio__speech___post",
+    "openai__/v1/audio/speech___POST": {
       "provider_alias_intent": "/v1/audio/speech",
       "text": "Create speech",
       "category": "Audio",
@@ -865,13 +831,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.844Z"
     },
-    "openai__v1__embeddings___post": {
-      "provider_intent": "openai__v1__embeddings___post",
+    "openai__/v1/embeddings___POST": {
       "provider_alias_intent": "/v1/embeddings",
       "text": "Create embeddings",
       "category": "Embeddings",
@@ -920,13 +883,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__files___get": {
-      "provider_intent": "openai__v1__files___get",
+    "openai__/v1/files___GET": {
       "provider_alias_intent": "/v1/files",
       "text": "List Files",
       "category": "Files",
@@ -958,13 +918,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__files___post": {
-      "provider_intent": "openai__v1__files___post",
+    "openai__/v1/files___POST": {
       "provider_alias_intent": "/v1/files",
       "text": "Upload files",
       "category": "Files",
@@ -1002,13 +959,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__files__file_id___delete": {
-      "provider_intent": "openai__v1__files__file_id___delete",
+    "openai__/v1/files/file_id___DELETE": {
       "provider_alias_intent": "/v1/files/file_id",
       "text": "Delete files",
       "category": "Files",
@@ -1047,13 +1001,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__files__file_id___get": {
-      "provider_intent": "openai__v1__files__file_id___get",
+    "openai__/v1/files/file_id___GET": {
       "provider_alias_intent": "/v1/files/file_id",
       "text": "Retrieve files",
       "category": "Files",
@@ -1092,13 +1043,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__files__file_id__content___get": {
-      "provider_intent": "openai__v1__files__file_id__content___get",
+    "openai__/v1/files/file_id/content___GET": {
       "provider_alias_intent": "/v1/files/file_id/content",
       "text": "Retrieve files content",
       "category": "Files",
@@ -1137,13 +1085,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs___post": {
-      "provider_intent": "openai__v1__fine_tuning__jobs___post",
+    "openai__/v1/fine_tuning/jobs___POST": {
       "provider_alias_intent": "/v1/fine_tuning/jobs",
       "text": "Create fine-tuning job",
       "category": "Fine Tunes ",
@@ -1201,13 +1146,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs___get": {
-      "provider_intent": "openai__v1__fine_tuning__jobs___get",
+    "openai__/v1/fine_tuning/jobs___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs",
       "text": "List fine-tuning jobs",
       "category": "Fine Tunes ",
@@ -1243,13 +1185,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs__fine_tuning_job_id__events___get": {
-      "provider_intent": "openai__v1__fine_tuning__jobs__fine_tuning_job_id__events___get",
+    "openai__/v1/fine_tuning/jobs/fine_tuning_job_id/events___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/fine_tuning_job_id/events",
       "text": "List fine-tuning events",
       "category": "Fine Tunes ",
@@ -1296,13 +1235,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs__fine_tuning_job_id__checkpoints___get": {
-      "provider_intent": "openai__v1__fine_tuning__jobs__fine_tuning_job_id__checkpoints___get",
+    "openai__/v1/fine_tuning/jobs/fine_tuning_job_id/checkpoints___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/fine_tuning_job_id/checkpoints",
       "text": "List fine-tuning checkpoints",
       "category": "Fine Tunes ",
@@ -1341,13 +1277,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs__fine_tuning_job_id___get": {
-      "provider_intent": "openai__v1__fine_tuning__jobs__fine_tuning_job_id___get",
+    "openai__/v1/fine_tuning/jobs/fine_tuning_job_id___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/fine_tuning_job_id",
       "text": "Retrieve fine-tuning job",
       "category": "Fine Tunes ",
@@ -1386,13 +1319,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__fine_tuning__jobs__fine_tuning_job_id__cancel___post": {
-      "provider_intent": "openai__v1__fine_tuning__jobs__fine_tuning_job_id__cancel___post",
+    "openai__/v1/fine_tuning/jobs/fine_tuning_job_id/cancel___POST": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/fine_tuning_job_id/cancel",
       "text": "Cancel fine-tuning",
       "category": "Fine Tunes ",
@@ -1431,13 +1361,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__messages___post": {
-      "provider_intent": "openai__v1__threads__thread_id__messages___post",
+    "openai__/v1/threads/thread_id/messages___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/messages",
       "text": "Create message",
       "category": "Messages",
@@ -1495,13 +1422,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__messages__message_id___get": {
-      "provider_intent": "openai__v1__threads__thread_id__messages__message_id___get",
+    "openai__/v1/threads/thread_id/messages/message_id___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/messages/message_id",
       "text": "Retrieve message",
       "category": "Messages",
@@ -1552,13 +1476,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__messages__message_id___post": {
-      "provider_intent": "openai__v1__threads__thread_id__messages__message_id___post",
+    "openai__/v1/threads/thread_id/messages/message_id___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/messages/message_id",
       "text": "Modify message",
       "category": "Messages",
@@ -1614,13 +1535,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__messages___get": {
-      "provider_intent": "openai__v1__threads__thread_id__messages___get",
+    "openai__/v1/threads/thread_id/messages___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/messages",
       "text": "List messages",
       "category": "Messages",
@@ -1681,13 +1599,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__messages__message_id___delete": {
-      "provider_intent": "openai__v1__threads__thread_id__messages__message_id___delete",
+    "openai__/v1/threads/thread_id/messages/message_id___DELETE": {
       "provider_alias_intent": "/v1/threads/thread_id/messages/message_id",
       "text": "Delete message",
       "category": "Messages",
@@ -1738,13 +1653,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__models___get": {
-      "provider_intent": "openai__v1__models___get",
+    "openai__/v1/models___GET": {
       "provider_alias_intent": "/v1/models",
       "text": "List models",
       "category": "Models",
@@ -1771,13 +1683,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__models__model___delete": {
-      "provider_intent": "openai__v1__models__model___delete",
+    "openai__/v1/models/model___DELETE": {
       "provider_alias_intent": "/v1/models/model",
       "text": "Delete fine-tune model",
       "category": "Models",
@@ -1816,13 +1725,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__models__model___get": {
-      "provider_intent": "openai__v1__models__model___get",
+    "openai__/v1/models/model___GET": {
       "provider_alias_intent": "/v1/models/model",
       "text": "Retrieve model",
       "category": "Models",
@@ -1861,13 +1767,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__moderations___post": {
-      "provider_intent": "openai__v1__moderations___post",
+    "openai__/v1/moderations___POST": {
       "provider_alias_intent": "/v1/moderations",
       "text": "Create moderations",
       "category": "Moderations",
@@ -1904,13 +1807,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id__steps__step_id___get": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id__steps__step_id___get",
+    "openai__/v1/threads/thread_id/runs/run_id/steps/step_id___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id/steps/step_id",
       "text": "Retrieve run step",
       "category": "Run steps",
@@ -1971,13 +1871,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id__steps___get": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id__steps___get",
+    "openai__/v1/threads/thread_id/runs/run_id/steps___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id/steps",
       "text": "List run steps",
       "category": "Run steps",
@@ -2044,13 +1941,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs___post": {
-      "provider_intent": "openai__v1__threads__thread_id__runs___post",
+    "openai__/v1/threads/thread_id/runs___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/runs",
       "text": "Create run",
       "category": "Runs",
@@ -2165,13 +2059,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id___get": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id___get",
+    "openai__/v1/threads/thread_id/runs/run_id___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id",
       "text": "Retrieve run",
       "category": "Runs",
@@ -2222,13 +2113,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id___post": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id___post",
+    "openai__/v1/threads/thread_id/runs/run_id___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id",
       "text": "Modify run",
       "category": "Runs",
@@ -2284,13 +2172,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs___get": {
-      "provider_intent": "openai__v1__threads__thread_id__runs___get",
+    "openai__/v1/threads/thread_id/runs___GET": {
       "provider_alias_intent": "/v1/threads/thread_id/runs",
       "text": "List runs",
       "category": "Runs",
@@ -2347,13 +2232,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id__submit_tool_outputs___post": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id__submit_tool_outputs___post",
+    "openai__/v1/threads/thread_id/runs/run_id/submit_tool_outputs___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id/submit_tool_outputs",
       "text": "Submit tool outputs to run",
       "category": "Runs",
@@ -2410,13 +2292,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id__runs__run_id__cancel___post": {
-      "provider_intent": "openai__v1__threads__thread_id__runs__run_id__cancel___post",
+    "openai__/v1/threads/thread_id/runs/run_id/cancel___POST": {
       "provider_alias_intent": "/v1/threads/thread_id/runs/run_id/cancel",
       "text": "Cancel a run",
       "category": "Runs",
@@ -2467,13 +2346,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__runs___post": {
-      "provider_intent": "openai__v1__threads__runs___post",
+    "openai__/v1/threads/runs___POST": {
       "provider_alias_intent": "/v1/threads/runs",
       "text": "Create thread and run",
       "category": "Runs",
@@ -2576,13 +2452,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads___post": {
-      "provider_intent": "openai__v1__threads___post",
+    "openai__/v1/threads___POST": {
       "provider_alias_intent": "/v1/threads",
       "text": "Create thread",
       "category": "Threads",
@@ -2624,13 +2497,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id___get": {
-      "provider_intent": "openai__v1__threads__thread_id___get",
+    "openai__/v1/threads/thread_id___GET": {
       "provider_alias_intent": "/v1/threads/thread_id",
       "text": "Retrieve thread",
       "category": "Threads",
@@ -2671,13 +2541,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id___post": {
-      "provider_intent": "openai__v1__threads__thread_id___post",
+    "openai__/v1/threads/thread_id___POST": {
       "provider_alias_intent": "/v1/threads/thread_id",
       "text": "Modify thread",
       "category": "Threads",
@@ -2727,13 +2594,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     },
-    "openai__v1__threads__thread_id___delete": {
-      "provider_intent": "openai__v1__threads__thread_id___delete",
+    "openai__/v1/threads/thread_id___DELETE": {
       "provider_alias_intent": "/v1/threads/thread_id",
       "text": "Delete thread",
       "category": "Threads",
@@ -2774,10 +2638,8 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.845Z"
     }
   }
 }

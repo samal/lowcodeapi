@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohosprints API",
-    "description": "",
-    "api_base": "/zohosprints",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_checklist_groups": {
-      "provider_intent": "get_checklist_groups",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup",
       "text": "Get checklist groups",
       "category": "Checklist",
@@ -97,13 +86,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_checklist_items": {
-      "provider_intent": "get_checklist_items",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/clgroup/clgroupid/clitem___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/clgroup/clgroupid/clitem",
       "text": "Get checklist items",
       "category": "Checklist",
@@ -198,13 +186,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "change_checklist_item_status": {
-      "provider_intent": "change_checklist_item_status",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem/clitemid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem/clitemid",
       "text": "Change checklist item status",
       "category": "Checklist",
@@ -310,13 +297,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_checklist_group": {
-      "provider_intent": "add_checklist_group",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup",
       "text": "Add checklist group",
       "category": "Checklist",
@@ -402,13 +388,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_checklist_item": {
-      "provider_intent": "add_checklist_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem",
       "text": "Add checklist item",
       "category": "Checklist",
@@ -514,13 +499,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "edit_checklist_group": {
-      "provider_intent": "edit_checklist_group",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid",
       "text": "Edit checklist group",
       "category": "Checklist",
@@ -616,13 +600,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "edit_checklist_item": {
-      "provider_intent": "edit_checklist_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/clgroup/clgroupid/clitem/clitemid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/clgroup/clgroupid/clitem/clitemid",
       "text": "Edit checklist item",
       "category": "Checklist",
@@ -733,13 +716,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_checklist_item": {
-      "provider_intent": "delete_checklist_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem/clitemid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid/clitem/clitemid",
       "text": "Delete checklist item",
       "category": "Checklist",
@@ -834,13 +816,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_checklist_group": {
-      "provider_intent": "delete_checklist_group",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/clgroup/clgroupid",
       "text": "Delete checklist group",
       "category": "Checklist",
@@ -925,13 +906,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "execute_custom_function": {
-      "provider_intent": "execute_custom_function",
+    "zohosprints__/zsapi/team/teamid/customfunction/functionid/execute___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/customfunction/functionid/execute",
       "text": "Execute Custom Function",
       "category": "Custom Functions",
@@ -969,13 +949,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.automation.UPDATE, DRE.dreapi.ALL",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_default_modules": {
-      "provider_intent": "get_default_modules",
+    "zohosprints__/zsapi/team/teamid/settings/customization/modules___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/settings/customization/modules",
       "text": "Get default modules",
       "category": "Custom layouts and fields",
@@ -1014,13 +993,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.settings.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_custom_layouts": {
-      "provider_intent": "get_custom_layouts",
+    "zohosprints__/zsapi/team/teamid/settings/customization/modules/moduleid/layout___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/settings/customization/modules/moduleid/layout",
       "text": "Get custom layouts",
       "category": "Custom layouts and fields",
@@ -1069,13 +1047,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.settings.READ\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_custom_fields": {
-      "provider_intent": "get_custom_fields",
+    "zohosprints__/zsapi/team/teamid/settings/customization/layout/layoutid/fields___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/settings/customization/layout/layoutid/fields",
       "text": "Get custom fields",
       "category": "Custom layouts and fields",
@@ -1114,13 +1091,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.settings.READ\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_epics": {
-      "provider_intent": "get_all_epics",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic",
       "text": "Get all epics",
       "category": "Epic",
@@ -1192,13 +1168,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.READ\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_epic_details": {
-      "provider_intent": "get_epic_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic/epicid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic/epicid",
       "text": "Get epic details",
       "category": "Epic",
@@ -1268,13 +1243,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_associated_sprints": {
-      "provider_intent": "get_associated_sprints",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic/epicid/sprints___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic/epicid/sprints",
       "text": "Get associated sprints",
       "category": "Epic",
@@ -1349,13 +1323,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_associated_items": {
-      "provider_intent": "get_associated_items",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic/epicid/item___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic/epicid/item",
       "text": "Get associated items",
       "category": "Epic",
@@ -1440,13 +1413,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.READ\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_epic": {
-      "provider_intent": "create_epic",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic",
       "text": "Create epic",
       "category": "Epic",
@@ -1580,13 +1552,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "associate_items_with_epic": {
-      "provider_intent": "associate_items_with_epic",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/associate___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/associate",
       "text": "Associate items with epic",
       "category": "Epic",
@@ -1662,13 +1633,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_epic": {
-      "provider_intent": "update_epic",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic/epicid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic/epicid",
       "text": "Update epic",
       "category": "Epic",
@@ -1810,13 +1780,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_epic": {
-      "provider_intent": "delete_epic",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/epic/epicid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/epic/epicid",
       "text": "Delete epic",
       "category": "Epic",
@@ -1881,13 +1850,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.epic.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_items": {
-      "provider_intent": "get_items",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item",
       "text": "Get items",
       "category": "Items",
@@ -1968,13 +1936,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_details": {
-      "provider_intent": "get_item_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid",
       "text": "Get item details",
       "category": "Items",
@@ -2054,13 +2021,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_activity": {
-      "provider_intent": "get_item_activity",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/activity___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/activity",
       "text": "Get item activity",
       "category": "Items",
@@ -2143,13 +2109,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_multiple_item_details": {
-      "provider_intent": "get_multiple_item_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/item___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/item",
       "text": "Get multiple item details",
       "category": "Items",
@@ -2217,13 +2182,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_subitem_details": {
-      "provider_intent": "get_subitem_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/subitemid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/subitemid",
       "text": "Get subitem details",
       "category": "Items",
@@ -2303,13 +2267,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_comments": {
-      "provider_intent": "get_item_comments",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes",
       "text": "Get item comments",
       "category": "Items",
@@ -2394,13 +2357,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_linked_items": {
-      "provider_intent": "get_linked_items",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem",
       "text": "Get linked items",
       "category": "Items",
@@ -2480,13 +2442,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_timer": {
-      "provider_intent": "get_item_timer",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/timer___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/timer",
       "text": "Get item timer",
       "category": "Items",
@@ -2560,13 +2521,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_tags_associated_with_item": {
-      "provider_intent": "get_tags_associated_with_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/tags___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/tags",
       "text": "Get tags associated with item",
       "category": "Items",
@@ -2646,13 +2606,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_followers": {
-      "provider_intent": "get_item_followers",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/followers___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/followers",
       "text": "Get item followers",
       "category": "Items",
@@ -2732,13 +2691,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_reminder": {
-      "provider_intent": "get_item_reminder",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder",
       "text": "Get item reminder",
       "category": "Items",
@@ -2818,13 +2776,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_item\r\n": {
-      "provider_intent": "create_item\r\n",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item",
       "text": "Create item",
       "category": "Items",
@@ -2993,13 +2950,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_subitem": {
-      "provider_intent": "create_subitem",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/subitem___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/subitem",
       "text": "Create subitem",
       "category": "Items",
@@ -3178,13 +3134,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_item_attachments": {
-      "provider_intent": "add_item_attachments",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/attachments___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/attachments",
       "text": "Add item attachments",
       "category": "Items",
@@ -3270,13 +3225,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.CREATE\r",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_item_comment": {
-      "provider_intent": "add_item_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes",
       "text": "Add item comment",
       "category": "Items",
@@ -3357,13 +3311,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_item_reminder": {
-      "provider_intent": "add_item_reminder",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/reminder___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/reminder",
       "text": "Add item reminder",
       "category": "Items",
@@ -3444,211 +3397,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "clone_item": {
-      "provider_intent": "clone_item",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid",
-      "text": "Clone item",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "action": {
-          "type": "string",
-          "text": "Set value as clone",
-          "required": true
-        },
-        "needclitems": {
-          "type": "boolean",
-          "text": "Set value as true to clone checklists in an item"
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Clone a specific item",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{backlogId|sprintId}/item/{itemId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Cloneitem"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.CREATE",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "link_items": {
-      "provider_intent": "link_items",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem",
-      "text": "Link items",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "action": {
-          "type": "string",
-          "text": "Set value as linkitems",
-          "required": true
-        },
-        "linkitemobj": {
-          "type": "object",
-          "text": "Parameters that are rendered in the standard format (JSON, XML, etc. or name = value)",
-          "required": true
-        },
-        "linktosprintid": {
-          "type": "number",
-          "text": "Sprint ID of the items to link",
-          "required": true
-        },
-        "linktoprojectid": {
-          "type": "number",
-          "text": "Project ID of the items to link",
-          "required": true
-        },
-        "linktypeid": {
-          "type": "number",
-          "text": "ID specific to your link type",
-          "required": true
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Link work items with similar set of goals using the default or custom link types",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{backlogId|sprintId}/item/{itemId}/linkitem",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Linkitems"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.CREATE",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "update_item": {
-      "provider_intent": "update_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid",
       "text": "Update item",
       "category": "Items",
@@ -3824,389 +3578,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_item_comment": {
-      "provider_intent": "update_item_comment",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid",
-      "text": "Update item comment",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        },
-        "notesId": {
-          "type": "string",
-          "text": "Notes ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "name": {
-          "type": "string",
-          "text": "Modified item comment"
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprint_or_backlog_id": {
-          "type": "string",
-          "text": "Sprint or backlog ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        },
-        "notesId": {
-          "type": "string",
-          "text": "Notes ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Modify an item comment",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{backlogId|sprintId}/item/{itemId}/notes/{notesId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemcomment"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.UPDATE",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "update_item_status": {
-      "provider_intent": "update_item_status",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid",
-      "text": "Update item status",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintid": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "action": {
-          "type": "string",
-          "text": "Set value as updatestatus",
-          "required": true
-        },
-        "statusid": {
-          "type": "number",
-          "text": "The ID of the status to which the item has to be moved",
-          "required": true
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintid": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Update the status of a specific item",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/item/{itemId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemstatus"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.UPDATE",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "update_item_reminder": {
-      "provider_intent": "update_item_reminder",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder/reminderid",
-      "text": "Update item reminder",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintid": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        },
-        "reminderId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "itemreminder": {
-          "type": "object",
-          "text": "Parameters that are rendered in the standard format (JSON, XML, etc. or name = value)",
-          "required": true
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintid": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        },
-        "itemId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        },
-        "reminderId": {
-          "type": "string",
-          "text": "Item ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Update the reminder set for an item",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/item/{itemId}/reminder/{reminderId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder/reminderid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemreminder"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.UPDATE\r\n",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "move_item": {
-      "provider_intent": "move_item",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/bulkupdate",
-      "text": "Move item",
-      "category": "Items",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintId": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "action": {
-          "type": "string",
-          "text": "Set value as moveitem",
-          "required": true
-        },
-        "itemidarr": {
-          "type": "array",
-          "text": "IDs of the work items that have to be moved",
-          "required": true
-        },
-        "tosprintid": {
-          "type": "number",
-          "text": "ID of the sprint to which the items have to be moved",
-          "required": true
-        },
-        "toprojectid": {
-          "type": "number",
-          "text": "ID of the project in which the destination sprint is present"
-        }
-      },
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "sprintId": {
-          "type": "string",
-          "text": "Sprint ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Move one or more items across projects",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/bulkupdate",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/bulkupdate",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Moveitem"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.items.UPDATE",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "update_items_linked": {
-      "provider_intent": "update_items_linked",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem",
       "text": "Update items linked",
       "category": "Items",
@@ -4315,13 +3692,384 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "associate_or_update_item_tag": {
-      "provider_intent": "associate_or_update_item_tag",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid___POST": {
+      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid",
+      "text": "Update item comment",
+      "category": "Items",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprint_or_backlog_id": {
+          "type": "string",
+          "text": "Sprint or backlog ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        },
+        "notesId": {
+          "type": "string",
+          "text": "Notes ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Modified item comment"
+        }
+      },
+      "path": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprint_or_backlog_id": {
+          "type": "string",
+          "text": "Sprint or backlog ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        },
+        "notesId": {
+          "type": "string",
+          "text": "Notes ID",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string",
+          "replace_key": "{endpoint}"
+        }
+      },
+      "meta": {
+        "version": "{}",
+        "auth": [],
+        "description": "Modify an item comment",
+        "rate_limit": [],
+        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{backlogId|sprintId}/item/{itemId}/notes/{notesId}",
+        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid",
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemcomment"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Zoho-oauthtoken",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "scope": "ZohoSprints.items.UPDATE",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
+    },
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid___POST": {
+      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid",
+      "text": "Update item status",
+      "category": "Items",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintid": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "action": {
+          "type": "string",
+          "text": "Set value as updatestatus",
+          "required": true
+        },
+        "statusid": {
+          "type": "number",
+          "text": "The ID of the status to which the item has to be moved",
+          "required": true
+        }
+      },
+      "path": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintid": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string",
+          "replace_key": "{endpoint}"
+        }
+      },
+      "meta": {
+        "version": "{}",
+        "auth": [],
+        "description": "Update the status of a specific item",
+        "rate_limit": [],
+        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/item/{itemId}",
+        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid",
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemstatus"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Zoho-oauthtoken",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "scope": "ZohoSprints.items.UPDATE",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
+    },
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder/reminderid___POST": {
+      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder/reminderid",
+      "text": "Update item reminder",
+      "category": "Items",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintid": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        },
+        "reminderId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "itemreminder": {
+          "type": "object",
+          "text": "Parameters that are rendered in the standard format (JSON, XML, etc. or name = value)",
+          "required": true
+        }
+      },
+      "path": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintid": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        },
+        "itemId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        },
+        "reminderId": {
+          "type": "string",
+          "text": "Item ID",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string",
+          "replace_key": "{endpoint}"
+        }
+      },
+      "meta": {
+        "version": "{}",
+        "auth": [],
+        "description": "Update the reminder set for an item",
+        "rate_limit": [],
+        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/item/{itemId}/reminder/{reminderId}",
+        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/reminder/reminderid",
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Updateitemreminder"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Zoho-oauthtoken",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "scope": "ZohoSprints.items.UPDATE\r\n",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
+    },
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/bulkupdate___POST": {
+      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/bulkupdate",
+      "text": "Move item",
+      "category": "Items",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintId": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "action": {
+          "type": "string",
+          "text": "Set value as moveitem",
+          "required": true
+        },
+        "itemidarr": {
+          "type": "array",
+          "text": "IDs of the work items that have to be moved",
+          "required": true
+        },
+        "tosprintid": {
+          "type": "number",
+          "text": "ID of the sprint to which the items have to be moved",
+          "required": true
+        },
+        "toprojectid": {
+          "type": "number",
+          "text": "ID of the project in which the destination sprint is present"
+        }
+      },
+      "path": {
+        "teamId": {
+          "type": "string",
+          "text": "Team ID",
+          "required": true
+        },
+        "projectId": {
+          "type": "string",
+          "text": "Project ID",
+          "required": true
+        },
+        "sprintId": {
+          "type": "string",
+          "text": "Sprint ID",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string",
+          "replace_key": "{endpoint}"
+        }
+      },
+      "meta": {
+        "version": "{}",
+        "auth": [],
+        "description": "Move one or more items across projects",
+        "rate_limit": [],
+        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/bulkupdate",
+        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/bulkupdate",
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Moveitem"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Zoho-oauthtoken",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "scope": "ZohoSprints.items.UPDATE",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
+    },
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/tags___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/tags",
       "text": "Associate or update item tag",
       "category": "Items",
@@ -4411,13 +4159,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_or_remove_item_followers": {
-      "provider_intent": "add_or_remove_item_followers",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/followers___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/followers",
       "text": "Add or remove item followers",
       "category": "Items",
@@ -4506,13 +4253,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_item": {
-      "provider_intent": "delete_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid",
       "text": "Delete item",
       "category": "Items",
@@ -4587,13 +4333,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_item_attachment": {
-      "provider_intent": "delete_item_attachment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/attachment___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/attachment",
       "text": "Delete item attachment",
       "category": "Items",
@@ -4673,13 +4418,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_item_comment": {
-      "provider_intent": "delete_item_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/notes/notesid",
       "text": "Delete item comment",
       "category": "Items",
@@ -4764,13 +4508,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_item_reminder": {
-      "provider_intent": "delete_item_reminder",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/reminder/reminderid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/reminder/reminderid",
       "text": "Delete item reminder",
       "category": "Items",
@@ -4855,13 +4598,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delink_item": {
-      "provider_intent": "delink_item",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/item/itemid/linkitem",
       "text": "Delink item",
       "category": "Items",
@@ -4954,13 +4696,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.items.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_meetings": {
-      "provider_intent": "get_all_meetings",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/meeting___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/meeting",
       "text": "Get all meetings",
       "category": "Meetings",
@@ -4999,13 +4740,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_sprint_meetings": {
-      "provider_intent": "get_sprint_meetings",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/meeting___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/meeting",
       "text": "Get sprint meetings",
       "category": "Meetings",
@@ -5044,13 +4784,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_meeting_details": {
-      "provider_intent": "get_meeting_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid",
       "text": "Get meeting details",
       "category": "Meetings",
@@ -5083,13 +4822,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_meeting_comments": {
-      "provider_intent": "get_meeting_comments",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes",
       "text": "Get meeting comments",
       "category": "Meetings",
@@ -5131,13 +4869,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_meeting": {
-      "provider_intent": "add_meeting",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting",
       "text": "Add meeting",
       "category": "Meetings",
@@ -5277,13 +5014,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_meeting_comment": {
-      "provider_intent": "add_meeting_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes",
       "text": "Add meeting comment",
       "category": "Meetings",
@@ -5322,13 +5058,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_meeting": {
-      "provider_intent": "update_meeting",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid",
       "text": "Update meeting",
       "category": "Meetings",
@@ -5473,13 +5208,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.UPDATE\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_meeting_comment": {
-      "provider_intent": "update_meeting_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes/notesid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes/notesid",
       "text": "Update meeting comment",
       "category": "Meetings",
@@ -5518,13 +5252,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_meeting": {
-      "provider_intent": "delete_meeting",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid",
       "text": "Delete meeting",
       "category": "Meetings",
@@ -5557,13 +5290,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_meeting_comment": {
-      "provider_intent": "delete_meeting_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes/notesid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/backlogid|sprintid/meeting/meetingid/notes/notesid",
       "text": "Delete meeting comment",
       "category": "Meetings",
@@ -5596,16 +5328,15 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.meetings.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_item_fields": {
-      "provider_intent": "get_item_fields",
+    "zohosprints__/zsapi/team/teamid/projects/projectid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
-      "text": "Get item fields",
-      "category": "Project Settings",
+      "text": "Get project details",
+      "category": "Projects",
       "method": "GET",
       "type": "API",
       "params": {
@@ -5620,9 +5351,9 @@
           "required": true
         },
         "action": {
-          "type": "String",
-          "text": "Set value as itemcfields",
-          "required": true
+          "type": "string",
+          "text": "Set value as details",
+          "required": "true"
         }
       },
       "custom_headers": {},
@@ -5648,11 +5379,11 @@
       "meta": {
         "version": "{}",
         "auth": [],
-        "description": "Fetch the list of item fields associated with specific projects",
+        "description": "Fetch the details of a specific project",
         "rate_limit": [],
         "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}",
         "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getitemfields"
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprojectdetails"
       },
       "auth": {
         "header": {
@@ -5662,145 +5393,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_epic_fields": {
-      "provider_intent": "get_epic_fields",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
-      "text": "Get epic fields",
-      "category": "Project Settings",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "action": {
-          "type": "String",
-          "text": "Set value as epiccfields",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the list of epic fields associated with specific projects",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getepicfields"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.projects.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "get_meeting_fields": {
-      "provider_intent": "get_meeting_fields",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
-      "text": "Get meeting fields",
-      "category": "Project Settings",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "action": {
-          "type": "String",
-          "text": "Set value as meetingcfields",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the list of meeting fields associated with specific projects",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getmeetingfields"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.projects.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "get_item_types": {
-      "provider_intent": "get_item_types",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/itemtype___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/itemtype",
       "text": "Get item types",
       "category": "Project Settings",
@@ -5860,16 +5458,15 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_priority_types": {
-      "provider_intent": "get_priority_types",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/priority___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/priority",
-      "text": "Get priority types",
-      "category": "Project Settings",
+      "text": "Get project priorities",
+      "category": "Projects",
       "method": "GET",
       "type": "API",
       "params": {
@@ -5894,7 +5491,7 @@
         },
         "range": {
           "type": "number",
-          "text": "No. of records that have to be listed"
+          "text": "No of records that have to be listed"
         }
       },
       "custom_headers": {},
@@ -5920,11 +5517,11 @@
       "meta": {
         "version": "{}",
         "auth": [],
-        "description": "Fetch the list of priority types in the specific project",
+        "description": "Fetch the priorities of a specific project",
         "rate_limit": [],
         "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/priority",
         "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/priority",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprioritytypes"
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprojectpriorities"
       },
       "auth": {
         "header": {
@@ -5934,13 +5531,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_project_status": {
-      "provider_intent": "get_project_status",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/itemstatus___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/itemstatus",
       "text": "Get project status",
       "category": "Project Settings",
@@ -6000,13 +5596,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_project_status": {
-      "provider_intent": "create_project_status",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/workflow/workflowid/status___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/workflow/workflowid/status",
       "text": "Create project status",
       "category": "Project Settings",
@@ -6080,13 +5675,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectitemstatus.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_project_status": {
-      "provider_intent": "update_project_status",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/workflow/workflowid/status/statusid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/workflow/workflowid/status/statusid",
       "text": "Update project status",
       "category": "Project Settings",
@@ -6170,13 +5764,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectitemstatus.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_project_status": {
-      "provider_intent": "delete_project_status",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/workflow/workflowid/status/statusid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/workflow/workflowid/status/statusid",
       "text": "Delete project status",
       "category": "Project Settings",
@@ -6251,13 +5844,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectitemstatus.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_projects": {
-      "provider_intent": "get_all_projects",
+    "zohosprints__/zsapi/team/teamid/projects___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects",
       "text": "Get all projects",
       "category": "Projects",
@@ -6321,13 +5913,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_archived_projects": {
-      "provider_intent": "get_archived_projects",
+    "zohosprints__/zsapi/team/teamid/projects/archived___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/archived",
       "text": "Get archived projects",
       "category": "Projects",
@@ -6385,13 +5976,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_project_groups": {
-      "provider_intent": "get_project_groups",
+    "zohosprints__/zsapi/team/teamid/projectgroups___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projectgroups",
       "text": "Get project groups",
       "category": "Projects",
@@ -6441,219 +6031,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectgroups.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_project_backlog": {
-      "provider_intent": "get_project_backlog",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
-      "text": "Get project backlog",
-      "category": "Projects",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "action": {
-          "type": "string",
-          "text": "Set value as getbacklog",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the project backlog of a specfic project",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprojectbacklog"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.projects.READ\r\n",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "get_project_details": {
-      "provider_intent": "get_project_details",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
-      "text": "Get project details",
-      "category": "Projects",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "action": {
-          "type": "string",
-          "text": "Set value as details",
-          "required": "true"
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the details of a specific project",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprojectdetails"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.projects.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "get_project_priorities": {
-      "provider_intent": "get_project_priorities",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/priority",
-      "text": "Get project priorities",
-      "category": "Projects",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        },
-        "action": {
-          "type": "string",
-          "text": "Set value as data",
-          "required": true
-        },
-        "index": {
-          "type": "number",
-          "text": "Index from which the listing has to start"
-        },
-        "range": {
-          "type": "number",
-          "text": "No of records that have to be listed"
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "projectId": {
-          "type": "string",
-          "text": "Project ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the priorities of a specific project",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/priority",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/priority",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getprojectpriorities"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.projects.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "create_project": {
-      "provider_intent": "create_project",
+    "zohosprints__/zsapi/team/teamid/projects___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects",
       "text": "Create project",
       "category": "Projects",
@@ -6789,13 +6172,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_project": {
-      "provider_intent": "update_project",
+    "zohosprints__/zsapi/team/teamid/projects/projectid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
       "text": "Update project",
       "category": "Projects",
@@ -6920,13 +6302,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_project": {
-      "provider_intent": "delete_project",
+    "zohosprints__/zsapi/team/teamid/projects/projectid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid",
       "text": "Delete project",
       "category": "Projects",
@@ -6981,13 +6362,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projects.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_release_stages": {
-      "provider_intent": "get_release_stages",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/releasestatus___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/releasestatus",
       "text": "Get release stages",
       "category": "Release",
@@ -7040,13 +6420,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_releases": {
-      "provider_intent": "get_releases",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release",
       "text": "Get releases",
       "category": "Release",
@@ -7099,13 +6478,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_release_details": {
-      "provider_intent": "get_release_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release/releaseid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release/releaseid",
       "text": "Get release details",
       "category": "Release",
@@ -7144,13 +6522,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_release": {
-      "provider_intent": "create_release",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release",
       "text": "Create release",
       "category": "Release",
@@ -7216,13 +6593,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_release_stage": {
-      "provider_intent": "create_release_stage",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/releasestatus___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/releasestatus",
       "text": "Create release stage",
       "category": "Release",
@@ -7279,13 +6655,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "associate_items_with_release": {
-      "provider_intent": "associate_items_with_release",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release/releaseid/item/associate___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release/releaseid/item/associate",
       "text": "Associate items with release",
       "category": "Release",
@@ -7329,13 +6704,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_release": {
-      "provider_intent": "update_release",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release/releaseid/update___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release/releaseid/update",
       "text": "Update release",
       "category": "Release",
@@ -7401,13 +6775,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_release_stage": {
-      "provider_intent": "update_release_stage",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/releasestatus/releasestatusid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/releasestatus/releasestatusid",
       "text": "Update release stage",
       "category": "Release",
@@ -7455,13 +6828,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_release": {
-      "provider_intent": "delete_release",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/release/releaseid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/release/releaseid",
       "text": "Delete release",
       "category": "Release",
@@ -7494,13 +6866,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_release_stage": {
-      "provider_intent": "delete_release_stage",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/releasestatus/releasestatusid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/releasestatus/releasestatusid",
       "text": "Delete release stage",
       "category": "Release",
@@ -7533,13 +6904,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.release.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_sprints": {
-      "provider_intent": "get_sprints",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints",
       "text": "Get sprints",
       "category": "Sprints",
@@ -7613,13 +6983,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_sprint_details": {
-      "provider_intent": "get_sprint_details",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid",
       "text": "Get sprint details",
       "category": "Sprints",
@@ -7689,13 +7058,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_sprint_comments": {
-      "provider_intent": "get_sprint_comments",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes",
       "text": "Get sprint comments",
       "category": "Sprints",
@@ -7768,13 +7136,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_sprint": {
-      "provider_intent": "create_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints",
       "text": "Create sprint",
       "category": "Sprints",
@@ -7854,13 +7221,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_sprint_comment": {
-      "provider_intent": "add_sprint_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes",
       "text": "Add sprint comment",
       "category": "Sprints",
@@ -7931,13 +7297,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_sprint": {
-      "provider_intent": "update_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid",
       "text": "Update sprint",
       "category": "Sprints",
@@ -8021,13 +7386,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_sprint_comment": {
-      "provider_intent": "update_sprint_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes/notesid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes/notesid",
       "text": "Update sprint comment",
       "category": "Sprints",
@@ -8107,13 +7471,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "start_sprint": {
-      "provider_intent": "start_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/start___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/start",
       "text": "Start sprint",
       "category": "Sprints",
@@ -8178,13 +7541,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "complete_sprint": {
-      "provider_intent": "complete_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/complete___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/complete",
       "text": "Complete sprint",
       "category": "Sprints",
@@ -8254,13 +7616,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "cancel_sprint": {
-      "provider_intent": "cancel_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/cancel___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/cancel",
       "text": "Cancel sprint",
       "category": "Sprints",
@@ -8330,13 +7691,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "replan_sprint": {
-      "provider_intent": "replan_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/replan___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/replan",
       "text": "Replan sprint",
       "category": "Sprints",
@@ -8401,13 +7761,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "reopen_sprint": {
-      "provider_intent": "reopen_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/reopen___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/reopen",
       "text": "Reopen sprint",
       "category": "Sprints",
@@ -8472,13 +7831,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_sprint": {
-      "provider_intent": "delete_sprint",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid",
       "text": "Delete sprint",
       "category": "Sprints",
@@ -8543,13 +7901,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_sprint_comment": {
-      "provider_intent": "delete_sprint_comment",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes/notesid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/notes/notesid",
       "text": "Delete sprint comment",
       "category": "Sprints",
@@ -8624,13 +7981,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_teams": {
-      "provider_intent": "get_all_teams",
+    "zohosprints__/zsapi/teams/___GET": {
       "provider_alias_intent": "/zsapi/teams/",
       "text": "Get all teams",
       "category": "Teams",
@@ -8663,13 +8019,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_team_settings": {
-      "provider_intent": "get_team_settings",
+    "zohosprints__/zsapi/team/teamid/settings___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/settings",
       "text": "Get team settings",
       "category": "Teams",
@@ -8714,13 +8069,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_link_types": {
-      "provider_intent": "get_all_link_types",
+    "zohosprints__/zsapi/team/teamid/linktype___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/linktype",
       "text": "Get all link types",
       "category": "Teams",
@@ -8770,13 +8124,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_all_tags": {
-      "provider_intent": "get_all_tags",
+    "zohosprints__/zsapi/team/teamid/tags___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/tags",
       "text": "Get all tags",
       "category": "Teams",
@@ -8838,13 +8191,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_global_log_hours": {
-      "provider_intent": "get_global_log_hours",
+    "zohosprints__/zsapi/team/teamid/timesheet___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/timesheet",
       "text": "Get global log hours",
       "category": "Teams",
@@ -8918,13 +8270,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_company_holidays": {
-      "provider_intent": "add_company_holidays",
+    "zohosprints__/zsapi/team/teamid/settings/holidays___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/settings/holidays",
       "text": "Add company holidays",
       "category": "Teams",
@@ -8980,13 +8331,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_link_type": {
-      "provider_intent": "add_link_type",
+    "zohosprints__/zsapi/team/teamid/linktype___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/linktype",
       "text": "Add link type",
       "category": "Teams",
@@ -9047,13 +8397,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_custom_tag": {
-      "provider_intent": "add_custom_tag",
+    "zohosprints__/zsapi/team/teamid/tag___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/tag",
       "text": "Add custom tag",
       "category": "Teams",
@@ -9113,13 +8462,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.CREATE\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_link_type": {
-      "provider_intent": "update_link_type",
+    "zohosprints__/zsapi/team/teamid/linktype/linktypeid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/linktype/linktypeid",
       "text": "Update link type",
       "category": "Teams",
@@ -9183,13 +8531,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_custom_tag": {
-      "provider_intent": "update_custom_tag",
+    "zohosprints__/zsapi/team/teamid/tag/tagid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/tag/tagid",
       "text": "Update custom tag",
       "category": "Teams",
@@ -9259,13 +8606,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_link_type": {
-      "provider_intent": "delete_link_type",
+    "zohosprints__/zsapi/team/teamid/linktype/linktypeid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/linktype/linktypeid",
       "text": "Delete link type",
       "category": "Teams",
@@ -9320,13 +8666,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_custom_tag": {
-      "provider_intent": "delete_custom_tag",
+    "zohosprints__/zsapi/team/teamid/tag/tagid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/tag/tagid",
       "text": "Delete custom tag",
       "category": "Teams",
@@ -9381,13 +8726,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teams.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_log_hours": {
-      "provider_intent": "get_log_hours",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/timesheet___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/timesheet",
       "text": "Get log hours",
       "category": "Timesheet",
@@ -9447,13 +8791,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.timesheets.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_log_hours": {
-      "provider_intent": "add_log_hours",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/timesheet___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/item/itemid/timesheet",
       "text": "Add log hours",
       "category": "Timesheet",
@@ -9511,13 +8854,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.timesheets.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_log_hours": {
-      "provider_intent": "update_log_hours",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/item/itemid/timesheet/itemlogid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/item/itemid/timesheet/itemlogid",
       "text": "Update log hours",
       "category": "Timesheet",
@@ -9575,13 +8917,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.timesheets.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "approve_log_hours": {
-      "provider_intent": "approve_log_hours",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/timesheet___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/timesheet",
       "text": "Approve log hours",
       "category": "Timesheet",
@@ -9634,13 +8975,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.timesheets.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_log_hours": {
-      "provider_intent": "delete_log_hours",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/timesheet___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/timesheet",
       "text": "Delete log hours",
       "category": "Timesheet",
@@ -9684,15 +9024,14 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.timesheets.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_team_users": {
-      "provider_intent": "get_team_users",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/users___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/users",
-      "text": "Get team users",
+      "text": "Get sprint users",
       "category": "Users",
       "method": "GET",
       "type": "API",
@@ -9704,8 +9043,7 @@
         },
         "index": {
           "type": "number",
-          "text": "Index from which the listing has to start",
-          "required": true
+          "text": "Index from which the listing has to start"
         },
         "range": {
           "type": "number",
@@ -9728,7 +9066,7 @@
         "rate_limit": [],
         "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/users",
         "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/users",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getteamusers"
+        "api_ref": "https://sprints.zoho.com/apidoc.html#Getsprintusers"
       },
       "auth": {
         "header": {
@@ -9738,13 +9076,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.teamusers.READ",
+      "scope": "ZohoSprints.sprints.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_project_users": {
-      "provider_intent": "get_project_users",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/users___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/users",
       "text": "Get project users",
       "category": "Users",
@@ -9792,66 +9129,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectusers.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_sprint_users": {
-      "provider_intent": "get_sprint_users",
-      "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/users",
-      "text": "Get sprint users",
-      "category": "Users",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "action": {
-          "type": "string",
-          "text": "Set value as data",
-          "required": true
-        },
-        "index": {
-          "type": "number",
-          "text": "Index from which the listing has to start"
-        },
-        "range": {
-          "type": "number",
-          "text": "No. of records that have to be listed"
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch the list of users in a sprint",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/projects/{projectId}/sprints/{sprintId}/users",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/projects/projectid/sprints/sprintid/users",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getsprintusers"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.sprints.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "add_team_users": {
-      "provider_intent": "add_team_users",
+    "zohosprints__/zsapi/team/teamid/users___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/users",
       "text": "Add team users",
       "category": "Users",
@@ -9894,13 +9177,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teamusers.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_project_users": {
-      "provider_intent": "add_project_users",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/users___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/users",
       "text": "Add project users",
       "category": "Users",
@@ -9943,13 +9225,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectusers.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "add_sprint_users": {
-      "provider_intent": "add_sprint_users",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/users___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/users",
       "text": "Add sprint users",
       "category": "Users",
@@ -9998,13 +9279,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_user_role": {
-      "provider_intent": "update_user_role",
+    "zohosprints__/zsapi/team/teamid/users/userid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/users/userid",
       "text": "Update user role",
       "category": "Users",
@@ -10048,13 +9328,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teamusers.UPDATE\r\n",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_team_user": {
-      "provider_intent": "delete_team_user",
+    "zohosprints__/zsapi/team/teamid/users/userid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/users/userid",
       "text": "Delete team user",
       "category": "Users",
@@ -10087,13 +9366,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.teamusers.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_project_user": {
-      "provider_intent": "delete_project_user",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/users/userid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/users/userid",
       "text": "Delete project user",
       "category": "Users",
@@ -10126,13 +9404,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.projectusers.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_sprint_user": {
-      "provider_intent": "delete_sprint_user",
+    "zohosprints__/zsapi/team/teamid/projects/projectid/sprints/sprintid/users/userid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/projects/projectid/sprints/sprintid/users/userid",
       "text": "Delete sprint user",
       "category": "Users",
@@ -10165,74 +9442,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.sprints.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_modules_and_params": {
-      "provider_intent": "get_modules_and_params",
-      "provider_alias_intent": "/zsapi/team/teamid/webhooks",
-      "text": "Get modules and params",
-      "category": "WebHooks",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        },
-        "action": {
-          "type": "string",
-          "text": "Set value as createFormDetails",
-          "required": true
-        },
-        "module": {
-          "type": "number",
-          "text": "Select the module to create a webhook",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "teamId": {
-          "type": "string",
-          "text": "Team ID",
-          "required": true
-        }
-      },
-      "domain_params": {
-        "endpoint": {
-          "type": "string",
-          "replace_key": "{endpoint}"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Fetch all the webhooks associated with a specific module",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/zsapi/team/{teamId}/webhooks",
-        "alias_endpoint": "/zohosprints/zsapi/team/teamid/webhooks",
-        "api_ref": "https://sprints.zoho.com/apidoc.html#Getmodulesandparams"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Zoho-oauthtoken",
-          "authKey": "accessToken"
-        }
-      },
-      "response_type": "",
-      "wip": 0,
-      "scope": "ZohoSprints.webhook.READ",
-      "subdomain": {},
-      "payload_type": ""
-    },
-    "get_webhooks": {
-      "provider_intent": "get_webhooks",
+    "zohosprints__/zsapi/team/teamid/webhooks___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/webhooks",
       "text": "Get webhooks",
       "category": "WebHooks",
@@ -10292,13 +9507,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.webhook.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "get_webhook_details": {
-      "provider_intent": "get_webhook_details",
+    "zohosprints__/zsapi/team/teamid/webhooks/webhookid___GET": {
       "provider_alias_intent": "/zsapi/team/teamid/webhooks/webhookid",
       "text": "Get webhook details",
       "category": "WebHooks",
@@ -10353,13 +9567,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.webhook.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "create_webhook": {
-      "provider_intent": "create_webhook",
+    "zohosprints__/zsapi/team/teamid/webhooks___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/webhooks",
       "text": "Create webhook",
       "category": "WebHooks",
@@ -10450,13 +9663,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.webhook.CREATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "update_webhook": {
-      "provider_intent": "update_webhook",
+    "zohosprints__/zsapi/team/teamid/webhooks/webhookid___POST": {
       "provider_alias_intent": "/zsapi/team/teamid/webhooks/webhookid",
       "text": "Update webhook",
       "category": "WebHooks",
@@ -10557,13 +9769,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.webhook.UPDATE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     },
-    "delete_webhook": {
-      "provider_intent": "delete_webhook",
+    "zohosprints__/zsapi/team/teamid/webhooks/webhookid___DELETE": {
       "provider_alias_intent": "/zsapi/team/teamid/webhooks/webhookid",
       "text": "Delete webhook",
       "category": "WebHooks",
@@ -10618,10 +9829,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSprints.webhook.DELETE",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.132Z"
     }
   }
 }

@@ -54,8 +54,7 @@
     "credential_link": "https://aws.amazon.com/"
   },
   "routes": {
-    "awss3__signed-url___get": {
-      "provider_intent": "awss3__signed-url___get",
+    "awss3__/signed-url___GET": {
       "provider_alias_intent": "/signed-url",
       "text": "Generate signed url for AWS S3",
       "category": "Signed URL",
@@ -118,13 +117,10 @@
           "bucket"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.824Z"
     },
-    "awss3__signed-url__for-fetch___get": {
-      "provider_intent": "awss3__signed-url__for-fetch___get",
+    "awss3__/signed-url/for-fetch___GET": {
       "provider_alias_intent": "/signed-url/for-fetch",
       "text": "Signed url for fetching file object",
       "category": "Signed URL",
@@ -167,13 +163,10 @@
           "bucket"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.825Z"
     },
-    "awss3__signed-url__for-upload___get": {
-      "provider_intent": "awss3__signed-url__for-upload___get",
+    "awss3__/signed-url/for-upload___GET": {
       "provider_alias_intent": "/signed-url/for-upload",
       "text": "Signed url for uploading file object",
       "category": "Signed URL",
@@ -228,10 +221,8 @@
           "bucket"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.825Z"
     }
   }
 }

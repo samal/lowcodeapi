@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Cloudinary API",
-    "description": "",
-    "api_base": "/cloudinary",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_root_folders": {
-      "provider_intent": "get_root_folders",
+    "cloudinary__/v1_1/cloud_name/folders___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/folders",
       "text": "Get root folders",
       "category": "Admin / Folders",
@@ -51,11 +40,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.124Z"
     },
-    "get_subfolders": {
-      "provider_intent": "get_subfolders",
+    "cloudinary__/v1_1/cloud_name/folders/folder___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Get subfolders",
       "category": "Admin / Folders",
@@ -112,11 +100,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.124Z"
     },
-    "create_folder": {
-      "provider_intent": "create_folder",
+    "cloudinary__/v1_1/cloud_name/folders/folder___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Create folder",
       "category": "Admin / Folders",
@@ -165,11 +152,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.124Z"
     },
-    "delete_folder": {
-      "provider_intent": "delete_folder",
+    "cloudinary__/v1_1/cloud_name/folders/folder___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/folders/folder",
       "text": "Delete folder",
       "category": "Admin / Folders",
@@ -218,14 +204,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "list_all_metadata_fields_definitions": {
-      "provider_intent": "list_all_metadata_fields_definitions",
+    "cloudinary__/v1_1/cloud_name/metadata_fields___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
-      "text": "List all metadata fields definitions",
-      "category": "Admin / Metadata fields",
+      "text": "Get metadata field",
+      "category": "Structured metadata / Metadata",
       "method": "GET",
       "type": "API",
       "params": {
@@ -248,7 +233,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "List all metadata fields definitions",
+        "description": "Get metadata field",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields",
@@ -261,14 +246,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_metadata_field_definition_by_external_id": {
-      "provider_intent": "get_metadata_field_definition_by_external_id",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Get metadata field definition by external ID.",
-      "category": "Admin / Metadata fields",
+      "text": "Get a metadata field by external ID",
+      "category": "Structured metadata / Metadata",
       "method": "GET",
       "type": "API",
       "params": {
@@ -301,7 +285,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Get metadata field definition by external ID.",
+        "description": "Get a metadata field by external ID",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
@@ -314,14 +298,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_new_metadata_field_definition": {
-      "provider_intent": "creates_a_new_metadata_field_definition",
+    "cloudinary__/v1_1/cloud_name/metadata_fields___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
-      "text": "Creates a new metadata field definition",
-      "category": "Admin / Metadata fields",
+      "text": "Create a metadata field",
+      "category": "Structured metadata / Metadata",
       "method": "POST",
       "type": "API",
       "params": {
@@ -335,7 +318,7 @@
       "body": {
         "field": {
           "type": "object",
-          "text": "The metadata field to add. For details see Metadata field structure",
+          "text": "The metadata field to add. For details see Metadata field structure.",
           "required": true
         }
       },
@@ -350,7 +333,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Creates a new metadata field definition",
+        "description": "Create a metadata field",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields",
@@ -363,11 +346,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "restore_entries_in_a_metadata_field_datasource": {
-      "provider_intent": "restore_entries_in_a_metadata_field_datasource",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource_restore___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource_restore",
       "text": "Restore entries in a metadata field datasource",
       "category": "Structured metadata / Metadata",
@@ -422,14 +404,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "updates_a_metadata_field_definition_by_external_id": {
-      "provider_intent": "updates_a_metadata_field_definition_by_external_id",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Updates a metadata field definition by external ID",
-      "category": "Admin / Metadata fields",
+      "text": "Update a metadata field by external ID",
+      "category": "Structured metadata / Metadata",
       "method": "PUT",
       "type": "API",
       "params": {
@@ -468,7 +449,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Updates a metadata field definition by external ID",
+        "description": "Update a metadata field by external ID",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
@@ -481,14 +462,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "updates_a_metadata_field_datasource_by_external_id": {
-      "provider_intent": "updates_a_metadata_field_datasource_by_external_id",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
-      "text": "Updates a metadata field datasource by external ID",
-      "category": "Admin / Metadata fields",
+      "text": "Update a metadata field datasource",
+      "category": "Structured metadata / Metadata",
       "method": "PUT",
       "type": "API",
       "params": {
@@ -527,7 +507,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Updates a metadata field datasource by external ID",
+        "description": "Update a metadata field datasource",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id/datasource",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id/datasource",
@@ -540,14 +520,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "deletes_a_metadata_field_by_external_id": {
-      "provider_intent": "deletes_a_metadata_field_by_external_id",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Deletes a metadata field by external ID",
-      "category": "Admin / Metadata fields",
+      "text": "Delete a metadata field by external ID",
+      "category": "Structured metadata / Metadata",
       "method": "DELETE",
       "type": "API",
       "params": {
@@ -558,7 +537,7 @@
         },
         "external_id": {
           "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API)",
+          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
           "required": true
         }
       },
@@ -572,7 +551,7 @@
         },
         "external_id": {
           "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API)",
+          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
           "required": true
         }
       },
@@ -580,7 +559,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Deletes a metadata field by external ID",
+        "description": "Delete a metadata field by external ID",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
@@ -593,14 +572,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "deletes_entries_in_a_metadata_field_datasource_for_a_specified_metadata_field_definition": {
-      "provider_intent": "deletes_entries_in_a_metadata_field_datasource_for_a_specified_metadata_field_definition",
+    "cloudinary__/v1_1/cloud_name/metadata_fields/external_id/datasource___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
-      "text": "Deletes entries in a metadata field datasource for a specified metadata field definition",
-      "category": "Admin / Metadata fields",
+      "text": "Delete entries in a metadata field datasource",
+      "category": "Structured metadata / Metadata",
       "method": "DELETE",
       "type": "API",
       "params": {
@@ -638,7 +616,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Deletes entries in a metadata field datasource for a specified metadata field definition",
+        "description": "Delete entries in a metadata field datasource",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id/datasource",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id/datasource",
@@ -651,14 +629,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "returns_a_index_of_all_metadate_rules": {
-      "provider_intent": "returns_a_index_of_all_metadate_rules",
+    "cloudinary__/v1_1/cloud_name/metadata_rules___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
-      "text": "Returns a index of all metadate rules",
-      "category": "Admin / Metadata rules",
+      "text": "Get metadata rules",
+      "category": "Structured metadata / Conditional metadata rules",
       "method": "GET",
       "type": "API",
       "params": {
@@ -681,7 +658,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Returns a index of all metadate rules",
+        "description": "Get metadata rules",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules",
@@ -694,14 +671,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_new_metadata_rule_definition": {
-      "provider_intent": "creates_a_new_metadata_rule_definition",
+    "cloudinary__/v1_1/cloud_name/metadata_rules___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
-      "text": "Creates a new metadata rule definition",
-      "category": "Admin / Metadata rules",
+      "text": "Create a metadata rule",
+      "category": "Structured metadata / Conditional metadata rules",
       "method": "POST",
       "type": "API",
       "params": {
@@ -719,12 +695,12 @@
           "required": true
         },
         "condition": {
-          "type": "Object",
+          "type": "object",
           "text": "The condition to evaluate. For details see Condition structure.",
           "required": true
         },
         "result": {
-          "type": "Object",
+          "type": "object",
           "text": "The result to apply in the case that the condition is met. For details see Result structure.",
           "required": true
         },
@@ -745,7 +721,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Creates a new metadata rule definition",
+        "description": "Create a metadata rule",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules",
@@ -758,14 +734,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "updates_a_exising_metadata_rule_definition": {
-      "provider_intent": "updates_a_exising_metadata_rule_definition",
+    "cloudinary__/v1_1/cloud_name/metadata_rules/external_id___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
-      "text": "Updates a exising metadata rule definition",
-      "category": "Admin / Metadata rules",
+      "text": "Update a metadata rule by id",
+      "category": "Structured metadata / Conditional metadata rules",
       "method": "PUT",
       "type": "API",
       "params": {
@@ -787,11 +762,11 @@
           "text": "The external_id of the metadata field that this rule applies to."
         },
         "condition": {
-          "type": "Object",
+          "type": "object",
           "text": "The condition to evaluate. For details see Condition structure."
         },
         "result": {
-          "type": "Object",
+          "type": "object",
           "text": "The result to apply in the case that the condition is met. For details see Result structure."
         },
         "name": {
@@ -800,7 +775,7 @@
         },
         "state": {
           "type": "string",
-          "text": "The current status of the rule useful for inactivating a rule without deleting it. Possible values- active or inactive"
+          "text": "The current status of the rule; useful for inactivating a rule without deleting it. Possible values- active or inactive"
         }
       },
       "path": {
@@ -819,7 +794,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Updates a exising metadata rule definition",
+        "description": "Update a metadata rule by id",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules/:external_id",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules/external_id",
@@ -832,14 +807,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "deletes_a_metadata_rule_by_external_id": {
-      "provider_intent": "deletes_a_metadata_rule_by_external_id",
+    "cloudinary__/v1_1/cloud_name/metadata_rules/external_id___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
-      "text": "Deletes a metadata rule by external ID",
-      "category": "Admin / Metadata rules",
+      "text": "Delete a metadata rule by id",
+      "category": "Structured metadata / Conditional metadata rules",
       "method": "DELETE",
       "type": "API",
       "params": {
@@ -872,7 +846,7 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Deletes a metadata rule by external ID",
+        "description": "Delete a metadata rule by id",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules/:external_id",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules/external_id",
@@ -885,11 +859,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "pings_cloudinary_servers": {
-      "provider_intent": "pings_cloudinary_servers",
+    "cloudinary__/v1_1/cloud_name/ping___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/ping",
       "text": "Pings Cloudinary servers",
       "category": "Admin / Ping",
@@ -928,11 +901,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "lists_resources_assets_with_a_specified_tag": {
-      "provider_intent": "lists_resources_assets_with_a_specified_tag",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/tags/tag___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/tags/tag",
       "text": "Lists resources (assets) with a specified tag",
       "category": "Admin / Resources",
@@ -1025,11 +997,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "retrieves_resources_assets_with_a_specified_contextual_metadata_key": {
-      "provider_intent": "retrieves_resources_assets_with_a_specified_contextual_metadata_key",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/context___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/context",
       "text": "Retrieves resources (assets) with a specified contextual metadata key",
       "category": "Admin / Resources",
@@ -1121,11 +1092,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "retrieves_resources_assets_with_a_particular_status_from_a_specified_moderation_type": {
-      "provider_intent": "retrieves_resources_assets_with_a_particular_status_from_a_specified_moderation_type",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/moderations/moderation_kind/status___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/moderations/moderation_kind/status",
       "text": "Retrieves resources (assets) with a particular status from a specified moderation type",
       "category": "Admin / Resources",
@@ -1224,11 +1194,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "return_details_of_the_requested_resource_asset_as_well_as_all_its_derived_assets": {
-      "provider_intent": "return_details_of_the_requested_resource_asset_as_well_as_all_its_derived_assets",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/public_id___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/public_id",
       "text": "Return details of the requested resource (asset) as well as all its derived assets",
       "category": "Admin / Resources",
@@ -1401,14 +1370,13 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "filtering_and_retrieving_information_on_all_the_resources_assets_in_your_product_environment": {
-      "provider_intent": "filtering_and_retrieving_information_on_all_the_resources_assets_in_your_product_environment",
+    "cloudinary__/v1_1/cloud_name/resources/search___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/search",
-      "text": "Filtering and retrieving information on all the resources (assets) in your product environment",
-      "category": "Admin / Resources",
+      "text": "Find the specific assets in your product environment",
+      "category": "Search / Search method",
       "method": "GET",
       "type": "API",
       "params": {
@@ -1455,11 +1423,11 @@
       "meta": {
         "version": "v1_1",
         "auth": [],
-        "description": "Filtering and retrieving information on all the resources (assets) in your product environment",
+        "description": "Find the specific assets in your product environment",
         "rate_limit": [],
         "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/resources/search",
         "alias_endpoint": "/cloudinary/v1_1/cloud_name/resources/search",
-        "api_ref": "https://cloudinary.com/documentation/admin_api#search_for_resources"
+        "api_ref": "https://cloudinary.com/documentation/search_api#search_method"
       },
       "auth": {
         "basicauth": {
@@ -1468,11 +1436,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_one_or_more_of_the_attributes_associated_with_a_specified_resource_asset": {
-      "provider_intent": "update_one_or_more_of_the_attributes_associated_with_a_specified_resource_asset",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/public_id___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/public_id",
       "text": "Update one or more of the attributes associated with a specified resource (asset)",
       "category": "Admin / Resources",
@@ -1618,11 +1585,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "restores_one_or_more_resources_assets_from_backup": {
-      "provider_intent": "restores_one_or_more_resources_assets_from_backup",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/type/restore___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type/restore",
       "text": "Restores one or more resources (assets) from backup",
       "category": "Admin / Resources",
@@ -1687,11 +1653,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "update_the_access_mode_of_resources_assets_by_public_ids,_by_tag,_or_by_prefix": {
-      "provider_intent": "update_the_access_mode_of_resources_assets_by_public_ids,_by_tag,_or_by_prefix",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/upload/update_access_mode___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/upload/update_access_mode",
       "text": "Update the access_mode of resources (assets) by public_id(s), by tag, or by prefix",
       "category": "Admin / Resources",
@@ -1759,11 +1724,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "relates_an_asset_to_other_assets_by_public_ids": {
-      "provider_intent": "relates_an_asset_to_other_assets_by_public_ids",
+    "cloudinary__/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id",
       "text": "Relates an asset to other assets by public IDs",
       "category": "Admin / Resources",
@@ -1838,11 +1802,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "unrelates_related_assets_by_public_ids": {
-      "provider_intent": "unrelates_related_assets_by_public_ids",
+    "cloudinary__/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/related_assets/resource_type/type/public_id",
       "text": "Unrelates related assets by public IDs",
       "category": "Admin / Resources",
@@ -1916,11 +1879,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "deletes_resources_by_public_ids": {
-      "provider_intent": "deletes_resources_by_public_ids",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/type___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/type",
       "text": "Deletes resources by public IDs",
       "category": "Admin / Resources",
@@ -2018,11 +1980,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "deletes_resources_by_tags": {
-      "provider_intent": "deletes_resources_by_tags",
+    "cloudinary__/v1_1/cloud_name/resources/resource_type/tags/tag___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/resources/resource_type/tags/tag",
       "text": "Deletes resources by tags",
       "category": "Admin / Resources",
@@ -2103,11 +2064,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.125Z"
     },
-    "deletes_derived_resources": {
-      "provider_intent": "deletes_derived_resources",
+    "cloudinary__/v1_1/cloud_name/derived_resources___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/derived_resources",
       "text": "Deletes derived resources",
       "category": "Admin / Resources",
@@ -2151,11 +2111,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "lists_the_list_streaming_profiles": {
-      "provider_intent": "lists_the_list_streaming_profiles",
+    "cloudinary__/v1_1/cloud_name/streaming_profiles___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles",
       "text": "Lists the List streaming profiles",
       "category": "Admin / Streaming profiles",
@@ -2194,11 +2153,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "lists_the_details_of_a_single_streaming_profile_by_name": {
-      "provider_intent": "lists_the_details_of_a_single_streaming_profile_by_name",
+    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Lists the details of a single streaming profile by name",
       "category": "Admin / Streaming profiles",
@@ -2247,11 +2205,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_new_streaming_profile": {
-      "provider_intent": "create_a_new_streaming_profile",
+    "cloudinary__/v1_1/cloud_name/streaming_profiles___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles",
       "text": "Create a new streaming profile",
       "category": "Admin / Streaming profiles",
@@ -2310,11 +2267,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_the_specified_existing_streaming_profile": {
-      "provider_intent": "update_the_specified_existing_streaming_profile",
+    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Update the specified existing streaming profile",
       "category": "Admin / Streaming profiles",
@@ -2378,11 +2334,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "deletes_and_reverts_the_specified_streaming_profiles": {
-      "provider_intent": "deletes_and_reverts_the_specified_streaming_profiles",
+    "cloudinary__/v1_1/cloud_name/streaming_profiles/name___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/streaming_profiles/name",
       "text": "Deletes and reverts the specified streaming profiles",
       "category": "Admin / Streaming profiles",
@@ -2431,11 +2386,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "list_tags_used_for_a_specified_resource_type": {
-      "provider_intent": "list_tags_used_for_a_specified_resource_type",
+    "cloudinary__/v1_1/cloud_name/tags___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/tags",
       "text": "List tags used for a specified resource_type",
       "category": "Admin / Tags",
@@ -2490,11 +2444,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "list_all_transformations": {
-      "provider_intent": "list_all_transformations",
+    "cloudinary__/v1_1/cloud_name/transformations___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/transformations",
       "text": "List all transformations",
       "category": "Admin / Transformations",
@@ -2549,11 +2502,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "list_details_of_a_single_transformation_specified_by_names_or_prameters": {
-      "provider_intent": "list_details_of_a_single_transformation_specified_by_names_or_prameters",
+    "cloudinary__/v1_1/cloud_name/transformations/transformation___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "List details of a single transformation specified by names or prameters",
       "category": "Admin / Transformations",
@@ -2610,11 +2562,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_new_named_transformation": {
-      "provider_intent": "create_a_new_named_transformation",
+    "cloudinary__/v1_1/cloud_name/transformations/name___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/name",
       "text": "Create a new named transformation",
       "category": "Admin / Transformations",
@@ -2677,11 +2628,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_a_specific_transformation": {
-      "provider_intent": "update_a_specific_transformation",
+    "cloudinary__/v1_1/cloud_name/transformations/transformation___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "Update a specific transformation",
       "category": "Admin / Transformations",
@@ -2743,11 +2693,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_a_specified_transformation": {
-      "provider_intent": "delete_a_specified_transformation",
+    "cloudinary__/v1_1/cloud_name/transformations/transformation___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/transformations/transformation",
       "text": "Delete a specified transformation",
       "category": "Admin / Transformations",
@@ -2796,11 +2745,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "list_all_upload_mappings_by_folder": {
-      "provider_intent": "list_all_upload_mappings_by_folder",
+    "cloudinary__/v1_1/cloud_name/upload_mappings___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "List all upload mappings by folder",
       "category": "Admin / Upload mappings",
@@ -2847,11 +2795,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "list_the_details_of_single_upload_mapping": {
-      "provider_intent": "list_the_details_of_single_upload_mapping",
+    "cloudinary__/v1_1/cloud_name//upload_mappings/folder___GET": {
       "provider_alias_intent": "/v1_1/cloud_name//upload_mappings/folder",
       "text": "List the details of single upload mapping",
       "category": "Admin / Upload mappings",
@@ -2900,11 +2847,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_new_upload_mapping_folder_and_its_templateurl": {
-      "provider_intent": "create_a_new_upload_mapping_folder_and_its_templateurl",
+    "cloudinary__/v1_1/cloud_name/upload_mappings___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "Create a new upload mapping folder and its template(URL)",
       "category": "Admin / Upload mappings",
@@ -2954,11 +2900,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_an_existing_upload_mapping_folder_with_a_new_template_url": {
-      "provider_intent": "update_an_existing_upload_mapping_folder_with_a_new_template_url",
+    "cloudinary__/v1_1/cloud_name/upload_mappings___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings",
       "text": "Update an existing upload mapping folder with a new template (URL)",
       "category": "Admin / Upload mappings",
@@ -3008,11 +2953,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_an_upload_mapping_by_folder_name": {
-      "provider_intent": "delete_an_upload_mapping_by_folder_name",
+    "cloudinary__/v1_1/cloud_name/upload_mappings/folder___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_mappings/folder",
       "text": "Delete an upload mapping by folder name",
       "category": "Admin / Upload mappings",
@@ -3061,11 +3005,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "lists_the_upload_presets_defined_for_your_product_environment": {
-      "provider_intent": "lists_the_upload_presets_defined_for_your_product_environment",
+    "cloudinary__/v1_1/cloud_name/upload_presets___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets",
       "text": "Lists the upload presets defined for your product environment",
       "category": "Admin / Upload presets",
@@ -3112,11 +3055,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "lists_the_details_of_a_single_upload_preset": {
-      "provider_intent": "lists_the_details_of_a_single_upload_preset",
+    "cloudinary__/v1_1/cloud_name/upload_presets/name___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Lists the details of a single upload preset",
       "category": "Admin / Upload presets",
@@ -3165,11 +3107,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_new_upload_preset": {
-      "provider_intent": "create_a_new_upload_preset",
+    "cloudinary__/v1_1/cloud_name/upload_presets___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets",
       "text": "Create a new upload preset",
       "category": "Admin / Upload presets",
@@ -3257,11 +3198,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_an_existing_upload_preset": {
-      "provider_intent": "update_an_existing_upload_preset",
+    "cloudinary__/v1_1/cloud_name/upload_presets/name___PUT": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Update an existing upload preset",
       "category": "Admin / Upload presets",
@@ -3345,11 +3285,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_an_existing_upload_preset": {
-      "provider_intent": "delete_an_existing_upload_preset",
+    "cloudinary__/v1_1/cloud_name/upload_presets/name___DELETE": {
       "provider_alias_intent": "/v1_1/cloud_name/upload_presets/name",
       "text": "Delete an existing upload preset",
       "category": "Admin / Upload presets",
@@ -3398,11 +3337,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "lists_product_environment_usage_details": {
-      "provider_intent": "lists_product_environment_usage_details",
+    "cloudinary__/v1_1/cloud_name/usage___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/usage",
       "text": "Lists product environment usage details",
       "category": "Admin / Usages",
@@ -3445,11 +3383,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "invalidate_all_caches": {
-      "provider_intent": "invalidate_all_caches",
+    "cloudinary__/v1_1/invalidate___POST": {
       "provider_alias_intent": "/v1_1/invalidate",
       "text": "Invalidate all caches",
       "category": "Media Optimizer / Cache invalidation",
@@ -3482,11 +3419,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "warm_up_the_cache": {
-      "provider_intent": "warm_up_the_cache",
+    "cloudinary__/v1_1/cache_warm_up___POST": {
       "provider_alias_intent": "/v1_1/cache_warm_up",
       "text": "Warm up the cache",
       "category": "Media Optimizer / Cache warmup",
@@ -3523,11 +3459,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_all_domains": {
-      "provider_intent": "get_all_domains",
+    "cloudinary__/v1_1/domains___GET": {
       "provider_alias_intent": "/v1_1/domains",
       "text": "Get all domains",
       "category": "Media Optimizer / Domains",
@@ -3554,11 +3489,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_all_mapping_functions": {
-      "provider_intent": "get_all_mapping_functions",
+    "cloudinary__/v1_1/mapping_functions___GET": {
       "provider_alias_intent": "/v1_1/mapping_functions",
       "text": "Get all mapping functions",
       "category": "Media Optimizer / Mapping functions",
@@ -3585,11 +3519,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_details_of_a_mapping_function": {
-      "provider_intent": "get_details_of_a_mapping_function",
+    "cloudinary__/v1_1/mapping_functions/id___GET": {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Get details of a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3628,11 +3561,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_mapping_function": {
-      "provider_intent": "create_a_mapping_function",
+    "cloudinary__/v1_1/mapping_functions___POST": {
       "provider_alias_intent": "/v1_1/mapping_functions",
       "text": "Create a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3670,11 +3602,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_a_mapping_function": {
-      "provider_intent": "update_a_mapping_function",
+    "cloudinary__/v1_1/mapping_functions/id___PUT": {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Update a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3722,11 +3653,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_a_mapping_function": {
-      "provider_intent": "delete_a_mapping_function",
+    "cloudinary__/v1_1/mapping_functions/id___DELETE": {
       "provider_alias_intent": "/v1_1/mapping_functions/id",
       "text": "Delete a mapping function",
       "category": "Media Optimizer / Mapping functions",
@@ -3765,11 +3695,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_all_media_sources": {
-      "provider_intent": "get_all_media_sources",
+    "cloudinary__/v1_1/media_sources___GET": {
       "provider_alias_intent": "/v1_1/media_sources",
       "text": "Get all media sources",
       "category": "Media Optimizer / Media sources",
@@ -3796,11 +3725,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_details_of_a_media_source": {
-      "provider_intent": "get_details_of_a_media_source",
+    "cloudinary__/v1_1/media_sources/id___GET": {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Get details of a media source",
       "category": "Media Optimizer / Media sources",
@@ -3839,11 +3767,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_media_source": {
-      "provider_intent": "create_a_media_source",
+    "cloudinary__/v1_1/media_sources___POST": {
       "provider_alias_intent": "/v1_1/media_sources",
       "text": "Create a media source",
       "category": "Media Optimizer / Media sources",
@@ -3886,11 +3813,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update__a_media_source": {
-      "provider_intent": "update__a_media_source",
+    "cloudinary__/v1_1/media_sources/id___PUT": {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Update  a media source",
       "category": "Media Optimizer / Media sources",
@@ -3942,11 +3868,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_a_media_source": {
-      "provider_intent": "delete_a_media_source",
+    "cloudinary__/v1_1/media_sources/id___DELETE": {
       "provider_alias_intent": "/v1_1/media_sources/id",
       "text": "Delete a media source",
       "category": "Media Optimizer / Media sources",
@@ -3985,11 +3910,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_optimization_profiles": {
-      "provider_intent": "get_optimization_profiles",
+    "cloudinary__/v1_1/delivery_profiles___GET": {
       "provider_alias_intent": "/v1_1/delivery_profiles",
       "text": "Get optimization profiles",
       "category": "Media Optimizer / Optimization profiles",
@@ -4016,11 +3940,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_optimization_profile_details": {
-      "provider_intent": "get_optimization_profile_details",
+    "cloudinary__/v1_1/delivery_profiles/id___GET": {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Get optimization profile details",
       "category": "Media Optimizer / Optimization profiles",
@@ -4059,11 +3982,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_an_optimization_profile": {
-      "provider_intent": "create_an_optimization_profile",
+    "cloudinary__/v1_1/delivery_profiles___POST": {
       "provider_alias_intent": "/v1_1/delivery_profiles",
       "text": "Create an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4119,11 +4041,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_an_optimization_profile": {
-      "provider_intent": "update_an_optimization_profile",
+    "cloudinary__/v1_1/delivery_profiles/id___PUT": {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Update an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4195,11 +4116,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_an_optimization_profile": {
-      "provider_intent": "delete_an_optimization_profile",
+    "cloudinary__/v1_1/delivery_profiles/id___DELETE": {
       "provider_alias_intent": "/v1_1/delivery_profiles/id",
       "text": "Delete an optimization profile",
       "category": "Media Optimizer / Optimization profiles",
@@ -4238,11 +4158,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "ping_media_optimizer_servers": {
-      "provider_intent": "ping_media_optimizer_servers",
+    "cloudinary__/v1_1/ping___GET": {
       "provider_alias_intent": "/v1_1/ping",
       "text": "Ping Media Optimizer servers",
       "category": "Media Optimizer / Ping",
@@ -4269,11 +4188,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_all_transformations": {
-      "provider_intent": "get_all_transformations",
+    "cloudinary__/v1_1/transformations___GET": {
       "provider_alias_intent": "/v1_1/transformations",
       "text": "Get all transformations",
       "category": "Media Optimizer / Transformations",
@@ -4309,11 +4227,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_details_of_a_transformation": {
-      "provider_intent": "get_details_of_a_transformation",
+    "cloudinary__/v1_1/transformations/transformation_name___GET": {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Get details of a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4352,11 +4269,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_named_transformation": {
-      "provider_intent": "create_a_named_transformation",
+    "cloudinary__/v1_1/transformations/transformation_name___POST": {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Create a named transformation",
       "category": "Media Optimizer / Transformations",
@@ -4405,11 +4321,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_a_transformation": {
-      "provider_intent": "update_a_transformation",
+    "cloudinary__/v1_1/transformations/transformation_name___PUT": {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Update a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4454,11 +4369,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_a_transformation": {
-      "provider_intent": "delete_a_transformation",
+    "cloudinary__/v1_1/transformations/transformation_name___DELETE": {
       "provider_alias_intent": "/v1_1/transformations/transformation_name",
       "text": "Delete a transformation",
       "category": "Media Optimizer / Transformations",
@@ -4497,11 +4411,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_account_usage_details": {
-      "provider_intent": "get_account_usage_details",
+    "cloudinary__/v1_1/usage___GET": {
       "provider_alias_intent": "/v1_1/usage",
       "text": "Get account usage details",
       "category": "Media Optimizer / Usages",
@@ -4533,11 +4446,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_product_environments": {
-      "provider_intent": "get_product_environments",
+    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Get product environments",
       "category": "Provisioning / Product environments",
@@ -4590,11 +4502,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_product_environment": {
-      "provider_intent": "create_product_environment",
+    "cloudinary__/v1_1/accounts/account_id/sub_accounts___POST": {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts",
       "text": "Create product environment",
       "category": "Provisioning / Product environments",
@@ -4655,11 +4566,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_product_environment": {
-      "provider_intent": "update_product_environment",
+    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___PUT": {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Update product environment",
       "category": "Provisioning / Product environments",
@@ -4733,11 +4643,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_product_environment": {
-      "provider_intent": "delete_product_environment",
+    "cloudinary__/v1_1/accounts/account_id/sub_accounts/sub_account_id___DELETE": {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/sub_account_id",
       "text": "Delete product environment",
       "category": "Provisioning / Product environments",
@@ -4790,11 +4699,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_user_groups": {
-      "provider_intent": "get_user_groups",
+    "cloudinary__/v1_1/accounts/account_id/user_groups___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups",
       "text": "Get user groups",
       "category": "Provisioning / User group",
@@ -4837,11 +4745,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_a_user_group": {
-      "provider_intent": "get_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Get a user group",
       "category": "Provisioning / User group",
@@ -4894,11 +4801,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_the_users_in_a_user_group": {
-      "provider_intent": "get_the_users_in_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users",
       "text": "Get the users in a user group",
       "category": "Provisioning / User group",
@@ -4951,11 +4857,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_a_user_group": {
-      "provider_intent": "create_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups___POST": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups",
       "text": "Create a user group",
       "category": "Provisioning / User group",
@@ -5004,11 +4909,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "add_a_user_to_a_group": {
-      "provider_intent": "add_a_user_to_a_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users/user_id___POST": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users/user_id",
       "text": "Add a user to a group",
       "category": "Provisioning / User group",
@@ -5072,11 +4976,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_a_user_group": {
-      "provider_intent": "update_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___PUT": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Update a user group",
       "category": "Provisioning / User group",
@@ -5135,11 +5038,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_a_user_group": {
-      "provider_intent": "delete_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id___DELETE": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id",
       "text": "Delete a user group",
       "category": "Provisioning / User group",
@@ -5192,11 +5094,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "remove_a_user_group": {
-      "provider_intent": "remove_a_user_group",
+    "cloudinary__/v1_1/accounts/account_id/user_groups/group_id/users/user_id___DELETE": {
       "provider_alias_intent": "/v1_1/accounts/account_id/user_groups/group_id/users/user_id",
       "text": "Remove a user group",
       "category": "Provisioning / User group",
@@ -5259,11 +5160,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_users": {
-      "provider_intent": "get_users",
+    "cloudinary__/v1_1/accounts/account_id/users___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/users",
       "text": "Get users",
       "category": "Provisioning / Users",
@@ -5326,11 +5226,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "get_user": {
-      "provider_intent": "get_user",
+    "cloudinary__/v1_1/accounts/account_id/users/user_id___GET": {
       "provider_alias_intent": "/v1_1/accounts/account_id/users/user_id",
       "text": "Get user",
       "category": "Provisioning / Users",
@@ -5383,11 +5282,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "create_user": {
-      "provider_intent": "create_user",
+    "cloudinary__/v1_1/accounts/account_id/users___POST": {
       "provider_alias_intent": "/v1_1/accounts/account_id/users",
       "text": "Create user",
       "category": "Provisioning / Users",
@@ -5458,11 +5356,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "update_user": {
-      "provider_intent": "update_user",
+    "cloudinary__/v1_1/accounts/account_id/sub_accounts/user_id___PUT": {
       "provider_alias_intent": "/v1_1/accounts/account_id/sub_accounts/user_id",
       "text": "Update user",
       "category": "Provisioning / Users",
@@ -5540,11 +5437,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "delete_user": {
-      "provider_intent": "delete_user",
+    "cloudinary__/v1_1/accounts/account_id/users/user_id___DELETE": {
       "provider_alias_intent": "/v1_1/accounts/account_id/users/user_id",
       "text": "Delete user",
       "category": "Provisioning / Users",
@@ -5597,686 +5493,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "find_the_specific_assets_in_your_product_environment": {
-      "provider_intent": "find_the_specific_assets_in_your_product_environment",
-      "provider_alias_intent": "/v1_1/cloud_name/resources/search",
-      "text": "Find the specific assets in your product environment",
-      "category": "Search / Search method",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "expression": {
-          "type": "string",
-          "text": "The (Lucene-like) string expression specifying the search query. If this parameter is not provided then all resources are listed (up to max_results). For details; see the expressions documentation."
-        },
-        "sort_by": {
-          "type": "array",
-          "text": "An array of string values representing a key value pair; where the key is the field to sort by and the value is the direction. Valid sort directions are asc or desc. If this parameter is not provided then the results are sorted by descending creation date. You can specify more than one sort_by parameter; results will be sorted according to the order of the fields provided.\r\nNote- you can also sort the results by relevance if you set the key to score and give a sort direction as the value. Results are considered more relevant if the search term appears in multiple fields or in a more prominent field (e.g.; the public ID field)."
-        },
-        "max_results": {
-          "type": "number",
-          "text": "Maximum number of assets to return (maximum=500). Default- 10."
-        },
-        "next_cursor": {
-          "type": "string",
-          "text": "When a request has more results to return than max_results; the next_cursor value is returned as part of the response. You can then specify this value as the next_cursor parameter of the following request."
-        },
-        "with_field": {
-          "type": "string",
-          "text": "The name of an additional asset attribute to include for each asset in the response. You can specify more than one with_field parameter. Possible value- context; tags; and for Tier 2 also metadata; image_metadata; and image_analysis."
-        },
-        "aggregate": {
-          "type": "string",
-          "text": "(Tier 2 only) The name of a field (attribute) for which an aggregation count should be calculated and returned in the response. You can specify more than one aggregate parameter. Supported values- resource_type; type; pixels (only the image assets in the response are aggregated); duration (only the video assets in the response are aggregated); format; and bytes. For aggregation fields without discrete values; the results are divided into categories. For example-\r\n- bytes are divided into small (<500 kb); medium (500 kb - 5 mb); large (5 mb - 100 mb); and huge (>100 mb).\r\n- Video duration is divided into short (< 3 minutes); medium (3-12 min); and long (> 12 min)."
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Find the specific assets in your product environment",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/resources/search",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/resources/search",
-        "api_ref": "https://cloudinary.com/documentation/search_api#search_method"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "get_metadata_rules": {
-      "provider_intent": "get_metadata_rules",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
-      "text": "Get metadata rules",
-      "category": "Structured metadata / Conditional metadata rules",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Get metadata rules",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules",
-        "api_ref": "https://cloudinary.com/documentation/conditional_metadata_rules_api#get_metadata_rules"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "create_a_metadata_rule": {
-      "provider_intent": "create_a_metadata_rule",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_rules",
-      "text": "Create a metadata rule",
-      "category": "Structured metadata / Conditional metadata rules",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "metadata_field_id": {
-          "type": "string",
-          "text": "The external_id of the metadata field that this rule applies to.",
-          "required": true
-        },
-        "condition": {
-          "type": "object",
-          "text": "The condition to evaluate. For details see Condition structure.",
-          "required": true
-        },
-        "result": {
-          "type": "object",
-          "text": "The result to apply in the case that the condition is met. For details see Result structure.",
-          "required": true
-        },
-        "name": {
-          "type": "string",
-          "text": "The name of the metadata rule.",
-          "required": true
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Create a metadata rule",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules",
-        "api_ref": "https://cloudinary.com/documentation/conditional_metadata_rules_api#create_a_metadata_rule"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "update_a_metadata_rule_by_id": {
-      "provider_intent": "update_a_metadata_rule_by_id",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
-      "text": "Update a metadata rule by id",
-      "category": "Structured metadata / Conditional metadata rules",
-      "method": "PUT",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata rule (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "metadata_field_id": {
-          "type": "string",
-          "text": "The external_id of the metadata field that this rule applies to."
-        },
-        "condition": {
-          "type": "object",
-          "text": "The condition to evaluate. For details see Condition structure."
-        },
-        "result": {
-          "type": "object",
-          "text": "The result to apply in the case that the condition is met. For details see Result structure."
-        },
-        "name": {
-          "type": "string",
-          "text": "The name of the metadata rule."
-        },
-        "state": {
-          "type": "string",
-          "text": "The current status of the rule; useful for inactivating a rule without deleting it. Possible values- active or inactive"
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata rule (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Update a metadata rule by id",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules/:external_id",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules/external_id",
-        "api_ref": "https://cloudinary.com/documentation/conditional_metadata_rules_api#update_a_metadata_rule_by_id"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "delete_a_metadata_rule_by_id": {
-      "provider_intent": "delete_a_metadata_rule_by_id",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_rules/external_id",
-      "text": "Delete a metadata rule by id",
-      "category": "Structured metadata / Conditional metadata rules",
-      "method": "DELETE",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata rule (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata rule (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Delete a metadata rule by id",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_rules/:external_id",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_rules/external_id",
-        "api_ref": "https://cloudinary.com/documentation/conditional_metadata_rules_api#delete_a_metadata_rule_by_id"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "get_metadata_field": {
-      "provider_intent": "get_metadata_field",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
-      "text": "Get metadata field",
-      "category": "Structured metadata / Metadata",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Get metadata field",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#get_metadata_fields"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "get_a_metadata_field_by_external_id": {
-      "provider_intent": "get_a_metadata_field_by_external_id",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Get a metadata field by external ID",
-      "category": "Structured metadata / Metadata",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Get a metadata field by external ID",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#get_a_metadata_field_by_external_id"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "create_a_metadata_field_": {
-      "provider_intent": "create_a_metadata_field_",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields",
-      "text": "Create a metadata field",
-      "category": "Structured metadata / Metadata",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "field": {
-          "type": "object",
-          "text": "The metadata field to add. For details see Metadata field structure.",
-          "required": true
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Create a metadata field",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#create_a_metadata_field"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "update_a_metadata_field_by_external_id": {
-      "provider_intent": "update_a_metadata_field_by_external_id",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Update a metadata field by external ID",
-      "category": "Structured metadata / Metadata",
-      "method": "PUT",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "field": {
-          "type": "object",
-          "text": "The metadata field to update. For details see Metadata field structure.",
-          "required": true
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Update a metadata field by external ID",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#update_a_metadata_field_by_external_id"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "update_a_metadata_field_datasource": {
-      "provider_intent": "update_a_metadata_field_datasource",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
-      "text": "Update a metadata field datasource",
-      "category": "Structured metadata / Metadata",
-      "method": "PUT",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "entries": {
-          "type": "object",
-          "text": "The datasource enties to update. For details see Datasource values.",
-          "required": true
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Update a metadata field datasource",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id/datasource",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id/datasource",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#update_a_metadata_field_datasource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "delete_a_metadata_field_by_external_id": {
-      "provider_intent": "delete_a_metadata_field_by_external_id",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id",
-      "text": "Delete a metadata field by external ID",
-      "category": "Structured metadata / Metadata",
-      "method": "DELETE",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Delete a metadata field by external ID",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#delete_a_metadata_field_by_external_id"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "delete_entries_in_a_metadata_field_datasource": {
-      "provider_intent": "delete_entries_in_a_metadata_field_datasource",
-      "provider_alias_intent": "/v1_1/cloud_name/metadata_fields/external_id/datasource",
-      "text": "Delete entries in a metadata field datasource",
-      "category": "Structured metadata / Metadata",
-      "method": "DELETE",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        },
-        "external_ids": {
-          "type": "array",
-          "text": "An array of IDs of datasource entries to delete.",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "external_id": {
-          "type": "string",
-          "text": "The ID of the metadata field (included in the endpoint URL when using the REST API).",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Delete entries in a metadata field datasource",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/metadata_fields/:external_id/datasource",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/metadata_fields/external_id/datasource",
-        "api_ref": "https://cloudinary.com/documentation/metadata_api#delete_entries_in_a_metadata_field_datasource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "creates_a_collage_from_existing_assets": {
-      "provider_intent": "creates_a_collage_from_existing_assets",
+    "cloudinary__/v1_1/cloud_name/image/create_collage___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/image/create_collage",
       "text": "Creates a collage from existing assets",
       "category": "Upload / Assets generation",
@@ -6355,11 +5575,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_slideshow_from_existing_assets": {
-      "provider_intent": "creates_a_slideshow_from_existing_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/create_slideshow___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/create_slideshow",
       "text": "Creates a slideshow from existing assets",
       "category": "Upload / Assets generation",
@@ -6398,11 +5617,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_video_from_existing_assets": {
-      "provider_intent": "creates_a_video_from_existing_assets",
+    "cloudinary__/v1_1/cloud_name/video/create_video___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/video/create_video",
       "text": "Creates a video from existing assets",
       "category": "Upload / Assets generation",
@@ -6479,11 +5697,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "derives_images_for_the_individual_pages_in_a_muli-page_file": {
-      "provider_intent": "derives_images_for_the_individual_pages_in_a_muli-page_file",
+    "cloudinary__/v1_1/cloud_name/image/explode___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/image/explode",
       "text": "Derives images for the individual pages in a muli-page file",
       "category": "Upload / Assets generation",
@@ -6550,11 +5767,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_archive_file_from_existing_assets": {
-      "provider_intent": "creates_a_archive_file_from_existing_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/generate_archive___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/generate_archive",
       "text": "Creates a archive file from existing assets",
       "category": "Upload / Assets generation",
@@ -6710,11 +5926,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "generates_animated_images,_videos,_or_pdfs_from_existing_images": {
-      "provider_intent": "generates_animated_images,_videos,_or_pdfs_from_existing_images",
+    "cloudinary__/v1_1/cloud_name/image/multi___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/image/multi",
       "text": "Generates animated images, videos, or PDFs from existing images",
       "category": "Upload / Assets generation",
@@ -6792,11 +6007,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "creates_a_sprite_from_existing_assets": {
-      "provider_intent": "creates_a_sprite_from_existing_assets",
+    "cloudinary__/v1_1/cloud_name/image/sprite___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/image/sprite",
       "text": "Creates a sprite from existing assets",
       "category": "Upload / Assets generation",
@@ -6871,11 +6085,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "dynamically_generates_an_image_from_a_given_textual_string": {
-      "provider_intent": "dynamically_generates_an_image_from_a_given_textual_string",
+    "cloudinary__/v1_1/cloud_name/image/text___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/image/text",
       "text": "Dynamically generates an image from a given textual string",
       "category": "Upload / Assets generation",
@@ -6961,11 +6174,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "uploads_an_assets_to_a_cloudinary_product_enviroment": {
-      "provider_intent": "uploads_an_assets_to_a_cloudinary_product_enviroment",
+    "cloudinary__/v1_1/cloud_name/resource_type/upload___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/upload",
       "text": "Uploads an assets to a Cloudinary product enviroment",
       "category": "Upload / Assets management",
@@ -7317,11 +6529,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "applies_actions_to_alerady_uploaded_assets": {
-      "provider_intent": "applies_actions_to_alerady_uploaded_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/explicit___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/explicit",
       "text": "Applies actions to alerady uploaded assets",
       "category": "Upload / Assets management",
@@ -7521,11 +6732,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "rename_an_assets": {
-      "provider_intent": "rename_an_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/rename___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/rename",
       "text": "Rename an assets",
       "category": "Upload / Assets management",
@@ -7628,11 +6838,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "destroy_an_assets": {
-      "provider_intent": "destroy_an_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/destroy___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/destroy",
       "text": "Destroy an assets",
       "category": "Upload / Assets management",
@@ -7702,11 +6911,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "gets_a_specific_version_of_a_backed-up_assets": {
-      "provider_intent": "gets_a_specific_version_of_a_backed-up_assets",
+    "cloudinary__/v1_1/cloud_name/download_backup___GET": {
       "provider_alias_intent": "/v1_1/cloud_name/download_backup",
       "text": "Gets a specific version of a backed-up assets",
       "category": "Upload / Assets management",
@@ -7755,87 +6963,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "add_context": {
-      "provider_intent": "add_context",
-      "provider_alias_intent": "/v1_1/cloud_name/resource_type/context",
-      "text": "Add Context",
-      "category": "Upload / Metadata management",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "resource_type": {
-          "type": "string",
-          "text": "The type of asset. Only relevant as a parameter when using the SDKs (the resource_type is included in the endpoint URL when using the REST API). Valid values- image; raw; and video. Default- image.\nNote- Use the video resource type for all video assets as well as for audio files; such as .mp3."
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "context": {
-          "type": "string",
-          "text": "(Only relevant when adding contextual metadata) A pipe-separated list of the key-value pairs of contextual metadata to attach to an uploaded asset. The contextual metadata values of uploaded files can be retrieved using the Admin API. For example- alt=My image❘caption=Profile imageNotes-\r\nThe = and ❘ characters can be supported as values when escaped with a prepended backslash (\\).\r\nKey values are limited to 1024 characters and an asset can have a maximum of 1000 contextual metadata key-value pairs.\r\nSDKs- Supports maps. For example- ['alt'- 'My image'; 'caption'- 'Profile image']",
-          "required": true
-        },
-        "public_ids": {
-          "type": "array",
-          "text": "An array of Public IDs of assets uploaded to Cloudinary.",
-          "required": true
-        },
-        "command": {
-          "type": "string",
-          "text": "(Only relevant when using the REST API - not for use with SDKs) The action to perform on assets- either add the specified contextual metadata; or remove_all the contextual metadata key-value pairs assigned.",
-          "required": true
-        },
-        "signature": {
-          "type": "string",
-          "text": "(Required for signed REST API calls) Used to authenticate the request and based on the parameters you use in the request. When using the Cloudinary SDKs for signed requests; the signature is automatically generated and added to the request. If you manually generate your own signed POST request; you need to manually generate the signature parameter and add it to the request together with the api_key and timestamp parameters. For more details; see manually generating signatures.",
-          "required": true
-        },
-        "type": {
-          "type": "string",
-          "text": "The delivery type of the asset. Only relevant as a parameter when using the SDKs (the delivery type is included in the endpoint URL when using the REST API). Default- upload. For a list of possible delivery types; see Delivery types."
-        }
-      },
-      "path": {
-        "cloud_name": {
-          "type": "string",
-          "text": "Cloud Name",
-          "required": true
-        },
-        "resource_type": {
-          "type": "string",
-          "text": "The type of asset. Only relevant as a parameter when using the SDKs (the resource_type is included in the endpoint URL when using the REST API). Valid values- image; raw; and video. Default- image.\nNote- Use the video resource type for all video assets as well as for audio files; such as .mp3."
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1_1",
-        "auth": [],
-        "description": "Add Context",
-        "rate_limit": [],
-        "api_endpoint": "https://api.cloudinary.com/v1_1/:cloud_name/:resource_type/context",
-        "alias_endpoint": "/cloudinary/v1_1/cloud_name/resource_type/context",
-        "api_ref": "https://cloudinary.com/documentation/image_upload_api_reference#adding_context_syntax"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "api_key",
-          "password": "api_secret"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
-    },
-    "remove_context": {
-      "provider_intent": "remove_context",
+    "cloudinary__/v1_1/cloud_name/resource_type/context___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/context",
       "text": "Remove Context",
       "category": "Upload / Metadata management",
@@ -7907,11 +7038,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "adds_values_to_metadata_fields": {
-      "provider_intent": "adds_values_to_metadata_fields",
+    "cloudinary__/v1_1/cloud_name/resource_type/metadata___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/metadata",
       "text": "Adds values to metadata fields",
       "category": "Upload / Metadata management",
@@ -7978,11 +7108,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     },
-    "manages_the_tags_applied_to_your_assets": {
-      "provider_intent": "manages_the_tags_applied_to_your_assets",
+    "cloudinary__/v1_1/cloud_name/resource_type/tags___POST": {
       "provider_alias_intent": "/v1_1/cloud_name/resource_type/tags",
       "text": "Manages the tags applied to your assets",
       "category": "Upload / Metadata management",
@@ -8054,8 +7183,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.126Z"
     }
   }
 }

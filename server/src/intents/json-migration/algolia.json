@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "algolia API",
-    "description": "",
-    "api_base": "/algolia",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "add_a/b_test": {
-      "provider_intent": "add_a/b_test",
+    "algolia__/2/abtests___POST": {
       "provider_alias_intent": "/2/abtests",
       "text": "Add A/B test 🚧",
       "category": "A/B Testing",
@@ -40,15 +29,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.006Z"
     },
-    "get_a/b_test": {
-      "provider_intent": "get_a/b_test",
+    "algolia__/2/abtests/id___GET": {
       "provider_alias_intent": "/2/abtests/id",
       "text": "Get A/B test 🚧",
       "category": "A/B Testing",
@@ -76,15 +64,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.007Z"
     },
-    "list_a/b_tests": {
-      "provider_intent": "list_a/b_tests",
+    "algolia__/2/abtests___GET": {
       "provider_alias_intent": "/2/abtests",
       "text": "List A/B tests 🚧",
       "category": "A/B Testing",
@@ -112,15 +99,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.007Z"
     },
-    "stop_a/b_test": {
-      "provider_intent": "stop_a/b_test",
+    "algolia__/2/abtests/id/stop___POST": {
       "provider_alias_intent": "/2/abtests/id/stop",
       "text": "Stop A/B test 🚧",
       "category": "A/B Testing",
@@ -148,15 +134,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.007Z"
     },
-    "delete_a/b_test": {
-      "provider_intent": "delete_a/b_test",
+    "algolia__/2/abtests/id___DELETE": {
       "provider_alias_intent": "/2/abtests/id",
       "text": "Delete A/B test 🚧",
       "category": "A/B Testing",
@@ -184,15 +169,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_status": {
-      "provider_intent": "get_status",
+    "algolia__/2/status___GET": {
       "provider_alias_intent": "/2/status",
       "text": "Get status 🚧",
       "category": "Analytics",
@@ -220,15 +204,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_top_searches": {
-      "provider_intent": "get_top_searches",
+    "algolia__/2/searches___GET": {
       "provider_alias_intent": "/2/searches",
       "text": "Get top searches 🚧",
       "category": "Analytics",
@@ -256,15 +239,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_count_of_searches": {
-      "provider_intent": "get_count_of_searches",
+    "algolia__/2/searches/count___GET": {
       "provider_alias_intent": "/2/searches/count",
       "text": "Get count of searches 🚧",
       "category": "Analytics",
@@ -292,15 +274,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_top_searches_with_no_results": {
-      "provider_intent": "get_top_searches_with_no_results",
+    "algolia__/2/searches/noResults___GET": {
       "provider_alias_intent": "/2/searches/noResults",
       "text": "Get top searches with no results 🚧",
       "category": "Analytics",
@@ -328,15 +309,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_top_searches_with_no_clicks_": {
-      "provider_intent": "get_top_searches_with_no_clicks_",
+    "algolia__/2/searches/noClicks___GET": {
       "provider_alias_intent": "/2/searches/noClicks",
       "text": "Get top searches with no clicks 🚧",
       "category": "Analytics",
@@ -364,15 +344,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_rate_of_no_results": {
-      "provider_intent": "get_rate_of_no_results",
+    "algolia__/2/searches/noResultRate___GET": {
       "provider_alias_intent": "/2/searches/noResultRate",
       "text": "Get rate of no results 🚧",
       "category": "Analytics",
@@ -400,15 +379,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.008Z"
     },
-    "get_rate_of_no_clicks": {
-      "provider_intent": "get_rate_of_no_clicks",
+    "algolia__/2/searches/noClickRate___GET": {
       "provider_alias_intent": "/2/searches/noClickRate",
       "text": "Get rate of no clicks 🚧",
       "category": "Analytics",
@@ -436,15 +414,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_hits": {
-      "provider_intent": "get_top_hits",
+    "algolia__/2/hits___GET": {
       "provider_alias_intent": "/2/hits",
       "text": "Get top hits 🚧",
       "category": "Analytics",
@@ -472,15 +449,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_hits_for_a_search": {
-      "provider_intent": "get_top_hits_for_a_search",
+    "algolia__/2/hits?search=___GET": {
       "provider_alias_intent": "/2/hits?search=",
       "text": "Get top hits for a search 🚧",
       "category": "Analytics",
@@ -508,15 +484,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_count_of_users": {
-      "provider_intent": "get_count_of_users",
+    "algolia__/2/users/count___GET": {
       "provider_alias_intent": "/2/users/count",
       "text": "Get count of users 🚧",
       "category": "Analytics",
@@ -544,15 +519,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_filter_attributes": {
-      "provider_intent": "get_top_filter_attributes",
+    "algolia__/2/filters___GET": {
       "provider_alias_intent": "/2/filters",
       "text": "Get top filter attributes 🚧",
       "category": "Analytics",
@@ -580,15 +554,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_filters_for_a_no_result_search": {
-      "provider_intent": "get_top_filters_for_a_no_result_search",
+    "algolia__/2/filters/noResults___GET": {
       "provider_alias_intent": "/2/filters/noResults",
       "text": "Get top filters for a no result search 🚧",
       "category": "Analytics",
@@ -616,15 +589,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_filter_attributes_for_a_search": {
-      "provider_intent": "get_top_filter_attributes_for_a_search",
+    "algolia__/2/filters?search=___GET": {
       "provider_alias_intent": "/2/filters?search=",
       "text": "Get top filter attributes for a search 🚧",
       "category": "Analytics",
@@ -652,15 +624,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_filters_for_attributes_and_search": {
-      "provider_intent": "get_top_filters_for_attributes_and_search",
+    "algolia__/2/filters/attribute list?search=___GET": {
       "provider_alias_intent": "/2/filters/attribute list?search=",
       "text": "Get top filters for attributes and search 🚧",
       "category": "Analytics",
@@ -688,15 +659,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_filters_for_an_attribute": {
-      "provider_intent": "get_top_filters_for_an_attribute",
+    "algolia__/2/filters/attribute___GET": {
       "provider_alias_intent": "/2/filters/attribute",
       "text": "Get top filters for an attribute 🚧",
       "category": "Analytics",
@@ -724,15 +694,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_countries": {
-      "provider_intent": "get_top_countries",
+    "algolia__/2/countries___GET": {
       "provider_alias_intent": "/2/countries",
       "text": "Get top countries 🚧",
       "category": "Analytics",
@@ -760,15 +729,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_average_click_position": {
-      "provider_intent": "get_average_click_position",
+    "algolia__/2/clicks/averageClickPosition___GET": {
       "provider_alias_intent": "/2/clicks/averageClickPosition",
       "text": "Get average click position 🚧",
       "category": "Analytics",
@@ -796,15 +764,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_click_positions": {
-      "provider_intent": "get_click_positions",
+    "algolia__/2/clicks/positions___GET": {
       "provider_alias_intent": "/2/clicks/positions",
       "text": "Get click positions 🚧",
       "category": "Analytics",
@@ -832,15 +799,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_click-through_rate": {
-      "provider_intent": "get_click-through_rate",
+    "algolia__/2/clicks/clickThroughRate___GET": {
       "provider_alias_intent": "/2/clicks/clickThroughRate",
       "text": "Get click-through rate 🚧",
       "category": "Analytics",
@@ -868,15 +834,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_conversion_rate": {
-      "provider_intent": "get_conversion_rate",
+    "algolia__/2/conversions/conversionRate___GET": {
       "provider_alias_intent": "/2/conversions/conversionRate",
       "text": "Get conversion rate 🚧",
       "category": "Analytics",
@@ -904,15 +869,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "create_a_crawler": {
-      "provider_intent": "create_a_crawler",
+    "algolia__/api/1/crawlers___POST": {
       "provider_alias_intent": "/api/1/crawlers",
       "text": "Create a crawler 🚧",
       "category": "Crawler ",
@@ -940,15 +904,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_available_crawlers": {
-      "provider_intent": "get_available_crawlers",
+    "algolia__/api/1/crawlers___GET": {
       "provider_alias_intent": "/api/1/crawlers",
       "text": "Get available crawlers 🚧",
       "category": "Crawler ",
@@ -976,15 +939,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_crawler_": {
-      "provider_intent": "get_a_crawler_",
+    "algolia__/api/1/crawlers/id___GET": {
       "provider_alias_intent": "/api/1/crawlers/id",
       "text": "Get a crawler 🚧",
       "category": "Crawler ",
@@ -1012,15 +974,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "partially_update_a_crawler": {
-      "provider_intent": "partially_update_a_crawler",
+    "algolia__/api/1/crawlers/id___PATCH": {
       "provider_alias_intent": "/api/1/crawlers/id",
       "text": "Partially update a crawler 🚧",
       "category": "Crawler ",
@@ -1048,15 +1009,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "partially_update_a_crawler's_configuration": {
-      "provider_intent": "partially_update_a_crawler's_configuration",
+    "algolia__/api/1/crawlers/id/config___PATCH": {
       "provider_alias_intent": "/api/1/crawlers/id/config",
       "text": "Partially update a crawler's configuration 🚧",
       "category": "Crawler ",
@@ -1084,15 +1044,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "run_a_crawler": {
-      "provider_intent": "run_a_crawler",
+    "algolia__/api/1/crawlers/id/run___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/run",
       "text": "Run a crawler 🚧",
       "category": "Crawler ",
@@ -1120,15 +1079,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "pause_a_crawler's_run": {
-      "provider_intent": "pause_a_crawler's_run",
+    "algolia__/api/1/crawlers/id/pause___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/pause",
       "text": "Pause a crawler's run 🚧",
       "category": "Crawler ",
@@ -1156,15 +1114,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "reindex_with_a_crawler": {
-      "provider_intent": "reindex_with_a_crawler",
+    "algolia__/api/1/crawlers/id/reindex___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/reindex",
       "text": "Reindex with a crawler 🚧",
       "category": "Crawler ",
@@ -1192,15 +1149,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_statistics_on_a_crawler": {
-      "provider_intent": "get_statistics_on_a_crawler",
+    "algolia__/api/1/crawlers/id/stats/urls___GET": {
       "provider_alias_intent": "/api/1/crawlers/id/stats/urls",
       "text": "Get statistics on a crawler 🚧",
       "category": "Crawler ",
@@ -1228,15 +1184,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "crawl_specific_urls": {
-      "provider_intent": "crawl_specific_urls",
+    "algolia__/api/1/crawlers/id/urls/crawl___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/urls/crawl",
       "text": "Crawl specific URLs 🚧",
       "category": "Crawler ",
@@ -1264,15 +1219,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "test_a_url_on_a_crawler": {
-      "provider_intent": "test_a_url_on_a_crawler",
+    "algolia__/api/1/crawlers/id/test___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/test",
       "text": "Test a URL on a crawler 🚧",
       "category": "Crawler ",
@@ -1300,15 +1254,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_status_of_a_task": {
-      "provider_intent": "get_status_of_a_task",
+    "algolia__/api/1/crawlers/id/tasks/tid___GET": {
       "provider_alias_intent": "/api/1/crawlers/id/tasks/tid",
       "text": "Get status of a task 🚧",
       "category": "Crawler ",
@@ -1336,15 +1289,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "cancel_a_blocking_task": {
-      "provider_intent": "cancel_a_blocking_task",
+    "algolia__/api/1/crawlers/id/tasks/tid/cancel___POST": {
       "provider_alias_intent": "/api/1/crawlers/id/tasks/tid/cancel",
       "text": "Cancel a blocking task 🚧",
       "category": "Crawler ",
@@ -1372,15 +1324,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_registered_domains_": {
-      "provider_intent": "get_registered_domains_",
+    "algolia__/api/1/domains___GET": {
       "provider_alias_intent": "/api/1/domains",
       "text": "Get registered domains 🚧",
       "category": "Crawler ",
@@ -1408,15 +1359,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "push_events": {
-      "provider_intent": "push_events",
+    "algolia__/1/events___POST": {
       "provider_alias_intent": "/1/events",
       "text": "Push events 🚧",
       "category": "Insights",
@@ -1444,15 +1394,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_infrastructure_metrics_": {
-      "provider_intent": "get_infrastructure_metrics_",
+    "algolia__/1/infrastructure/metric/period/period___GET": {
       "provider_alias_intent": "/1/infrastructure/metric/period/period",
       "text": "Get Infrastructure metrics 🚧",
       "category": "Monitoring / Infrastructure",
@@ -1480,15 +1429,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "inventory_servers_": {
-      "provider_intent": "inventory_servers_",
+    "algolia__/1/inventory/servers___GET": {
       "provider_alias_intent": "/1/inventory/servers",
       "text": "Inventory servers 🚧",
       "category": "Monitoring / Monitoring",
@@ -1516,15 +1464,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "average_latency": {
-      "provider_intent": "average_latency",
+    "algolia__/1/latency/servers___GET": {
       "provider_alias_intent": "/1/latency/servers",
       "text": "Average latency 🚧",
       "category": "Monitoring / Monitoring",
@@ -1552,15 +1499,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_indexing_time_": {
-      "provider_intent": "get_indexing_time_",
+    "algolia__/1/indexing/servers___GET": {
       "provider_alias_intent": "/1/indexing/servers",
       "text": "Get indexing time 🚧",
       "category": "Monitoring / Monitoring",
@@ -1588,15 +1534,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "server_reachability_": {
-      "provider_intent": "server_reachability_",
+    "algolia__/1/reachability/servers/probes___GET": {
       "provider_alias_intent": "/1/reachability/servers/probes",
       "text": "Server reachability 🚧",
       "category": "Monitoring / Monitoring",
@@ -1624,15 +1569,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_current_api_status_": {
-      "provider_intent": "get_current_api_status_",
+    "algolia__/1/status___GET": {
       "provider_alias_intent": "/1/status",
       "text": "Get current API status 🚧",
       "category": "Monitoring / Status ",
@@ -1660,15 +1604,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "current_status_servers_": {
-      "provider_intent": "current_status_servers_",
+    "algolia__/1/status/servers___GET": {
       "provider_alias_intent": "/1/status/servers",
       "text": "Current status servers 🚧",
       "category": "Monitoring / Status ",
@@ -1696,15 +1639,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_last_incidents_": {
-      "provider_intent": "list_last_incidents_",
+    "algolia__/1/incidents___GET": {
       "provider_alias_intent": "/1/incidents",
       "text": "List last incidents 🚧",
       "category": "Monitoring / Status ",
@@ -1732,15 +1674,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_last_incidents_servers_": {
-      "provider_intent": "list_last_incidents_servers_",
+    "algolia__/1/incidents/servers___GET": {
       "provider_alias_intent": "/1/incidents/servers",
       "text": "List last incidents servers 🚧",
       "category": "Monitoring / Status ",
@@ -1768,15 +1709,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_usertoken_profile": {
-      "provider_intent": "get_a_usertoken_profile",
+    "algolia__/1/profiles/personalization/userToken___GET": {
       "provider_alias_intent": "/1/profiles/personalization/userToken",
       "text": "Get a usertoken profile 🚧",
       "category": "Personalization",
@@ -1804,15 +1744,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_a_user_profile": {
-      "provider_intent": "delete_a_user_profile",
+    "algolia__/1/profiles/userToken___DELETE": {
       "provider_alias_intent": "/1/profiles/userToken",
       "text": "Delete a user profile 🚧",
       "category": "Personalization",
@@ -1840,15 +1779,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_the_current_personalization_strategy": {
-      "provider_intent": "get_the_current_personalization_strategy",
+    "algolia__/1/strategies/personalization___GET": {
       "provider_alias_intent": "/1/strategies/personalization",
       "text": "Get the current personalization strategy 🚧",
       "category": "Personalization",
@@ -1876,15 +1814,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "set_a_new_personalization_strategy": {
-      "provider_intent": "set_a_new_personalization_strategy",
+    "algolia__/1/strategies/personalization___POST": {
       "provider_alias_intent": "/1/strategies/personalization",
       "text": "Set a new personalization strategy 🚧",
       "category": "Personalization",
@@ -1912,15 +1849,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "create_a_configuration": {
-      "provider_intent": "create_a_configuration",
+    "algolia__/1/configs___POST": {
       "provider_alias_intent": "/1/configs",
       "text": "Create a configuration 🚧",
       "category": "Query Suggestions",
@@ -1948,15 +1884,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "update_a_configuration_": {
-      "provider_intent": "update_a_configuration_",
+    "algolia__/1/configs/indexName___PUT": {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Update a configuration 🚧",
       "category": "Query Suggestions",
@@ -1984,15 +1919,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_a_configuration_": {
-      "provider_intent": "delete_a_configuration_",
+    "algolia__/1/configs/indexName___DELETE": {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Delete a configuration 🚧",
       "category": "Query Suggestions",
@@ -2020,15 +1954,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_single_configuration_": {
-      "provider_intent": "get_a_single_configuration_",
+    "algolia__/1/configs/indexName___GET": {
       "provider_alias_intent": "/1/configs/indexName",
       "text": "Get a single configuration 🚧",
       "category": "Query Suggestions",
@@ -2056,15 +1989,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_configuration_status_": {
-      "provider_intent": "get_configuration_status_",
+    "algolia__/1/configs/indexName/status___GET": {
       "provider_alias_intent": "/1/configs/indexName/status",
       "text": "Get configuration status 🚧",
       "category": "Query Suggestions",
@@ -2092,15 +2024,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_all_configurations_": {
-      "provider_intent": "get_all_configurations_",
+    "algolia__/1/configs___GET": {
       "provider_alias_intent": "/1/configs",
       "text": "Get all configurations 🚧",
       "category": "Query Suggestions",
@@ -2128,15 +2059,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_log_file_": {
-      "provider_intent": "get_a_log_file_",
+    "algolia__/1/logs/indexName___GET": {
       "provider_alias_intent": "/1/logs/indexName",
       "text": "Get a log file 🚧",
       "category": "Query Suggestions",
@@ -2164,15 +2094,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_recommendations_": {
-      "provider_intent": "get_recommendations_",
+    "algolia__/1/indexes/*/recommendations___POST": {
       "provider_alias_intent": "/1/indexes/*/recommendations",
       "text": "Get Recommendations 🚧",
       "category": "Recommend / Endpoints",
@@ -2200,15 +2129,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "batch_recommend_rules_": {
-      "provider_intent": "batch_recommend_rules_",
+    "algolia__/1/indexes/indexName/model/recommend/rules/batch___POST": {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/batch",
       "text": "Batch Recommend Rules 🚧",
       "category": "Recommend / Endpoints",
@@ -2236,15 +2164,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_recommend_rule": {
-      "provider_intent": "get_recommend_rule",
+    "algolia__/1/indexes/indexName/model/recommend/rules/objectID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/objectID",
       "text": "Get Recommend Rule 🚧",
       "category": "Recommend / Endpoints",
@@ -2272,15 +2199,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_recommend_rule": {
-      "provider_intent": "delete_recommend_rule",
+    "algolia__/1/indexes/indexName/model/recommend/rules/objectID___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/objectID",
       "text": "Delete Recommend Rule 🚧",
       "category": "Recommend / Endpoints",
@@ -2308,15 +2234,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_recommend_rules": {
-      "provider_intent": "search_recommend_rules",
+    "algolia__/1/indexes/indexName/model/recommend/rules/search___POST": {
       "provider_alias_intent": "/1/indexes/indexName/model/recommend/rules/search",
       "text": "Search Recommend Rules 🚧",
       "category": "Recommend / Endpoints",
@@ -2344,15 +2269,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_recommend_task's_status": {
-      "provider_intent": "get_a_recommend_task's_status",
+    "algolia__/1/indexes/indexName/model/task/taskID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/model/task/taskID",
       "text": "Get a Recommend task's status 🚧",
       "category": "Recommend / Endpoints",
@@ -2380,15 +2304,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_logs": {
-      "provider_intent": "get_logs",
+    "algolia__/1/logs___GET": {
       "provider_alias_intent": "/1/logs",
       "text": "Get logs 🚧",
       "category": "Search / Advanced",
@@ -2416,15 +2339,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_a_task's_status": {
-      "provider_intent": "get_a_task's_status",
+    "algolia__/1/indexes/indexName/task/taskID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/task/taskID",
       "text": "Get a task's status 🚧",
       "category": "Search / Advanced",
@@ -2452,15 +2374,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add_or_delete_entries_in_batches": {
-      "provider_intent": "add_or_delete_entries_in_batches",
+    "algolia__/1/dictionaries/dictionaryName/batch___POST": {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/batch",
       "text": "Add or delete entries in batches 🚧",
       "category": "Search / Dictionaries",
@@ -2488,15 +2409,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_dictionary_entries_get": {
-      "provider_intent": "search_dictionary_entries_get",
+    "algolia__/1/dictionaries/dictionaryName/search___GET": {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/search",
       "text": "Search dictionary entries (GET) 🚧",
       "category": "Search / Dictionaries",
@@ -2524,15 +2444,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_dictionary_entries_post": {
-      "provider_intent": "search_dictionary_entries_post",
+    "algolia__/1/dictionaries/dictionaryName/search___POST": {
       "provider_alias_intent": "/1/dictionaries/dictionaryName/search",
       "text": "Search dictionary entries (POST) 🚧",
       "category": "Search / Dictionaries",
@@ -2560,15 +2479,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "set_dictionary_settings": {
-      "provider_intent": "set_dictionary_settings",
+    "algolia__/1/dictionaries/*/settings___PUT": {
       "provider_alias_intent": "/1/dictionaries/*/settings",
       "text": "Set dictionary settings 🚧",
       "category": "Search / Dictionaries",
@@ -2596,15 +2514,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_dictionary_settings": {
-      "provider_intent": "get_dictionary_settings",
+    "algolia__/1/dictionaries/*/settings___GET": {
       "provider_alias_intent": "/1/dictionaries/*/settings",
       "text": "Get dictionary settings 🚧",
       "category": "Search / Dictionaries",
@@ -2632,15 +2549,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_available_languages": {
-      "provider_intent": "get_available_languages",
+    "algolia__/1/dictionaries/*/languages___GET": {
       "provider_alias_intent": "/1/dictionaries/*/languages",
       "text": "Get available languages 🚧",
       "category": "Search / Dictionaries",
@@ -2668,15 +2584,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add_api_key": {
-      "provider_intent": "add_api_key",
+    "algolia__/1/keys___POST": {
       "provider_alias_intent": "/1/keys",
       "text": "Add API Key 🚧",
       "category": "Search / Keys",
@@ -2704,15 +2619,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "update_api_key": {
-      "provider_intent": "update_api_key",
+    "algolia__/1/keys/key___PUT": {
       "provider_alias_intent": "/1/keys/key",
       "text": "Update API Key 🚧",
       "category": "Search / Keys",
@@ -2740,15 +2654,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_api_keys": {
-      "provider_intent": "list_api_keys",
+    "algolia__/1/keys___GET": {
       "provider_alias_intent": "/1/keys",
       "text": "List API Keys 🚧",
       "category": "Search / Keys",
@@ -2776,15 +2689,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_api_key_permissions": {
-      "provider_intent": "get_api_key_permissions",
+    "algolia__/1/keys/key___GET": {
       "provider_alias_intent": "/1/keys/key",
       "text": "Get API Key permissions 🚧",
       "category": "Search / Keys",
@@ -2812,15 +2724,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_api_key": {
-      "provider_intent": "delete_api_key",
+    "algolia__/1/keys/key___DELETE": {
       "provider_alias_intent": "/1/keys/key",
       "text": "Delete API Key 🚧",
       "category": "Search / Keys",
@@ -2848,15 +2759,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "restore_api_key": {
-      "provider_intent": "restore_api_key",
+    "algolia__/1/keys/key/restore___POST": {
       "provider_alias_intent": "/1/keys/key/restore",
       "text": "Restore API Key 🚧",
       "category": "Search / Keys",
@@ -2884,15 +2794,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add_index_api_key": {
-      "provider_intent": "add_index_api_key",
+    "algolia__/1/indexes/indexName/keys___POST": {
       "provider_alias_intent": "/1/indexes/indexName/keys",
       "text": "Add index API key 🚧",
       "category": "Search / Keys",
@@ -2920,15 +2829,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "update_index_api_key": {
-      "provider_intent": "update_index_api_key",
+    "algolia__/1/indexes/indexName/keys/key___PUT": {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Update index API key 🚧",
       "category": "Search / Keys",
@@ -2956,15 +2864,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_index_api_keys_for_all_index": {
-      "provider_intent": "list_index_api_keys_for_all_index",
+    "algolia__/1/indexes/indexName/keys___GET": {
       "provider_alias_intent": "/1/indexes/indexName/keys",
       "text": "List index API keys (for all index) 🚧",
       "category": "Search / Keys",
@@ -2992,15 +2899,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_index_api_keys_for_all_indices": {
-      "provider_intent": "list_index_api_keys_for_all_indices",
+    "algolia__/1/indexes/*/keys___GET": {
       "provider_alias_intent": "/1/indexes/*/keys",
       "text": "List index API keys (for all indices) 🚧",
       "category": "Search / Keys",
@@ -3028,15 +2934,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_index_api_key": {
-      "provider_intent": "get_index_api_key",
+    "algolia__/1/indexes/indexName/keys/key___GET": {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Get index API key 🚧",
       "category": "Search / Keys",
@@ -3064,15 +2969,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_index_api_key": {
-      "provider_intent": "delete_index_api_key",
+    "algolia__/1/indexes/indexName/keys/key___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName/keys/key",
       "text": "Delete index API key 🚧",
       "category": "Search / Keys",
@@ -3100,15 +3004,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_index": {
-      "provider_intent": "delete_index",
+    "algolia__/1/indexes/indexName___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Delete index 🚧",
       "category": "Search / Manage indices",
@@ -3136,15 +3039,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "copy/move_index": {
-      "provider_intent": "copy/move_index",
+    "algolia__/1/indexes/indexName/operation___POST": {
       "provider_alias_intent": "/1/indexes/indexName/operation",
       "text": "Copy/move index 🚧",
       "category": "Search / Manage indices",
@@ -3172,15 +3074,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_indices": {
-      "provider_intent": "list_indices",
+    "algolia__/1/indexes___GET": {
       "provider_alias_intent": "/1/indexes",
       "text": "List Indices 🚧",
       "category": "Search / Manage indices",
@@ -3208,15 +3109,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "assign_or_move_userid": {
-      "provider_intent": "assign_or_move_userid",
+    "algolia__/1/clusters/mapping___POST": {
       "provider_alias_intent": "/1/clusters/mapping",
       "text": "Assign or Move userID 🚧",
       "category": "Search / MultiClusters",
@@ -3244,15 +3144,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "batch_assign_userids": {
-      "provider_intent": "batch_assign_userids",
+    "algolia__/1/clusters/mapping/batch___POST": {
       "provider_alias_intent": "/1/clusters/mapping/batch",
       "text": "Batch assign userIDs 🚧",
       "category": "Search / MultiClusters",
@@ -3280,15 +3179,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_top_userid": {
-      "provider_intent": "get_top_userid",
+    "algolia__/1/clusters/mapping/top___GET": {
       "provider_alias_intent": "/1/clusters/mapping/top",
       "text": "Get top userID 🚧",
       "category": "Search / MultiClusters",
@@ -3316,15 +3214,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_userid": {
-      "provider_intent": "get_userid",
+    "algolia__/1/clusters/mapping/$userID___GET": {
       "provider_alias_intent": "/1/clusters/mapping/$userID",
       "text": "Get userID 🚧",
       "category": "Search / MultiClusters",
@@ -3352,15 +3249,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_clusters": {
-      "provider_intent": "list_clusters",
+    "algolia__/1/clusters___GET": {
       "provider_alias_intent": "/1/clusters",
       "text": "List clusters 🚧",
       "category": "Search / MultiClusters",
@@ -3388,15 +3284,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_userids": {
-      "provider_intent": "list_userids",
+    "algolia__/1/clusters/mapping___GET": {
       "provider_alias_intent": "/1/clusters/mapping",
       "text": "List userIDs 🚧",
       "category": "Search / MultiClusters",
@@ -3424,15 +3319,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "remove_userid": {
-      "provider_intent": "remove_userid",
+    "algolia__/1/clusters/mapping/$userID___DELETE": {
       "provider_alias_intent": "/1/clusters/mapping/$userID",
       "text": "Remove userID 🚧",
       "category": "Search / MultiClusters",
@@ -3460,15 +3354,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_userid": {
-      "provider_intent": "search_userid",
+    "algolia__/1/clusters/mapping/search___POST": {
       "provider_alias_intent": "/1/clusters/mapping/search",
       "text": "Search userID 🚧",
       "category": "Search / MultiClusters",
@@ -3496,15 +3389,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "has_pending_mappings": {
-      "provider_intent": "has_pending_mappings",
+    "algolia__/1/clusters/mapping/pending___GET": {
       "provider_alias_intent": "/1/clusters/mapping/pending",
       "text": "Has pending mappings 🚧",
       "category": "Search / MultiClusters",
@@ -3532,15 +3424,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add_objectwithout_id": {
-      "provider_intent": "add_objectwithout_id",
+    "algolia__/1/indexes/indexName___POST": {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Add object(without ID) 🚧",
       "category": "Search / Objects ",
@@ -3568,15 +3459,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add/update_object_with_id": {
-      "provider_intent": "add/update_object_with_id",
+    "algolia__/1/indexes/indexName/objectID___PUT": {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Add/update object (with ID) 🚧",
       "category": "Search / Objects ",
@@ -3604,15 +3494,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_object": {
-      "provider_intent": "delete_object",
+    "algolia__/1/indexes/indexName/objectID___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Delete object 🚧",
       "category": "Search / Objects ",
@@ -3640,15 +3529,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_by": {
-      "provider_intent": "delete_by",
+    "algolia__/1/indexes/indexName/deleteByQuery___POST": {
       "provider_alias_intent": "/1/indexes/indexName/deleteByQuery",
       "text": "Delete by 🚧",
       "category": "Search / Objects ",
@@ -3676,15 +3564,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "clear_objects": {
-      "provider_intent": "clear_objects",
+    "algolia__/1/indexes/indexName/clear___POST": {
       "provider_alias_intent": "/1/indexes/indexName/clear",
       "text": "Clear objects 🚧",
       "category": "Search / Objects ",
@@ -3712,15 +3599,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "partially_update_object": {
-      "provider_intent": "partially_update_object",
+    "algolia__/1/indexes/indexName/objectID/partial___POST": {
       "provider_alias_intent": "/1/indexes/indexName/objectID/partial",
       "text": "Partially update object 🚧",
       "category": "Search / Objects ",
@@ -3748,15 +3634,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "batch_write_operations": {
-      "provider_intent": "batch_write_operations",
+    "algolia__/1/indexes/indexName/batch___POST": {
       "provider_alias_intent": "/1/indexes/indexName/batch",
       "text": "Batch write operations 🚧",
       "category": "Search / Objects ",
@@ -3784,15 +3669,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "batch_write_operations_multiple_indices": {
-      "provider_intent": "batch_write_operations_multiple_indices",
+    "algolia__/1/indexes/*/batch___POST": {
       "provider_alias_intent": "/1/indexes/*/batch",
       "text": "Batch write operations (multiple indices) 🚧",
       "category": "Search / Objects ",
@@ -3820,15 +3704,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_objects": {
-      "provider_intent": "get_objects",
+    "algolia__/1/indexes/*/objects___POST": {
       "provider_alias_intent": "/1/indexes/*/objects",
       "text": "Get objects 🚧",
       "category": "Search / Objects ",
@@ -3856,15 +3739,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_object": {
-      "provider_intent": "get_object",
+    "algolia__/1/indexes/indexName/objectID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/objectID",
       "text": "Get object 🚧",
       "category": "Search / Objects ",
@@ -3892,15 +3774,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "save_rule": {
-      "provider_intent": "save_rule",
+    "algolia__/1/indexes/indexName/rules/objectID___PUT": {
       "provider_alias_intent": "/1/indexes/indexName/rules/objectID",
       "text": "Save rule 🚧",
       "category": "Search / Rules",
@@ -3928,15 +3809,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "batch_rules": {
-      "provider_intent": "batch_rules",
+    "algolia__/1/indexes/indexName/rules/batch___POST": {
       "provider_alias_intent": "/1/indexes/indexName/rules/batch",
       "text": "Batch Rules 🚧",
       "category": "Search / Rules",
@@ -3964,15 +3844,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_rule": {
-      "provider_intent": "get_rule",
+    "algolia__/1/indexes/indexName/rules/objectID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/rules/objectID",
       "text": "Get Rule 🚧",
       "category": "Search / Rules",
@@ -4000,15 +3879,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_rule": {
-      "provider_intent": "delete_rule",
+    "algolia__/1/indexes/indexName/rules/___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName/rules/",
       "text": "Delete Rule 🚧",
       "category": "Search / Rules",
@@ -4036,15 +3914,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "clear_rules": {
-      "provider_intent": "clear_rules",
+    "algolia__/1/indexes/indexName/rules/clear___POST": {
       "provider_alias_intent": "/1/indexes/indexName/rules/clear",
       "text": "Clear Rules 🚧",
       "category": "Search / Rules",
@@ -4072,15 +3949,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_rules": {
-      "provider_intent": "search_rules",
+    "algolia__/1/indexes/indexName/rules/search___POST": {
       "provider_alias_intent": "/1/indexes/indexName/rules/search",
       "text": "Search rules 🚧",
       "category": "Search / Rules",
@@ -4108,15 +3984,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_index": {
-      "provider_intent": "search_index",
+    "algolia__/1/indexes/indexName___GET": {
       "provider_alias_intent": "/1/indexes/indexName",
       "text": "Search index 🚧",
       "category": "Search / Search ",
@@ -4144,15 +4019,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_multiple_indices": {
-      "provider_intent": "search_multiple_indices",
+    "algolia__/1/indexes/*/queries___POST": {
       "provider_alias_intent": "/1/indexes/*/queries",
       "text": "Search multiple indices 🚧",
       "category": "Search / Search ",
@@ -4180,15 +4054,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_for_facet_values": {
-      "provider_intent": "search_for_facet_values",
+    "algolia__/1/indexes/indexName/facets/facetName/query___POST": {
       "provider_alias_intent": "/1/indexes/indexName/facets/facetName/query",
       "text": "Search for facet values 🚧",
       "category": "Search / Search ",
@@ -4216,15 +4089,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "browse_index": {
-      "provider_intent": "browse_index",
+    "algolia__/1/indexes/indexName/browse___GET": {
       "provider_alias_intent": "/1/indexes/indexName/browse",
       "text": "Browse index 🚧",
       "category": "Search / Search ",
@@ -4252,15 +4124,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_settings": {
-      "provider_intent": "get_settings",
+    "algolia__/1/indexes/indexName/settings___GET": {
       "provider_alias_intent": "/1/indexes/indexName/settings",
       "text": "Get settings 🚧",
       "category": "Search / Settings",
@@ -4288,15 +4159,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "set_settings": {
-      "provider_intent": "set_settings",
+    "algolia__/1/indexes/indexName/settings___PUT": {
       "provider_alias_intent": "/1/indexes/indexName/settings",
       "text": "Set settings 🚧",
       "category": "Search / Settings",
@@ -4324,15 +4194,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "save_synonym": {
-      "provider_intent": "save_synonym",
+    "algolia__/1/indexes/indexName/synonyms/objectID___PUT": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Save synonym 🚧",
       "category": "Search / Synonyms",
@@ -4360,15 +4229,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "save_synonyms": {
-      "provider_intent": "save_synonyms",
+    "algolia__/1/indexes/indexName/synonyms/batch___POST": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/batch",
       "text": "Save synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4396,15 +4264,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_synonym": {
-      "provider_intent": "get_synonym",
+    "algolia__/1/indexes/indexName/synonyms/objectID___GET": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Get synonym 🚧",
       "category": "Search / Synonyms",
@@ -4432,15 +4299,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "clear_all_synonyms": {
-      "provider_intent": "clear_all_synonyms",
+    "algolia__/1/indexes/indexName/synonyms/clear___POST": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/clear",
       "text": "Clear all synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4468,15 +4334,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_synonym": {
-      "provider_intent": "delete_synonym",
+    "algolia__/1/indexes/indexName/synonyms/objectID___DELETE": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/objectID",
       "text": "Delete synonym 🚧",
       "category": "Search / Synonyms",
@@ -4504,15 +4369,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "search_synonyms": {
-      "provider_intent": "search_synonyms",
+    "algolia__/1/indexes/indexName/synonyms/search___POST": {
       "provider_alias_intent": "/1/indexes/indexName/synonyms/search",
       "text": "Search synonyms 🚧",
       "category": "Search / Synonyms",
@@ -4540,15 +4404,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "list_allowed_sources_": {
-      "provider_intent": "list_allowed_sources_",
+    "algolia__/1/security/sources___GET": {
       "provider_alias_intent": "/1/security/sources",
       "text": "List allowed sources 🚧",
       "category": "Search / Vault",
@@ -4576,15 +4439,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "replace_the_list_of_allowed_sources_": {
-      "provider_intent": "replace_the_list_of_allowed_sources_",
+    "algolia__/1/security/sources___PUT": {
       "provider_alias_intent": "/1/security/sources",
       "text": "Replace the list of allowed sources 🚧",
       "category": "Search / Vault",
@@ -4612,15 +4474,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "add_a_source_to_the_allowed_sources_": {
-      "provider_intent": "add_a_source_to_the_allowed_sources_",
+    "algolia__/1/security/sources/append___POST": {
       "provider_alias_intent": "/1/security/sources/append",
       "text": "Add a source to the allowed sources 🚧",
       "category": "Search / Vault",
@@ -4648,15 +4509,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "delete_one_allowed_source_": {
-      "provider_intent": "delete_one_allowed_source_",
+    "algolia__/1/security/sources/source___DELETE": {
       "provider_alias_intent": "/1/security/sources/source",
       "text": "Delete one allowed source 🚧",
       "category": "Search / Vault",
@@ -4684,15 +4544,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_usage_": {
-      "provider_intent": "get_usage_",
+    "algolia__/1/usage/statistic___GET": {
       "provider_alias_intent": "/1/usage/statistic",
       "text": "Get usage 🚧",
       "category": "Usage",
@@ -4720,15 +4579,14 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     },
-    "get_usage_for_an_index_": {
-      "provider_intent": "get_usage_for_an_index_",
+    "algolia__/1/usage/statistic/index___GET": {
       "provider_alias_intent": "/1/usage/statistic/index",
       "text": "Get usage for an index 🚧",
       "category": "Usage",
@@ -4756,12 +4614,12 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
       "payload_type": "",
       "headers": {
         "X-Algolia-Application-Id": "{applicationid}"
-      }
+      },
+      "updated_at": "2025-11-11T12:00:08.009Z"
     }
   }
 }

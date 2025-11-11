@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Imgur API",
-    "description": "",
-    "api_base": "/imgur",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "generate_access_token": {
-      "provider_intent": "generate_access_token",
+    "imgur__/oauth2/token___POST": {
       "provider_alias_intent": "/oauth2/token",
       "text": "Given a user's refresh token this endpoint generates an access token",
       "category": "Account",
@@ -60,11 +49,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_base": {
-      "provider_intent": "account_base",
+    "imgur__/3/account/username___GET": {
       "provider_alias_intent": "/3/account/username",
       "text": "Request standard user information",
       "category": "Account",
@@ -92,11 +80,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_block_status": {
-      "provider_intent": "account_block_status",
+    "imgur__/account/v1/username/block___GET": {
       "provider_alias_intent": "/account/v1/username/block",
       "text": "Determine if the user making the request has blocked a username",
       "category": "Account",
@@ -124,11 +111,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_blocks": {
-      "provider_intent": "account_blocks",
+    "imgur__/3/account/me/block___GET": {
       "provider_alias_intent": "/3/account/me/block",
       "text": "List all accounts being blocked",
       "category": "Account",
@@ -156,11 +142,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_block_create": {
-      "provider_intent": "account_block_create",
+    "imgur__/account/v1/username/block___POST": {
       "provider_alias_intent": "/account/v1/username/block",
       "text": "Block a user",
       "category": "Account",
@@ -188,11 +173,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_block_delete": {
-      "provider_intent": "account_block_delete",
+    "imgur__/account/v1/username/block___DELETE": {
       "provider_alias_intent": "/account/v1/username/block",
       "text": "Unblock a user",
       "category": "Account",
@@ -220,11 +204,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_images": {
-      "provider_intent": "account_images",
+    "imgur__/3/account/me/images___GET": {
       "provider_alias_intent": "/3/account/me/images",
       "text": "To make requests for the current account you may use `me` as the `{{username}}` parameter",
       "category": "Account",
@@ -252,11 +235,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_gallery_favorites": {
-      "provider_intent": "account_gallery_favorites",
+    "imgur__/3/account/username/gallery_favorites/page/favoritessort___GET": {
       "provider_alias_intent": "/3/account/username/gallery_favorites/page/favoritessort",
       "text": "Return the images the user has favorited in the gallery",
       "category": "Account",
@@ -284,11 +266,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_favorites": {
-      "provider_intent": "account_favorites",
+    "imgur__/3/account/username/favorites/page/favoritessort___GET": {
       "provider_alias_intent": "/3/account/username/favorites/page/favoritessort",
       "text": "Returns the users favorited images only accessible if you're logged in as the user",
       "category": "Account",
@@ -316,11 +297,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_submissions": {
-      "provider_intent": "account_submissions",
+    "imgur__/3/account/username/submissions/page___GET": {
       "provider_alias_intent": "/3/account/username/submissions/page",
       "text": "Return the images a user has submitted to the gallery",
       "category": "Account",
@@ -348,11 +328,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_available_avatars_(un-authed_/_authed)": {
-      "provider_intent": "account_available_avatars_(un-authed_/_authed)",
+    "imgur__/3/account/username/available_avatars___GET": {
       "provider_alias_intent": "/3/account/username/available_avatars",
       "text": "If unauthentiated get list of default trophies a user can select from",
       "category": "Account",
@@ -380,11 +359,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_avatar_(authed)": {
-      "provider_intent": "account_avatar_(authed)",
+    "imgur__/3/account/username/avatar___GET": {
       "provider_alias_intent": "/3/account/username/avatar",
       "text": "Get the current account's avatar URL and avatar name",
       "category": "Account",
@@ -412,11 +390,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_settings": {
-      "provider_intent": "account_settings",
+    "imgur__/3/account/me/settings___GET": {
       "provider_alias_intent": "/3/account/me/settings",
       "text": "Returns the account settings only accessible if you're logged in as the user",
       "category": "Account",
@@ -444,11 +421,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "change_account_settings": {
-      "provider_intent": "change_account_settings",
+    "imgur__/3/account/username/settings___PUT": {
       "provider_alias_intent": "/3/account/username/settings",
       "text": "Updates the account settings for a given user the user must be logged in",
       "category": "Account",
@@ -506,11 +482,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_gallery_profile": {
-      "provider_intent": "account_gallery_profile",
+    "imgur__/3/account/username/settings___GET": {
       "provider_alias_intent": "/3/account/username/settings",
       "text": "Returns the totals for the gallery profile",
       "category": "Account",
@@ -538,11 +513,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "verify_user's_e-mail": {
-      "provider_intent": "verify_user's_e-mail",
+    "imgur__/3/account/username/verifyemail___GET": {
       "provider_alias_intent": "/3/account/username/verifyemail",
       "text": "Checks to see if user has verified their email address",
       "category": "Account",
@@ -570,11 +544,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "send_verification_e-mail": {
-      "provider_intent": "send_verification_e-mail",
+    "imgur__/3/account/username/verifyemail___POST": {
       "provider_alias_intent": "/3/account/username/verifyemail",
       "text": "Sends an email to the user to verify that their email is valid to upload to gallery",
       "category": "Account",
@@ -602,11 +575,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "albums_(un-authed_/_authed)": {
-      "provider_intent": "albums_(un-authed_/_authed)",
+    "imgur__/3/account/username/albums/page___GET": {
       "provider_alias_intent": "/3/account/username/albums/page",
       "text": "Get all the albums associated with the account",
       "category": "Account",
@@ -634,11 +606,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_album": {
-      "provider_intent": "account_album",
+    "imgur__/3/account/username/album/albumhash___GET": {
       "provider_alias_intent": "/3/account/username/album/albumhash",
       "text": "Get additional information about an album this endpoint works the same as the [Album Endpoint]()",
       "category": "Account",
@@ -666,11 +637,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_ids_(un-authed_/_authed)": {
-      "provider_intent": "album_ids_(un-authed_/_authed)",
+    "imgur__/3/account/username/albums/ids/page___GET": {
       "provider_alias_intent": "/3/account/username/albums/ids/page",
       "text": "Return an array of all of the album IDs (hashes)",
       "category": "Account",
@@ -698,11 +668,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_count_(un-authed_/_authed)": {
-      "provider_intent": "album_count_(un-authed_/_authed)",
+    "imgur__/3/account/username/albums/count___GET": {
       "provider_alias_intent": "/3/account/username/albums/count",
       "text": "Return the total number of albums associated with the account",
       "category": "Account",
@@ -730,11 +699,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_deletion": {
-      "provider_intent": "album_deletion",
+    "imgur__/3/account/username/album/albumhash___DELETE": {
       "provider_alias_intent": "/3/account/username/album/albumhash",
       "text": "Delete an Album with a given id",
       "category": "Account",
@@ -762,11 +730,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comments": {
-      "provider_intent": "comments",
+    "imgur__/3/account/username/comments/commentsort/page___GET": {
       "provider_alias_intent": "/3/account/username/comments/commentsort/page",
       "text": "Return the comments the user has created",
       "category": "Account",
@@ -794,11 +761,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_comment": {
-      "provider_intent": "account_comment",
+    "imgur__/3/account/username/comment/commentid___GET": {
       "provider_alias_intent": "/3/account/username/comment/commentid",
       "text": "Return information about a specific comment",
       "category": "Account",
@@ -826,11 +792,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comment_ids": {
-      "provider_intent": "comment_ids",
+    "imgur__/3/account/username/comments/ids/sort/page___GET": {
       "provider_alias_intent": "/3/account/username/comments/ids/sort/page",
       "text": "Return an array of all of the comment IDs",
       "category": "Account",
@@ -858,11 +823,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comment_count": {
-      "provider_intent": "comment_count",
+    "imgur__/3/account/username/comments/count___GET": {
       "provider_alias_intent": "/3/account/username/comments/count",
       "text": "Return a count of all of the comments associated with the account",
       "category": "Account",
@@ -890,11 +854,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_comment_deletion": {
-      "provider_intent": "account_comment_deletion",
+    "imgur__/3/account/username/comment/commentid___DELETE": {
       "provider_alias_intent": "/3/account/username/comment/commentid",
       "text": "Delete a comment",
       "category": "Account",
@@ -922,11 +885,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "images": {
-      "provider_intent": "images",
+    "imgur__/3/account/username/images/page___GET": {
       "provider_alias_intent": "/3/account/username/images/page",
       "text": "Return all of the images associated with the account",
       "category": "Account",
@@ -954,11 +916,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_image": {
-      "provider_intent": "account_image",
+    "imgur__/3/account/username/image/imageid___GET": {
       "provider_alias_intent": "/3/account/username/image/imageid",
       "text": "Return information about a specific image",
       "category": "Account",
@@ -986,11 +947,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_ids": {
-      "provider_intent": "image_ids",
+    "imgur__/3/account/username/images/ids/page___GET": {
       "provider_alias_intent": "/3/account/username/images/ids/page",
       "text": "Returns an array of Image IDs that are associated with the account",
       "category": "Account",
@@ -1018,11 +978,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_count": {
-      "provider_intent": "image_count",
+    "imgur__/3/account/username/images/count___GET": {
       "provider_alias_intent": "/3/account/username/images/count",
       "text": "Returns the total number of images associated with the account",
       "category": "Account",
@@ -1050,11 +1009,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_deletion": {
-      "provider_intent": "image_deletion",
+    "imgur__/3/account/username/image/deletehash___DELETE": {
       "provider_alias_intent": "/3/account/username/image/deletehash",
       "text": "Deletes an Image",
       "category": "Account",
@@ -1082,11 +1040,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "accont_replies": {
-      "provider_intent": "accont_replies",
+    "imgur__/3/account/username/notifications/replies___GET": {
       "provider_alias_intent": "/3/account/username/notifications/replies",
       "text": "Returns all of the reply notifications for the user",
       "category": "Account",
@@ -1114,11 +1071,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "follow_tag": {
-      "provider_intent": "follow_tag",
+    "imgur__/3/account/me/follow/tag/tagname___POST": {
       "provider_alias_intent": "/3/account/me/follow/tag/tagname",
       "text": "Follows the {{tagName}} specified for the currently logged in user",
       "category": "Account",
@@ -1146,11 +1102,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "unfollow_tag": {
-      "provider_intent": "unfollow_tag",
+    "imgur__/3/account/me/follow/tag/tagname___DELETE": {
       "provider_alias_intent": "/3/account/me/follow/tag/tagname",
       "text": "Unfollows the {{tagName}} specified for the currently logged in user",
       "category": "Account",
@@ -1178,11 +1133,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "account_delete_me": {
-      "provider_intent": "account_delete_me",
+    "imgur__/3/account/me/delete___POST": {
       "provider_alias_intent": "/3/account/me/delete",
       "text": "Delete the account of the auth'd user with delete feedback",
       "category": "Account",
@@ -1215,11 +1169,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album": {
-      "provider_intent": "album",
+    "imgur__/3/album/albumhash___GET": {
       "provider_alias_intent": "/3/album/albumhash",
       "text": "Get additional information about an album",
       "category": "Album",
@@ -1247,11 +1200,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_images": {
-      "provider_intent": "album_images",
+    "imgur__/3/album/albumhash/images___GET": {
       "provider_alias_intent": "/3/album/albumhash/images",
       "text": "Return all of the images in the album",
       "category": "Album",
@@ -1279,11 +1231,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_image": {
-      "provider_intent": "album_image",
+    "imgur__/3/album/albumhash/image/imagehash___GET": {
       "provider_alias_intent": "/3/album/albumhash/image/imagehash",
       "text": "Get information about an image in an album any additional actions found in [Image Endpoint](https://api",
       "category": "Album",
@@ -1311,11 +1262,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_creation_(un-authed_/_authed)": {
-      "provider_intent": "album_creation_(un-authed_/_authed)",
+    "imgur__/3/album___POST": {
       "provider_alias_intent": "/3/album",
       "text": "Create a new album",
       "category": "Album",
@@ -1368,11 +1318,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "update_album_(un-authed_/_authed)": {
-      "provider_intent": "update_album_(un-authed_/_authed)",
+    "imgur__/3/album/albumhash___PUT": {
       "provider_alias_intent": "/3/album/albumhash",
       "text": "Update the information of an album",
       "category": "Album",
@@ -1425,11 +1374,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_deletion_(un-authed)": {
-      "provider_intent": "album_deletion_(un-authed)",
+    "imgur__/3/album/albumdeletehash___DELETE": {
       "provider_alias_intent": "/3/album/albumdeletehash",
       "text": "Delete an album with a given deletehash",
       "category": "Album",
@@ -1457,11 +1405,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_deletion_(authed)": {
-      "provider_intent": "album_deletion_(authed)",
+    "imgur__/3/album/albumhash___DELETE": {
       "provider_alias_intent": "/3/album/albumhash",
       "text": "Delete an album with a given ID",
       "category": "Album",
@@ -1489,11 +1436,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "favorite_album": {
-      "provider_intent": "favorite_album",
+    "imgur__/3/album/albumhash/favorite___POST": {
       "provider_alias_intent": "/3/album/albumhash/favorite",
       "text": "Favorite an album with a given ID",
       "category": "Album",
@@ -1521,11 +1467,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "set_album_images_(un-authed)": {
-      "provider_intent": "set_album_images_(un-authed)",
+    "imgur__/3/album/albumdeletehash___POST": {
       "provider_alias_intent": "/3/album/albumdeletehash",
       "text": "Sets the images for an album removes all other images and only uses the images in this request",
       "category": "Album",
@@ -1557,11 +1502,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "set_album_images_(authed)": {
-      "provider_intent": "set_album_images_(authed)",
+    "imgur__/3/album/albumhash___POST": {
       "provider_alias_intent": "/3/album/albumhash",
       "text": "Sets the images for an album removes all other images and only uses the images in this request",
       "category": "Album",
@@ -1593,11 +1537,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "add_images_to_an_album_(un-authed)": {
-      "provider_intent": "add_images_to_an_album_(un-authed)",
+    "imgur__/3/album/albumdeletehash/add___POST": {
       "provider_alias_intent": "/3/album/albumdeletehash/add",
       "text": "Takes parameter `deletehashes[]` as an array of deletehashes to add to the album",
       "category": "Album",
@@ -1629,11 +1572,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "add_images_to_an_album_(authed)": {
-      "provider_intent": "add_images_to_an_album_(authed)",
+    "imgur__/3/album/albumhash/add___POST": {
       "provider_alias_intent": "/3/album/albumhash/add",
       "text": "Adds the images to an album",
       "category": "Album",
@@ -1665,11 +1607,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "remove_images_from_an_album_(un-authed)": {
-      "provider_intent": "remove_images_from_an_album_(un-authed)",
+    "imgur__/3/album/albumdeletehash/remove_images___POST": {
       "provider_alias_intent": "/3/album/albumdeletehash/remove_images",
       "text": "Takes parameter `ids[]` as an array of ids and removes from the album",
       "category": "Album",
@@ -1701,11 +1642,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "remove_images_from_an_album_(authed)": {
-      "provider_intent": "remove_images_from_an_album_(authed)",
+    "imgur__/3/album/albumhash/remove_images___POST": {
       "provider_alias_intent": "/3/album/albumhash/remove_images",
       "text": "Takes parameter `ids[]` as an array of ids and removes from the album",
       "category": "Album",
@@ -1737,11 +1677,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comment": {
-      "provider_intent": "comment",
+    "imgur__/3/comment/commentid___GET": {
       "provider_alias_intent": "/3/comment/commentid",
       "text": "Get information about a specific comment",
       "category": "Comment",
@@ -1769,11 +1708,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comment_creation": {
-      "provider_intent": "comment_creation",
+    "imgur__/3/comment___POST": {
       "provider_alias_intent": "/3/comment",
       "text": "Creates a new comment returns the ID of the comment",
       "category": "Comment",
@@ -1811,11 +1749,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "comment_deletion": {
-      "provider_intent": "comment_deletion",
+    "imgur__/3/comment/commentid___DELETE": {
       "provider_alias_intent": "/3/comment/commentid",
       "text": "Delete a comment by the given id",
       "category": "Comment",
@@ -1843,11 +1780,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "replies": {
-      "provider_intent": "replies",
+    "imgur__/3/comment/commentid/replies___GET": {
       "provider_alias_intent": "/3/comment/commentid/replies",
       "text": "Get the comment with all of the replies for the comment",
       "category": "Comment",
@@ -1875,11 +1811,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "reply_creation": {
-      "provider_intent": "reply_creation",
+    "imgur__/3/comment/commentid___POST": {
       "provider_alias_intent": "/3/comment/commentid",
       "text": "Create a reply for the given comment",
       "category": "Comment",
@@ -1914,11 +1849,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "vote": {
-      "provider_intent": "vote",
+    "imgur__/3/comment/commentid/vote/vote___POST": {
       "provider_alias_intent": "/3/comment/commentid/vote/vote",
       "text": "Vote on a comment",
       "category": "Comment",
@@ -1946,11 +1880,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "report": {
-      "provider_intent": "report",
+    "imgur__/3/comment/commentid/report___POST": {
       "provider_alias_intent": "/3/comment/commentid/report",
       "text": "Report a comment for being inappropriate",
       "category": "Comment",
@@ -1983,11 +1916,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "feed": {
-      "provider_intent": "feed",
+    "imgur__/3/feed___GET": {
       "provider_alias_intent": "/3/feed",
       "text": "Returns the account settings only accessible if you're logged in as the user",
       "category": "Feed",
@@ -2015,11 +1947,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery": {
-      "provider_intent": "gallery",
+    "imgur__/3/gallery/section/sort/window/page?showviral=showviral&mature=showmature&album_previews=albumpreviews___GET": {
       "provider_alias_intent": "/3/gallery/section/sort/window/page?showviral=showviral&mature=showmature&album_previews=albumpreviews",
       "text": "Key | Required | Value                                                                                             |",
       "category": "Gallery",
@@ -2047,11 +1978,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "subreddit_galleries": {
-      "provider_intent": "subreddit_galleries",
+    "imgur__/3/gallery/r/subreddit/sort/window/page___GET": {
       "provider_alias_intent": "/3/gallery/r/subreddit/sort/window/page",
       "text": "View gallery images for a subreddit",
       "category": "Gallery",
@@ -2079,11 +2009,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "subreddit_image": {
-      "provider_intent": "subreddit_image",
+    "imgur__/3/gallery/r/subreddit/subredditimageid___GET": {
       "provider_alias_intent": "/3/gallery/r/subreddit/subredditimageid",
       "text": "View a single image in the subreddit",
       "category": "Gallery",
@@ -2111,11 +2040,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_tag": {
-      "provider_intent": "gallery_tag",
+    "imgur__/3/gallery/t/tagname/sort/window/page___GET": {
       "provider_alias_intent": "/3/gallery/t/tagname/sort/window/page",
       "text": "Returns tag metadata and posts tagged with the `tagName` provided",
       "category": "Gallery",
@@ -2143,11 +2071,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_tags": {
-      "provider_intent": "gallery_tags",
+    "imgur__/3/tags___GET": {
       "provider_alias_intent": "/3/tags",
       "text": "Gets a list of default tags",
       "category": "Gallery",
@@ -2175,11 +2102,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_tag_info": {
-      "provider_intent": "gallery_tag_info",
+    "imgur__/3/gallery/tag_info/tagname___GET": {
       "provider_alias_intent": "/3/gallery/tag_info/tagname",
       "text": "Gets metadata about a tag",
       "category": "Gallery",
@@ -2207,11 +2133,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_item_tags": {
-      "provider_intent": "gallery_item_tags",
+    "imgur__/3/gallery/galleryhash/tags___GET": {
       "provider_alias_intent": "/3/gallery/galleryhash/tags",
       "text": "| Key | Required | Value                  |",
       "category": "Gallery",
@@ -2239,11 +2164,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "update_gallery_item_tags": {
-      "provider_intent": "update_gallery_item_tags",
+    "imgur__/3/gallery/tags/galleryhash___POST": {
       "provider_alias_intent": "/3/gallery/tags/galleryhash",
       "text": "Update the tags for a post in the gallery",
       "category": "Gallery",
@@ -2280,11 +2204,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_search": {
-      "provider_intent": "gallery_search",
+    "imgur__/3/gallery/search/sort/window/page?q=cats___GET": {
       "provider_alias_intent": "/3/gallery/search/sort/window/page?q=cats",
       "text": "Search the gallery with a given query string",
       "category": "Gallery",
@@ -2317,11 +2240,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "share_with_community_(image)": {
-      "provider_intent": "share_with_community_(image)",
+    "imgur__/3/gallery/image/imagehash___POST": {
       "provider_alias_intent": "/3/gallery/image/imagehash",
       "text": "Share an Album or Image to the Gallery",
       "category": "Gallery",
@@ -2370,11 +2292,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "share_with_community_(album)": {
-      "provider_intent": "share_with_community_(album)",
+    "imgur__/3/gallery/album/albumhash___POST": {
       "provider_alias_intent": "/3/gallery/album/albumhash",
       "text": "Share an Album or Image to the Gallery",
       "category": "Gallery",
@@ -2423,11 +2344,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "remove_from_gallery": {
-      "provider_intent": "remove_from_gallery",
+    "imgur__/3/gallery/galleryhash___DELETE": {
       "provider_alias_intent": "/3/gallery/galleryhash",
       "text": "Remove an image from the public gallery",
       "category": "Gallery",
@@ -2455,11 +2375,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_album": {
-      "provider_intent": "gallery_album",
+    "imgur__/3/gallery/album/galleryhash___GET": {
       "provider_alias_intent": "/3/gallery/album/galleryhash",
       "text": "Get additional information about an album in the gallery",
       "category": "Gallery",
@@ -2487,11 +2406,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "gallery_image": {
-      "provider_intent": "gallery_image",
+    "imgur__/3/gallery/image/galleryimagehash___GET": {
       "provider_alias_intent": "/3/gallery/image/galleryimagehash",
       "text": "Get additional information about an image in the gallery",
       "category": "Gallery",
@@ -2519,11 +2437,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_reporting": {
-      "provider_intent": "album_/_image_reporting",
+    "imgur__/3/gallery/image/galleryhash/report___POST": {
       "provider_alias_intent": "/3/gallery/image/galleryhash/report",
       "text": "Report an Image in the gallery",
       "category": "Gallery",
@@ -2555,11 +2472,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_votes": {
-      "provider_intent": "album_/_image_votes",
+    "imgur__/3/gallery/galleryhash/votes___GET": {
       "provider_alias_intent": "/3/gallery/galleryhash/votes",
       "text": "Get the vote information about an image",
       "category": "Gallery",
@@ -2587,11 +2503,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_voting": {
-      "provider_intent": "album_/_image_voting",
+    "imgur__/3/gallery/galleryhash/vote/vote___POST": {
       "provider_alias_intent": "/3/gallery/galleryhash/vote/vote",
       "text": "Vote for an image `up` or `down` vote",
       "category": "Gallery",
@@ -2619,11 +2534,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_comments": {
-      "provider_intent": "album_/_image_comments",
+    "imgur__/3/gallery/galleryhash/comments/commentsort___GET": {
       "provider_alias_intent": "/3/gallery/galleryhash/comments/commentsort",
       "text": "Get comments on an image or album in the gallery",
       "category": "Gallery",
@@ -2655,11 +2569,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_comment": {
-      "provider_intent": "album_/_image_comment",
+    "imgur__/3/gallery/galleryhash/comment/commentid___GET": {
       "provider_alias_intent": "/3/gallery/galleryhash/comment/commentid",
       "text": "Information about a specific comment",
       "category": "Gallery",
@@ -2687,11 +2600,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "album_/_image_comment_creation": {
-      "provider_intent": "album_/_image_comment_creation",
+    "imgur__/3/gallery/galleryhash/comment___POST": {
       "provider_alias_intent": "/3/gallery/galleryhash/comment",
       "text": "#### Response Model: [Basic](https://api",
       "category": "Gallery",
@@ -2723,11 +2635,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image": {
-      "provider_intent": "image",
+    "imgur__/3/image/imagehash___GET": {
       "provider_alias_intent": "/3/image/imagehash",
       "text": "Get information about an image",
       "category": "Image",
@@ -2755,11 +2666,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_upload": {
-      "provider_intent": "image_upload",
+    "imgur__/3/upload___POST": {
       "provider_alias_intent": "/3/upload",
       "text": "Upload a new image or video",
       "category": "Image",
@@ -2820,11 +2730,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_deletion_(un-authed)": {
-      "provider_intent": "image_deletion_(un-authed)",
+    "imgur__/3/image/imagedeletehash___DELETE": {
       "provider_alias_intent": "/3/image/imagedeletehash",
       "text": "Deletes an image",
       "category": "Image",
@@ -2852,11 +2761,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "image_deletion_(authed)": {
-      "provider_intent": "image_deletion_(authed)",
+    "imgur__/3/image/imagehash___DELETE": {
       "provider_alias_intent": "/3/image/imagehash",
       "text": "Deletes an image",
       "category": "Image",
@@ -2884,11 +2792,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "update_image_information_(un-authed)": {
-      "provider_intent": "update_image_information_(un-authed)",
+    "imgur__/3/image/imagedeletehash___POST": {
       "provider_alias_intent": "/3/image/imagedeletehash",
       "text": "Updates the title or description of an image",
       "category": "Image",
@@ -2923,11 +2830,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "update_image_information_(authed)": {
-      "provider_intent": "update_image_information_(authed)",
+    "imgur__/3/image/imagehash___POST": {
       "provider_alias_intent": "/3/image/imagehash",
       "text": "Updates the title or description of an image",
       "category": "Image",
@@ -2962,11 +2868,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     },
-    "favorite_an_image": {
-      "provider_intent": "favorite_an_image",
+    "imgur__/3/image/imagehash/favorite___POST": {
       "provider_alias_intent": "/3/image/imagehash/favorite",
       "text": "Favorite an image with the given ID",
       "category": "Image",
@@ -2994,8 +2899,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.640Z"
     }
   }
 }

@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "DigitalOcean API",
-    "description": "",
-    "api_base": "/digitalocean",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "oneclicks_list": {
-      "provider_intent": "oneclicks_list",
+    "digitalocean__/v2/1-clicks___GET": {
       "provider_alias_intent": "/v2/1-clicks",
       "text": "List 1-Click Applications",
       "category": "1-Click Applications",
@@ -45,11 +34,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "oneclicks_install_kubernetes": {
-      "provider_intent": "oneclicks_install_kubernetes",
+    "digitalocean__/v2/1-clicks/kubernetes___POST": {
       "provider_alias_intent": "/v2/1-clicks/kubernetes",
       "text": "Install Kubernetes 1-Click Applications",
       "category": "1-Click Applications",
@@ -88,11 +76,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "account_get": {
-      "provider_intent": "account_get",
+    "digitalocean__/v2/account___GET": {
       "provider_alias_intent": "/v2/account",
       "text": "Get User Information",
       "category": "Account",
@@ -120,11 +107,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "actions_list": {
-      "provider_intent": "actions_list",
+    "digitalocean__/v2/actions___GET": {
       "provider_alias_intent": "/v2/actions",
       "text": "List All Actions",
       "category": "Actions",
@@ -161,11 +147,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "actions_get": {
-      "provider_intent": "actions_get",
+    "digitalocean__/v2/actions/action_id___GET": {
       "provider_alias_intent": "/v2/actions/action_id",
       "text": "Retrieve an Existing Action",
       "category": "Actions",
@@ -205,11 +190,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list": {
-      "provider_intent": "apps_list",
+    "digitalocean__/v2/apps___GET": {
       "provider_alias_intent": "/v2/apps",
       "text": "List All Apps",
       "category": "Apps",
@@ -254,11 +238,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_create": {
-      "provider_intent": "apps_create",
+    "digitalocean__/v2/apps___POST": {
       "provider_alias_intent": "/v2/apps",
       "text": "Create a New App",
       "category": "Apps",
@@ -296,11 +279,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_delete": {
-      "provider_intent": "apps_delete",
+    "digitalocean__/v2/apps/id___DELETE": {
       "provider_alias_intent": "/v2/apps/id",
       "text": "Delete an App",
       "category": "Apps",
@@ -340,11 +322,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get": {
-      "provider_intent": "apps_get",
+    "digitalocean__/v2/apps/id___GET": {
       "provider_alias_intent": "/v2/apps/id",
       "text": "Retrieve an Existing App",
       "category": "Apps",
@@ -388,11 +369,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_update": {
-      "provider_intent": "apps_update",
+    "digitalocean__/v2/apps/id___PUT": {
       "provider_alias_intent": "/v2/apps/id",
       "text": "Update an App",
       "category": "Apps",
@@ -438,11 +418,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_logs_active_deployment": {
-      "provider_intent": "apps_get_logs_active_deployment",
+    "digitalocean__/v2/apps/app_id/components/component_name/logs___GET": {
       "provider_alias_intent": "/v2/apps/app_id/components/component_name/logs",
       "text": "Retrieve Active Deployment Logs",
       "category": "Apps",
@@ -509,11 +488,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_deployments": {
-      "provider_intent": "apps_list_deployments",
+    "digitalocean__/v2/apps/app_id/deployments___GET": {
       "provider_alias_intent": "/v2/apps/app_id/deployments",
       "text": "List App Deployments",
       "category": "Apps",
@@ -561,11 +539,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_create_deployment": {
-      "provider_intent": "apps_create_deployment",
+    "digitalocean__/v2/apps/app_id/deployments___POST": {
       "provider_alias_intent": "/v2/apps/app_id/deployments",
       "text": "Create an App Deployment",
       "category": "Apps",
@@ -613,11 +590,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_deployment": {
-      "provider_intent": "apps_get_deployment",
+    "digitalocean__/v2/apps/app_id/deployments/deployment_id___GET": {
       "provider_alias_intent": "/v2/apps/app_id/deployments/deployment_id",
       "text": "Retrieve an App Deployment",
       "category": "Apps",
@@ -667,11 +643,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_cancel_deployment": {
-      "provider_intent": "apps_cancel_deployment",
+    "digitalocean__/v2/apps/app_id/deployments/deployment_id/cancel___POST": {
       "provider_alias_intent": "/v2/apps/app_id/deployments/deployment_id/cancel",
       "text": "Cancel a Deployment",
       "category": "Apps",
@@ -721,11 +696,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_logs": {
-      "provider_intent": "apps_get_logs",
+    "digitalocean__/v2/apps/app_id/deployments/deployment_id/components/component_name/logs___GET": {
       "provider_alias_intent": "/v2/apps/app_id/deployments/deployment_id/components/component_name/logs",
       "text": "Retrieve Deployment Logs",
       "category": "Apps",
@@ -802,11 +776,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_logs_aggregate": {
-      "provider_intent": "apps_get_logs_aggregate",
+    "digitalocean__/v2/apps/app_id/deployments/deployment_id/logs___GET": {
       "provider_alias_intent": "/v2/apps/app_id/deployments/deployment_id/logs",
       "text": "Retrieve Aggregate Deployment Logs",
       "category": "Apps",
@@ -873,11 +846,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_logs_active_deployment_aggregate": {
-      "provider_intent": "apps_get_logs_active_deployment_aggregate",
+    "digitalocean__/v2/apps/app_id/logs___GET": {
       "provider_alias_intent": "/v2/apps/app_id/logs",
       "text": "Retrieve Active Deployment Aggregate Logs",
       "category": "Apps",
@@ -934,11 +906,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_tiers": {
-      "provider_intent": "apps_list_tiers",
+    "digitalocean__/v2/apps/tiers___GET": {
       "provider_alias_intent": "/v2/apps/tiers",
       "text": "List App Tiers",
       "category": "Apps",
@@ -966,11 +937,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_tier": {
-      "provider_intent": "apps_get_tier",
+    "digitalocean__/v2/apps/tiers/slug___GET": {
       "provider_alias_intent": "/v2/apps/tiers/slug",
       "text": "Retrieve an App Tier",
       "category": "Apps",
@@ -1010,11 +980,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_instancesizes": {
-      "provider_intent": "apps_list_instancesizes",
+    "digitalocean__/v2/apps/tiers/instance_sizes___GET": {
       "provider_alias_intent": "/v2/apps/tiers/instance_sizes",
       "text": "List Instance Sizes",
       "category": "Apps",
@@ -1042,11 +1011,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_instancesize": {
-      "provider_intent": "apps_get_instancesize",
+    "digitalocean__/v2/apps/tiers/instance_sizes/slug___GET": {
       "provider_alias_intent": "/v2/apps/tiers/instance_sizes/slug",
       "text": "Retrieve an Instance Size",
       "category": "Apps",
@@ -1086,11 +1054,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_regions": {
-      "provider_intent": "apps_list_regions",
+    "digitalocean__/v2/apps/regions___GET": {
       "provider_alias_intent": "/v2/apps/regions",
       "text": "List App Regions",
       "category": "Apps",
@@ -1118,11 +1085,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_validate_appspec": {
-      "provider_intent": "apps_validate_appspec",
+    "digitalocean__/v2/apps/propose___POST": {
       "provider_alias_intent": "/v2/apps/propose",
       "text": "Propose an App Spec",
       "category": "Apps",
@@ -1160,11 +1126,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_alerts": {
-      "provider_intent": "apps_list_alerts",
+    "digitalocean__/v2/apps/app_id/alerts___GET": {
       "provider_alias_intent": "/v2/apps/app_id/alerts",
       "text": "List all app alerts",
       "category": "Apps",
@@ -1204,11 +1169,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_assign_alertdestinations": {
-      "provider_intent": "apps_assign_alertdestinations",
+    "digitalocean__/v2/apps/app_id/alerts/alert_id/destinations___POST": {
       "provider_alias_intent": "/v2/apps/app_id/alerts/alert_id/destinations",
       "text": "Update destinations for alerts",
       "category": "Apps",
@@ -1265,11 +1229,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_create_rollback": {
-      "provider_intent": "apps_create_rollback",
+    "digitalocean__/v2/apps/app_id/rollback___POST": {
       "provider_alias_intent": "/v2/apps/app_id/rollback",
       "text": "Rollback App",
       "category": "Apps",
@@ -1322,11 +1285,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_validate_rollback": {
-      "provider_intent": "apps_validate_rollback",
+    "digitalocean__/v2/apps/app_id/rollback/validate___POST": {
       "provider_alias_intent": "/v2/apps/app_id/rollback/validate",
       "text": "Validate App Rollback",
       "category": "Apps",
@@ -1379,11 +1341,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_commit_rollback": {
-      "provider_intent": "apps_commit_rollback",
+    "digitalocean__/v2/apps/app_id/rollback/commit___POST": {
       "provider_alias_intent": "/v2/apps/app_id/rollback/commit",
       "text": "Commit App Rollback",
       "category": "Apps",
@@ -1423,11 +1384,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_revert_rollback": {
-      "provider_intent": "apps_revert_rollback",
+    "digitalocean__/v2/apps/app_id/rollback/revert___POST": {
       "provider_alias_intent": "/v2/apps/app_id/rollback/revert",
       "text": "Revert App Rollback",
       "category": "Apps",
@@ -1467,11 +1427,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_get_metrics_bandwidth_daily": {
-      "provider_intent": "apps_get_metrics_bandwidth_daily",
+    "digitalocean__/v2/apps/app_id/metrics/bandwidth_daily___GET": {
       "provider_alias_intent": "/v2/apps/app_id/metrics/bandwidth_daily",
       "text": "Retrieve App Daily Bandwidth Metrics",
       "category": "Apps",
@@ -1515,11 +1474,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "apps_list_metrics_bandwidth_daily": {
-      "provider_intent": "apps_list_metrics_bandwidth_daily",
+    "digitalocean__/v2/apps/metrics/bandwidth_daily___POST": {
       "provider_alias_intent": "/v2/apps/metrics/bandwidth_daily",
       "text": "Retrieve Multiple Apps' Daily Bandwidth Metrics",
       "category": "Apps",
@@ -1557,11 +1515,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "balance_get": {
-      "provider_intent": "balance_get",
+    "digitalocean__/v2/customers/my/balance___GET": {
       "provider_alias_intent": "/v2/customers/my/balance",
       "text": "Get Customer Balance",
       "category": "Billing",
@@ -1589,11 +1546,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "billinghistory_list": {
-      "provider_intent": "billinghistory_list",
+    "digitalocean__/v2/customers/my/billing_history___GET": {
       "provider_alias_intent": "/v2/customers/my/billing_history",
       "text": "List Billing History",
       "category": "Billing",
@@ -1621,11 +1577,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "invoices_list": {
-      "provider_intent": "invoices_list",
+    "digitalocean__/v2/customers/my/invoices___GET": {
       "provider_alias_intent": "/v2/customers/my/invoices",
       "text": "List All Invoices",
       "category": "Billing",
@@ -1662,11 +1617,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "invoices_get_byuuid": {
-      "provider_intent": "invoices_get_byuuid",
+    "digitalocean__/v2/customers/my/invoices/invoice_uuid___GET": {
       "provider_alias_intent": "/v2/customers/my/invoices/invoice_uuid",
       "text": "Retrieve an Invoice by UUID",
       "category": "Billing",
@@ -1706,11 +1660,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "invoices_get_csvbyuuid": {
-      "provider_intent": "invoices_get_csvbyuuid",
+    "digitalocean__/v2/customers/my/invoices/invoice_uuid/csv___GET": {
       "provider_alias_intent": "/v2/customers/my/invoices/invoice_uuid/csv",
       "text": "Retrieve an Invoice CSV by UUID",
       "category": "Billing",
@@ -1750,11 +1703,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "invoices_get_pdfbyuuid": {
-      "provider_intent": "invoices_get_pdfbyuuid",
+    "digitalocean__/v2/customers/my/invoices/invoice_uuid/pdf___GET": {
       "provider_alias_intent": "/v2/customers/my/invoices/invoice_uuid/pdf",
       "text": "Retrieve an Invoice PDF by UUID",
       "category": "Billing",
@@ -1794,11 +1746,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "invoices_get_summarybyuuid": {
-      "provider_intent": "invoices_get_summarybyuuid",
+    "digitalocean__/v2/customers/my/invoices/invoice_uuid/summary___GET": {
       "provider_alias_intent": "/v2/customers/my/invoices/invoice_uuid/summary",
       "text": "Retrieve an Invoice Summary by UUID",
       "category": "Billing",
@@ -1838,11 +1789,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumes_list": {
-      "provider_intent": "volumes_list",
+    "digitalocean__/v2/volumes___GET": {
       "provider_alias_intent": "/v2/volumes",
       "text": "List All Block Storage Volumes",
       "category": "Block Storage",
@@ -1887,11 +1837,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumes_create": {
-      "provider_intent": "volumes_create",
+    "digitalocean__/v2/volumes___POST": {
       "provider_alias_intent": "/v2/volumes",
       "text": "Create a New Block Storage Volume",
       "category": "Block Storage",
@@ -1919,11 +1868,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumes_delete_byname": {
-      "provider_intent": "volumes_delete_byname",
+    "digitalocean__/v2/volumes___DELETE": {
       "provider_alias_intent": "/v2/volumes",
       "text": "Delete a Block Storage Volume by Name",
       "category": "Block Storage",
@@ -1960,11 +1908,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumesnapshots_get_byid": {
-      "provider_intent": "volumesnapshots_get_byid",
+    "digitalocean__/v2/volumes/snapshots/snapshot_id___GET": {
       "provider_alias_intent": "/v2/volumes/snapshots/snapshot_id",
       "text": "Retrieve an Existing Volume Snapshot",
       "category": "Block Storage",
@@ -2004,11 +1951,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumesnapshots_delete_byid": {
-      "provider_intent": "volumesnapshots_delete_byid",
+    "digitalocean__/v2/volumes/snapshots/snapshot_id___DELETE": {
       "provider_alias_intent": "/v2/volumes/snapshots/snapshot_id",
       "text": "Delete a Volume Snapshot",
       "category": "Block Storage",
@@ -2048,11 +1994,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumes_get": {
-      "provider_intent": "volumes_get",
+    "digitalocean__/v2/volumes/volume_id___GET": {
       "provider_alias_intent": "/v2/volumes/volume_id",
       "text": "Retrieve an Existing Block Storage Volume",
       "category": "Block Storage",
@@ -2092,11 +2037,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumes_delete": {
-      "provider_intent": "volumes_delete",
+    "digitalocean__/v2/volumes/volume_id___DELETE": {
       "provider_alias_intent": "/v2/volumes/volume_id",
       "text": "Delete a Block Storage Volume",
       "category": "Block Storage",
@@ -2136,11 +2080,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumesnapshots_list": {
-      "provider_intent": "volumesnapshots_list",
+    "digitalocean__/v2/volumes/volume_id/snapshots___GET": {
       "provider_alias_intent": "/v2/volumes/volume_id/snapshots",
       "text": "List Snapshots for a Volume",
       "category": "Block Storage",
@@ -2188,11 +2131,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumesnapshots_create": {
-      "provider_intent": "volumesnapshots_create",
+    "digitalocean__/v2/volumes/volume_id/snapshots___POST": {
       "provider_alias_intent": "/v2/volumes/volume_id/snapshots",
       "text": "Create Snapshot from a Volume",
       "category": "Block Storage",
@@ -2242,11 +2184,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumeactions_post": {
-      "provider_intent": "volumeactions_post",
+    "digitalocean__/v2/volumes/actions___POST": {
       "provider_alias_intent": "/v2/volumes/actions",
       "text": "Initiate A Block Storage Action By Volume Name",
       "category": "Block Storage Actions",
@@ -2283,11 +2224,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumeactions_list": {
-      "provider_intent": "volumeactions_list",
+    "digitalocean__/v2/volumes/volume_id/actions___GET": {
       "provider_alias_intent": "/v2/volumes/volume_id/actions",
       "text": "List All Actions for a Volume",
       "category": "Block Storage Actions",
@@ -2335,11 +2275,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumeactions_post_byid": {
-      "provider_intent": "volumeactions_post_byid",
+    "digitalocean__/v2/volumes/volume_id/actions___POST": {
       "provider_alias_intent": "/v2/volumes/volume_id/actions",
       "text": "Initiate A Block Storage Action By Volume Id",
       "category": "Block Storage Actions",
@@ -2387,11 +2326,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "volumeactions_get": {
-      "provider_intent": "volumeactions_get",
+    "digitalocean__/v2/volumes/volume_id/actions/action_id___GET": {
       "provider_alias_intent": "/v2/volumes/volume_id/actions/action_id",
       "text": "Retrieve an Existing Volume Action",
       "category": "Block Storage Actions",
@@ -2449,11 +2387,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_list_endpoints": {
-      "provider_intent": "cdn_list_endpoints",
+    "digitalocean__/v2/cdn/endpoints___GET": {
       "provider_alias_intent": "/v2/cdn/endpoints",
       "text": "List All CDN Endpoints",
       "category": "CDN Endpoints",
@@ -2490,11 +2427,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_create_endpoint": {
-      "provider_intent": "cdn_create_endpoint",
+    "digitalocean__/v2/cdn/endpoints___POST": {
       "provider_alias_intent": "/v2/cdn/endpoints",
       "text": "Create a New CDN Endpoint",
       "category": "CDN Endpoints",
@@ -2552,11 +2488,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_get_endpoint": {
-      "provider_intent": "cdn_get_endpoint",
+    "digitalocean__/v2/cdn/endpoints/cdn_id___GET": {
       "provider_alias_intent": "/v2/cdn/endpoints/cdn_id",
       "text": "Retrieve an Existing CDN Endpoint",
       "category": "CDN Endpoints",
@@ -2596,11 +2531,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_update_endpoints": {
-      "provider_intent": "cdn_update_endpoints",
+    "digitalocean__/v2/cdn/endpoints/cdn_id___PUT": {
       "provider_alias_intent": "/v2/cdn/endpoints/cdn_id",
       "text": "Update a CDN Endpoint",
       "category": "CDN Endpoints",
@@ -2653,11 +2587,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_delete_endpoint": {
-      "provider_intent": "cdn_delete_endpoint",
+    "digitalocean__/v2/cdn/endpoints/cdn_id___DELETE": {
       "provider_alias_intent": "/v2/cdn/endpoints/cdn_id",
       "text": "Delete a CDN Endpoint",
       "category": "CDN Endpoints",
@@ -2697,11 +2630,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "cdn_purge_cache": {
-      "provider_intent": "cdn_purge_cache",
+    "digitalocean__/v2/cdn/endpoints/cdn_id/cache___DELETE": {
       "provider_alias_intent": "/v2/cdn/endpoints/cdn_id/cache",
       "text": "Purge the Cache for an Existing CDN Endpoint",
       "category": "CDN Endpoints",
@@ -2747,11 +2679,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "certificates_list": {
-      "provider_intent": "certificates_list",
+    "digitalocean__/v2/certificates___GET": {
       "provider_alias_intent": "/v2/certificates",
       "text": "List All Certificates",
       "category": "Certificates",
@@ -2788,11 +2719,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "certificates_create": {
-      "provider_intent": "certificates_create",
+    "digitalocean__/v2/certificates___POST": {
       "provider_alias_intent": "/v2/certificates",
       "text": "Create a New Certificate",
       "category": "Certificates",
@@ -2820,11 +2750,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "certificates_get": {
-      "provider_intent": "certificates_get",
+    "digitalocean__/v2/certificates/certificate_id___GET": {
       "provider_alias_intent": "/v2/certificates/certificate_id",
       "text": "Retrieve an Existing Certificate",
       "category": "Certificates",
@@ -2864,11 +2793,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "certificates_delete": {
-      "provider_intent": "certificates_delete",
+    "digitalocean__/v2/certificates/certificate_id___DELETE": {
       "provider_alias_intent": "/v2/certificates/certificate_id",
       "text": "Delete a Certificate",
       "category": "Certificates",
@@ -2908,11 +2836,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_get": {
-      "provider_intent": "registry_get",
+    "digitalocean__/v2/registry___GET": {
       "provider_alias_intent": "/v2/registry",
       "text": "Get Container Registry Information",
       "category": "Container Registry",
@@ -2940,11 +2867,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_create": {
-      "provider_intent": "registry_create",
+    "digitalocean__/v2/registry___POST": {
       "provider_alias_intent": "/v2/registry",
       "text": "Create Container Registry",
       "category": "Container Registry",
@@ -2987,11 +2913,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_delete": {
-      "provider_intent": "registry_delete",
+    "digitalocean__/v2/registry___DELETE": {
       "provider_alias_intent": "/v2/registry",
       "text": "Delete Container Registry",
       "category": "Container Registry",
@@ -3019,11 +2944,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_get_subscription": {
-      "provider_intent": "registry_get_subscription",
+    "digitalocean__/v2/registry/subscription___GET": {
       "provider_alias_intent": "/v2/registry/subscription",
       "text": "Get Subscription Information",
       "category": "Container Registry",
@@ -3051,11 +2975,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_update_subscription": {
-      "provider_intent": "registry_update_subscription",
+    "digitalocean__/v2/registry/subscription___POST": {
       "provider_alias_intent": "/v2/registry/subscription",
       "text": "Update Subscription Tier",
       "category": "Container Registry",
@@ -3088,11 +3011,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_get_dockercredentials": {
-      "provider_intent": "registry_get_dockercredentials",
+    "digitalocean__/v2/registry/docker-credentials___GET": {
       "provider_alias_intent": "/v2/registry/docker-credentials",
       "text": "Get Docker Credentials for Container Registry",
       "category": "Container Registry",
@@ -3133,11 +3055,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_validate_name": {
-      "provider_intent": "registry_validate_name",
+    "digitalocean__/v2/registry/validate-name___POST": {
       "provider_alias_intent": "/v2/registry/validate-name",
       "text": "Validate a Container Registry Name",
       "category": "Container Registry",
@@ -3171,11 +3092,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_list_repositories": {
-      "provider_intent": "registry_list_repositories",
+    "digitalocean__/v2/registry/registry_name/repositories___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/repositories",
       "text": "List All Container Registry Repositories",
       "category": "Container Registry",
@@ -3223,11 +3143,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_list_repositoriesv2": {
-      "provider_intent": "registry_list_repositoriesv2",
+    "digitalocean__/v2/registry/registry_name/repositoriesv2___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/repositoriesv2",
       "text": "List All Container Registry Repositories (V2)",
       "category": "Container Registry",
@@ -3279,11 +3198,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_list_repositorytags": {
-      "provider_intent": "registry_list_repositorytags",
+    "digitalocean__/v2/registry/registry_name/repository_name/tags___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/repository_name/tags",
       "text": "List All Container Registry Repository Tags",
       "category": "Container Registry",
@@ -3341,11 +3259,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_delete_repositorytag": {
-      "provider_intent": "registry_delete_repositorytag",
+    "digitalocean__/v2/registry/registry_name/repository_name/tags/repository_tag___DELETE": {
       "provider_alias_intent": "/v2/registry/registry_name/repository_name/tags/repository_tag",
       "text": "Delete Container Registry Repository Tag",
       "category": "Container Registry",
@@ -3405,11 +3322,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_list_repositorymanifests": {
-      "provider_intent": "registry_list_repositorymanifests",
+    "digitalocean__/v2/registry/registry_name/repository_name/digests___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/repository_name/digests",
       "text": "List All Container Registry Repository Manifests",
       "category": "Container Registry",
@@ -3467,11 +3383,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_delete_repositorymanifest": {
-      "provider_intent": "registry_delete_repositorymanifest",
+    "digitalocean__/v2/registry/registry_name/repository_name/digests/manifest_digest___DELETE": {
       "provider_alias_intent": "/v2/registry/registry_name/repository_name/digests/manifest_digest",
       "text": "Delete Container Registry Repository Manifest",
       "category": "Container Registry",
@@ -3531,11 +3446,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_run_garbagecollection": {
-      "provider_intent": "registry_run_garbagecollection",
+    "digitalocean__/v2/registry/registry_name/garbage-collection___POST": {
       "provider_alias_intent": "/v2/registry/registry_name/garbage-collection",
       "text": "Start Garbage Collection",
       "category": "Container Registry",
@@ -3575,11 +3489,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_get_garbagecollection": {
-      "provider_intent": "registry_get_garbagecollection",
+    "digitalocean__/v2/registry/registry_name/garbage-collection___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/garbage-collection",
       "text": "Get Active Garbage Collection",
       "category": "Container Registry",
@@ -3619,11 +3532,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_list_garbagecollections": {
-      "provider_intent": "registry_list_garbagecollections",
+    "digitalocean__/v2/registry/registry_name/garbage-collections___GET": {
       "provider_alias_intent": "/v2/registry/registry_name/garbage-collections",
       "text": "List Garbage Collections",
       "category": "Container Registry",
@@ -3671,11 +3583,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_update_garbagecollection": {
-      "provider_intent": "registry_update_garbagecollection",
+    "digitalocean__/v2/registry/registry_name/garbage-collection/garbage_collection_uuid___PUT": {
       "provider_alias_intent": "/v2/registry/registry_name/garbage-collection/garbage_collection_uuid",
       "text": "Update Garbage Collection",
       "category": "Container Registry",
@@ -3734,11 +3645,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "registry_get_options": {
-      "provider_intent": "registry_get_options",
+    "digitalocean__/v2/registry/options___GET": {
       "provider_alias_intent": "/v2/registry/options",
       "text": "List Registry Options (Subscription Tiers and Available Regions)",
       "category": "Container Registry",
@@ -3766,11 +3676,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_options": {
-      "provider_intent": "databases_list_options",
+    "digitalocean__/v2/databases/options___GET": {
       "provider_alias_intent": "/v2/databases/options",
       "text": "List Database Options",
       "category": "Databases",
@@ -3798,11 +3707,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_clusters": {
-      "provider_intent": "databases_list_clusters",
+    "digitalocean__/v2/databases___GET": {
       "provider_alias_intent": "/v2/databases",
       "text": "List All Database Clusters",
       "category": "Databases",
@@ -3835,11 +3743,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_create_cluster": {
-      "provider_intent": "databases_create_cluster",
+    "digitalocean__/v2/databases___POST": {
       "provider_alias_intent": "/v2/databases",
       "text": "Create a New Database Cluster",
       "category": "Databases",
@@ -3867,11 +3774,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_cluster": {
-      "provider_intent": "databases_get_cluster",
+    "digitalocean__/v2/databases/database_cluster_uuid___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid",
       "text": "Retrieve an Existing Database Cluster",
       "category": "Databases",
@@ -3911,11 +3817,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_destroy_cluster": {
-      "provider_intent": "databases_destroy_cluster",
+    "digitalocean__/v2/databases/database_cluster_uuid___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid",
       "text": "Destroy a Database Cluster",
       "category": "Databases",
@@ -3955,11 +3860,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_config": {
-      "provider_intent": "databases_get_config",
+    "digitalocean__/v2/databases/database_cluster_uuid/config___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/config",
       "text": "Retrieve an Existing Database Cluster Configuration",
       "category": "Databases",
@@ -3999,11 +3903,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_patch_config": {
-      "provider_intent": "databases_patch_config",
+    "digitalocean__/v2/databases/database_cluster_uuid/config___PATCH": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/config",
       "text": "Update the Database Configuration for an Existing Database",
       "category": "Databases",
@@ -4047,11 +3950,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_ca": {
-      "provider_intent": "databases_get_ca",
+    "digitalocean__/v2/databases/database_cluster_uuid/ca___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/ca",
       "text": "Retrieve the Public Certificate",
       "category": "Databases",
@@ -4091,11 +3993,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_migrationstatus": {
-      "provider_intent": "databases_get_migrationstatus",
+    "digitalocean__/v2/databases/database_cluster_uuid/online-migration___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/online-migration",
       "text": "Retrieve the Status of an Online Migration",
       "category": "Databases",
@@ -4135,11 +4036,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_onlinemigration": {
-      "provider_intent": "databases_update_onlinemigration",
+    "digitalocean__/v2/databases/database_cluster_uuid/online-migration___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/online-migration",
       "text": "Start an Online Migration",
       "category": "Databases",
@@ -4191,11 +4091,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_delete_onlinemigration": {
-      "provider_intent": "databases_delete_onlinemigration",
+    "digitalocean__/v2/databases/database_cluster_uuid/online-migration/migration_id___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/online-migration/migration_id",
       "text": "Stop an Online Migration",
       "category": "Databases",
@@ -4245,11 +4144,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_region": {
-      "provider_intent": "databases_update_region",
+    "digitalocean__/v2/databases/database_cluster_uuid/migrate___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/migrate",
       "text": "Migrate a Database Cluster to a New Region",
       "category": "Databases",
@@ -4295,11 +4193,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_clustersize": {
-      "provider_intent": "databases_update_clustersize",
+    "digitalocean__/v2/databases/database_cluster_uuid/resize___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/resize",
       "text": "Resize a Database Cluster",
       "category": "Databases",
@@ -4350,11 +4247,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_firewall_rules": {
-      "provider_intent": "databases_list_firewall_rules",
+    "digitalocean__/v2/databases/database_cluster_uuid/firewall___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/firewall",
       "text": "List Firewall Rules (Trusted Sources) for a Database Cluster",
       "category": "Databases",
@@ -4394,11 +4290,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_firewall_rules": {
-      "provider_intent": "databases_update_firewall_rules",
+    "digitalocean__/v2/databases/database_cluster_uuid/firewall___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/firewall",
       "text": "Update Firewall Rules (Trusted Sources) for a Database",
       "category": "Databases",
@@ -4442,11 +4337,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_maintenancewindow": {
-      "provider_intent": "databases_update_maintenancewindow",
+    "digitalocean__/v2/databases/database_cluster_uuid/maintenance___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/maintenance",
       "text": "Configure a Database Cluster's Maintenance Window",
       "category": "Databases",
@@ -4509,11 +4403,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_backups": {
-      "provider_intent": "databases_list_backups",
+    "digitalocean__/v2/databases/database_cluster_uuid/backups___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/backups",
       "text": "List Backups for a Database Cluster",
       "category": "Databases",
@@ -4553,11 +4446,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_replicas": {
-      "provider_intent": "databases_list_replicas",
+    "digitalocean__/v2/databases/database_cluster_uuid/replicas___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/replicas",
       "text": "List All Read-only Replicas",
       "category": "Databases",
@@ -4597,11 +4489,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_create_replica": {
-      "provider_intent": "databases_create_replica",
+    "digitalocean__/v2/databases/database_cluster_uuid/replicas___POST": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/replicas",
       "text": "Create a Read-only Replica",
       "category": "Databases",
@@ -4641,11 +4532,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_replica": {
-      "provider_intent": "databases_get_replica",
+    "digitalocean__/v2/databases/database_cluster_uuid/replicas/replica_name___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/replicas/replica_name",
       "text": "Retrieve an Existing Read-only Replica",
       "category": "Databases",
@@ -4695,11 +4585,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_destroy_replica": {
-      "provider_intent": "databases_destroy_replica",
+    "digitalocean__/v2/databases/database_cluster_uuid/replicas/replica_name___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/replicas/replica_name",
       "text": "Destroy a Read-only Replica",
       "category": "Databases",
@@ -4749,11 +4638,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_promote_replica": {
-      "provider_intent": "databases_promote_replica",
+    "digitalocean__/v2/databases/database_cluster_uuid/replicas/replica_name/promote___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/replicas/replica_name/promote",
       "text": "Promote a Read-only Replica to become a Primary Cluster",
       "category": "Databases",
@@ -4803,11 +4691,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_users": {
-      "provider_intent": "databases_list_users",
+    "digitalocean__/v2/databases/database_cluster_uuid/users___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/users",
       "text": "List all Database Users",
       "category": "Databases",
@@ -4847,11 +4734,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_add_user": {
-      "provider_intent": "databases_add_user",
+    "digitalocean__/v2/databases/database_cluster_uuid/users___POST": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/users",
       "text": "Add a Database User",
       "category": "Databases",
@@ -4908,11 +4794,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_user": {
-      "provider_intent": "databases_get_user",
+    "digitalocean__/v2/databases/database_cluster_uuid/users/username___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/users/username",
       "text": "Retrieve an Existing Database User",
       "category": "Databases",
@@ -4962,11 +4847,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_delete_user": {
-      "provider_intent": "databases_delete_user",
+    "digitalocean__/v2/databases/database_cluster_uuid/users/username___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/users/username",
       "text": "Remove a Database User",
       "category": "Databases",
@@ -5016,11 +4900,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_reset_auth": {
-      "provider_intent": "databases_reset_auth",
+    "digitalocean__/v2/databases/database_cluster_uuid/users/username/reset_auth___POST": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/users/username/reset_auth",
       "text": "Reset a Database User's Password or Authentication Method",
       "category": "Databases",
@@ -5074,11 +4957,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list": {
-      "provider_intent": "databases_list",
+    "digitalocean__/v2/databases/database_cluster_uuid/dbs___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/dbs",
       "text": "List All Databases",
       "category": "Databases",
@@ -5118,11 +5000,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_add": {
-      "provider_intent": "databases_add",
+    "digitalocean__/v2/databases/database_cluster_uuid/dbs___POST": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/dbs",
       "text": "Add a New Database",
       "category": "Databases",
@@ -5168,11 +5049,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get": {
-      "provider_intent": "databases_get",
+    "digitalocean__/v2/databases/database_cluster_uuid/dbs/database_name___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/dbs/database_name",
       "text": "Retrieve an Existing Database",
       "category": "Databases",
@@ -5222,11 +5102,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_delete": {
-      "provider_intent": "databases_delete",
+    "digitalocean__/v2/databases/database_cluster_uuid/dbs/database_name___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/dbs/database_name",
       "text": "Delete a Database",
       "category": "Databases",
@@ -5276,11 +5155,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_list_connectionpools": {
-      "provider_intent": "databases_list_connectionpools",
+    "digitalocean__/v2/databases/database_cluster_uuid/pools___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/pools",
       "text": "List Connection Pools (PostgreSQL)",
       "category": "Databases",
@@ -5320,11 +5198,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_add_connectionpool": {
-      "provider_intent": "databases_add_connectionpool",
+    "digitalocean__/v2/databases/database_cluster_uuid/pools___POST": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/pools",
       "text": "Add a New Connection Pool (PostgreSQL)",
       "category": "Databases",
@@ -5395,11 +5272,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_connectionpool": {
-      "provider_intent": "databases_get_connectionpool",
+    "digitalocean__/v2/databases/database_cluster_uuid/pools/pool_name___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/pools/pool_name",
       "text": "Retrieve Existing Connection Pool (PostgreSQL)",
       "category": "Databases",
@@ -5449,11 +5325,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_connectionpool": {
-      "provider_intent": "databases_update_connectionpool",
+    "digitalocean__/v2/databases/database_cluster_uuid/pools/pool_name___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/pools/pool_name",
       "text": "Update Connection Pools (PostgreSQL)",
       "category": "Databases",
@@ -5523,11 +5398,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_delete_connectionpool": {
-      "provider_intent": "databases_delete_connectionpool",
+    "digitalocean__/v2/databases/database_cluster_uuid/pools/pool_name___DELETE": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/pools/pool_name",
       "text": "Delete a Connection Pool (PostgreSQL)",
       "category": "Databases",
@@ -5577,11 +5451,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_evictionpolicy": {
-      "provider_intent": "databases_get_evictionpolicy",
+    "digitalocean__/v2/databases/database_cluster_uuid/eviction_policy___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/eviction_policy",
       "text": "Retrieve the Eviction Policy for a Redis Cluster",
       "category": "Databases",
@@ -5621,11 +5494,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_evictionpolicy": {
-      "provider_intent": "databases_update_evictionpolicy",
+    "digitalocean__/v2/databases/database_cluster_uuid/eviction_policy___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/eviction_policy",
       "text": "Configure the Eviction Policy for a Redis Cluster",
       "category": "Databases",
@@ -5671,11 +5543,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_get_sql_mode": {
-      "provider_intent": "databases_get_sql_mode",
+    "digitalocean__/v2/databases/database_cluster_uuid/sql_mode___GET": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/sql_mode",
       "text": "Retrieve the SQL Modes for a MySQL Cluster",
       "category": "Databases",
@@ -5715,11 +5586,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_sql_mode": {
-      "provider_intent": "databases_update_sql_mode",
+    "digitalocean__/v2/databases/database_cluster_uuid/sql_mode___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/sql_mode",
       "text": "Update SQL Mode for a Cluster",
       "category": "Databases",
@@ -5765,11 +5635,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "databases_update_major_version": {
-      "provider_intent": "databases_update_major_version",
+    "digitalocean__/v2/databases/database_cluster_uuid/upgrade___PUT": {
       "provider_alias_intent": "/v2/databases/database_cluster_uuid/upgrade",
       "text": "Upgrade Major Version for a Database",
       "category": "Databases",
@@ -5814,11 +5683,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_list_records": {
-      "provider_intent": "domains_list_records",
+    "digitalocean__/v2/domains/domain_name/records___GET": {
       "provider_alias_intent": "/v2/domains/domain_name/records",
       "text": "List All Domain Records",
       "category": "Domain Records",
@@ -5874,11 +5742,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_create_record": {
-      "provider_intent": "domains_create_record",
+    "digitalocean__/v2/domains/domain_name/records___POST": {
       "provider_alias_intent": "/v2/domains/domain_name/records",
       "text": "Create a New Domain Record",
       "category": "Domain Records",
@@ -5918,11 +5785,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_get_record": {
-      "provider_intent": "domains_get_record",
+    "digitalocean__/v2/domains/domain_name/records/domain_record_id___GET": {
       "provider_alias_intent": "/v2/domains/domain_name/records/domain_record_id",
       "text": "Retrieve an Existing Domain Record",
       "category": "Domain Records",
@@ -5972,11 +5838,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_patch_record": {
-      "provider_intent": "domains_patch_record",
+    "digitalocean__/v2/domains/domain_name/records/domain_record_id___PATCH": {
       "provider_alias_intent": "/v2/domains/domain_name/records/domain_record_id",
       "text": "Update a Domain Record",
       "category": "Domain Records",
@@ -6068,11 +5933,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_update_record": {
-      "provider_intent": "domains_update_record",
+    "digitalocean__/v2/domains/domain_name/records/domain_record_id___PUT": {
       "provider_alias_intent": "/v2/domains/domain_name/records/domain_record_id",
       "text": "Update a Domain Record",
       "category": "Domain Records",
@@ -6164,11 +6028,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_delete_record": {
-      "provider_intent": "domains_delete_record",
+    "digitalocean__/v2/domains/domain_name/records/domain_record_id___DELETE": {
       "provider_alias_intent": "/v2/domains/domain_name/records/domain_record_id",
       "text": "Delete a Domain Record",
       "category": "Domain Records",
@@ -6218,11 +6081,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_list": {
-      "provider_intent": "domains_list",
+    "digitalocean__/v2/domains___GET": {
       "provider_alias_intent": "/v2/domains",
       "text": "List All Domains",
       "category": "Domains",
@@ -6259,11 +6121,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_create": {
-      "provider_intent": "domains_create",
+    "digitalocean__/v2/domains___POST": {
       "provider_alias_intent": "/v2/domains",
       "text": "Create a New Domain",
       "category": "Domains",
@@ -6308,11 +6169,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_get": {
-      "provider_intent": "domains_get",
+    "digitalocean__/v2/domains/domain_name___GET": {
       "provider_alias_intent": "/v2/domains/domain_name",
       "text": "Retrieve an Existing Domain",
       "category": "Domains",
@@ -6352,11 +6212,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "domains_delete": {
-      "provider_intent": "domains_delete",
+    "digitalocean__/v2/domains/domain_name___DELETE": {
       "provider_alias_intent": "/v2/domains/domain_name",
       "text": "Delete a Domain",
       "category": "Domains",
@@ -6396,11 +6255,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "dropletactions_list": {
-      "provider_intent": "dropletactions_list",
+    "digitalocean__/v2/droplets/droplet_id/actions___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/actions",
       "text": "List Actions for a Droplet",
       "category": "Droplet Actions",
@@ -6448,11 +6306,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "dropletactions_post": {
-      "provider_intent": "dropletactions_post",
+    "digitalocean__/v2/droplets/droplet_id/actions___POST": {
       "provider_alias_intent": "/v2/droplets/droplet_id/actions",
       "text": "Initiate a Droplet Action",
       "category": "Droplet Actions",
@@ -6492,11 +6349,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "dropletactions_post_bytag": {
-      "provider_intent": "dropletactions_post_bytag",
+    "digitalocean__/v2/droplets/actions___POST": {
       "provider_alias_intent": "/v2/droplets/actions",
       "text": "Acting on Tagged Droplets",
       "category": "Droplet Actions",
@@ -6529,11 +6385,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "dropletactions_get": {
-      "provider_intent": "dropletactions_get",
+    "digitalocean__/v2/droplets/droplet_id/actions/action_id___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/actions/action_id",
       "text": "Retrieve a Droplet Action",
       "category": "Droplet Actions",
@@ -6583,11 +6438,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "droplets_list": {
-      "provider_intent": "droplets_list",
+    "digitalocean__/v2/droplets___GET": {
       "provider_alias_intent": "/v2/droplets",
       "text": "List All Droplets",
       "category": "Droplets",
@@ -6632,11 +6486,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "droplets_create": {
-      "provider_intent": "droplets_create",
+    "digitalocean__/v2/droplets___POST": {
       "provider_alias_intent": "/v2/droplets",
       "text": "Create a New Droplet",
       "category": "Droplets",
@@ -6664,11 +6517,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.177Z"
     },
-    "droplets_destroy_bytag": {
-      "provider_intent": "droplets_destroy_bytag",
+    "digitalocean__/v2/droplets___DELETE": {
       "provider_alias_intent": "/v2/droplets",
       "text": "Deleting Droplets by Tag",
       "category": "Droplets",
@@ -6702,11 +6554,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_get": {
-      "provider_intent": "droplets_get",
+    "digitalocean__/v2/droplets/droplet_id___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id",
       "text": "Retrieve an Existing Droplet",
       "category": "Droplets",
@@ -6746,11 +6597,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_destroy": {
-      "provider_intent": "droplets_destroy",
+    "digitalocean__/v2/droplets/droplet_id___DELETE": {
       "provider_alias_intent": "/v2/droplets/droplet_id",
       "text": "Delete an Existing Droplet",
       "category": "Droplets",
@@ -6790,11 +6640,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_backups": {
-      "provider_intent": "droplets_list_backups",
+    "digitalocean__/v2/droplets/droplet_id/backups___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/backups",
       "text": "List Backups for a Droplet",
       "category": "Droplets",
@@ -6842,11 +6691,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_snapshots": {
-      "provider_intent": "droplets_list_snapshots",
+    "digitalocean__/v2/droplets/droplet_id/snapshots___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/snapshots",
       "text": "List Snapshots for a Droplet",
       "category": "Droplets",
@@ -6894,11 +6742,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_kernels": {
-      "provider_intent": "droplets_list_kernels",
+    "digitalocean__/v2/droplets/droplet_id/kernels___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/kernels",
       "text": "List All Available Kernels for a Droplet",
       "category": "Droplets",
@@ -6946,11 +6793,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_firewalls": {
-      "provider_intent": "droplets_list_firewalls",
+    "digitalocean__/v2/droplets/droplet_id/firewalls___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/firewalls",
       "text": "List all Firewalls Applied to a Droplet",
       "category": "Droplets",
@@ -6998,11 +6844,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_neighbors": {
-      "provider_intent": "droplets_list_neighbors",
+    "digitalocean__/v2/droplets/droplet_id/neighbors___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/neighbors",
       "text": "List Neighbors for a Droplet",
       "category": "Droplets",
@@ -7042,11 +6887,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_associatedresources": {
-      "provider_intent": "droplets_list_associatedresources",
+    "digitalocean__/v2/droplets/droplet_id/destroy_with_associated_resources___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/destroy_with_associated_resources",
       "text": "List Associated Resources for a Droplet",
       "category": "Droplets",
@@ -7086,11 +6930,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_destroy_withassociatedresourcesselective": {
-      "provider_intent": "droplets_destroy_withassociatedresourcesselective",
+    "digitalocean__/v2/droplets/droplet_id/destroy_with_associated_resources/selective___DELETE": {
       "provider_alias_intent": "/v2/droplets/droplet_id/destroy_with_associated_resources/selective",
       "text": "Selectively Destroy a Droplet and its Associated Resources",
       "category": "Droplets",
@@ -7151,11 +6994,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_destroy_withassociatedresourcesdangerous": {
-      "provider_intent": "droplets_destroy_withassociatedresourcesdangerous",
+    "digitalocean__/v2/droplets/droplet_id/destroy_with_associated_resources/dangerous___DELETE": {
       "provider_alias_intent": "/v2/droplets/droplet_id/destroy_with_associated_resources/dangerous",
       "text": "Destroy a Droplet and All of its Associated Resources (Dangerous)",
       "category": "Droplets",
@@ -7195,11 +7037,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_get_destroyassociatedresourcesstatus": {
-      "provider_intent": "droplets_get_destroyassociatedresourcesstatus",
+    "digitalocean__/v2/droplets/droplet_id/destroy_with_associated_resources/status___GET": {
       "provider_alias_intent": "/v2/droplets/droplet_id/destroy_with_associated_resources/status",
       "text": "Check Status of a Droplet Destroy with Associated Resources Request",
       "category": "Droplets",
@@ -7239,11 +7080,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_destroy_retrywithassociatedresources": {
-      "provider_intent": "droplets_destroy_retrywithassociatedresources",
+    "digitalocean__/v2/droplets/droplet_id/destroy_with_associated_resources/retry___POST": {
       "provider_alias_intent": "/v2/droplets/droplet_id/destroy_with_associated_resources/retry",
       "text": "Retry a Droplet Destroy with Associated Resources Request",
       "category": "Droplets",
@@ -7283,11 +7123,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "droplets_list_neighborsids": {
-      "provider_intent": "droplets_list_neighborsids",
+    "digitalocean__/v2/reports/droplet_neighbors_ids___GET": {
       "provider_alias_intent": "/v2/reports/droplet_neighbors_ids",
       "text": "List All Droplet Neighbors",
       "category": "Droplets",
@@ -7315,11 +7154,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_list": {
-      "provider_intent": "firewalls_list",
+    "digitalocean__/v2/firewalls___GET": {
       "provider_alias_intent": "/v2/firewalls",
       "text": "List All Firewalls",
       "category": "Firewalls",
@@ -7356,11 +7194,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_create": {
-      "provider_intent": "firewalls_create",
+    "digitalocean__/v2/firewalls___POST": {
       "provider_alias_intent": "/v2/firewalls",
       "text": "Create a New Firewall",
       "category": "Firewalls",
@@ -7388,11 +7225,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_get": {
-      "provider_intent": "firewalls_get",
+    "digitalocean__/v2/firewalls/firewall_id___GET": {
       "provider_alias_intent": "/v2/firewalls/firewall_id",
       "text": "Retrieve an Existing Firewall",
       "category": "Firewalls",
@@ -7432,11 +7268,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_update": {
-      "provider_intent": "firewalls_update",
+    "digitalocean__/v2/firewalls/firewall_id___PUT": {
       "provider_alias_intent": "/v2/firewalls/firewall_id",
       "text": "Update a Firewall",
       "category": "Firewalls",
@@ -7476,11 +7311,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_delete": {
-      "provider_intent": "firewalls_delete",
+    "digitalocean__/v2/firewalls/firewall_id___DELETE": {
       "provider_alias_intent": "/v2/firewalls/firewall_id",
       "text": "Delete a Firewall",
       "category": "Firewalls",
@@ -7520,11 +7354,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_assign_droplets": {
-      "provider_intent": "firewalls_assign_droplets",
+    "digitalocean__/v2/firewalls/firewall_id/droplets___POST": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/droplets",
       "text": "Add Droplets to a Firewall",
       "category": "Firewalls",
@@ -7570,11 +7403,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_delete_droplets": {
-      "provider_intent": "firewalls_delete_droplets",
+    "digitalocean__/v2/firewalls/firewall_id/droplets___DELETE": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/droplets",
       "text": "Remove Droplets from a Firewall",
       "category": "Firewalls",
@@ -7620,11 +7452,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_add_tags": {
-      "provider_intent": "firewalls_add_tags",
+    "digitalocean__/v2/firewalls/firewall_id/tags___POST": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/tags",
       "text": "Add Tags to a Firewall",
       "category": "Firewalls",
@@ -7669,11 +7500,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_delete_tags": {
-      "provider_intent": "firewalls_delete_tags",
+    "digitalocean__/v2/firewalls/firewall_id/tags___DELETE": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/tags",
       "text": "Remove Tags from a Firewall",
       "category": "Firewalls",
@@ -7718,11 +7548,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_add_rules": {
-      "provider_intent": "firewalls_add_rules",
+    "digitalocean__/v2/firewalls/firewall_id/rules___POST": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/rules",
       "text": "Add Rules to a Firewall",
       "category": "Firewalls",
@@ -7762,11 +7591,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "firewalls_delete_rules": {
-      "provider_intent": "firewalls_delete_rules",
+    "digitalocean__/v2/firewalls/firewall_id/rules___DELETE": {
       "provider_alias_intent": "/v2/firewalls/firewall_id/rules",
       "text": "Remove Rules from a Firewall",
       "category": "Firewalls",
@@ -7806,11 +7634,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingipsaction_list": {
-      "provider_intent": "floatingipsaction_list",
+    "digitalocean__/v2/floating_ips/floating_ip/actions___GET": {
       "provider_alias_intent": "/v2/floating_ips/floating_ip/actions",
       "text": "List All Actions for a Floating IP",
       "category": "Floating IP Actions",
@@ -7850,11 +7677,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingipsaction_post": {
-      "provider_intent": "floatingipsaction_post",
+    "digitalocean__/v2/floating_ips/floating_ip/actions___POST": {
       "provider_alias_intent": "/v2/floating_ips/floating_ip/actions",
       "text": "Initiate a Floating IP Action",
       "category": "Floating IP Actions",
@@ -7894,11 +7720,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingipsaction_get": {
-      "provider_intent": "floatingipsaction_get",
+    "digitalocean__/v2/floating_ips/floating_ip/actions/action_id___GET": {
       "provider_alias_intent": "/v2/floating_ips/floating_ip/actions/action_id",
       "text": "Retrieve an Existing Floating IP Action",
       "category": "Floating IP Actions",
@@ -7948,11 +7773,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingips_list": {
-      "provider_intent": "floatingips_list",
+    "digitalocean__/v2/floating_ips___GET": {
       "provider_alias_intent": "/v2/floating_ips",
       "text": "List All Floating IPs",
       "category": "Floating IPs",
@@ -7989,11 +7813,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingips_create": {
-      "provider_intent": "floatingips_create",
+    "digitalocean__/v2/floating_ips___POST": {
       "provider_alias_intent": "/v2/floating_ips",
       "text": "Create a New Floating IP",
       "category": "Floating IPs",
@@ -8021,11 +7844,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingips_get": {
-      "provider_intent": "floatingips_get",
+    "digitalocean__/v2/floating_ips/floating_ip___GET": {
       "provider_alias_intent": "/v2/floating_ips/floating_ip",
       "text": "Retrieve an Existing Floating IP",
       "category": "Floating IPs",
@@ -8065,11 +7887,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "floatingips_delete": {
-      "provider_intent": "floatingips_delete",
+    "digitalocean__/v2/floating_ips/floating_ip___DELETE": {
       "provider_alias_intent": "/v2/floating_ips/floating_ip",
       "text": "Delete a Floating IP",
       "category": "Floating IPs",
@@ -8109,11 +7930,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_list_namespaces": {
-      "provider_intent": "functions_list_namespaces",
+    "digitalocean__/v2/functions/namespaces___GET": {
       "provider_alias_intent": "/v2/functions/namespaces",
       "text": "List Namespaces",
       "category": "Functions",
@@ -8141,11 +7961,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_create_namespace": {
-      "provider_intent": "functions_create_namespace",
+    "digitalocean__/v2/functions/namespaces___POST": {
       "provider_alias_intent": "/v2/functions/namespaces",
       "text": "Create Namespace",
       "category": "Functions",
@@ -8184,11 +8003,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_get_namespace": {
-      "provider_intent": "functions_get_namespace",
+    "digitalocean__/v2/functions/namespaces/namespace_id___GET": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id",
       "text": "Get Namespace",
       "category": "Functions",
@@ -8228,11 +8046,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_delete_namespace": {
-      "provider_intent": "functions_delete_namespace",
+    "digitalocean__/v2/functions/namespaces/namespace_id___DELETE": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id",
       "text": "Delete Namespace",
       "category": "Functions",
@@ -8272,11 +8089,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_list_triggers": {
-      "provider_intent": "functions_list_triggers",
+    "digitalocean__/v2/functions/namespaces/namespace_id/triggers___GET": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id/triggers",
       "text": "List Triggers",
       "category": "Functions",
@@ -8316,11 +8132,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_create_trigger": {
-      "provider_intent": "functions_create_trigger",
+    "digitalocean__/v2/functions/namespaces/namespace_id/triggers___POST": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id/triggers",
       "text": "Create Trigger",
       "category": "Functions",
@@ -8390,11 +8205,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_get_trigger": {
-      "provider_intent": "functions_get_trigger",
+    "digitalocean__/v2/functions/namespaces/namespace_id/triggers/trigger_name___GET": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id/triggers/trigger_name",
       "text": "Get Trigger",
       "category": "Functions",
@@ -8444,11 +8258,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_update_trigger": {
-      "provider_intent": "functions_update_trigger",
+    "digitalocean__/v2/functions/namespaces/namespace_id/triggers/trigger_name___PUT": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id/triggers/trigger_name",
       "text": "Update Trigger",
       "category": "Functions",
@@ -8511,11 +8324,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "functions_delete_trigger": {
-      "provider_intent": "functions_delete_trigger",
+    "digitalocean__/v2/functions/namespaces/namespace_id/triggers/trigger_name___DELETE": {
       "provider_alias_intent": "/v2/functions/namespaces/namespace_id/triggers/trigger_name",
       "text": "Delete Trigger",
       "category": "Functions",
@@ -8565,11 +8377,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "imageactions_list": {
-      "provider_intent": "imageactions_list",
+    "digitalocean__/v2/images/image_id/actions___GET": {
       "provider_alias_intent": "/v2/images/image_id/actions",
       "text": "List All Actions for an Image",
       "category": "Image Actions",
@@ -8609,11 +8420,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "imageactions_post": {
-      "provider_intent": "imageactions_post",
+    "digitalocean__/v2/images/image_id/actions___POST": {
       "provider_alias_intent": "/v2/images/image_id/actions",
       "text": "Initiate an Image Action",
       "category": "Image Actions",
@@ -8653,11 +8463,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "imageactions_get": {
-      "provider_intent": "imageactions_get",
+    "digitalocean__/v2/images/image_id/actions/action_id___GET": {
       "provider_alias_intent": "/v2/images/image_id/actions/action_id",
       "text": "Retrieve an Existing Action",
       "category": "Image Actions",
@@ -8707,11 +8516,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "images_list": {
-      "provider_intent": "images_list",
+    "digitalocean__/v2/images___GET": {
       "provider_alias_intent": "/v2/images",
       "text": "List All Images",
       "category": "Images",
@@ -8764,11 +8572,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "images_create_custom": {
-      "provider_intent": "images_create_custom",
+    "digitalocean__/v2/images___POST": {
       "provider_alias_intent": "/v2/images",
       "text": "Create a Custom Image",
       "category": "Images",
@@ -8796,11 +8603,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "images_get": {
-      "provider_intent": "images_get",
+    "digitalocean__/v2/images/image_id___GET": {
       "provider_alias_intent": "/v2/images/image_id",
       "text": "Retrieve an Existing Image",
       "category": "Images",
@@ -8840,11 +8646,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "images_update": {
-      "provider_intent": "images_update",
+    "digitalocean__/v2/images/image_id___PUT": {
       "provider_alias_intent": "/v2/images/image_id",
       "text": "Update an Image",
       "category": "Images",
@@ -8897,11 +8702,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "images_delete": {
-      "provider_intent": "images_delete",
+    "digitalocean__/v2/images/image_id___DELETE": {
       "provider_alias_intent": "/v2/images/image_id",
       "text": "Delete an Image",
       "category": "Images",
@@ -8941,11 +8745,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_list_clusters": {
-      "provider_intent": "kubernetes_list_clusters",
+    "digitalocean__/v2/kubernetes/clusters___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters",
       "text": "List All Kubernetes Clusters",
       "category": "Kubernetes",
@@ -8982,11 +8785,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_create_cluster": {
-      "provider_intent": "kubernetes_create_cluster",
+    "digitalocean__/v2/kubernetes/clusters___POST": {
       "provider_alias_intent": "/v2/kubernetes/clusters",
       "text": "Create a New Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9111,11 +8913,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_cluster": {
-      "provider_intent": "kubernetes_get_cluster",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id",
       "text": "Retrieve an Existing Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9155,11 +8956,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_update_cluster": {
-      "provider_intent": "kubernetes_update_cluster",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id___PUT": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id",
       "text": "Update a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9237,11 +9037,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_delete_cluster": {
-      "provider_intent": "kubernetes_delete_cluster",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id",
       "text": "Delete a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9281,11 +9080,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_list_associatedresources": {
-      "provider_intent": "kubernetes_list_associatedresources",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources",
       "text": "List Associated Resources for Cluster Deletion",
       "category": "Kubernetes",
@@ -9325,11 +9123,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_destroy_associatedresourcesselective": {
-      "provider_intent": "kubernetes_destroy_associatedresourcesselective",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources/selective___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources/selective",
       "text": "Selectively Delete a Cluster and its Associated Resources",
       "category": "Kubernetes",
@@ -9382,11 +9179,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_destroy_associatedresourcesdangerous": {
-      "provider_intent": "kubernetes_destroy_associatedresourcesdangerous",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources/dangerous___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/destroy_with_associated_resources/dangerous",
       "text": "Delete a Cluster and All of its Associated Resources (Dangerous)",
       "category": "Kubernetes",
@@ -9426,11 +9222,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_kubeconfig": {
-      "provider_intent": "kubernetes_get_kubeconfig",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/kubeconfig___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/kubeconfig",
       "text": "Retrieve the kubeconfig for a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9474,11 +9269,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_credentials": {
-      "provider_intent": "kubernetes_get_credentials",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/credentials___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/credentials",
       "text": "Retrieve Credentials for a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9522,11 +9316,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_availableupgrades": {
-      "provider_intent": "kubernetes_get_availableupgrades",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/upgrades___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/upgrades",
       "text": "Retrieve Available Upgrades for an Existing Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9566,11 +9359,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_upgrade_cluster": {
-      "provider_intent": "kubernetes_upgrade_cluster",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/upgrade___POST": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/upgrade",
       "text": "Upgrade a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9615,11 +9407,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_list_nodepools": {
-      "provider_intent": "kubernetes_list_nodepools",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools",
       "text": "List All Node Pools in a Kubernetes Clusters",
       "category": "Kubernetes",
@@ -9659,11 +9450,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_add_nodepool": {
-      "provider_intent": "kubernetes_add_nodepool",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools___POST": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools",
       "text": "Add a Node Pool to a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9703,11 +9493,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_nodepool": {
-      "provider_intent": "kubernetes_get_nodepool",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id",
       "text": "Retrieve a Node Pool for a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9757,11 +9546,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_update_nodepool": {
-      "provider_intent": "kubernetes_update_nodepool",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id___PUT": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id",
       "text": "Update a Node Pool in a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9811,11 +9599,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_delete_nodepool": {
-      "provider_intent": "kubernetes_delete_nodepool",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id",
       "text": "Delete a Node Pool in a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9865,11 +9652,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_delete_node": {
-      "provider_intent": "kubernetes_delete_node",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id/nodes/node_id___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id/nodes/node_id",
       "text": "Delete a Node in a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -9937,11 +9723,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_recycle_node_pool": {
-      "provider_intent": "kubernetes_recycle_node_pool",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id/recycle___POST": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/node_pools/node_pool_id/recycle",
       "text": "Recycle a Kubernetes Node Pool",
       "category": "Kubernetes",
@@ -9995,11 +9780,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_clusteruser": {
-      "provider_intent": "kubernetes_get_clusteruser",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/user___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/user",
       "text": "Retrieve User Information for a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -10039,11 +9823,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_list_options": {
-      "provider_intent": "kubernetes_list_options",
+    "digitalocean__/v2/kubernetes/options___GET": {
       "provider_alias_intent": "/v2/kubernetes/options",
       "text": "List Available Regions Node Sizes and Versions of Kubernetes",
       "category": "Kubernetes",
@@ -10071,11 +9854,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_run_clusterlint": {
-      "provider_intent": "kubernetes_run_clusterlint",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/clusterlint___POST": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/clusterlint",
       "text": "Run Clusterlint Checks on a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -10132,11 +9914,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_get_clusterlintresults": {
-      "provider_intent": "kubernetes_get_clusterlintresults",
+    "digitalocean__/v2/kubernetes/clusters/cluster_id/clusterlint___GET": {
       "provider_alias_intent": "/v2/kubernetes/clusters/cluster_id/clusterlint",
       "text": "Fetch Clusterlint Diagnostics for a Kubernetes Cluster",
       "category": "Kubernetes",
@@ -10180,11 +9961,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_add_registry": {
-      "provider_intent": "kubernetes_add_registry",
+    "digitalocean__/v2/kubernetes/registry___POST": {
       "provider_alias_intent": "/v2/kubernetes/registry",
       "text": "Add Container Registry to Kubernetes Clusters",
       "category": "Kubernetes",
@@ -10217,11 +9997,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "kubernetes_remove_registry": {
-      "provider_intent": "kubernetes_remove_registry",
+    "digitalocean__/v2/kubernetes/registry___DELETE": {
       "provider_alias_intent": "/v2/kubernetes/registry",
       "text": "Remove Container Registry from Kubernetes Clusters",
       "category": "Kubernetes",
@@ -10254,11 +10033,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_create": {
-      "provider_intent": "loadbalancers_create",
+    "digitalocean__/v2/load_balancers___POST": {
       "provider_alias_intent": "/v2/load_balancers",
       "text": "Create a New Load Balancer",
       "category": "Load Balancers",
@@ -10286,11 +10064,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_list": {
-      "provider_intent": "loadbalancers_list",
+    "digitalocean__/v2/load_balancers___GET": {
       "provider_alias_intent": "/v2/load_balancers",
       "text": "List All Load Balancers",
       "category": "Load Balancers",
@@ -10327,11 +10104,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_get": {
-      "provider_intent": "loadbalancers_get",
+    "digitalocean__/v2/load_balancers/lb_id___GET": {
       "provider_alias_intent": "/v2/load_balancers/lb_id",
       "text": "Retrieve an Existing Load Balancer",
       "category": "Load Balancers",
@@ -10371,11 +10147,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_update": {
-      "provider_intent": "loadbalancers_update",
+    "digitalocean__/v2/load_balancers/lb_id___PUT": {
       "provider_alias_intent": "/v2/load_balancers/lb_id",
       "text": "Update a Load Balancer",
       "category": "Load Balancers",
@@ -10415,11 +10190,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_delete": {
-      "provider_intent": "loadbalancers_delete",
+    "digitalocean__/v2/load_balancers/lb_id___DELETE": {
       "provider_alias_intent": "/v2/load_balancers/lb_id",
       "text": "Delete a Load Balancer",
       "category": "Load Balancers",
@@ -10459,11 +10233,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_add_droplets": {
-      "provider_intent": "loadbalancers_add_droplets",
+    "digitalocean__/v2/load_balancers/lb_id/droplets___POST": {
       "provider_alias_intent": "/v2/load_balancers/lb_id/droplets",
       "text": "Add Droplets to a Load Balancer",
       "category": "Load Balancers",
@@ -10509,11 +10282,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_remove_droplets": {
-      "provider_intent": "loadbalancers_remove_droplets",
+    "digitalocean__/v2/load_balancers/lb_id/droplets___DELETE": {
       "provider_alias_intent": "/v2/load_balancers/lb_id/droplets",
       "text": "Remove Droplets from a Load Balancer",
       "category": "Load Balancers",
@@ -10559,11 +10331,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_add_forwardingrules": {
-      "provider_intent": "loadbalancers_add_forwardingrules",
+    "digitalocean__/v2/load_balancers/lb_id/forwarding_rules___POST": {
       "provider_alias_intent": "/v2/load_balancers/lb_id/forwarding_rules",
       "text": "Add Forwarding Rules to a Load Balancer",
       "category": "Load Balancers",
@@ -10608,11 +10379,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "loadbalancers_remove_forwardingrules": {
-      "provider_intent": "loadbalancers_remove_forwardingrules",
+    "digitalocean__/v2/load_balancers/lb_id/forwarding_rules___DELETE": {
       "provider_alias_intent": "/v2/load_balancers/lb_id/forwarding_rules",
       "text": "Remove Forwarding Rules from a Load Balancer",
       "category": "Load Balancers",
@@ -10657,11 +10427,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_list_alertpolicy": {
-      "provider_intent": "monitoring_list_alertpolicy",
+    "digitalocean__/v2/monitoring/alerts___GET": {
       "provider_alias_intent": "/v2/monitoring/alerts",
       "text": "List Alert Policies",
       "category": "Monitoring",
@@ -10698,11 +10467,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_create_alertpolicy": {
-      "provider_intent": "monitoring_create_alertpolicy",
+    "digitalocean__/v2/monitoring/alerts___POST": {
       "provider_alias_intent": "/v2/monitoring/alerts",
       "text": "Create Alert Policy",
       "category": "Monitoring",
@@ -10771,11 +10539,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_alertpolicy": {
-      "provider_intent": "monitoring_get_alertpolicy",
+    "digitalocean__/v2/monitoring/alerts/alert_uuid___GET": {
       "provider_alias_intent": "/v2/monitoring/alerts/alert_uuid",
       "text": "Retrieve an Existing Alert Policy",
       "category": "Monitoring",
@@ -10815,11 +10582,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_update_alertpolicy": {
-      "provider_intent": "monitoring_update_alertpolicy",
+    "digitalocean__/v2/monitoring/alerts/alert_uuid___PUT": {
       "provider_alias_intent": "/v2/monitoring/alerts/alert_uuid",
       "text": "Update an Alert Policy",
       "category": "Monitoring",
@@ -10900,11 +10666,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_delete_alertpolicy": {
-      "provider_intent": "monitoring_delete_alertpolicy",
+    "digitalocean__/v2/monitoring/alerts/alert_uuid___DELETE": {
       "provider_alias_intent": "/v2/monitoring/alerts/alert_uuid",
       "text": "Delete an Alert Policy",
       "category": "Monitoring",
@@ -10944,11 +10709,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletbandwidthmetrics": {
-      "provider_intent": "monitoring_get_dropletbandwidthmetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/bandwidth___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/bandwidth",
       "text": "Get Droplet Bandwidth Metrics",
       "category": "Monitoring",
@@ -11002,11 +10766,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletcpumetrics": {
-      "provider_intent": "monitoring_get_dropletcpumetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/cpu___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/cpu",
       "text": "Get Droplet CPU Metrics",
       "category": "Monitoring",
@@ -11050,11 +10813,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletfilesystemfreemetrics": {
-      "provider_intent": "monitoring_get_dropletfilesystemfreemetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/filesystem_free___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/filesystem_free",
       "text": "Get Droplet Filesystem Free Metrics",
       "category": "Monitoring",
@@ -11098,11 +10860,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletfilesystemsizemetrics": {
-      "provider_intent": "monitoring_get_dropletfilesystemsizemetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/filesystem_size___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/filesystem_size",
       "text": "Get Droplet Filesystem Size Metrics",
       "category": "Monitoring",
@@ -11146,11 +10907,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletload1metrics": {
-      "provider_intent": "monitoring_get_dropletload1metrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/load_1___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/load_1",
       "text": "Get Droplet Load1 Metrics",
       "category": "Monitoring",
@@ -11194,11 +10954,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletload5metrics": {
-      "provider_intent": "monitoring_get_dropletload5metrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/load_5___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/load_5",
       "text": "Get Droplet Load5 Metrics",
       "category": "Monitoring",
@@ -11242,11 +11001,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletload15metrics": {
-      "provider_intent": "monitoring_get_dropletload15metrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/load_15___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/load_15",
       "text": "Get Droplet Load15 Metrics",
       "category": "Monitoring",
@@ -11290,11 +11048,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletmemorycachedmetrics": {
-      "provider_intent": "monitoring_get_dropletmemorycachedmetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/memory_cached___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/memory_cached",
       "text": "Get Droplet Cached Memory Metrics",
       "category": "Monitoring",
@@ -11338,11 +11095,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletmemoryfreemetrics": {
-      "provider_intent": "monitoring_get_dropletmemoryfreemetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/memory_free___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/memory_free",
       "text": "Get Droplet Free Memory Metrics",
       "category": "Monitoring",
@@ -11386,11 +11142,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletmemorytotalmetrics": {
-      "provider_intent": "monitoring_get_dropletmemorytotalmetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/memory_total___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/memory_total",
       "text": "Get Droplet Total Memory Metrics",
       "category": "Monitoring",
@@ -11434,11 +11189,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "monitoring_get_dropletmemoryavailablemetrics": {
-      "provider_intent": "monitoring_get_dropletmemoryavailablemetrics",
+    "digitalocean__/v2/monitoring/metrics/droplet/memory_available___GET": {
       "provider_alias_intent": "/v2/monitoring/metrics/droplet/memory_available",
       "text": "Get Droplet Available Memory Metrics",
       "category": "Monitoring",
@@ -11482,11 +11236,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_list_resources": {
-      "provider_intent": "projects_list_resources",
+    "digitalocean__/v2/projects/project_id/resources___GET": {
       "provider_alias_intent": "/v2/projects/project_id/resources",
       "text": "List Project Resources",
       "category": "Project Resources",
@@ -11534,11 +11287,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_assign_resources": {
-      "provider_intent": "projects_assign_resources",
+    "digitalocean__/v2/projects/project_id/resources___POST": {
       "provider_alias_intent": "/v2/projects/project_id/resources",
       "text": "Assign Resources to a Project",
       "category": "Project Resources",
@@ -11583,11 +11335,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_list_resources_default": {
-      "provider_intent": "projects_list_resources_default",
+    "digitalocean__/v2/projects/default/resources___GET": {
       "provider_alias_intent": "/v2/projects/default/resources",
       "text": "List Default Project Resources",
       "category": "Project Resources",
@@ -11615,11 +11366,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_assign_resources_default": {
-      "provider_intent": "projects_assign_resources_default",
+    "digitalocean__/v2/projects/default/resources___POST": {
       "provider_alias_intent": "/v2/projects/default/resources",
       "text": "Assign Resources to Default Project",
       "category": "Project Resources",
@@ -11652,11 +11402,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_list": {
-      "provider_intent": "projects_list",
+    "digitalocean__/v2/projects___GET": {
       "provider_alias_intent": "/v2/projects",
       "text": "List All Projects",
       "category": "Projects",
@@ -11693,11 +11442,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_create": {
-      "provider_intent": "projects_create",
+    "digitalocean__/v2/projects___POST": {
       "provider_alias_intent": "/v2/projects",
       "text": "Create a Project",
       "category": "Projects",
@@ -11725,11 +11473,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_get_default": {
-      "provider_intent": "projects_get_default",
+    "digitalocean__/v2/projects/default___GET": {
       "provider_alias_intent": "/v2/projects/default",
       "text": "Retrieve the Default Project",
       "category": "Projects",
@@ -11757,11 +11504,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_update_default": {
-      "provider_intent": "projects_update_default",
+    "digitalocean__/v2/projects/default___PUT": {
       "provider_alias_intent": "/v2/projects/default",
       "text": "Update the Default Project",
       "category": "Projects",
@@ -11789,11 +11535,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_patch_default": {
-      "provider_intent": "projects_patch_default",
+    "digitalocean__/v2/projects/default___PATCH": {
       "provider_alias_intent": "/v2/projects/default",
       "text": "Patch the Default Project",
       "category": "Projects",
@@ -11821,11 +11566,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_get": {
-      "provider_intent": "projects_get",
+    "digitalocean__/v2/projects/project_id___GET": {
       "provider_alias_intent": "/v2/projects/project_id",
       "text": "Retrieve an Existing Project",
       "category": "Projects",
@@ -11865,11 +11609,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_update": {
-      "provider_intent": "projects_update",
+    "digitalocean__/v2/projects/project_id___PUT": {
       "provider_alias_intent": "/v2/projects/project_id",
       "text": "Update a Project",
       "category": "Projects",
@@ -11909,11 +11652,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_patch": {
-      "provider_intent": "projects_patch",
+    "digitalocean__/v2/projects/project_id___PATCH": {
       "provider_alias_intent": "/v2/projects/project_id",
       "text": "Patch a Project",
       "category": "Projects",
@@ -11953,11 +11695,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "projects_delete": {
-      "provider_intent": "projects_delete",
+    "digitalocean__/v2/projects/project_id___DELETE": {
       "provider_alias_intent": "/v2/projects/project_id",
       "text": "Delete an Existing Project",
       "category": "Projects",
@@ -11997,11 +11738,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "regions_list": {
-      "provider_intent": "regions_list",
+    "digitalocean__/v2/regions___GET": {
       "provider_alias_intent": "/v2/regions",
       "text": "List All Data Center Regions",
       "category": "Regions",
@@ -12038,11 +11778,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedipsactions_list": {
-      "provider_intent": "reservedipsactions_list",
+    "digitalocean__/v2/reserved_ips/reserved_ip/actions___GET": {
       "provider_alias_intent": "/v2/reserved_ips/reserved_ip/actions",
       "text": "List All Actions for a Reserved IP",
       "category": "Reserved IP Actions",
@@ -12082,11 +11821,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedipsactions_post": {
-      "provider_intent": "reservedipsactions_post",
+    "digitalocean__/v2/reserved_ips/reserved_ip/actions___POST": {
       "provider_alias_intent": "/v2/reserved_ips/reserved_ip/actions",
       "text": "Initiate a Reserved IP Action",
       "category": "Reserved IP Actions",
@@ -12126,11 +11864,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedipsactions_get": {
-      "provider_intent": "reservedipsactions_get",
+    "digitalocean__/v2/reserved_ips/reserved_ip/actions/action_id___GET": {
       "provider_alias_intent": "/v2/reserved_ips/reserved_ip/actions/action_id",
       "text": "Retrieve an Existing Reserved IP Action",
       "category": "Reserved IP Actions",
@@ -12180,11 +11917,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedips_list": {
-      "provider_intent": "reservedips_list",
+    "digitalocean__/v2/reserved_ips___GET": {
       "provider_alias_intent": "/v2/reserved_ips",
       "text": "List All Reserved IPs",
       "category": "Reserved IPs",
@@ -12221,11 +11957,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedips_create": {
-      "provider_intent": "reservedips_create",
+    "digitalocean__/v2/reserved_ips___POST": {
       "provider_alias_intent": "/v2/reserved_ips",
       "text": "Create a New Reserved IP",
       "category": "Reserved IPs",
@@ -12253,11 +11988,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedips_get": {
-      "provider_intent": "reservedips_get",
+    "digitalocean__/v2/reserved_ips/reserved_ip___GET": {
       "provider_alias_intent": "/v2/reserved_ips/reserved_ip",
       "text": "Retrieve an Existing Reserved IP",
       "category": "Reserved IPs",
@@ -12297,11 +12031,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "reservedips_delete": {
-      "provider_intent": "reservedips_delete",
+    "digitalocean__/v2/reserved_ips/reserved_ip___DELETE": {
       "provider_alias_intent": "/v2/reserved_ips/reserved_ip",
       "text": "Delete a Reserved IP",
       "category": "Reserved IPs",
@@ -12341,11 +12074,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sshkeys_list": {
-      "provider_intent": "sshkeys_list",
+    "digitalocean__/v2/account/keys___GET": {
       "provider_alias_intent": "/v2/account/keys",
       "text": "List All SSH Keys",
       "category": "SSH Keys",
@@ -12382,11 +12114,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sshkeys_create": {
-      "provider_intent": "sshkeys_create",
+    "digitalocean__/v2/account/keys___POST": {
       "provider_alias_intent": "/v2/account/keys",
       "text": "Create a New SSH Key",
       "category": "SSH Keys",
@@ -12433,11 +12164,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sshkeys_get": {
-      "provider_intent": "sshkeys_get",
+    "digitalocean__/v2/account/keys/ssh_key_identifier___GET": {
       "provider_alias_intent": "/v2/account/keys/ssh_key_identifier",
       "text": "Retrieve an Existing SSH Key",
       "category": "SSH Keys",
@@ -12477,11 +12207,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sshkeys_update": {
-      "provider_intent": "sshkeys_update",
+    "digitalocean__/v2/account/keys/ssh_key_identifier___PUT": {
       "provider_alias_intent": "/v2/account/keys/ssh_key_identifier",
       "text": "Update an SSH Key's Name",
       "category": "SSH Keys",
@@ -12526,11 +12255,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sshkeys_delete": {
-      "provider_intent": "sshkeys_delete",
+    "digitalocean__/v2/account/keys/ssh_key_identifier___DELETE": {
       "provider_alias_intent": "/v2/account/keys/ssh_key_identifier",
       "text": "Delete an SSH Key",
       "category": "SSH Keys",
@@ -12570,11 +12298,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "sizes_list": {
-      "provider_intent": "sizes_list",
+    "digitalocean__/v2/sizes___GET": {
       "provider_alias_intent": "/v2/sizes",
       "text": "List All Droplet Sizes",
       "category": "Sizes",
@@ -12611,11 +12338,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "snapshots_list": {
-      "provider_intent": "snapshots_list",
+    "digitalocean__/v2/snapshots___GET": {
       "provider_alias_intent": "/v2/snapshots",
       "text": "List All Snapshots",
       "category": "Snapshots",
@@ -12656,11 +12382,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "snapshots_get": {
-      "provider_intent": "snapshots_get",
+    "digitalocean__/v2/snapshots/snapshot_id___GET": {
       "provider_alias_intent": "/v2/snapshots/snapshot_id",
       "text": "Retrieve an Existing Snapshot",
       "category": "Snapshots",
@@ -12700,11 +12425,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "snapshots_delete": {
-      "provider_intent": "snapshots_delete",
+    "digitalocean__/v2/snapshots/snapshot_id___DELETE": {
       "provider_alias_intent": "/v2/snapshots/snapshot_id",
       "text": "Delete a Snapshot",
       "category": "Snapshots",
@@ -12744,11 +12468,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_list": {
-      "provider_intent": "tags_list",
+    "digitalocean__/v2/tags___GET": {
       "provider_alias_intent": "/v2/tags",
       "text": "List All Tags",
       "category": "Tags",
@@ -12785,11 +12508,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_create": {
-      "provider_intent": "tags_create",
+    "digitalocean__/v2/tags___POST": {
       "provider_alias_intent": "/v2/tags",
       "text": "Create a New Tag",
       "category": "Tags",
@@ -12826,11 +12548,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_get": {
-      "provider_intent": "tags_get",
+    "digitalocean__/v2/tags/tag_id___GET": {
       "provider_alias_intent": "/v2/tags/tag_id",
       "text": "Retrieve a Tag",
       "category": "Tags",
@@ -12870,11 +12591,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_delete": {
-      "provider_intent": "tags_delete",
+    "digitalocean__/v2/tags/tag_id___DELETE": {
       "provider_alias_intent": "/v2/tags/tag_id",
       "text": "Delete a Tag",
       "category": "Tags",
@@ -12914,11 +12634,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_assign_resources": {
-      "provider_intent": "tags_assign_resources",
+    "digitalocean__/v2/tags/tag_id/resources___POST": {
       "provider_alias_intent": "/v2/tags/tag_id/resources",
       "text": "Tag a Resource",
       "category": "Tags",
@@ -12964,11 +12683,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "tags_unassign_resources": {
-      "provider_intent": "tags_unassign_resources",
+    "digitalocean__/v2/tags/tag_id/resources___DELETE": {
       "provider_alias_intent": "/v2/tags/tag_id/resources",
       "text": "Untag a Resource",
       "category": "Tags",
@@ -13014,11 +12732,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_checks_list": {
-      "provider_intent": "uptime_checks_list",
+    "digitalocean__/v2/uptime/checks___GET": {
       "provider_alias_intent": "/v2/uptime/checks",
       "text": "List All Checks",
       "category": "Uptime",
@@ -13055,11 +12772,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_create": {
-      "provider_intent": "uptime_check_create",
+    "digitalocean__/v2/uptime/checks___POST": {
       "provider_alias_intent": "/v2/uptime/checks",
       "text": "Create a New Check",
       "category": "Uptime",
@@ -13087,11 +12803,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_get": {
-      "provider_intent": "uptime_check_get",
+    "digitalocean__/v2/uptime/checks/check_id___GET": {
       "provider_alias_intent": "/v2/uptime/checks/check_id",
       "text": "Retrieve an Existing Check",
       "category": "Uptime",
@@ -13131,11 +12846,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_update": {
-      "provider_intent": "uptime_check_update",
+    "digitalocean__/v2/uptime/checks/check_id___PUT": {
       "provider_alias_intent": "/v2/uptime/checks/check_id",
       "text": "Update a Check",
       "category": "Uptime",
@@ -13175,11 +12889,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_delete": {
-      "provider_intent": "uptime_check_delete",
+    "digitalocean__/v2/uptime/checks/check_id___DELETE": {
       "provider_alias_intent": "/v2/uptime/checks/check_id",
       "text": "Delete a Check",
       "category": "Uptime",
@@ -13219,11 +12932,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_state_get": {
-      "provider_intent": "uptime_check_state_get",
+    "digitalocean__/v2/uptime/checks/check_id/state___GET": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/state",
       "text": "Retrieve Check State",
       "category": "Uptime",
@@ -13263,11 +12975,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_check_alerts_list": {
-      "provider_intent": "uptime_check_alerts_list",
+    "digitalocean__/v2/uptime/checks/check_id/alerts___GET": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/alerts",
       "text": "List All Alerts",
       "category": "Uptime",
@@ -13315,11 +13026,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_alert_create": {
-      "provider_intent": "uptime_alert_create",
+    "digitalocean__/v2/uptime/checks/check_id/alerts___POST": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/alerts",
       "text": "Create a New Alert",
       "category": "Uptime",
@@ -13359,11 +13069,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_alert_get": {
-      "provider_intent": "uptime_alert_get",
+    "digitalocean__/v2/uptime/checks/check_id/alerts/alert_id___GET": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/alerts/alert_id",
       "text": "Retrieve an Existing Alert",
       "category": "Uptime",
@@ -13413,11 +13122,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_alert_update": {
-      "provider_intent": "uptime_alert_update",
+    "digitalocean__/v2/uptime/checks/check_id/alerts/alert_id___PUT": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/alerts/alert_id",
       "text": "Update an Alert",
       "category": "Uptime",
@@ -13467,11 +13175,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "uptime_alert_delete": {
-      "provider_intent": "uptime_alert_delete",
+    "digitalocean__/v2/uptime/checks/check_id/alerts/alert_id___DELETE": {
       "provider_alias_intent": "/v2/uptime/checks/check_id/alerts/alert_id",
       "text": "Delete an Alert",
       "category": "Uptime",
@@ -13521,11 +13228,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_list": {
-      "provider_intent": "vpcs_list",
+    "digitalocean__/v2/vpcs___GET": {
       "provider_alias_intent": "/v2/vpcs",
       "text": "List All VPCs",
       "category": "VPCs",
@@ -13562,11 +13268,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_create": {
-      "provider_intent": "vpcs_create",
+    "digitalocean__/v2/vpcs___POST": {
       "provider_alias_intent": "/v2/vpcs",
       "text": "Create a New VPC",
       "category": "VPCs",
@@ -13594,11 +13299,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_get": {
-      "provider_intent": "vpcs_get",
+    "digitalocean__/v2/vpcs/vpc_id___GET": {
       "provider_alias_intent": "/v2/vpcs/vpc_id",
       "text": "Retrieve an Existing VPC",
       "category": "VPCs",
@@ -13638,11 +13342,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_update": {
-      "provider_intent": "vpcs_update",
+    "digitalocean__/v2/vpcs/vpc_id___PUT": {
       "provider_alias_intent": "/v2/vpcs/vpc_id",
       "text": "Update a VPC",
       "category": "VPCs",
@@ -13682,11 +13385,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_patch": {
-      "provider_intent": "vpcs_patch",
+    "digitalocean__/v2/vpcs/vpc_id___PATCH": {
       "provider_alias_intent": "/v2/vpcs/vpc_id",
       "text": "Partially Update a VPC",
       "category": "VPCs",
@@ -13726,11 +13428,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_delete": {
-      "provider_intent": "vpcs_delete",
+    "digitalocean__/v2/vpcs/vpc_id___DELETE": {
       "provider_alias_intent": "/v2/vpcs/vpc_id",
       "text": "Delete a VPC",
       "category": "VPCs",
@@ -13770,11 +13471,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     },
-    "vpcs_list_members": {
-      "provider_intent": "vpcs_list_members",
+    "digitalocean__/v2/vpcs/vpc_id/members___GET": {
       "provider_alias_intent": "/v2/vpcs/vpc_id/members",
       "text": "List the Member Resources of a VPC",
       "category": "VPCs",
@@ -13826,8 +13526,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.178Z"
     }
   }
 }

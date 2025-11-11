@@ -56,8 +56,7 @@
     "credential_link": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html"
   },
   "routes": {
-    "awsses__v2__email__outbound-emails___post": {
-      "provider_intent": "awsses__v2__email__outbound-emails___post",
+    "awsses__/v2/email/outbound-emails___POST": {
       "provider_alias_intent": "/v2/email/outbound-emails",
       "text": "Sends an email message",
       "category": "Email",
@@ -167,13 +166,10 @@
         "subdomain": "region"
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.826Z"
     },
-    "awsses__v2__email__outbound-bulk-emails___post": {
-      "provider_intent": "awsses__v2__email__outbound-bulk-emails___post",
+    "awsses__/v2/email/outbound-bulk-emails___POST": {
       "provider_alias_intent": "/v2/email/outbound-bulk-emails",
       "text": "Send bulk email",
       "category": "Email",
@@ -296,10 +292,8 @@
         "subdomain": "region"
       },
       "response_type": "",
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T11:55:18.827Z"
     }
   }
 }

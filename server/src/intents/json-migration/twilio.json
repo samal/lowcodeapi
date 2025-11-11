@@ -1,191 +1,7 @@
 {
-  "app": {
-    "title": "Twilio API",
-    "description": "",
-    "api_base": "/twilio",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "create_a_message_resource": {
-      "provider_intent": "create_a_message_resource",
-      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages.json",
-      "text": "Create a Message resource",
-      "category": "Message Resource",
-      "body": {
-        "To": {
-          "type": "number",
-          "required": true,
-          "enum": [
-            "he destination phone number in E.164 format for SMS",
-            "MMS or Channel user address for other 3rd-party channels"
-          ]
-        },
-        "StatusCallback": {
-          "type": "string",
-          "text": "The URL we should call using the status_callback_method to send status information to your application",
-          "required": true
-        },
-        "ApplicationSid": {
-          "type": "string",
-          "text": "The SID of the application that should receive message status"
-        },
-        "MaxPrice": {
-          "type": "number",
-          "text": "The maximum total price in US dollars that you will pay for the message to be delivered"
-        },
-        "ProvideFeedback": {
-          "type": "boolean",
-          "text": "Whether to confirm delivery of the message",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "Attempt": {
-          "type": "number",
-          "text": "Total number of attempts made ( including this ) to send out the message regardless of the provider used"
-        },
-        "ValidityPeriod": {
-          "type": "number",
-          "text": "How long in seconds the message can remain in our outgoing message queue"
-        },
-        "ForceDelivery": {
-          "type": "boolean",
-          "text": "Reserved",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "ContentRetention": {
-          "type": "number",
-          "text": "Determines if the message content can be stored or redacted based on privacy settings"
-        },
-        "AddressRetention": {
-          "type": "number",
-          "text": "Determines if the address can be stored or obfuscated based on privacy settings"
-        },
-        "SmartEncoded": {
-          "type": "boolean",
-          "text": "Whether to detect Unicode characters that have a similar GSM-7 character and replace them",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "PersistentAction": {
-          "type": "string",
-          "text": "Rich actions for Channels Messages"
-        },
-        "ShortenUrls": {
-          "type": "boolean",
-          "text": "Determines the usage of Click Tracking",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "ScheduleType": {
-          "type": "number",
-          "text": "Indicates your intent to schedule a message"
-        },
-        "SendAt": {
-          "type": "number",
-          "text": "The time that Twilio will send the message. Must be in ISO 8601 format"
-        },
-        "SendAsMms": {
-          "type": "boolean",
-          "text": "If set to True",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "Twilio will deliver the message as a single MMS message regardless of the presence of media": {
-          "type": ""
-        },
-        "ContentVariables": {
-          "type": "string",
-          "text": "Key-value pairs of variable names to substitution values used alongside a content_sid"
-        },
-        "From": {
-          "type": "string",
-          "text": "A Twilio phone number in E.164 format",
-          "required": true
-        },
-        "an alphanumeric sender ID or a Channel Endpoint address that is enabled for the type of message you want to send": {
-          "type": ""
-        },
-        "MessagingServiceSid": {
-          "type": "string",
-          "text": "The SID of the Messaging Service you want to associate with the Message",
-          "required": true
-        },
-        "Body": {
-          "type": "string",
-          "text": "The text of the message you want to send. Can be up to 1600 characters in length",
-          "required": true
-        },
-        "MediaUrl": {
-          "type": "string",
-          "text": "The URL of the media to send with the message",
-          "required": true
-        },
-        "ContentSid": {
-          "type": "string",
-          "text": "The SID of the Content object returned at Content API content create time (https",
-          "required": true,
-          "enum": [
-            "",
-            "",
-            "www.twilio.com",
-            "docs",
-            "content-api",
-            "create-and-send-your-first-content-api-template#create-a-template)."
-          ]
-        }
-      },
-      "custom_headers": {},
-      "path": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Create a Message resource",
-        "rate_limit": [],
-        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Messages.json",
-        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Messages.json",
-        "api_ref": "https://www.twilio.com/docs/sms/api/message-resource#create-a-message-resource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "wip": 0,
-      "subdomain": {},
-      "payload_type": "urlencoded"
-    },
-    "schedule_a_message_resource": {
-      "provider_intent": "schedule_a_message_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages.json",
       "text": "Schedule a Message resource",
       "category": "Message Resource",
@@ -220,12 +36,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_message_resource": {
-      "provider_intent": "fetch_a_message_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/Sid.json",
       "text": "Fetch a Message resource",
       "category": "Message Resource",
@@ -268,12 +83,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_message_resources": {
-      "provider_intent": "read_multiple_message_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages.json",
       "text": "Read multiple Message resources",
       "category": "Message Resource",
@@ -320,12 +134,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_message_resource": {
-      "provider_intent": "update_a_message_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/Sid.json",
       "text": "Update a Message resource",
       "category": "Message Resource",
@@ -381,12 +194,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_message_resource": {
-      "provider_intent": "delete_a_message_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/Sid.json",
       "text": "Delete a Message resource",
       "category": "Message Resource",
@@ -433,12 +245,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_call_resource": {
-      "provider_intent": "create_a_call_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls.json",
       "text": "Create a Call resource",
       "category": "Call resource",
@@ -489,12 +300,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_call_resource": {
-      "provider_intent": "fetch_a_call_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/Sid.json",
       "text": "Fetch a Call resource",
       "category": "Call resource",
@@ -537,12 +347,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "call_recordings": {
-      "provider_intent": "call_recordings",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Recordings___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Recordings",
       "text": "Call Recordings",
       "category": "Call resource",
@@ -585,12 +394,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "call_feedback": {
-      "provider_intent": "call_feedback",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback",
       "text": "Call Feedback",
       "category": "Call resource",
@@ -633,12 +441,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_call_resources": {
-      "provider_intent": "read_multiple_call_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls.json",
       "text": "Read multiple Call resources",
       "category": "Call resource",
@@ -708,12 +515,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_call_resource": {
-      "provider_intent": "update_a_call_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/Sid.json",
       "text": "Update a Call resource",
       "category": "Call resource",
@@ -793,12 +599,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_call_resource": {
-      "provider_intent": "delete_a_call_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/Sid.json",
       "text": "Delete a Call resource",
       "category": "Call resource",
@@ -841,12 +646,11 @@
           "password": "auth_token"
         }
       },
-      "wip": 0,
       "subdomain": {},
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_an_alphasender_resource": {
-      "provider_intent": "create_an_alphasender_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/AlphaSenders___POST": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/AlphaSenders",
       "text": "Create an AlphaSender resource",
       "category": "AlphaSender resource",
@@ -884,11 +688,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_an_alphasender_resource": {
-      "provider_intent": "fetch_an_alphasender_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/AlphaSenders/Sid___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/AlphaSenders/Sid",
       "text": "Fetch an AlphaSender resource",
       "category": "AlphaSender resource",
@@ -936,11 +739,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_alphasender_resources": {
-      "provider_intent": "read_multiple_alphasender_resources",
+    "twilio__/messaging/v1/Services/ServiceSid/AlphaSenders___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/AlphaSenders",
       "text": "Read multiple AlphaSender resources",
       "category": "AlphaSender resource",
@@ -978,11 +780,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_an_alphasender_resource": {
-      "provider_intent": "delete_an_alphasender_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/AlphaSenders/Sid___DELETE": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/AlphaSenders/Sid",
       "text": "Delete an AlphaSender resource",
       "category": "AlphaSender resource",
@@ -1028,11 +829,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_an_application_resource": {
-      "provider_intent": "create_an_application_resource",
+    "twilio__/2010-04-01/accounts/accountsid/applications.json___POST": {
       "provider_alias_intent": "/2010-04-01/accounts/accountsid/applications.json",
       "text": "Create an Application resource",
       "category": "Application resource",
@@ -1155,11 +955,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_an_application_resource": {
-      "provider_intent": "fetch_an_application_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Applications/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Applications/Sid.json",
       "text": "Fetch an Application resource",
       "category": "Application resource",
@@ -1207,11 +1006,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_application_resources": {
-      "provider_intent": "read_multiple_application_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Applications.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Applications.json",
       "text": "Read multiple Application resources",
       "category": "Application resource",
@@ -1249,11 +1047,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_an_application_resource": {
-      "provider_intent": "update_an_application_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Applications/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Applications/Sid.json",
       "text": "Update an Application resource",
       "category": "Application resource",
@@ -1375,11 +1172,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_an_application_resource": {
-      "provider_intent": "delete_an_application_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Applications/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Applications/Sid.json",
       "text": "Delete an Application resource",
       "category": "Application resource",
@@ -1427,11 +1223,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_an_archived_call": {
-      "provider_intent": "delete_an_archived_call",
+    "twilio__/voice/v1/Archives/Date/Calls/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/Archives/Date/Calls/Sid",
       "text": "Delete an Archived Call",
       "category": "Archived Call",
@@ -1479,11 +1274,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_byoctrunk_resource": {
-      "provider_intent": "create_a_byoctrunk_resource",
+    "twilio__/voice/v1/ByocTrunks___POST": {
       "provider_alias_intent": "/voice/v1/ByocTrunks",
       "text": "Create a ByocTrunk resource",
       "category": "ByocTrunk Resource",
@@ -1554,11 +1348,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_byoctrunk_resource": {
-      "provider_intent": "fetch_a_byoctrunk_resource",
+    "twilio__/voice/v1/ByocTrunks/Sid___GET": {
       "provider_alias_intent": "/voice/v1/ByocTrunks/Sid",
       "text": "Fetch a ByocTrunk resource",
       "category": "ByocTrunk Resource",
@@ -1596,11 +1389,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_byoctrunk_resources": {
-      "provider_intent": "read_multiple_byoctrunk_resources",
+    "twilio__/voice/v1/ByocTrunks___GET": {
       "provider_alias_intent": "/voice/v1/ByocTrunks",
       "text": "Read multiple ByocTrunk resources",
       "category": "ByocTrunk Resource",
@@ -1626,11 +1418,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_byoctrunk_resource": {
-      "provider_intent": "update_a_byoctrunk_resource",
+    "twilio__/voice/v1/ByocTrunks/Sid___POST": {
       "provider_alias_intent": "/voice/v1/ByocTrunks/Sid",
       "text": "Update a ByocTrunk resource",
       "category": "ByocTrunk Resource",
@@ -1713,11 +1504,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_byoctrunk_resource": {
-      "provider_intent": "delete_a_byoctrunk_resource",
+    "twilio__/voice/v1/ByocTrunks/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/ByocTrunks/Sid",
       "text": "Delete a ByocTrunk resource",
       "category": "ByocTrunk Resource",
@@ -1755,11 +1545,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_callevent_resources": {
-      "provider_intent": "read_multiple_callevent_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Events.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Events.json",
       "text": "Read multiple CallEvent resources",
       "category": "Call event resource",
@@ -1807,11 +1596,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_participant": {
-      "provider_intent": "create_a_participant",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json",
       "text": "Create a Participant",
       "category": "Conference Participant Resource",
@@ -2086,11 +1874,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_participant_resource": {
-      "provider_intent": "fetch_a_participant_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json",
       "text": "Fetch a Participant resource",
       "category": "Conference Participant Resource",
@@ -2148,50 +1935,23 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_participant_resources": {
-      "provider_intent": "read_multiple_participant_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json",
-      "text": "Read multiple Participant resources",
-      "category": "Conference Participant Resource",
-      "body": {
-        "Muted": {
-          "type": "boolean",
-          "text": "Whether to return only participants that are muted",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "Hold": {
-          "type": "boolean",
-          "text": "Whether to return only participants that are on hold",
-          "enum": [
-            true,
-            false
-          ]
-        },
-        "Coaching": {
-          "type": "boolean",
-          "text": "Whether to return only participants who are coaching another call.",
-          "enum": [
-            true,
-            false
-          ]
-        }
-      },
+      "text": "Manage conference participants",
+      "category": "Conference Resource",
+      "body": {},
       "custom_headers": {},
       "path": {
         "AccountSid": {
           "type": "string",
-          "text": "The SID of the Account that created the Participant resources to read",
           "required": true
         },
-        "ConferenceSid": {
+        "Sid": {
           "type": "string",
-          "text": "The SID of the conference with the participants to read.",
+          "text": ".",
           "required": true
         }
       },
@@ -2200,23 +1960,22 @@
       "params": {
         "AccountSid": {
           "type": "string",
-          "text": "The SID of the Account that created the Participant resources to read",
           "required": true
         },
-        "ConferenceSid": {
+        "Sid": {
           "type": "string",
-          "text": "The SID of the conference with the participants to read.",
+          "text": ".",
           "required": true
         }
       },
       "meta": {
         "version": "2010-04-01",
         "auth": [],
-        "description": "Read multiple Participant resources",
+        "description": "Manage conference participants",
         "rate_limit": [],
         "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.json",
         "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json",
-        "api_ref": "https://www.twilio.com/docs/voice/api/conference-participant-resource#read-multiple-participant-resources"
+        "api_ref": "https://www.twilio.com/docs/voice/api/conference-resource#manage-conference-participants"
       },
       "auth": {
         "basicauth": {
@@ -2225,11 +1984,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_participant_resource": {
-      "provider_intent": "update_a_participant_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json",
       "text": "Update a Participant resource",
       "category": "Conference Participant Resource",
@@ -2369,11 +2127,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_participant_resource": {
-      "provider_intent": "delete_a_participant_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants/CallSid.json",
       "text": "Delete a Participant resource",
       "category": "Conference Participant Resource",
@@ -2431,11 +2188,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_conference_resource": {
-      "provider_intent": "fetch_a_conference_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/Sid.json",
       "text": "Fetch a Conference resource",
       "category": "Conference Resource",
@@ -2483,11 +2239,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_conference_resources": {
-      "provider_intent": "read_multiple_conference_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences.json",
       "text": "Read multiple Conference resources",
       "category": "Conference Resource",
@@ -2541,11 +2296,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_conference_resource": {
-      "provider_intent": "update_a_conference_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/Sid.json",
       "text": "Update a Conference resource",
       "category": "Conference Resource",
@@ -2606,61 +2360,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "manage_conference_participants": {
-      "provider_intent": "manage_conference_participants",
-      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json",
-      "text": "Manage conference participants",
-      "category": "Conference Resource",
-      "body": {},
-      "custom_headers": {},
-      "path": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        },
-        "Sid": {
-          "type": "string",
-          "text": ".",
-          "required": true
-        }
-      },
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        },
-        "Sid": {
-          "type": "string",
-          "text": ".",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Manage conference participants",
-        "rate_limit": [],
-        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Conferences/{ConferenceSid}/Participants.json",
-        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Participants.json",
-        "api_ref": "https://www.twilio.com/docs/voice/api/conference-resource#manage-conference-participants"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
-    },
-    "conference_recordings": {
-      "provider_intent": "conference_recordings",
+    "twilio__/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Recordings.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Conferences/ConferenceSid/Recordings.json",
       "text": "Conference Recordings",
       "category": "Conference Resource",
@@ -2706,11 +2409,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_connectionpolicy_resource": {
-      "provider_intent": "create_a_connectionpolicy_resource",
+    "twilio__/voice/v1/ConnectionPolicies___POST": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies",
       "text": "Create a ConnectionPolicy resource",
       "category": "ConnectionPolicy Resource",
@@ -2736,11 +2438,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_connectionpolicy_resource": {
-      "provider_intent": "fetch_a_connectionpolicy_resource",
+    "twilio__/voice/v1/ConnectionPolicies/Sid___GET": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/Sid",
       "text": "Fetch a ConnectionPolicy resource",
       "category": "ConnectionPolicy Resource",
@@ -2778,11 +2479,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_connectionpolicy_resources": {
-      "provider_intent": "read_multiple_connectionpolicy_resources",
+    "twilio__/voice/v1/ConnectionPolicies___GET": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies",
       "text": "Read multiple ConnectionPolicy resources",
       "category": "ConnectionPolicy Resource",
@@ -2808,11 +2508,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_connectionpolicy_resource": {
-      "provider_intent": "update_a_connectionpolicy_resource",
+    "twilio__/voice/v1/ConnectionPolicies/Sid___POST": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/Sid",
       "text": "Update a ConnectionPolicy resource",
       "category": "ConnectionPolicy Resource",
@@ -2855,11 +2554,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_connectionpolicy_resource": {
-      "provider_intent": "delete_a_connectionpolicy_resource",
+    "twilio__/voice/v1/ConnectionPolicies/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/Sid",
       "text": "Delete a ConnectionPolicy resource",
       "category": "ConnectionPolicy Resource",
@@ -2897,11 +2595,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_connectionpolicytarget_resource": {
-      "provider_intent": "create_a_connectionpolicytarget_resource",
+    "twilio__/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets___POST": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets",
       "text": "Create a ConnectionPolicyTarget resource",
       "category": "ConnectionPolicyTarget Resource",
@@ -2965,11 +2662,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_connectionpolicytarget_resource": {
-      "provider_intent": "fetch_a_connectionpolicytarget_resource",
+    "twilio__/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid___GET": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid",
       "text": "Fetch a ConnectionPolicyTarget resource",
       "category": "ConnectionPolicyTarget Resource",
@@ -3015,11 +2711,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_connectionpolicytarget_resources": {
-      "provider_intent": "read_multiple_connectionpolicytarget_resources",
+    "twilio__/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets___GET": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets",
       "text": "Read multiple ConnectionPolicyTarget resources",
       "category": "ConnectionPolicyTarget Resource",
@@ -3057,11 +2752,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_connectionpolicytarget_resource": {
-      "provider_intent": "update_a_connectionpolicytarget_resource",
+    "twilio__/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid___POST": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid",
       "text": "Update a ConnectionPolicyTarget resource",
       "category": "ConnectionPolicyTarget Resource",
@@ -3134,11 +2828,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_connectionpolicytarget_resource": {
-      "provider_intent": "delete_a_connectionpolicytarget_resource",
+    "twilio__/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/ConnectionPolicies/ConnectionPolicySid/Targets/Sid",
       "text": "Delete a ConnectionPolicyTarget resource",
       "category": "ConnectionPolicyTarget Resource",
@@ -3186,53 +2879,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_dialingpermissions_country_resource": {
-      "provider_intent": "fetch_a_dialingpermissions_country_resource",
-      "provider_alias_intent": "/voice/v1/DialingPermissions/Countries/IsoCode",
-      "text": "Fetch a DialingPermissions Country resource",
-      "category": "Dialing Permissions resources",
-      "body": {},
-      "custom_headers": {},
-      "path": {
-        "IsoCode": {
-          "type": "string",
-          "text": "The ISO country code of the DialingPermissions Country resource to fetch.",
-          "required": true
-        }
-      },
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "IsoCode": {
-          "type": "string",
-          "text": "The ISO country code of the DialingPermissions Country resource to fetch.",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Fetch a DialingPermissions Country resource",
-        "rate_limit": [],
-        "api_endpoint": "https://voice.twilio.com/v1/DialingPermissions/Countries/{IsoCode}",
-        "alias_endpoint": "/twilio/voice/v1/DialingPermissions/Countries/IsoCode",
-        "api_ref": "https://www.twilio.com/docs/voice/api/dialingpermissions-country-resource#fetch-a-dialingpermissions-country-resource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
-    },
-    "read_multiple_dialingpermissions_country_resources": {
-      "provider_intent": "read_multiple_dialingpermissions_country_resources",
+    "twilio__/voice/v1/DialingPermissions/Countries/IsoCode___GET": {
       "provider_alias_intent": "/voice/v1/DialingPermissions/Countries/IsoCode",
       "text": "Read multiple DialingPermissions Country resources",
       "category": "Dialing Permissions resources",
@@ -3300,11 +2950,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_dialingpermissions_bulkcountryupdate_resource": {
-      "provider_intent": "create_a_dialingpermissions_bulkcountryupdate_resource",
+    "twilio__/voice/v1/DialingPermissions/BulkCountryUpdates___POST": {
       "provider_alias_intent": "/voice/v1/DialingPermissions/BulkCountryUpdates",
       "text": "Create a DialingPermissions BulkCountryUpdate resource",
       "category": "Dialing Permissions resources",
@@ -3335,11 +2984,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_dialingpermissions_highriskspecialprefix_resources": {
-      "provider_intent": "read_multiple_dialingpermissions_highriskspecialprefix_resources",
+    "twilio__/voice/v1/DialingPermissions/Countries/IsoCode/HighRiskSpecialPrefixes___GET": {
       "provider_alias_intent": "/voice/v1/DialingPermissions/Countries/IsoCode/HighRiskSpecialPrefixes",
       "text": "Read multiple DialingPermissions HighRiskSpecialPrefix resources",
       "category": "Dialing Permissions resources",
@@ -3377,11 +3025,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_dialingpermissions_settings_resource": {
-      "provider_intent": "fetch_a_dialingpermissions_settings_resource",
+    "twilio__/voice/v1/Settings___GET": {
       "provider_alias_intent": "/voice/v1/Settings",
       "text": "Fetch a DialingPermissions Settings resource",
       "category": "Dialing Permissions resources",
@@ -3416,11 +3063,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_dialingpermissions_settings_resource": {
-      "provider_intent": "update_a_dialingpermissions_settings_resource",
+    "twilio__/voice/v1/Settings___POST": {
       "provider_alias_intent": "/voice/v1/Settings",
       "text": "Update a DialingPermissions Settings resource",
       "category": "Dialing Permissions resources",
@@ -3455,11 +3101,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_and_validate_a_new_emergency_address": {
-      "provider_intent": "create_and_validate_a_new_emergency_address",
+    "twilio__/2010-04-01/Accounts/AccountSid/Addresses___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Addresses",
       "text": "Create and validate a new Emergency Address",
       "category": "Emergency Calling",
@@ -3495,59 +3140,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "associate_an_emergency_address_with_a_twilio_number": {
-      "provider_intent": "associate_an_emergency_address_with_a_twilio_number",
-      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid",
-      "text": "Associate an Emergency Address with a Twilio number",
-      "category": "Emergency Calling",
-      "body": {},
-      "custom_headers": {},
-      "path": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        },
-        "PhoneNumberSid": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "AccountSid": {
-          "type": "string",
-          "required": true
-        },
-        "PhoneNumberSid": {
-          "type": "string",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Associate an Emergency Address with a Twilio number",
-        "rate_limit": [],
-        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/IncomingPhoneNumbers/{PhoneNumberSid}",
-        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid",
-        "api_ref": "https://www.twilio.com/docs/voice/sip/api/emergency-calling-api#associate-an-emergency-address-with-a-twilio-number"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
-    },
-    "enable_and_disable_emergency_calling": {
-      "provider_intent": "enable_and_disable_emergency_calling",
+    "twilio__/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid",
       "text": "Enable and disable Emergency Calling",
       "category": "Emergency Calling",
@@ -3591,11 +3187,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "check_emergency_calling_status_on_a_twilio_number": {
-      "provider_intent": "check_emergency_calling_status_on_a_twilio_number",
+    "twilio__/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/IncomingPhoneNumbers/PhoneNumberSid",
       "text": "Check Emergency Calling Status on a Twilio number",
       "category": "Emergency Calling",
@@ -3639,11 +3234,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_an_emergency_address": {
-      "provider_intent": "delete_an_emergency_address",
+    "twilio__/2010-04-01/Accounts/AccountSid/Addresses/AddressSid___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Addresses/AddressSid",
       "text": "Delete an Emergency Address",
       "category": "Emergency Calling",
@@ -3687,11 +3281,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "enable_and_disable_emergency_calling_on_sip_domain": {
-      "provider_intent": "enable_and_disable_emergency_calling_on_sip_domain",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/SipDomainSid___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/SipDomainSid",
       "text": "Enable and Disable Emergency Calling on SIP Domain",
       "category": "Emergency Calling",
@@ -3735,125 +3328,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_call_feedback_resource": {
-      "provider_intent": "create_a_call_feedback_resource",
-      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
-      "text": "Create a call Feedback resource",
-      "category": "Feedback resource",
-      "body": {
-        "QualityScore": {
-          "type": "number",
-          "text": "The call quality expressed as an integer from 1 to 5 where 1 represents very poor call quality and 5 represents a perfect call",
-          "required": true
-        },
-        "Issue": {
-          "type": "string",
-          "text": "A list of one or more issues experienced during the call."
-        }
-      },
-      "custom_headers": {},
-      "path": {
-        "AccountSid": {
-          "type": "string",
-          "text": "The unique id of the Account responsible for this resource",
-          "required": true
-        },
-        "CallSid": {
-          "type": "string",
-          "text": "The call sid that uniquely identifies the call.",
-          "required": true
-        }
-      },
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "AccountSid": {
-          "type": "string",
-          "text": "The unique id of the Account responsible for this resource",
-          "required": true
-        },
-        "CallSid": {
-          "type": "string",
-          "text": "The call sid that uniquely identifies the call.",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Create a call Feedback resource",
-        "rate_limit": [],
-        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Feedback.json",
-        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
-        "api_ref": "https://www.twilio.com/docs/voice/api/feedback-resource#create-a-call-feedback-resource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
-    },
-    "fetch_a_call_feedback_resource": {
-      "provider_intent": "fetch_a_call_feedback_resource",
-      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
-      "text": "Fetch a call Feedback resource",
-      "category": "Feedback resource",
-      "body": {},
-      "custom_headers": {},
-      "path": {
-        "AccountSid": {
-          "type": "string",
-          "text": "The unique id of the Account responsible for this resource",
-          "required": true
-        },
-        "CallSid": {
-          "type": "string",
-          "text": "The call sid that uniquely identifies the call.",
-          "required": true
-        }
-      },
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "AccountSid": {
-          "type": "string",
-          "text": "The unique id of the Account responsible for this resource",
-          "required": true
-        },
-        "CallSid": {
-          "type": "string",
-          "text": "The call sid that uniquely identifies the call.",
-          "required": true
-        }
-      },
-      "meta": {
-        "version": "2010-04-01",
-        "auth": [],
-        "description": "Fetch a call Feedback resource",
-        "rate_limit": [],
-        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Feedback.json",
-        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
-        "api_ref": "https://www.twilio.com/docs/voice/api/feedback-resource#fetch-a-call-feedback-resource"
-      },
-      "auth": {
-        "basicauth": {
-          "username": "account_sid",
-          "password": "auth_token"
-        }
-      },
-      "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
-    },
-    "update_a_call_feedback_resource": {
-      "provider_intent": "update_a_call_feedback_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
       "text": "Update a call Feedback resource",
       "category": "Feedback resource",
@@ -3910,11 +3388,61 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_callfeedbacksummary_resource": {
-      "provider_intent": "create_a_callfeedbacksummary_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json___GET": {
+      "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
+      "text": "Fetch a call Feedback resource",
+      "category": "Feedback resource",
+      "body": {},
+      "custom_headers": {},
+      "path": {
+        "AccountSid": {
+          "type": "string",
+          "text": "The unique id of the Account responsible for this resource",
+          "required": true
+        },
+        "CallSid": {
+          "type": "string",
+          "text": "The call sid that uniquely identifies the call.",
+          "required": true
+        }
+      },
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "AccountSid": {
+          "type": "string",
+          "text": "The unique id of the Account responsible for this resource",
+          "required": true
+        },
+        "CallSid": {
+          "type": "string",
+          "text": "The call sid that uniquely identifies the call.",
+          "required": true
+        }
+      },
+      "meta": {
+        "version": "2010-04-01",
+        "auth": [],
+        "description": "Fetch a call Feedback resource",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twilio.com/2010-04-01/Accounts/{AccountSid}/Calls/{CallSid}/Feedback.json",
+        "alias_endpoint": "/twilio/2010-04-01/Accounts/AccountSid/Calls/CallSid/Feedback.json",
+        "api_ref": "https://www.twilio.com/docs/voice/api/feedback-resource#fetch-a-call-feedback-resource"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "account_sid",
+          "password": "auth_token"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
+    },
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary.json",
       "text": "Create a CallFeedbackSummary resource",
       "category": "FeedbackSummary resource",
@@ -3980,11 +3508,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_callfeedbacksummary_resource": {
-      "provider_intent": "fetch_a_callfeedbacksummary_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary/Sid.json",
       "text": "Fetch a CallFeedbackSummary resource",
       "category": "FeedbackSummary resource",
@@ -4032,11 +3559,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_callfeedbacksummary_resource": {
-      "provider_intent": "delete_a_callfeedbacksummary_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/FeedbackSummary/Sid.json",
       "text": "Delete a CallFeedbackSummary resource",
       "category": "FeedbackSummary resource",
@@ -4084,11 +3610,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_an_iprecord_resource": {
-      "provider_intent": "create_an_iprecord_resource",
+    "twilio__/voice/v1/IpRecords___POST": {
       "provider_alias_intent": "/voice/v1/IpRecords",
       "text": "Create an IpRecord resource",
       "category": "IpRecord Resource",
@@ -4123,11 +3648,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_an_iprecord_resource": {
-      "provider_intent": "fetch_an_iprecord_resource",
+    "twilio__/voice/v1/IpRecords/Sid___GET": {
       "provider_alias_intent": "/voice/v1/IpRecords/Sid",
       "text": "Fetch an IpRecord resource",
       "category": "IpRecord Resource",
@@ -4165,11 +3689,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_iprecord_resources": {
-      "provider_intent": "read_multiple_iprecord_resources",
+    "twilio__/voice/v1/IpRecords___GET": {
       "provider_alias_intent": "/voice/v1/IpRecords",
       "text": "Read multiple IpRecord resources",
       "category": "IpRecord Resource",
@@ -4195,11 +3718,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_an_iprecord_resource": {
-      "provider_intent": "update_an_iprecord_resource",
+    "twilio__/voice/v1/IpRecords/Sid___POST": {
       "provider_alias_intent": "/voice/v1/IpRecords/Sid",
       "text": "Update an IpRecord resource",
       "category": "IpRecord Resource",
@@ -4242,11 +3764,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_an_iprecord_resource": {
-      "provider_intent": "delete_an_iprecord_resource",
+    "twilio__/voice/v1/IpRecords/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/IpRecords/Sid",
       "text": "Delete an IpRecord resource",
       "category": "IpRecord Resource",
@@ -4284,11 +3805,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_stream_resource": {
-      "provider_intent": "create_a_stream_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Streams.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Streams.json",
       "text": "Create a Stream resource",
       "category": "Media  streams",
@@ -4358,11 +3878,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_media_resource": {
-      "provider_intent": "fetch_a_media_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media/Sid.json",
       "text": "Fetch a Media resource",
       "category": "Media resource",
@@ -4416,11 +3935,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_media_resources": {
-      "provider_intent": "read_multiple_media_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media.json",
       "text": "Read multiple Media resources",
       "category": "Media resource",
@@ -4469,11 +3987,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_media_resource": {
-      "provider_intent": "delete_a_media_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Media/Sid.json",
       "text": "Delete a Media resource",
       "category": "Media resource",
@@ -4531,11 +4048,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_member_resource": {
-      "provider_intent": "fetch_a_member_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members/CallSid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members/CallSid.json",
       "text": "Fetch a Member resource",
       "category": "Member resource",
@@ -4593,11 +4109,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_member_resources": {
-      "provider_intent": "read_multiple_member_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members.json",
       "text": "Read multiple Member resources",
       "category": "Member resource",
@@ -4645,11 +4160,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_member_resource": {
-      "provider_intent": "update_a_member_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members/CallSid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/QueueSid/Members/CallSid.json",
       "text": "Update a Member resource",
       "category": "Member resource",
@@ -4719,11 +4233,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_messagefeedback_resource": {
-      "provider_intent": "create_a_messagefeedback_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Feedback.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Messages/MessageSid/Feedback.json",
       "text": "Create a MessageFeedback resource",
       "category": "MessageFeedback resource",
@@ -4779,11 +4292,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "starting_a_pay_session": {
-      "provider_intent": "starting_a_pay_session",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Payments.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Payments.json",
       "text": "Starting a Pay session",
       "category": "Payment resources",
@@ -4899,11 +4411,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_pay_session": {
-      "provider_intent": "update_a_pay_session",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Payments/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Payments/Sid.json",
       "text": "Update a Pay session",
       "category": "Payment resources",
@@ -4981,11 +4492,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_phonenumber_resource_add_a_phone_number_to_a_messaging_service": {
-      "provider_intent": "create_a_phonenumber_resource_add_a_phone_number_to_a_messaging_service",
+    "twilio__/messaging/v1/Services/ServiceSid/PhoneNumbers___POST": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/PhoneNumbers",
       "text": "Create a PhoneNumber Resource (Add a Phone Number to a Messaging Service)",
       "category": "PhoneNumber Resource",
@@ -5023,11 +4533,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_phonenumber_resource": {
-      "provider_intent": "fetch_a_phonenumber_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/PhoneNumbers/Sid___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/PhoneNumbers/Sid",
       "text": "Fetch a PhoneNumber resource",
       "category": "PhoneNumber Resource",
@@ -5075,11 +4584,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_phonenumber_resources": {
-      "provider_intent": "read_multiple_phonenumber_resources",
+    "twilio__/messaging/v1/Services/ServiceSid/PhoneNumbers___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/PhoneNumbers",
       "text": "Read multiple PhoneNumber resources",
       "category": "PhoneNumber Resource",
@@ -5117,11 +4625,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_phonenumber_resource": {
-      "provider_intent": "delete_a_phonenumber_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/PhoneNumbers/Sid___DELETE": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/PhoneNumbers/Sid",
       "text": "Delete a PhoneNumber resource",
       "category": "PhoneNumber Resource",
@@ -5169,11 +4676,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_queue_resource": {
-      "provider_intent": "create_a_queue_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues.json",
       "text": "Create a Queue resource",
       "category": "Queue resource",
@@ -5221,11 +4727,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_queue_resource": {
-      "provider_intent": "fetch_a_queue_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/Sid.json",
       "text": "Fetch a Queue resource",
       "category": "Queue resource",
@@ -5273,11 +4778,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_queue_resources": {
-      "provider_intent": "read_multiple_queue_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues.json",
       "text": "Read multiple Queue resources",
       "category": "Queue resource",
@@ -5315,11 +4819,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_queue_resource": {
-      "provider_intent": "update_a_queue_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/Sid.json",
       "text": "Update a Queue resource",
       "category": "Queue resource",
@@ -5377,11 +4880,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_queue_resource": {
-      "provider_intent": "delete_a_queue_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Queues/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Queues/Sid.json",
       "text": "Delete a Queue resource",
       "category": "Queue resource",
@@ -5429,11 +4931,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_transcription_resource": {
-      "provider_intent": "fetch_a_transcription_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Transcriptions/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Transcriptions/Sid.json",
       "text": "Fetch a Transcription resource",
       "category": "Recording Transcription",
@@ -5481,11 +4982,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_transcription_resources": {
-      "provider_intent": "read_multiple_transcription_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Transcriptions.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Transcriptions.json",
       "text": "Read multiple Transcription resources",
       "category": "Recording Transcription",
@@ -5523,11 +5023,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_transcription_resource": {
-      "provider_intent": "delete_a_transcription_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Transcriptions/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Transcriptions/Sid.json",
       "text": "Delete a Transcription resource",
       "category": "Recording Transcription",
@@ -5575,11 +5074,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_recording_resource": {
-      "provider_intent": "create_a_recording_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallsSid/Recordings.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallsSid/Recordings.json",
       "text": "Create a Recording resource",
       "category": "Recording resource",
@@ -5652,11 +5150,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_recording_resource": {
-      "provider_intent": "fetch_a_recording_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Recordings/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Recordings/Sid.json",
       "text": "Fetch a Recording resource",
       "category": "Recording resource",
@@ -5712,11 +5209,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_recording's_transcriptions": {
-      "provider_intent": "fetch_a_recording's_transcriptions",
+    "twilio__/2010-04-01/Accounts/AccountSid/Recordings/RecordingSid/Transcriptions___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Recordings/RecordingSid/Transcriptions",
       "text": "Fetch a Recording's Transcriptions",
       "category": "Recording resource",
@@ -5760,11 +5256,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_recording_resources": {
-      "provider_intent": "read_multiple_recording_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/Recordings.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Recordings.json",
       "text": "Read multiple Recording Resources",
       "category": "Recording resource",
@@ -5820,11 +5315,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_recording_resource": {
-      "provider_intent": "update_a_recording_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Recordings/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Recordings/Sid.json",
       "text": "Update a Recording resource",
       "category": "Recording resource",
@@ -5894,11 +5388,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_recording_resource": {
-      "provider_intent": "delete_a_recording_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Recordings/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Recordings/Sid.json",
       "text": "Delete a Recording resource",
       "category": "Recording resource",
@@ -5946,11 +5439,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_credential_resource": {
-      "provider_intent": "create_a_sip_credential_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials.json",
       "text": "Create a SIP Credential resource",
       "category": "SIP Credential resource",
@@ -6009,11 +5501,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_credential_resource": {
-      "provider_intent": "fetch_a_sip_credential_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json",
       "text": "Fetch a SIP Credential resource",
       "category": "SIP Credential resource",
@@ -6061,11 +5552,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_credential_resources": {
-      "provider_intent": "read_multiple_sip_credential_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials.json",
       "text": "Read multiple SIP Credential resources",
       "category": "SIP Credential resource",
@@ -6123,11 +5613,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update-a-sip-credential-resource": {
-      "provider_intent": "update-a-sip-credential-resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json",
       "text": "update-a-sip-credential-resource",
       "category": "SIP Credential resource",
@@ -6190,11 +5679,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_credential_resource": {
-      "provider_intent": "delete_a_sip_credential_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/CredentialListSid/Credentials/Sid.json",
       "text": "Delete a SIP Credential resource",
       "category": "SIP Credential resource",
@@ -6252,11 +5740,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_credentiallist_resource": {
-      "provider_intent": "create_a_sip_credentiallist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists.json",
       "text": "Create a SIP CredentialList resource",
       "category": "SIP CredentialList resource",
@@ -6294,11 +5781,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_credentiallist_resource": {
-      "provider_intent": "fetch_a_sip_credentiallist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json",
       "text": "Fetch a SIP CredentialList resource",
       "category": "SIP CredentialList resource",
@@ -6346,11 +5832,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_credentiallist_resources": {
-      "provider_intent": "read_multiple_sip_credentiallist_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists.json",
       "text": "Read multiple SIP CredentialList resources",
       "category": "SIP CredentialList resource",
@@ -6388,11 +5873,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_sip_credentiallist_resource": {
-      "provider_intent": "update_a_sip_credentiallist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json",
       "text": "Update a SIP CredentialList resource",
       "category": "SIP CredentialList resource",
@@ -6440,11 +5924,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_credentiallist_resource": {
-      "provider_intent": "delete_a_sip_credentiallist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/CredentialLists/Sid.json",
       "text": "Delete a SIP CredentialList resource",
       "category": "SIP CredentialList resource",
@@ -6492,11 +5975,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_credentiallistmapping_resource": {
-      "provider_intent": "create_a_sip_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings.json",
       "text": "Create a SIP CredentialListMapping resource",
       "category": "SIP CredentialListMapping resource",
@@ -6550,11 +6032,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_credentiallistmapping_resource": {
-      "provider_intent": "fetch_a_sip_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings/Sid.json",
       "text": "Fetch a SIP CredentialListMapping resource",
       "category": "SIP CredentialListMapping resource",
@@ -6612,11 +6093,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_credentiallistmapping_resources": {
-      "provider_intent": "read_multiple_sip_credentiallistmapping_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings.json",
       "text": "Read multiple SIP CredentialListMapping resources",
       "category": "SIP CredentialListMapping resource",
@@ -6664,11 +6144,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_credentiallistmapping_resource": {
-      "provider_intent": "delete_a_sip_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/CredentialListMappings/Sid.json",
       "text": "Delete a SIP CredentialListMapping resource",
       "category": "SIP CredentialListMapping resource",
@@ -6726,11 +6205,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_domain_registration_credentiallistmapping_resource": {
-      "provider_intent": "create_a_sip_domain_registration_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings.json",
       "text": "Create a SIP Domain Registration CredentialListMapping resource",
       "category": "SIP Domain Registration CredentialListMapping resource",
@@ -6784,11 +6262,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_domain_registration_credentiallistmapping_resource": {
-      "provider_intent": "fetch_a_sip_domain_registration_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings/Sid.json",
       "text": "Fetch a SIP Domain Registration CredentialListMapping resource",
       "category": "SIP Domain Registration CredentialListMapping resource",
@@ -6846,11 +6323,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_a_sip_domain_registration_credentiallistmapping_resource": {
-      "provider_intent": "read_a_sip_domain_registration_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings.json",
       "text": "Read a SIP Domain Registration CredentialListMapping resource",
       "category": "SIP Domain Registration CredentialListMapping resource",
@@ -6898,11 +6374,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_domain_registration_credentiallistmapping_resource": {
-      "provider_intent": "delete_a_sip_domain_registration_credentiallistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Registrations/CredentialListMappings/Sid.json",
       "text": "Delete a SIP Domain Registration CredentialListMapping resource",
       "category": "SIP Domain Registration CredentialListMapping resource",
@@ -6960,11 +6435,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_ipaccesscontrollist_resource": {
-      "provider_intent": "create_a_sip_ipaccesscontrollist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists.json",
       "text": "Create a SIP IpAccessControlList resource",
       "category": "SIP IpAccessControlList resource",
@@ -7002,11 +6476,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_ipaccesscontrollist_resource": {
-      "provider_intent": "fetch_a_sip_ipaccesscontrollist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json",
       "text": "Fetch a SIP IpAccessControlList resource",
       "category": "SIP IpAccessControlList resource",
@@ -7054,11 +6527,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_ipaccesscontrollist_resources": {
-      "provider_intent": "read_multiple_sip_ipaccesscontrollist_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists.json",
       "text": "Read multiple SIP IpAccessControlList resources",
       "category": "SIP IpAccessControlList resource",
@@ -7102,11 +6574,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_sip_ipaccesscontrollist_resource": {
-      "provider_intent": "update_a_sip_ipaccesscontrollist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json",
       "text": "Update a SIP IpAccessControlList resource",
       "category": "SIP IpAccessControlList resource",
@@ -7160,11 +6631,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_ipaccesscontrollist_resource": {
-      "provider_intent": "delete_a_sip_ipaccesscontrollist_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/Sid.json",
       "text": "Delete a SIP IpAccessControlList resource",
       "category": "SIP IpAccessControlList resource",
@@ -7212,11 +6682,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_ipaccesscontrollistmapping_resource": {
-      "provider_intent": "create_a_sip_ipaccesscontrollistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings.json",
       "text": "Create a SIP IpAccessControlListMapping resource",
       "category": "SIP IpAccessControlListMapping resource",
@@ -7270,11 +6739,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_ipaccesscontrollistmapping_resource": {
-      "provider_intent": "fetch_a_sip_ipaccesscontrollistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings/Sid.json",
       "text": "Fetch a SIP IpAccessControlListMapping resource",
       "category": "SIP IpAccessControlListMapping resource",
@@ -7332,11 +6800,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_ipaccesscontrollistmapping_resources": {
-      "provider_intent": "read_multiple_sip_ipaccesscontrollistmapping_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings.json",
       "text": "Read multiple SIP IpAccessControlListMapping resources",
       "category": "SIP IpAccessControlListMapping resource",
@@ -7384,11 +6851,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_ipaccesscontrollistmapping_resource": {
-      "provider_intent": "delete_a_sip_ipaccesscontrollistmapping_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/DomainSid/Auth/Calls/IpAccessControlListMappings/Sid.json",
       "text": "Delete a SIP IpAccessControlListMapping resource",
       "category": "SIP IpAccessControlListMapping resource",
@@ -7446,11 +6912,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sip_ipaddress_resource": {
-      "provider_intent": "create_a_sip_ipaddress_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses.json",
       "text": "Create a SIP IpAddress resource",
       "category": "SIP IpAddress resource",
@@ -7513,11 +6978,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sip_ipaddress_resource": {
-      "provider_intent": "fetch_a_sip_ipaddress_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json",
       "text": "Fetch a SIP IpAddress resource",
       "category": "SIP IpAddress resource",
@@ -7575,11 +7039,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sip_ipaddress_resources": {
-      "provider_intent": "read_multiple_sip_ipaddress_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses.json",
       "text": "Read multiple SIP IpAddress resources",
       "category": "SIP IpAddress resource",
@@ -7627,11 +7090,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_sip_ipaddress_resource": {
-      "provider_intent": "update_a_sip_ipaddress_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json",
       "text": "Update a SIP IpAddress resource",
       "category": "SIP IpAddress resource",
@@ -7702,11 +7164,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sip_ipaddress_resource": {
-      "provider_intent": "delete_a_sip_ipaddress_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/IpAccessControlLists/IpAccessControlListSid/IpAddresses/Sid.json",
       "text": "Delete a SIP IpAddress resource",
       "category": "SIP IpAddress resource",
@@ -7764,11 +7225,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "start_siprec_stream": {
-      "provider_intent": "start_siprec_stream",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Siprec.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Siprec.json\n",
       "text": "Start SIPREC stream",
       "category": "SIPREC",
@@ -7837,11 +7297,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_siprec_resource": {
-      "provider_intent": "update_a_siprec_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/Siprec/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/Siprec/Sid.json",
       "text": "Update a Siprec resource",
       "category": "SIPREC",
@@ -7905,11 +7364,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_service_resource": {
-      "provider_intent": "create_a_service_resource",
+    "twilio__/messaging/v1/Services___POST": {
       "provider_alias_intent": "/messaging/v1/Services",
       "text": "Create a Service resource",
       "category": "Service resource",
@@ -8033,11 +7491,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_service_resource": {
-      "provider_intent": "fetch_a_service_resource",
+    "twilio__/messaging/v1/Services/Sid___GET": {
       "provider_alias_intent": "/messaging/v1/Services/Sid",
       "text": "Fetch a Service resource",
       "category": "Service resource",
@@ -8075,11 +7532,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_service_resources": {
-      "provider_intent": "read_multiple_service_resources",
+    "twilio__/messaging/v1/Services___GET": {
       "provider_alias_intent": "/messaging/v1/Services",
       "text": "Read multiple Service resources",
       "category": "Service resource",
@@ -8105,11 +7561,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_service_resource": {
-      "provider_intent": "update_a_service_resource",
+    "twilio__/messaging/v1/Services/Sid___POST": {
       "provider_alias_intent": "/messaging/v1/Services/Sid",
       "text": "Update a Service resource",
       "category": "Service resource",
@@ -8242,11 +7697,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_service_resource": {
-      "provider_intent": "delete_a_service_resource",
+    "twilio__/messaging/v1/Services/Sid___DELETE": {
       "provider_alias_intent": "/messaging/v1/Services/Sid",
       "text": "Delete a Service resource",
       "category": "Service resource",
@@ -8284,11 +7738,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_shortcode_resource": {
-      "provider_intent": "create_a_shortcode_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/ShortCodes___POST": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/ShortCodes",
       "text": "Create a ShortCode resource",
       "category": "ShortCode resource",
@@ -8326,11 +7779,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_shortcode_resource": {
-      "provider_intent": "fetch_a_shortcode_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/ShortCodes/Sid___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/ShortCodes/Sid",
       "text": "Fetch a ShortCode resource",
       "category": "ShortCode resource",
@@ -8378,11 +7830,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_shortcode_resources": {
-      "provider_intent": "read_multiple_shortcode_resources",
+    "twilio__/messaging/v1/Services/ServiceSid/ShortCodes___GET": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/ShortCodes",
       "text": "Read multiple ShortCode resources",
       "category": "ShortCode resource",
@@ -8420,11 +7871,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_shortcode_resource": {
-      "provider_intent": "delete_a_shortcode_resource",
+    "twilio__/messaging/v1/Services/ServiceSid/ShortCodes/Sid___DELETE": {
       "provider_alias_intent": "/messaging/v1/Services/ServiceSid/ShortCodes/Sid",
       "text": "Delete a ShortCode resource",
       "category": "ShortCode resource",
@@ -8472,11 +7922,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sipdomain_resource": {
-      "provider_intent": "create_a_sipdomain_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains.json",
       "text": "Create a SipDomain resource",
       "category": "SipDomain resource",
@@ -8579,11 +8028,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sipdomain_resource": {
-      "provider_intent": "fetch_a_sipdomain_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json",
       "text": "Fetch a SipDomain resource",
       "category": "SipDomain resource",
@@ -8631,11 +8079,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sipdomain_resources": {
-      "provider_intent": "read_multiple_sipdomain_resources",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains.json___GET": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains.json",
       "text": "Read multiple SipDomain resources",
       "category": "SipDomain resource",
@@ -8673,11 +8120,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_sipdomain_resource": {
-      "provider_intent": "update_a_sipdomain_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json",
       "text": "Update a SipDomain resource",
       "category": "SipDomain resource",
@@ -8792,11 +8238,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sipdomain_resource": {
-      "provider_intent": "delete_a_sipdomain_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json___DELETE": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/SIP/Domains/Sid.json",
       "text": "Delete a SipDomain resource",
       "category": "SipDomain resource",
@@ -8844,11 +8289,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_sourceipmapping_resource": {
-      "provider_intent": "create_a_sourceipmapping_resource",
+    "twilio__/voice/v1/SourceIpMappings___POST": {
       "provider_alias_intent": "/voice/v1/SourceIpMappings",
       "text": "Create a SourceIpMapping resource",
       "category": "SourceIpMapping Resource",
@@ -8880,11 +8324,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_sourceipmapping_resource": {
-      "provider_intent": "fetch_a_sourceipmapping_resource",
+    "twilio__/voice/v1/SourceIpMappings/Sid___GET": {
       "provider_alias_intent": "/voice/v1/SourceIpMappings/Sid",
       "text": "Fetch a SourceIpMapping resource",
       "category": "SourceIpMapping Resource",
@@ -8922,11 +8365,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_multiple_sourceipmapping_resources": {
-      "provider_intent": "read_multiple_sourceipmapping_resources",
+    "twilio__/voice/v1/SourceIpMappings___GET": {
       "provider_alias_intent": "/voice/v1/SourceIpMappings",
       "text": "Read multiple SourceIpMapping resources",
       "category": "SourceIpMapping Resource",
@@ -8952,11 +8394,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "update_a_sourceipmapping_resource": {
-      "provider_intent": "update_a_sourceipmapping_resource",
+    "twilio__/voice/v1/SourceIpMappings/Sid___POST": {
       "provider_alias_intent": "/voice/v1/SourceIpMappings/Sid",
       "text": "Update a SourceIpMapping resource",
       "category": "SourceIpMapping Resource",
@@ -9000,11 +8441,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_sourceipmapping_resource": {
-      "provider_intent": "delete_a_sourceipmapping_resource",
+    "twilio__/voice/v1/SourceIpMappings/Sid___DELETE": {
       "provider_alias_intent": "/voice/v1/SourceIpMappings/Sid",
       "text": "Delete a SourceIpMapping resource",
       "category": "SourceIpMapping Resource",
@@ -9042,11 +8482,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_us_a2p_campaign_use_case": {
-      "provider_intent": "create_a_us_a2p_campaign_use_case",
+    "twilio__/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p___POST": {
       "provider_alias_intent": "/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p",
       "text": "Create a US A2P Campaign Use Case",
       "category": "US App to Person Campaign Resource",
@@ -9154,11 +8593,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_a_us_a2p_campaign_use_case": {
-      "provider_intent": "fetch_a_us_a2p_campaign_use_case",
+    "twilio__/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Sid___GET": {
       "provider_alias_intent": "/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Sid",
       "text": "Fetch a US A2P Campaign Use Case",
       "category": "US App to Person Campaign Resource",
@@ -9206,11 +8644,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "read_a_list_of_us_a2p_campaign_use_cases": {
-      "provider_intent": "read_a_list_of_us_a2p_campaign_use_cases",
+    "twilio__/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p___GET": {
       "provider_alias_intent": "/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p",
       "text": "Read a List of US A2P Campaign Use Cases",
       "category": "US App to Person Campaign Resource",
@@ -9248,11 +8685,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "delete_a_us_a2p_campaign_use_case": {
-      "provider_intent": "delete_a_us_a2p_campaign_use_case",
+    "twilio__/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Sid___DELETE": {
       "provider_alias_intent": "/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Sid",
       "text": "Delete a US A2P Campaign Use Case",
       "category": "US App to Person Campaign Resource",
@@ -9300,11 +8736,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "fetch_possible_us_a2p_campaign_use_cases_for_a_messaging_service": {
-      "provider_intent": "fetch_possible_us_a2p_campaign_use_cases_for_a_messaging_service",
+    "twilio__/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Usecases___GET": {
       "provider_alias_intent": "/messaging/v1/Services/MessagingServiceSid/Compliance/Usa2p/Usecases",
       "text": "Fetch Possible US A2P Campaign Use Cases for a Messaging Service",
       "category": "US App to Person Messaging Service Use Case Resource",
@@ -9342,11 +8777,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_userdefinedmessage_resource": {
-      "provider_intent": "create_a_userdefinedmessage_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/UserDefinedMessages.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/UserDefinedMessages.json",
       "text": "Create a UserDefinedMessage Resource",
       "category": "UserDefinedMessage Resource",
@@ -9404,11 +8838,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     },
-    "create_a_userdefinedmessagesubscription_resource": {
-      "provider_intent": "create_a_userdefinedmessagesubscription_resource",
+    "twilio__/2010-04-01/Accounts/AccountSid/Calls/CallSid/UserDefinedMessageSubscriptions.json___POST": {
       "provider_alias_intent": "/2010-04-01/Accounts/AccountSid/Calls/CallSid/UserDefinedMessageSubscriptions.json",
       "text": "Create a UserDefinedMessageSubscription Resource",
       "category": "UserDefinedMessageSubscription Resource",
@@ -9469,8 +8902,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": "urlencoded"
+      "payload_type": "urlencoded",
+      "updated_at": "2025-11-11T12:00:08.895Z"
     }
   }
 }

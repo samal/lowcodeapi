@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs",
       "text": "All Bugs",
       "category": "Bugs",
@@ -217,15 +216,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id",
       "text": "Bug Details",
       "category": "Bugs",
@@ -290,15 +286,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs",
       "text": "Create a Bug",
       "category": "Bugs",
@@ -411,15 +404,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id",
       "text": "Update a Bug",
       "category": "Bugs",
@@ -545,15 +535,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id",
       "text": "Delete a Bug",
       "category": "Bugs",
@@ -618,15 +605,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments",
       "text": "Add Comment",
       "category": "Bugs",
@@ -701,15 +685,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments",
       "text": "Get Comment",
       "category": "Bugs",
@@ -782,15 +763,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__comments___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__comments___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/comments___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/comments",
       "text": "Get Comments for Mutiple Bugs",
       "category": "Bugs",
@@ -857,15 +835,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments__comment_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__comments__comment_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments/comment_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/comments/comment_id",
       "text": "Delete Comment",
       "category": "Bugs",
@@ -940,15 +915,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/comments/[COMMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__timer___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__timer___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/timer___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/timer",
       "text": "Get Bug Timer",
       "category": "Bugs",
@@ -1013,15 +985,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/timer",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__customviews___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__customviews___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/customviews___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/customviews",
       "text": "Get Bug Custom Views",
       "category": "Bugs",
@@ -1084,15 +1053,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/customviews",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__attachments___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__attachments___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/attachments___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/attachments",
       "text": "Get Bug Attachments",
       "category": "Bugs",
@@ -1157,15 +1123,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/attachments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__resolution___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__resolution___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/resolution___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/resolution",
       "text": "Get Bug Resolution",
       "category": "Bugs",
@@ -1230,15 +1193,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/resolution",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers",
       "text": "Add Bug Follower",
       "category": "Bugs",
@@ -1308,15 +1268,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/bugfollowers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers",
       "text": "Get Bug Followers",
       "category": "Bugs",
@@ -1381,15 +1338,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/bugfollowers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__bugfollowers___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/bugfollowers",
       "text": "Delete Bug Follower",
       "category": "Bugs",
@@ -1458,15 +1412,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/bugfollowers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__defaultfields___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__defaultfields___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/defaultfields___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/defaultfields",
       "text": "Bugs Default Fields",
       "category": "Bugs",
@@ -1529,15 +1480,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/defaultfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__customfields___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__customfields___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/customfields___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/customfields",
       "text": "Bugs Custom Fields",
       "category": "Bugs",
@@ -1592,15 +1540,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/customfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__activities___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__activities___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/activities___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/activities",
       "text": "Bugs Activities",
       "category": "Bugs",
@@ -1665,15 +1610,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/activities",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__renamedfields___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__renamedfields___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/renamedfields___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/renamedfields",
       "text": "Get Renamed Value",
       "category": "Bugs",
@@ -1728,15 +1670,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.bugs.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/renamedfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.995Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__activities___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__activities___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/activities___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/activities",
       "text": "Project Activities",
       "category": "Dashboard",
@@ -1799,15 +1738,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.activities.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/activities",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__statuses___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__statuses___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/statuses___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/statuses",
       "text": "Project Status",
       "category": "Dashboard",
@@ -1870,15 +1806,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.status.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/statuses",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__statuses___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__statuses___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/statuses___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/statuses",
       "text": "Add Project Status",
       "category": "Dashboard",
@@ -1939,15 +1872,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.status.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/statuses",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/documents___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/documents",
       "text": "All documents",
       "category": "Documents and Folders",
@@ -2030,15 +1960,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.READ, ZohoPC.files.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/documents",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/documents/document_id___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/documents/document_id",
       "text": "Version details of the document",
       "category": "Documents and Folders",
@@ -2107,15 +2034,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.READ, ZohoPC.files.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/documents/[DOCUMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/documents___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/documents",
       "text": "Add document",
       "category": "Documents and Folders",
@@ -2170,15 +2094,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.CREATE, ZohoPC.files.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/documents",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/documents/document_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/documents/document_id",
       "text": "Upload a document to the project",
       "category": "Documents and Folders",
@@ -2265,15 +2186,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.UPDATE, ZohoPC.files.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/documents/[DOCUMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__documents__document_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/documents/document_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/documents/document_id",
       "text": "Delete document",
       "category": "Documents and Folders",
@@ -2338,15 +2256,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.DELETE, ZohoPC.files.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/documents/[DOCUMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__folders___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__folders___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/folders___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/folders",
       "text": "All folders",
       "category": "Documents and Folders",
@@ -2401,15 +2316,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.documents.READ, ZohoPC.files.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/folders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__events___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__events___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/events___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/events",
       "text": "All Events",
       "category": "Events",
@@ -2477,15 +2389,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.events.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/events",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__events___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__events___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/events___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/events",
       "text": "Add Event",
       "category": "Events",
@@ -2597,15 +2506,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.events.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/events",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__events__event_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__events__event_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/events/event_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/events/event_id",
       "text": "Update Event",
       "category": "Events",
@@ -2727,15 +2633,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.events.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/events/[EVENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__events__event_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__events__event_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/events/event_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/events/event_id",
       "text": "Delete Event",
       "category": "Events",
@@ -2800,15 +2703,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.events.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/events/[EVENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums",
       "text": "All Forums",
       "category": "Forums",
@@ -2875,15 +2775,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id",
       "text": "Get Forum Details",
       "category": "Forums",
@@ -2948,15 +2845,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums",
       "text": "Add Forum",
       "category": "Forums",
@@ -3059,15 +2953,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id",
       "text": "Update Forum",
       "category": "Forums",
@@ -3168,15 +3059,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id",
       "text": "Delete Forum",
       "category": "Forums",
@@ -3241,15 +3129,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__follow___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__follow___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/follow___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/follow",
       "text": "Follow Forum",
       "category": "Forums",
@@ -3314,15 +3199,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/follow",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__unfollow___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__unfollow___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/unfollow___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/unfollow",
       "text": "Unfollow Forum",
       "category": "Forums",
@@ -3387,15 +3269,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/unfollow",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/categories___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/categories",
       "text": "All Forum Categories",
       "category": "Forums",
@@ -3450,15 +3329,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/categories___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/categories",
       "text": "Add Category",
       "category": "Forums",
@@ -3519,15 +3395,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments",
       "text": "All Forum Comments",
       "category": "Forums",
@@ -3600,15 +3473,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments",
       "text": "Add Forum Comment",
       "category": "Forums",
@@ -3695,15 +3565,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id",
       "text": "Update Forum Comment",
       "category": "Forums",
@@ -3788,15 +3655,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments/[COMMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id__markbestan___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id__markbestan___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id/markbestan___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id/markbestan",
       "text": "Select As Best Answer",
       "category": "Forums",
@@ -3871,15 +3735,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments/[COMMENTID]/markbestan",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id__markbesta___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id__markbesta___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id/markbesta___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id/markbesta",
       "text": "Unselect As Best Answer",
       "category": "Forums",
@@ -3954,15 +3815,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments/[COMMENTID]/markbesta",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories__category_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__categories__category_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/categories/category_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/categories/category_id",
       "text": "Delete Forum Category",
       "category": "Forums",
@@ -4027,15 +3885,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/categories/[CATEGORYID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__forums__forum_id__comments__comment_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/forums/forum_id/comments/comment_id",
       "text": "Delete Forum Comment",
       "category": "Forums",
@@ -4110,15 +3965,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.forums.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/forums/[FORUMID]/comments/[COMMENTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones",
       "text": "All Milestones",
       "category": "Milestones",
@@ -4201,15 +4053,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.milestones.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones/milestone_id___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones/milestone_id",
       "text": "Milestone Details",
       "category": "Milestones",
@@ -4274,15 +4123,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.milestones.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones/[MILESTONEID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones",
       "text": "Create Milestone",
       "category": "Milestones",
@@ -4367,15 +4213,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoProjects.milestones.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones/milestone_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones/milestone_id",
       "text": "Update Milestone",
       "category": "Milestones",
@@ -4470,15 +4313,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.milestones.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones/[MILESTONEID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id__status___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id__status___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones/milestone_id/status___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones/milestone_id/status",
       "text": "Update Milestone Status",
       "category": "Milestones",
@@ -4549,15 +4389,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.milestones.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones/[MILESTONEID]/status",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__milestones__milestone_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/milestones/milestone_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/milestones/milestone_id",
       "text": "Delete a Milestone",
       "category": "Milestones",
@@ -4622,15 +4459,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.milestones.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/milestones/[MILESTONEID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portals___get": {
-      "provider_intent": "zohobugtracker__restapi__portals___get",
+    "zohobugtracker__/restapi/portals___GET": {
       "provider_alias_intent": "/restapi/portals",
       "text": "All Portals",
       "category": "Portals ",
@@ -4663,15 +4497,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.portals.READ",
       "api_endpoint_src": "{endpoint}/restapi/portals",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects",
       "text": "All Projects",
       "category": "Projects",
@@ -4736,15 +4567,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.projects.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id",
       "text": "Project Details",
       "category": "Projects",
@@ -4799,15 +4627,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.projects.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__customfields___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__customfields___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/customfields___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/customfields",
       "text": "Get Project Custom Fields",
       "category": "Projects",
@@ -4852,15 +4677,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/customfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects",
       "text": "Create a Project",
       "category": "Projects",
@@ -4939,15 +4761,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.projects.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id",
       "text": "Update a Project",
       "category": "Projects",
@@ -5035,15 +4854,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.projects.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id",
       "text": "Delete a Project",
       "category": "Projects",
@@ -5098,15 +4914,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.projects.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__tags___get": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__tags___get",
+    "zohobugtracker__/api/v3/portal/portal_id/tags___GET": {
       "provider_alias_intent": "/api/v3/portal/portal_id/tags",
       "text": "Get All Tags",
       "category": "Tags",
@@ -5159,15 +4972,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugtracker.tags.READ",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/tags",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__tags___post": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__tags___post",
+    "zohobugtracker__/api/v3/portal/portal_id/tags___POST": {
       "provider_alias_intent": "/api/v3/portal/portal_id/tags",
       "text": "Create Tags",
       "category": "Tags",
@@ -5217,15 +5027,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugtracker.tags.CREATE",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/tags",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__tags__tag_id___patch": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__tags__tag_id___patch",
+    "zohobugtracker__/api/v3/portal/portal_id/tags/tag_id___PATCH": {
       "provider_alias_intent": "/api/v3/portal/portal_id/tags/tag_id",
       "text": "Update Tag",
       "category": "Tags",
@@ -5285,15 +5092,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugtracker.tags.READ",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/tags/[TAGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__tags__tag_id___delete": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__tags__tag_id___delete",
+    "zohobugtracker__/api/v3/portal/portal_id/tags/tag_id___DELETE": {
       "provider_alias_intent": "/api/v3/portal/portal_id/tags/tag_id",
       "text": "Delete Tag",
       "category": "Tags",
@@ -5348,15 +5152,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugtracker.tags.READ",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/tags/[TAGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__projects__project_id__tags__associate___post": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__projects__project_id__tags__associate___post",
+    "zohobugtracker__/api/v3/portal/portal_id/projects/project_id/tags/associate___POST": {
       "provider_alias_intent": "/api/v3/portal/portal_id/projects/project_id/tags/associate",
       "text": "Dissociate Tag",
       "category": "Tags",
@@ -5424,15 +5225,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugtracker.tags.CREATE",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/projects/[PROJECTID]/tags/associate",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__api__v3__portal__portal_id__globaltags__search___get": {
-      "provider_intent": "zohobugtracker__api__v3__portal__portal_id__globaltags__search___get",
+    "zohobugtracker__/api/v3/portal/portal_id/globaltags/search___GET": {
       "provider_alias_intent": "/api/v3/portal/portal_id/globaltags/search",
       "text": "Get Tag Results",
       "category": "Tags",
@@ -5493,15 +5291,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoSearch.securesearch.READ, ZohoBugtracker.tags.READ",
       "api_endpoint_src": "{endpoint}/api/v3/portal/[PORTALID]/globaltags/search",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__logs___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__logs___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/logs___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/logs",
       "text": "All Time Logs",
       "category": "Timesheets",
@@ -5589,15 +5384,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/logs",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs",
       "text": "Add Time Log for a Bug",
       "category": "Timesheets",
@@ -5686,15 +5478,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/logs",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id",
       "text": "Update Time Log for a Bug",
       "category": "Timesheets",
@@ -5793,15 +5582,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/logs/[LOGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id__approval___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id__approval___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id/approval___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id/approval",
       "text": "Approve Time Log for a Bug",
       "category": "Timesheets",
@@ -5881,15 +5667,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/logs/[LOGID]/approval",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__bugs__bug_id__logs__log_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/bugs/bug_id/logs/log_id",
       "text": "Delete Time Log for a Bug",
       "category": "Timesheets",
@@ -5964,15 +5747,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/bugs/[BUGID]/logs/[LOGID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__logs__log_id__approval___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__logs__log_id__approval___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/logs/log_id/approval___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/logs/log_id/approval",
       "text": "Approve Time for a General Log",
       "category": "Timesheets",
@@ -6042,15 +5822,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.timesheets.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/logs/[LOGID]/approval",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__users___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__users___get",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/users___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/users",
       "text": "Get project users",
       "category": "Users",
@@ -6109,15 +5886,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/users",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__users___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__users___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/users___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/users",
       "text": "Add Users to a Project",
       "category": "Users",
@@ -6185,15 +5959,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/users",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__users___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__users___post",
+    "zohobugtracker__/restapi/portal/portal_id/users___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/users",
       "text": "Add Users to a Portal",
       "category": "Users",
@@ -6255,15 +6026,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/users",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__projects__project_id__users__user_id___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__projects__project_id__users__user_id___post",
+    "zohobugtracker__/restapi/portal/portal_id/projects/project_id/users/user_id___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/projects/project_id/users/user_id",
       "text": "Update Users in a Project",
       "category": "Users",
@@ -6333,15 +6101,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.UPDATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/projects/[PROJECTID]/users/[USERID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__project__project_id__users__user_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__project__project_id__users__user_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/project/project_id/users/user_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/project/project_id/users/user_id",
       "text": "Delete User from a Project",
       "category": "Users",
@@ -6406,15 +6171,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/project/[PROJECTID]/users/[USERID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__users__availcount___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__users__availcount___get",
+    "zohobugtracker__/restapi/portal/portal_id/users/availcount___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/users/availcount",
       "text": "Get remaining no. of users in a portal",
       "category": "Users",
@@ -6459,15 +6221,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/users/availcount",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__users___get": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__users___get",
+    "zohobugtracker__/restapi/portal/portal_id/users___GET": {
       "provider_alias_intent": "/restapi/portal/portal_id/users",
       "text": "Get portal users",
       "category": "Users",
@@ -6516,15 +6275,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.READ",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/users",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__users__user_id___delete": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__users__user_id___delete",
+    "zohobugtracker__/restapi/portal/portal_id/users/user_id___DELETE": {
       "provider_alias_intent": "/restapi/portal/portal_id/users/user_id",
       "text": "Delete User from a Portal",
       "category": "Users",
@@ -6579,15 +6335,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.DELETE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/users/[USERID]",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__users__activate___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__users__activate___post",
+    "zohobugtracker__/restapi/portal/portal_id/users/activate___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/users/activate",
       "text": "Deactivate user",
       "category": "Users",
@@ -6637,15 +6390,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/users/activate",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     },
-    "zohobugtracker__restapi__portal__portal_id__clients__client_company_id__users___post": {
-      "provider_intent": "zohobugtracker__restapi__portal__portal_id__clients__client_company_id__users___post",
+    "zohobugtracker__/restapi/portal/portal_id/clients/client_company_id/users___POST": {
       "provider_alias_intent": "/restapi/portal/portal_id/clients/client_company_id/users",
       "text": "Add user to a client company",
       "category": "Users",
@@ -6718,12 +6468,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoBugTracker.users.CREATE",
       "api_endpoint_src": "{endpoint}/restapi/portal/[PORTALID]/clients/[CLIENT_COMPANY_ID]/users",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.996Z"
     }
   }
 }

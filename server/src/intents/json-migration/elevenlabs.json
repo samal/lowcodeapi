@@ -34,8 +34,7 @@
     "credential_link": "https://elevenlabs.io/app/speech-synthesis"
   },
   "routes": {
-    "elevenlabs__v1__audio-native___post": {
-      "provider_intent": "elevenlabs__v1__audio-native___post",
+    "elevenlabs__/v1/audio-native___POST": {
       "provider_alias_intent": "/v1/audio-native",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/audio-native",
       "text": "Creates Audionative Enabled Project.",
@@ -123,10 +122,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.244Z"
     },
-    "elevenlabs__v1__dubbing___post": {
-      "provider_intent": "elevenlabs__v1__dubbing___post",
+    "elevenlabs__/v1/dubbing___POST": {
       "provider_alias_intent": "/v1/dubbing",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/dubbing",
       "text": "Dub A Video Or An Audio File",
@@ -233,10 +231,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.297Z"
     },
-    "elevenlabs__v1__dubbing__dubbing_id___get": {
-      "provider_intent": "elevenlabs__v1__dubbing__dubbing_id___get",
+    "elevenlabs__/v1/dubbing/dubbing_id___GET": {
       "provider_alias_intent": "/v1/dubbing/dubbing_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/dubbing/{dubbing_id}",
       "text": "Get Dubbing Project Metadata",
@@ -272,10 +269,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:35:41.000Z"
+      "updated_at": "2025-11-11T12:00:08.298Z"
     },
-    "elevenlabs__v1__dubbing__dubbing_id___delete": {
-      "provider_intent": "elevenlabs__v1__dubbing__dubbing_id___delete",
+    "elevenlabs__/v1/dubbing/dubbing_id___DELETE": {
       "provider_alias_intent": "/v1/dubbing/dubbing_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/dubbing/{dubbing_id}",
       "text": "Delete Dubbing Project",
@@ -311,10 +307,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:00.000Z"
+      "updated_at": "2025-11-11T12:00:08.298Z"
     },
-    "elevenlabs__v1__dubbing__dubbing_id__audio__language_code___get": {
-      "provider_intent": "elevenlabs__v1__dubbing__dubbing_id__audio__language_code___get",
+    "elevenlabs__/v1/dubbing/dubbing_id/audio/language_code___GET": {
       "provider_alias_intent": "/v1/dubbing/dubbing_id/audio/language_code",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/dubbing/{dubbing_id}/audio/{language_code}",
       "text": "Get Dubbed File",
@@ -355,10 +350,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:16.000Z"
+      "updated_at": "2025-11-11T12:00:08.298Z"
     },
-    "elevenlabs__v1__history___get": {
-      "provider_intent": "elevenlabs__v1__history___get",
+    "elevenlabs__/v1/history___GET": {
       "provider_alias_intent": "/v1/history",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/history",
       "text": "Get Generated Items",
@@ -401,10 +395,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.298Z"
     },
-    "elevenlabs__v1__history__history_item_id___get": {
-      "provider_intent": "elevenlabs__v1__history__history_item_id___get",
+    "elevenlabs__/v1/history/history_item_id___GET": {
       "provider_alias_intent": "/v1/history/history_item_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/history/{history_item_id}",
       "text": "Get History Item By Id",
@@ -440,10 +433,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:15.000Z"
+      "updated_at": "2025-11-11T12:00:08.298Z"
     },
-    "elevenlabs__v1__history__history_item_id___delete": {
-      "provider_intent": "elevenlabs__v1__history__history_item_id___delete",
+    "elevenlabs__/v1/history/history_item_id___DELETE": {
       "provider_alias_intent": "/v1/history/history_item_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/history/{history_item_id}",
       "text": "Delete History Item",
@@ -479,10 +471,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:40.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__history__history_item_id__audio___get": {
-      "provider_intent": "elevenlabs__v1__history__history_item_id__audio___get",
+    "elevenlabs__/v1/history/history_item_id/audio___GET": {
       "provider_alias_intent": "/v1/history/history_item_id/audio",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/history/{history_item_id}/audio",
       "text": "Get Audio From History Item",
@@ -518,10 +509,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:58.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__models___get": {
-      "provider_intent": "elevenlabs__v1__models___get",
+    "elevenlabs__/v1/models___GET": {
       "provider_alias_intent": "/v1/models",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/models",
       "text": "Get Models",
@@ -551,10 +541,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects___get": {
-      "provider_intent": "elevenlabs__v1__projects___get",
+    "elevenlabs__/v1/projects___GET": {
       "provider_alias_intent": "/v1/projects",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects",
       "text": "Get Projects",
@@ -584,10 +573,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__history__download___post": {
-      "provider_intent": "elevenlabs__v1__history__download___post",
+    "elevenlabs__/v1/history/download___POST": {
       "provider_alias_intent": "/v1/history/download",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/history/download",
       "text": "Download History Items",
@@ -627,10 +615,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id___get": {
-      "provider_intent": "elevenlabs__v1__projects__project_id___get",
+    "elevenlabs__/v1/projects/project_id___GET": {
       "provider_alias_intent": "/v1/projects/project_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}",
       "text": "Get Projects By Id",
@@ -666,10 +653,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:38:48.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id___delete": {
-      "provider_intent": "elevenlabs__v1__projects__project_id___delete",
+    "elevenlabs__/v1/projects/project_id___DELETE": {
       "provider_alias_intent": "/v1/projects/project_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}",
       "text": "Delete Project",
@@ -705,10 +691,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:03.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__snapshots___get": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__snapshots___get",
+    "elevenlabs__/v1/projects/project_id/snapshots___GET": {
       "provider_alias_intent": "/v1/projects/project_id/snapshots",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/snapshots",
       "text": "Get Project Snapshots",
@@ -744,10 +729,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:18.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__convert___post": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__convert___post",
+    "elevenlabs__/v1/projects/project_id/convert___POST": {
       "provider_alias_intent": "/v1/projects/project_id/convert",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/convert",
       "text": "Convert Project",
@@ -783,10 +767,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:34.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__add___post": {
-      "provider_intent": "elevenlabs__v1__projects__add___post",
+    "elevenlabs__/v1/projects/add___POST": {
       "provider_alias_intent": "/v1/projects/add",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/add",
       "text": "Add Project",
@@ -885,10 +868,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters___get": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters___get",
+    "elevenlabs__/v1/projects/project_id/chapters___GET": {
       "provider_alias_intent": "/v1/projects/project_id/chapters",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters",
       "text": "Get Chapters",
@@ -924,10 +906,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:40:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__snapshots__project_snapshot_id__stream___post": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__snapshots__project_snapshot_id__stream___post",
+    "elevenlabs__/v1/projects/project_id/snapshots/project_snapshot_id/stream___POST": {
       "provider_alias_intent": "/v1/projects/project_id/snapshots/project_snapshot_id/stream",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/snapshots/{project_snapshot_id}/stream",
       "text": "Stream Project Audio",
@@ -977,10 +958,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:40:31.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters__chapter_id___get": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters__chapter_id___get",
+    "elevenlabs__/v1/projects/project_id/chapters/chapter_id___GET": {
       "provider_alias_intent": "/v1/projects/project_id/chapters/chapter_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters/{chapter_id}",
       "text": "Get Chapters By Id",
@@ -1021,10 +1001,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:40:48.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters__chapter_id___delete": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters__chapter_id___delete",
+    "elevenlabs__/v1/projects/project_id/chapters/chapter_id___DELETE": {
       "provider_alias_intent": "/v1/projects/project_id/chapters/chapter_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters/{chapter_id}",
       "text": "Delete Chapters",
@@ -1065,10 +1044,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:41:08.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters__chapter_id__convert___post": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters__chapter_id__convert___post",
+    "elevenlabs__/v1/projects/project_id/chapters/chapter_id/convert___POST": {
       "provider_alias_intent": "/v1/projects/project_id/chapters/chapter_id/convert",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters/{chapter_id}/convert",
       "text": "Convert Chapters",
@@ -1109,10 +1087,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:41:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters__chapter_id__snapshots___get": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters__chapter_id__snapshots___get",
+    "elevenlabs__/v1/projects/project_id/chapters/chapter_id/snapshots___GET": {
       "provider_alias_intent": "/v1/projects/project_id/chapters/chapter_id/snapshots",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters/{chapter_id}/snapshots",
       "text": "Get Chapter Snapshorts",
@@ -1153,10 +1130,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:41:44.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__chapters__chapter_id__snapshots__chapter_snapshot_id__stream___post": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__chapters__chapter_id__snapshots__chapter_snapshot_id__stream___post",
+    "elevenlabs__/v1/projects/project_id/chapters/chapter_id/snapshots/chapter_snapshot_id/stream___POST": {
       "provider_alias_intent": "/v1/projects/project_id/chapters/chapter_id/snapshots/chapter_snapshot_id/stream",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/chapters/{chapter_id}/snapshots/{chapter_snapshot_id}/stream",
       "text": "Stream Chapter Audio",
@@ -1211,10 +1187,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:41:59.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries__add-from-file___post": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries__add-from-file___post",
+    "elevenlabs__/v1/pronunciation-dictionaries/add-from-file___POST": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries/add-from-file",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/add-from-file",
       "text": "Add from file",
@@ -1267,10 +1242,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__projects__project_id__update-pronunciation-dictionaries___post": {
-      "provider_intent": "elevenlabs__v1__projects__project_id__update-pronunciation-dictionaries___post",
+    "elevenlabs__/v1/projects/project_id/update-pronunciation-dictionaries___POST": {
       "provider_alias_intent": "/v1/projects/project_id/update-pronunciation-dictionaries",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/projects/{project_id}/update-pronunciation-dictionaries",
       "text": "Update Pronunciation Dictionaries",
@@ -1316,10 +1290,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:42:14.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries___get": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries___get",
+    "elevenlabs__/v1/pronunciation-dictionaries___GET": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries",
       "text": "Get dictionaries",
@@ -1358,10 +1331,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id___get": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id___get",
+    "elevenlabs__/v1/pronunciation-dictionaries/pronunciation_dictionary_id___GET": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries/pronunciation_dictionary_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{pronunciation_dictionary_id}",
       "text": "Get dictionaries by id",
@@ -1397,10 +1369,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:42:52.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__speech-to-speech__voice_id___post": {
-      "provider_intent": "elevenlabs__v1__speech-to-speech__voice_id___post",
+    "elevenlabs__/v1/speech-to-speech/voice_id___POST": {
       "provider_alias_intent": "/v1/speech-to-speech/voice_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/speech-to-speech/{voice_id}",
       "text": "Speech To Speech",
@@ -1471,10 +1442,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:44:18.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__voices__voice_id__samples__sample_id___delete": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id__samples__sample_id___delete",
+    "elevenlabs__/v1/voices/voice_id/samples/sample_id___DELETE": {
       "provider_alias_intent": "/v1/voices/voice_id/samples/sample_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}/samples/{sample_id}",
       "text": "Delete Sample",
@@ -1515,10 +1485,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:45:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries__dictionary_id__version_id__download___get": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries__dictionary_id__version_id__download___get",
+    "elevenlabs__/v1/pronunciation-dictionaries/dictionary_id/version_id/download___GET": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries/dictionary_id/version_id/download",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{dictionary_id}/{version_id}/download",
       "text": "Download version by id",
@@ -1559,10 +1528,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:43:10.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__voices__voice_id__samples__sample_id__audio___get": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id__samples__sample_id__audio___get",
+    "elevenlabs__/v1/voices/voice_id/samples/sample_id/audio___GET": {
       "provider_alias_intent": "/v1/voices/voice_id/samples/sample_id/audio",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}/samples/{sample_id}/audio",
       "text": "Get Audio From Sample",
@@ -1603,10 +1571,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:45:18.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__sound-generation___post": {
-      "provider_intent": "elevenlabs__v1__sound-generation___post",
+    "elevenlabs__/v1/sound-generation___POST": {
       "provider_alias_intent": "/v1/sound-generation",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/sound-generation",
       "text": "Sound Generation",
@@ -1650,10 +1617,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id__add-rules___post": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id__add-rules___post",
+    "elevenlabs__/v1/pronunciation-dictionaries/pronunciation_dictionary_id/add-rules___POST": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries/pronunciation_dictionary_id/add-rules",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{pronunciation_dictionary_id}/add-rules",
       "text": "Add rules",
@@ -1695,10 +1661,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:43:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id__remove-rules___post": {
-      "provider_intent": "elevenlabs__v1__pronunciation-dictionaries__pronunciation_dictionary_id__remove-rules___post",
+    "elevenlabs__/v1/pronunciation-dictionaries/pronunciation_dictionary_id/remove-rules___POST": {
       "provider_alias_intent": "/v1/pronunciation-dictionaries/pronunciation_dictionary_id/remove-rules",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{pronunciation_dictionary_id}/remove-rules",
       "text": "Remove Rules",
@@ -1740,10 +1705,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:43:41.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__speech-to-speech__voice_id__stream___post": {
-      "provider_intent": "elevenlabs__v1__speech-to-speech__voice_id__stream___post",
+    "elevenlabs__/v1/speech-to-speech/voice_id/stream___POST": {
       "provider_alias_intent": "/v1/speech-to-speech/voice_id/stream",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/speech-to-speech/{voice_id}/stream",
       "text": "Streaming",
@@ -1814,10 +1778,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:44:42.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__text-to-speech__voice_id___post": {
-      "provider_intent": "elevenlabs__v1__text-to-speech__voice_id___post",
+    "elevenlabs__/v1/text-to-speech/voice_id___POST": {
       "provider_alias_intent": "/v1/text-to-speech/voice_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}",
       "text": "Text To Speech",
@@ -1908,10 +1871,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:45:51.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__text-to-speech__voice_id__with-timestamps___post": {
-      "provider_intent": "elevenlabs__v1__text-to-speech__voice_id__with-timestamps___post",
+    "elevenlabs__/v1/text-to-speech/voice_id/with-timestamps___POST": {
       "provider_alias_intent": "/v1/text-to-speech/voice_id/with-timestamps",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps",
       "text": "Text To Speech With Timestamps",
@@ -2002,10 +1964,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:46:15.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__text-to-speech__voice_id__stream___post": {
-      "provider_intent": "elevenlabs__v1__text-to-speech__voice_id__stream___post",
+    "elevenlabs__/v1/text-to-speech/voice_id/stream___POST": {
       "provider_alias_intent": "/v1/text-to-speech/voice_id/stream",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream",
       "text": "Streaming",
@@ -2096,10 +2057,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:46:36.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__user___get": {
-      "provider_intent": "elevenlabs__v1__user___get",
+    "elevenlabs__/v1/user___GET": {
       "provider_alias_intent": "/v1/user",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/user",
       "text": "Get User Info",
@@ -2129,10 +2089,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__user__subscription___get": {
-      "provider_intent": "elevenlabs__v1__user__subscription___get",
+    "elevenlabs__/v1/user/subscription___GET": {
       "provider_alias_intent": "/v1/user/subscription",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/user/subscription",
       "text": "Get User Subscription Info",
@@ -2162,10 +2121,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__text-to-speech__voice_id__stream__with-timestamps___post": {
-      "provider_intent": "elevenlabs__v1__text-to-speech__voice_id__stream__with-timestamps___post",
+    "elevenlabs__/v1/text-to-speech/voice_id/stream/with-timestamps___POST": {
       "provider_alias_intent": "/v1/text-to-speech/voice_id/stream/with-timestamps",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/stream/with-timestamps",
       "text": "Text To Speech Streaming With Timestamps",
@@ -2256,10 +2214,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:46:54.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__voice-generation__generate-voice___post": {
-      "provider_intent": "elevenlabs__v1__voice-generation__generate-voice___post",
+    "elevenlabs__/v1/voice-generation/generate-voice___POST": {
       "provider_alias_intent": "/v1/voice-generation/generate-voice",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voice-generation/generate-voice",
       "text": "Generate A Random Voice",
@@ -2323,10 +2280,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__voice-generation__generate-voice__parameters___get": {
-      "provider_intent": "elevenlabs__v1__voice-generation__generate-voice__parameters___get",
+    "elevenlabs__/v1/voice-generation/generate-voice/parameters___GET": {
       "provider_alias_intent": "/v1/voice-generation/generate-voice/parameters",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voice-generation/generate-voice/parameters",
       "text": "Voice Generation Parameters",
@@ -2356,10 +2312,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.299Z"
     },
-    "elevenlabs__v1__shared-voices___get": {
-      "provider_intent": "elevenlabs__v1__shared-voices___get",
+    "elevenlabs__/v1/shared-voices___GET": {
       "provider_alias_intent": "/v1/shared-voices",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/shared-voices",
       "text": "Get voices",
@@ -2454,10 +2409,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.300Z"
     },
-    "elevenlabs__v1__voices__add__public_user_id__voice_id___post": {
-      "provider_intent": "elevenlabs__v1__voices__add__public_user_id__voice_id___post",
+    "elevenlabs__/v1/voices/add/public_user_id/voice_id___POST": {
       "provider_alias_intent": "/v1/voices/add/public_user_id/voice_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/add/{public_user_id}/{voice_id}",
       "text": "Add Sharing Voice",
@@ -2504,10 +2458,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:49:02.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__voice_id__settings___get": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id__settings___get",
+    "elevenlabs__/v1/voices/voice_id/settings___GET": {
       "provider_alias_intent": "/v1/voices/voice_id/settings",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}/settings",
       "text": "Get Voice Settings",
@@ -2543,10 +2496,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:49:27.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__settings__default___get": {
-      "provider_intent": "elevenlabs__v1__voices__settings__default___get",
+    "elevenlabs__/v1/voices/settings/default___GET": {
       "provider_alias_intent": "/v1/voices/settings/default",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/settings/default",
       "text": "Get Default Voice Settings.",
@@ -2576,10 +2528,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices___get": {
-      "provider_intent": "elevenlabs__v1__voices___get",
+    "elevenlabs__/v1/voices___GET": {
       "provider_alias_intent": "/v1/voices",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices",
       "text": "Get Voices",
@@ -2609,10 +2560,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__voice_id___get": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id___get",
+    "elevenlabs__/v1/voices/voice_id___GET": {
       "provider_alias_intent": "/v1/voices/voice_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}",
       "text": "Get Voice",
@@ -2657,10 +2607,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:49:58.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__voice_id___delete": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id___delete",
+    "elevenlabs__/v1/voices/voice_id___DELETE": {
       "provider_alias_intent": "/v1/voices/voice_id",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}",
       "text": "Delete Voice",
@@ -2696,10 +2645,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:50:13.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__add___post": {
-      "provider_intent": "elevenlabs__v1__voices__add___post",
+    "elevenlabs__/v1/voices/add___POST": {
       "provider_alias_intent": "/v1/voices/add",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/add",
       "text": "Add Voice",
@@ -2748,10 +2696,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__workspace__invites___delete": {
-      "provider_intent": "elevenlabs__v1__workspace__invites___delete",
+    "elevenlabs__/v1/workspace/invites___DELETE": {
       "provider_alias_intent": "/v1/workspace/invites",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/workspace/invites",
       "text": "Delete Existing Invitation",
@@ -2787,10 +2734,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__voice_id__settings__edit___post": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id__settings__edit___post",
+    "elevenlabs__/v1/voices/voice_id/settings/edit___POST": {
       "provider_alias_intent": "/v1/voices/voice_id/settings/edit",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}/settings/edit",
       "text": "Edit Voice Settings",
@@ -2849,10 +2795,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:50:33.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__workspace__invites__add___post": {
-      "provider_intent": "elevenlabs__v1__workspace__invites__add___post",
+    "elevenlabs__/v1/workspace/invites/add___POST": {
       "provider_alias_intent": "/v1/workspace/invites/add",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/workspace/invites/add",
       "text": "Invite User",
@@ -2888,10 +2833,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__workspace__members___post": {
-      "provider_intent": "elevenlabs__v1__workspace__members___post",
+    "elevenlabs__/v1/workspace/members___POST": {
       "provider_alias_intent": "/v1/workspace/members",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/workspace/members",
       "text": "Update Member",
@@ -2948,10 +2892,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     },
-    "elevenlabs__v1__voices__voice_id__edit___post": {
-      "provider_intent": "elevenlabs__v1__voices__voice_id__edit___post",
+    "elevenlabs__/v1/voices/voice_id/edit___POST": {
       "provider_alias_intent": "/v1/voices/voice_id/edit",
       "provider_proxy_intent": "https://api.elevenlabs.io/v1/voices/{voice_id}/edit",
       "text": "Edit Voice",
@@ -3006,7 +2949,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:50:49.000Z"
+      "updated_at": "2025-11-11T12:00:08.301Z"
     }
   }
 }

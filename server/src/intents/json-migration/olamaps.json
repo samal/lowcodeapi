@@ -32,8 +32,7 @@
     "credential_link": "https://maps.olakrutrim.com/dashboard/projects"
   },
   "routes": {
-    "olamaps__routing__v1__directions___post": {
-      "provider_intent": "olamaps__routing__v1__directions___post",
+    "olamaps__/routing/v1/directions___POST": {
       "provider_alias_intent": "/routing/v1/directions",
       "text": "Provides routable path between two or more points",
       "category": "Directions API",
@@ -105,13 +104,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__tiles__vector__v1__data__dataset_name-json___get": {
-      "provider_intent": "olamaps__tiles__vector__v1__data__dataset_name-json___get",
+    "olamaps__/tiles/vector/v1/data/dataset_name.json___GET": {
       "provider_alias_intent": "/tiles/vector/v1/data/dataset_name.json",
       "text": "List of all the data sets",
       "category": "Map Tiles",
@@ -148,13 +144,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__tiles__vector__v1__data__dataset_name__tiles_zoom__tiles_column__tiles_row-pbf___get": {
-      "provider_intent": "olamaps__tiles__vector__v1__data__dataset_name__tiles_zoom__tiles_column__tiles_row-pbf___get",
+    "olamaps__/tiles/vector/v1/data/dataset_name/tiles_zoom/tiles_column/tiles_row.pbf___GET": {
       "provider_alias_intent": "/tiles/vector/v1/data/dataset_name/tiles_zoom/tiles_column/tiles_row.pbf",
       "text": "Returns the PBF file for data",
       "category": "Map Tiles",
@@ -221,13 +214,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__tiles__vector__v1__styles-json___get": {
-      "provider_intent": "olamaps__tiles__vector__v1__styles-json___get",
+    "olamaps__/tiles/vector/v1/styles.json___GET": {
       "provider_alias_intent": "/tiles/vector/v1/styles.json",
       "text": "Provides array of objects for all styles",
       "category": "Map Tiles",
@@ -252,13 +242,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__tiles__vector__v1__styles__style_name__style-json___get": {
-      "provider_intent": "olamaps__tiles__vector__v1__styles__style_name__style-json___get",
+    "olamaps__/tiles/vector/v1/styles/style_name/style.json___GET": {
       "provider_alias_intent": "/tiles/vector/v1/styles/style_name/style.json",
       "text": "Get detail of a style",
       "category": "Map Tiles",
@@ -295,13 +282,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__tiles__vector__v1__fonts__fontstack__start_tile-end_tile-pbf___get": {
-      "provider_intent": "olamaps__tiles__vector__v1__fonts__fontstack__start_tile-end_tile-pbf___get",
+    "olamaps__/tiles/vector/v1/fonts/fontstack/start_tile-end_tile.pbf___GET": {
       "provider_alias_intent": "/tiles/vector/v1/fonts/fontstack/start_tile-end_tile.pbf",
       "text": "Access font glyph ranges",
       "category": "Map Tiles",
@@ -358,13 +342,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__places__v1__autocomplete___get": {
-      "provider_intent": "olamaps__places__v1__autocomplete___get",
+    "olamaps__/places/v1/autocomplete___GET": {
       "provider_alias_intent": "/places/v1/autocomplete",
       "text": "Provides Autocomplete suggestions for a given substring",
       "category": "Search API",
@@ -415,13 +396,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__places__v1__geocode___get": {
-      "provider_intent": "olamaps__places__v1__geocode___get",
+    "olamaps__/places/v1/geocode___GET": {
       "provider_alias_intent": "/places/v1/geocode",
       "text": "Get geocoded address",
       "category": "Search API",
@@ -460,13 +438,10 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     },
-    "olamaps__places__v1__reverse-geocode___get": {
-      "provider_intent": "olamaps__places__v1__reverse-geocode___get",
+    "olamaps__/places/v1/reverse-geocode___GET": {
       "provider_alias_intent": "/places/v1/reverse-geocode",
       "text": "Provides information of a place based on the location provided",
       "category": "Search API",
@@ -497,10 +472,8 @@
           "api_key"
         ]
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.774Z"
     }
   }
 }

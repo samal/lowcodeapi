@@ -36,8 +36,7 @@
     "credential_link": "https://console.anthropic.com/settings/keys"
   },
   "routes": {
-    "anthropic__v1__messages___post": {
-      "provider_intent": "anthropic__v1__messages___post",
+    "anthropic__/v1/messages___POST": {
       "provider_alias_intent": "/v1/messages",
       "provider_proxy_intent": "/v1/messages",
       "text": "Create a Message",
@@ -129,10 +128,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-07-19T06:42:12.000Z"
+      "updated_at": "2025-11-11T11:55:18.819Z"
     },
-    "anthropic__v1__users___post": {
-      "provider_intent": "anthropic__v1__users___post",
+    "anthropic__/v1/users___POST": {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "Count Message tokens",
@@ -180,10 +178,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-06T05:04:41.000Z"
+      "updated_at": "2025-11-11T11:55:18.819Z"
     },
-    "anthropic__v1__users___get": {
-      "provider_intent": "anthropic__v1__users___get",
+    "anthropic__/v1/users___GET": {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "List Api Keys",
@@ -234,10 +231,9 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-18T13:26:11.000Z"
+      "updated_at": "2025-11-11T11:55:18.819Z"
     },
-    "anthropic__v1__users___delete": {
-      "provider_intent": "anthropic__v1__users___delete",
+    "anthropic__/v1/users___DELETE": {
       "provider_alias_intent": "/v1/users",
       "provider_proxy_intent": "/v1/users",
       "text": "Delete Workspace Member",
@@ -273,7 +269,7 @@
       },
       "auth": [],
       "response_format": {},
-      "updated_at": "2025-02-18T13:26:11.000Z"
+      "updated_at": "2025-11-11T11:55:18.820Z"
     }
   }
 }

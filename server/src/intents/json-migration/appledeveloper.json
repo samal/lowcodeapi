@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "Apple Developer API",
-    "description": "",
-    "api_base": "/appledeveloper",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "appledeveloper_v1_apps_get": {
-      "provider_intent": "appledeveloper_v1_apps_get",
+    "appledeveloper__/v1/apps___GET": {
       "provider_alias_intent": "/v1/apps",
       "text": "List Apps",
       "category": "Apps",
@@ -39,13 +28,10 @@
           "authKey": ""
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.020Z"
     },
-    "appledeveloper_v1_builds_get": {
-      "provider_intent": "appledeveloper_v1_builds_get",
+    "appledeveloper__/v1/builds___GET": {
       "provider_alias_intent": "/v1/builds",
       "text": "List Builds",
       "category": "Builds",
@@ -72,10 +58,8 @@
           "authKey": ""
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.020Z"
     }
   }
 }

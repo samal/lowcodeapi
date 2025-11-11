@@ -34,8 +34,7 @@
     "credential_link": "https://app.nanonets.com/#/keys"
   },
   "routes": {
-    "nanonets__api__v2__ocr__fulltext___get": {
-      "provider_intent": "nanonets__api__v2__ocr__fulltext___get",
+    "nanonets__/api/v2/ocr/fulltext___GET": {
       "provider_alias_intent": "/api/v2/ocr/fulltext",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/FullText",
       "text": "Get Full Text",
@@ -75,10 +74,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__model___get": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__model___get",
+    "nanonets__/api/v2/imagecategorization/model___GET": {
       "provider_alias_intent": "/api/v2/imagecategorization/model",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/Model",
       "text": "Get Model by Id",
@@ -114,10 +112,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__model___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__model___post",
+    "nanonets__/api/v2/imagecategorization/model___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/model",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/Model",
       "text": "Create New Model",
@@ -153,10 +150,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__models___get": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__models___get",
+    "nanonets__/api/v2/imagecategorization/models___GET": {
       "provider_alias_intent": "/api/v2/imagecategorization/models",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/Models",
       "text": "Get All Models",
@@ -186,10 +182,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__labelurls___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__labelurls___post",
+    "nanonets__/api/v2/imagecategorization/labelurls___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/labelurls",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/LabelUrls",
       "text": "Prediction for image URLs",
@@ -230,10 +225,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__train___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__train___post",
+    "nanonets__/api/v2/imagecategorization/train___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/train",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/Train",
       "text": "Train Model",
@@ -269,10 +263,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__uploadfile___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__uploadfile___post",
+    "nanonets__/api/v2/imagecategorization/uploadfile___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/uploadfile",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/UploadFile",
       "text": "Upload training images by File",
@@ -318,10 +311,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__labelfile___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__labelfile___post",
+    "nanonets__/api/v2/imagecategorization/labelfile___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/labelfile",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/LabelFile",
       "text": "Prediction for image File",
@@ -362,10 +354,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__imagecategorization__uploadurls___post": {
-      "provider_intent": "nanonets__api__v2__imagecategorization__uploadurls___post",
+    "nanonets__/api/v2/imagecategorization/uploadurls___POST": {
       "provider_alias_intent": "/api/v2/imagecategorization/uploadurls",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/ImageCategorization/UploadUrls",
       "text": "Upload training images by Url",
@@ -411,10 +402,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model___post",
+    "nanonets__/api/v2/ocr/model___POST": {
       "provider_alias_intent": "/api/v2/ocr/model",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model",
       "text": "Create New Model",
@@ -454,10 +444,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id___get": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id___get",
+    "nanonets__/api/v2/ocr/model/model_id___GET": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}",
       "text": "Get Model by Id",
@@ -493,10 +482,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:43:44.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id__labelurls___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id__labelurls___post",
+    "nanonets__/api/v2/ocr/model/model_id/labelurls___POST": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/labelurls",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}/LabelUrls",
       "text": "Async Prediction for image url",
@@ -555,10 +543,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:44:37.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__inferences__model__model_id__imagelevelinferences__id___get": {
-      "provider_intent": "nanonets__api__v2__inferences__model__model_id__imagelevelinferences__id___get",
+    "nanonets__/api/v2/inferences/model/model_id/imagelevelinferences/id___GET": {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/imagelevelinferences/id",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/Inferences/Model/{model_id}/ImageLevelInferences/{id}",
       "text": "Get Prediction File By Page ID",
@@ -599,10 +586,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:45:12.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__inferences__model__model_id__inferencerequestfiles__getpredictions__request_file_id___get": {
-      "provider_intent": "nanonets__api__v2__inferences__model__model_id__inferencerequestfiles__getpredictions__request_file_id___get",
+    "nanonets__/api/v2/inferences/model/model_id/inferencerequestfiles/getpredictions/request_file_id___GET": {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/inferencerequestfiles/getpredictions/request_file_id",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/Inferences/Model/{model_id}/InferenceRequestFiles/GetPredictions/{request_file_id}",
       "text": "Get Prediction File By File ID",
@@ -643,10 +629,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:45:36.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id__labelfile___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id__labelfile___post",
+    "nanonets__/api/v2/ocr/model/model_id/labelfile___POST": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/labelfile",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}/LabelFile",
       "text": "Async Prediction for image file",
@@ -704,10 +689,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:48:53.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__inferences__model__model_id__imagelevelinferences___get": {
-      "provider_intent": "nanonets__api__v2__inferences__model__model_id__imagelevelinferences___get",
+    "nanonets__/api/v2/inferences/model/model_id/imagelevelinferences___GET": {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/imagelevelinferences",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/Inferences/Model/{model_id}/ImageLevelInferences",
       "text": "Get All Prediction Files",
@@ -754,10 +738,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:50:15.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id__train___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id__train___post",
+    "nanonets__/api/v2/ocr/model/model_id/train___POST": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/train",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}/Train",
       "text": "Train Model",
@@ -793,10 +776,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:50:46.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id__uploadurls___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id__uploadurls___post",
+    "nanonets__/api/v2/ocr/model/model_id/uploadurls___POST": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/uploadurls",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}/UploadUrls",
       "text": "Upload Training Images by Urls",
@@ -843,10 +825,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:51:03.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     },
-    "nanonets__api__v2__ocr__model__model_id__uploadfile___post": {
-      "provider_intent": "nanonets__api__v2__ocr__model__model_id__uploadfile___post",
+    "nanonets__/api/v2/ocr/model/model_id/uploadfile___POST": {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/uploadfile",
       "provider_proxy_intent": "https://app.nanonets.com/api/v2/OCR/Model/{model_id}/UploadFile",
       "text": "Upload Training Images by File",
@@ -893,7 +874,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:51:15.000Z"
+      "updated_at": "2025-11-11T12:00:08.765Z"
     }
   }
 }

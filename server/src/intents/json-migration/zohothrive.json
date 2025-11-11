@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohothrive API",
-    "description": "",
-    "api_base": "/zohothrive",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "use_this_api_to_push_the_purchase_to_thrive": {
-      "provider_intent": "use_this_api_to_push_the_purchase_to_thrive",
+    "zohothrive__/thrive-publicapi/v1/$widget-code/purchase___POST": {
       "provider_alias_intent": "/thrive-publicapi/v1/$widget-code/purchase",
       "text": "Use this API to push the purchase to thrive",
       "category": "Purchase API",
@@ -45,8 +34,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.138Z"
     }
   }
 }

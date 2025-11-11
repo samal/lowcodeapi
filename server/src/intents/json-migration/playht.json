@@ -51,8 +51,7 @@
     "credential_link": "https://play.ht/studio/api-access"
   },
   "routes": {
-    "playht__api__v2__tts___post": {
-      "provider_intent": "playht__api__v2__tts___post",
+    "playht__/api/v2/tts___POST": {
       "provider_alias_intent": "/api/v2/tts",
       "provider_proxy_intent": "https://api.play.ht/api/v2/tts",
       "text": "Generate Audio From Text",
@@ -173,10 +172,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.798Z"
     },
-    "playht__api__v2__tts__stream___post": {
-      "provider_intent": "playht__api__v2__tts__stream___post",
+    "playht__/api/v2/tts/stream___POST": {
       "provider_alias_intent": "/api/v2/tts/stream",
       "provider_proxy_intent": "https://api.play.ht/api/v2/tts/stream",
       "text": "Stream Audio From Text",
@@ -301,10 +299,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.798Z"
     },
-    "playht__api__v2__tts__id___get": {
-      "provider_intent": "playht__api__v2__tts__id___get",
+    "playht__/api/v2/tts/id___GET": {
       "provider_alias_intent": "/api/v2/tts/id",
       "provider_proxy_intent": "https://api.play.ht/api/v2/tts/{id}",
       "text": "Get Text-To-Speech Job Data",
@@ -356,10 +353,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:42:34.000Z"
+      "updated_at": "2025-11-11T12:00:08.798Z"
     },
-    "playht__api__v2__cloned-voices___get": {
-      "provider_intent": "playht__api__v2__cloned-voices___get",
+    "playht__/api/v2/cloned-voices___GET": {
       "provider_alias_intent": "/api/v2/cloned-voices",
       "provider_proxy_intent": "https://api.play.ht/api/v2/cloned-voices",
       "text": "List Cloned Voices",
@@ -396,10 +392,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.798Z"
     },
-    "playht__api__v2__cloned-voices__instant___post": {
-      "provider_intent": "playht__api__v2__cloned-voices__instant___post",
+    "playht__/api/v2/cloned-voices/instant___POST": {
       "provider_alias_intent": "/api/v2/cloned-voices/instant",
       "provider_proxy_intent": "https://api.play.ht/api/v2/cloned-voices/instant",
       "text": "Create Instant Voice Clone",
@@ -449,10 +444,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.799Z"
     },
-    "playht__api__v2__cloned-voices___delete": {
-      "provider_intent": "playht__api__v2__cloned-voices___delete",
+    "playht__/api/v2/cloned-voices___DELETE": {
       "provider_alias_intent": "/api/v2/cloned-voices",
       "provider_proxy_intent": "https://api.play.ht/api/v2/cloned-voices",
       "text": "Delete Cloned Voices",
@@ -495,10 +489,9 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:43:17.000Z"
+      "updated_at": "2025-11-11T12:00:08.799Z"
     },
-    "playht__api__v2__voices___get": {
-      "provider_intent": "playht__api__v2__voices___get",
+    "playht__/api/v2/voices___GET": {
       "provider_alias_intent": "/api/v2/voices",
       "provider_proxy_intent": "https://api.play.ht/api/v2/voices",
       "text": "List PlayHT Voices",
@@ -535,7 +528,7 @@
         ]
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.799Z"
     }
   }
 }

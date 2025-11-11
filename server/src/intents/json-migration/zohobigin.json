@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohobigin API",
-    "description": "",
-    "api_base": "/zohobigin",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_all_profiles_data": {
-      "provider_intent": "get_all_profiles_data",
+    "zohobigin__/bigin/v2/settings/profiles___GET": {
       "provider_alias_intent": "/bigin/v2/settings/profiles",
       "text": "Get all profiles data",
       "category": "Profiles",
@@ -45,11 +34,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.945Z"
     },
-    "get_all_roles_data": {
-      "provider_intent": "get_all_roles_data",
+    "zohobigin__/bigin/v2/settings/roles___GET": {
       "provider_alias_intent": "/bigin/v2/settings/roles",
       "text": "Get all roles data",
       "category": "Roles",
@@ -82,11 +70,10 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.945Z"
     },
-    "get_users_data": {
-      "provider_intent": "get_users_data",
+    "zohobigin__/bigin/v2/users___GET": {
       "provider_alias_intent": "/bigin/v2/users",
       "text": "Get users data",
       "category": "Users",
@@ -119,8 +106,8 @@
         }
       },
       "subdomain": {},
-      "wip": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.945Z"
     }
   }
 }

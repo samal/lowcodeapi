@@ -16,20 +16,8 @@
     "total_api": 129,
     "credential_link": ""
   },
-  "app": {
-    "title": "Twitter API",
-    "description": "",
-    "api_base": "/twitter",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
   "routes": {
-    "get_tweets_id_v2": {
-      "provider_intent": "get_tweets_id_v2",
+    "twitter__/2/tweets/id___GET": {
       "provider_alias_intent": "/2/tweets/id",
       "text": "Returns the data associated with the given tweet id. 🚧",
       "category": "Tweets",
@@ -73,12 +61,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.899Z"
     },
-    "post_account_update_profile_banner_v1": {
-      "provider_intent": "post_account_update_profile_banner_v1",
+    "twitter__/1.1/account/update_profile_banner.json___POST": {
       "provider_alias_intent": "/1.1/account/update_profile_banner.json",
       "text": "Upload users's profile banner, this is the cover image in user's profile. The uploaded image take a while to reflect in the profile page as it is processed asynchronously. The `banner` key is used for uploading the image. 🚧",
       "category": "account",
@@ -104,12 +91,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_account_update_profile_image_v1": {
-      "provider_intent": "post_account_update_profile_image_v1",
+    "twitter__/1.1/account/update_profile_image.json___POST": {
       "provider_alias_intent": "/1.1/account/update_profile_image.json",
       "text": " 🚧",
       "category": "account",
@@ -135,12 +121,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_account_remove_profile_banner_v1": {
-      "provider_intent": "post_account_remove_profile_banner_v1",
+    "twitter__/1.1/account/remove_profile_banner.json___POST": {
       "provider_alias_intent": "/1.1/account/remove_profile_banner.json",
       "text": " 🚧",
       "category": "account",
@@ -162,12 +147,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_account_update_profile_v1": {
-      "provider_intent": "post_account_update_profile_v1",
+    "twitter__/1.1/account/update_profile.json___POST": {
       "provider_alias_intent": "/1.1/account/update_profile.json",
       "text": " 🚧",
       "category": "account",
@@ -216,12 +200,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_account_verify_credentials_v1": {
-      "provider_intent": "get_account_verify_credentials_v1",
+    "twitter__/1.1/account/verify_credentials.json___GET": {
       "provider_alias_intent": "/1.1/account/verify_credentials.json",
       "text": " 🚧",
       "category": "account",
@@ -243,12 +226,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_account_settings_v1": {
-      "provider_intent": "get_account_settings_v1",
+    "twitter__/1.1/account/settings.json___GET": {
       "provider_alias_intent": "/1.1/account/settings.json",
       "text": " 🚧",
       "category": "account",
@@ -270,12 +252,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_account_settings_v1": {
-      "provider_intent": "post_account_settings_v1",
+    "twitter__/1.1/account/settings.json___POST": {
       "provider_alias_intent": "/1.1/account/settings.json",
       "text": " 🚧",
       "category": "account",
@@ -320,12 +301,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_application_rate_limit_status_v1": {
-      "provider_intent": "get_application_rate_limit_status_v1",
+    "twitter__/1.1/application/rate_limit_status.json___GET": {
       "provider_alias_intent": "/1.1/application/rate_limit_status.json",
       "text": "Returns the rate limit status of v1.1 api resources. 🚧",
       "category": "application",
@@ -351,12 +331,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_blocks_create_v1": {
-      "provider_intent": "post_blocks_create_v1",
+    "twitter__/1.1/blocks/create.json___POST": {
       "provider_alias_intent": "/1.1/blocks/create.json",
       "text": " 🚧",
       "category": "blocks",
@@ -399,12 +378,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_blocks_destroy_v1": {
-      "provider_intent": "post_blocks_destroy_v1",
+    "twitter__/1.1/blocks/destroy.json___POST": {
       "provider_alias_intent": "/1.1/blocks/destroy.json",
       "text": " 🚧",
       "category": "blocks",
@@ -447,12 +425,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_blocks_list_v1": {
-      "provider_intent": "get_blocks_list_v1",
+    "twitter__/1.1/blocks/list.json___GET": {
       "provider_alias_intent": "/1.1/blocks/list.json",
       "text": " 🚧",
       "category": "blocks",
@@ -492,12 +469,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_blocks_ids_v1": {
-      "provider_intent": "get_blocks_ids_v1",
+    "twitter__/1.1/blocks/ids.json___GET": {
       "provider_alias_intent": "/1.1/blocks/ids.json",
       "text": " 🚧",
       "category": "blocks",
@@ -530,12 +506,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_collections_entries_v1": {
-      "provider_intent": "get_collections_entries_v1",
+    "twitter__/1.1/collections/entries.json___GET": {
       "provider_alias_intent": "/1.1/collections/entries.json",
       "text": " 🚧",
       "category": "collections",
@@ -570,12 +545,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_collections_list_v1": {
-      "provider_intent": "get_collections_list_v1",
+    "twitter__/1.1/collections/list.json___GET": {
       "provider_alias_intent": "/1.1/collections/list.json",
       "text": " 🚧",
       "category": "collections",
@@ -613,12 +587,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_collections_show_v1": {
-      "provider_intent": "get_collections_show_v1",
+    "twitter__/1.1/collections/show.json___GET": {
       "provider_alias_intent": "/1.1/collections/show.json",
       "text": " 🚧",
       "category": "collections",
@@ -644,12 +617,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_create_v1": {
-      "provider_intent": "post_collections_create_v1",
+    "twitter__/1.1/collections/create.json___POST": {
       "provider_alias_intent": "/1.1/collections/create.json",
       "text": " 🚧",
       "category": "collections",
@@ -684,12 +656,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_destroy_v1": {
-      "provider_intent": "post_collections_destroy_v1",
+    "twitter__/1.1/collections/destroy.json___POST": {
       "provider_alias_intent": "/1.1/collections/destroy.json",
       "text": " 🚧",
       "category": "collections",
@@ -718,12 +689,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_update_v1": {
-      "provider_intent": "post_collections_update_v1",
+    "twitter__/1.1/collections/update.json___POST": {
       "provider_alias_intent": "/1.1/collections/update.json",
       "text": " 🚧",
       "category": "collections",
@@ -758,12 +728,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_entries_add_v1": {
-      "provider_intent": "post_collections_entries_add_v1",
+    "twitter__/1.1/collections/entries/add.json___POST": {
       "provider_alias_intent": "/1.1/collections/entries/add.json",
       "text": " 🚧",
       "category": "collections",
@@ -802,12 +771,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_entries_move_v1": {
-      "provider_intent": "post_collections_entries_move_v1",
+    "twitter__/1.1/collections/entries/move.json___POST": {
       "provider_alias_intent": "/1.1/collections/entries/move.json",
       "text": " 🚧",
       "category": "collections",
@@ -846,12 +814,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_entries_remove_v1": {
-      "provider_intent": "post_collections_entries_remove_v1",
+    "twitter__/1.1/collections/entries/remove.json___POST": {
       "provider_alias_intent": "/1.1/collections/entries/remove.json",
       "text": " 🚧",
       "category": "collections",
@@ -880,12 +847,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_collections_entries_curate_v1": {
-      "provider_intent": "post_collections_entries_curate_v1",
+    "twitter__/1.1/collections/entries/curate.json___POST": {
       "provider_alias_intent": "/1.1/collections/entries/curate.json",
       "text": " 🚧",
       "category": "collections",
@@ -911,12 +877,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_favorites_list_v1": {
-      "provider_intent": "get_favorites_list_v1",
+    "twitter__/1.1/favorites/list.json___GET": {
       "provider_alias_intent": "/1.1/favorites/list.json",
       "text": "Returns the 20 most recent Tweets liked by the authenticated user or specified user. **Don't use this API as we can not fetch more than 20 recent tweets.** Use `v2.0` API `likedtweets` instead. 🚧",
       "category": "favorites",
@@ -961,12 +926,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_favorites_create_v1": {
-      "provider_intent": "post_favorites_create_v1",
+    "twitter__/1.1/favorites/create.json___POST": {
       "provider_alias_intent": "/1.1/favorites/create.json",
       "text": " 🚧",
       "category": "favorites",
@@ -999,12 +963,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_favorites_destroy_v1": {
-      "provider_intent": "post_favorites_destroy_v1",
+    "twitter__/1.1/favorites/destroy.json___POST": {
       "provider_alias_intent": "/1.1/favorites/destroy.json",
       "text": " 🚧",
       "category": "favorites",
@@ -1037,12 +1000,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_followers_list_v1": {
-      "provider_intent": "get_followers_list_v1",
+    "twitter__/1.1/followers/list.json___GET": {
       "provider_alias_intent": "/1.1/followers/list.json",
       "text": " 🚧",
       "category": "followers",
@@ -1091,12 +1053,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_followers_ids_v1": {
-      "provider_intent": "get_followers_ids_v1",
+    "twitter__/1.1/followers/ids.json___GET": {
       "provider_alias_intent": "/1.1/followers/ids.json",
       "text": " 🚧",
       "category": "followers",
@@ -1138,12 +1099,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "get_friends_ids_v1": {
-      "provider_intent": "get_friends_ids_v1",
+    "twitter__/1.1/friends/ids.json___GET": {
       "provider_alias_intent": "/1.1/friends/ids.json",
       "text": " 🚧",
       "category": "friends",
@@ -1189,12 +1149,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_friendships_create_v1": {
-      "provider_intent": "post_friendships_create_v1",
+    "twitter__/1.1/friendships/create.json___POST": {
       "provider_alias_intent": "/1.1/friendships/create.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1230,12 +1189,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.900Z"
     },
-    "post_friendships_destroy_v1": {
-      "provider_intent": "post_friendships_destroy_v1",
+    "twitter__/1.1/friendships/destroy.json___POST": {
       "provider_alias_intent": "/1.1/friendships/destroy.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1264,12 +1222,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_friendships_lookup_v1": {
-      "provider_intent": "get_friendships_lookup_v1",
+    "twitter__/1.1/friendships/lookup.json___GET": {
       "provider_alias_intent": "/1.1/friendships/lookup.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1298,12 +1255,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_friendships_show_v1": {
-      "provider_intent": "get_friendships_show_v1",
+    "twitter__/1.1/friendships/show.json___GET": {
       "provider_alias_intent": "/1.1/friendships/show.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1338,12 +1294,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_friendships_incoming_v1": {
-      "provider_intent": "get_friendships_incoming_v1",
+    "twitter__/1.1/friendships/incoming.json___GET": {
       "provider_alias_intent": "/1.1/friendships/incoming.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1376,12 +1331,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_friendships_outgoing_v1": {
-      "provider_intent": "get_friendships_outgoing_v1",
+    "twitter__/1.1/friendships/outgoing___GET": {
       "provider_alias_intent": "/1.1/friendships/outgoing",
       "text": " 🚧",
       "category": "friendships",
@@ -1414,12 +1368,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_friendships_no_retweets_ids_v1": {
-      "provider_intent": "get_friendships_no_retweets_ids_v1",
+    "twitter__/1.1/friendships/no_retweets/ids.json___GET": {
       "provider_alias_intent": "/1.1/friendships/no_retweets/ids.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1449,12 +1402,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_friendships_update_v1": {
-      "provider_intent": "post_friendships_update_v1",
+    "twitter__/1.1/friendships/update.json___POST": {
       "provider_alias_intent": "/1.1/friendships/update.json",
       "text": " 🚧",
       "category": "friendships",
@@ -1497,12 +1449,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_subscriptions_v1": {
-      "provider_intent": "get_lists_subscriptions_v1",
+    "twitter__/1.1/lists/subscriptions.json___GET": {
       "provider_alias_intent": "/1.1/lists/subscriptions.json",
       "text": " 🚧",
       "category": "lists",
@@ -1537,12 +1488,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_id_v2": {
-      "provider_intent": "get_lists_id_v2",
+    "twitter__/2/lists/id___GET": {
       "provider_alias_intent": "/2/lists/id",
       "text": " 🚧",
       "category": "lists",
@@ -1577,12 +1527,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_lists_id_v2": {
-      "provider_intent": "delete_lists_id_v2",
+    "twitter__/2/lists/id___DELETE": {
       "provider_alias_intent": "/2/lists/id",
       "text": " 🚧",
       "category": "lists",
@@ -1608,12 +1557,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "put_lists_id_v2": {
-      "provider_intent": "put_lists_id_v2",
+    "twitter__/2/lists/id___PUT": {
       "provider_alias_intent": "/2/lists/id",
       "text": " 🚧",
       "category": "lists",
@@ -1652,12 +1600,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_ownerships_v1": {
-      "provider_intent": "get_lists_ownerships_v1",
+    "twitter__/1.1/lists/ownerships.json___GET": {
       "provider_alias_intent": "/1.1/lists/ownerships.json",
       "text": " 🚧",
       "category": "lists",
@@ -1692,12 +1639,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_memberships_v1": {
-      "provider_intent": "get_lists_memberships_v1",
+    "twitter__/1.1/lists/memberships.json___GET": {
       "provider_alias_intent": "/1.1/lists/memberships.json",
       "text": " 🚧",
       "category": "lists",
@@ -1735,12 +1681,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_show_v1": {
-      "provider_intent": "get_lists_show_v1",
+    "twitter__/1.1/lists/show.json___GET": {
       "provider_alias_intent": "/1.1/lists/show.json",
       "text": " 🚧",
       "category": "lists",
@@ -1775,12 +1720,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_members_v1": {
-      "provider_intent": "get_lists_members_v1",
+    "twitter__/1.1/lists/members.json___GET": {
       "provider_alias_intent": "/1.1/lists/members.json",
       "text": " 🚧",
       "category": "lists",
@@ -1821,12 +1765,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_id_members_v2": {
-      "provider_intent": "get_lists_id_members_v2",
+    "twitter__/2/lists/id/members___GET": {
       "provider_alias_intent": "/2/lists/id/members",
       "text": " 🚧",
       "category": "lists",
@@ -1867,12 +1810,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_id_members_v2": {
-      "provider_intent": "post_lists_id_members_v2",
+    "twitter__/2/lists/id/members___POST": {
       "provider_alias_intent": "/2/lists/id/members",
       "text": " 🚧",
       "category": "lists",
@@ -1901,12 +1843,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_statuses_v1": {
-      "provider_intent": "get_lists_statuses_v1",
+    "twitter__/1.1/lists/statuses.json___GET": {
       "provider_alias_intent": "/1.1/lists/statuses.json",
       "text": " 🚧",
       "category": "lists",
@@ -1960,12 +1901,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_id_tweets_v2": {
-      "provider_intent": "get_lists_id_tweets_v2",
+    "twitter__/2/lists/id/tweets___GET": {
       "provider_alias_intent": "/2/lists/id/tweets",
       "text": " 🚧",
       "category": "lists",
@@ -2006,12 +1946,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_subscribers_v1": {
-      "provider_intent": "get_lists_subscribers_v1",
+    "twitter__/1.1/lists/subscribers.json___GET": {
       "provider_alias_intent": "/1.1/lists/subscribers.json",
       "text": " 🚧",
       "category": "lists",
@@ -2058,12 +1997,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_id_followers_v2": {
-      "provider_intent": "get_lists_id_followers_v2",
+    "twitter__/2/lists/id/followers___GET": {
       "provider_alias_intent": "/2/lists/id/followers",
       "text": " 🚧",
       "category": "lists",
@@ -2104,12 +2042,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_create_v1": {
-      "provider_intent": "post_lists_create_v1",
+    "twitter__/1.1/lists/create.json___POST": {
       "provider_alias_intent": "/1.1/lists/create.json",
       "text": " 🚧",
       "category": "lists",
@@ -2141,12 +2078,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_v2": {
-      "provider_intent": "post_lists_v2",
+    "twitter__/2/lists___POST": {
       "provider_alias_intent": "/2/lists",
       "text": " 🚧",
       "category": "lists",
@@ -2182,12 +2118,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_destroy_v1": {
-      "provider_intent": "post_lists_destroy_v1",
+    "twitter__/1.1/lists/destroy.json___POST": {
       "provider_alias_intent": "/1.1/lists/destroy.json",
       "text": " 🚧",
       "category": "lists",
@@ -2222,12 +2157,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_update_v1": {
-      "provider_intent": "post_lists_update_v1",
+    "twitter__/1.1/lists/update.json___POST": {
       "provider_alias_intent": "/1.1/lists/update.json",
       "text": " 🚧",
       "category": "lists",
@@ -2271,12 +2205,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_members_create_v1": {
-      "provider_intent": "post_lists_members_create_v1",
+    "twitter__/1.1/lists/members/create.json___POST": {
       "provider_alias_intent": "/1.1/lists/members/create.json",
       "text": " 🚧",
       "category": "lists",
@@ -2317,12 +2250,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_members_destroy_v1": {
-      "provider_intent": "post_lists_members_destroy_v1",
+    "twitter__/1.1/lists/members/destroy.json___POST": {
       "provider_alias_intent": "/1.1/lists/members/destroy.json",
       "text": " 🚧",
       "category": "lists",
@@ -2357,12 +2289,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_lists_id_members_user_id_v2": {
-      "provider_intent": "delete_lists_id_members_user_id_v2",
+    "twitter__/2/lists/id/members/user_id___DELETE": {
       "provider_alias_intent": "/2/lists/id/members/user_id",
       "text": " 🚧",
       "category": "lists",
@@ -2391,12 +2322,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_subscribers_create_v1": {
-      "provider_intent": "post_lists_subscribers_create_v1",
+    "twitter__/1.1/lists/subscribers/create.json___POST": {
       "provider_alias_intent": "/1.1/lists/subscribers/create.json",
       "text": " 🚧",
       "category": "lists",
@@ -2431,12 +2361,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_subscribers_destroy_v1": {
-      "provider_intent": "post_lists_subscribers_destroy_v1",
+    "twitter__/1.1/lists/subscribers/destroy.json___POST": {
       "provider_alias_intent": "/1.1/lists/subscribers/destroy.json",
       "text": " 🚧",
       "category": "lists",
@@ -2471,12 +2400,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_members_create_all_v1": {
-      "provider_intent": "post_lists_members_create_all_v1",
+    "twitter__/1.1/lists/members/create_all.json___POST": {
       "provider_alias_intent": "/1.1/lists/members/create_all.json",
       "text": " 🚧",
       "category": "lists",
@@ -2517,12 +2445,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_lists_members_destroy_all_v1": {
-      "provider_intent": "post_lists_members_destroy_all_v1",
+    "twitter__/1.1/lists/members/destroy_all.json___POST": {
       "provider_alias_intent": "/1.1/lists/members/destroy_all.json",
       "text": " 🚧",
       "category": "lists",
@@ -2563,12 +2490,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_subscribers_show_v1": {
-      "provider_intent": "get_lists_subscribers_show_v1",
+    "twitter__/1.1/lists/subscribers/show.json___GET": {
       "provider_alias_intent": "/1.1/lists/subscribers/show.json",
       "text": " 🚧",
       "category": "lists",
@@ -2623,12 +2549,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_lists_list_v1": {
-      "provider_intent": "get_lists_list_v1",
+    "twitter__/1.1/lists/list.json___GET": {
       "provider_alias_intent": "/1.1/lists/list.json",
       "text": " 🚧",
       "category": "lists",
@@ -2660,12 +2585,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_media_upload_v1": {
-      "provider_intent": "post_media_upload_v1",
+    "twitter__https//upload.twitter.com/1.1/media/upload.json___POST": {
       "provider_alias_intent": "https//upload.twitter.com/1.1/media/upload.json",
       "text": " 🚧",
       "category": "media",
@@ -2691,12 +2615,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_mutes_users_create_v1": {
-      "provider_intent": "post_mutes_users_create_v1",
+    "twitter__/1.1/mutes/users/create.json___POST": {
       "provider_alias_intent": "/1.1/mutes/users/create.json",
       "text": " 🚧",
       "category": "mutes",
@@ -2725,12 +2648,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_mutes_users_destroy_v1": {
-      "provider_intent": "post_mutes_users_destroy_v1",
+    "twitter__/1.1/mutes/users/destroy.json___POST": {
       "provider_alias_intent": "/1.1/mutes/users/destroy.json",
       "text": " 🚧",
       "category": "mutes",
@@ -2759,12 +2681,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_mutes_users_list_v1": {
-      "provider_intent": "get_mutes_users_list_v1",
+    "twitter__/1.1/mutes/users/list.json___GET": {
       "provider_alias_intent": "/1.1/mutes/users/list.json",
       "text": " 🚧",
       "category": "mutes",
@@ -2804,12 +2725,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_mutes_users_ids_v1": {
-      "provider_intent": "get_mutes_users_ids_v1",
+    "twitter__/1.1/mutes/users/ids.json___GET": {
       "provider_alias_intent": "/1.1/mutes/users/ids.json",
       "text": " 🚧",
       "category": "mutes",
@@ -2842,12 +2762,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_saved_searches_destroy_id_v1": {
-      "provider_intent": "post_saved_searches_destroy_id_v1",
+    "twitter__/1.1/saved_searches/destroy/id.json___POST": {
       "provider_alias_intent": "/1.1/saved_searches/destroy/id.json",
       "text": " 🚧",
       "category": "saved_searches",
@@ -2873,12 +2792,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_saved_searches_list_v1": {
-      "provider_intent": "get_saved_searches_list_v1",
+    "twitter__/1.1/saved_searches/list.json___GET": {
       "provider_alias_intent": "/1.1/saved_searches/list.json",
       "text": " 🚧",
       "category": "saved_searches",
@@ -2900,12 +2818,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_saved_searches_show_id_v1": {
-      "provider_intent": "get_saved_searches_show_id_v1",
+    "twitter__/1.1/saved_searches/show/id.json___GET": {
       "provider_alias_intent": "/1.1/saved_searches/show/id.json",
       "text": " 🚧",
       "category": "saved_searches",
@@ -2931,12 +2848,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_saved_searches_create_v1": {
-      "provider_intent": "post_saved_searches_create_v1",
+    "twitter__/1.1/saved_searches/create.json___POST": {
       "provider_alias_intent": "/1.1/saved_searches/create.json",
       "text": " 🚧",
       "category": "saved_searches",
@@ -2962,12 +2878,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_show_v1": {
-      "provider_intent": "get_statuses_show_v1",
+    "twitter__/1.1/statuses/show.json___GET": {
       "provider_alias_intent": "/1.1/statuses/show.json",
       "text": "Returns the data associated with the given tweet id. 🚧",
       "category": "statuses",
@@ -3028,12 +2943,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_lookup_v1": {
-      "provider_intent": "get_statuses_lookup_v1",
+    "twitter__/1.1/statuses/lookup.json___GET": {
       "provider_alias_intent": "/1.1/statuses/lookup.json",
       "text": "Returns the data associated with the given list of tweet ids. 🚧",
       "category": "statuses",
@@ -3094,12 +3008,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_statuses_retweets_id_v1": {
-      "provider_intent": "post_statuses_retweets_id_v1",
+    "twitter__/1.1/statuses/retweets/id.json___POST": {
       "provider_alias_intent": "/1.1/statuses/retweets/id.json",
       "text": "Retweet on behalf of the authenticated user, requires tweet id `id` to be retweeted. 🚧",
       "category": "statuses",
@@ -3128,12 +3041,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_retweets_id_v1": {
-      "provider_intent": "get_statuses_retweets_id_v1",
+    "twitter__/1.1/statuses/retweets/id.json___GET": {
       "provider_alias_intent": "/1.1/statuses/retweets/id.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3166,12 +3078,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_statuses_update_v1": {
-      "provider_intent": "post_statuses_update_v1",
+    "twitter__/1.1/statuses/update.json___POST": {
       "provider_alias_intent": "/1.1/statuses/update.json",
       "text": "Tweet on behalf of the authenticated user. 🚧",
       "category": "statuses",
@@ -3249,12 +3160,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_retweeters_ids_v1": {
-      "provider_intent": "get_statuses_retweeters_ids_v1",
+    "twitter__/1.1/statuses/retweeters/ids.json___GET": {
       "provider_alias_intent": "/1.1/statuses/retweeters/ids.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3293,12 +3203,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_retweets_of_me_v1": {
-      "provider_intent": "get_statuses_retweets_of_me_v1",
+    "twitter__/1.1/statuses/retweets_of_me.json___GET": {
       "provider_alias_intent": "/1.1/statuses/retweets_of_me.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3351,12 +3260,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_statuses_unretweet_id_v1": {
-      "provider_intent": "post_statuses_unretweet_id_v1",
+    "twitter__/1.1/statuses/unretweet/id.json___POST": {
       "provider_alias_intent": "/1.1/statuses/unretweet/id.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3385,12 +3293,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_statuses_destroy_id_v1": {
-      "provider_intent": "post_statuses_destroy_id_v1",
+    "twitter__/1.1/statuses/destroy/id.json___POST": {
       "provider_alias_intent": "/1.1/statuses/destroy/id.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3419,12 +3326,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_user_timeline_v1": {
-      "provider_intent": "get_statuses_user_timeline_v1",
+    "twitter__/1.1/statuses/user_timeline.json___GET": {
       "provider_alias_intent": "/1.1/statuses/user_timeline.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3477,12 +3383,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_statuses_mentions_timeline_v1": {
-      "provider_intent": "get_statuses_mentions_timeline_v1",
+    "twitter__/1.1/statuses/mentions_timeline.json___GET": {
       "provider_alias_intent": "/1.1/statuses/mentions_timeline.json",
       "text": " 🚧",
       "category": "statuses",
@@ -3528,12 +3433,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_tweets_id_v2": {
-      "provider_intent": "delete_tweets_id_v2",
+    "twitter__/2/tweets/id___DELETE": {
       "provider_alias_intent": "/2/tweets/id",
       "text": " 🚧",
       "category": "tweets",
@@ -3559,12 +3463,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_tweets_v2": {
-      "provider_intent": "get_tweets_v2",
+    "twitter__/2/tweets___GET": {
       "provider_alias_intent": "/2/tweets",
       "text": "Returns the data associated with the given list of tweet ids. 🚧",
       "category": "tweets",
@@ -3608,12 +3511,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_tweets_v2": {
-      "provider_intent": "post_tweets_v2",
+    "twitter__/2/tweets___POST": {
       "provider_alias_intent": "/2/tweets",
       "text": "Tweet on behalf of the authenticated user. 🚧",
       "category": "tweets",
@@ -3667,12 +3569,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_tweets_id_retweeted_by_v2": {
-      "provider_intent": "get_tweets_id_retweeted_by_v2",
+    "twitter__/2/tweets/id/retweeted_by___GET": {
       "provider_alias_intent": "/2/tweets/id/retweeted_by",
       "text": " 🚧",
       "category": "tweets",
@@ -3713,12 +3614,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_tweets_search_recent_v2": {
-      "provider_intent": "get_tweets_search_recent_v2",
+    "twitter__/2/tweets/search/recent___GET": {
       "provider_alias_intent": "/2/tweets/search/recent",
       "text": " 🚧",
       "category": "tweets",
@@ -3780,12 +3680,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_tweets_id_liking_users_v2": {
-      "provider_intent": "get_tweets_id_liking_users_v2",
+    "twitter__/2/tweets/id/liking_users___GET": {
       "provider_alias_intent": "/2/tweets/id/liking_users",
       "text": "Returns the users who liked the the given tweet. 🚧",
       "category": "tweets",
@@ -3826,12 +3725,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "put_tweets_id_hidden_v2": {
-      "provider_intent": "put_tweets_id_hidden_v2",
+    "twitter__/2/tweets/id/hidden___PUT": {
       "provider_alias_intent": "/2/tweets/id/hidden",
       "text": " 🚧",
       "category": "tweets",
@@ -3864,12 +3762,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_retweets_v2": {
-      "provider_intent": "post_users_id_retweets_v2",
+    "twitter__/2/users/id/retweets___POST": {
       "provider_alias_intent": "/2/users/id/retweets",
       "text": "Retweet on behalf of the authenticated user, requires `userid` of the authenticated user and `tweetid` that to be retweeted. 🚧",
       "category": "users",
@@ -3898,12 +3795,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_id_retweets_source_tweet_id_v2": {
-      "provider_intent": "delete_users_id_retweets_source_tweet_id_v2",
+    "twitter__/2/users/id/retweets/source_tweet_id___DELETE": {
       "provider_alias_intent": "/2/users/id/retweets/source_tweet_id",
       "text": " 🚧",
       "category": "users",
@@ -3932,12 +3828,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_tweets_v2": {
-      "provider_intent": "get_users_id_tweets_v2",
+    "twitter__/2/users/id/tweets___GET": {
       "provider_alias_intent": "/2/users/id/tweets",
       "text": "Returns the tweets by a give `userid`. By default the most recent tweets are returned and using `paginationtoken` maximum **3200*** (max 800 in-case of excluding replies) tweets can be retrieved. 🚧",
       "category": "users",
@@ -4002,12 +3897,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_mentions_v2": {
-      "provider_intent": "get_users_id_mentions_v2",
+    "twitter__/2/users/id/mentions___GET": {
       "provider_alias_intent": "/2/users/id/mentions",
       "text": " 🚧",
       "category": "users",
@@ -4069,12 +3963,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_timelines_reverse_chronological_v2": {
-      "provider_intent": "get_users_id_timelines_reverse_chronological_v2",
+    "twitter__/2/users/id/timelines/reverse_chronological___GET": {
       "provider_alias_intent": "/2/users/id/timelines/reverse_chronological",
       "text": " 🚧",
       "category": "users",
@@ -4139,12 +4032,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_liked_tweets_v2": {
-      "provider_intent": "get_users_id_liked_tweets_v2",
+    "twitter__/2/users/id/liked_tweets___GET": {
       "provider_alias_intent": "/2/users/id/liked_tweets",
       "text": "Returns the list of tweet like by the user. Response is paginated and max `100` tweets can retrieved, use `paginationtoken` to retrieve the next page. 🚧",
       "category": "users",
@@ -4194,12 +4086,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_me_v2": {
-      "provider_intent": "get_users_me_v2",
+    "twitter__/2/users/me___GET": {
       "provider_alias_intent": "/2/users/me",
       "text": " 🚧",
       "category": "users",
@@ -4231,12 +4122,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_lookup_v1": {
-      "provider_intent": "get_users_lookup_v1",
+    "twitter__/1.1/users/lookup.json___GET": {
       "provider_alias_intent": "/1.1/users/lookup.json",
       "text": "Returns the list of user details of specified `userid` or `screenname` upto `100` users are allowed in a single request. 🚧",
       "category": "users",
@@ -4279,12 +4169,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_v2": {
-      "provider_intent": "get_users_v2",
+    "twitter__/2/users___GET": {
       "provider_alias_intent": "/2/users",
       "text": "Returns the list of user details of specified `userids` upto `100` userids are allowed in a single request. 🚧",
       "category": "users",
@@ -4319,12 +4208,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_show_v1": {
-      "provider_intent": "get_users_show_v1",
+    "twitter__/1.1/users/show.json___GET": {
       "provider_alias_intent": "/1.1/users/show.json",
       "text": " 🚧",
       "category": "users",
@@ -4360,12 +4248,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_v2": {
-      "provider_intent": "get_users_id_v2",
+    "twitter__/2/users/id___GET": {
       "provider_alias_intent": "/2/users/id",
       "text": " 🚧",
       "category": "users",
@@ -4400,12 +4287,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_by_username_username_v2": {
-      "provider_intent": "get_users_by_username_username_v2",
+    "twitter__/2/users/by/username/username___GET": {
       "provider_alias_intent": "/2/users/by/username/username",
       "text": " 🚧",
       "category": "users",
@@ -4440,12 +4326,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_by_v2": {
-      "provider_intent": "get_users_by_v2",
+    "twitter__/2/users/by___GET": {
       "provider_alias_intent": "/2/users/by",
       "text": " 🚧",
       "category": "users",
@@ -4480,12 +4365,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_followers_v2": {
-      "provider_intent": "get_users_id_followers_v2",
+    "twitter__/2/users/id/followers___GET": {
       "provider_alias_intent": "/2/users/id/followers",
       "text": "Returns a list of Twitter users who are following the given user, a maximum of 1000 users are returned in a single request and the remaining are paginated using nexttoken returned in the response.. The `nexttoken` becomes `paginationtoken` in the next request to fetch the next set of followers. 🚧",
       "category": "users",
@@ -4526,12 +4410,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_following_v2": {
-      "provider_intent": "get_users_id_following_v2",
+    "twitter__/2/users/id/following___GET": {
       "provider_alias_intent": "/2/users/id/following",
       "text": " 🚧",
       "category": "users",
@@ -4572,12 +4455,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_following_v2": {
-      "provider_intent": "post_users_id_following_v2",
+    "twitter__/2/users/id/following___POST": {
       "provider_alias_intent": "/2/users/id/following",
       "text": " 🚧",
       "category": "users",
@@ -4606,12 +4488,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_bookmarks_v2": {
-      "provider_intent": "get_users_id_bookmarks_v2",
+    "twitter__/2/users/id/bookmarks___GET": {
       "provider_alias_intent": "/2/users/id/bookmarks",
       "text": " 🚧",
       "category": "users",
@@ -4661,12 +4542,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_bookmarks_v2": {
-      "provider_intent": "post_users_id_bookmarks_v2",
+    "twitter__/2/users/id/bookmarks___POST": {
       "provider_alias_intent": "/2/users/id/bookmarks",
       "text": " 🚧",
       "category": "users",
@@ -4695,12 +4575,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_search_v1": {
-      "provider_intent": "get_users_search_v1",
+    "twitter__/1.1/users/search.json___GET": {
       "provider_alias_intent": "/1.1/users/search.json",
       "text": "Query & relevance-based search, try querying by interest, full name, company name, location, or other criteria. Exact match is not supported in this API. 🚧",
       "category": "users",
@@ -4739,12 +4618,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_likes_v2": {
-      "provider_intent": "post_users_id_likes_v2",
+    "twitter__/2/users/id/likes___POST": {
       "provider_alias_intent": "/2/users/id/likes",
       "text": " 🚧",
       "category": "users",
@@ -4773,12 +4651,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_id_likes_tweet_id_v2": {
-      "provider_intent": "delete_users_id_likes_tweet_id_v2",
+    "twitter__/2/users/id/likes/tweet_id___DELETE": {
       "provider_alias_intent": "/2/users/id/likes/tweet_id",
       "text": " 🚧",
       "category": "users",
@@ -4807,12 +4684,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_source_user_id_following_target_user_id_v2": {
-      "provider_intent": "delete_users_source_user_id_following_target_user_id_v2",
+    "twitter__/2/users/source_user_id/following/target_user_id___DELETE": {
       "provider_alias_intent": "/2/users/source_user_id/following/target_user_id",
       "text": " 🚧",
       "category": "users",
@@ -4841,12 +4717,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_muting_v2": {
-      "provider_intent": "post_users_id_muting_v2",
+    "twitter__/2/users/id/muting___POST": {
       "provider_alias_intent": "/2/users/id/muting",
       "text": " 🚧",
       "category": "users",
@@ -4875,12 +4750,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_muting_v2": {
-      "provider_intent": "get_users_id_muting_v2",
+    "twitter__/2/users/id/muting___GET": {
       "provider_alias_intent": "/2/users/id/muting",
       "text": " 🚧",
       "category": "users",
@@ -4921,12 +4795,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_source_user_id_muting_target_user_id_v2": {
-      "provider_intent": "delete_users_source_user_id_muting_target_user_id_v2",
+    "twitter__/2/users/source_user_id/muting/target_user_id___DELETE": {
       "provider_alias_intent": "/2/users/source_user_id/muting/target_user_id",
       "text": " 🚧",
       "category": "users",
@@ -4955,12 +4828,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_blocking_v2": {
-      "provider_intent": "post_users_id_blocking_v2",
+    "twitter__/2/users/id/blocking___POST": {
       "provider_alias_intent": "/2/users/id/blocking",
       "text": " 🚧",
       "category": "users",
@@ -4989,12 +4861,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_blocking_v2": {
-      "provider_intent": "get_users_id_blocking_v2",
+    "twitter__/2/users/id/blocking___GET": {
       "provider_alias_intent": "/2/users/id/blocking",
       "text": " 🚧",
       "category": "users",
@@ -5035,12 +4906,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_source_user_id_blocking_target_user_id_v2": {
-      "provider_intent": "delete_users_source_user_id_blocking_target_user_id_v2",
+    "twitter__/2/users/source_user_id/blocking/target_user_id___DELETE": {
       "provider_alias_intent": "/2/users/source_user_id/blocking/target_user_id",
       "text": " 🚧",
       "category": "users",
@@ -5069,12 +4939,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_id_bookmarks_tweet_id_v2": {
-      "provider_intent": "delete_users_id_bookmarks_tweet_id_v2",
+    "twitter__/2/users/id/bookmarks/tweet_id___DELETE": {
       "provider_alias_intent": "/2/users/id/bookmarks/tweet_id",
       "text": " 🚧",
       "category": "users",
@@ -5103,12 +4972,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_report_spam_v1": {
-      "provider_intent": "post_users_report_spam_v1",
+    "twitter__/1.1/users/report_spam.json___POST": {
       "provider_alias_intent": "/1.1/users/report_spam.json",
       "text": " 🚧",
       "category": "users",
@@ -5144,12 +5012,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_owned_lists_v2": {
-      "provider_intent": "get_users_id_owned_lists_v2",
+    "twitter__/2/users/id/owned_lists___GET": {
       "provider_alias_intent": "/2/users/id/owned_lists",
       "text": " 🚧",
       "category": "users",
@@ -5190,12 +5057,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_list_memberships_v2": {
-      "provider_intent": "get_users_id_list_memberships_v2",
+    "twitter__/2/users/id/list_memberships___GET": {
       "provider_alias_intent": "/2/users/id/list_memberships",
       "text": " 🚧",
       "category": "users",
@@ -5236,12 +5102,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_id_pinned_lists_v2": {
-      "provider_intent": "post_users_id_pinned_lists_v2",
+    "twitter__/2/users/id/pinned_lists___POST": {
       "provider_alias_intent": "/2/users/id/pinned_lists",
       "text": " 🚧",
       "category": "users",
@@ -5270,12 +5135,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_id_pinned_lists_v2": {
-      "provider_intent": "get_users_id_pinned_lists_v2",
+    "twitter__/2/users/id/pinned_lists___GET": {
       "provider_alias_intent": "/2/users/id/pinned_lists",
       "text": " 🚧",
       "category": "users",
@@ -5316,12 +5180,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_id_pinned_lists_list_id_v2": {
-      "provider_intent": "delete_users_id_pinned_lists_list_id_v2",
+    "twitter__/2/users/id/pinned_lists/list_id___DELETE": {
       "provider_alias_intent": "/2/users/id/pinned_lists/list_id",
       "text": " 🚧",
       "category": "users",
@@ -5350,12 +5213,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "post_users_:id_followed_lists_v2": {
-      "provider_intent": "post_users_:id_followed_lists_v2",
+    "twitter__/2/users/id/followed_lists___POST": {
       "provider_alias_intent": "/2/users/id/followed_lists",
       "text": " 🚧",
       "category": "users",
@@ -5384,12 +5246,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "delete_users_:id_followed_lists_list_id_v2": {
-      "provider_intent": "delete_users_:id_followed_lists_list_id_v2",
+    "twitter__/2/users/id/followed_lists/list_id___DELETE": {
       "provider_alias_intent": "/2/users/id/followed_lists/list_id",
       "text": " 🚧",
       "category": "users",
@@ -5418,12 +5279,11 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     },
-    "get_users_profile_banner_v1": {
-      "provider_intent": "get_users_profile_banner_v1",
+    "twitter__/1.1/users/profile_banner.json___GET": {
       "provider_alias_intent": "/1.1/users/profile_banner.json",
       "text": " 🚧",
       "category": "users",
@@ -5452,9 +5312,9 @@
       },
       "auth": [],
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.903Z"
     }
   }
 }

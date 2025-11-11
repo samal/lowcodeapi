@@ -34,8 +34,7 @@
     "credential_link": "https://console.mistral.ai/api-keys/"
   },
   "routes": {
-    "mistralai__v1__fim__completions___post": {
-      "provider_intent": "mistralai__v1__fim__completions___post",
+    "mistralai__/v1/fim/completions___POST": {
       "provider_alias_intent": "/v1/fim/completions",
       "provider_proxy_intent": "/v1/fim/completions",
       "text": "Create FIM Completions",
@@ -111,10 +110,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__chat__completions___post": {
-      "provider_intent": "mistralai__v1__chat__completions___post",
+    "mistralai__/v1/chat/completions___POST": {
       "provider_alias_intent": "/v1/chat/completions",
       "provider_proxy_intent": "/v1/chat/completions",
       "text": "Create Chat Completions",
@@ -187,10 +185,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__embeddings___post": {
-      "provider_intent": "mistralai__v1__embeddings___post",
+    "mistralai__/v1/embeddings___POST": {
       "provider_alias_intent": "/v1/embeddings",
       "provider_proxy_intent": "/v1/embeddings",
       "text": "Create Embeddings",
@@ -236,10 +233,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__files___get": {
-      "provider_intent": "mistralai__v1__files___get",
+    "mistralai__/v1/files___GET": {
       "provider_alias_intent": "/v1/files",
       "provider_proxy_intent": "/v1/files",
       "text": "List Files",
@@ -269,10 +265,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__files___post": {
-      "provider_intent": "mistralai__v1__files___post",
+    "mistralai__/v1/files___POST": {
       "provider_alias_intent": "/v1/files",
       "provider_proxy_intent": "/v1/files",
       "text": "Upload File",
@@ -313,10 +308,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__files__file_id___get": {
-      "provider_intent": "mistralai__v1__files__file_id___get",
+    "mistralai__/v1/files/file_id___GET": {
       "provider_alias_intent": "/v1/files/file_id",
       "provider_proxy_intent": "/v1/files/{file_id}",
       "text": "Retrieve File",
@@ -352,10 +346,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:33:45.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__files__file_id___delete": {
-      "provider_intent": "mistralai__v1__files__file_id___delete",
+    "mistralai__/v1/files/file_id___DELETE": {
       "provider_alias_intent": "/v1/files/file_id",
       "provider_proxy_intent": "/v1/files/{file_id}",
       "text": "Delete File",
@@ -391,10 +384,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:34:11.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__fine_tuning__jobs___get": {
-      "provider_intent": "mistralai__v1__fine_tuning__jobs___get",
+    "mistralai__/v1/fine_tuning/jobs___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs",
       "provider_proxy_intent": "/v1/fine_tuning/jobs",
       "text": "List Fine Tuning Jobs",
@@ -475,10 +467,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__fine_tuning__jobs__job_id__cancel___post": {
-      "provider_intent": "mistralai__v1__fine_tuning__jobs__job_id__cancel___post",
+    "mistralai__/v1/fine_tuning/jobs/job_id/cancel___POST": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/job_id/cancel",
       "provider_proxy_intent": "/v1/fine_tuning/jobs/{job_id}/cancel",
       "text": "Cancel Fine Tuning Job",
@@ -514,10 +505,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:34:25.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__fine_tuning__jobs__job_id___get": {
-      "provider_intent": "mistralai__v1__fine_tuning__jobs__job_id___get",
+    "mistralai__/v1/fine_tuning/jobs/job_id___GET": {
       "provider_alias_intent": "/v1/fine_tuning/jobs/job_id",
       "provider_proxy_intent": "/v1/fine_tuning/jobs/{job_id}",
       "text": "Get Fine Tuning Job",
@@ -553,10 +543,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:34:36.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__models___get": {
-      "provider_intent": "mistralai__v1__models___get",
+    "mistralai__/v1/models___GET": {
       "provider_alias_intent": "/v1/models",
       "provider_proxy_intent": "/v1/models",
       "text": "List Available Models",
@@ -586,10 +575,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__models___delete": {
-      "provider_intent": "mistralai__v1__models___delete",
+    "mistralai__/v1/models___DELETE": {
       "provider_alias_intent": "/v1/models",
       "provider_proxy_intent": "/v1/models",
       "text": "Delete Model",
@@ -625,10 +613,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:34:57.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     },
-    "mistralai__v1__fine_tuning__jobs___post": {
-      "provider_intent": "mistralai__v1__fine_tuning__jobs___post",
+    "mistralai__/v1/fine_tuning/jobs___POST": {
       "provider_alias_intent": "/v1/fine_tuning/jobs",
       "provider_proxy_intent": "/v1/fine_tuning/jobs",
       "text": "Create Fine Tuning Job",
@@ -699,7 +686,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:24:50.000Z"
+      "updated_at": "2025-11-11T12:00:08.740Z"
     }
   }
 }

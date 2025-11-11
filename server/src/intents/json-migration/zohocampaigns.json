@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohocampaigns__api__v1-1__getcampaigndetails___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__getcampaigndetails___get",
+    "zohocampaigns__/api/v1.1/getcampaigndetails___GET": {
       "provider_alias_intent": "/api/v1.1/getcampaigndetails",
       "text": "Campaign Details",
       "category": "Campaign Management",
@@ -126,15 +125,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zohocampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getcampaigndetails",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__createcampaign___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__createcampaign___post",
+    "zohocampaigns__/api/v1.1/createcampaign___POST": {
       "provider_alias_intent": "/api/v1.1/createcampaign",
       "text": "Create Campaign",
       "category": "Campaign Management",
@@ -201,15 +197,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/createCampaign",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__sendcampaign___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__sendcampaign___post",
+    "zohocampaigns__/api/v1.1/sendcampaign___POST": {
       "provider_alias_intent": "/api/v1.1/sendcampaign",
       "text": "Schedule Campaign",
       "category": "Campaign Management",
@@ -283,15 +276,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/sendcampaign",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__type__clonecampaign___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__type__clonecampaign___post",
+    "zohocampaigns__/api/v1.1/type/clonecampaign___POST": {
       "provider_alias_intent": "/api/v1.1/type/clonecampaign",
       "text": "Clone Campaign",
       "category": "Campaign Management",
@@ -334,15 +324,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/type/clonecampaign",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__campaignreports___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__campaignreports___get",
+    "zohocampaigns__/api/v1.1/campaignreports___GET": {
       "provider_alias_intent": "/api/v1.1/campaignreports",
       "text": "Campaign Reports",
       "category": "Campaign Management",
@@ -385,15 +372,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/campaignreports",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__recentcampaigns___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__recentcampaigns___get",
+    "zohocampaigns__/api/v1.1/recentcampaigns___GET": {
       "provider_alias_intent": "/api/v1.1/recentcampaigns",
       "text": "Recent Campaigns",
       "category": "Campaign Management",
@@ -447,15 +431,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/recentcampaigns",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__recentsentcampaigns___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__recentsentcampaigns___get",
+    "zohocampaigns__/api/v1.1/recentsentcampaigns___GET": {
       "provider_alias_intent": "/api/v1.1/recentsentcampaigns",
       "text": "Recently Sent Campaigns",
       "category": "Campaign Management",
@@ -502,15 +483,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/recentsentcampaigns",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getlastcampaignreport___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__getlastcampaignreport___post",
+    "zohocampaigns__/api/v1.1/getlastcampaignreport___POST": {
       "provider_alias_intent": "/api/v1.1/getlastcampaignreport",
       "text": "Last Campaign Report",
       "category": "Campaign Management",
@@ -548,15 +526,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getlastcampaignreport",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getcampaignrecipientsdata___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__getcampaignrecipientsdata___post",
+    "zohocampaigns__/api/v1.1/getcampaignrecipientsdata___POST": {
       "provider_alias_intent": "/api/v1.1/getcampaignrecipientsdata",
       "text": "Get Campaign Recipients Data",
       "category": "Campaign Management",
@@ -604,15 +579,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getcampaignrecipientsdata",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__coupon__coupondetails___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__coupon__coupondetails___get",
+    "zohocampaigns__/api/v1.1/coupon/coupondetails___GET": {
       "provider_alias_intent": "/api/v1.1/coupon/coupondetails",
       "text": "View Coupon Details",
       "category": "Campaign Management",
@@ -655,15 +627,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/coupon/coupondetails",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__coupon__changestatus___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__coupon__changestatus___post",
+    "zohocampaigns__/api/v1.1/coupon/changestatus___POST": {
       "provider_alias_intent": "/api/v1.1/coupon/changestatus",
       "text": "Change Coupon Status",
       "category": "Campaign Management",
@@ -710,15 +679,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaign.campaign.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/coupon/changestatus",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__deletecampaign___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__deletecampaign___post",
+    "zohocampaigns__/api/v1.1/deletecampaign___POST": {
       "provider_alias_intent": "/api/v1.1/deletecampaign",
       "text": "Delete Campaign",
       "category": "Campaign Management",
@@ -761,15 +727,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1.1/deletecampaign",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getlistadvanceddetails___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__getlistadvanceddetails___get",
+    "zohocampaigns__/api/v1.1/getlistadvanceddetails___GET": {
       "provider_alias_intent": "/api/v1.1/getlistadvanceddetails",
       "text": "Get List Advanced Details",
       "category": "List Management",
@@ -824,15 +787,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getlistadvanceddetails",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getmailinglists___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__getmailinglists___post",
+    "zohocampaigns__/api/v1.1/getmailinglists___POST": {
       "provider_alias_intent": "/api/v1.1/getmailinglists",
       "text": "Get Mailing Lists",
       "category": "List Management",
@@ -882,15 +842,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getmailinglists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getlistsubscribers___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__getlistsubscribers___get",
+    "zohocampaigns__/api/v1.1/getlistsubscribers___GET": {
       "provider_alias_intent": "/api/v1.1/getlistsubscribers",
       "text": "Get List Contacts",
       "category": "List Management",
@@ -949,15 +906,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getlistsubscribers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__contact__allfields___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__contact__allfields___post",
+    "zohocampaigns__/api/v1.1/contact/allfields___POST": {
       "provider_alias_intent": "/api/v1.1/contact/allfields",
       "text": "Get All Contact Fields",
       "category": "List Management",
@@ -996,15 +950,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/contact/allfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getsegmentdetails___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__getsegmentdetails___post",
+    "zohocampaigns__/api/v1.1/getsegmentdetails___POST": {
       "provider_alias_intent": "/api/v1.1/getsegmentdetails",
       "text": "Get Segment Details",
       "category": "List Management",
@@ -1052,15 +1003,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getsegmentdetails",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__getsegmentcontact___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__getsegmentcontact___get",
+    "zohocampaigns__/api/v1.1/getsegmentcontact___GET": {
       "provider_alias_intent": "/api/v1.1/getsegmentcontact",
       "text": "Get Segment Contacts",
       "category": "List Management",
@@ -1103,15 +1051,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/getsegmentcontact",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__updatelistdetails___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__updatelistdetails___get",
+    "zohocampaigns__/api/v1.1/updatelistdetails___GET": {
       "provider_alias_intent": "/api/v1.1/updatelistdetails",
       "text": "Update List",
       "category": "List Management",
@@ -1164,15 +1109,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/updatelistdetails",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__deletemailinglist___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__deletemailinglist___post",
+    "zohocampaigns__/api/v1.1/deletemailinglist___POST": {
       "provider_alias_intent": "/api/v1.1/deletemailinglist",
       "text": "Delete Mailing List",
       "category": "List Management",
@@ -1219,15 +1161,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.DELETE",
       "api_endpoint_src": "{endpoint}/api/v1.1/deletemailinglist",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__listsubscriberscount___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__listsubscriberscount___get",
+    "zohocampaigns__/api/v1.1/listsubscriberscount___GET": {
       "provider_alias_intent": "/api/v1.1/listsubscriberscount",
       "text": "Total Contacts",
       "category": "List Management",
@@ -1274,15 +1213,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/listsubscriberscount",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__type__listsubscribe___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__type__listsubscribe___post",
+    "zohocampaigns__/api/v1.1/type/listsubscribe___POST": {
       "provider_alias_intent": "/api/v1.1/type/listsubscribe",
       "text": "Subscribe",
       "category": "List Management",
@@ -1350,15 +1286,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/[type]/listsubscribe",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__type__listunsubscribe___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__type__listunsubscribe___post",
+    "zohocampaigns__/api/v1.1/type/listunsubscribe___POST": {
       "provider_alias_intent": "/api/v1.1/type/listunsubscribe",
       "text": "Unsubscribe",
       "category": "List Management",
@@ -1422,15 +1355,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/[type]/listunsubscribe",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__type__contactdonotmail___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__type__contactdonotmail___post",
+    "zohocampaigns__/api/v1.1/type/contactdonotmail___POST": {
       "provider_alias_intent": "/api/v1.1/type/contactdonotmail",
       "text": "Move to Do-Not-Mail",
       "category": "List Management",
@@ -1485,15 +1415,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/[type]/contactdonotmail",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__addlistsubscribersinbulk___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__addlistsubscribersinbulk___post",
+    "zohocampaigns__/api/v1.1/addlistsubscribersinbulk___POST": {
       "provider_alias_intent": "/api/v1.1/addlistsubscribersinbulk",
       "text": "Add Contacts in Existing List",
       "category": "List Management",
@@ -1541,15 +1468,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/addlistsubscribersinbulk",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__addlistandcontacts___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__addlistandcontacts___post",
+    "zohocampaigns__/api/v1.1/addlistandcontacts___POST": {
       "provider_alias_intent": "/api/v1.1/addlistandcontacts",
       "text": "Add New List and Contacts",
       "category": "List Management",
@@ -1611,15 +1535,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/addlistandcontacts",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__custom__add___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__custom__add___post",
+    "zohocampaigns__/api/v1.1/custom/add___POST": {
       "provider_alias_intent": "/api/v1.1/custom/add",
       "text": "Create Custom Fields",
       "category": "List Management",
@@ -1672,15 +1593,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/custom/add",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__merge__create___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__merge__create___post",
+    "zohocampaigns__/api/v1.1/merge/create___POST": {
       "provider_alias_intent": "/api/v1.1/merge/create",
       "text": "Create Merge Tags",
       "category": "List Management",
@@ -1742,15 +1660,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.campaign.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/merge/create",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__topics___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__topics___post",
+    "zohocampaigns__/api/v1.1/topics___POST": {
       "provider_alias_intent": "/api/v1.1/topics",
       "text": "Create Topics",
       "category": "Topic Management",
@@ -1798,15 +1713,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.CREATE ",
       "api_endpoint_src": "{endpoint}/api/v1.1/topics",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__topics___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__topics___get",
+    "zohocampaigns__/api/v1.1/topics___GET": {
       "provider_alias_intent": "/api/v1.1/topics",
       "text": "Get Topics",
       "category": "Topic Management",
@@ -1848,15 +1760,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/topics",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__topics__products___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__topics__products___get",
+    "zohocampaigns__/api/v1.1/topics/products___GET": {
       "provider_alias_intent": "/api/v1.1/topics/products",
       "text": "Get Product",
       "category": "Topic Management",
@@ -1898,15 +1807,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.contact.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/topics/products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__workflow___get": {
-      "provider_intent": "zohocampaigns__api__v1-1__workflow___get",
+    "zohocampaigns__/api/v1.1/workflow___GET": {
       "provider_alias_intent": "/api/v1.1/workflow",
       "text": "Get open custom workflows",
       "category": "Workflow Management",
@@ -1944,15 +1850,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.workflow.READ",
       "api_endpoint_src": "{endpoint}/api/v1.1/workflow",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     },
-    "zohocampaigns__api__v1-1__workflow__custom_workflow_key__action__trigger___post": {
-      "provider_intent": "zohocampaigns__api__v1-1__workflow__custom_workflow_key__action__trigger___post",
+    "zohocampaigns__/api/v1.1/workflow/custom_workflow_key/action/trigger___POST": {
       "provider_alias_intent": "/api/v1.1/workflow/custom_workflow_key/action/trigger",
       "text": "Trigger contacts",
       "category": "Workflow Management",
@@ -2002,12 +1905,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCampaigns.workflow.CREATE",
       "api_endpoint_src": "{endpoint}/api/v1.1/workflow/[custom workflowkey]/action/trigger",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.000Z"
     }
   }
 }

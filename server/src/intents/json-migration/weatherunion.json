@@ -34,8 +34,7 @@
     "credential_link": "https://www.weatherunion.com/"
   },
   "routes": {
-    "weatherunion_gw_weather_external_v0_get_weather_data_get": {
-      "provider_intent": "weatherunion_gw_weather_external_v0_get_weather_data_get",
+    "weatherunion__/gw/weather/external/v0/get_weather_data___GET": {
       "provider_alias_intent": "/gw/weather/external/v0/get_weather_data",
       "text": "API for current weather data at a lat, long",
       "category": "weather data",
@@ -71,13 +70,10 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.913Z"
     },
-    "weatherunion_gw_weather_external_v0_get_locality_weather_data_get": {
-      "provider_intent": "weatherunion_gw_weather_external_v0_get_locality_weather_data_get",
+    "weatherunion__/gw/weather/external/v0/get_locality_weather_data___GET": {
       "provider_alias_intent": "/gw/weather/external/v0/get_locality_weather_data",
       "text": "API for current weather data in a locality",
       "category": "weather data",
@@ -109,10 +105,8 @@
           "authKey": "api_key"
         }
       },
-      "wip": 0,
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.913Z"
     }
   }
 }

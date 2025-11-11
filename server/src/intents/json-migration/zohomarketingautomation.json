@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "zohomarketingautomation API",
-    "description": "",
-    "api_base": "/zohomarketingautomation",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_open_journeys": {
-      "provider_intent": "get_open_journeys",
+    "zohomarketingautomation__/api/v1/journeys___GET": {
       "provider_alias_intent": "/api/v1/journeys",
       "text": "Get open journeys",
       "category": "Journey Management API",
@@ -45,13 +34,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMarketingAutomation.journey.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.120Z"
     },
-    "get_topics": {
-      "provider_intent": "get_topics",
+    "zohomarketingautomation__/api/v1/topics___GET": {
       "provider_alias_intent": "/api/v1/topics",
       "text": "Get Topics",
       "category": "Topic Management API",
@@ -84,13 +72,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMarketingAutomation.lead.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.120Z"
     },
-    "get_all_domains": {
-      "provider_intent": "get_all_domains",
+    "zohomarketingautomation__/api/v1/domains___GET": {
       "provider_alias_intent": "/api/v1/domains",
       "text": "Get all domains",
       "category": "Web Assistant APIs",
@@ -123,10 +110,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMarketingAutomation.wa.READ",
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.120Z"
     }
   }
 }

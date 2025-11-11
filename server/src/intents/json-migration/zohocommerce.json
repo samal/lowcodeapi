@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohocommerce__portaluser__userprofile___get": {
-      "provider_intent": "zohocommerce__portaluser__userprofile___get",
+    "zohocommerce__/portaluser/userprofile___GET": {
       "provider_alias_intent": "/portaluser/userprofile",
       "text": "Get User Profile",
       "category": "Account Dashboard",
@@ -111,15 +110,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/userProfile",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__userprofile___post": {
-      "provider_intent": "zohocommerce__portaluser__userprofile___post",
+    "zohocommerce__/portaluser/userprofile___POST": {
       "provider_alias_intent": "/portaluser/userprofile",
       "text": "Edit User Profile",
       "category": "Account Dashboard",
@@ -173,15 +169,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/userProfile ",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__changepassword___post": {
-      "provider_intent": "zohocommerce__portaluser__changepassword___post",
+    "zohocommerce__/portaluser/changepassword___POST": {
       "provider_alias_intent": "/portaluser/changepassword",
       "text": "Change Password",
       "category": "Account Dashboard",
@@ -235,15 +228,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/changePassword",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__address___get": {
-      "provider_intent": "zohocommerce__portaluser__address___get",
+    "zohocommerce__/portaluser/address___GET": {
       "provider_alias_intent": "/portaluser/address",
       "text": "Get Address Book",
       "category": "Address Book",
@@ -276,15 +266,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/address",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__address___post": {
-      "provider_intent": "zohocommerce__portaluser__address___post",
+    "zohocommerce__/portaluser/address___POST": {
       "provider_alias_intent": "/portaluser/address",
       "text": "Create Address Book",
       "category": "Address Book",
@@ -328,15 +315,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/address",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__address__address_id__default___post": {
-      "provider_intent": "zohocommerce__portaluser__address__address_id__default___post",
+    "zohocommerce__/portaluser/address/address_id/default___POST": {
       "provider_alias_intent": "/portaluser/address/address_id/default",
       "text": "Mark Address as Default",
       "category": "Address Book",
@@ -381,15 +365,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/address/{address_id}/default",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__address__address_id___delete": {
-      "provider_intent": "zohocommerce__portaluser__address__address_id___delete",
+    "zohocommerce__/portaluser/address/address_id___DELETE": {
       "provider_alias_intent": "/portaluser/address/address_id",
       "text": "Delete Address Book",
       "category": "Address Book",
@@ -434,15 +415,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/address/{address_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__portaluser__address__address_id___post": {
-      "provider_intent": "zohocommerce__portaluser__address__address_id___post",
+    "zohocommerce__/portaluser/address/address_id___POST": {
       "provider_alias_intent": "/portaluser/address/address_id",
       "text": "Update Address Book",
       "category": "Address Book",
@@ -498,15 +476,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/address/{address_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__storefront__api__v1__cart___post": {
-      "provider_intent": "zohocommerce__storefront__api__v1__cart___post",
+    "zohocommerce__/storefront/api/v1/cart___POST": {
       "provider_alias_intent": "/storefront/api/v1/cart",
       "text": "Add to Cart",
       "category": "Cart",
@@ -575,15 +550,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/cart",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__storefront__api__v1__cart___delete": {
-      "provider_intent": "zohocommerce__storefront__api__v1__cart___delete",
+    "zohocommerce__/storefront/api/v1/cart___DELETE": {
       "provider_alias_intent": "/storefront/api/v1/cart",
       "text": "Delete from Cart",
       "category": "Cart",
@@ -626,15 +598,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/cart",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__storefront__api__v1__cart___put": {
-      "provider_intent": "zohocommerce__storefront__api__v1__cart___put",
+    "zohocommerce__/storefront/api/v1/cart___PUT": {
       "provider_alias_intent": "/storefront/api/v1/cart",
       "text": "Update a Cart",
       "category": "Cart",
@@ -683,15 +652,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/cart",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__store__api__v1__categories___get": {
-      "provider_intent": "zohocommerce__store__api__v1__categories___get",
+    "zohocommerce__/store/api/v1/categories___GET": {
       "provider_alias_intent": "/store/api/v1/categories",
       "text": "List All Categories",
       "category": "Categories",
@@ -733,15 +699,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__store__api__v1__categories___post": {
-      "provider_intent": "zohocommerce__store__api__v1__categories___post",
+    "zohocommerce__/store/api/v1/categories___POST": {
       "provider_alias_intent": "/store/api/v1/categories",
       "text": "Create a Category",
       "category": "Categories",
@@ -821,15 +784,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__store__api__v1__categories__editpage___get": {
-      "provider_intent": "zohocommerce__store__api__v1__categories__editpage___get",
+    "zohocommerce__/store/api/v1/categories/editpage___GET": {
       "provider_alias_intent": "/store/api/v1/categories/editpage",
       "text": "Retrieve a Category",
       "category": "Categories",
@@ -868,15 +828,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ\r",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories/editpage",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.001Z"
     },
-    "zohocommerce__store__api__v1__categories___put": {
-      "provider_intent": "zohocommerce__store__api__v1__categories___put",
+    "zohocommerce__/store/api/v1/categories___PUT": {
       "provider_alias_intent": "/store/api/v1/categories",
       "text": "Update a Category",
       "category": "Categories",
@@ -954,15 +911,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__categories___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__categories___delete",
+    "zohocommerce__/store/api/v1/categories___DELETE": {
       "provider_alias_intent": "/store/api/v1/categories",
       "text": "Delete a Category",
       "category": "Categories",
@@ -1004,15 +958,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__categories__siblingorder___post": {
-      "provider_intent": "zohocommerce__store__api__v1__categories__siblingorder___post",
+    "zohocommerce__/store/api/v1/categories/siblingorder___POST": {
       "provider_alias_intent": "/store/api/v1/categories/siblingorder",
       "text": "Re-order Categories",
       "category": "Categories",
@@ -1051,15 +1002,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories//siblingorder",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__categories__images___post": {
-      "provider_intent": "zohocommerce__store__api__v1__categories__images___post",
+    "zohocommerce__/store/api/v1/categories/images___POST": {
       "provider_alias_intent": "/store/api/v1/categories/images",
       "text": "Add Category Image",
       "category": "Categories",
@@ -1102,15 +1050,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories//images",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__categories__images___put": {
-      "provider_intent": "zohocommerce__store__api__v1__categories__images___put",
+    "zohocommerce__/store/api/v1/categories/images___PUT": {
       "provider_alias_intent": "/store/api/v1/categories/images",
       "text": "Edit Category Image",
       "category": "Categories",
@@ -1152,15 +1097,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories//images",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__categories__documents___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__categories__documents___delete",
+    "zohocommerce__/store/api/v1/categories/documents___DELETE": {
       "provider_alias_intent": "/store/api/v1/categories/documents",
       "text": "Delete Category Image",
       "category": "Categories",
@@ -1193,15 +1135,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/categories//documents",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__checkout___get": {
-      "provider_intent": "zohocommerce__storefront__api__v1__checkout___get",
+    "zohocommerce__/storefront/api/v1/checkout___GET": {
       "provider_alias_intent": "/storefront/api/v1/checkout",
       "text": "Get Checkout",
       "category": "Checkout",
@@ -1240,15 +1179,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/checkout",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__checkout__address___post": {
-      "provider_intent": "zohocommerce__storefront__api__v1__checkout__address___post",
+    "zohocommerce__/storefront/api/v1/checkout/address___POST": {
       "provider_alias_intent": "/storefront/api/v1/checkout/address",
       "text": "Add Address",
       "category": "Checkout",
@@ -1334,15 +1270,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/checkout/address",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__checkout__shipping-methods___post": {
-      "provider_intent": "zohocommerce__storefront__api__v1__checkout__shipping-methods___post",
+    "zohocommerce__/storefront/api/v1/checkout/shipping-methods___POST": {
       "provider_alias_intent": "/storefront/api/v1/checkout/shipping-methods",
       "text": "Add Shipping Method",
       "category": "Checkout",
@@ -1387,15 +1320,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/checkout/shipping-methods",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__checkout__process-offline-payment___post": {
-      "provider_intent": "zohocommerce__storefront__api__v1__checkout__process-offline-payment___post",
+    "zohocommerce__/storefront/api/v1/checkout/process-offline-payment___POST": {
       "provider_alias_intent": "/storefront/api/v1/checkout/process-offline-payment",
       "text": "Place an Order",
       "category": "Checkout",
@@ -1439,15 +1369,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/checkout/process-offline-payment",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__checkout__applycoupon___post": {
-      "provider_intent": "zohocommerce__storefront__api__v1__checkout__applycoupon___post",
+    "zohocommerce__/storefront/api/v1/checkout/applycoupon___POST": {
       "provider_alias_intent": "/storefront/api/v1/checkout/applycoupon",
       "text": "Add or Remove Coupons",
       "category": "Checkout",
@@ -1491,15 +1418,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/checkout/applycoupon",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__coupons___get": {
-      "provider_intent": "zohocommerce__store__api__v1__coupons___get",
+    "zohocommerce__/store/api/v1/coupons___GET": {
       "provider_alias_intent": "/store/api/v1/coupons",
       "text": "List Coupons",
       "category": "Coupons",
@@ -1532,15 +1456,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.coupons.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/coupons",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__coupons__coupon_id___get": {
-      "provider_intent": "zohocommerce__store__api__v1__coupons__coupon_id___get",
+    "zohocommerce__/store/api/v1/coupons/coupon_id___GET": {
       "provider_alias_intent": "/store/api/v1/coupons/coupon_id",
       "text": "Get Coupon",
       "category": "Coupons",
@@ -1585,15 +1506,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.coupons.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/coupons/{coupon_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__coupons___post": {
-      "provider_intent": "zohocommerce__store__api__v1__coupons___post",
+    "zohocommerce__/store/api/v1/coupons___POST": {
       "provider_alias_intent": "/store/api/v1/coupons",
       "text": "Create Coupon",
       "category": "Coupons",
@@ -1683,15 +1601,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.coupons.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/coupons",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__coupons__coupon_id___put": {
-      "provider_intent": "zohocommerce__store__api__v1__coupons__coupon_id___put",
+    "zohocommerce__/store/api/v1/coupons/coupon_id___PUT": {
       "provider_alias_intent": "/store/api/v1/coupons/coupon_id",
       "text": "Update Coupon",
       "category": "Coupons",
@@ -1802,15 +1717,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.coupons.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/coupons/{coupon_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__coupons__coupon_id___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__coupons__coupon_id___delete",
+    "zohocommerce__/store/api/v1/coupons/coupon_id___DELETE": {
       "provider_alias_intent": "/store/api/v1/coupons/coupon_id",
       "text": "Delete Coupon",
       "category": "Coupons",
@@ -1855,15 +1767,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.coupons.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/coupons/{coupon_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__import__uploadfile___post": {
-      "provider_intent": "zohocommerce__store__api__v1__import__uploadfile___post",
+    "zohocommerce__/store/api/v1/import/uploadfile___POST": {
       "provider_alias_intent": "/store/api/v1/import/uploadfile",
       "text": "Upload Import File",
       "category": "Import Products",
@@ -1922,15 +1831,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.import.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/import/uploadfile",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__import__preview___put": {
-      "provider_intent": "zohocommerce__store__api__v1__import__preview___put",
+    "zohocommerce__/store/api/v1/import/preview___PUT": {
       "provider_alias_intent": "/store/api/v1/import/preview",
       "text": "Preview Imported File",
       "category": "Import Products",
@@ -1979,15 +1885,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.import.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/import//preview",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__import___put": {
-      "provider_intent": "zohocommerce__store__api__v1__import___put",
+    "zohocommerce__/store/api/v1/import___PUT": {
       "provider_alias_intent": "/store/api/v1/import",
       "text": "Import Products",
       "category": "Import Products",
@@ -2020,15 +1923,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.import.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/import",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__inventoryadjustments___post": {
-      "provider_intent": "zohocommerce__store__api__v1__inventoryadjustments___post",
+    "zohocommerce__/store/api/v1/inventoryadjustments___POST": {
       "provider_alias_intent": "/store/api/v1/inventoryadjustments",
       "text": "Manage Stock",
       "category": "Inventory",
@@ -2087,15 +1987,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.inventoryadjustments.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/inventoryadjustments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__products__product_id___get": {
-      "provider_intent": "zohocommerce__storefront__api__v1__products__product_id___get",
+    "zohocommerce__/storefront/api/v1/products/product_id___GET": {
       "provider_alias_intent": "/storefront/api/v1/products/product_id",
       "text": "Get Product",
       "category": "Listing",
@@ -2140,15 +2037,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/products/{product_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__categories__category_id___get": {
-      "provider_intent": "zohocommerce__storefront__api__v1__categories__category_id___get",
+    "zohocommerce__/storefront/api/v1/categories/category_id___GET": {
       "provider_alias_intent": "/storefront/api/v1/categories/category_id",
       "text": "Get Category",
       "category": "Listing",
@@ -2193,15 +2087,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/categories/{category_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__collections__collection_id___get": {
-      "provider_intent": "zohocommerce__storefront__api__v1__collections__collection_id___get",
+    "zohocommerce__/storefront/api/v1/collections/collection_id___GET": {
       "provider_alias_intent": "/storefront/api/v1/collections/collection_id",
       "text": "Get Collection",
       "category": "Listing",
@@ -2246,15 +2137,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/collections/{collection_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__storefront__api__v1__search-products___get": {
-      "provider_intent": "zohocommerce__storefront__api__v1__search-products___get",
+    "zohocommerce__/storefront/api/v1/search-products___GET": {
       "provider_alias_intent": "/storefront/api/v1/search-products",
       "text": "Search Product",
       "category": "Listing",
@@ -2293,15 +2181,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/storefront/api/v1/search-products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__portaluser__orders___get": {
-      "provider_intent": "zohocommerce__portaluser__orders___get",
+    "zohocommerce__/portaluser/orders___GET": {
       "provider_alias_intent": "/portaluser/orders",
       "text": "Get User Orders",
       "category": "My Orders",
@@ -2339,15 +2224,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/orders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__portaluser__orders__order_id___get": {
-      "provider_intent": "zohocommerce__portaluser__orders__order_id___get",
+    "zohocommerce__/portaluser/orders/order_id___GET": {
       "provider_alias_intent": "/portaluser/orders/order_id",
       "text": "Get Order Details",
       "category": "My Orders",
@@ -2392,15 +2274,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/orders/{order_id} ",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__portaluser__orders__returns___post": {
-      "provider_intent": "zohocommerce__portaluser__orders__returns___post",
+    "zohocommerce__/portaluser/orders/returns___POST": {
       "provider_alias_intent": "/portaluser/orders/returns",
       "text": "Cancel Order",
       "category": "My Orders",
@@ -2449,15 +2328,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/orders/returns",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__salesorders_id__payments___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__salesorders_id__payments___post",
+    "zohocommerce__/store/api/v1/salesorders/salesorders_id/payments___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/salesorders_id/payments",
       "text": "Mark as Paid",
       "category": "Payments",
@@ -2527,15 +2403,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.customerpayments.CREATE",
       "api_endpoint_src": "{endpoint}//store/api/v1/salesorders/{salesorders_id}/payments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__order_id__payments__payment_id___put": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__order_id__payments__payment_id___put",
+    "zohocommerce__/store/api/v1/salesorders/order_id/payments/payment_id___PUT": {
       "provider_alias_intent": "/store/api/v1/salesorders/order_id/payments/payment_id",
       "text": "Update Payment",
       "category": "Payments",
@@ -2615,15 +2488,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.customerpayments.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{order_id}/payments/{payment_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__salesorder_id__refund___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__salesorder_id__refund___post",
+    "zohocommerce__/store/api/v1/salesorders/salesorder_id/refund___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/salesorder_id/refund",
       "text": "Refund Payment",
       "category": "Payments",
@@ -2674,15 +2544,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{salesorder_id}/refund",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__portaluser__signupfields___get": {
-      "provider_intent": "zohocommerce__portaluser__signupfields___get",
+    "zohocommerce__/portaluser/signupfields___GET": {
       "provider_alias_intent": "/portaluser/signupfields",
       "text": "Get Signup Fields",
       "category": "Portal",
@@ -2715,15 +2582,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/signupfields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__signout___get": {
-      "provider_intent": "zohocommerce__signout___get",
+    "zohocommerce__/signout___GET": {
       "provider_alias_intent": "/signout",
       "text": "Signout",
       "category": "Portal",
@@ -2756,15 +2620,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/signout",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__portaluser__getcurrentportaluser___get": {
-      "provider_intent": "zohocommerce__portaluser__getcurrentportaluser___get",
+    "zohocommerce__/portaluser/getcurrentportaluser___GET": {
       "provider_alias_intent": "/portaluser/getcurrentportaluser",
       "text": "Get Current User",
       "category": "Portal",
@@ -2797,15 +2658,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/portaluser/getCurrentPortalUser",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products___get": {
-      "provider_intent": "zohocommerce__store__api__v1__products___get",
+    "zohocommerce__/store/api/v1/products___GET": {
       "provider_alias_intent": "/store/api/v1/products",
       "text": "List All Products",
       "category": "Products",
@@ -2859,15 +2717,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products___post": {
-      "provider_intent": "zohocommerce__store__api__v1__products___post",
+    "zohocommerce__/store/api/v1/products___POST": {
       "provider_alias_intent": "/store/api/v1/products",
       "text": "Create a Product with Variant",
       "category": "Products",
@@ -3116,15 +2971,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products__editpage___get": {
-      "provider_intent": "zohocommerce__store__api__v1__products__editpage___get",
+    "zohocommerce__/store/api/v1/products/editpage___GET": {
       "provider_alias_intent": "/store/api/v1/products/editpage",
       "text": "Product Details",
       "category": "Products",
@@ -3163,15 +3015,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/products/editpage",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products___put": {
-      "provider_intent": "zohocommerce__store__api__v1__products___put",
+    "zohocommerce__/store/api/v1/products___PUT": {
       "provider_alias_intent": "/store/api/v1/products",
       "text": "Update a Product",
       "category": "Products",
@@ -3425,15 +3274,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__products___delete",
+    "zohocommerce__/store/api/v1/products___DELETE": {
       "provider_alias_intent": "/store/api/v1/products",
       "text": "Delete a List of Products",
       "category": "Products",
@@ -3476,15 +3322,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products__images___post": {
-      "provider_intent": "zohocommerce__store__api__v1__products__images___post",
+    "zohocommerce__/store/api/v1/products/images___POST": {
       "provider_alias_intent": "/store/api/v1/products/images",
       "text": "Add Product Images",
       "category": "Products",
@@ -3523,15 +3366,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products//images",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products__images__reorder___post": {
-      "provider_intent": "zohocommerce__store__api__v1__products__images__reorder___post",
+    "zohocommerce__/store/api/v1/products/images/reorder___POST": {
       "provider_alias_intent": "/store/api/v1/products/images/reorder",
       "text": "Re-order Product Images",
       "category": "Products",
@@ -3580,15 +3420,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products//images/reorder",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__products__documents___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__products__documents___delete",
+    "zohocommerce__/store/api/v1/products/documents___DELETE": {
       "provider_alias_intent": "/store/api/v1/products/documents",
       "text": "Delete Product Image",
       "category": "Products",
@@ -3621,15 +3458,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/products//documents",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__export___get": {
-      "provider_intent": "zohocommerce__store__api__v1__export___get",
+    "zohocommerce__/store/api/v1/export___GET": {
       "provider_alias_intent": "/store/api/v1/export",
       "text": "Export Products",
       "category": "Products",
@@ -3693,15 +3527,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.export.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/export",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders___get": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders___get",
+    "zohocommerce__/store/api/v1/salesorders___GET": {
       "provider_alias_intent": "/store/api/v1/salesorders",
       "text": "List All Sales Orders",
       "category": "Sales Orders",
@@ -3755,15 +3586,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__order_id___get": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__order_id___get",
+    "zohocommerce__/store/api/v1/salesorders/order_id___GET": {
       "provider_alias_intent": "/store/api/v1/salesorders/order_id",
       "text": "Retrieve a Sales Order",
       "category": "Sales Orders",
@@ -3808,15 +3636,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/order_id",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__salesorder_id__status__status___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__salesorder_id__status__status___post",
+    "zohocommerce__/store/api/v1/salesorders/salesorder_id/status/status___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/salesorder_id/status/status",
       "text": "Update Status",
       "category": "Sales Orders",
@@ -3871,15 +3696,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{salesorder_id}/status/{status}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__salesorder_id__comments___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__salesorder_id__comments___post",
+    "zohocommerce__/store/api/v1/salesorders/salesorder_id/comments___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/salesorder_id/comments",
       "text": "Add Comments",
       "category": "Sales Orders",
@@ -3951,15 +3773,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{salesorder_id}/comments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__order_id__address__address_type___put": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__order_id__address__address_type___put",
+    "zohocommerce__/store/api/v1/salesorders/order_id/address/address_type___PUT": {
       "provider_alias_intent": "/store/api/v1/salesorders/order_id/address/address_type",
       "text": "Update Address",
       "category": "Sales Orders",
@@ -4054,15 +3873,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesorders.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{order_id}/address/{address_type}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesreturns___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesreturns___post",
+    "zohocommerce__/store/api/v1/salesreturns___POST": {
       "provider_alias_intent": "/store/api/v1/salesreturns",
       "text": "Create a Sales Return",
       "category": "Sales Return",
@@ -4116,15 +3932,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesreturns.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesreturns",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesreturns__salesreturn_id__status__salesreturn_status___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesreturns__salesreturn_id__status__salesreturn_status___post",
+    "zohocommerce__/store/api/v1/salesreturns/salesreturn_id/status/salesreturn_status___POST": {
       "provider_alias_intent": "/store/api/v1/salesreturns/salesreturn_id/status/salesreturn_status",
       "text": "Change Status",
       "category": "Sales Return",
@@ -4192,15 +4005,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesreturns.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesreturns/{salesreturn_id}/status/{salesreturn_status}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesreturn__salesreturn_id__refund___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesreturn__salesreturn_id__refund___post",
+    "zohocommerce__/store/api/v1/salesreturn/salesreturn_id/refund___POST": {
       "provider_alias_intent": "/store/api/v1/salesreturn/salesreturn_id/refund",
       "text": "Refund a Sales Return",
       "category": "Sales Return",
@@ -4271,15 +4081,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.salesreturns.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesreturn/{salesreturn_id}/refund",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__order_id__shipmentorders__delivered___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__order_id__shipmentorders__delivered___post",
+    "zohocommerce__/store/api/v1/salesorders/order_id/shipmentorders/delivered___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/order_id/shipmentorders/delivered",
       "text": "Mark as Delivered",
       "category": "Shipment Orders",
@@ -4330,15 +4137,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.shipmentorders.CREATE",
       "api_endpoint_src": "{endpoint}/{endpoint}/store/api/v1/salesorders/{order_id}/shipmentorders/delivered",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__order_id__shipmentorders__shipped___post": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__order_id__shipmentorders__shipped___post",
+    "zohocommerce__/store/api/v1/salesorders/order_id/shipmentorders/shipped___POST": {
       "provider_alias_intent": "/store/api/v1/salesorders/order_id/shipmentorders/shipped",
       "text": "Mark as Shipped",
       "category": "Shipment Orders",
@@ -4407,15 +4211,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.shipmentorders.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{order_id}/shipmentorders/shipped",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__salesorders__salesorder_id__shipmentorders___put": {
-      "provider_intent": "zohocommerce__store__api__v1__salesorders__salesorder_id__shipmentorders___put",
+    "zohocommerce__/store/api/v1/salesorders/salesorder_id/shipmentorders___PUT": {
       "provider_alias_intent": "/store/api/v1/salesorders/salesorder_id/shipmentorders",
       "text": "Update a Shipment Order",
       "category": "Shipment Orders",
@@ -4489,15 +4290,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.shipmentorders.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/salesorders/{salesorder_id}/shipmentorders",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxrules___post": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxrules___post",
+    "zohocommerce__/store/api/v1/settings/taxrules___POST": {
       "provider_alias_intent": "/store/api/v1/settings/taxrules",
       "text": "Create a Tax",
       "category": "Taxes",
@@ -4555,15 +4353,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxrules",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxrules__tax_id___put": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxrules__tax_id___put",
+    "zohocommerce__/store/api/v1/settings/taxrules/tax_id___PUT": {
       "provider_alias_intent": "/store/api/v1/settings/taxrules/tax_id",
       "text": "Update a Tax",
       "category": "Taxes",
@@ -4608,15 +4403,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxrules/{tax_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxrules__tax_id___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxrules__tax_id___delete",
+    "zohocommerce__/store/api/v1/settings/taxrules/tax_id___DELETE": {
       "provider_alias_intent": "/store/api/v1/settings/taxrules/tax_id",
       "text": "Delete a Tax",
       "category": "Taxes",
@@ -4661,15 +4453,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxrules/{tax_id}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxrules___get": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxrules___get",
+    "zohocommerce__/store/api/v1/settings/taxrules___GET": {
       "provider_alias_intent": "/store/api/v1/settings/taxrules",
       "text": "List Taxes",
       "category": "Taxes",
@@ -4702,15 +4491,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxrules",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxpreferences___put": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxpreferences___put",
+    "zohocommerce__/store/api/v1/settings/taxpreferences___PUT": {
       "provider_alias_intent": "/store/api/v1/settings/taxpreferences",
       "text": "Update Tax Preferences",
       "category": "Taxes",
@@ -4743,15 +4529,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxpreferences",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__settings__taxpreferences___get": {
-      "provider_intent": "zohocommerce__store__api__v1__settings__taxpreferences___get",
+    "zohocommerce__/store/api/v1/settings/taxpreferences___GET": {
       "provider_alias_intent": "/store/api/v1/settings/taxpreferences",
       "text": "Get Tax Preferences",
       "category": "Taxes",
@@ -4784,15 +4567,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.settings.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/settings/taxpreferences",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__variants___get": {
-      "provider_intent": "zohocommerce__store__api__v1__variants___get",
+    "zohocommerce__/store/api/v1/variants___GET": {
       "provider_alias_intent": "/store/api/v1/variants",
       "text": "List All Variants",
       "category": "Variants",
@@ -4854,15 +4634,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/variants",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__variants___post": {
-      "provider_intent": "zohocommerce__store__api__v1__variants___post",
+    "zohocommerce__/store/api/v1/variants___POST": {
       "provider_alias_intent": "/store/api/v1/variants",
       "text": "Create a Variant",
       "category": "Variants",
@@ -5005,15 +4782,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.CREATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/variants",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__variants__variant_id___get": {
-      "provider_intent": "zohocommerce__store__api__v1__variants__variant_id___get",
+    "zohocommerce__/store/api/v1/variants/variant_id___GET": {
       "provider_alias_intent": "/store/api/v1/variants/variant_id",
       "text": "Variant Details",
       "category": "Variants",
@@ -5058,15 +4832,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.READ",
       "api_endpoint_src": "{endpoint}/store/api/v1/variants/<variant_id>",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__variants___put": {
-      "provider_intent": "zohocommerce__store__api__v1__variants___put",
+    "zohocommerce__/store/api/v1/variants___PUT": {
       "provider_alias_intent": "/store/api/v1/variants",
       "text": "Update a Variant",
       "category": "Variants",
@@ -5208,15 +4979,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.UPDATE",
       "api_endpoint_src": "{endpoint}/store/api/v1/variants",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     },
-    "zohocommerce__store__api__v1__variants___delete": {
-      "provider_intent": "zohocommerce__store__api__v1__variants___delete",
+    "zohocommerce__/store/api/v1/variants___DELETE": {
       "provider_alias_intent": "/store/api/v1/variants",
       "text": "Delete a Variant",
       "category": "Variants",
@@ -5249,12 +5017,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoCommerce.items.DELETE",
       "api_endpoint_src": "{endpoint}/store/api/v1/variants",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.002Z"
     }
   }
 }

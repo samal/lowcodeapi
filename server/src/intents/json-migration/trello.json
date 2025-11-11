@@ -45,8 +45,7 @@
     "credential_link": "https://trello.com/power-ups/admin"
   },
   "routes": {
-    "getBoardsMemberships": {
-      "provider_intent": "getBoardsMemberships",
+    "trello__/1/boards/id/memberships___GET": {
       "provider_alias_intent": "/1/boards/id/memberships",
       "text": "Get Memberships of a Board",
       "category": "Board",
@@ -120,14 +119,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsMemberships",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoard": {
-      "provider_intent": "getBoard",
+    "trello__/1/boards/id___GET": {
       "provider_alias_intent": "/1/boards/id",
       "text": "Get a Board",
       "category": "Board",
@@ -263,14 +259,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateBoard": {
-      "provider_intent": "updateBoard",
+    "trello__/1/boards/id___PUT": {
       "provider_alias_intent": "/1/boards/id",
       "text": "Update a Board",
       "category": "Board",
@@ -435,14 +428,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteBoard": {
-      "provider_intent": "deleteBoard",
+    "trello__/1/boards/id___DELETE": {
       "provider_alias_intent": "/1/boards/id",
       "text": "Delete a Board",
       "category": "Board",
@@ -487,14 +477,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsField": {
-      "provider_intent": "getBoardsField",
+    "trello__/1/boards/id/field___GET": {
       "provider_alias_intent": "/1/boards/id/field",
       "text": "Get a field on a Board",
       "category": "Board",
@@ -549,14 +536,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsActions": {
-      "provider_intent": "getBoardsActions",
+    "trello__/1/boards/id/actions___GET": {
       "provider_alias_intent": "/1/boards/id/actions",
       "text": "Get Actions of a Board",
       "category": "Board",
@@ -597,14 +581,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsCard": {
-      "provider_intent": "getBoardsCard",
+    "trello__/1/boards/id/cards/idcard___GET": {
       "provider_alias_intent": "/1/boards/id/cards/idcard",
       "text": "Get a Card on a Board",
       "category": "Board",
@@ -653,14 +634,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsStars": {
-      "provider_intent": "getBoardsStars",
+    "trello__/1/boards/id/boardstars___GET": {
       "provider_alias_intent": "/1/boards/id/boardstars",
       "text": "Get boardStars on a Board",
       "category": "Board",
@@ -705,14 +683,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsStars",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsChecklists": {
-      "provider_intent": "getBoardsChecklists",
+    "trello__/1/boards/id/checklists___GET": {
       "provider_alias_intent": "/1/boards/id/checklists",
       "text": "Get Checklists on a Board",
       "category": "Board",
@@ -749,14 +724,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsCards": {
-      "provider_intent": "getBoardsCards",
+    "trello__/1/boards/id/cards___GET": {
       "provider_alias_intent": "/1/boards/id/cards",
       "text": "Get Cards on a Board",
       "category": "Board",
@@ -793,14 +765,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsCards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsCardsfilter": {
-      "provider_intent": "getBoardsCardsfilter",
+    "trello__/1/boards/id/cards/filter___GET": {
       "provider_alias_intent": "/1/boards/id/cards/filter",
       "text": "Get filtered Cards on a Board",
       "category": "Board",
@@ -855,14 +824,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsCardsfilter",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsCustomFields": {
-      "provider_intent": "getBoardsCustomFields",
+    "trello__/1/boards/id/customfields___GET": {
       "provider_alias_intent": "/1/boards/id/customfields",
       "text": "Get Custom Fields for Board",
       "category": "Board",
@@ -901,14 +867,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsCustomFields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsLabels": {
-      "provider_intent": "getBoardsLabels",
+    "trello__/1/boards/id/labels___GET": {
       "provider_alias_intent": "/1/boards/id/labels",
       "text": "Get Labels on a Board",
       "category": "Board",
@@ -954,14 +917,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createBoardsLabel": {
-      "provider_intent": "createBoardsLabel",
+    "trello__/1/boards/id/labels___POST": {
       "provider_alias_intent": "/1/boards/id/labels",
       "text": "Create a Label on a Board",
       "category": "Board",
@@ -1011,14 +971,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createBoardsLabel",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsLists": {
-      "provider_intent": "getBoardsLists",
+    "trello__/1/boards/id/lists___GET": {
       "provider_alias_intent": "/1/boards/id/lists",
       "text": "Get Lists on a Board",
       "category": "Board",
@@ -1073,14 +1030,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsLists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createBoardsList": {
-      "provider_intent": "createBoardsList",
+    "trello__/1/boards/id/lists___POST": {
       "provider_alias_intent": "/1/boards/id/lists",
       "text": "Create a List on a Board",
       "category": "Board",
@@ -1133,14 +1087,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createBoardsList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsListsFilter": {
-      "provider_intent": "getBoardsListsFilter",
+    "trello__/1/boards/id/lists/filter___GET": {
       "provider_alias_intent": "/1/boards/id/lists/filter",
       "text": "Get filtered Lists on a Board",
       "category": "Board",
@@ -1187,14 +1138,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsListsFilter",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsMembers": {
-      "provider_intent": "getBoardsMembers",
+    "trello__/1/boards/id/members___GET": {
       "provider_alias_intent": "/1/boards/id/members",
       "text": "Get the Members of a Board",
       "category": "Board",
@@ -1233,14 +1181,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "inviteBoardsMemberByEmail": {
-      "provider_intent": "inviteBoardsMemberByEmail",
+    "trello__/1/boards/id/members___PUT": {
       "provider_alias_intent": "/1/boards/id/members",
       "text": "Invite Member to Board via email",
       "category": "Board",
@@ -1301,14 +1246,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "inviteBoardsMemberByEmail",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "inviteBoardsMember": {
-      "provider_intent": "inviteBoardsMember",
+    "trello__/1/boards/id/members/idmember___PUT": {
       "provider_alias_intent": "/1/boards/id/members/idmember",
       "text": "Add a Member to a Board",
       "category": "Board",
@@ -1386,14 +1328,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "inviteBoardsMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "removeBoardsMember": {
-      "provider_intent": "removeBoardsMember",
+    "trello__/1/boards/id/members/idmember___DELETE": {
       "provider_alias_intent": "/1/boards/id/members/idmember",
       "text": "Remove Member from Board",
       "category": "Board",
@@ -1454,14 +1393,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "removeBoardsMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateBoardsMembership": {
-      "provider_intent": "updateBoardsMembership",
+    "trello__/1/boards/id/memberships/idmembership___PUT": {
       "provider_alias_intent": "/1/boards/id/memberships/idmembership",
       "text": "Update Membership of Member on a Board",
       "category": "Board",
@@ -1541,14 +1477,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateBoardsMembership",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsEmailPosition": {
-      "provider_intent": "putBoardsMyPrefsEmailPosition",
+    "trello__/1/boards/id/myprefs/emailposition___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/emailposition",
       "text": "Update emailPosition Pref on a Board",
       "category": "Board",
@@ -1602,14 +1535,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsEmailPosition",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsIdEmailList": {
-      "provider_intent": "putBoardsMyPrefsIdEmailList",
+    "trello__/1/boards/id/myprefs/idemaillist___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/idemaillist",
       "text": "Update idEmailList Pref on a Board",
       "category": "Board",
@@ -1663,14 +1593,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsIdEmailList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsShowListGuide": {
-      "provider_intent": "putBoardsMyPrefsShowListGuide",
+    "trello__/1/boards/id/myprefs/showlistguide___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/showlistguide",
       "text": "Update showListGuide Pref on a Board",
       "category": "Board",
@@ -1725,14 +1652,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsShowListGuide",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsShowSidebar": {
-      "provider_intent": "putBoardsMyPrefsShowSidebar",
+    "trello__/1/boards/id/myprefs/showsidebar___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/showsidebar",
       "text": "Update showSidebar Pref on a Board",
       "category": "Board",
@@ -1787,14 +1711,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsShowSidebar",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsShowSidebarActivity": {
-      "provider_intent": "putBoardsMyPrefsShowSidebarActivity",
+    "trello__/1/boards/id/myprefs/showsidebaractivity___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/showsidebaractivity",
       "text": "Update showSidebarActivity Pref on a Board",
       "category": "Board",
@@ -1849,14 +1770,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsShowSidebarActivity",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsShowSidebarBoardActions": {
-      "provider_intent": "putBoardsMyPrefsShowSidebarBoardActions",
+    "trello__/1/boards/id/myprefs/showsidebarboardactions___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/showsidebarboardactions",
       "text": "Update showSidebarBoardActions Pref on a Board",
       "category": "Board",
@@ -1911,14 +1829,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsShowSidebarBoardActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putBoardsMyPrefsShowSidebarMembers": {
-      "provider_intent": "putBoardsMyPrefsShowSidebarMembers",
+    "trello__/1/boards/id/myprefs/showsidebarmembers___PUT": {
       "provider_alias_intent": "/1/boards/id/myprefs/showsidebarmembers",
       "text": "Update showSidebarMembers Pref on a Board",
       "category": "Board",
@@ -1973,14 +1888,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putBoardsMyPrefsShowSidebarMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createBoard": {
-      "provider_intent": "createBoard",
+    "trello__/1/boards___POST": {
       "provider_alias_intent": "/1/boards",
       "text": "Create a Board",
       "category": "Board",
@@ -2113,14 +2025,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createCalaendarKeyForBoard": {
-      "provider_intent": "createCalaendarKeyForBoard",
+    "trello__/1/boards/id/calendarkey/generate___POST": {
       "provider_alias_intent": "/1/boards/id/calendarkey/generate",
       "text": "Create a calendarKey for a Board",
       "category": "Board",
@@ -2165,14 +2074,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createCalaendarKeyForBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createEmailKeyForBoard": {
-      "provider_intent": "createEmailKeyForBoard",
+    "trello__/1/boards/id/emailkey/generate___POST": {
       "provider_alias_intent": "/1/boards/id/emailkey/generate",
       "text": "Create a emailKey for a Board",
       "category": "Board",
@@ -2217,14 +2123,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createEmailKeyForBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createBoardsIdTag": {
-      "provider_intent": "createBoardsIdTag",
+    "trello__/1/boards/id/idtags___POST": {
       "provider_alias_intent": "/1/boards/id/idtags",
       "text": "Create a Tag for a Board",
       "category": "Board",
@@ -2278,14 +2181,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createBoardsIdTag",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postBoardsMarkedAsViewed": {
-      "provider_intent": "postBoardsMarkedAsViewed",
+    "trello__/1/boards/id/markedasviewed___POST": {
       "provider_alias_intent": "/1/boards/id/markedasviewed",
       "text": "Mark Board as viewed",
       "category": "Board",
@@ -2330,14 +2230,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postBoardsMarkedAsViewed",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBoardsBoardPlugins": {
-      "provider_intent": "getBoardsBoardPlugins",
+    "trello__/1/boards/id/boardplugins___GET": {
       "provider_alias_intent": "/1/boards/id/boardplugins",
       "text": "Get Enabled Power-Ups on Board",
       "category": "Board",
@@ -2376,14 +2273,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBoardsBoardPlugins",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "listBoardsBoardPlugins": {
-      "provider_intent": "listBoardsBoardPlugins",
+    "trello__/1/boards/id/plugins___GET": {
       "provider_alias_intent": "/1/boards/id/plugins",
       "text": "Get Power-Ups on a Board",
       "category": "Board",
@@ -2429,14 +2323,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "listBoardsBoardPlugins",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getList": {
-      "provider_intent": "getList",
+    "trello__/1/lists/id___GET": {
       "provider_alias_intent": "/1/lists/id",
       "text": "Get a List",
       "category": "Lists",
@@ -2485,14 +2376,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putList": {
-      "provider_intent": "putList",
+    "trello__/1/lists/id___PUT": {
       "provider_alias_intent": "/1/lists/id",
       "text": "Update a List",
       "category": "Lists",
@@ -2562,14 +2450,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postList": {
-      "provider_intent": "postList",
+    "trello__/1/lists___POST": {
       "provider_alias_intent": "/1/lists",
       "text": "Create a new List",
       "category": "Lists",
@@ -2615,14 +2500,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postListsArchiveAllCards": {
-      "provider_intent": "postListsArchiveAllCards",
+    "trello__/1/lists/id/archiveallcards___POST": {
       "provider_alias_intent": "/1/lists/id/archiveallcards",
       "text": "Archive all Cards in List",
       "category": "Lists",
@@ -2661,14 +2543,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postListsArchiveAllCards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postListsMoveAllCards": {
-      "provider_intent": "postListsMoveAllCards",
+    "trello__/1/lists/id/moveallcards___POST": {
       "provider_alias_intent": "/1/lists/id/moveallcards",
       "text": "Move all Cards in List",
       "category": "Lists",
@@ -2718,14 +2597,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postListsMoveAllCards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putListsClosed": {
-      "provider_intent": "putListsClosed",
+    "trello__/1/lists/id/closed___PUT": {
       "provider_alias_intent": "/1/lists/id/closed",
       "text": "Archive or unarchive a list",
       "category": "Lists",
@@ -2769,14 +2645,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putListsClosed",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putListsIdBoard": {
-      "provider_intent": "putListsIdBoard",
+    "trello__/1/lists/id/idboard___PUT": {
       "provider_alias_intent": "/1/lists/id/idboard",
       "text": "Move List to Board",
       "category": "Lists",
@@ -2821,14 +2694,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putListsIdBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putListsField": {
-      "provider_intent": "putListsField",
+    "trello__/1/lists/id/field___PUT": {
       "provider_alias_intent": "/1/lists/id/field",
       "text": "Update a field on a List",
       "category": "Lists",
@@ -2882,14 +2752,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putListsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getListsActions": {
-      "provider_intent": "getListsActions",
+    "trello__/1/lists/id/actions___GET": {
       "provider_alias_intent": "/1/lists/id/actions",
       "text": "Get Actions for a List",
       "category": "Lists",
@@ -2932,14 +2799,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getListsActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getListsBoard": {
-      "provider_intent": "getListsBoard",
+    "trello__/1/lists/id/board___GET": {
       "provider_alias_intent": "/1/lists/id/board",
       "text": "Get the Board a List is on",
       "category": "Lists",
@@ -2986,14 +2850,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getListsBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsOnList": {
-      "provider_intent": "getCardsOnList",
+    "trello__/1/lists/id/cards___GET": {
       "provider_alias_intent": "/1/lists/id/cards",
       "text": "Get Cards in a List",
       "category": "Lists",
@@ -3032,14 +2893,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsOnList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createCard": {
-      "provider_intent": "createCard",
+    "trello__/1/cards___POST": {
       "provider_alias_intent": "/1/cards",
       "text": "Create a new Card",
       "category": "Card",
@@ -3141,14 +2999,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCard": {
-      "provider_intent": "getCard",
+    "trello__/1/cards/id___GET": {
       "provider_alias_intent": "/1/cards/id",
       "text": "Get a Card",
       "category": "Card",
@@ -3312,14 +3167,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateCard": {
-      "provider_intent": "updateCard",
+    "trello__/1/cards/id___PUT": {
       "provider_alias_intent": "/1/cards/id",
       "text": "Update a Card",
       "category": "Card",
@@ -3446,14 +3298,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCard": {
-      "provider_intent": "deleteCard",
+    "trello__/1/cards/id___DELETE": {
       "provider_alias_intent": "/1/cards/id",
       "text": "Delete a Card",
       "category": "Card",
@@ -3492,14 +3341,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsField": {
-      "provider_intent": "getCardsField",
+    "trello__/1/cards/id/field___GET": {
       "provider_alias_intent": "/1/cards/id/field",
       "text": "Get a field on a Card",
       "category": "Card",
@@ -3548,14 +3394,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsActions": {
-      "provider_intent": "getCardsActions",
+    "trello__/1/cards/id/actions___GET": {
       "provider_alias_intent": "/1/cards/id/actions",
       "text": "Get Actions on a Card",
       "category": "Card",
@@ -3602,14 +3445,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsAttachments": {
-      "provider_intent": "getCardsAttachments",
+    "trello__/1/cards/id/attachments___GET": {
       "provider_alias_intent": "/1/cards/id/attachments",
       "text": "Get Attachments on a Card",
       "category": "Card",
@@ -3660,14 +3500,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsAttachments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createCardsAttachment": {
-      "provider_intent": "createCardsAttachment",
+    "trello__/1/cards/id/attachments___POST": {
       "provider_alias_intent": "/1/cards/id/attachments",
       "text": "Create Attachment On Card 🚧",
       "category": "Card",
@@ -3736,14 +3573,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "createCardsAttachment",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsAttachment": {
-      "provider_intent": "getCardsAttachment",
+    "trello__/1/cards/id/attachments/idattachment___GET": {
       "provider_alias_intent": "/1/cards/id/attachments/idattachment",
       "text": "Get an Attachment on a Card",
       "category": "Card",
@@ -3796,14 +3630,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsAttachment",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCardsAttachment": {
-      "provider_intent": "deleteCardsAttachment",
+    "trello__/1/cards/id/attachments/idattachment___DELETE": {
       "provider_alias_intent": "/1/cards/id/attachments/idattachment",
       "text": "Delete an Attachment on a Card",
       "category": "Card",
@@ -3852,14 +3683,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCardsAttachment",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsBoard": {
-      "provider_intent": "getCardsBoard",
+    "trello__/1/cards/id/board___GET": {
       "provider_alias_intent": "/1/cards/id/board",
       "text": "Get the Board the Card is on",
       "category": "Card",
@@ -3902,14 +3730,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsCheckItemStates": {
-      "provider_intent": "getCardsCheckItemStates",
+    "trello__/1/cards/id/checkitemstates___GET": {
       "provider_alias_intent": "/1/cards/id/checkitemstates",
       "text": "Get checkItems on a Card",
       "category": "Card",
@@ -3955,14 +3780,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsCheckItemStates",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsChecklists": {
-      "provider_intent": "getCardsChecklists",
+    "trello__/1/cards/id/checklists___GET": {
       "provider_alias_intent": "/1/cards/id/checklists",
       "text": "Get Checklists on a Card",
       "category": "Card",
@@ -4026,14 +3848,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createCardsChecklist": {
-      "provider_intent": "createCardsChecklist",
+    "trello__/1/cards/id/checklists___POST": {
       "provider_alias_intent": "/1/cards/id/checklists",
       "text": "Create Checklist on a Card",
       "category": "Card",
@@ -4091,14 +3910,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createCardsChecklist",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsCheckItem": {
-      "provider_intent": "getCardsCheckItem",
+    "trello__/1/cards/id/checkitem/idcheckitem___GET": {
       "provider_alias_intent": "/1/cards/id/checkitem/idcheckitem",
       "text": "Get checkItem on a Card",
       "category": "Card",
@@ -4151,14 +3967,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateCardsCheckItem": {
-      "provider_intent": "updateCardsCheckItem",
+    "trello__/1/cards/id/checkitem/idcheckitem___PUT": {
       "provider_alias_intent": "/1/cards/id/checkitem/idcheckitem",
       "text": "Update a checkItem on a Card",
       "category": "Card",
@@ -4236,14 +4049,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateCardsCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCardsCheckItem": {
-      "provider_intent": "deleteCardsCheckItem",
+    "trello__/1/cards/id/checkitem/idcheckitem___DELETE": {
       "provider_alias_intent": "/1/cards/id/checkitem/idcheckitem",
       "text": "Delete checkItem on a Card",
       "category": "Card",
@@ -4292,14 +4102,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCardsCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsList": {
-      "provider_intent": "getCardsList",
+    "trello__/1/cards/id/list___GET": {
       "provider_alias_intent": "/1/cards/id/list",
       "text": "Get the List of a Card",
       "category": "Card",
@@ -4342,14 +4149,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsMembers": {
-      "provider_intent": "getCardsMembers",
+    "trello__/1/cards/id/members___GET": {
       "provider_alias_intent": "/1/cards/id/members",
       "text": "Get the Members of a Card",
       "category": "Card",
@@ -4392,14 +4196,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsMembersVoted": {
-      "provider_intent": "getCardsMembersVoted",
+    "trello__/1/cards/id/membersvoted___GET": {
       "provider_alias_intent": "/1/cards/id/membersvoted",
       "text": "Get Members who have voted on a Card",
       "category": "Card",
@@ -4442,14 +4243,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsMembersVoted",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postCardsMembersVoted": {
-      "provider_intent": "postCardsMembersVoted",
+    "trello__/1/cards/id/membersvoted___POST": {
       "provider_alias_intent": "/1/cards/id/membersvoted",
       "text": "Add Member vote to Card",
       "category": "Card",
@@ -4497,14 +4295,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postCardsMembersVoted",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsPluginData": {
-      "provider_intent": "getCardsPluginData",
+    "trello__/1/cards/id/plugindata___GET": {
       "provider_alias_intent": "/1/cards/id/plugindata",
       "text": "Get pluginData on a Card",
       "category": "Card",
@@ -4549,14 +4344,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsPluginData",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsStickers": {
-      "provider_intent": "getCardsStickers",
+    "trello__/1/cards/id/stickers___GET": {
       "provider_alias_intent": "/1/cards/id/stickers",
       "text": "Get Stickers on a Card",
       "category": "Card",
@@ -4599,14 +4391,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsStickers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postCardsStickers": {
-      "provider_intent": "postCardsStickers",
+    "trello__/1/cards/id/stickers___POST": {
       "provider_alias_intent": "/1/cards/id/stickers",
       "text": "Add a Sticker to a Card",
       "category": "Card",
@@ -4670,14 +4459,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postCardsStickers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsSticker": {
-      "provider_intent": "getCardsSticker",
+    "trello__/1/cards/id/stickers/idsticker___GET": {
       "provider_alias_intent": "/1/cards/id/stickers/idsticker",
       "text": "Get a Sticker on a Card",
       "category": "Card",
@@ -4730,14 +4516,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsSticker",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateCardsSticker": {
-      "provider_intent": "updateCardsSticker",
+    "trello__/1/cards/id/stickers/idsticker___PUT": {
       "provider_alias_intent": "/1/cards/id/stickers/idsticker",
       "text": "Update a Sticker on a Card",
       "category": "Card",
@@ -4806,14 +4589,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateCardsSticker",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCardsSticker": {
-      "provider_intent": "deleteCardsSticker",
+    "trello__/1/cards/id/stickers/idsticker___DELETE": {
       "provider_alias_intent": "/1/cards/id/stickers/idsticker",
       "text": "Delete a Sticker on a Card",
       "category": "Card",
@@ -4862,14 +4642,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCardsSticker",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putCardsActionsComments": {
-      "provider_intent": "putCardsActionsComments",
+    "trello__/1/cards/id/actions/idaction/comments___PUT": {
       "provider_alias_intent": "/1/cards/id/actions/idaction/comments",
       "text": "Update Comment Action on a Card",
       "category": "Card",
@@ -4930,14 +4707,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putCardsActionsComments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCardsActionsComments": {
-      "provider_intent": "deleteCardsActionsComments",
+    "trello__/1/cards/id/actions/idaction/comments___DELETE": {
       "provider_alias_intent": "/1/cards/id/actions/idaction/comments",
       "text": "Delete a comment on a Card",
       "category": "Card",
@@ -4986,14 +4760,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCardsActionsComments",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putCardsCustomFieldItem": {
-      "provider_intent": "putCardsCustomFieldItem",
+    "trello__/1/cards/idcard/customfield/idcustomfield/item___PUT": {
       "provider_alias_intent": "/1/cards/idcard/customfield/idcustomfield/item",
       "text": "Update Custom Field item on Card",
       "category": "Card",
@@ -5042,14 +4813,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putCardsCustomFieldItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCardsCustomFieldItems": {
-      "provider_intent": "getCardsCustomFieldItems",
+    "trello__/1/cards/id/customfielditems___GET": {
       "provider_alias_intent": "/1/cards/id/customfielditems",
       "text": "Get Custom Field Items for a Card",
       "category": "Card",
@@ -5088,14 +4856,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCardsCustomFieldItems",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "AddNewCommentToCard": {
-      "provider_intent": "AddNewCommentToCard",
+    "trello__/1/cards/id/actions/comments___POST": {
       "provider_alias_intent": "/1/cards/id/actions/comments",
       "text": "Add a new comment to a Card",
       "category": "Card",
@@ -5140,14 +4905,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "AddNewCommentToCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "AddLabelToCard": {
-      "provider_intent": "AddLabelToCard",
+    "trello__/1/cards/id/idlabels___POST": {
       "provider_alias_intent": "/1/cards/id/idlabels",
       "text": "Add a Label to a Card",
       "category": "Card",
@@ -5194,14 +4956,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "AddLabelToCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "AddMemberToCard": {
-      "provider_intent": "AddMemberToCard",
+    "trello__/1/cards/id/idmembers___POST": {
       "provider_alias_intent": "/1/cards/id/idmembers",
       "text": "Add a Member to a Card",
       "category": "Card",
@@ -5248,14 +5007,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "AddMemberToCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "createCardsLabel": {
-      "provider_intent": "createCardsLabel",
+    "trello__/1/cards/id/labels___POST": {
       "provider_alias_intent": "/1/cards/id/labels",
       "text": "Create a new Label on a Card",
       "category": "Card",
@@ -5304,14 +5060,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "createCardsLabel",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postCardsMarkAssociatedNotificationsRead": {
-      "provider_intent": "postCardsMarkAssociatedNotificationsRead",
+    "trello__/1/cards/id/markassociatednotificationsread___POST": {
       "provider_alias_intent": "/1/cards/id/markassociatednotificationsread",
       "text": "Mark a Card's Notifications as read",
       "category": "Card",
@@ -5350,14 +5103,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postCardsMarkAssociatedNotificationsRead",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "removeCardsIdLabels": {
-      "provider_intent": "removeCardsIdLabels",
+    "trello__/1/cards/id/idlabels/idlabel___DELETE": {
       "provider_alias_intent": "/1/cards/id/idlabels/idlabel",
       "text": "Remove a Label from a Card",
       "category": "Card",
@@ -5406,14 +5156,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "removeCardsIdLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "removeCardsIdMembers": {
-      "provider_intent": "removeCardsIdMembers",
+    "trello__/1/cards/id/idmembers/idmember___DELETE": {
       "provider_alias_intent": "/1/cards/id/idmembers/idmember",
       "text": "Remove a Member from a Card",
       "category": "Card",
@@ -5462,14 +5209,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "removeCardsIdMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "removeCardsMembersVoted": {
-      "provider_intent": "removeCardsMembersVoted",
+    "trello__/1/cards/id/membersvoted/idmember___DELETE": {
       "provider_alias_intent": "/1/cards/id/membersvoted/idmember",
       "text": "Remove a Member's Vote on a Car",
       "category": "Card",
@@ -5518,14 +5262,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "removeCardsMembersVoted",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "updateCardsChecklistCheckItem": {
-      "provider_intent": "updateCardsChecklistCheckItem",
+    "trello__/1/cards/idcard/checklist/idchecklist/checkitem/idcheckitem___PUT": {
       "provider_alias_intent": "/1/cards/idcard/checklist/idchecklist/checkitem/idcheckitem",
       "text": "Update Checkitem on Checklist on Card",
       "category": "Card",
@@ -5589,14 +5330,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "updateCardsChecklistCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCardsChecklists": {
-      "provider_intent": "deleteCardsChecklists",
+    "trello__/1/cards/id/checklists/idchecklist___DELETE": {
       "provider_alias_intent": "/1/cards/id/checklists/idchecklist",
       "text": "Delete a Checklist on a Card",
       "category": "Card",
@@ -5645,14 +5383,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCardsChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postOrganizations": {
-      "provider_intent": "postOrganizations",
+    "trello__/1/organizations___POST": {
       "provider_alias_intent": "/1/organizations",
       "text": "Create a new Organization",
       "category": "Organizations",
@@ -5700,14 +5435,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postOrganizations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganization": {
-      "provider_intent": "getOrganization",
+    "trello__/1/organizations/id___GET": {
       "provider_alias_intent": "/1/organizations/id",
       "text": "Get an Organization",
       "category": "Organizations",
@@ -5746,14 +5478,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putOrganization": {
-      "provider_intent": "putOrganization",
+    "trello__/1/organizations/id___PUT": {
       "provider_alias_intent": "/1/organizations/id",
       "text": "Update an Organization",
       "category": "Organizations",
@@ -5847,14 +5576,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganization": {
-      "provider_intent": "deleteOrganization",
+    "trello__/1/organizations/id___DELETE": {
       "provider_alias_intent": "/1/organizations/id",
       "text": "Delete an Organization",
       "category": "Organizations",
@@ -5893,14 +5619,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsField": {
-      "provider_intent": "getOrganizationsField",
+    "trello__/1/organizations/id/field___GET": {
       "provider_alias_intent": "/1/organizations/id/field",
       "text": "Get field on Organization",
       "category": "Organizations",
@@ -5949,14 +5672,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsActions": {
-      "provider_intent": "getOrganizationsActions",
+    "trello__/1/organizations/id/actions___GET": {
       "provider_alias_intent": "/1/organizations/id/actions",
       "text": "Get Actions for Organization",
       "category": "Organizations",
@@ -5995,14 +5715,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsBoards": {
-      "provider_intent": "getOrganizationsBoards",
+    "trello__/1/organizations/id/boards___GET": {
       "provider_alias_intent": "/1/organizations/id/boards",
       "text": "Get Boards in an Organization",
       "category": "Organizations",
@@ -6052,14 +5769,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsBoards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsExports": {
-      "provider_intent": "getOrganizationsExports",
+    "trello__/1/organizations/id/exports___GET": {
       "provider_alias_intent": "/1/organizations/id/exports",
       "text": "Retrieve Organization's Exports",
       "category": "Organizations",
@@ -6098,14 +5812,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsExports",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postOrganizationsExports": {
-      "provider_intent": "postOrganizationsExports",
+    "trello__/1/organizations/id/exports___POST": {
       "provider_alias_intent": "/1/organizations/id/exports",
       "text": "Create Export for Organizations",
       "category": "Organizations",
@@ -6152,14 +5863,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postOrganizationsExports",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsMembers": {
-      "provider_intent": "getOrganizationsMembers",
+    "trello__/1/organizations/id/members___GET": {
       "provider_alias_intent": "/1/organizations/id/members",
       "text": "Get the Members of an Organization",
       "category": "Organizations",
@@ -6196,14 +5904,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putOrganizationsMembers": {
-      "provider_intent": "putOrganizationsMembers",
+    "trello__/1/organizations/id/members___PUT": {
       "provider_alias_intent": "/1/organizations/id/members",
       "text": "Update an Organization's Members",
       "category": "Organizations",
@@ -6245,14 +5950,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putOrganizationsMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsMemberships": {
-      "provider_intent": "getOrganizationsMemberships",
+    "trello__/1/organizations/id/memberships___GET": {
       "provider_alias_intent": "/1/organizations/id/memberships",
       "text": "Get Memberships of an Organization",
       "category": "Organizations",
@@ -6301,14 +6003,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsMemberships",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsMembership": {
-      "provider_intent": "getOrganizationsMembership",
+    "trello__/1/organizations/id/memberships/idmembership___GET": {
       "provider_alias_intent": "/1/organizations/id/memberships/idmembership",
       "text": "Get a Single Membership of an Organization",
       "category": "Organizations",
@@ -6363,14 +6062,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsMembership",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsPluginData": {
-      "provider_intent": "getOrganizationsPluginData",
+    "trello__/1/organizations/id/plugindata___GET": {
       "provider_alias_intent": "/1/organizations/id/plugindata",
       "text": "Get the pluginData Scoped to Organization",
       "category": "Organizations",
@@ -6407,14 +6103,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsPluginData",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsTags": {
-      "provider_intent": "getOrganizationsTags",
+    "trello__/1/organizations/id/tags___GET": {
       "provider_alias_intent": "/1/organizations/id/tags",
       "text": "Get Tags of an Organization",
       "category": "Organizations",
@@ -6451,14 +6144,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsTags",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postOrganizationsTags": {
-      "provider_intent": "postOrganizationsTags",
+    "trello__/1/organizations/id/tags___POST": {
       "provider_alias_intent": "/1/organizations/id/tags",
       "text": "Create a Tag in Organization",
       "category": "Organizations",
@@ -6501,14 +6191,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postOrganizationsTags",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putOrganizationsMember": {
-      "provider_intent": "putOrganizationsMember",
+    "trello__/1/organizations/id/members/idmember___PUT": {
       "provider_alias_intent": "/1/organizations/id/members/idmember",
       "text": "Update a Member of an Organization",
       "category": "Organizations",
@@ -6560,14 +6247,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putOrganizationsMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsMember": {
-      "provider_intent": "deleteOrganizationsMember",
+    "trello__/1/organizations/id/members/idmember___DELETE": {
       "provider_alias_intent": "/1/organizations/id/members/idmember",
       "text": "Remove a Member from an Organization",
       "category": "Organizations",
@@ -6610,14 +6294,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putOrganizationsMembersDeactivated": {
-      "provider_intent": "putOrganizationsMembersDeactivated",
+    "trello__/1/organizations/id/members/idmember/deactivated___PUT": {
       "provider_alias_intent": "/1/organizations/id/members/idmember/deactivated",
       "text": "Deactivate or reactivate a member of an Organization",
       "category": "Organizations",
@@ -6669,14 +6350,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putOrganizationsMembersDeactivated",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsLogo": {
-      "provider_intent": "deleteOrganizationsLogo",
+    "trello__/1/organizations/id/logo___DELETE": {
       "provider_alias_intent": "/1/organizations/id/logo",
       "text": "Delete Logo for Organization",
       "category": "Organizations",
@@ -6711,14 +6389,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsLogo",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsMembersAll": {
-      "provider_intent": "deleteOrganizationsMembersAll",
+    "trello__/1/organizations/id/members/idmember/all___DELETE": {
       "provider_alias_intent": "/1/organizations/id/members/idmember/all",
       "text": "Remove a Member from an Organization and all Organization Boards",
       "category": "Organizations",
@@ -6767,14 +6442,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsMembersAll",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsPrefsAssociatedDomain": {
-      "provider_intent": "deleteOrganizationsPrefsAssociatedDomain",
+    "trello__/1/organizations/id/prefs/associateddomain___DELETE": {
       "provider_alias_intent": "/1/organizations/id/prefs/associateddomain",
       "text": "Remove the associated Google Apps domain from a Workspace",
       "category": "Organizations",
@@ -6813,14 +6485,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsPrefsAssociatedDomain",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsPrefsOrgInviteRestrict": {
-      "provider_intent": "deleteOrganizationsPrefsOrgInviteRestrict",
+    "trello__/1/organizations/id/prefs/orginviterestrict___DELETE": {
       "provider_alias_intent": "/1/organizations/id/prefs/orginviterestrict",
       "text": "Delete the email domain restriction on who can be invited to the Workspace",
       "category": "Organizations",
@@ -6859,14 +6528,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsPrefsOrgInviteRestrict",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteOrganizationsTags": {
-      "provider_intent": "deleteOrganizationsTags",
+    "trello__/1/organizations/id/tags/idtag___DELETE": {
       "provider_alias_intent": "/1/organizations/id/tags/idtag",
       "text": "Delete an Organization's Tag",
       "category": "Organizations",
@@ -6915,14 +6581,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteOrganizationsTags",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getOrganizationsNewBillableGuests": {
-      "provider_intent": "getOrganizationsNewBillableGuests",
+    "trello__/1/organizations/id/newbillableguests/idboard___GET": {
       "provider_alias_intent": "/1/organizations/id/newbillableguests/idboard",
       "text": "Get Organizations new billable guests",
       "category": "Organizations",
@@ -6971,14 +6634,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getOrganizationsNewBillableGuests",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getLabels": {
-      "provider_intent": "getLabels",
+    "trello__/1/labels/id___GET": {
       "provider_alias_intent": "/1/labels/id",
       "text": "Get a Label",
       "category": "Labels",
@@ -7021,14 +6681,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putLabels": {
-      "provider_intent": "putLabels",
+    "trello__/1/labels/id___PUT": {
       "provider_alias_intent": "/1/labels/id",
       "text": "Update a Label",
       "category": "Labels",
@@ -7087,14 +6744,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteLabels": {
-      "provider_intent": "deleteLabels",
+    "trello__/1/labels/id___DELETE": {
       "provider_alias_intent": "/1/labels/id",
       "text": "Delete a Label",
       "category": "Labels",
@@ -7133,14 +6787,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putLabelsField": {
-      "provider_intent": "putLabelsField",
+    "trello__/1/labels/id/field___PUT": {
       "provider_alias_intent": "/1/labels/id/field",
       "text": "Update a field on a label",
       "category": "Labels",
@@ -7195,14 +6846,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putLabelsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postLabels": {
-      "provider_intent": "postLabels",
+    "trello__/1/labels___POST": {
       "provider_alias_intent": "/1/labels",
       "text": "Create a Label",
       "category": "Labels",
@@ -7256,14 +6904,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postLabels",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getAction": {
-      "provider_intent": "getAction",
+    "trello__/1/actions/id___GET": {
       "provider_alias_intent": "/1/actions/id",
       "text": "Get an Action",
       "category": "Actions",
@@ -7343,14 +6988,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getAction",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putAction": {
-      "provider_intent": "putAction",
+    "trello__/1/actions/id___PUT": {
       "provider_alias_intent": "/1/actions/id",
       "text": "Update an Action",
       "category": "Actions",
@@ -7395,14 +7037,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putAction",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteAction": {
-      "provider_intent": "deleteAction",
+    "trello__/1/actions/id___DELETE": {
       "provider_alias_intent": "/1/actions/id",
       "text": "Delete an Action",
       "category": "Actions",
@@ -7441,14 +7080,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteAction",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionField": {
-      "provider_intent": "getActionField",
+    "trello__/1/actions/id/field___GET": {
       "provider_alias_intent": "/1/actions/id/field",
       "text": "Get a specific field on an Action",
       "category": "Actions",
@@ -7497,14 +7133,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionBoard": {
-      "provider_intent": "getActionBoard",
+    "trello__/1/actions/id/board___GET": {
       "provider_alias_intent": "/1/actions/id/board",
       "text": "Get the Board for an Action",
       "category": "Actions",
@@ -7547,14 +7180,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionCard": {
-      "provider_intent": "getActionCard",
+    "trello__/1/actions/id/card___GET": {
       "provider_alias_intent": "/1/actions/id/card",
       "text": "Get the Card for an Action",
       "category": "Actions",
@@ -7597,14 +7227,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionList": {
-      "provider_intent": "getActionList",
+    "trello__/1/actions/id/list___GET": {
       "provider_alias_intent": "/1/actions/id/list",
       "text": "Get the List for an Action",
       "category": "Actions",
@@ -7647,14 +7274,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionMember": {
-      "provider_intent": "getActionMember",
+    "trello__/1/actions/id/member___GET": {
       "provider_alias_intent": "/1/actions/id/member",
       "text": "Get the Member of an Action",
       "category": "Actions",
@@ -7697,14 +7321,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionMemberCreator": {
-      "provider_intent": "getActionMemberCreator",
+    "trello__/1/actions/id/membercreator___GET": {
       "provider_alias_intent": "/1/actions/id/membercreator",
       "text": "Get the Member Creator of an Action",
       "category": "Actions",
@@ -7747,14 +7368,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionMemberCreator",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionOrganization": {
-      "provider_intent": "getActionOrganization",
+    "trello__/1/actions/id/organization___GET": {
       "provider_alias_intent": "/1/actions/id/organization",
       "text": "Get the Organization of an Action",
       "category": "Actions",
@@ -7797,14 +7415,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putActionText": {
-      "provider_intent": "putActionText",
+    "trello__/1/actions/id/text___PUT": {
       "provider_alias_intent": "/1/actions/id/text",
       "text": "Update a Comment Action",
       "category": "Actions",
@@ -7849,14 +7464,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putActionText",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionReactions": {
-      "provider_intent": "getActionReactions",
+    "trello__/1/actions/idaction/reactions___GET": {
       "provider_alias_intent": "/1/actions/idaction/reactions",
       "text": "Get Action's Reactions",
       "category": "Actions",
@@ -7903,14 +7515,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionReactions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postActionReactions": {
-      "provider_intent": "postActionReactions",
+    "trello__/1/actions/idaction/reactions___POST": {
       "provider_alias_intent": "/1/actions/idaction/reactions",
       "text": "Create Reaction for Action",
       "category": "Actions",
@@ -7966,14 +7575,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postActionReactions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionReaction": {
-      "provider_intent": "getActionReaction",
+    "trello__/1/actions/idaction/reactions/id___GET": {
       "provider_alias_intent": "/1/actions/idaction/reactions/id",
       "text": "Get Action's Reactions",
       "category": "Actions",
@@ -8038,14 +7644,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionReaction",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteActionsReaction": {
-      "provider_intent": "deleteActionsReaction",
+    "trello__/1/actions/idaction/reactions/id___DELETE": {
       "provider_alias_intent": "/1/actions/idaction/reactions/id",
       "text": "Delete Action's Reaction",
       "category": "Actions",
@@ -8094,14 +7697,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteActionsReaction",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getActionsReactionsSummary": {
-      "provider_intent": "getActionsReactionsSummary",
+    "trello__/1/actions/idaction/reactionssummary___GET": {
       "provider_alias_intent": "/1/actions/idaction/reactionssummary",
       "text": "List Action's summary of Reactions",
       "category": "Actions",
@@ -8140,14 +7740,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getActionsReactionsSummary",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getApplicationsCompliance": {
-      "provider_intent": "getApplicationsCompliance",
+    "trello__/1/applications/key/compliance___GET": {
       "provider_alias_intent": "/1/applications/key/compliance",
       "text": "Get Application's compliance data",
       "category": "Application",
@@ -8184,14 +7781,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getApplicationsCompliance",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getBatch": {
-      "provider_intent": "getBatch",
+    "trello__/1/batch___GET": {
       "provider_alias_intent": "/1/batch",
       "text": "Batch Requests",
       "category": "Batch",
@@ -8230,14 +7824,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getBatch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postChecklists": {
-      "provider_intent": "postChecklists",
+    "trello__/1/checklists___POST": {
       "provider_alias_intent": "/1/checklists",
       "text": "Create a Checklist",
       "category": "Checklist",
@@ -8282,14 +7873,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklists": {
-      "provider_intent": "getChecklists",
+    "trello__/1/checklists/id___GET": {
       "provider_alias_intent": "/1/checklists/id",
       "text": "Get a Checklist",
       "category": "Checklist",
@@ -8354,14 +7942,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putChecklists": {
-      "provider_intent": "putChecklists",
+    "trello__/1/checklists/id___PUT": {
       "provider_alias_intent": "/1/checklists/id",
       "text": "Update a Checklist",
       "category": "Checklist",
@@ -8409,14 +7994,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteChecklists": {
-      "provider_intent": "deleteChecklists",
+    "trello__/1/checklists/id___DELETE": {
       "provider_alias_intent": "/1/checklists/id",
       "text": "Delete a Checklist",
       "category": "Checklist",
@@ -8455,14 +8037,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteChecklists",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklistsField": {
-      "provider_intent": "getChecklistsField",
+    "trello__/1/checklists/id/field___GET": {
       "provider_alias_intent": "/1/checklists/id/field",
       "text": "Get field on a Checklist",
       "category": "Checklist",
@@ -8511,14 +8090,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklistsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putChecklistsField": {
-      "provider_intent": "putChecklistsField",
+    "trello__/1/checklists/id/field___PUT": {
       "provider_alias_intent": "/1/checklists/id/field",
       "text": "Update field on a Checklist",
       "category": "Checklist",
@@ -8579,14 +8155,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putChecklistsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklistsBoard": {
-      "provider_intent": "getChecklistsBoard",
+    "trello__/1/checklists/id/board___GET": {
       "provider_alias_intent": "/1/checklists/id/board",
       "text": "Get the Board the Checklist is on",
       "category": "Checklist",
@@ -8630,14 +8203,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklistsBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklistsCards": {
-      "provider_intent": "getChecklistsCards",
+    "trello__/1/checklists/id/cards___GET": {
       "provider_alias_intent": "/1/checklists/id/cards",
       "text": "Get the Card a Checklist is on",
       "category": "Checklist",
@@ -8676,14 +8246,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklistsCards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklistsCheckItems": {
-      "provider_intent": "getChecklistsCheckItems",
+    "trello__/1/checklists/id/checkitems___GET": {
       "provider_alias_intent": "/1/checklists/id/checkitems",
       "text": "Get Checkitems on a Checklist",
       "category": "Checklist",
@@ -8729,14 +8296,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklistsCheckItems",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postChecklistsCheckItems": {
-      "provider_intent": "postChecklistsCheckItems",
+    "trello__/1/checklists/id/checkitems___POST": {
       "provider_alias_intent": "/1/checklists/id/checkitems",
       "text": "Create Checkitem on Checklist",
       "category": "Checklist",
@@ -8804,14 +8368,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postChecklistsCheckItems",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getChecklistsCheckItem": {
-      "provider_intent": "getChecklistsCheckItem",
+    "trello__/1/checklists/id/checkitems/idcheckitem___GET": {
       "provider_alias_intent": "/1/checklists/id/checkitems/idcheckitem",
       "text": "Get a Checkitem on a Checklist",
       "category": "Checklist",
@@ -8863,14 +8424,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getChecklistsCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteChecklistsCheckItem": {
-      "provider_intent": "deleteChecklistsCheckItem",
+    "trello__/1/checklists/id/checkitems/idcheckitem___DELETE": {
       "provider_alias_intent": "/1/checklists/id/checkitems/idcheckitem",
       "text": "Delete Checkitem from Checklist",
       "category": "Checklist",
@@ -8919,14 +8477,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteChecklistsCheckItem",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postCustomFields": {
-      "provider_intent": "postCustomFields",
+    "trello__/1/customfields___POST": {
       "provider_alias_intent": "/1/customfields",
       "text": "Create a new Custom Field on a Board",
       "category": "Custom Fields",
@@ -8993,14 +8548,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postCustomFields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCustomFields": {
-      "provider_intent": "getCustomFields",
+    "trello__/1/customfields/id___GET": {
       "provider_alias_intent": "/1/customfields/id",
       "text": "Get a Custom Field",
       "category": "Custom Fields",
@@ -9039,14 +8591,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCustomFields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putCustomFields": {
-      "provider_intent": "putCustomFields",
+    "trello__/1/customfields/id___PUT": {
       "provider_alias_intent": "/1/customfields/id",
       "text": "Update a Custom Field definition",
       "category": "Custom Fields",
@@ -9101,14 +8650,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putCustomFields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCustomFields": {
-      "provider_intent": "deleteCustomFields",
+    "trello__/1/customfields/id___DELETE": {
       "provider_alias_intent": "/1/customfields/id",
       "text": "Delete a Custom Field definition",
       "category": "Custom Fields",
@@ -9147,14 +8693,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCustomFields",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postCustomFieldsOptions": {
-      "provider_intent": "postCustomFieldsOptions",
+    "trello__/1/customfields/id/options___GET": {
       "provider_alias_intent": "/1/customfields/id/options",
       "text": "Get Options of Custom Field drop down",
       "category": "Custom Fields",
@@ -9193,14 +8736,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postCustomFieldsOptions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCustomFieldsOptions": {
-      "provider_intent": "getCustomFieldsOptions",
+    "trello__/1/customfields/id/options___POST": {
       "provider_alias_intent": "/1/customfields/id/options",
       "text": "Add Option to Custom Field dropdown",
       "category": "Custom Fields",
@@ -9239,14 +8779,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCustomFieldsOptions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getCustomFieldsOption": {
-      "provider_intent": "getCustomFieldsOption",
+    "trello__/1/customfields/id/options/idcustomfieldoption___GET": {
       "provider_alias_intent": "/1/customfields/id/options/idcustomfieldoption",
       "text": "Get Option of Custom Field dropdown",
       "category": "Custom Fields",
@@ -9295,14 +8832,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getCustomFieldsOption",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteCustomFieldsOption": {
-      "provider_intent": "deleteCustomFieldsOption",
+    "trello__/1/customfields/id/options/idcustomfieldoption___DELETE": {
       "provider_alias_intent": "/1/customfields/id/options/idcustomfieldoption",
       "text": "Delete Option of Custom Field dropdown",
       "category": "Custom Fields",
@@ -9351,14 +8885,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteCustomFieldsOption",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEmoji": {
-      "provider_intent": "getEmoji",
+    "trello__/1/emoji___GET": {
       "provider_alias_intent": "/1/emoji",
       "text": "List available Emoji",
       "category": "Emoji",
@@ -9398,14 +8929,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEmoji",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprises": {
-      "provider_intent": "getEnterprises",
+    "trello__/1/enterprises/id___GET": {
       "provider_alias_intent": "/1/enterprises/id",
       "text": "Get an Enterprise",
       "category": "Enterprise",
@@ -9504,14 +9032,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprises",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesAuditlog": {
-      "provider_intent": "getEnterprisesAuditlog",
+    "trello__/1/enterprises/id/auditlog___GET": {
       "provider_alias_intent": "/1/enterprises/id/auditlog",
       "text": "Get auditlog data for an Enterprise",
       "category": "Enterprise",
@@ -9550,14 +9075,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesAuditlog",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesAdmins": {
-      "provider_intent": "getEnterprisesAdmins",
+    "trello__/1/enterprises/id/admins___GET": {
       "provider_alias_intent": "/1/enterprises/id/admins",
       "text": "Get Enterprise admin Members",
       "category": "Enterprise",
@@ -9603,14 +9125,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesAdmins",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesSignupUrl": {
-      "provider_intent": "getEnterprisesSignupUrl",
+    "trello__/1/enterprises/id/signupurl___GET": {
       "provider_alias_intent": "/1/enterprises/id/signupurl",
       "text": "Get signupUrl for Enterprise",
       "category": "Enterprise",
@@ -9675,14 +9194,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesSignupUrl",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesMembers": {
-      "provider_intent": "getEnterprisesMembers",
+    "trello__/1/enterprises/id/members___GET": {
       "provider_alias_intent": "/1/enterprises/id/members",
       "text": "Get Members of Enterprise",
       "category": "Enterprise",
@@ -9751,14 +9267,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesMember": {
-      "provider_intent": "getEnterprisesMember",
+    "trello__/1/enterprises/id/members/idmember___GET": {
       "provider_alias_intent": "/1/enterprises/id/members/idmember",
       "text": "Get a Member of Enterprise",
       "category": "Enterprise",
@@ -9815,14 +9328,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesTransferrableOrganization": {
-      "provider_intent": "getEnterprisesTransferrableOrganization",
+    "trello__/1/enterprises/id/transferrable/organization/idorganization___GET": {
       "provider_alias_intent": "/1/enterprises/id/transferrable/organization/idorganization",
       "text": "Get whether an organization can be transferred to an enterprise.",
       "category": "Enterprise",
@@ -9871,14 +9381,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesTransferrableOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesClaimableOrganizations": {
-      "provider_intent": "getEnterprisesClaimableOrganizations",
+    "trello__/1/enterprises/id/claimableorganizations___GET": {
       "provider_alias_intent": "/1/enterprises/id/claimableorganizations",
       "text": "Get ClaimableOrganizations of an Enterprise",
       "category": "Enterprise",
@@ -9937,14 +9444,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesClaimableOrganizations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getEnterprisesPendingOrganizations": {
-      "provider_intent": "getEnterprisesPendingOrganizations",
+    "trello__/1/enterprises/id/pendingorganizations___GET": {
       "provider_alias_intent": "/1/enterprises/id/pendingorganizations",
       "text": "Get PendingOrganizations of an Enterprise",
       "category": "Enterprise",
@@ -9991,14 +9495,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getEnterprisesPendingOrganizations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postEnterprisesTokens": {
-      "provider_intent": "postEnterprisesTokens",
+    "trello__/1/enterprises/id/tokens___POST": {
       "provider_alias_intent": "/1/enterprises/id/tokens",
       "text": "Create an auth Token for an Enterprise.",
       "category": "Enterprise",
@@ -10041,14 +9542,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postEnterprisesTokens",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putEnterprisesOrganizations": {
-      "provider_intent": "putEnterprisesOrganizations",
+    "trello__/1/enterprises/id/organizations___PUT": {
       "provider_alias_intent": "/1/enterprises/id/organizations",
       "text": "Transfer an Organization to an Enterprise",
       "category": "Enterprise",
@@ -10092,14 +9590,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putEnterprisesOrganizations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putEnterprisesMembersLicensed": {
-      "provider_intent": "putEnterprisesMembersLicensed",
+    "trello__/1/enterprises/id/members/idmember/licensed___PUT": {
       "provider_alias_intent": "/1/enterprises/id/members/idmember/licensed",
       "text": "Update a Member's licensed status",
       "category": "Enterprise",
@@ -10156,14 +9651,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putEnterprisesMembersLicensed",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putEnterprisesMembersDeactivated": {
-      "provider_intent": "putEnterprisesMembersDeactivated",
+    "trello__/1/enterprises/id/members/idmember/deactivated___PUT": {
       "provider_alias_intent": "/1/enterprises/id/members/idmember/deactivated",
       "text": "Deactivate a Member of an Enterprise.",
       "category": "Enterprise",
@@ -10236,14 +9728,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putEnterprisesMembersDeactivated",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putEnterprisesAdmins": {
-      "provider_intent": "putEnterprisesAdmins",
+    "trello__/1/enterprises/id/admins/idmember___PUT": {
       "provider_alias_intent": "/1/enterprises/id/admins/idmember",
       "text": "Update Member to be admin of Enterprise",
       "category": "Enterprise",
@@ -10292,14 +9781,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putEnterprisesAdmins",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteEnterprisesAdmins": {
-      "provider_intent": "deleteEnterprisesAdmins",
+    "trello__/1/enterprises/id/admins/idmember___DELETE": {
       "provider_alias_intent": "/1/enterprises/id/admins/idmember",
       "text": "Remove a Member as admin from Enterprise.",
       "category": "Enterprise",
@@ -10348,14 +9834,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteEnterprisesAdmins",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteEnterprisesOrganization": {
-      "provider_intent": "deleteEnterprisesOrganization",
+    "trello__/1/enterprises/id/organizations/idorg___DELETE": {
       "provider_alias_intent": "/1/enterprises/id/organizations/idorg",
       "text": "Delete an Organization from an Enterprise.",
       "category": "Enterprise",
@@ -10394,14 +9877,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteEnterprisesOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getPlugin": {
-      "provider_intent": "getPlugin",
+    "trello__/1/plugins/id/___GET": {
       "provider_alias_intent": "/1/plugins/id/",
       "text": "Get a Plugin 🚧",
       "category": "Plugins",
@@ -10440,14 +9920,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getPlugin",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putPlugin": {
-      "provider_intent": "putPlugin",
+    "trello__/1/plugins/id/___PUT": {
       "provider_alias_intent": "/1/plugins/id/",
       "text": "Update a Plugin 🚧",
       "category": "Plugins",
@@ -10492,14 +9969,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "putPlugin",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postPluginsListing": {
-      "provider_intent": "postPluginsListing",
+    "trello__/1/plugins/idplugin/listing___POST": {
       "provider_alias_intent": "/1/plugins/idplugin/listing",
       "text": "Create a Listing for Plugin",
       "category": "Plugins",
@@ -10561,14 +10035,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postPluginsListing",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getPluginsComplianceMemberPrivacy": {
-      "provider_intent": "getPluginsComplianceMemberPrivacy",
+    "trello__/1/plugins/id/compliance/memberprivacy___GET": {
       "provider_alias_intent": "/1/plugins/id/compliance/memberprivacy",
       "text": "Get Plugin's Member privacy compliance 🚧",
       "category": "Plugins",
@@ -10607,14 +10078,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getPluginsComplianceMemberPrivacy",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putPluginsListing": {
-      "provider_intent": "putPluginsListing",
+    "trello__/1/plugins/idplugin/listings/idlisting___PUT": {
       "provider_alias_intent": "/1/plugins/idplugin/listings/idlisting",
       "text": "Updating Plugin's Listing 🚧",
       "category": "Plugins",
@@ -10692,14 +10160,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "putPluginsListing",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getSearch": {
-      "provider_intent": "getSearch",
+    "trello__/1/search___GET": {
       "provider_alias_intent": "/1/search",
       "text": "Search Trello 🚧",
       "category": "Search",
@@ -10726,14 +10191,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getSearch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getSearchMembers": {
-      "provider_intent": "getSearchMembers",
+    "trello__/1/search/members___GET": {
       "provider_alias_intent": "/1/search/members",
       "text": "Search for Members 🚧",
       "category": "Search",
@@ -10760,14 +10222,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getSearchMembers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getToken": {
-      "provider_intent": "getToken",
+    "trello__/1/tokens/token___GET": {
       "provider_alias_intent": "/1/tokens/token",
       "text": "Get a Token 🚧",
       "category": "Tokens",
@@ -10824,14 +10283,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getToken",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getTokensMember": {
-      "provider_intent": "getTokensMember",
+    "trello__/1/tokens/token/member___GET": {
       "provider_alias_intent": "/1/tokens/token/member",
       "text": "Get Token's Member 🚧",
       "category": "Tokens",
@@ -10872,14 +10328,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getTokensMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getTokensWebhooks": {
-      "provider_intent": "getTokensWebhooks",
+    "trello__/1/tokens/token/webhooks___GET": {
       "provider_alias_intent": "/1/tokens/token/webhooks",
       "text": "Get Webhooks for Token 🚧",
       "category": "Tokens",
@@ -10916,14 +10369,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getTokensWebhooks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postTokensWebhook": {
-      "provider_intent": "postTokensWebhook",
+    "trello__/1/tokens/token/webhooks___POST": {
       "provider_alias_intent": "/1/tokens/token/webhooks",
       "text": "Create Webhooks for Token 🚧",
       "category": "Tokens",
@@ -10978,14 +10428,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "postTokensWebhook",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getTokensWebhook": {
-      "provider_intent": "getTokensWebhook",
+    "trello__/1/tokens/token/webhooks/idwebhook___GET": {
       "provider_alias_intent": "/1/tokens/token/webhooks/idwebhook",
       "text": "Get a Webhook belonging to a Token 🚧",
       "category": "Tokens",
@@ -11032,14 +10479,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getTokensWebhook",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteTokensWebhook": {
-      "provider_intent": "deleteTokensWebhook",
+    "trello__/1/tokens/token/webhooks/idwebhook___PUT": {
       "provider_alias_intent": "/1/tokens/token/webhooks/idwebhook",
       "text": "Update a Webhook created by Token 🚧",
       "category": "Tokens",
@@ -11099,14 +10543,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "deleteTokensWebhook",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putTokensWebhook": {
-      "provider_intent": "putTokensWebhook",
+    "trello__/1/tokens/token/webhooks/idwebhook___DELETE": {
       "provider_alias_intent": "/1/tokens/token/webhooks/idwebhook",
       "text": "Delete a Webhook created by Token 🚧",
       "category": "Tokens",
@@ -11156,14 +10597,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "putTokensWebhook",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteToken": {
-      "provider_intent": "deleteToken",
+    "trello__/1/tokens/token/___DELETE": {
       "provider_alias_intent": "/1/tokens/token/",
       "text": "Delete a Token 🚧",
       "category": "Tokens",
@@ -11200,14 +10638,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "deleteToken",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postWebhook": {
-      "provider_intent": "postWebhook",
+    "trello__/1/webhooks___POST": {
       "provider_alias_intent": "/1/webhooks",
       "text": "Create a Webhook 🚧",
       "category": "Webhooks",
@@ -11263,14 +10698,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "postWebhook",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getWebhooks": {
-      "provider_intent": "getWebhooks",
+    "trello__/1/webhooks/id___GET": {
       "provider_alias_intent": "/1/webhooks/id",
       "text": "Get a Webhook 🚧",
       "category": "Webhooks",
@@ -11309,14 +10741,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getWebhooks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putWebhooks": {
-      "provider_intent": "putWebhooks",
+    "trello__/1/webhooks/id___PUT": {
       "provider_alias_intent": "/1/webhooks/id",
       "text": "Update a Webhook 🚧",
       "category": "Webhooks",
@@ -11382,14 +10811,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "putWebhooks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteWebhooks": {
-      "provider_intent": "deleteWebhooks",
+    "trello__/1/webhooks/id___DELETE": {
       "provider_alias_intent": "/1/webhooks/id",
       "text": "Delete a Webhook 🚧",
       "category": "Webhooks",
@@ -11426,14 +10852,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "deleteWebhooks",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getWebhooksField": {
-      "provider_intent": "getWebhooksField",
+    "trello__/1/webhooks/id/field___GET": {
       "provider_alias_intent": "/1/webhooks/id/field",
       "text": "Get a field on a Webhook 🚧",
       "category": "Webhooks",
@@ -11478,14 +10901,11 @@
         ]
       },
       "response_type": "",
-      "wip": 1,
       "intent": "getWebhooksField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMember": {
-      "provider_intent": "getMember",
+    "trello__/1/members/id___GET": {
       "provider_alias_intent": "/1/members/id",
       "text": "Get a Member",
       "category": "Members",
@@ -11661,14 +11081,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putMember": {
-      "provider_intent": "putMember",
+    "trello__/1/members/id___PUT": {
       "provider_alias_intent": "/1/members/id",
       "text": "Update a Member",
       "category": "Members",
@@ -11745,14 +11162,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersField": {
-      "provider_intent": "getMembersField",
+    "trello__/1/members/id/field___GET": {
       "provider_alias_intent": "/1/members/id/field",
       "text": "Get a field on a Member",
       "category": "Members",
@@ -11801,14 +11215,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersActions": {
-      "provider_intent": "getMembersActions",
+    "trello__/1/members/id/actions___GET": {
       "provider_alias_intent": "/1/members/id/actions",
       "text": "Get a Member's Actions",
       "category": "Members",
@@ -11851,14 +11262,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersActions",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoardBackgrounds": {
-      "provider_intent": "getMembersBoardBackgrounds",
+    "trello__/1/members/id/boardbackgrounds___GET": {
       "provider_alias_intent": "/1/members/id/boardbackgrounds",
       "text": "Get Member's custom Board backgrounds",
       "category": "Members",
@@ -11907,14 +11315,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoardBackgrounds",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersBoardBackgrounds": {
-      "provider_intent": "postMembersBoardBackgrounds",
+    "trello__/1/members/id/boardbackgrounds___POST": {
       "provider_alias_intent": "/1/members/id/boardbackgrounds",
       "text": "Upload new boardBackground for Member",
       "category": "Members",
@@ -11959,14 +11364,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersBoardBackgrounds",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoardBackground": {
-      "provider_intent": "getMembersBoardBackground",
+    "trello__/1/members/id/boardbackgrounds/idbackground___GET": {
       "provider_alias_intent": "/1/members/id/boardbackgrounds/idbackground",
       "text": "Get a boardBackground of a Member",
       "category": "Members",
@@ -12026,14 +11428,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putMembersBoardBackground": {
-      "provider_intent": "putMembersBoardBackground",
+    "trello__/1/members/id/boardbackgrounds/idbackground___PUT": {
       "provider_alias_intent": "/1/members/id/boardbackgrounds/idbackground",
       "text": "Update a Member's custom Board background",
       "category": "Members",
@@ -12095,14 +11494,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putMembersBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteMembersBoardBackground": {
-      "provider_intent": "deleteMembersBoardBackground",
+    "trello__/1/members/id/boardbackgrounds/idbackground___DELETE": {
       "provider_alias_intent": "/1/members/id/boardbackgrounds/idbackground",
       "text": "Delete a Member's custom Board background",
       "category": "Members",
@@ -12151,14 +11547,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteMembersBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoardStars": {
-      "provider_intent": "getMembersBoardStars",
+    "trello__/1/members/id/boardstars___GET": {
       "provider_alias_intent": "/1/members/id/boardstars",
       "text": "Get a Member's boardStars",
       "category": "Members",
@@ -12197,14 +11590,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoardStars",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersBoardStars": {
-      "provider_intent": "postMembersBoardStars",
+    "trello__/1/members/id/boardstars___POST": {
       "provider_alias_intent": "/1/members/id/boardstars",
       "text": "Create Star for Board",
       "category": "Members",
@@ -12254,14 +11644,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersBoardStars",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoardStar": {
-      "provider_intent": "getMembersBoardStar",
+    "trello__/1/members/id/boardstars/idstar___GET": {
       "provider_alias_intent": "/1/members/id/boardstars/idstar",
       "text": "Get a boardStar of Member",
       "category": "Members",
@@ -12310,14 +11697,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoardStar",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putMembersBoardStar": {
-      "provider_intent": "putMembersBoardStar",
+    "trello__/1/members/id/boardstars/idstar___PUT": {
       "provider_alias_intent": "/1/members/id/boardstars/idstar",
       "text": "Update the position of a boardStar of Member",
       "category": "Members",
@@ -12372,14 +11756,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putMembersBoardStar",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteMembersBoardStar": {
-      "provider_intent": "deleteMembersBoardStar",
+    "trello__/1/members/id/boardstars/idstar___DELETE": {
       "provider_alias_intent": "/1/members/id/boardstars/idstar",
       "text": "Delete Star for Board",
       "category": "Members",
@@ -12428,14 +11809,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteMembersBoardStar",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoards": {
-      "provider_intent": "getMembersBoards",
+    "trello__/1/members/id/boards___GET": {
       "provider_alias_intent": "/1/members/id/boards",
       "text": "Get Boards that Member belongs to",
       "category": "Members",
@@ -12507,14 +11885,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersBoardsInvited": {
-      "provider_intent": "getMembersBoardsInvited",
+    "trello__/1/members/id/boardsinvited___GET": {
       "provider_alias_intent": "/1/members/id/boardsinvited",
       "text": "Get Boards the Member has been invited to",
       "category": "Members",
@@ -12557,14 +11932,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersBoardsInvited",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCards": {
-      "provider_intent": "getMembersCards",
+    "trello__/1/members/id/cards___GET": {
       "provider_alias_intent": "/1/members/id/cards",
       "text": "Get Cards the Member is on",
       "category": "Members",
@@ -12612,14 +11984,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCards",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomBoardBackgrounds": {
-      "provider_intent": "getMembersCustomBoardBackgrounds",
+    "trello__/1/members/id/customboardbackgrounds___GET": {
       "provider_alias_intent": "/1/members/id/customboardbackgrounds",
       "text": "Get a Member's custom Board Backgrounds",
       "category": "Members",
@@ -12658,14 +12027,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomBoardBackgrounds",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersCustomBoardBackgrounds": {
-      "provider_intent": "postMembersCustomBoardBackgrounds",
+    "trello__/1/members/id/customboardbackgrounds___POST": {
       "provider_alias_intent": "/1/members/id/customboardbackgrounds",
       "text": "Create a new custom Board Background",
       "category": "Members",
@@ -12710,14 +12076,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersCustomBoardBackgrounds",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomBoardBackground": {
-      "provider_intent": "getMembersCustomBoardBackground",
+    "trello__/1/members/id/customboardbackgrounds/idbackground___GET": {
       "provider_alias_intent": "/1/members/id/customboardbackgrounds/idbackground",
       "text": "Get custom Board Background of Member",
       "category": "Members",
@@ -12766,14 +12129,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putMembersCustomBoardBackground": {
-      "provider_intent": "putMembersCustomBoardBackground",
+    "trello__/1/members/id/customboardbackgrounds/idbackground___PUT": {
       "provider_alias_intent": "/1/members/id/customboardbackgrounds/idbackground",
       "text": "Update custom Board Background of Member",
       "category": "Members",
@@ -12839,14 +12199,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putMembersCustomBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteMembersCustomBoardBackground": {
-      "provider_intent": "deleteMembersCustomBoardBackground",
+    "trello__/1/members/id/customboardbackgrounds/idbackground___DELETE": {
       "provider_alias_intent": "/1/members/id/customboardbackgrounds/idbackground",
       "text": "Delete custom Board Background of Member",
       "category": "Members",
@@ -12895,14 +12252,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteMembersCustomBoardBackground",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomEmojis": {
-      "provider_intent": "getMembersCustomEmojis",
+    "trello__/1/members/id/customemoji___GET": {
       "provider_alias_intent": "/1/members/id/customemoji",
       "text": "Get a Member's customEmojis",
       "category": "Members",
@@ -12941,14 +12295,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomEmojis",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersCustomEmojis": {
-      "provider_intent": "postMembersCustomEmojis",
+    "trello__/1/members/id/customemoji___POST": {
       "provider_alias_intent": "/1/members/id/customemoji",
       "text": "Create custom Emoji for Member",
       "category": "Members",
@@ -12998,14 +12349,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersCustomEmojis",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomEmoji": {
-      "provider_intent": "getMembersCustomEmoji",
+    "trello__/1/members/id/customemoji/idemoji___GET": {
       "provider_alias_intent": "/1/members/id/customemoji/idemoji",
       "text": "Get a Member's custom Emoji",
       "category": "Members",
@@ -13061,14 +12409,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomEmoji",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomStickers": {
-      "provider_intent": "getMembersCustomStickers",
+    "trello__/1/members/id/customstickers___GET": {
       "provider_alias_intent": "/1/members/id/customstickers",
       "text": "Get Member's custom Stickers",
       "category": "Members",
@@ -13113,14 +12458,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomStickers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersCustomStickers": {
-      "provider_intent": "postMembersCustomStickers",
+    "trello__/1/members/id/customstickers___POST": {
       "provider_alias_intent": "/1/members/id/customstickers",
       "text": "Create custom Sticker for Member",
       "category": "Members",
@@ -13164,14 +12506,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersCustomStickers",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersCustomSticker": {
-      "provider_intent": "getMembersCustomSticker",
+    "trello__/1/members/id/customstickers/idsticker___GET": {
       "provider_alias_intent": "/1/members/id/customstickers/idsticker",
       "text": "Get a Member's custom Sticker",
       "category": "Members",
@@ -13227,14 +12566,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersCustomSticker",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteMembersCustomSticker": {
-      "provider_intent": "deleteMembersCustomSticker",
+    "trello__/1/members/id/customstickers/idsticker___DELETE": {
       "provider_alias_intent": "/1/members/id/customstickers/idsticker",
       "text": "Delete a Member's custom Sticker",
       "category": "Members",
@@ -13283,14 +12619,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteMembersCustomSticker",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersNotifications": {
-      "provider_intent": "getMembersNotifications",
+    "trello__/1/members/id/notifications___GET": {
       "provider_alias_intent": "/1/members/id/notifications",
       "text": "Get Member's Notifications",
       "category": "Members",
@@ -13399,14 +12732,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersNotifications",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersOrganizations": {
-      "provider_intent": "getMembersOrganizations",
+    "trello__/1/members/id/organizations___GET": {
       "provider_alias_intent": "/1/members/id/organizations",
       "text": "Get Member's Organizations",
       "category": "Members",
@@ -13464,14 +12794,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersOrganizations",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersOrganizationsInvited": {
-      "provider_intent": "getMembersOrganizationsInvited",
+    "trello__/1/members/id/organizationsinvited___GET": {
       "provider_alias_intent": "/1/members/id/organizationsinvited",
       "text": "Get Organizations a Member has been invited to",
       "category": "Members",
@@ -13514,14 +12841,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersOrganizationsInvited",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersSavedSearches": {
-      "provider_intent": "getMembersSavedSearches",
+    "trello__/1/members/id/savedsearches___GET": {
       "provider_alias_intent": "/1/members/id/savedsearches",
       "text": "Get Member's saved searched",
       "category": "Members",
@@ -13560,14 +12884,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersSavedSearches",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersSavedSearches": {
-      "provider_intent": "postMembersSavedSearches",
+    "trello__/1/members/id/savedsearches___POST": {
       "provider_alias_intent": "/1/members/id/savedsearches",
       "text": "Create saved Search for Member",
       "category": "Members",
@@ -13622,14 +12943,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersSavedSearches",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersSavedSearche": {
-      "provider_intent": "getMembersSavedSearche",
+    "trello__/1/members/id/savedsearches/idsearch___GET": {
       "provider_alias_intent": "/1/members/id/savedsearches/idsearch",
       "text": "Get a saved search",
       "category": "Members",
@@ -13678,14 +12996,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersSavedSearche",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putMembersSavedSearche": {
-      "provider_intent": "putMembersSavedSearche",
+    "trello__/1/members/id/savedsearches/idsearch___PUT": {
       "provider_alias_intent": "/1/members/id/savedsearches/idsearch",
       "text": "Update a saved search",
       "category": "Members",
@@ -13747,14 +13062,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putMembersSavedSearche",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "deleteMembersSavedSearche": {
-      "provider_intent": "deleteMembersSavedSearche",
+    "trello__/1/members/id/savedsearches/idsearch___DELETE": {
       "provider_alias_intent": "/1/members/id/savedsearches/idsearch",
       "text": "Delete a saved search",
       "category": "Members",
@@ -13803,14 +13115,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "deleteMembersSavedSearche",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getMembersTokens": {
-      "provider_intent": "getMembersTokens",
+    "trello__/1/members/id/tokens___GET": {
       "provider_alias_intent": "/1/members/id/tokens",
       "text": "Get Member's Tokens",
       "category": "Members",
@@ -13857,14 +13166,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getMembersTokens",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersAvatar": {
-      "provider_intent": "postMembersAvatar",
+    "trello__/1/members/id/avatar___POST": {
       "provider_alias_intent": "/1/members/id/avatar",
       "text": "Create Avatar for Member",
       "category": "Members",
@@ -13909,14 +13215,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersAvatar",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postMembersOneTimeMessagesDismissed": {
-      "provider_intent": "postMembersOneTimeMessagesDismissed",
+    "trello__/1/members/id/onetimemessagesdismissed___POST": {
       "provider_alias_intent": "/1/members/id/onetimemessagesdismissed",
       "text": "Dismiss a message for Member",
       "category": "Members",
@@ -13961,14 +13264,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postMembersOneTimeMessagesDismissed",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotifications": {
-      "provider_intent": "getNotifications",
+    "trello__/1/notifications/id___GET": {
       "provider_alias_intent": "/1/notifications/id",
       "text": "Get a Notification",
       "category": "Notification",
@@ -14095,14 +13395,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotifications",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putNotifications": {
-      "provider_intent": "putNotifications",
+    "trello__/1/notifications/id___PUT": {
       "provider_alias_intent": "/1/notifications/id",
       "text": "Update a Notification's read status",
       "category": "Notification",
@@ -14150,14 +13447,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putNotifications",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsField": {
-      "provider_intent": "getNotificationsField",
+    "trello__/1/notifications/id/field___GET": {
       "provider_alias_intent": "/1/notifications/id/field",
       "text": "Get a field of a Notification",
       "category": "Notification",
@@ -14206,14 +13500,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsField",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "postNotificationsAllRead": {
-      "provider_intent": "postNotificationsAllRead",
+    "trello__/1/notifications/all/read___POST": {
       "provider_alias_intent": "/1/notifications/all/read",
       "text": "Mark all Notifications as read",
       "category": "Notification",
@@ -14256,14 +13547,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "postNotificationsAllRead",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "putNotificationsUnread": {
-      "provider_intent": "putNotificationsUnread",
+    "trello__/1/notifications/id/unread___PUT": {
       "provider_alias_intent": "/1/notifications/id/unread",
       "text": "Update Notification's read status",
       "category": "Notification",
@@ -14305,14 +13593,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "putNotificationsUnread",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsBoard": {
-      "provider_intent": "getNotificationsBoard",
+    "trello__/1/notifications/id/board___GET": {
       "provider_alias_intent": "/1/notifications/id/board",
       "text": "Get the Board a Notification is on",
       "category": "Notification",
@@ -14356,14 +13641,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsBoard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsCard": {
-      "provider_intent": "getNotificationsCard",
+    "trello__/1/notifications/id/card___GET": {
       "provider_alias_intent": "/1/notifications/id/card",
       "text": "Get the Card a Notification is on",
       "category": "Notification",
@@ -14407,14 +13689,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsCard",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsList": {
-      "provider_intent": "getNotificationsList",
+    "trello__/1/notifications/id/list___GET": {
       "provider_alias_intent": "/1/notifications/id/list",
       "text": "Get the List a Notification is on",
       "category": "Notification",
@@ -14457,14 +13736,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsList",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsMember": {
-      "provider_intent": "getNotificationsMember",
+    "trello__/1/notifications/id/member___GET": {
       "provider_alias_intent": "/1/notifications/id/member",
       "text": "Get the Member a Notification is about (not the creator)",
       "category": "Notification",
@@ -14507,14 +13783,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsMember",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsMemberCreator": {
-      "provider_intent": "getNotificationsMemberCreator",
+    "trello__/1/notifications/id/membercreator___GET": {
       "provider_alias_intent": "/1/notifications/id/membercreator",
       "text": "Get the Member who created the Notification",
       "category": "Notification",
@@ -14557,14 +13830,11 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsMemberCreator",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     },
-    "getNotificationsOrganization": {
-      "provider_intent": "getNotificationsOrganization",
+    "trello__/1/notifications/id/organization___GET": {
       "provider_alias_intent": "/1/notifications/id/organization",
       "text": "Get a Notification's associated Organization",
       "category": "Notification",
@@ -14607,11 +13877,9 @@
         ]
       },
       "response_type": "",
-      "wip": 0,
       "intent": "getNotificationsOrganization",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.886Z"
     }
   }
 }

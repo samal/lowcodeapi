@@ -34,8 +34,7 @@
     "credential_link": "https://docs.genny.lovo.ai/reference/intro/getting-started"
   },
   "routes": {
-    "lovo__v1__teams__status___get": {
-      "provider_intent": "lovo__v1__teams__status___get",
+    "lovo__/v1/teams/status___GET": {
       "provider_alias_intent": "/v1/teams/status",
       "provider_proxy_intent": "https://api.genny.lovo.ai/api/v1/teams/status",
       "text": "Get team billing information",
@@ -65,10 +64,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.653Z"
     },
-    "lovo__v1__speakers___get": {
-      "provider_intent": "lovo__v1__speakers___get",
+    "lovo__/v1/speakers___GET": {
       "provider_alias_intent": "/v1/speakers",
       "provider_proxy_intent": "https://api.genny.lovo.ai/api/v1/speakers",
       "text": "Retrieve speakers",
@@ -112,10 +110,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.653Z"
     },
-    "lovo__v1__tts__sync___post": {
-      "provider_intent": "lovo__v1__tts__sync___post",
+    "lovo__/v1/tts/sync___POST": {
       "provider_alias_intent": "/v1/tts/sync",
       "provider_proxy_intent": "https://api.genny.lovo.ai/api/v1/tts/sync",
       "text": "Sync TTS",
@@ -164,10 +161,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.653Z"
     },
-    "lovo__v1__tts___post": {
-      "provider_intent": "lovo__v1__tts___post",
+    "lovo__/v1/tts___POST": {
       "provider_alias_intent": "/v1/tts",
       "provider_proxy_intent": "https://api.genny.lovo.ai/api/v1/tts",
       "text": "Async TTS",
@@ -220,10 +216,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.653Z"
     },
-    "lovo__v1__tts__jobid___get": {
-      "provider_intent": "lovo__v1__tts__jobid___get",
+    "lovo__/v1/tts/jobid___GET": {
       "provider_alias_intent": "/v1/tts/jobid",
       "provider_proxy_intent": "https://api.genny.lovo.ai/api/v1/tts/{jobId}",
       "text": "Async Retrieve Job",
@@ -259,7 +254,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:14.000Z"
+      "updated_at": "2025-11-11T12:00:08.653Z"
     }
   }
 }

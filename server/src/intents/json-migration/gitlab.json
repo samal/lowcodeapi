@@ -1,18 +1,7 @@
 {
-  "app": {
-    "title": "gitlab API",
-    "description": "",
-    "api_base": "/gitlab",
-    "copyright": "",
-    "copyright_year": "",
-    "contact_email": ""
-  },
-  "category": {
-    "All": ""
-  },
+  "config": {},
   "routes": {
-    "get_get_v3deploy_keys": {
-      "provider_intent": "get_get_v3deploy_keys",
+    "gitlab__/v3/deploy_keys___GET": {
       "provider_alias_intent": "/v3/deploy_keys",
       "text": "Deploy Keys 🚧",
       "category": "Deploy Keys",
@@ -40,12 +29,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_a_namespaces_list": {
-      "provider_intent": "get_get_a_namespaces_list",
+    "gitlab__/v3/namespaces___GET": {
       "provider_alias_intent": "/v3/namespaces",
       "text": "Get a namespaces list 🚧",
       "category": "Get a namespaces list",
@@ -83,12 +71,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_currently_authenticated_users_issues": {
-      "provider_intent": "get_get_currently_authenticated_users_issues",
+    "gitlab__/v3/issues___GET": {
       "provider_alias_intent": "/v3/issues",
       "text": "Get currently authenticated user's issues 🚧",
       "category": "Get currently authenticated user's issues",
@@ -138,12 +125,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_single_ssh_key_by_id_only_available_to_admin_users": {
-      "provider_intent": "get_get_single_ssh_key_by_id_only_available_to_admin_users",
+    "gitlab__/v3/keys/id___GET": {
       "provider_alias_intent": "/v3/keys/id",
       "text": "Get single ssh key by id 🚧",
       "category": "Get single ssh key by id. Only available to admin users",
@@ -171,12 +157,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_version_information_of_the_gitlab_instance": {
-      "provider_intent": "get_get_the_version_information_of_the_gitlab_instance",
+    "gitlab__/v3/version___GET": {
       "provider_alias_intent": "/v3/version",
       "text": "This feature was introduced in GitLab 8 🚧",
       "category": "Get the version information of the GitLab instance.",
@@ -204,12 +189,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_login_to_get_token": {
-      "provider_intent": "post_login_to_get_token",
+    "gitlab__/v3/session___POST": {
       "provider_alias_intent": "/v3/session",
       "text": "Login to get token 🚧",
       "category": "Login to get token",
@@ -250,12 +234,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_validation_of_gitlabciyml_content": {
-      "provider_intent": "post_validation_of_gitlabciyml_content",
+    "gitlab__/v3/ci/lint___POST": {
       "provider_alias_intent": "/v3/ci/lint",
       "text": "Validation of 🚧",
       "category": "Validation of .gitlab-ci.yml content",
@@ -288,12 +271,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_current_application_settings": {
-      "provider_intent": "get_get_the_current_application_settings",
+    "gitlab__/v3/application/settings___GET": {
       "provider_alias_intent": "/v3/application/settings",
       "text": "Get the current application settings 🚧",
       "category": "application settings",
@@ -321,12 +303,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_modify_application_settings": {
-      "provider_intent": "put_modify_application_settings",
+    "gitlab__/v3/application/settings___PUT": {
       "provider_alias_intent": "/v3/application/settings",
       "text": "Modify application settings 🚧",
       "category": "application settings",
@@ -699,12 +680,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_list_of_the_available_template_dockfiles": {
-      "provider_intent": "get_get_the_list_of_the_available_template_dockfiles",
+    "gitlab__/v3/dockerfiles___GET": {
       "provider_alias_intent": "/v3/dockerfiles",
       "text": "Dockerfiles 🚧",
       "category": "dockerfiles",
@@ -732,12 +712,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_text_for_a_specific_template_present_in_local_filesystem_dockfiles": {
-      "provider_intent": "get_get_the_text_for_a_specific_template_present_in_local_filesystem_dockfiles",
+    "gitlab__/v3/dockerfiles/name___GET": {
       "provider_alias_intent": "/v3/dockerfiles/name",
       "text": "Dockerfiles 🚧",
       "category": "dockerfiles",
@@ -765,12 +744,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_list_of_the_available_template": {
-      "provider_intent": "get_get_the_list_of_the_available_template",
+    "gitlab__/v3/templates/gitlab_ci_ymls___GET": {
       "provider_alias_intent": "/v3/templates/gitlab_ci_ymls",
       "text": "Templates 🚧",
       "category": "templates",
@@ -798,12 +776,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_text_for_a_specific_template_present_in_local_filesystem": {
-      "provider_intent": "get_get_the_text_for_a_specific_template_present_in_local_filesystem",
+    "gitlab__/v3/templates/gitlab_ci_ymls/name___GET": {
       "provider_alias_intent": "/v3/templates/gitlab_ci_ymls/name",
       "text": "Templates 🚧",
       "category": "templates",
@@ -831,12 +808,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "delete_denies_an_access_request_for_the_given_user": {
-      "provider_intent": "delete_denies_an_access_request_for_the_given_user",
+    "gitlab__/v3/projects/id/access_requests/user_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/access_requests/user_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -864,12 +840,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_approves_an_access_request_for_the_given_user": {
-      "provider_intent": "put_approves_an_access_request_for_the_given_user",
+    "gitlab__/v3/projects/id/access_requests/user_id/approve___PUT": {
       "provider_alias_intent": "/v3/projects/id/access_requests/user_id/approve",
       "text": "Projects 🚧",
       "category": "projects",
@@ -902,12 +877,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_gets_a_list_of_access_requests_for_a_group": {
-      "provider_intent": "get_gets_a_list_of_access_requests_for_a_group",
+    "gitlab__/v3/groups/id/access_requests___GET": {
       "provider_alias_intent": "/v3/groups/id/access_requests",
       "text": "Groups 🚧",
       "category": "groups",
@@ -942,12 +916,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_requests_access_for_the_authenticated_user_to_a_group": {
-      "provider_intent": "post_requests_access_for_the_authenticated_user_to_a_group",
+    "gitlab__/v3/groups/id/access_requests___POST": {
       "provider_alias_intent": "/v3/groups/id/access_requests",
       "text": "Groups 🚧",
       "category": "groups",
@@ -975,12 +948,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "delete_removes_a_user_from_a_group_or_project": {
-      "provider_intent": "delete_removes_a_user_from_a_group_or_project",
+    "gitlab__/v3/projects/id/members/user_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/members/user_id",
       "text": "Removes a user from a group or project 🚧",
       "category": "projects",
@@ -1008,12 +980,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_gets_a_member_of_a_group_or_project": {
-      "provider_intent": "get_gets_a_member_of_a_group_or_project",
+    "gitlab__/v3/projects/id/members/user_id___GET": {
       "provider_alias_intent": "/v3/projects/id/members/user_id",
       "text": "Gets a member of a group or project 🚧",
       "category": "projects",
@@ -1041,12 +1012,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_updates_a_member_of_a_group_or_project": {
-      "provider_intent": "put_updates_a_member_of_a_group_or_project",
+    "gitlab__/v3/projects/id/members/user_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/members/user_id",
       "text": "Updates a member of a group or project 🚧",
       "category": "projects",
@@ -1083,12 +1053,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_gets_a_list_of_group_or_project_members_viewable_by_the_authenticated_user": {
-      "provider_intent": "get_gets_a_list_of_group_or_project_members_viewable_by_the_authenticated_user",
+    "gitlab__/v3/projects/id/members___GET": {
       "provider_alias_intent": "/v3/projects/id/members",
       "text": "Gets a list of group or project members viewable by the authenticated user 🚧",
       "category": "projects",
@@ -1126,12 +1095,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_adds_a_member_to_a_group_or_project": {
-      "provider_intent": "post_adds_a_member_to_a_group_or_project",
+    "gitlab__/v3/projects/id/members___POST": {
       "provider_alias_intent": "/v3/projects/id/members",
       "text": "Adds a member to a group or project 🚧",
       "category": "projects",
@@ -1172,12 +1140,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_group_level_notification_level_settings_defaults_to_global": {
-      "provider_intent": "get_get_group_level_notification_level_settings_defaults_to_global",
+    "gitlab__/v3/groups/id/notification_settings___GET": {
       "provider_alias_intent": "/v3/groups/id/notification_settings",
       "text": "This feature was introduced in GitLab 8 🚧",
       "category": "groups",
@@ -1205,12 +1172,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_update_group_level_notification_level_settings_defaults_to_global": {
-      "provider_intent": "put_update_group_level_notification_level_settings_defaults_to_global",
+    "gitlab__/v3/groups/id/notification_settings___PUT": {
       "provider_alias_intent": "/v3/groups/id/notification_settings",
       "text": "This feature was introduced in GitLab 8 🚧",
       "category": "groups",
@@ -1339,12 +1305,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_a_list_of_projects_in_this_group": {
-      "provider_intent": "get_get_a_list_of_projects_in_this_group",
+    "gitlab__/v3/groups/id/projects___GET": {
       "provider_alias_intent": "/v3/groups/id/projects",
       "text": "Get a list of projects in this group 🚧",
       "category": "groups",
@@ -1397,12 +1362,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_transfer_a_project_to_the_group_namespace_available_only_for_admin": {
-      "provider_intent": "post_transfer_a_project_to_the_group_namespace_available_only_for_admin",
+    "gitlab__/v3/groups/id/projects/project_id___POST": {
       "provider_alias_intent": "/v3/groups/id/projects/project_id",
       "text": "Transfer a project to the group namespace 🚧",
       "category": "groups",
@@ -1430,12 +1394,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "delete_remove_a_group": {
-      "provider_intent": "delete_remove_a_group",
+    "gitlab__/v3/groups/id___DELETE": {
       "provider_alias_intent": "/v3/groups/id",
       "text": "Remove a group 🚧",
       "category": "groups",
@@ -1463,12 +1426,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_a_single_group_with_containing_projects": {
-      "provider_intent": "get_get_a_single_group_with_containing_projects",
+    "gitlab__/v3/groups/id___GET": {
       "provider_alias_intent": "/v3/groups/id",
       "text": "Get a single group with containing projects 🚧",
       "category": "groups",
@@ -1496,12 +1458,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_update_a_group_available_only_for_users_who_can_administrate_groups": {
-      "provider_intent": "put_update_a_group_available_only_for_users_who_can_administrate_groups",
+    "gitlab__/v3/groups/id___PUT": {
       "provider_alias_intent": "/v3/groups/id",
       "text": "Update a group 🚧",
       "category": "groups",
@@ -1562,12 +1523,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_a_list_of_group_issues": {
-      "provider_intent": "get_get_a_list_of_group_issues",
+    "gitlab__/v3/groups/id/issues___GET": {
       "provider_alias_intent": "/v3/groups/id/issues",
       "text": "Get a list of group issues 🚧",
       "category": "groups",
@@ -1617,12 +1577,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_a_groups_list": {
-      "provider_intent": "get_get_a_groups_list",
+    "gitlab__/v3/groups___GET": {
       "provider_alias_intent": "/v3/groups",
       "text": "Get a groups list 🚧",
       "category": "groups",
@@ -1679,12 +1638,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_create_a_group_available_only_for_users_who_can_create_groups": {
-      "provider_intent": "post_create_a_group_available_only_for_users_who_can_create_groups",
+    "gitlab__/v3/groups___POST": {
       "provider_alias_intent": "/v3/groups",
       "text": "Create a group 🚧",
       "category": "groups",
@@ -1745,12 +1703,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_list_of_owned_groups_for_authenticated_user": {
-      "provider_intent": "get_get_list_of_owned_groups_for_authenticated_user",
+    "gitlab__/v3/groups/owned___GET": {
       "provider_alias_intent": "/v3/groups/owned",
       "text": "Get list of owned groups for authenticated user 🚧",
       "category": "groups",
@@ -1788,12 +1745,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "delete_delete_a_hook": {
-      "provider_intent": "delete_delete_a_hook",
+    "gitlab__/v3/hooks/id___DELETE": {
       "provider_alias_intent": "/v3/hooks/id",
       "text": "Delete a hook 🚧",
       "category": "hooks",
@@ -1821,12 +1777,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_test_a_hook": {
-      "provider_intent": "get_test_a_hook",
+    "gitlab__/v3/hooks/id___GET": {
       "provider_alias_intent": "/v3/hooks/id",
       "text": "Test a hook 🚧",
       "category": "hooks",
@@ -1854,12 +1809,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_list_of_system_hooks": {
-      "provider_intent": "get_get_the_list_of_system_hooks",
+    "gitlab__/v3/hooks___GET": {
       "provider_alias_intent": "/v3/hooks",
       "text": "Get the list of system hooks 🚧",
       "category": "hooks",
@@ -1887,12 +1841,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_create_a_new_system_hook": {
-      "provider_intent": "post_create_a_new_system_hook",
+    "gitlab__/v3/hooks___POST": {
       "provider_alias_intent": "/v3/hooks",
       "text": "Create a new system hook 🚧",
       "category": "hooks",
@@ -1953,12 +1906,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_post_v3internal_allowed": {
-      "provider_intent": "post_post_v3internal_allowed",
+    "gitlab__/v3/internal/allowed___POST": {
       "provider_alias_intent": "/v3/internal/allowed",
       "text": "Internal 🚧",
       "category": "internal",
@@ -1986,12 +1938,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_v3internal_broadcast_message": {
-      "provider_intent": "get_get_v3internal_broadcast_message",
+    "gitlab__/v3/internal/broadcast_message___GET": {
       "provider_alias_intent": "/v3/internal/broadcast_message",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2019,12 +1970,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_v3internal_check": {
-      "provider_intent": "get_get_v3internal_check",
+    "gitlab__/v3/internal/check___GET": {
       "provider_alias_intent": "/v3/internal/check",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2052,12 +2002,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_v3internal_discover": {
-      "provider_intent": "get_get_v3internal_discover",
+    "gitlab__/v3/internal/discover___GET": {
       "provider_alias_intent": "/v3/internal/discover",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2085,12 +2034,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_post_v3internal_lfs_authenticate": {
-      "provider_intent": "post_post_v3internal_lfs_authenticate",
+    "gitlab__/v3/internal/lfs_authenticate___POST": {
       "provider_alias_intent": "/v3/internal/lfs_authenticate",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2118,12 +2066,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_v3internal_merge_request_urls": {
-      "provider_intent": "get_get_v3internal_merge_request_urls",
+    "gitlab__/v3/internal/merge_request_urls___GET": {
       "provider_alias_intent": "/v3/internal/merge_request_urls",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2151,12 +2098,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "post_post_v3internal_two_factor_recovery_codes": {
-      "provider_intent": "post_post_v3internal_two_factor_recovery_codes",
+    "gitlab__/v3/internal/two_factor_recovery_codes___POST": {
       "provider_alias_intent": "/v3/internal/two_factor_recovery_codes",
       "text": "Internal 🚧",
       "category": "internal",
@@ -2184,12 +2130,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_list_of_the_available_license_template": {
-      "provider_intent": "get_get_the_list_of_the_available_license_template",
+    "gitlab__/v3/templates/licenses___GET": {
       "provider_alias_intent": "/v3/templates/licenses",
       "text": "Templates 🚧",
       "category": "templates",
@@ -2221,12 +2166,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_the_text_for_a_specific_license": {
-      "provider_intent": "get_get_the_text_for_a_specific_license",
+    "gitlab__/v3/templates/licenses/name___GET": {
       "provider_alias_intent": "/v3/templates/licenses/name",
       "text": "Templates 🚧",
       "category": "templates",
@@ -2254,12 +2198,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_get_global_notification_level_settings_and_email_defaults_to_participate": {
-      "provider_intent": "get_get_global_notification_level_settings_and_email_defaults_to_participate",
+    "gitlab__/v3/notification_settings___GET": {
       "provider_alias_intent": "/v3/notification_settings",
       "text": "Notification 🚧",
       "category": "notification settings",
@@ -2287,12 +2230,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "put_update_global_notification_level_settings_and_email_defaults_to_participate": {
-      "provider_intent": "put_update_global_notification_level_settings_and_email_defaults_to_participate",
+    "gitlab__/v3/notification_settings___PUT": {
       "provider_alias_intent": "/v3/notification_settings",
       "text": "Notification 🚧",
       "category": "notification settings",
@@ -2425,12 +2367,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.390Z"
     },
-    "get_gets_a_list_of_access_requests_for_a_project": {
-      "provider_intent": "get_gets_a_list_of_access_requests_for_a_project",
+    "gitlab__/v3/projects/id/access_requests___GET": {
       "provider_alias_intent": "/v3/projects/id/access_requests",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2465,12 +2406,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_requests_access_for_the_authenticated_user_to_a_project": {
-      "provider_intent": "post_requests_access_for_the_authenticated_user_to_a_project",
+    "gitlab__/v3/projects/id/access_requests___POST": {
       "provider_alias_intent": "/v3/projects/id/access_requests",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2498,12 +2438,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_board_list": {
-      "provider_intent": "delete_delete_a_board_list",
+    "gitlab__/v3/projects/id/boards/board_id/lists/list_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/boards/board_id/lists/list_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2531,12 +2470,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_a_project_board": {
-      "provider_intent": "get_get_a_list_of_a_project_board",
+    "gitlab__/v3/projects/id/boards/board_id/lists/list_id___GET": {
       "provider_alias_intent": "/v3/projects/id/boards/board_id/lists/list_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2564,12 +2502,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_moves_a_board_list_to_a_new_position": {
-      "provider_intent": "put_moves_a_board_list_to_a_new_position",
+    "gitlab__/v3/projects/id/boards/board_id/lists/list_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/boards/board_id/lists/list_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2602,12 +2539,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_the_lists_of_a_project_board": {
-      "provider_intent": "get_get_the_lists_of_a_project_board",
+    "gitlab__/v3/projects/id/boards/board_id/lists___GET": {
       "provider_alias_intent": "/v3/projects/id/boards/board_id/lists",
       "text": "Does not include `backlog` and `done` lists 🚧",
       "category": "projects",
@@ -2635,12 +2571,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_new_board_list": {
-      "provider_intent": "post_create_a_new_board_list",
+    "gitlab__/v3/projects/id/boards/board_id/lists___POST": {
       "provider_alias_intent": "/v3/projects/id/boards/board_id/lists",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2673,12 +2608,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_project_boards": {
-      "provider_intent": "get_get_all_project_boards",
+    "gitlab__/v3/projects/id/boards___GET": {
       "provider_alias_intent": "/v3/projects/id/boards",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2706,12 +2640,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_download_the_artifacts_file_from_build": {
-      "provider_intent": "get_download_the_artifacts_file_from_build",
+    "gitlab__/v3/projects/id/builds/artifacts/ref_name/download___GET": {
       "provider_alias_intent": "/v3/projects/id/builds/artifacts/ref_name/download",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2743,12 +2676,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_keep_the_artifacts_to_prevent_them_from_being_deleted": {
-      "provider_intent": "post_keep_the_artifacts_to_prevent_them_from_being_deleted",
+    "gitlab__/v3/projects/id/builds/build_id/artifacts/keep___POST": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/artifacts/keep",
       "text": "Keep the artifacts to prevent them from being deleted 🚧",
       "category": "projects",
@@ -2776,12 +2708,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_specific_build_of_a_project": {
-      "provider_intent": "get_get_a_specific_build_of_a_project",
+    "gitlab__/v3/projects/id/builds/build_id___GET": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id",
       "text": "Get a specific build of a project 🚧",
       "category": "projects",
@@ -2809,12 +2740,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_cancel_a_specific_build_of_a_project": {
-      "provider_intent": "post_cancel_a_specific_build_of_a_project",
+    "gitlab__/v3/projects/id/builds/build_id/cancel___POST": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/cancel",
       "text": "Cancel a specific build of a project 🚧",
       "category": "projects",
@@ -2842,12 +2772,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_erase_build_remove_artifacts_and_build_trace": {
-      "provider_intent": "post_erase_build_remove_artifacts_and_build_trace",
+    "gitlab__/v3/projects/id/builds/build_id/erase___POST": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/erase",
       "text": "Erase build (remove artifacts and build trace) 🚧",
       "category": "projects",
@@ -2875,12 +2804,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_trigger_a_manual_build": {
-      "provider_intent": "post_trigger_a_manual_build",
+    "gitlab__/v3/projects/id/builds/build_id/play___POST": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/play",
       "text": "Projects 🚧",
       "category": "projects",
@@ -2908,12 +2836,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_retry_a_specific_build_of_a_project": {
-      "provider_intent": "post_retry_a_specific_build_of_a_project",
+    "gitlab__/v3/projects/id/builds/build_id/retry___POST": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/retry",
       "text": "Retry a specific build of a project 🚧",
       "category": "projects",
@@ -2941,12 +2868,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_trace_of_a_specific_build_of_a_project": {
-      "provider_intent": "get_get_a_trace_of_a_specific_build_of_a_project",
+    "gitlab__/v3/projects/id/builds/build_id/trace___GET": {
       "provider_alias_intent": "/v3/projects/id/builds/build_id/trace",
       "text": "Get a trace of a specific build of a project 🚧",
       "category": "projects",
@@ -2974,12 +2900,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_project_builds": {
-      "provider_intent": "get_get_a_project_builds",
+    "gitlab__/v3/projects/id/builds___GET": {
       "provider_alias_intent": "/v3/projects/id/builds",
       "text": "Get a project builds 🚧",
       "category": "projects",
@@ -3017,12 +2942,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_deploy_key_for_a_project": {
-      "provider_intent": "delete_delete_deploy_key_for_a_project",
+    "gitlab__/v3/projects/id/keys/key_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/keys/key_id",
       "text": "Delete deploy key for a project 🚧",
       "category": "projects",
@@ -3050,12 +2974,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_single_deploy_key": {
-      "provider_intent": "get_get_single_deploy_key",
+    "gitlab__/v3/projects/id/keys/key_id___GET": {
       "provider_alias_intent": "/v3/projects/id/keys/key_id",
       "text": "Get single deploy key 🚧",
       "category": "projects",
@@ -3083,12 +3006,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_disable_a_deploy_key_for_a_project": {
-      "provider_intent": "delete_disable_a_deploy_key_for_a_project",
+    "gitlab__/v3/projects/id/keys/key_id/disable___DELETE": {
       "provider_alias_intent": "/v3/projects/id/keys/key_id/disable",
       "text": "This feature was added in GitLab 8 🚧",
       "category": "projects",
@@ -3116,12 +3038,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_enable_a_deploy_key_for_a_project": {
-      "provider_intent": "post_enable_a_deploy_key_for_a_project",
+    "gitlab__/v3/projects/id/keys/key_id/enable___POST": {
       "provider_alias_intent": "/v3/projects/id/keys/key_id/enable",
       "text": "This feature was added in GitLab 8 🚧",
       "category": "projects",
@@ -3149,12 +3070,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_specific_projects_deploy_keys": {
-      "provider_intent": "get_get_a_specific_projects_deploy_keys",
+    "gitlab__/v3/projects/id/keys___GET": {
       "provider_alias_intent": "/v3/projects/id/keys",
       "text": "Get a specific project's deploy keys 🚧",
       "category": "projects",
@@ -3182,12 +3102,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_add_new_deploy_key_to_currently_authenticated_user": {
-      "provider_intent": "post_add_new_deploy_key_to_currently_authenticated_user",
+    "gitlab__/v3/projects/id/keys___POST": {
       "provider_alias_intent": "/v3/projects/id/keys",
       "text": "Add new deploy key to currently authenticated user 🚧",
       "category": "projects",
@@ -3224,12 +3143,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_deployments_of_the_project": {
-      "provider_intent": "get_get_all_deployments_of_the_project",
+    "gitlab__/v3/projects/id/deployments___GET": {
       "provider_alias_intent": "/v3/projects/id/deployments",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3264,12 +3182,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_gets_a_specific_deployment": {
-      "provider_intent": "get_gets_a_specific_deployment",
+    "gitlab__/v3/projects/id/deployments/deployment_id___GET": {
       "provider_alias_intent": "/v3/projects/id/deployments/deployment_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3297,12 +3214,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_deletes_an_existing_environment": {
-      "provider_intent": "delete_deletes_an_existing_environment",
+    "gitlab__/v3/projects/id/environments/environment_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/environments/environment_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3330,12 +3246,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_updates_an_existing_environment": {
-      "provider_intent": "put_updates_an_existing_environment",
+    "gitlab__/v3/projects/id/environments/environment_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/environments/environment_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3375,12 +3290,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_environments_of_the_project": {
-      "provider_intent": "get_get_all_environments_of_the_project",
+    "gitlab__/v3/projects/id/environments___GET": {
       "provider_alias_intent": "/v3/projects/id/environments",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3415,12 +3329,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_creates_a_new_environment": {
-      "provider_intent": "post_creates_a_new_environment",
+    "gitlab__/v3/projects/id/environments___POST": {
       "provider_alias_intent": "/v3/projects/id/environments",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3460,12 +3373,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_remove_a_forked_from_relationship": {
-      "provider_intent": "delete_remove_a_forked_from_relationship",
+    "gitlab__/v3/projects/id/fork___DELETE": {
       "provider_alias_intent": "/v3/projects/id/fork",
       "text": "Remove a forked_from relationship 🚧",
       "category": "projects",
@@ -3493,12 +3405,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_mark_this_project_as_forked_from_another": {
-      "provider_intent": "post_mark_this_project_as_forked_from_another",
+    "gitlab__/v3/projects/id/fork/forked_from_id___POST": {
       "provider_alias_intent": "/v3/projects/id/fork/forked_from_id",
       "text": "Mark this project as forked from another 🚧",
       "category": "projects",
@@ -3526,12 +3437,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_deletes_project_hook": {
-      "provider_intent": "delete_deletes_project_hook",
+    "gitlab__/v3/projects/id/hooks/hook_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/hooks/hook_id",
       "text": "Deletes project hook 🚧",
       "category": "projects",
@@ -3559,12 +3469,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_project_hook": {
-      "provider_intent": "get_get_a_project_hook",
+    "gitlab__/v3/projects/id/hooks/hook_id___GET": {
       "provider_alias_intent": "/v3/projects/id/hooks/hook_id",
       "text": "Get a project hook 🚧",
       "category": "projects",
@@ -3592,12 +3501,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_an_existing_project_hook": {
-      "provider_intent": "put_update_an_existing_project_hook",
+    "gitlab__/v3/projects/id/hooks/hook_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/hooks/hook_id",
       "text": "Update an existing project hook 🚧",
       "category": "projects",
@@ -3706,12 +3614,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_project_hooks": {
-      "provider_intent": "get_get_project_hooks",
+    "gitlab__/v3/projects/id/hooks___GET": {
       "provider_alias_intent": "/v3/projects/id/hooks",
       "text": "Get project hooks 🚧",
       "category": "projects",
@@ -3746,12 +3653,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_add_hook_to_project": {
-      "provider_intent": "post_add_hook_to_project",
+    "gitlab__/v3/projects/id/hooks___POST": {
       "provider_alias_intent": "/v3/projects/id/hooks",
       "text": "Add hook to project 🚧",
       "category": "projects",
@@ -3860,12 +3766,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_awardables_award_emoji": {
-      "provider_intent": "delete_delete_a_awardables_award_emoji",
+    "gitlab__/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji/award_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji/award_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3893,12 +3798,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_specific_award_emoji": {
-      "provider_intent": "get_get_a_specific_award_emoji",
+    "gitlab__/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji/award_id___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji/award_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3926,12 +3830,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_project_awardable_award_emoji": {
-      "provider_intent": "get_get_a_list_of_project_awardable_award_emoji",
+    "gitlab__/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji",
       "text": "Projects 🚧",
       "category": "projects",
@@ -3966,12 +3869,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_award_a_new_emoji": {
-      "provider_intent": "post_award_a_new_emoji",
+    "gitlab__/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji___POST": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id/notes/note_id/award_emoji",
       "text": "Projects 🚧",
       "category": "projects",
@@ -4004,12 +3906,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_project_issue": {
-      "provider_intent": "delete_delete_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id",
       "text": "Delete a project issue 🚧",
       "category": "projects",
@@ -4037,12 +3938,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_project_issue": {
-      "provider_intent": "get_get_a_single_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id___GET": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id",
       "text": "Get a single project issue 🚧",
       "category": "projects",
@@ -4070,12 +3970,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_an_existing_issue": {
-      "provider_intent": "put_update_an_existing_issue",
+    "gitlab__/v3/projects/id/issues/issue_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id",
       "text": "Update an existing issue 🚧",
       "category": "projects",
@@ -4147,12 +4046,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_add_spent_time_for_a_project_issue": {
-      "provider_intent": "post_add_spent_time_for_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/add_spent_time___POST": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/add_spent_time",
       "text": "Add spent time for a project issue 🚧",
       "category": "projects",
@@ -4185,12 +4083,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_move_an_existing_issue": {
-      "provider_intent": "post_move_an_existing_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/move___POST": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/move",
       "text": "Move an existing issue 🚧",
       "category": "projects",
@@ -4223,12 +4120,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_reset_spent_time_for_a_project_issue": {
-      "provider_intent": "post_reset_spent_time_for_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/reset_spent_time___POST": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/reset_spent_time",
       "text": "Reset spent time for a project issue 🚧",
       "category": "projects",
@@ -4256,12 +4152,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_reset_the_time_estimate_for_a_project_issue": {
-      "provider_intent": "post_reset_the_time_estimate_for_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/reset_time_estimate___POST": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/reset_time_estimate",
       "text": "Reset the time estimate for a project issue 🚧",
       "category": "projects",
@@ -4289,12 +4184,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_set_a_time_estimate_for_a_project_issue": {
-      "provider_intent": "post_set_a_time_estimate_for_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/time_estimate___POST": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/time_estimate",
       "text": "Set a time estimate for a project issue 🚧",
       "category": "projects",
@@ -4327,12 +4221,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_show_time_stats_for_a_project_issue": {
-      "provider_intent": "get_show_time_stats_for_a_project_issue",
+    "gitlab__/v3/projects/id/issues/issue_id/time_stats___GET": {
       "provider_alias_intent": "/v3/projects/id/issues/issue_id/time_stats",
       "text": "Show time stats for a project issue 🚧",
       "category": "projects",
@@ -4360,12 +4253,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_todo_on_an_issuable": {
-      "provider_intent": "post_create_a_todo_on_an_issuable",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/todo___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/todo",
       "text": "Create a todo on an issuable 🚧",
       "category": "projects",
@@ -4393,12 +4285,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_noteable_note": {
-      "provider_intent": "delete_delete_a_noteable_note",
+    "gitlab__/v3/projects/id/snippets/noteable_id/notes/note_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/snippets/noteable_id/notes/note_id",
       "text": "Delete a +noteable+ note 🚧",
       "category": "projects",
@@ -4426,12 +4317,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_noteable_note": {
-      "provider_intent": "get_get_a_single_noteable_note",
+    "gitlab__/v3/projects/id/snippets/noteable_id/notes/note_id___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/noteable_id/notes/note_id",
       "text": "Get a single +noteable+ note 🚧",
       "category": "projects",
@@ -4459,12 +4349,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_an_existing_noteable_note": {
-      "provider_intent": "put_update_an_existing_noteable_note",
+    "gitlab__/v3/projects/id/snippets/noteable_id/notes/note_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/snippets/noteable_id/notes/note_id",
       "text": "Update an existing +noteable+ note 🚧",
       "category": "projects",
@@ -4497,12 +4386,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_project_noteable_notes": {
-      "provider_intent": "get_get_a_list_of_project_noteable_notes",
+    "gitlab__/v3/projects/id/snippets/noteable_id/notes___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/noteable_id/notes",
       "text": "Get a list of project +noteable+ notes 🚧",
       "category": "projects",
@@ -4537,12 +4425,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_new_noteable_note": {
-      "provider_intent": "post_create_a_new_noteable_note",
+    "gitlab__/v3/projects/id/snippets/noteable_id/notes___POST": {
       "provider_alias_intent": "/v3/projects/id/snippets/noteable_id/notes",
       "text": "Create a new +noteable+ note 🚧",
       "category": "projects",
@@ -4579,12 +4466,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_unsubscribe_from_a_resource": {
-      "provider_intent": "delete_unsubscribe_from_a_resource",
+    "gitlab__/v3/projects/id/merge_requests/subscribable_id/subscription___DELETE": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/subscribable_id/subscription",
       "text": "Unsubscribe from a resource 🚧",
       "category": "projects",
@@ -4612,12 +4498,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_subscribe_to_a_resource": {
-      "provider_intent": "post_subscribe_to_a_resource",
+    "gitlab__/v3/projects/id/merge_requests/subscribable_id/subscription___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/subscribable_id/subscription",
       "text": "Subscribe to a resource 🚧",
       "category": "projects",
@@ -4645,12 +4530,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_project_issues": {
-      "provider_intent": "get_get_a_list_of_project_issues",
+    "gitlab__/v3/projects/id/issues___GET": {
       "provider_alias_intent": "/v3/projects/id/issues",
       "text": "Get a list of project issues 🚧",
       "category": "projects",
@@ -4703,12 +4587,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_new_project_issue": {
-      "provider_intent": "post_create_a_new_project_issue",
+    "gitlab__/v3/projects/id/issues___POST": {
       "provider_alias_intent": "/v3/projects/id/issues",
       "text": "Create a new project issue 🚧",
       "category": "projects",
@@ -4777,12 +4660,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_an_existing_label": {
-      "provider_intent": "delete_delete_an_existing_label",
+    "gitlab__/v3/projects/id/labels___DELETE": {
       "provider_alias_intent": "/v3/projects/id/labels",
       "text": "Delete an existing label 🚧",
       "category": "projects",
@@ -4814,12 +4696,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_labels_of_the_project": {
-      "provider_intent": "get_get_all_labels_of_the_project",
+    "gitlab__/v3/projects/id/labels___GET": {
       "provider_alias_intent": "/v3/projects/id/labels",
       "text": "Get all labels of the project 🚧",
       "category": "projects",
@@ -4847,12 +4728,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_new_label": {
-      "provider_intent": "post_create_a_new_label",
+    "gitlab__/v3/projects/id/labels___POST": {
       "provider_alias_intent": "/v3/projects/id/labels",
       "text": "Create a new label 🚧",
       "category": "projects",
@@ -4897,12 +4777,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_an_existing_label_at_least_one_optional_parameter_is_required": {
-      "provider_intent": "put_update_an_existing_label_at_least_one_optional_parameter_is_required",
+    "gitlab__/v3/projects/id/labels___PUT": {
       "provider_alias_intent": "/v3/projects/id/labels",
       "text": "Update an existing label 🚧",
       "category": "projects",
@@ -4951,12 +4830,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_the_comments_of_a_merge_request": {
-      "provider_intent": "get_get_the_comments_of_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/comments___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/comments",
       "text": "Duplicate 🚧",
       "category": "projects",
@@ -4991,12 +4869,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_post_a_comment_to_a_merge_request": {
-      "provider_intent": "post_post_a_comment_to_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/comments___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/comments",
       "text": "Duplicate 🚧",
       "category": "projects",
@@ -5029,12 +4906,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_merge_request": {
-      "provider_intent": "get_get_a_single_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id",
       "text": "Get a single merge request 🚧",
       "category": "projects",
@@ -5062,12 +4938,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_a_merge_request": {
-      "provider_intent": "put_update_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id",
       "text": "Update a merge request 🚧",
       "category": "projects",
@@ -5132,12 +5007,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_cancel_merge_if_\"merge_when_pipeline_succeeds\"_is_enabled": {
-      "provider_intent": "post_cancel_merge_if_\"merge_when_pipeline_succeeds\"_is_enabled",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/cancel_merge_when_build_succeeds___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/cancel_merge_when_build_succeeds",
       "text": "Cancel merge if \"Merge When Pipeline Succeeds\" is enabled 🚧",
       "category": "projects",
@@ -5165,12 +5039,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_show_the_merge_request_changes": {
-      "provider_intent": "get_show_the_merge_request_changes",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/changes___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/changes",
       "text": "Show the merge request changes 🚧",
       "category": "projects",
@@ -5198,12 +5071,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_list_issues_that_will_be_closed_on_merge": {
-      "provider_intent": "get_list_issues_that_will_be_closed_on_merge",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/closes_issues___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/closes_issues",
       "text": "List issues that will be closed on merge 🚧",
       "category": "projects",
@@ -5238,12 +5110,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_the_commits_of_a_merge_request": {
-      "provider_intent": "get_get_the_commits_of_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/commits___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/commits",
       "text": "Get the commits of a merge request 🚧",
       "category": "projects",
@@ -5271,12 +5142,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_merge_a_merge_request": {
-      "provider_intent": "put_merge_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/merge___PUT": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/merge",
       "text": "Merge a merge request 🚧",
       "category": "projects",
@@ -5329,12 +5199,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_merge_request_diff_versions": {
-      "provider_intent": "get_get_a_list_of_merge_request_diff_versions",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/versions___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/versions",
       "text": "Projects 🚧",
       "category": "projects",
@@ -5362,12 +5231,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_merge_request_diff_version": {
-      "provider_intent": "get_get_a_single_merge_request_diff_version",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/versions/version_id___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/versions/version_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -5395,12 +5263,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_merge_request": {
-      "provider_intent": "delete_delete_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id",
       "text": "Delete a merge request 🚧",
       "category": "projects",
@@ -5428,12 +5295,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_add_spent_time_for_a_project_merge_request": {
-      "provider_intent": "post_add_spent_time_for_a_project_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/add_spent_time___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/add_spent_time",
       "text": "Add spent time for a project merge_request 🚧",
       "category": "projects",
@@ -5466,12 +5332,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_reset_spent_time_for_a_project_merge_request": {
-      "provider_intent": "post_reset_spent_time_for_a_project_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/reset_spent_time___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/reset_spent_time",
       "text": "Reset spent time for a project merge_request 🚧",
       "category": "projects",
@@ -5499,12 +5364,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_reset_the_time_estimate_for_a_project_merge_request": {
-      "provider_intent": "post_reset_the_time_estimate_for_a_project_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/reset_time_estimate___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/reset_time_estimate",
       "text": "Reset the time estimate for a project merge_request 🚧",
       "category": "projects",
@@ -5532,12 +5396,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_set_a_time_estimate_for_a_project_merge_request": {
-      "provider_intent": "post_set_a_time_estimate_for_a_project_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/time_estimate___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/time_estimate",
       "text": "Set a time estimate for a project merge_request 🚧",
       "category": "projects",
@@ -5570,12 +5433,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_show_time_stats_for_a_project_merge_request": {
-      "provider_intent": "get_show_time_stats_for_a_project_merge_request",
+    "gitlab__/v3/projects/id/merge_requests/merge_request_id/time_stats___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests/merge_request_id/time_stats",
       "text": "Show time stats for a project merge_request 🚧",
       "category": "projects",
@@ -5603,12 +5465,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_list_merge_requests": {
-      "provider_intent": "get_list_merge_requests",
+    "gitlab__/v3/projects/id/merge_requests___GET": {
       "provider_alias_intent": "/v3/projects/id/merge_requests",
       "text": "List merge requests 🚧",
       "category": "projects",
@@ -5659,12 +5520,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_merge_request": {
-      "provider_intent": "post_create_a_merge_request",
+    "gitlab__/v3/projects/id/merge_requests___POST": {
       "provider_alias_intent": "/v3/projects/id/merge_requests",
       "text": "Create a merge request 🚧",
       "category": "projects",
@@ -5733,12 +5593,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_project_milestone": {
-      "provider_intent": "get_get_a_single_project_milestone",
+    "gitlab__/v3/projects/id/milestones/milestone_id___GET": {
       "provider_alias_intent": "/v3/projects/id/milestones/milestone_id",
       "text": "Get a single project milestone 🚧",
       "category": "projects",
@@ -5766,12 +5625,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_an_existing_project_milestone": {
-      "provider_intent": "put_update_an_existing_project_milestone",
+    "gitlab__/v3/projects/id/milestones/milestone_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/milestones/milestone_id",
       "text": "Update an existing project milestone 🚧",
       "category": "projects",
@@ -5820,12 +5678,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_issues_for_a_single_project_milestone": {
-      "provider_intent": "get_get_all_issues_for_a_single_project_milestone",
+    "gitlab__/v3/projects/id/milestones/milestone_id/issues___GET": {
       "provider_alias_intent": "/v3/projects/id/milestones/milestone_id/issues",
       "text": "Get all issues for a single project milestone 🚧",
       "category": "projects",
@@ -5860,12 +5717,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_list_of_project_milestones": {
-      "provider_intent": "get_get_a_list_of_project_milestones",
+    "gitlab__/v3/projects/id/milestones___GET": {
       "provider_alias_intent": "/v3/projects/id/milestones",
       "text": "Get a list of project milestones 🚧",
       "category": "projects",
@@ -5910,12 +5766,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_a_new_project_milestone": {
-      "provider_intent": "post_create_a_new_project_milestone",
+    "gitlab__/v3/projects/id/milestones___POST": {
       "provider_alias_intent": "/v3/projects/id/milestones",
       "text": "Create a new project milestone 🚧",
       "category": "projects",
@@ -5960,12 +5815,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_project_level_notification_level_settings_defaults_to_global": {
-      "provider_intent": "get_get_project_level_notification_level_settings_defaults_to_global",
+    "gitlab__/v3/projects/id/notification_settings___GET": {
       "provider_alias_intent": "/v3/projects/id/notification_settings",
       "text": "Projects 🚧",
       "category": "projects",
@@ -5993,12 +5847,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_update_project_level_notification_level_settings_defaults_to_global": {
-      "provider_intent": "put_update_project_level_notification_level_settings_defaults_to_global",
+    "gitlab__/v3/projects/id/notification_settings___PUT": {
       "provider_alias_intent": "/v3/projects/id/notification_settings",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6127,12 +5980,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_gets_a_specific_pipeline_for_the_project": {
-      "provider_intent": "get_gets_a_specific_pipeline_for_the_project",
+    "gitlab__/v3/projects/id/pipelines/pipeline_id___GET": {
       "provider_alias_intent": "/v3/projects/id/pipelines/pipeline_id",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6160,12 +6012,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_cancel_all_builds_in_the_pipeline": {
-      "provider_intent": "post_cancel_all_builds_in_the_pipeline",
+    "gitlab__/v3/projects/id/pipelines/pipeline_id/cancel___POST": {
       "provider_alias_intent": "/v3/projects/id/pipelines/pipeline_id/cancel",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6193,12 +6044,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_retry_failed_builds_in_the_pipeline": {
-      "provider_intent": "post_retry_failed_builds_in_the_pipeline",
+    "gitlab__/v3/projects/id/pipelines/pipeline_id/retry___POST": {
       "provider_alias_intent": "/v3/projects/id/pipelines/pipeline_id/retry",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6226,12 +6076,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_all_pipelines_of_the_project": {
-      "provider_intent": "get_get_all_pipelines_of_the_project",
+    "gitlab__/v3/projects/id/pipelines___GET": {
       "provider_alias_intent": "/v3/projects/id/pipelines",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6269,12 +6118,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_a_branch": {
-      "provider_intent": "delete_delete_a_branch",
+    "gitlab__/v3/projects/id/repository/branches/branch___DELETE": {
       "provider_alias_intent": "/v3/projects/id/repository/branches/branch",
       "text": "Delete a branch 🚧",
       "category": "projects",
@@ -6302,12 +6150,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_single_branch": {
-      "provider_intent": "get_get_a_single_branch",
+    "gitlab__/v3/projects/id/repository/branches/branch___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/branches/branch",
       "text": "Get a single branch 🚧",
       "category": "projects",
@@ -6335,12 +6182,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_protect_a_single_branch": {
-      "provider_intent": "put_protect_a_single_branch",
+    "gitlab__/v3/projects/id/repository/branches/branch/protect___PUT": {
       "provider_alias_intent": "/v3/projects/id/repository/branches/branch/protect",
       "text": "Protect a single branch 🚧",
       "category": "projects",
@@ -6385,12 +6231,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "put_unprotect_a_single_branch": {
-      "provider_intent": "put_unprotect_a_single_branch",
+    "gitlab__/v3/projects/id/repository/branches/branch/unprotect___PUT": {
       "provider_alias_intent": "/v3/projects/id/repository/branches/branch/unprotect",
       "text": "Unprotect a single branch 🚧",
       "category": "projects",
@@ -6418,12 +6263,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_project_repository_branches": {
-      "provider_intent": "get_get_a_project_repository_branches",
+    "gitlab__/v3/projects/id/repository/branches___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/branches",
       "text": "Get a project repository branches 🚧",
       "category": "projects",
@@ -6451,12 +6295,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_create_branch": {
-      "provider_intent": "post_create_branch",
+    "gitlab__/v3/projects/id/repository/branches___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/branches",
       "text": "Create branch 🚧",
       "category": "projects",
@@ -6493,12 +6336,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_commits_comments": {
-      "provider_intent": "get_get_a_commits_comments",
+    "gitlab__/v3/projects/id/repository/commits/sha/comments___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/comments",
       "text": "Get a commit's comments 🚧",
       "category": "projects",
@@ -6533,12 +6375,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_post_comment_to_commit": {
-      "provider_intent": "post_post_comment_to_commit",
+    "gitlab__/v3/projects/id/repository/commits/sha/comments___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/comments",
       "text": "Post comment to commit 🚧",
       "category": "projects",
@@ -6583,12 +6424,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_specific_commit_of_a_project": {
-      "provider_intent": "get_get_a_specific_commit_of_a_project",
+    "gitlab__/v3/projects/id/repository/commits/sha___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha",
       "text": "Get a specific commit of a project 🚧",
       "category": "projects",
@@ -6616,12 +6456,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_raw_file_contents": {
-      "provider_intent": "get_get_a_raw_file_contents",
+    "gitlab__/v3/projects/id/repository/blobs/sha___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/blobs/sha",
       "text": "Get a raw file contents 🚧",
       "category": "projects",
@@ -6653,12 +6492,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_builds_for_a_specific_commit_of_a_project": {
-      "provider_intent": "get_get_builds_for_a_specific_commit_of_a_project",
+    "gitlab__/v3/projects/id/repository/commits/sha/builds___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/builds",
       "text": "Get builds for a specific commit of a project 🚧",
       "category": "projects",
@@ -6696,12 +6534,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_cherry_pick_commit_into_a_branch": {
-      "provider_intent": "post_cherry_pick_commit_into_a_branch",
+    "gitlab__/v3/projects/id/repository/commits/sha/cherry_pick___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/cherry_pick",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6734,12 +6571,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_the_diff_for_a_specific_commit_of_a_project": {
-      "provider_intent": "get_get_the_diff_for_a_specific_commit_of_a_project",
+    "gitlab__/v3/projects/id/repository/commits/sha/diff___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/diff",
       "text": "Get the diff for a specific commit of a project 🚧",
       "category": "projects",
@@ -6767,12 +6603,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_commits_statuses": {
-      "provider_intent": "get_get_a_commits_statuses",
+    "gitlab__/v3/projects/id/repository/commits/sha/statuses___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits/sha/statuses",
       "text": "Get a commit's statuses 🚧",
       "category": "projects",
@@ -6819,12 +6654,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_project_repository_commits": {
-      "provider_intent": "get_get_a_project_repository_commits",
+    "gitlab__/v3/projects/id/repository/commits___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/commits",
       "text": "Get a project repository commits 🚧",
       "category": "projects",
@@ -6871,12 +6705,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "post_commit_multiple_file_changes_as_one_commit": {
-      "provider_intent": "post_commit_multiple_file_changes_as_one_commit",
+    "gitlab__/v3/projects/id/repository/commits___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/commits",
       "text": "Projects 🚧",
       "category": "projects",
@@ -6925,12 +6758,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "delete_delete_an_existing_file_in_repository": {
-      "provider_intent": "delete_delete_an_existing_file_in_repository",
+    "gitlab__/v3/projects/id/repository/files___DELETE": {
       "provider_alias_intent": "/v3/projects/id/repository/files",
       "text": "Delete an existing file in repository 🚧",
       "category": "projects",
@@ -6974,12 +6806,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.391Z"
     },
-    "get_get_a_file_from_repository": {
-      "provider_intent": "get_get_a_file_from_repository",
+    "gitlab__/v3/projects/id/repository/files___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/files",
       "text": "Get a file from repository 🚧",
       "category": "projects",
@@ -7014,12 +6845,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_create_new_file_in_repository": {
-      "provider_intent": "post_create_new_file_in_repository",
+    "gitlab__/v3/projects/id/repository/files___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/files",
       "text": "Create new file in repository 🚧",
       "category": "projects",
@@ -7076,12 +6906,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_update_existing_file_in_repository": {
-      "provider_intent": "put_update_existing_file_in_repository",
+    "gitlab__/v3/projects/id/repository/files___PUT": {
       "provider_alias_intent": "/v3/projects/id/repository/files",
       "text": "Update existing file in repository 🚧",
       "category": "projects",
@@ -7138,12 +6967,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_add_a_release_note_to_a_tag": {
-      "provider_intent": "post_add_a_release_note_to_a_tag",
+    "gitlab__/v3/projects/id/repository/tags/tag_name/release___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/tags/tag_name/release",
       "text": "Add a release note to a tag 🚧",
       "category": "projects",
@@ -7176,12 +7004,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_update_a_tags_release_note": {
-      "provider_intent": "put_update_a_tags_release_note",
+    "gitlab__/v3/projects/id/repository/tags/tag_name/release___PUT": {
       "provider_alias_intent": "/v3/projects/id/repository/tags/tag_name/release",
       "text": "Update a tag's release note 🚧",
       "category": "projects",
@@ -7214,12 +7041,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_a_repository_tag": {
-      "provider_intent": "delete_delete_a_repository_tag",
+    "gitlab__/v3/projects/id/repository/tags/tag_name___DELETE": {
       "provider_alias_intent": "/v3/projects/id/repository/tags/tag_name",
       "text": "Delete a repository tag 🚧",
       "category": "projects",
@@ -7247,12 +7073,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_single_repository_tag": {
-      "provider_intent": "get_get_a_single_repository_tag",
+    "gitlab__/v3/projects/id/repository/tags/tag_name___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/tags/tag_name",
       "text": "Get a single repository tag 🚧",
       "category": "projects",
@@ -7280,12 +7105,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_project_repository_tags": {
-      "provider_intent": "get_get_a_project_repository_tags",
+    "gitlab__/v3/projects/id/repository/tags___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/tags",
       "text": "Get a project repository tags 🚧",
       "category": "projects",
@@ -7313,12 +7137,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_create_a_new_repository_tag": {
-      "provider_intent": "post_create_a_new_repository_tag",
+    "gitlab__/v3/projects/id/repository/tags___POST": {
       "provider_alias_intent": "/v3/projects/id/repository/tags",
       "text": "Create a new repository tag 🚧",
       "category": "projects",
@@ -7363,12 +7186,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_an_archive_of_the_repository": {
-      "provider_intent": "get_get_an_archive_of_the_repository",
+    "gitlab__/v3/projects/id/repository/archive___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/archive",
       "text": "Get an archive of the repository 🚧",
       "category": "projects",
@@ -7403,12 +7225,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_compare_two_branches_tags_or_commits": {
-      "provider_intent": "get_compare_two_branches_tags_or_commits",
+    "gitlab__/v3/projects/id/repository/compare___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/compare",
       "text": "Compare two branches tags or commits 🚧",
       "category": "projects",
@@ -7443,12 +7264,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_repository_contributors": {
-      "provider_intent": "get_get_repository_contributors",
+    "gitlab__/v3/projects/id/repository/contributors___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/contributors",
       "text": "Get repository contributors 🚧",
       "category": "projects",
@@ -7476,12 +7296,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_v3projects_id_repository_merged_branches": {
-      "provider_intent": "delete_delete_v3projects_id_repository_merged_branches",
+    "gitlab__/v3/projects/id/repository/merged_branches___DELETE": {
       "provider_alias_intent": "/v3/projects/id/repository/merged_branches",
       "text": "Merged Branches 🚧",
       "category": "projects",
@@ -7509,12 +7328,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_raw_blob_contents_by_blob_sha": {
-      "provider_intent": "get_get_a_raw_blob_contents_by_blob_sha",
+    "gitlab__/v3/projects/id/repository/raw_blobs/sha___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/raw_blobs/sha",
       "text": "Get a raw blob contents by blob sha 🚧",
       "category": "projects",
@@ -7542,12 +7360,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_project_repository_tree": {
-      "provider_intent": "get_get_a_project_repository_tree",
+    "gitlab__/v3/projects/id/repository/tree___GET": {
       "provider_alias_intent": "/v3/projects/id/repository/tree",
       "text": "Get a project repository tree 🚧",
       "category": "projects",
@@ -7585,12 +7402,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_runners_available_for_project": {
-      "provider_intent": "get_get_runners_available_for_project",
+    "gitlab__/v3/projects/id/runners___GET": {
       "provider_alias_intent": "/v3/projects/id/runners",
       "text": "Get runners available for project 🚧",
       "category": "projects",
@@ -7628,12 +7444,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_enable_a_runner_for_a_project": {
-      "provider_intent": "post_enable_a_runner_for_a_project",
+    "gitlab__/v3/projects/id/runners___POST": {
       "provider_alias_intent": "/v3/projects/id/runners",
       "text": "Enable a runner for a project 🚧",
       "category": "projects",
@@ -7666,12 +7481,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_disable_projects_runner": {
-      "provider_intent": "delete_disable_projects_runner",
+    "gitlab__/v3/projects/id/runners/runner_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/runners/runner_id",
       "text": "Disable project's runner 🚧",
       "category": "projects",
@@ -7699,12 +7513,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_a_service_for_project": {
-      "provider_intent": "delete_delete_a_service_for_project",
+    "gitlab__/v3/projects/id/services/service_slug___DELETE": {
       "provider_alias_intent": "/v3/projects/id/services/service_slug",
       "text": "Delete a service for project 🚧",
       "category": "projects",
@@ -7732,12 +7545,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_the_service_settings_for_project": {
-      "provider_intent": "get_get_the_service_settings_for_project",
+    "gitlab__/v3/projects/id/services/service_slug___GET": {
       "provider_alias_intent": "/v3/projects/id/services/service_slug",
       "text": "Get the service settings for project 🚧",
       "category": "projects",
@@ -7765,12 +7577,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_asana_service_for_project": {
-      "provider_intent": "put_set_asana_service_for_project",
+    "gitlab__/v3/projects/id/services/asana___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/asana",
       "text": "Set asana service for project 🚧",
       "category": "projects",
@@ -7811,12 +7622,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_assembla_service_for_project": {
-      "provider_intent": "put_set_assembla_service_for_project",
+    "gitlab__/v3/projects/id/services/assembla___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/assembla",
       "text": "Set assembla service for project 🚧",
       "category": "projects",
@@ -7857,12 +7667,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_bamboo_service_for_project": {
-      "provider_intent": "put_set_bamboo_service_for_project",
+    "gitlab__/v3/projects/id/services/bamboo___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/bamboo",
       "text": "Set bamboo service for project 🚧",
       "category": "projects",
@@ -7911,12 +7720,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_bugzilla_service_for_project": {
-      "provider_intent": "put_set_bugzilla_service_for_project",
+    "gitlab__/v3/projects/id/services/bugzilla___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/bugzilla",
       "text": "Set bugzilla service for project 🚧",
       "category": "projects",
@@ -7969,12 +7777,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_buildkite_service_for_project": {
-      "provider_intent": "put_set_buildkite_service_for_project",
+    "gitlab__/v3/projects/id/services/buildkite___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/buildkite",
       "text": "Set buildkite service for project 🚧",
       "category": "projects",
@@ -8023,12 +7830,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_buildsemail_service_for_project": {
-      "provider_intent": "put_set_buildsemail_service_for_project",
+    "gitlab__/v3/projects/id/services/builds-email___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/builds-email",
       "text": "Set builds-email service for project 🚧",
       "category": "projects",
@@ -8081,12 +7887,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_campfire_service_for_project": {
-      "provider_intent": "put_set_campfire_service_for_project",
+    "gitlab__/v3/projects/id/services/campfire___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/campfire",
       "text": "Set campfire service for project 🚧",
       "category": "projects",
@@ -8131,12 +7936,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_customissue-tracker_service_for_project": {
-      "provider_intent": "put_set_customissue-tracker_service_for_project",
+    "gitlab__/v3/projects/id/services/custom-issue-tracker___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/custom-issue-tracker",
       "text": "Set custom-issue-tracker service for project 🚧",
       "category": "projects",
@@ -8189,12 +7993,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_droneci_service_for_project": {
-      "provider_intent": "put_set_droneci_service_for_project",
+    "gitlab__/v3/projects/id/services/drone-ci___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/drone-ci",
       "text": "Set drone-ci service for project 🚧",
       "category": "projects",
@@ -8251,12 +8054,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_emailson-push_service_for_project": {
-      "provider_intent": "put_set_emailson-push_service_for_project",
+    "gitlab__/v3/projects/id/services/emails-on-push___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/emails-on-push",
       "text": "Set emails-on-push service for project 🚧",
       "category": "projects",
@@ -8313,12 +8115,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_externalwiki_service_for_project": {
-      "provider_intent": "put_set_externalwiki_service_for_project",
+    "gitlab__/v3/projects/id/services/external-wiki___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/external-wiki",
       "text": "Set external-wiki service for project 🚧",
       "category": "projects",
@@ -8351,12 +8152,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_flowdock_service_for_project": {
-      "provider_intent": "put_set_flowdock_service_for_project",
+    "gitlab__/v3/projects/id/services/flowdock___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/flowdock",
       "text": "Set flowdock service for project 🚧",
       "category": "projects",
@@ -8393,12 +8193,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_gemnasium_service_for_project": {
-      "provider_intent": "put_set_gemnasium_service_for_project",
+    "gitlab__/v3/projects/id/services/gemnasium___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/gemnasium",
       "text": "Set gemnasium service for project 🚧",
       "category": "projects",
@@ -8439,12 +8238,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_hipchat_service_for_project": {
-      "provider_intent": "put_set_hipchat_service_for_project",
+    "gitlab__/v3/projects/id/services/hipchat___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/hipchat",
       "text": "Set hipchat service for project 🚧",
       "category": "projects",
@@ -8529,12 +8327,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_irker_service_for_project": {
-      "provider_intent": "put_set_irker_service_for_project",
+    "gitlab__/v3/projects/id/services/irker___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/irker",
       "text": "Set irker service for project 🚧",
       "category": "projects",
@@ -8591,12 +8388,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_jira_service_for_project": {
-      "provider_intent": "put_set_jira_service_for_project",
+    "gitlab__/v3/projects/id/services/jira___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/jira",
       "text": "Set jira service for project 🚧",
       "category": "projects",
@@ -8653,12 +8449,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_kubernetes_service_for_project": {
-      "provider_intent": "put_set_kubernetes_service_for_project",
+    "gitlab__/v3/projects/id/services/kubernetes___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/kubernetes",
       "text": "Set kubernetes service for project 🚧",
       "category": "projects",
@@ -8703,12 +8498,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_mattermost_service_for_project": {
-      "provider_intent": "put_set_mattermost_service_for_project",
+    "gitlab__/v3/projects/id/services/mattermost___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/mattermost",
       "text": "Set mattermost service for project 🚧",
       "category": "projects",
@@ -8776,12 +8570,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_mattermostslash-commands_service_for_project": {
-      "provider_intent": "put_set_mattermostslash-commands_service_for_project",
+    "gitlab__/v3/projects/id/services/mattermost-slash-commands___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/mattermost-slash-commands",
       "text": "Set mattermost-slash-commands service for project 🚧",
       "category": "projects",
@@ -8814,12 +8607,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_trigger_a_slash_command_for_mattermostslash-commands": {
-      "provider_intent": "post_trigger_a_slash_command_for_mattermostslash-commands",
+    "gitlab__/v3/projects/id/services/mattermost_slash_commands/trigger___POST": {
       "provider_alias_intent": "/v3/projects/id/services/mattermost_slash_commands/trigger",
       "text": "Projects 🚧",
       "category": "projects",
@@ -8852,12 +8644,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_pipelinesemail_service_for_project": {
-      "provider_intent": "put_set_pipelinesemail_service_for_project",
+    "gitlab__/v3/projects/id/services/pipelines-email___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/pipelines-email",
       "text": "Set pipelines-email service for project 🚧",
       "category": "projects",
@@ -8901,12 +8692,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_pivotaltracker_service_for_project": {
-      "provider_intent": "put_set_pivotaltracker_service_for_project",
+    "gitlab__/v3/projects/id/services/pivotaltracker___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/pivotaltracker",
       "text": "Set pivotaltracker service for project 🚧",
       "category": "projects",
@@ -8947,12 +8737,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_pushover_service_for_project": {
-      "provider_intent": "put_set_pushover_service_for_project",
+    "gitlab__/v3/projects/id/services/pushover___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/pushover",
       "text": "Set pushover service for project 🚧",
       "category": "projects",
@@ -9005,12 +8794,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_redmine_service_for_project": {
-      "provider_intent": "put_set_redmine_service_for_project",
+    "gitlab__/v3/projects/id/services/redmine___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/redmine",
       "text": "Set redmine service for project 🚧",
       "category": "projects",
@@ -9059,12 +8847,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_slack_service_for_project": {
-      "provider_intent": "put_set_slack_service_for_project",
+    "gitlab__/v3/projects/id/services/slack___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/slack",
       "text": "Set slack service for project 🚧",
       "category": "projects",
@@ -9140,12 +8927,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_slackslash-commands_service_for_project": {
-      "provider_intent": "put_set_slackslash-commands_service_for_project",
+    "gitlab__/v3/projects/id/services/slack-slash-commands___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/slack-slash-commands",
       "text": "Set slack-slash-commands service for project 🚧",
       "category": "projects",
@@ -9178,12 +8964,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_trigger_a_slash_command_for_slackslash-commands": {
-      "provider_intent": "post_trigger_a_slash_command_for_slackslash-commands",
+    "gitlab__/v3/projects/id/services/slack_slash_commands/trigger___POST": {
       "provider_alias_intent": "/v3/projects/id/services/slack_slash_commands/trigger",
       "text": "Projects 🚧",
       "category": "projects",
@@ -9216,12 +9001,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_set_teamcity_service_for_project": {
-      "provider_intent": "put_set_teamcity_service_for_project",
+    "gitlab__/v3/projects/id/services/teamcity___PUT": {
       "provider_alias_intent": "/v3/projects/id/services/teamcity",
       "text": "Set teamcity service for project 🚧",
       "category": "projects",
@@ -9270,12 +9054,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_share_the_project_with_a_group": {
-      "provider_intent": "post_share_the_project_with_a_group",
+    "gitlab__/v3/projects/id/share___POST": {
       "provider_alias_intent": "/v3/projects/id/share",
       "text": "Share the project with a group 🚧",
       "category": "projects",
@@ -9316,12 +9099,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_v3projects_id_share_group_id": {
-      "provider_intent": "delete_delete_v3projects_id_share_group_id",
+    "gitlab__/v3/projects/id/share/group_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/share/group_id",
       "text": "Delete 🚧",
       "category": "projects",
@@ -9349,12 +9131,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_a_project_snippet": {
-      "provider_intent": "delete_delete_a_project_snippet",
+    "gitlab__/v3/projects/id/snippets/snippet_id___DELETE": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id",
       "text": "Delete a project snippet 🚧",
       "category": "projects",
@@ -9382,12 +9163,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_single_project_snippet": {
-      "provider_intent": "get_get_a_single_project_snippet",
+    "gitlab__/v3/projects/id/snippets/snippet_id___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id",
       "text": "Get a single project snippet 🚧",
       "category": "projects",
@@ -9415,12 +9195,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "put_update_an_existing_project_snippet": {
-      "provider_intent": "put_update_an_existing_project_snippet",
+    "gitlab__/v3/projects/id/snippets/snippet_id___PUT": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id",
       "text": "Update an existing project snippet 🚧",
       "category": "projects",
@@ -9465,12 +9244,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_a_raw_project_snippet": {
-      "provider_intent": "get_get_a_raw_project_snippet",
+    "gitlab__/v3/projects/id/snippets/snippet_id/raw___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets/snippet_id/raw",
       "text": "Get a raw project snippet 🚧",
       "category": "projects",
@@ -9498,12 +9276,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_all_project_snippets": {
-      "provider_intent": "get_get_all_project_snippets",
+    "gitlab__/v3/projects/id/snippets___GET": {
       "provider_alias_intent": "/v3/projects/id/snippets",
       "text": "Get all project snippets 🚧",
       "category": "projects",
@@ -9538,12 +9315,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_create_a_new_project_snippet": {
-      "provider_intent": "post_create_a_new_project_snippet",
+    "gitlab__/v3/projects/id/snippets___POST": {
       "provider_alias_intent": "/v3/projects/id/snippets",
       "text": "Create a new project snippet 🚧",
       "category": "projects",
@@ -9588,12 +9364,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_unstar_a_project": {
-      "provider_intent": "delete_unstar_a_project",
+    "gitlab__/v3/projects/id/star___DELETE": {
       "provider_alias_intent": "/v3/projects/id/star",
       "text": "Unstar a project 🚧",
       "category": "projects",
@@ -9621,12 +9396,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_star_a_project": {
-      "provider_intent": "post_star_a_project",
+    "gitlab__/v3/projects/id/star___POST": {
       "provider_alias_intent": "/v3/projects/id/star",
       "text": "Star a project 🚧",
       "category": "projects",
@@ -9654,12 +9428,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_a_trigger": {
-      "provider_intent": "delete_delete_a_trigger",
+    "gitlab__/v3/projects/id/triggers/token___DELETE": {
       "provider_alias_intent": "/v3/projects/id/triggers/token",
       "text": "Delete a trigger 🚧",
       "category": "projects",
@@ -9687,12 +9460,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_specific_trigger_of_a_project": {
-      "provider_intent": "get_get_specific_trigger_of_a_project",
+    "gitlab__/v3/projects/id/triggers/token___GET": {
       "provider_alias_intent": "/v3/projects/id/triggers/token",
       "text": "Get specific trigger of a project 🚧",
       "category": "projects",
@@ -9720,12 +9492,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "get_get_triggers_list": {
-      "provider_intent": "get_get_triggers_list",
+    "gitlab__/v3/projects/id/triggers___GET": {
       "provider_alias_intent": "/v3/projects/id/triggers",
       "text": "Get triggers list 🚧",
       "category": "projects",
@@ -9760,12 +9531,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "post_create_a_trigger": {
-      "provider_intent": "post_create_a_trigger",
+    "gitlab__/v3/projects/id/triggers___POST": {
       "provider_alias_intent": "/v3/projects/id/triggers",
       "text": "Create a trigger 🚧",
       "category": "projects",
@@ -9793,12 +9563,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.392Z"
     },
-    "delete_delete_an_existing_variable_from_a_project": {
-      "provider_intent": "delete_delete_an_existing_variable_from_a_project",
+    "gitlab__/v3/projects/id/variables/key___DELETE": {
       "provider_alias_intent": "/v3/projects/id/variables/key",
       "text": "Delete an existing variable from a project 🚧",
       "category": "projects",
@@ -9826,12 +9595,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_specific_variable_from_a_project": {
-      "provider_intent": "get_get_a_specific_variable_from_a_project",
+    "gitlab__/v3/projects/id/variables/key___GET": {
       "provider_alias_intent": "/v3/projects/id/variables/key",
       "text": "Get a specific variable from a project 🚧",
       "category": "projects",
@@ -9859,12 +9627,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_update_an_existing_variable_from_a_project": {
-      "provider_intent": "put_update_an_existing_variable_from_a_project",
+    "gitlab__/v3/projects/id/variables/key___PUT": {
       "provider_alias_intent": "/v3/projects/id/variables/key",
       "text": "Update an existing variable from a project 🚧",
       "category": "projects",
@@ -9897,12 +9664,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_project_variables": {
-      "provider_intent": "get_get_project_variables",
+    "gitlab__/v3/projects/id/variables___GET": {
       "provider_alias_intent": "/v3/projects/id/variables",
       "text": "Get project variables 🚧",
       "category": "projects",
@@ -9937,12 +9703,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_a_new_variable_in_a_project": {
-      "provider_intent": "post_create_a_new_variable_in_a_project",
+    "gitlab__/v3/projects/id/variables___POST": {
       "provider_alias_intent": "/v3/projects/id/variables",
       "text": "Create a new variable in a project 🚧",
       "category": "projects",
@@ -9979,12 +9744,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_remove_a_project": {
-      "provider_intent": "delete_remove_a_project",
+    "gitlab__/v3/projects/id___DELETE": {
       "provider_alias_intent": "/v3/projects/id",
       "text": "Remove a project 🚧",
       "category": "projects",
@@ -10012,12 +9776,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_single_project": {
-      "provider_intent": "get_get_a_single_project",
+    "gitlab__/v3/projects/id___GET": {
       "provider_alias_intent": "/v3/projects/id",
       "text": "Get a single project 🚧",
       "category": "projects",
@@ -10045,12 +9808,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_update_an_existing_project": {
-      "provider_intent": "put_update_an_existing_project",
+    "gitlab__/v3/projects/id___PUT": {
       "provider_alias_intent": "/v3/projects/id",
       "text": "Update an existing project 🚧",
       "category": "projects",
@@ -10203,12 +9965,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_archive_a_project": {
-      "provider_intent": "post_archive_a_project",
+    "gitlab__/v3/projects/id/archive___POST": {
       "provider_alias_intent": "/v3/projects/id/archive",
       "text": "Archive a project 🚧",
       "category": "projects",
@@ -10236,12 +9997,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_events_for_a_single_project": {
-      "provider_intent": "get_get_events_for_a_single_project",
+    "gitlab__/v3/projects/id/events___GET": {
       "provider_alias_intent": "/v3/projects/id/events",
       "text": "Get events for a single project 🚧",
       "category": "projects",
@@ -10276,12 +10036,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_a_new_pipeline": {
-      "provider_intent": "post_create_a_new_pipeline",
+    "gitlab__/v3/projects/id/pipeline___POST": {
       "provider_alias_intent": "/v3/projects/id/pipeline",
       "text": "This feature was introduced in GitLab 8 🚧",
       "category": "projects",
@@ -10314,12 +10073,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_post_status_to_a_commit": {
-      "provider_intent": "post_post_status_to_a_commit",
+    "gitlab__/v3/projects/id/statuses/sha___POST": {
       "provider_alias_intent": "/v3/projects/id/statuses/sha",
       "text": "Post status to a commit 🚧",
       "category": "projects",
@@ -10372,12 +10130,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_unarchive_a_project": {
-      "provider_intent": "post_unarchive_a_project",
+    "gitlab__/v3/projects/id/unarchive___POST": {
       "provider_alias_intent": "/v3/projects/id/unarchive",
       "text": "Unarchive a project 🚧",
       "category": "projects",
@@ -10405,12 +10162,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_upload_a_file": {
-      "provider_intent": "post_upload_a_file",
+    "gitlab__/v3/projects/id/uploads___POST": {
       "provider_alias_intent": "/v3/projects/id/uploads",
       "text": "Upload a file 🚧",
       "category": "projects",
@@ -10438,12 +10194,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_users_list_of_a_project": {
-      "provider_intent": "get_get_the_users_list_of_a_project",
+    "gitlab__/v3/projects/id/users___GET": {
       "provider_alias_intent": "/v3/projects/id/users",
       "text": "Get the users list of a project 🚧",
       "category": "projects",
@@ -10481,12 +10236,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_projects_list_for_authenticated_user": {
-      "provider_intent": "get_get_a_projects_list_for_authenticated_user",
+    "gitlab__/v3/projects___GET": {
       "provider_alias_intent": "/v3/projects",
       "text": "Get a projects list for authenticated user 🚧",
       "category": "projects",
@@ -10539,12 +10293,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_new_project": {
-      "provider_intent": "post_create_new_project",
+    "gitlab__/v3/projects___POST": {
       "provider_alias_intent": "/v3/projects",
       "text": "Create new project 🚧",
       "category": "projects",
@@ -10701,12 +10454,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_all_projects_for_admin_user": {
-      "provider_intent": "get_get_all_projects_for_admin_user",
+    "gitlab__/v3/projects/all___GET": {
       "provider_alias_intent": "/v3/projects/all",
       "text": "Get all projects for admin user 🚧",
       "category": "projects",
@@ -10762,12 +10514,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_fork_new_project_for_the_current_user_or_provided_namespace": {
-      "provider_intent": "post_fork_new_project_for_the_current_user_or_provided_namespace",
+    "gitlab__/v3/projects/fork/id___POST": {
       "provider_alias_intent": "/v3/projects/fork/id",
       "text": "Fork new project for the current user or provided namespace 🚧",
       "category": "projects",
@@ -10800,12 +10551,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_an_owned_projects_list_for_authenticated_user": {
-      "provider_intent": "get_get_an_owned_projects_list_for_authenticated_user",
+    "gitlab__/v3/projects/owned___GET": {
       "provider_alias_intent": "/v3/projects/owned",
       "text": "Get an owned projects list for authenticated user 🚧",
       "category": "projects",
@@ -10861,12 +10611,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_search_for_projects_the_current_user_has_access_to": {
-      "provider_intent": "get_search_for_projects_the_current_user_has_access_to",
+    "gitlab__/v3/projects/search/query___GET": {
       "provider_alias_intent": "/v3/projects/search/query",
       "text": "Search for projects the current user has access to 🚧",
       "category": "projects",
@@ -10907,12 +10656,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_gets_starred_project_for_the_authenticated_user": {
-      "provider_intent": "get_gets_starred_project_for_the_authenticated_user",
+    "gitlab__/v3/projects/starred___GET": {
       "provider_alias_intent": "/v3/projects/starred",
       "text": "Gets starred project for the authenticated user 🚧",
       "category": "projects",
@@ -10965,12 +10713,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_new_project_for_a_specified_user_only_available_to_admin_users": {
-      "provider_intent": "post_create_new_project_for_a_specified_user_only_available_to_admin_users",
+    "gitlab__/v3/projects/user/user_id___POST": {
       "provider_alias_intent": "/v3/projects/user/user_id",
       "text": "Create new project for a specified user 🚧",
       "category": "projects",
@@ -11127,12 +10874,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_list_of_visible_projects_for_authenticated_user": {
-      "provider_intent": "get_get_a_list_of_visible_projects_for_authenticated_user",
+    "gitlab__/v3/projects/visible___GET": {
       "provider_alias_intent": "/v3/projects/visible",
       "text": "Get a list of visible projects for authenticated user 🚧",
       "category": "projects",
@@ -11185,12 +10931,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_remove_a_runner": {
-      "provider_intent": "delete_remove_a_runner",
+    "gitlab__/v3/runners/id___DELETE": {
       "provider_alias_intent": "/v3/runners/id",
       "text": "Remove a runner 🚧",
       "category": "runners",
@@ -11218,12 +10963,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_runners_details": {
-      "provider_intent": "get_get_runners_details",
+    "gitlab__/v3/runners/id___GET": {
       "provider_alias_intent": "/v3/runners/id",
       "text": "Get runner's details 🚧",
       "category": "runners",
@@ -11251,12 +10995,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_update_runners_details": {
-      "provider_intent": "put_update_runners_details",
+    "gitlab__/v3/runners/id___PUT": {
       "provider_alias_intent": "/v3/runners/id",
       "text": "Update runner's details 🚧",
       "category": "runners",
@@ -11319,12 +11062,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_runners_available_for_user": {
-      "provider_intent": "get_get_runners_available_for_user",
+    "gitlab__/v3/runners___GET": {
       "provider_alias_intent": "/v3/runners",
       "text": "Get runners available for user 🚧",
       "category": "runners",
@@ -11362,12 +11104,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_all_runners_shared_and_specific": {
-      "provider_intent": "get_get_all_runners_shared_and_specific",
+    "gitlab__/v3/runners/all___GET": {
       "provider_alias_intent": "/v3/runners/all",
       "text": "Get all runners - shared and specific 🚧",
       "category": "runners",
@@ -11405,12 +11146,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_sidekiq_compound_metrics_includes_queue_process_and_job_statistics": {
-      "provider_intent": "get_get_the_sidekiq_compound_metrics_includes_queue_process_and_job_statistics",
+    "gitlab__/v3/sidekiq/compound_metrics___GET": {
       "provider_alias_intent": "/v3/sidekiq/compound_metrics",
       "text": "Get the Sidekiq Compound metrics 🚧",
       "category": "sidekiq",
@@ -11438,12 +11178,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_sidekiq_job_statistics": {
-      "provider_intent": "get_get_the_sidekiq_job_statistics",
+    "gitlab__/v3/sidekiq/job_stats___GET": {
       "provider_alias_intent": "/v3/sidekiq/job_stats",
       "text": "Get the Sidekiq job statistics 🚧",
       "category": "sidekiq",
@@ -11471,12 +11210,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_sidekiq_process_metrics": {
-      "provider_intent": "get_get_the_sidekiq_process_metrics",
+    "gitlab__/v3/sidekiq/process_metrics___GET": {
       "provider_alias_intent": "/v3/sidekiq/process_metrics",
       "text": "Get the Sidekiq process metrics 🚧",
       "category": "sidekiq",
@@ -11504,12 +11242,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_sidekiq_queue_metrics": {
-      "provider_intent": "get_get_the_sidekiq_queue_metrics",
+    "gitlab__/v3/sidekiq/queue_metrics___GET": {
       "provider_alias_intent": "/v3/sidekiq/queue_metrics",
       "text": "Get the Sidekiq queue metrics 🚧",
       "category": "sidekiq",
@@ -11537,12 +11274,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_remove_snippet": {
-      "provider_intent": "delete_remove_snippet",
+    "gitlab__/v3/snippets/id___DELETE": {
       "provider_alias_intent": "/v3/snippets/id",
       "text": "Delete Snippet 🚧",
       "category": "snippets",
@@ -11570,12 +11306,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_single_snippet": {
-      "provider_intent": "get_get_a_single_snippet",
+    "gitlab__/v3/snippets/id___GET": {
       "provider_alias_intent": "/v3/snippets/id",
       "text": "Get Snippet 🚧",
       "category": "snippets",
@@ -11603,12 +11338,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_update_an_existing_snippet": {
-      "provider_intent": "put_update_an_existing_snippet",
+    "gitlab__/v3/snippets/id___PUT": {
       "provider_alias_intent": "/v3/snippets/id",
       "text": "Update Snippet 🚧",
       "category": "snippets",
@@ -11653,12 +11387,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_raw_snippet": {
-      "provider_intent": "get_get_a_raw_snippet",
+    "gitlab__/v3/snippets/id/raw___GET": {
       "provider_alias_intent": "/v3/snippets/id/raw",
       "text": "Get Raw Snippet 🚧",
       "category": "snippets",
@@ -11686,12 +11419,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_snippets_list_for_authenticated_user": {
-      "provider_intent": "get_get_a_snippets_list_for_authenticated_user",
+    "gitlab__/v3/snippets___GET": {
       "provider_alias_intent": "/v3/snippets",
       "text": "List Snippets 🚧",
       "category": "snippets",
@@ -11726,12 +11458,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_new_snippet": {
-      "provider_intent": "post_create_new_snippet",
+    "gitlab__/v3/snippets___POST": {
       "provider_alias_intent": "/v3/snippets",
       "text": "Create Snippet 🚧",
       "category": "snippets",
@@ -11776,12 +11507,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_list_all_public_snippets_current_user_has_access_to": {
-      "provider_intent": "get_list_all_public_snippets_current_user_has_access_to",
+    "gitlab__/v3/snippets/public___GET": {
       "provider_alias_intent": "/v3/snippets/public",
       "text": "Get Public Snippet 🚧",
       "category": "snippets",
@@ -11816,12 +11546,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_mark_all_todos_as_done": {
-      "provider_intent": "delete_mark_all_todos_as_done",
+    "gitlab__/v3/todos___DELETE": {
       "provider_alias_intent": "/v3/todos",
       "text": "Mark all todos as done 🚧",
       "category": "todos",
@@ -11849,12 +11578,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_todo_list": {
-      "provider_intent": "get_get_a_todo_list",
+    "gitlab__/v3/todos___GET": {
       "provider_alias_intent": "/v3/todos",
       "text": "Get a todo list 🚧",
       "category": "todos",
@@ -11889,12 +11617,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_mark_a_todo_as_done": {
-      "provider_intent": "delete_mark_a_todo_as_done",
+    "gitlab__/v3/todos/id___DELETE": {
       "provider_alias_intent": "/v3/todos/id",
       "text": "Mark a todo as done 🚧",
       "category": "todos",
@@ -11922,12 +11649,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_delete_an_email_address_from_the_currently_authenticated_user": {
-      "provider_intent": "delete_delete_an_email_address_from_the_currently_authenticated_user",
+    "gitlab__/v3/user/emails/email_id___DELETE": {
       "provider_alias_intent": "/v3/user/emails/email_id",
       "text": "Delete an email address from the currently authenticated user 🚧",
       "category": "user",
@@ -11955,12 +11681,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_single_email_address_owned_by_the_currently_authenticated_user": {
-      "provider_intent": "get_get_a_single_email_address_owned_by_the_currently_authenticated_user",
+    "gitlab__/v3/user/emails/email_id___GET": {
       "provider_alias_intent": "/v3/user/emails/email_id",
       "text": "Get a single email address owned by the currently authenticated user 🚧",
       "category": "user",
@@ -11988,12 +11713,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_currently_authenticated_users_email_addresses": {
-      "provider_intent": "get_get_the_currently_authenticated_users_email_addresses",
+    "gitlab__/v3/user/emails___GET": {
       "provider_alias_intent": "/v3/user/emails",
       "text": "Get the currently authenticated user's email addresses 🚧",
       "category": "user",
@@ -12021,12 +11745,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_add_new_email_address_to_the_currently_authenticated_user": {
-      "provider_intent": "post_add_new_email_address_to_the_currently_authenticated_user",
+    "gitlab__/v3/user/emails___POST": {
       "provider_alias_intent": "/v3/user/emails",
       "text": "Add new email address to the currently authenticated user 🚧",
       "category": "user",
@@ -12059,12 +11782,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_delete_an_ssh_key_from_the_currently_authenticated_user": {
-      "provider_intent": "delete_delete_an_ssh_key_from_the_currently_authenticated_user",
+    "gitlab__/v3/user/keys/key_id___DELETE": {
       "provider_alias_intent": "/v3/user/keys/key_id",
       "text": "Delete an SSH key from the currently authenticated user 🚧",
       "category": "user",
@@ -12092,12 +11814,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_single_key_owned_by_currently_authenticated_user": {
-      "provider_intent": "get_get_a_single_key_owned_by_currently_authenticated_user",
+    "gitlab__/v3/user/keys/key_id___GET": {
       "provider_alias_intent": "/v3/user/keys/key_id",
       "text": "Get a single key owned by currently authenticated user 🚧",
       "category": "user",
@@ -12125,12 +11846,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_currently_authenticated_users_ssh_keys": {
-      "provider_intent": "get_get_the_currently_authenticated_users_ssh_keys",
+    "gitlab__/v3/user/keys___GET": {
       "provider_alias_intent": "/v3/user/keys",
       "text": "Get the currently authenticated user's SSH keys 🚧",
       "category": "user",
@@ -12158,12 +11878,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_add_a_new_ssh_key_to_the_currently_authenticated_user": {
-      "provider_intent": "post_add_a_new_ssh_key_to_the_currently_authenticated_user",
+    "gitlab__/v3/user/keys___POST": {
       "provider_alias_intent": "/v3/user/keys",
       "text": "Add a new SSH key to the currently authenticated user 🚧",
       "category": "user",
@@ -12200,12 +11919,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_currently_authenticated_user": {
-      "provider_intent": "get_get_the_currently_authenticated_user",
+    "gitlab__/v3/user___GET": {
       "provider_alias_intent": "/v3/user",
       "text": "Get the currently authenticated user 🚧",
       "category": "user",
@@ -12233,12 +11951,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_emails_addresses_of_a_specified_user_available_only_for_admins": {
-      "provider_intent": "get_get_the_emails_addresses_of_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/emails___GET": {
       "provider_alias_intent": "/v3/users/id/emails",
       "text": "Get the emails addresses of a specified user 🚧",
       "category": "users",
@@ -12266,12 +11983,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_add_an_email_address_to_a_specified_user_available_only_for_admins": {
-      "provider_intent": "post_add_an_email_address_to_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/emails___POST": {
       "provider_alias_intent": "/v3/users/id/emails",
       "text": "Add an email address to a specified user 🚧",
       "category": "users",
@@ -12304,12 +12020,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_delete_an_email_address_of_a_specified_user_available_only_for_admins": {
-      "provider_intent": "delete_delete_an_email_address_of_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/emails/email_id___DELETE": {
       "provider_alias_intent": "/v3/users/id/emails/email_id",
       "text": "Delete an email address of a specified user 🚧",
       "category": "users",
@@ -12337,12 +12052,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_ssh_keys_of_a_specified_user_available_only_for_admins": {
-      "provider_intent": "get_get_the_ssh_keys_of_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/keys___GET": {
       "provider_alias_intent": "/v3/users/id/keys",
       "text": "Get the SSH keys of a specified user 🚧",
       "category": "users",
@@ -12370,12 +12084,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_add_an_ssh_key_to_a_specified_user_available_only_for_admins": {
-      "provider_intent": "post_add_an_ssh_key_to_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/keys___POST": {
       "provider_alias_intent": "/v3/users/id/keys",
       "text": "Add an SSH key to a specified user 🚧",
       "category": "users",
@@ -12412,12 +12125,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_delete_an_existing_ssh_key_from_a_specified_user_available_only_for_admins": {
-      "provider_intent": "delete_delete_an_existing_ssh_key_from_a_specified_user_available_only_for_admins",
+    "gitlab__/v3/users/id/keys/key_id___DELETE": {
       "provider_alias_intent": "/v3/users/id/keys/key_id",
       "text": "Delete an existing SSH key from a specified user 🚧",
       "category": "users",
@@ -12445,12 +12157,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "delete_delete_a_user_available_only_for_admins": {
-      "provider_intent": "delete_delete_a_user_available_only_for_admins",
+    "gitlab__/v3/users/id___DELETE": {
       "provider_alias_intent": "/v3/users/id",
       "text": "Delete a user 🚧",
       "category": "users",
@@ -12478,12 +12189,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_a_single_user": {
-      "provider_intent": "get_get_a_single_user",
+    "gitlab__/v3/users/id___GET": {
       "provider_alias_intent": "/v3/users/id",
       "text": "Get a single user 🚧",
       "category": "users",
@@ -12511,12 +12221,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_update_a_user_available_only_for_admins": {
-      "provider_intent": "put_update_a_user_available_only_for_admins",
+    "gitlab__/v3/users/id___PUT": {
       "provider_alias_intent": "/v3/users/id",
       "text": "Update a user 🚧",
       "category": "users",
@@ -12633,12 +12342,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_block_a_user_available_only_for_admins": {
-      "provider_intent": "put_block_a_user_available_only_for_admins",
+    "gitlab__/v3/users/id/block___PUT": {
       "provider_alias_intent": "/v3/users/id/block",
       "text": "Block a user 🚧",
       "category": "users",
@@ -12666,12 +12374,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_contribution_events_of_a_specified_user": {
-      "provider_intent": "get_get_the_contribution_events_of_a_specified_user",
+    "gitlab__/v3/users/id/events___GET": {
       "provider_alias_intent": "/v3/users/id/events",
       "text": "This feature was introduced in GitLab 8 🚧",
       "category": "users",
@@ -12706,12 +12413,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "put_unblock_a_user_available_only_for_admins": {
-      "provider_intent": "put_unblock_a_user_available_only_for_admins",
+    "gitlab__/v3/users/id/unblock___PUT": {
       "provider_alias_intent": "/v3/users/id/unblock",
       "text": "Unblock a user 🚧",
       "category": "users",
@@ -12739,12 +12445,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "get_get_the_list_of_users": {
-      "provider_intent": "get_get_the_list_of_users",
+    "gitlab__/v3/users___GET": {
       "provider_alias_intent": "/v3/users",
       "text": "Get the list of users 🚧",
       "category": "users",
@@ -12794,12 +12499,11 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     },
-    "post_create_a_user_available_only_for_admins": {
-      "provider_intent": "post_create_a_user_available_only_for_admins",
+    "gitlab__/v3/users___POST": {
       "provider_alias_intent": "/v3/users",
       "text": "Create a user 🚧",
       "category": "users",
@@ -12916,9 +12620,9 @@
         }
       },
       "response_type": "",
-      "wip": 1,
       "subdomain": {},
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:08.393Z"
     }
   }
 }

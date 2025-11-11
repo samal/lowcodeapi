@@ -77,8 +77,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___get": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___get",
+    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___GET": {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Get Meeting API",
       "category": "Meeting",
@@ -133,15 +132,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.meeting.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__sessions-json___post": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__sessions-json___post",
+    "zohowebinar__/api/v2/zso_id/sessions.json___POST": {
       "provider_alias_intent": "/api/v2/zso_id/sessions.json",
       "text": "Create a Meeting",
       "category": "Meeting",
@@ -191,15 +187,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.meeting.CREATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__sessions-json___get": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__sessions-json___get",
+    "zohowebinar__/api/v2/zso_id/sessions.json___GET": {
       "provider_alias_intent": "/api/v2/zso_id/sessions.json",
       "text": "List of Meeting API",
       "category": "Meeting",
@@ -259,15 +252,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.meeting.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___put": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___put",
+    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___PUT": {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Edit Meeting API",
       "category": "Meeting",
@@ -327,15 +317,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.meeting.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___delete": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__sessions__meeting_key-json___delete",
+    "zohowebinar__/api/v2/zso_id/sessions/meeting_key.json___DELETE": {
       "provider_alias_intent": "/api/v2/zso_id/sessions/meeting_key.json",
       "text": "Delete Meeting API",
       "category": "Meeting",
@@ -390,15 +377,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.meeting.DELETE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/sessions/{meetingKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__webinar-json___get": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__webinar-json___get",
+    "zohowebinar__/api/v2/zso_id/webinar.json___GET": {
       "provider_alias_intent": "/api/v2/zso_id/webinar.json",
       "text": "List of Webinar API",
       "category": "Webinar",
@@ -443,15 +427,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.webinar.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___get": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___get",
+    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___GET": {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Get Webinar API",
       "category": "Webinar",
@@ -506,15 +487,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.webinar.READ",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__webinar-json___post": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__webinar-json___post",
+    "zohowebinar__/api/v2/zso_id/webinar.json___POST": {
       "provider_alias_intent": "/api/v2/zso_id/webinar.json",
       "text": "Create a Webinar",
       "category": "Webinar",
@@ -564,15 +542,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.webinar.CREATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___put": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___put",
+    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___PUT": {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Edit Webinar API",
       "category": "Webinar",
@@ -632,15 +607,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.webinar.UPDATE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     },
-    "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___delete": {
-      "provider_intent": "zohowebinar__api__v2__zso_id__webinar__webinar_key-json___delete",
+    "zohowebinar__/api/v2/zso_id/webinar/webinar_key.json___DELETE": {
       "provider_alias_intent": "/api/v2/zso_id/webinar/webinar_key.json",
       "text": "Delete Webinar API",
       "category": "Webinar",
@@ -695,12 +667,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "ZohoMeeting.webinar.DELETE",
       "api_endpoint_src": "{endpoint}/api/v2/{zsoid}/webinar/{webinarKey}.json",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.139Z"
     }
   }
 }

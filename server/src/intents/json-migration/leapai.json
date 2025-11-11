@@ -34,8 +34,7 @@
     "credential_link": "https://www.tryleap.ai/projects"
   },
   "routes": {
-    "leapai__api__v1__images__models___post": {
-      "provider_intent": "leapai__api__v1__images__models___post",
+    "leapai__/api/v1/images/models___POST": {
       "provider_alias_intent": "/api/v1/images/models",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models",
       "text": "Create Model",
@@ -84,10 +83,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__samples___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__samples___post",
+    "leapai__/api/v1/images/models/modelId/samples___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/samples",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/samples",
       "text": "Upload Image Samples",
@@ -123,10 +121,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:35:56.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__queue___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__queue___post",
+    "leapai__/api/v1/images/models/modelId/queue___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/queue",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/queue",
       "text": "Queue Training Job",
@@ -176,10 +173,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:07.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__samples___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__samples___get",
+    "leapai__/api/v1/images/models/modelId/samples___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/samples",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/samples",
       "text": "List Image Samples",
@@ -215,10 +211,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:16.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid___get",
+    "leapai__/api/v1/images/models/modelId___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}",
       "text": "Retrieve a Single Model",
@@ -254,10 +249,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:25.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__samples__sampleid___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__samples__sampleid___get",
+    "leapai__/api/v1/images/models/modelId/samples/sampleId___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/samples/sampleId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/samples/{sampleId}",
       "text": "Get Image Sample",
@@ -298,10 +292,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:36:38.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__samples__url___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__samples__url___post",
+    "leapai__/api/v1/images/models/modelId/samples/url___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/samples/url",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/samples/url",
       "text": "Upload Image Samples Via Url",
@@ -352,10 +345,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:09.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models___get": {
-      "provider_intent": "leapai__api__v1__images__models___get",
+    "leapai__/api/v1/images/models___GET": {
       "provider_alias_intent": "/api/v1/images/models",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models",
       "text": "List All Models",
@@ -394,10 +386,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-02-18T13:13:04.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid___delete": {
-      "provider_intent": "leapai__api__v1__images__models__modelid___delete",
+    "leapai__/api/v1/images/models/modelId___DELETE": {
       "provider_alias_intent": "/api/v1/images/models/modelId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}",
       "text": "Delete a Model",
@@ -433,10 +424,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:23.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__samples__sampleid__archive___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__samples__sampleid__archive___post",
+    "leapai__/api/v1/images/models/modelId/samples/sampleId/archive___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/samples/sampleId/archive",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/samples/{sampleId}/archive",
       "text": "Archive Image Sample",
@@ -477,10 +467,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:35.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__versions___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__versions___get",
+    "leapai__/api/v1/images/models/modelId/versions___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/versions",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/versions",
       "text": "List All Model Versions",
@@ -516,10 +505,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:37:49.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__versions__versionid___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__versions__versionid___get",
+    "leapai__/api/v1/images/models/modelId/versions/versionId___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/versions/versionId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/versions/{versionId}",
       "text": "Get Model Version",
@@ -560,10 +548,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:38:07.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__inferences___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__inferences___post",
+    "leapai__/api/v1/images/models/modelId/inferences___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/inferences",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/inferences",
       "text": "Generate an image using a text prompt",
@@ -665,10 +652,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:38:20.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__inferences___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__inferences___get",
+    "leapai__/api/v1/images/models/modelId/inferences___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/inferences",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/inferences",
       "text": "Fetch a list of inference jobs for a particular model.",
@@ -721,10 +707,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:38:38.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__inferences__inferenceid___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__inferences__inferenceid___get",
+    "leapai__/api/v1/images/models/modelId/inferences/inferenceId___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/inferences/inferenceId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/inferences/{inferenceId}",
       "text": "Get a single inference job",
@@ -765,10 +750,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:38:54.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__inferences__inferenceid___delete": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__inferences__inferenceid___delete",
+    "leapai__/api/v1/images/models/modelId/inferences/inferenceId___DELETE": {
       "provider_alias_intent": "/api/v1/images/models/modelId/inferences/inferenceId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/inferences/{inferenceId}",
       "text": "Delete Inference",
@@ -807,10 +791,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:05.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__projects__projectid___delete": {
-      "provider_intent": "leapai__api__v1__projects__projectid___delete",
+    "leapai__/api/v1/projects/projectId___DELETE": {
       "provider_alias_intent": "/api/v1/projects/projectId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/projects/{projectId}",
       "text": "Delete a Project",
@@ -846,10 +829,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:17.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__remix__url___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__remix__url___post",
+    "leapai__/api/v1/images/models/modelId/remix/url___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/remix/url",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/remix/url",
       "text": "Remix Image Via URL",
@@ -920,10 +902,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:31.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__remix___post": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__remix___post",
+    "leapai__/api/v1/images/models/modelId/remix___POST": {
       "provider_alias_intent": "/api/v1/images/models/modelId/remix",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/remix",
       "text": "Remix Image Via File Upload",
@@ -992,10 +973,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:40.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     },
-    "leapai__api__v1__images__models__modelid__remix__remixid___get": {
-      "provider_intent": "leapai__api__v1__images__models__modelid__remix__remixid___get",
+    "leapai__/api/v1/images/models/modelId/remix/remixId___GET": {
       "provider_alias_intent": "/api/v1/images/models/modelId/remix/remixId",
       "provider_proxy_intent": "https://api.tryleap.ai/api/v1/images/models/{modelId}/remix/{remixId}",
       "text": "Get a Remix job by ID",
@@ -1036,7 +1016,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-03-03T11:39:52.000Z"
+      "updated_at": "2025-11-11T12:00:08.647Z"
     }
   }
 }

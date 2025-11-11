@@ -44,8 +44,7 @@
     "credential_link": "https://accounts.zoho.com/developerconsole"
   },
   "routes": {
-    "zohozeptomail__v1-1__email__batch___post": {
-      "provider_intent": "zohozeptomail__v1-1__email__batch___post",
+    "zohozeptomail__/v1.1/email/batch___POST": {
       "provider_alias_intent": "/v1.1/email/batch",
       "text": "Send a batch of transactional emails",
       "category": "Batch Email Sending",
@@ -146,15 +145,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/v1.1/email/batch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__email___post": {
-      "provider_intent": "zohozeptomail__v1-1__email___post",
+    "zohozeptomail__/v1.1/email___POST": {
       "provider_alias_intent": "/v1.1/email",
       "text": "Send transactional emails",
       "category": "Email Sending API",
@@ -285,15 +281,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/v1.1/email",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__files___post": {
-      "provider_intent": "zohozeptomail__v1-1__files___post",
+    "zohozeptomail__/v1.1/files___POST": {
       "provider_alias_intent": "/v1.1/files",
       "text": "Upload files to File Cache",
       "category": "File Cache Upload API",
@@ -331,15 +324,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/v1.1/files",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__email__template__batch___post": {
-      "provider_intent": "zohozeptomail__v1-1__email__template__batch___post",
+    "zohozeptomail__/v1.1/email/template/batch___POST": {
       "provider_alias_intent": "/v1.1/email/template/batch",
       "text": "Send a batch of emails using the template",
       "category": "Templates API - Batch Emails",
@@ -428,15 +418,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/v1.1/email/template/batch",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__mailagents__mailagent_alias__templates___post": {
-      "provider_intent": "zohozeptomail__v1-1__mailagents__mailagent_alias__templates___post",
+    "zohozeptomail__/v1.1/mailagents/mailagent_alias/templates___POST": {
       "provider_alias_intent": "/v1.1/mailagents/mailagent_alias/templates",
       "text": "Adding email templates",
       "category": "Templates API - Batch Emails",
@@ -505,15 +492,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zeptomail.MailTemplates.All,\nZeptomail.MailTemplates.CREATE",
       "api_endpoint_src": "{endpoint}/v1.1/mailagents/{mailagent-alias}/templates",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__mailagents__mailagent_alias__templates__template_key___put": {
-      "provider_intent": "zohozeptomail__v1-1__mailagents__mailagent_alias__templates__template_key___put",
+    "zohozeptomail__/v1.1/mailagents/mailagent_alias/templates/template_key___PUT": {
       "provider_alias_intent": "/v1.1/mailagents/mailagent_alias/templates/template_key",
       "text": "Update email template",
       "category": "Templates API - Batch Emails",
@@ -592,15 +576,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zeptomail.MailTemplates.All,\nZeptomail.MailTemplates.UPDATE",
       "api_endpoint_src": "{endpoint}/v1.1/mailagents/{mailagent-alias}/templates/{template-key}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__mailagents__mailagent_alias__templatestemplate_key___get": {
-      "provider_intent": "zohozeptomail__v1-1__mailagents__mailagent_alias__templatestemplate_key___get",
+    "zohozeptomail__/v1.1/mailagents/mailagent_alias/templatestemplate_key___GET": {
       "provider_alias_intent": "/v1.1/mailagents/mailagent_alias/templatestemplate_key",
       "text": "Get email templates",
       "category": "Templates API - Batch Emails",
@@ -655,15 +636,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zeptomail.MailTemplates.All,\nZeptomail.MailTemplates.READ",
       "api_endpoint_src": "{endpoint}/v1.1/mailagents/{mailagent-alias}/templates{template-key}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__mailagents__mailagent_alias__templates___get": {
-      "provider_intent": "zohozeptomail__v1-1__mailagents__mailagent_alias__templates___get",
+    "zohozeptomail__/v1.1/mailagents/mailagent_alias/templates___GET": {
       "provider_alias_intent": "/v1.1/mailagents/mailagent_alias/templates",
       "text": "List email templates",
       "category": "Templates API - Batch Emails",
@@ -716,15 +694,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zeptomail.MailTemplates.All,\nZeptomail.MailTemplates.READ",
       "api_endpoint_src": "{endpoint}/v1.1/mailagents/{mailagent-alias}/templates",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__mailagents__mailagent_alias__templatestemplate_key___delete": {
-      "provider_intent": "zohozeptomail__v1-1__mailagents__mailagent_alias__templatestemplate_key___delete",
+    "zohozeptomail__/v1.1/mailagents/mailagent_alias/templatestemplate_key___DELETE": {
       "provider_alias_intent": "/v1.1/mailagents/mailagent_alias/templatestemplate_key",
       "text": "Delete template",
       "category": "Templates API - Batch Emails",
@@ -779,15 +754,12 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "Zeptomail.MailTemplates.All,\nZeptomail.MailTemplates.DELETE",
       "api_endpoint_src": "{endpoint}/v1.1/mailagents/{mailagent-alias}/templates{template-key}",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     },
-    "zohozeptomail__v1-1__email__template___post": {
-      "provider_intent": "zohozeptomail__v1-1__email__template___post",
+    "zohozeptomail__/v1.1/email/template___POST": {
       "provider_alias_intent": "/v1.1/email/template",
       "text": "Send one email at a time using the template",
       "category": "Templates API - Single Email",
@@ -881,12 +853,10 @@
         }
       },
       "response_type": "",
-      "wip": 0,
       "scope": "",
       "api_endpoint_src": "{endpoint}/v1.1/email/template",
-      "pinned": 0,
-      "featured": 0,
-      "payload_type": ""
+      "payload_type": "",
+      "updated_at": "2025-11-11T12:00:09.149Z"
     }
   }
 }
