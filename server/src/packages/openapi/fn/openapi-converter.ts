@@ -1,3 +1,4 @@
+import config from '../../../config';
 import { loggerService } from '../../../utilities';
 import sanitize from './utils-fn';
 
@@ -16,7 +17,7 @@ const types = ['migrate_from', 'migrate_to', 'get', 'post'];
 const CODES = {};
 
 export default ({
-  app, routes, filters, config,
+  app, routes, filters,
 }: { [key: string]: any }) => {
   const routeArr = Object.keys(routes);
 
@@ -290,10 +291,10 @@ export default ({
     }
   });
 
-  const endpoint = app.endpoint || config.API_ENDPOINT;
+  const endpoint = `${config.PROTOCOL}://${config.API_ENDPOINT}`;
   const servers = [{
     description: app.description,
-    url: `${endpoint}${app.api_base}`,
+    url: `${endpoint}/${app.id}`,
   }];
 
   const swaggerResp : { [key: string]: any } = {

@@ -31,9 +31,9 @@ const handler = async (req: Request, res: Response) => {
     v, type, category, urlPath, keys, requestedPaths,
   };
 
-  const { routes, config = {}, app = {} } = routesMaps;
+  const { routes, config = {} } = routesMaps;
   const openApiJSON = openAPIConverter({
-    routes, app, filters, config,
+    routes, app: config, filters,
   });
 
   res.json({
