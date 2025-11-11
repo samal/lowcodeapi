@@ -1,14 +1,5 @@
-import config1 from '../config';
-import { loggerService } from '../utilities';
-import sanitize from './api-util';
-
-const { PROTOCOL, API_ENDPOINT, APP_DOMAIN } = config1;
-
-const A_E = API_ENDPOINT || APP_DOMAIN;
-
-const config = {
-  API_ENDPOINT: `${PROTOCOL}://${A_E}`,
-};
+import { loggerService } from '../../utilities';
+import sanitize from './utils-fn';
 
 const typeMap : { [key: string]: any} = {
   json: {},
@@ -25,13 +16,13 @@ const types = ['migrate_from', 'migrate_to', 'get', 'post'];
 const CODES = {};
 
 export default ({
-  app, routes,
+  app, routes, filters, config,
 }: { [key: string]: any }) => {
   const routeArr = Object.keys(routes);
 
   const {
-    v, type, category, urlPath, keys, intentPaths,
-  } = app.filters || {};
+    v, type, category, urlPath, keys, requestedPaths,
+  } = filters || {};
   const pathLookup: { [key: string]: any } = {};
 
   const categoryMap: { [key: string]: any } = {};
@@ -73,13 +64,13 @@ export default ({
 
     const method : string = (lookup.method || '').toLowerCase();
 
-    if (intentPaths && Object.keys(intentPaths).length) {
-      const lookup_intent = `${lookup.provider_alias_intent}-${method}`.toLowerCase();
-      if (!intentPaths[lookup_intent]) {
+    if (requestedPaths && Object.keys(requestedPaths).length) {
+      const lookup_intent = `${lookup.provider_alias_intent}___${method}`.trim().toLowerCase();
+      if (!requestedPaths[lookup_intent]) {
         console.log(lookup.provider_alias_intent, 'Path Didnt match. return');
         return;
       }
-      console.log('match found', intentPaths[lookup_intent], lookup.provider_alias_intent);
+      console.log('match found', requestedPaths[lookup_intent], lookup.provider_alias_intent);
     } else {
       if (filterMethod && method.toLowerCase() !== filterMethod.toLowerCase()) {
         return;

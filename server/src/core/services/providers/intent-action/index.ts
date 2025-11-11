@@ -2,7 +2,7 @@ import Sequelize from 'sequelize';
 import { safePromise, loggerService } from '../../../../utilities';
 import DBConfig from '../../../db';
 import providers, { providerMap } from '../../../../intents';
-import openapi from '../../../../openapi/definition';
+import openapi from '../../../../openapi/fn/openapi-converter';
 import requestLogs from '../request-logs';
 
 const {

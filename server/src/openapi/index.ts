@@ -1,12 +1,12 @@
 import { Application } from 'express';
 
 import { loggerService } from '../utilities';
-import loadOpenApiDefinition from './handler';
-import loadMetadata from './metadata';
+import handleOpenApiDefinition from './definition-route';
+import handleMetadata from './metadata-route';
 
 export default (app: Application) => {
-  app.get('/:provider/definition', loadOpenApiDefinition);
-  app.post('/:provider/definition', loadOpenApiDefinition);
-  app.get('/:provider/metadata', loadMetadata);
+  app.get('/:provider/definition', handleOpenApiDefinition);
+  app.post('/:provider/definition', handleOpenApiDefinition);
+  app.get('/:provider/metadata', handleMetadata);
   loggerService.info('Definition module initialized.');
 };

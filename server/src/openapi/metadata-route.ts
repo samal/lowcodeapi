@@ -1,35 +1,14 @@
 import { Request, Response } from 'express';
 
 import intents from '../intents';
-import { verify } from '../core/common/key-hash';
 
-import sanitize from './api-util';
-
-import { loggerService, safePromise } from '../utilities';
-
-interface Session {
-  user: {
-    id: any,
-    [key: string]: any
-  };
-}
+import sanitize from './fn/utils-fn';
 
 // Internal build api
 const metadata = async (req: Request, res: Response) => {
-  let { user } : { [key: string]: any } = req.session as Session;
-  if (!user && req.headers['x-auth-token']) {
-    const { headers } : { [key: string]: any } = req;
-    const [error, jwtUser] = await safePromise(verify(headers['x-auth-token']));
-    if (error || !jwtUser || !jwtUser.id) {
-      loggerService.error('Error or no user ', error || jwtUser);
-    } else {
-      user = jwtUser;
-    }
-  }
-  const { devjson } = req.query;
   const { provider } = req.params;
   let routesMaps = null;
-  if (intents[provider] && !devjson) {
+  if (intents[provider]) {
     routesMaps = intents[provider];
   } else {
     // Handle devjson case if needed
@@ -44,7 +23,9 @@ const metadata = async (req: Request, res: Response) => {
   const { routes } : { [key: string] : any } = { ...routesMaps };
   const categories: { [key: string]: any} = {};
 
-  Object.keys(routes).forEach((route) => {
+  const routesArr = Array.isArray(routes) ? routes : Object.keys(routes);
+
+  routesArr.forEach((route) => {
     const intent = routes[route];
     const method = intent.method.toLowerCase();
     if (categories[intent.category]) {
