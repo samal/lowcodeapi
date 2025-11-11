@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { loggerService } from '../utilities';
 
-const dirPath = `${__dirname}/temp`;
+const dirPath = `${__dirname}/json`;
 
 const { ENABLE_SELECTED_CONNECTORS = '', DISABLE_SELECTED_CONNECTORS = '' } = process.env;
 
@@ -19,7 +19,7 @@ const load = () => {
     list.forEach((item) => {
       const [provider_name, extension] = item.split('.');
       if (extension !== 'json') return;
-      const filePath = path.resolve(__dirname, `./temp/${item}`);
+      const filePath = path.resolve(__dirname, `./json/${item}`);
       const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
       if (jsonData.config) {
         providerList.push({ ...jsonData.config });
