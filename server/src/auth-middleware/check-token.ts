@@ -1,4 +1,4 @@
-import getProviderCredsUsingApiTokenFn from '../core/services/providers/api-token-fn';
+import getProviderCredsUsingApiTokenFn from '../packages/core/services/providers/api-token-fn';
 
 import {
   safePromise,

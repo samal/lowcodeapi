@@ -1,13 +1,13 @@
 // Providers and Custom API related modules
 import mode from './mode.json';
-import api from '../api-access';
 
-import apiExtra from '../api-extra';
+import api from '../packages/api-access';
+import apiExtra from '../packages/api-extra';
 
 // Admin / Dashboard modules
-import oauth from '../oauth';
-import openapi from '../openapi';
-import core from '../core';
+import oauth from '../packages/oauth';
+import openapi from '../packages/openapi';
+import core from '../packages/core';
 
 const availableModules: { [key: string]: any} = {
   oauth,

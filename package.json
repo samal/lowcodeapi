@@ -11,7 +11,7 @@
     "web/start": "next start ui",
     "start": "npm run server/start && npm run web/start",
     "postbuild": "npm run copy_html",
-    "copy_html": "mkdirp server/dist/core/template/html && cp -r server/src/core/template/html/* server/dist/core/template/html",
+    "copy_html": "mkdirp server/dist/core/template/html && cp -r server/src/packages/core/template/html/* server/dist/core/template/html",
     "lint": "eslint \"src/**/*.{js,ts}\"",
     "lint:fix": "eslint src --fix",
     "format": "prettier --write \"src/**/*.{js,ts,json,md}\"",
