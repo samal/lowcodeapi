@@ -1,0 +1,279 @@
+{
+  "config": {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "description": "",
+    "logo_url": "anthropic.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "api_key",
+        "headerName": "x-api-key",
+        "headerValue": ""
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Key",
+        "message": "API Key is used for accessing the API.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {
+      "anthropic-version": "2023-06-01"
+    },
+    "api_endpoint": "https://api.anthropic.com",
+    "released": 1,
+    "updated_at": "2024-12-22T03:01:13.000Z",
+    "website": "https://www.anthropic.com",
+    "api_link_ref": "https://docs.anthropic.com/en/home",
+    "total_api": 32,
+    "credential_link": "https://console.anthropic.com/settings/keys"
+  },
+  "routes": {
+    "anthropic__v1__messages___post": {
+      "provider_intent": "anthropic__v1__messages___post",
+      "provider_alias_intent": "/v1/messages",
+      "provider_proxy_intent": "/v1/messages",
+      "text": "Create a Message",
+      "category": "Message",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "model": {
+          "text": "The model that will complete your prompt",
+          "type": "string",
+          "examples": "claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1",
+          "required": true
+        },
+        "tools": {
+          "text": "Definitions of tools that the model may use",
+          "type": "array"
+        },
+        "top_k": {
+          "text": "Only sample from the top K options for each subsequent token",
+          "type": "number"
+        },
+        "top_p": {
+          "text": "Use nucleus sampling",
+          "type": "number"
+        },
+        "stream": {
+          "enum": [
+            true,
+            false
+          ],
+          "text": "Whether to incrementally stream the response using server-sent events",
+          "type": "boolean"
+        },
+        "system": {
+          "text": "System prompt",
+          "type": "string"
+        },
+        "messages": {
+          "text": "Input messages",
+          "type": "array",
+          "examples": [
+            {
+              "role": "user",
+              "content": "Hello, world"
+            }
+          ],
+          "required": true
+        },
+        "metadata": {
+          "text": "Custom text sequences that will cause the model to stop generating",
+          "type": "array"
+        },
+        "max_tokens": {
+          "text": "The maximum number of tokens to generate before stopping",
+          "type": "number",
+          "examples": 1000,
+          "required": true
+        },
+        "temperature": {
+          "text": "Amount of randomness injected into the response",
+          "type": "number"
+        },
+        "stop_sequences": {
+          "text": "An object describing metadata about the request",
+          "type": "object"
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/claude/reference/messages_post",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a chat Message",
+        "api_endpoint": "https://api.anthropic.com/v1/messages",
+        "alias_endpoint": "/anthropic/v1/messages"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-07-19T06:42:12.000Z"
+    },
+    "anthropic__v1__users___post": {
+      "provider_intent": "anthropic__v1__users___post",
+      "provider_alias_intent": "/v1/users",
+      "provider_proxy_intent": "/v1/users",
+      "text": "Count Message tokens",
+      "category": "Message",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "model": {
+          "text": "The model that will complete your prompt",
+          "type": "string",
+          "required": true
+        },
+        "tools": {
+          "text": "Definitions of tools that the model may use.",
+          "type": "object"
+        },
+        "system": {
+          "text": "System prompt",
+          "type": "string"
+        },
+        "messages": {
+          "text": "Input messages.",
+          "type": "object",
+          "required": true
+        },
+        "tool_choice": {
+          "text": "The model can use a specific tool, any available tool, or decide by itself.",
+          "type": "object"
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/messages-count-tokens",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Count the number of tokens in a Message.",
+        "api_endpoint": "https://api.anthropic.com/v1/users"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-02-06T05:04:41.000Z"
+    },
+    "anthropic__v1__users___get": {
+      "provider_intent": "anthropic__v1__users___get",
+      "provider_alias_intent": "/v1/users",
+      "provider_proxy_intent": "/v1/users",
+      "text": "List Api Keys",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "Number of items to return per page.",
+          "type": "number",
+          "default": 20
+        },
+        "status": {
+          "text": "Filter by API key status.",
+          "type": "string"
+        },
+        "after_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object.",
+          "type": "string"
+        },
+        "before_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object.",
+          "type": "string"
+        },
+        "workspace_id": {
+          "text": "Filter by Workspace ID.",
+          "type": "string"
+        },
+        "created_by_user_id": {
+          "text": "Filter by the ID of the User who created the object.",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/apikeys/list-api-keys",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List Api Keys",
+        "api_endpoint": "https://api.anthropic.com/v1/users"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-02-18T13:26:11.000Z"
+    },
+    "anthropic__v1__users___delete": {
+      "provider_intent": "anthropic__v1__users___delete",
+      "provider_alias_intent": "/v1/users",
+      "provider_proxy_intent": "/v1/users",
+      "text": "Delete Workspace Member",
+      "category": "Admin API",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "user_id": {
+          "text": "ID of the User.",
+          "type": "string",
+          "required": true
+        },
+        "workspace_id": {
+          "text": "ID of the Workspace.",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/delete-workspace-member",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete Workspace Member.",
+        "api_endpoint": "https://api.anthropic.com/v1/users"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-02-18T13:26:11.000Z"
+    }
+  }
+}

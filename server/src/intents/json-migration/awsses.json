@@ -1,0 +1,305 @@
+{
+  "config": {
+    "id": "awsses",
+    "name": "AWS SES",
+    "description": "",
+    "logo_url": "awsses.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {},
+      "subdomain": "region"
+    },
+    "auth_config": [
+      {
+        "name": "accessKeyId",
+        "type": "input",
+        "field": "input",
+        "label": "AWS Access Key Id",
+        "message": "This Access key will be used for accessing AWS SES service",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      },
+      {
+        "name": "secretAccessKey",
+        "type": "input",
+        "field": "input",
+        "label": "AWS Secret Access Key",
+        "message": "This key will be used for accessing AWS SES service",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      },
+      {
+        "enum": [
+          "us-east-1",
+          "us-east-2",
+          "us-west-1"
+        ],
+        "name": "region",
+        "type": "input",
+        "field": "input",
+        "label": "AWS Region",
+        "message": "AWS Regions: us-east-1, us-east-2,us-west-1",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://email.{region}.amazonaws.com",
+    "released": 1,
+    "updated_at": "2024-12-22T05:52:31.000Z",
+    "website": "https://aws.amazon.com/",
+    "api_link_ref": "https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html",
+    "total_api": 2,
+    "credential_link": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html"
+  },
+  "routes": {
+    "awsses__v2__email__outbound-emails___post": {
+      "provider_intent": "awsses__v2__email__outbound-emails___post",
+      "provider_alias_intent": "/v2/email/outbound-emails",
+      "text": "Sends an email message",
+      "category": "Email",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "ConfigurationSetName": {
+          "type": "string",
+          "text": "The name of the configuration set to use when sending the email"
+        },
+        "Content": {
+          "type": "object",
+          "text": "An object that contains the body of the message",
+          "required": true,
+          "examples": {
+            "Simple": {
+              "Body": {
+                "Html": {
+                  "Charset": "",
+                  "Data": ""
+                },
+                "Text": {
+                  "Charset": "",
+                  "Data": ""
+                }
+              },
+              "Subject": {
+                "Charset": "",
+                "Data": ""
+              }
+            }
+          }
+        },
+        "Destination": {
+          "type": "object",
+          "text": "An object that contains the recipients of the email message",
+          "examples": {
+            "BccAddresses": [],
+            "CcAddresses": [],
+            "ToAddresses": []
+          }
+        },
+        "EmailTags": {
+          "type": "array",
+          "text": "A list of tags",
+          "examples": [
+            {
+              "Name": "",
+              "Value": ""
+            }
+          ]
+        },
+        "FeedbackForwardingEmailAddress": {
+          "type": "string",
+          "text": "The address that you want bounce and complaint notifications to be sent to"
+        },
+        "FeedbackForwardingEmailAddressIdentityArn": {
+          "type": "string",
+          "text": "This parameter is used only for sending authorization"
+        },
+        "FromEmailAddress": {
+          "type": "string",
+          "text": "The email address to use as the \"From\" address for the email",
+          "examples": ""
+        },
+        "FromEmailAddressIdentityArn": {
+          "type": "string",
+          "text": "This parameter is used only for sending authorization"
+        },
+        "ListManagementOptions": {
+          "type": "object",
+          "text": "An object used to specify a list or topic to which an email belongs"
+        },
+        "ReplyToAddresses": {
+          "type": "array",
+          "text": "The \"Reply-to\" email addresses for the message",
+          "examples": []
+        }
+      },
+      "path": {},
+      "domain_params": {
+        "region": {
+          "type": "string",
+          "text": "AWS Endpoint region",
+          "required": true,
+          "enum": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1"
+          ],
+          "replace_key": "{region}"
+        }
+      },
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Sends an email message",
+        "rate_limit": [],
+        "api_endpoint": "https://email.{region}.amazonaws.com/v2/email/outbound-emails",
+        "alias_endpoint": "/awsses/v2/email/outbound-emails",
+        "api_ref": "https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html"
+      },
+      "auth": {
+        "header": {},
+        "subdomain": "region"
+      },
+      "response_type": "",
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "awsses__v2__email__outbound-bulk-emails___post": {
+      "provider_intent": "awsses__v2__email__outbound-bulk-emails___post",
+      "provider_alias_intent": "/v2/email/outbound-bulk-emails",
+      "text": "Send bulk email",
+      "category": "Email",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "BulkEmailEntries": {
+          "type": "array",
+          "text": "The list of bulk email entry objects",
+          "required": true,
+          "examples": [
+            {
+              "Destination": {
+                "BccAddresses": [
+                  "string"
+                ],
+                "CcAddresses": [
+                  "string"
+                ],
+                "ToAddresses": [
+                  "string"
+                ]
+              },
+              "ReplacementEmailContent": {
+                "ReplacementTemplate": {
+                  "ReplacementTemplateData": "string"
+                }
+              },
+              "ReplacementTags": [
+                {
+                  "Name": "string",
+                  "Value": "string"
+                }
+              ]
+            }
+          ]
+        },
+        "ConfigurationSetName": {
+          "type": "string",
+          "text": "The name of the configuration set to use when sending the email",
+          "examples": "string"
+        },
+        "DefaultContent": {
+          "type": "object",
+          "text": "An object that contains the body of the message",
+          "required": true,
+          "examples": {
+            "Template": {
+              "TemplateArn": "string",
+              "TemplateData": "string",
+              "TemplateName": "string"
+            }
+          }
+        },
+        "DefaultEmailTags": {
+          "type": "array",
+          "text": "A list of tags",
+          "examples": [
+            {
+              "Name": "string",
+              "Value": "string"
+            }
+          ]
+        },
+        "FeedbackForwardingEmailAddress": {
+          "type": "string",
+          "text": "The address that you want bounce and complaint notifications to be sent to",
+          "examples": "string"
+        },
+        "FeedbackForwardingEmailAddressIdentityArn": {
+          "type": "string",
+          "text": "This parameter is used only for sending authorization",
+          "examples": "string"
+        },
+        "FromEmailAddress": {
+          "type": "string",
+          "text": "The email address to use as the \"From\" address for the email",
+          "examples": "string"
+        },
+        "FromEmailAddressIdentityArn": {
+          "type": "string",
+          "text": "This parameter is used only for sending authorization",
+          "examples": "string"
+        },
+        "ReplyToAddresses": {
+          "type": "array",
+          "text": "The Reply-to email addresses for the message",
+          "examples": [
+            "string"
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {
+        "region": {
+          "type": "string",
+          "text": "AWS Endpoint region",
+          "required": true,
+          "enum": [
+            "us-east-1",
+            "us-east-2",
+            "us-west-1"
+          ],
+          "replace_key": "{region}"
+        }
+      },
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Composes an email message to multiple destinations",
+        "rate_limit": [],
+        "api_endpoint": "https://email.{region}.amazonaws.com/v2/email/outbound-bulk-emails",
+        "alias_endpoint": "/awsses/v2/email/outbound-bulk-emails",
+        "api_ref": "https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendBulkEmail.html"
+      },
+      "auth": {
+        "header": {},
+        "subdomain": "region"
+      },
+      "response_type": "",
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    }
+  }
+}

@@ -1,0 +1,3183 @@
+{
+  "config": {
+    "id": "razorpay",
+    "name": "Razorpay",
+    "description": "",
+    "logo_url": "razorpay.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "basicauth": {
+        "password": "api_secret",
+        "username": "api_key"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Key",
+        "message": "This API key will be used for accessing APIs.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      },
+      {
+        "name": "api_secret",
+        "type": "input",
+        "field": "input",
+        "label": "API Secret",
+        "message": "This API secret will be used for accessing APIs.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.razorpay.com",
+    "released": 1,
+    "updated_at": "2024-12-22T10:19:07.000Z",
+    "website": "https://razorpay.com",
+    "api_link_ref": "https://razorpay.com/docs",
+    "total_api": 178,
+    "credential_link": "https://razorpay.com/docs/payments/dashboard/account-settings/api-keys"
+  },
+  "routes": {
+    "razorpay__v1__customers___post": {
+      "provider_intent": "razorpay__v1__customers___post",
+      "provider_alias_intent": "/v1/customers",
+      "text": "Create a Customer",
+      "category": "Customers",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "sting",
+          "text": "Customer's name. Alphanumeric value with period (.); apostrophe (') and parentheses are allowed. The name must be between 3-50 characters in length. For example; Gaurav Kumar.",
+          "required": true
+        },
+        "contact": {
+          "type": "string",
+          "text": "The customer's phone number. A maximum length of 15 characters including country code. For example; +919876543210."
+        },
+        "email": {
+          "type": "string",
+          "text": "The customer's email address. A maximum length of 64 characters. For example; gaurav.kumar@example.com."
+        },
+        "fail_existing": {
+          "type": "string",
+          "text": "Possible values-0; If a customer with the same details already exist; fetches details of the existing customer.1 (default)- If a customer with the same details already exists; throws an error."
+        },
+        "gstin": {
+          "type": "string",
+          "text": "Customer's GST number; if available. For example; 29XAbbA4369J1PA."
+        },
+        "notes": {
+          "type": "object",
+          "text": "This is a key-value pair that can be used to store additional information about the entity. It can hold a maximum of 15 key-value pairs; 256 characters (maximum) each. For example; \"note_key\"",
+          "enum": [
+            "\"Beam me up Scotty”."
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a Customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/customers",
+        "alias_endpoint": "/razorpay/v1/customers",
+        "api_ref": "https://razorpay.com/docs/api/customers#create-a-customer"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__customers___get": {
+      "provider_intent": "razorpay__v1__customers___get",
+      "provider_alias_intent": "/v1/customers",
+      "text": "Fetch all Customers",
+      "category": "Customers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "count": {
+          "type": "number",
+          "text": "The number of customer records to be retrieved from the system. The default value is 10. The maximum value is 100. This can be used for pagination in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of customer records that must be skipped. The default value is 0. This can be used for pagination in combination with count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch all Customers",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/customers",
+        "alias_endpoint": "/razorpay/v1/customers",
+        "api_ref": "https://razorpay.com/docs/api/customers#fetch-all-customers"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__customers__cust_id___get": {
+      "provider_intent": "razorpay__v1__customers__cust_id___get",
+      "provider_alias_intent": "/v1/customers/cust_id",
+      "text": "Fetch Customer by ID",
+      "category": "Customers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "cust_id": {
+          "type": "string",
+          "text": "The unique identifier linked to the customer.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "cust_id": {
+          "type": "string",
+          "text": "The unique identifier linked to the customer.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Customer by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/customers/:cust_id",
+        "alias_endpoint": "/razorpay/v1/customers/cust_id",
+        "api_ref": "https://razorpay.com/docs/api/customers#fetch-customer-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__customers__cust_id___put": {
+      "provider_intent": "razorpay__v1__customers__cust_id___put",
+      "provider_alias_intent": "/v1/customers/cust_id",
+      "text": "Edit a Customer",
+      "category": "Customers",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "cust_id": {
+          "type": "string",
+          "text": "The unique identifier linked to the customer.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Customer's name. Alphanumeric; with period (.); apostrophe (') and parentheses allowed. The name must be between 3-50 characters in length. For example; Gaurav Kumar..\ncontact",
+          "enum": [
+            "string"
+          ]
+        },
+        "email": {
+          "type": "string",
+          "text": "The customer's email address. A maximum length of 64 characters. For example; gaurav.kumar@example.com."
+        }
+      },
+      "path": {
+        "cust_id": {
+          "type": "string",
+          "text": "The unique identifier linked to the customer.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Edit a Customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/customers/:cust_id",
+        "alias_endpoint": "/razorpay/v1/customers/cust_id",
+        "api_ref": "https://razorpay.com/docs/api/customers#edit-customer-details"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__disputes___get": {
+      "provider_intent": "razorpay__v1__disputes___get",
+      "provider_alias_intent": "/v1/disputes",
+      "text": "Fetch All Disputes",
+      "category": "Disputes",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch All Disputes",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/disputes",
+        "alias_endpoint": "/razorpay/v1/disputes",
+        "api_ref": "https://razorpay.com/docs/api/disputes#fetch-all-disputes"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__disputes__id___get": {
+      "provider_intent": "razorpay__v1__disputes__id___get",
+      "provider_alias_intent": "/v1/disputes/id",
+      "text": "Fetch a Dispute by ID",
+      "category": "Disputes",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "The unique identifier of the dispute.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "The unique identifier of the dispute.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch a Dispute by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/disputes/id",
+        "alias_endpoint": "/razorpay/v1/disputes/id",
+        "api_ref": "https://razorpay.com/docs/api/disputes#fetch-a-dispute"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices___post": {
+      "provider_intent": "razorpay__v1__invoices___post",
+      "provider_alias_intent": "/v1/invoices",
+      "text": "Create an Invoice",
+      "category": "Invoice",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "type": {
+          "type": "string",
+          "text": "Indicates the type of entity. Here; it is invoice.",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "A brief description of the invoice."
+        },
+        "draft": {
+          "type": "string",
+          "text": "Invoice is created in draft state when value is set to 1."
+        },
+        "customer_id": {
+          "type": "string",
+          "text": "You can pass the customer_id in this field; if you are using theCustomers API. If not; you can pass the customer object described in the below fields."
+        },
+        "expire_by": {
+          "type": "number",
+          "text": "Timestamp; in Unix format; at which the invoice will expire."
+        },
+        "sms_notify": {
+          "type": "boolean",
+          "text": "Defines who handles the SMS notification. Possible values- 0- You send the notification to the customer.1 (default)- Razorpay sends the notification to the customer.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "email_notify": {
+          "type": "boolean",
+          "text": "Defines who handles the email notification. Possible values-0- You send the notification to the customer.1 (default)- Razorpay sends the notification to the customer.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "partial_payment": {
+          "type": "boolean",
+          "text": "Indicates whether the customer can make a partial payment on the invoice. Possible values- true- The customer can make partial payments.false (default)- The customer cannot make partial payments.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "text": "The currency associated with the invoice. You must mandatorily pass this parameter if accepting international payments. If you have passed currency as a sub-parameter in the line_item object; you must ensure that the same currency is passed in both places. Know about the list of supported international currencies."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create an Invoice",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices",
+        "alias_endpoint": "/razorpay/v1/invoices",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#create-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id___get": {
+      "provider_intent": "razorpay__v1__invoices__inv_id___get",
+      "provider_alias_intent": "/v1/invoices/inv_id",
+      "text": "Fetch Invoice by Id",
+      "category": "Invoice",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose details are to be viewed."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose details are to be viewed."
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Invoice by Id",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#fetch-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices___get": {
+      "provider_intent": "razorpay__v1__invoices___get",
+      "provider_alias_intent": "/v1/invoices",
+      "text": "Fetch All Invoices for a Subscription",
+      "category": "Subscriptions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "subscription_id": {
+          "type": "string",
+          "text": "The unique identifier linked to the Subscription. For example; sub_00000000000001"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch All Invoices for a Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices",
+        "alias_endpoint": "/razorpay/v1/invoices",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-all-invoices-of-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id___patch": {
+      "provider_intent": "razorpay__v1__invoices__inv_id___patch",
+      "provider_alias_intent": "/v1/invoices/inv_id",
+      "text": "Update an Invoice",
+      "category": "Invoice",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose details are to be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose details are to be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update an Invoice",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#update-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id__issue___post": {
+      "provider_intent": "razorpay__v1__invoices__inv_id__issue___post",
+      "provider_alias_intent": "/v1/invoices/inv_id/issue",
+      "text": "Issue an Invoice",
+      "category": "Invoice",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice that needs to be issued.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice that needs to be issued.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Issue an Invoice",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id/issue",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id/issue",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#issue-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id__notify_by__medium___post": {
+      "provider_intent": "razorpay__v1__invoices__inv_id__notify_by__medium___post",
+      "provider_alias_intent": "/v1/invoices/inv_id/notify_by/medium",
+      "text": "Send or Resend Notification",
+      "category": "Invoice",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose link is to be sent by SMS or email.",
+          "required": true
+        },
+        "medium": {
+          "type": "string",
+          "text": "Possible values- sms;email",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "sucess": {
+          "type": "boolean",
+          "text": "Indicates whether the notifications were sent successfully. Possible values-true- The notifications were successfully via SMS; email or both. false- The notifications were not sent.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice whose link is to be sent by SMS or email.",
+          "required": true
+        },
+        "medium": {
+          "type": "string",
+          "text": "Possible values- sms;email",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Send or Resend Notification",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id/notify_by/:medium",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id/notify_by/medium",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#send-notifications"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id__cancel___post": {
+      "provider_intent": "razorpay__v1__invoices__inv_id__cancel___post",
+      "provider_alias_intent": "/v1/invoices/inv_id/cancel",
+      "text": "Cancel an Invoice",
+      "category": "Invoice",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice that needs to be cancelled.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "The unique identifier of the invoice that needs to be cancelled.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Cancel an Invoice",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id/cancel",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id/cancel",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#cancel-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__invoices__inv_id___delete": {
+      "provider_intent": "razorpay__v1__invoices__inv_id___delete",
+      "provider_alias_intent": "/v1/invoices/inv_id",
+      "text": "Delete an Invoice",
+      "category": "Invoice",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "inv_id": {
+          "type": "string",
+          "text": "Unique identifier of the invoice that you want to delete.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "inv_id": {
+          "type": "string",
+          "text": "Unique identifier of the invoice that you want to delete.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete an Invoice",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/invoices/:inv_id",
+        "alias_endpoint": "/razorpay/v1/invoices/inv_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/invoices#delete-an-invoice"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__items___post": {
+      "provider_intent": "razorpay__v1__items___post",
+      "provider_alias_intent": "/v1/items",
+      "text": "Create an Item",
+      "category": "Items",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the item.",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "A brief description about the item."
+        },
+        "amount": {
+          "type": "integer",
+          "text": "The price of the item.",
+          "required": true
+        },
+        "currency": {
+          "type": "string",
+          "text": "The currency in which the amount should be charged. Check the list of supported currencies.",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create an Item",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/items",
+        "alias_endpoint": "/razorpay/v1/items",
+        "api_ref": "https://razorpay.com/docs/api/payments/items#create-an-item"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__items___get": {
+      "provider_intent": "razorpay__v1__items___get",
+      "provider_alias_intent": "/v1/items",
+      "text": "Fetch Items",
+      "category": "Items",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "form": {
+          "type": "number",
+          "text": "Unix timestamp; in seconds; from when the items are to be fetched."
+        },
+        "to": {
+          "type": "number",
+          "text": "Unix timestamp; in seconds; till when the items are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "Number of items to be fetched.Default value- 10;Maximum value- 100.This can be used for pagination; in combination with the skip parameter."
+        },
+        "skip": {
+          "type": "number",
+          "text": "Number of records to be skipped while fetching the items."
+        },
+        "active": {
+          "type": "number",
+          "text": "Fetches number of active or inactive items. The value is 1 for active items.The value is 0 for inactive items."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Items",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/items",
+        "alias_endpoint": "/razorpay/v1/items",
+        "api_ref": "https://razorpay.com/docs/api/payments/items#fetch-multiple-items"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__items__item_id___get": {
+      "provider_intent": "razorpay__v1__items__item_id___get",
+      "provider_alias_intent": "/v1/items/item_id",
+      "text": "Fetch Item by ID",
+      "category": "Items",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifier of the item whose details are to be fetched.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifier of the item whose details are to be fetched.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Item by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/items/:item_id",
+        "alias_endpoint": "/razorpay/v1/items/item_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/items#fetch-an-item"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__items__item_id___patch": {
+      "provider_intent": "razorpay__v1__items__item_id___patch",
+      "provider_alias_intent": "/v1/items/item_id",
+      "text": "Update an Item",
+      "category": "Items",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifer of the item whose details are to be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the item."
+        },
+        "description": {
+          "type": "string",
+          "text": "A brief description about the item."
+        },
+        "amount": {
+          "type": "number",
+          "text": "The price of the item in the lowest unit of currency."
+        },
+        "currency": {
+          "type": "string",
+          "text": "The currency in which the amount should be charged. Check the list of supported currencies"
+        },
+        "active": {
+          "type": "boolean",
+          "text": "Indicates the status of the item. Possible values- true (default)- Item is in the active state. false- Item is in the inactive state.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifer of the item whose details are to be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update an Item",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/items/:item_id",
+        "alias_endpoint": "/razorpay/v1/items/item_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/items#update-an-item"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__items__item_id___delete": {
+      "provider_intent": "razorpay__v1__items__item_id___delete",
+      "provider_alias_intent": "/v1/items/item_id",
+      "text": "Delete an Item",
+      "category": "Items",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifier of the item that must be deleted.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "item_id": {
+          "type": "string",
+          "text": "The unique identifier of the item that must be deleted.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete an Item",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/items/:item_id",
+        "alias_endpoint": "/razorpay/v1/items/item_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/items#delete-an-item"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__orders___post": {
+      "provider_intent": "razorpay__v1__orders___post",
+      "provider_alias_intent": "/v1/orders",
+      "text": "Create an Order",
+      "category": "Order",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "The amount for which the order was created; in currency subunits. For example; for an amount of ₹295; enter 29500. Payment can only be made for this amount against the Order.",
+          "required": true
+        },
+        "currency": {
+          "type": "string",
+          "text": "ISO code for the currency in which you want to accept the payment. The default length is 3 characters. Refer to the list of supported currencies.",
+          "required": true
+        },
+        "receipt": {
+          "type": "string",
+          "text": "Receipt number that corresponds to this order; set for your internal reference. Can have a maximum length of 40 characters and has to be unique."
+        },
+        "notes": {
+          "type": "object",
+          "text": "Key-value pair that can be used to store additional information about the entity. Maximum 15 key-value pairs; 256 characters (maximum) each."
+        },
+        "partial_payment": {
+          "type": "boolean",
+          "text": "Indicates whether the customer can make a partial payment. Possible values-true The customer can make partial payments;false (default) The customer cannot make partial payments.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "first_payment_min_amount": {
+          "type": "number",
+          "text": "Minimum amount that must be paid by the customer as the first partial payment. For example; if an amount of ₹7000 is to be received from the customer in two installments of #1 - ₹5000; #2 - ₹2000; then you can set this value as 500000. This parameter should be passed only if partial_payment is true."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create an Order",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/orders",
+        "alias_endpoint": "/razorpay/v1/orders",
+        "api_ref": "https://razorpay.com/docs/api/orders#create-an-order"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__orders___get": {
+      "provider_intent": "razorpay__v1__orders___get",
+      "provider_alias_intent": "/v1/orders",
+      "text": "Fetch Orders",
+      "category": "Order",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "authorized": {
+          "type": "boolean",
+          "text": "Possible values 1/0",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "receipt": {
+          "type": "string",
+          "text": "Retrieves the orders that contain the provided value for receipt."
+        },
+        "form": {
+          "type": "number",
+          "text": "Timestamp (in Unix format) from when the orders should be fetched."
+        },
+        "to": {
+          "type": "number",
+          "text": "Timestamp (in Unix format) up till when orders are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "The number of orders to be fetched. The default value is 10. The maximum value is 100.This can be used for pagination; in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of orders to be skipped. The default value is 0. This can be used for pagination; in combination with count."
+        },
+        "expand[]": {
+          "type": "array",
+          "text": "Used to retrieve additional information about the payment. Using this parameter will cause a sub-entity to be added to the response."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Orders",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/orders",
+        "alias_endpoint": "/razorpay/v1/orders",
+        "api_ref": "https://razorpay.com/docs/api/orders#fetch-orders"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__orders__order_id___get": {
+      "provider_intent": "razorpay__v1__orders__order_id___get",
+      "provider_alias_intent": "/v1/orders/order_id",
+      "text": "Fetch Orders by ID",
+      "category": "Order",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order to be retrieved.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order to be retrieved.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Orders by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/orders/:order_id",
+        "alias_endpoint": "/razorpay/v1/orders/order_id",
+        "api_ref": "https://razorpay.com/docs/api/orders#fetch-an-order-with-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__orders__order_id__payments___get": {
+      "provider_intent": "razorpay__v1__orders__order_id__payments___get",
+      "provider_alias_intent": "/v1/orders/order_id/payments",
+      "text": "Fetch Payment based on Order",
+      "category": "Payments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order for which you want to fetch payment details.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order for which you want to fetch payment details.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Payment based on Order",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/orders/:order_id/payments",
+        "alias_endpoint": "/razorpay/v1/orders/order_id/payments",
+        "api_ref": "https://razorpay.com/docs/api/payments#fetch-payments-based-on-orders"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__orders__order_id___patch": {
+      "provider_intent": "razorpay__v1__orders__order_id___patch",
+      "provider_alias_intent": "/v1/orders/order_id",
+      "text": "Update Order",
+      "category": "Order",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order in which the Notes field must be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "notes": {
+          "type": "object",
+          "text": "Key-value pair that can be used to store additional information about the entity. Maximum 15 key-value pairs; 256 characters (maximum) each.",
+          "required": true
+        }
+      },
+      "path": {
+        "order_id": {
+          "type": "string",
+          "text": "Unique identifier of the order in which the Notes field must be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update Order",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/orders/:order_id",
+        "alias_endpoint": "/razorpay/v1/orders/order_id",
+        "api_ref": "https://razorpay.com/docs/api/orders#update-order"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links__plink_id___patch": {
+      "provider_intent": "razorpay__v1__payment_links__plink_id___patch",
+      "provider_alias_intent": "/v1/payment_links/plink_id",
+      "text": "Update a Payment Link",
+      "category": "Payment Links",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "plink_id": {
+          "type": "string",
+          "text": "The unique identifier of the Payment Link that needs to be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "accept_partial": {
+          "type": "boolean",
+          "text": "Indicates whether customers can make partial payments using the Payment Link. Possible values-true- Customer can make partial payments.false (default)- Customer cannot make partial payments",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "reference_id": {
+          "type": "string",
+          "text": "Adds a unique reference number to an existing link"
+        },
+        "expire_by": {
+          "type": "number",
+          "text": "Timestame; in Unix format; when the payment links should expire"
+        },
+        "notes": {
+          "type": "object",
+          "text": "Key-value pair that can be used to store additional information about the entity. Maximum 15 key-value pairs;256 characters (maximum) each. For example; \"note_key\"- \"Beam me up Scotty”."
+        }
+      },
+      "path": {
+        "plink_id": {
+          "type": "string",
+          "text": "The unique identifier of the Payment Link that needs to be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a Payment Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links/:plink_id",
+        "alias_endpoint": "/razorpay/v1/payment_links/plink_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links#update-payment-link"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links__plink_id__cancel___post": {
+      "provider_intent": "razorpay__v1__payment_links__plink_id__cancel___post",
+      "provider_alias_intent": "/v1/payment_links/plink_id/cancel",
+      "text": "Cancel a Payment Link",
+      "category": "Payment Links",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Cancel a Payment Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links/:plink_id/cancel",
+        "alias_endpoint": "/razorpay/v1/payment_links/plink_id/cancel",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links#cancel-payment-link"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links___get": {
+      "provider_intent": "razorpay__v1__payment_links___get",
+      "provider_alias_intent": "/v1/payment_links",
+      "text": "Fetch all Payment Links",
+      "category": "Payment Links",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "payment_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment associated with the Payment Link"
+        },
+        "reference_id": {
+          "type": "string",
+          "text": "The unique reference number entered by you while creating the Payment Link"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch all Payment Links",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links",
+        "alias_endpoint": "/razorpay/v1/payment_links",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links#fetch-all-payment-links"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links__plink_id__notify_by__medium___post": {
+      "provider_intent": "razorpay__v1__payment_links__plink_id__notify_by__medium___post",
+      "provider_alias_intent": "/v1/payment_links/plink_id/notify_by/medium",
+      "text": "Resend a Payment Link",
+      "category": "Payment Links",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link that should be resent",
+          "required": true
+        },
+        "medium": {
+          "type": "string",
+          "text": "Medium through which the Payment Link must be resent. Possible values-sms/email",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link that should be resent",
+          "required": true
+        },
+        "medium": {
+          "type": "string",
+          "text": "Medium through which the Payment Link must be resent. Possible values-sms/email",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Resend a Payment Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links/:plink_id/notify_by/:medium",
+        "alias_endpoint": "/razorpay/v1/payment_links/plink_id/notify_by/medium",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links#send-or-resend-notifications"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links__plink_id___get": {
+      "provider_intent": "razorpay__v1__payment_links__plink_id___get",
+      "provider_alias_intent": "/v1/payment_links/plink_id",
+      "text": "Fetch a Payment Link",
+      "category": "Payment Links",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "plink_id": {
+          "type": "string",
+          "text": "Unique identifier of the Payment Link.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch a Payment Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links/:plink_id",
+        "alias_endpoint": "/razorpay/v1/payment_links/plink_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links#fetch-specific-payment-links-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payment_links___post": {
+      "provider_intent": "razorpay__v1__payment_links___post",
+      "provider_alias_intent": "/v1/payment_links",
+      "text": "Create a Payment Link",
+      "category": "Payment Links",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "Amount to be paid using the Payment Link. Must be in the smallest unit of the currency. For example- if you want to receive a payment of ₹300.00; you must enter the value 30000.",
+          "required": true
+        },
+        "currency": {
+          "type": "string",
+          "text": "A three-letter ISO code for the currency in which you want to accept the payment. For example; INR."
+        },
+        "accept_partial": {
+          "type": "boolean",
+          "text": "Indicates whether customers can make partial payments using the Payment Link. Possible values- true- Customer can make partial payments.false (default)- Customer cannot make partial payments.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "first_min_partial_amount": {
+          "type": "number",
+          "text": "Minimum amount; in currency subunits; that must be paid by the customer as the first partial payment. Default value is 100. Default currency is INR. For example- if an amount of ₹700.00 is to be received from the customer in two installments of #1 - ₹500.00; #2 - ₹200.00; then you can set this value as 500000. Must be passed along with accept_partial parameter.",
+          "required": true
+        },
+        "upi_link": {
+          "type": "boolean",
+          "text": "Must be set to true for creating UPI Payment Link",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "description": {
+          "type": "string",
+          "text": "A brief description of the Payment Link. The maximum character limit supported is 2048"
+        },
+        "reference_id": {
+          "type": "string",
+          "text": "Reference number tagged to a Payment Link. Must be a unique number for each Payment Link. The maximum character limit supported is 40"
+        },
+        "customer": {
+          "type": "object",
+          "text": "Customer details"
+        },
+        "expire_by": {
+          "type": "number",
+          "text": "Timestamp; in Unix; at which the Payment Link will expire. By default; a Payment Link will be valid for six months from the date of creation. Please note that the expire by date cannot exceed more than six months from the date of creation"
+        },
+        "notify": {
+          "type": "array",
+          "text": "Defines who handles Payment Link notification."
+        },
+        "notes": {
+          "type": "object",
+          "text": "Key-value pair that can be used to store additional information about the entity. Maximum 15 key-value pairs; 256 characters (maximum) each. For example; \"note_key\"; \"Beam me up Scotty”."
+        },
+        "callback_url": {
+          "type": "string",
+          "text": "If specified; adds a redirect URL to the Payment Link. Once customers completes the payment; they are redirected to the specified URL"
+        },
+        "callback_method": {
+          "type": "string",
+          "text": "If callback_url parameter is passed; callback_method must be passed with the value get.",
+          "required": true
+        },
+        "reminder_enable": {
+          "type": "boolean",
+          "text": "Used to send reminders for the Payment Link. Possible values- true- To send reminders.false- To disable reminders.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a Payment Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payment_links",
+        "alias_endpoint": "/razorpay/v1/payment_links",
+        "api_ref": "https://razorpay.com/docs/api/payments/payment-links/#create-payment-link"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments_____get": {
+      "provider_intent": "razorpay__v1__payments_____get",
+      "provider_alias_intent": "/v1/payments/",
+      "text": "Fetch all Payments",
+      "category": "Payments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "form": {
+          "type": "number",
+          "text": "UNIX timestamp; in seconds; from when payments are to be fetched."
+        },
+        "to": {
+          "type": "number",
+          "text": "UNIX timestamp in seconds till when payments are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "Number of payments to be fetched.Default value is 10. Maximum value is 100. This can be used for pagination; in combination with the skip parameter."
+        },
+        "skip": {
+          "type": "number",
+          "text": "Number of records to be skipped while fetching the payments."
+        },
+        "expend[]": {
+          "type": "array",
+          "text": "Used to retrieve additional information about the payment; the method used to make the payment. The response will include a sub-entity if this parameter is used.\nPossible values-card- Expanded card details; usable for card and EMI payments.emi- Expanded EMI plan details; usable for EMI payments."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch all Payments",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/",
+        "alias_endpoint": "/razorpay/v1/payments/",
+        "api_ref": "https://razorpay.com/docs/api/payments#fetch-multiple-payments"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id___get": {
+      "provider_intent": "razorpay__v1__payments__pay_id___get",
+      "provider_alias_intent": "/v1/payments/pay_id",
+      "text": "Fetch Payment by ID",
+      "category": "Payments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment to be retrieved.",
+          "required": true
+        },
+        "expand[]": {
+          "type": "array",
+          "text": "applicable for EMI payments.offers - Expanded Offer details; applicable when an offer was applied to the payment."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment to be retrieved.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Payment by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id",
+        "api_ref": "https://razorpay.com/docs/api/payments#fetch-a-payment"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id__card___get": {
+      "provider_intent": "razorpay__v1__payments__pay_id__card___get",
+      "provider_alias_intent": "/v1/payments/pay_id/card",
+      "text": "Fetch Card Details for a Payment",
+      "category": "Payments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which you want to retrieve card details.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which you want to retrieve card details.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Card Details for a Payment",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id/card",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id/card",
+        "api_ref": "https://razorpay.com/docs/api/payments#fetch-card-details-of-a-payment"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id___patch": {
+      "provider_intent": "razorpay__v1__payments__pay_id___patch",
+      "provider_alias_intent": "/v1/payments/pay_id",
+      "text": "Update Payment",
+      "category": "Payments",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which the Notes field should be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "notes": {
+          "type": "object",
+          "text": "Contains user-defined fields and is stored for reference purposes.",
+          "required": true
+        }
+      },
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which the Notes field should be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update Payment",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id",
+        "api_ref": "https://razorpay.com/docs/api/payments#update-the-payment"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id__capture___post": {
+      "provider_intent": "razorpay__v1__payments__pay_id__capture___post",
+      "provider_alias_intent": "/v1/payments/pay_id/capture",
+      "text": "Capture a Payment",
+      "category": "Payments",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment to be captured.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "The amount to be captured (should be equal to the authorised amount; in the smallest unit of the chosen currency)."
+        },
+        "currency": {
+          "type": "string",
+          "text": "ISO code of the currency in which the payment was made. Refer to the list of supported currencies.",
+          "required": true
+        }
+      },
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment to be captured.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Capture a Payment",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id/capture",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id/capture",
+        "api_ref": "https://razorpay.com/docs/api/payments#capture-a-payment"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments___get": {
+      "provider_intent": "razorpay__v1__payments___get",
+      "provider_alias_intent": "/v1/payments",
+      "text": "Fetch Expanded Card or EMI Details for Payments",
+      "category": "Payments",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Expanded Card or EMI Details for Payments",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments",
+        "alias_endpoint": "/razorpay/v1/payments",
+        "api_ref": "https://razorpay.com/docs/api/payments#fetch-expanded-emi-details-for-payments"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__plans___post": {
+      "provider_intent": "razorpay__v1__plans___post",
+      "provider_alias_intent": "/v1/plans",
+      "text": "Create Plan",
+      "category": "Plans",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "period": {
+          "type": "string",
+          "text": "This combined with interval; defines the frequency. Possible values- daily/weekly/monthly/yearly",
+          "required": true
+        },
+        "interval": {
+          "type": "number",
+          "text": "This; combined with period; defines the frequency. If the billing cycle is 2 months; the value should be 2.",
+          "required": true
+        },
+        "notes": {
+          "type": "object",
+          "text": "Notes you can enter for the contact for future reference. This is a key-value pair. You can enter a maximum of 15 key-value pairs. For example; \"note_key\"- \"Beam me up Scotty”."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create Plan",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/plans",
+        "alias_endpoint": "/razorpay/v1/plans",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#create-a-plan"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__plans___get": {
+      "provider_intent": "razorpay__v1__plans___get",
+      "provider_alias_intent": "/v1/plans",
+      "text": "Fetch All Plans",
+      "category": "Plans",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "form": {
+          "type": "number",
+          "text": "The Unix timestamp from when plans are to be fetched."
+        },
+        "to": {
+          "type": "number",
+          "text": "The Unix timestamp till when plans are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "The number of plans to be fetched. Default value is 10. Maximum value is 100. This can be used for pagination in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of plans to be skipped. Default value is 0. This can be used for pagination in combination with count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch All Plans",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/plans",
+        "alias_endpoint": "/razorpay/v1/plans",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-all-plans"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__plans__plan_id___get": {
+      "provider_intent": "razorpay__v1__plans__plan_id___get",
+      "provider_alias_intent": "/v1/plans/plan_id",
+      "text": "Fetch Plans by ID",
+      "category": "Plans",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "plan_id": {
+          "type": "string",
+          "text": "The unique identifier of the plan. For example; plan_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "plan_id": {
+          "type": "string",
+          "text": "The unique identifier of the plan. For example; plan_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Plans by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/plans/:plan_id",
+        "alias_endpoint": "/razorpay/v1/plans/plan_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-a-plan-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id__refund___post": {
+      "provider_intent": "razorpay__v1__payments__pay_id__refund___post",
+      "provider_alias_intent": "/v1/payments/pay_id/refund",
+      "text": "Create an Instant Refund",
+      "category": "Refunds",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "The unique identifier of the payment which needs to be refunded.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "The amount to be refunded. Amount should be in the smallest unit of the currency in which the payment was made. Required in case of partial refund.For a partial refund enter a value lesser than the payment amount. For example; if the payment amount is ₹1200 and you want to refund only ₹200; you must pass 20000.For full refund; enter the entire payment amount. If amount parameter is not passed; the entire payment amount will be refunded."
+        },
+        "speed": {
+          "type": "string",
+          "text": "Here; it must be optimum. Indicates that the refund will be processed at an optimal speed based on Razorpay's internal fund transfer logic. If the refund can be processed instantly; Razorpay will do so irrespective of the payment method used to make the payment. If an instant refund is not possible; Razorpay will initiate a refund that is processed at the normal speed.",
+          "required": true
+        },
+        "receipt": {
+          "type": "string",
+          "text": "A unique identifier provided by you for your internal reference."
+        }
+      },
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "The unique identifier of the payment which needs to be refunded.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create an Instant Refund",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id/refund",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id/refund",
+        "api_ref": "https://razorpay.com/docs/api/refunds#create-an-instant-refund"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__refunds___get": {
+      "provider_intent": "razorpay__v1__refunds___get",
+      "provider_alias_intent": "/v1/refunds",
+      "text": "Fetch Refunds",
+      "category": "Refunds",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "from": {
+          "type": "number",
+          "text": "Unix timestamp at which the refunds were created."
+        },
+        "to": {
+          "type": "number",
+          "text": "Unix timestamp till which the refunds were created."
+        },
+        "count": {
+          "type": "number",
+          "text": "The number of refunds to fetch. You can fetch a maximum of 100 refunds."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of refunds to be skipped."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Refunds",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/refunds",
+        "alias_endpoint": "/razorpay/v1/refunds",
+        "api_ref": "https://razorpay.com/docs/api/refunds#fetch-all-refunds"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__refunds__rfnd_id___get": {
+      "provider_intent": "razorpay__v1__refunds__rfnd_id___get",
+      "provider_alias_intent": "/v1/refunds/rfnd_id",
+      "text": "Fetch Refund by ID",
+      "category": "Refunds",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund which is to be retrieved.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund which is to be retrieved.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Refund by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/refunds/:rfnd_id",
+        "alias_endpoint": "/razorpay/v1/refunds/rfnd_id",
+        "api_ref": "https://razorpay.com/docs/api/refunds#fetch-refund-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id__refunds__rfnd_id___get": {
+      "provider_intent": "razorpay__v1__payments__pay_id__refunds__rfnd_id___get",
+      "provider_alias_intent": "/v1/payments/pay_id/refunds/rfnd_id",
+      "text": "Fetch a Specific Refund for a Payment",
+      "category": "Refunds",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which the refund has been made.",
+          "required": true
+        },
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund to be retrieved.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which the refund has been made.",
+          "required": true
+        },
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund to be retrieved.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch a Specific Refund for a Payment",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id/refunds/:rfnd_id",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id/refunds/rfnd_id",
+        "api_ref": "https://razorpay.com/docs/api/refunds#fetch-a-specific-refund-for-a-payment"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__payments__pay_id__refunds___get": {
+      "provider_intent": "razorpay__v1__payments__pay_id__refunds___get",
+      "provider_alias_intent": "/v1/payments/pay_id/refunds",
+      "text": "Fetch Multiple Refunds for a Payment",
+      "category": "Refunds",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which refund has been requested",
+          "required": true
+        },
+        "form": {
+          "type": "number",
+          "text": "Unix timestamp at which the refunds were created."
+        },
+        "to": {
+          "type": "number",
+          "text": "Unix timestamp till which the refunds were created."
+        },
+        "count": {
+          "type": "number",
+          "text": "The number of refunds to fetch for the payment."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of refunds to be skipped for the payment."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "pay_id": {
+          "type": "string",
+          "text": "Unique identifier of the payment for which refund has been requested",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Multiple Refunds for a Payment",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/payments/:pay_id/refunds",
+        "alias_endpoint": "/razorpay/v1/payments/pay_id/refunds",
+        "api_ref": "https://razorpay.com/docs/api/refunds#fetch-all-refunds"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__refunds__rfnd_id___patch": {
+      "provider_intent": "razorpay__v1__refunds__rfnd_id___patch",
+      "provider_alias_intent": "/v1/refunds/rfnd_id",
+      "text": "Update Refund",
+      "category": "Refunds",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund for which the Notes field should be updated.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "notes": {
+          "type": "object",
+          "text": "Additional information to be modified or added as part of Notes field in key-pair format. Know more about notes.",
+          "required": true
+        }
+      },
+      "path": {
+        "rfnd_id": {
+          "type": "string",
+          "text": "Unique identifier of the refund for which the Notes field should be updated.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update Refund",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/refunds/:rfnd_id",
+        "alias_endpoint": "/razorpay/v1/refunds/rfnd_id",
+        "api_ref": "https://razorpay.com/docs/api/refunds#update-refund"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements__ondemand___post": {
+      "provider_intent": "razorpay__v1__settlements__ondemand___post",
+      "provider_alias_intent": "/v1/settlements/ondemand",
+      "text": "Create Instant Settlement",
+      "category": "Settlements",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "The amount; in paise; you want settled to your account.",
+          "required": true
+        },
+        "settle_full_balance": {
+          "type": "boolean",
+          "text": "Possible value- true- Razorpay will settle the maximum amount possible. Values passed in the amount parameter are ignored.false (default value)- Razorpay will settle the amount requested in the amount parameter.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "description": {
+          "type": "string",
+          "text": "This is a custom note you can pass for the instant settlement for your reference. For example; Need this to make vendor payments.Maximum length- 30 characters.Allowed characters- a-z; A-Z; 0-9 and space."
+        },
+        "notes": {
+          "type": "object",
+          "text": "Key-value pair that can be used to store additional information about the entity. Maximum 15 key-value pairs; 256 characters (maximum) each. For example- Beam me up Scotty."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create Instant Settlement",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements/ondemand",
+        "alias_endpoint": "/razorpay/v1/settlements/ondemand",
+        "api_ref": "https://razorpay.com/docs/api/settlements/instant#create-an-instant-settlement"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements__ondemand___get": {
+      "provider_intent": "razorpay__v1__settlements__ondemand___get",
+      "provider_alias_intent": "/v1/settlements/ondemand",
+      "text": "Fetch all Instant Settlements",
+      "category": "Settlements",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "expand[]=ondemand_payouts": {
+          "type": "string",
+          "text": "Pass this if you want to fetch payout details as part of the response."
+        },
+        "form": {
+          "type": "number",
+          "text": "Unix timestamp (in seconds) from when instant settlements are to be retrieved."
+        },
+        "to": {
+          "type": "number",
+          "text": "Unix timestamp (in seconds) till when instant settlements are to be retrieved."
+        },
+        "count": {
+          "type": "number",
+          "text": "Number of instant settlement records to be retrieved.Default value- 10.Maximum value- 100.This can be used for pagination; in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "Number of instant settlement records to be skipped.Default value- 0 This can be used for pagination; in combination with count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch all Instant Settlements",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements/ondemand",
+        "alias_endpoint": "/razorpay/v1/settlements/ondemand",
+        "api_ref": "https://razorpay.com/docs/api/settlements/instant#fetch-all-instant-settlements"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements__ondemand__sod_id___get": {
+      "provider_intent": "razorpay__v1__settlements__ondemand__sod_id___get",
+      "provider_alias_intent": "/v1/settlements/ondemand/sod_id",
+      "text": "Fetch Instant Settlement by ID",
+      "category": "Settlements",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "sod_id": {
+          "type": "string",
+          "text": "The unique identifier for the instant settlement transaction. For example; setlod_FNj7g2YS5J67Rz.",
+          "required": true
+        },
+        "expand[]=ondemand_payouts": {
+          "type": "string",
+          "text": "Pass this if you want to fetch payout details as part of the response."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sod_id": {
+          "type": "string",
+          "text": "The unique identifier for the instant settlement transaction. For example; setlod_FNj7g2YS5J67Rz.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Instant Settlement by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements/ondemand/:sod_id",
+        "alias_endpoint": "/razorpay/v1/settlements/ondemand/sod_id",
+        "api_ref": "https://razorpay.com/docs/api/settlements/instant#fetch-instant-settlement-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements__recon__combined___get": {
+      "provider_intent": "razorpay__v1__settlements__recon__combined___get",
+      "provider_alias_intent": "/v1/settlements/recon/combined",
+      "text": "Settlements Recon",
+      "category": "Settlements",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "year": {
+          "type": "number",
+          "text": "The year the settlement was received in the YYYY format. For example; 2022.",
+          "required": true
+        },
+        "month": {
+          "type": "number",
+          "text": "The month the settlement was received in the MM format. For example; 06.'\nday",
+          "required": true,
+          "enum": [
+            "number"
+          ]
+        },
+        "count": {
+          "type": "number",
+          "text": "Specifies the number of available settlements to be fetched. Maximum count can be 1000."
+        },
+        "skip": {
+          "type": "number",
+          "text": "Specifies the number of available settlements to be skipped when fetching a count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Settlements Recon",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements/recon/combined",
+        "alias_endpoint": "/razorpay/v1/settlements/recon/combined",
+        "api_ref": "https://razorpay.com/docs/api/settlements#settlement-recon"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements__setl_id___get": {
+      "provider_intent": "razorpay__v1__settlements__setl_id___get",
+      "provider_alias_intent": "/v1/settlements/setl_id",
+      "text": "Fetch Settlement by ID",
+      "category": "Settlements",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "setl_id": {
+          "type": "string",
+          "text": "The unique identifier of the settlement to be retrieved.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "setl_id": {
+          "type": "string",
+          "text": "The unique identifier of the settlement to be retrieved.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Settlement by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements/:setl_id",
+        "alias_endpoint": "/razorpay/v1/settlements/setl_id",
+        "api_ref": "https://razorpay.com/docs/api/settlements#fetch-settlement-using-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__settlements___get": {
+      "provider_intent": "razorpay__v1__settlements___get",
+      "provider_alias_intent": "/v1/settlements",
+      "text": "Fetch All Settlements",
+      "category": "Settlements",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "form": {
+          "type": "number"
+        },
+        "to": {
+          "type": "number",
+          "text": "Unix timestamp (in seconds) till when settlements are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "Number of settlement records to be fetched. Default value- 10 Maximum value- 100This can be used for pagination; in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "Number of settlement records to be skipped.Default value- 0 This can be used for pagination; in combination with count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch All Settlements",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/settlements",
+        "alias_endpoint": "/razorpay/v1/settlements",
+        "api_ref": "https://razorpay.com/docs/api/settlements#fetch-all-settlements"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions___post": {
+      "provider_intent": "razorpay__v1__subscriptions___post",
+      "provider_alias_intent": "/v1/subscriptions",
+      "text": "Create Subscription Link",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "plan_id": {
+          "type": "string",
+          "text": "The unique identifier of a plan that should be linked to the Subscription. For example; plan_00000000000001.",
+          "required": true
+        },
+        "total_count": {
+          "type": "number",
+          "text": "The number of billing cycles for which the customer should be charged. For example; if a customer is buying a 1-year subscription billed on a bi-monthly basis; this value should be 6.",
+          "required": true
+        },
+        "quantity": {
+          "type": "number",
+          "text": "The number of times the customer should be charged the plan amount per invoice. For example; a customer subscribes to use software. The charges are ₹100/month/license. The customer wants 5 licenses. You should pass 5 as the quantity. The customer is charged ₹500 (5 x ₹100) monthly. By default; this value is set to 1."
+        },
+        "start_at": {
+          "type": "number",
+          "text": "Unix timestamp that indicates from when the Subscription should start. If not passed the Subscription starts immediately after the authorisation payment. For example; 1581013800"
+        },
+        "expire_by": {
+          "type": "number",
+          "text": "Unix timestamp that indicates till when the customer can make the authorisation payment. For example; 1581013800. Do not pass any value if you do not want to set an expiry date."
+        },
+        "customer_notify": {
+          "type": "boolean",
+          "text": "Indicates whether the communication to the customer would be handled by you or us. Possible values- 0- communication handled by you.1 (default)- communication handled by Razorpay.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "offer_id": {
+          "type": "string",
+          "text": "The unique identifier of the offer that is linked to the Subscription. You can obtain this from the Dashboard. For example, offer_JHD834hjbxzhd38d."
+        },
+        "notes": {
+          "type": "object",
+          "text": "Notes you can enter for the contact for future reference. This is a key-value pair. You can enter a maximum of 15 key-value pairs. For example, 'note_key': 'Beam me up Scotty' "
+        },
+        "notify_info": {
+          "type": "object",
+          "text": "The customer's email and phone number to which notifications are to be sent. Use this array only if you have set the customer_notify parameter to 1. That is Razorpay sends notifications to the customer."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create Subscription Link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions",
+        "alias_endpoint": "/razorpay/v1/subscriptions",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#create-a-subscription-link"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions___get": {
+      "provider_intent": "razorpay__v1__subscriptions___get",
+      "provider_alias_intent": "/v1/subscriptions",
+      "text": "Fetch All Subscriptions",
+      "category": "Subscriptions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "plan_id": {
+          "type": "string",
+          "text": "The unique identifier of the plan for which you want to retrieve all the Subscriptions"
+        },
+        "form": {
+          "type": "number",
+          "text": "The Unix timestamp from when Subscriptions are to be fetched."
+        },
+        "to": {
+          "type": "number",
+          "text": "The Unix timestamp till when Subscriptions are to be fetched."
+        },
+        "count": {
+          "type": "number",
+          "text": "The number of Subscriptions to be fetched. Default value is 10. Maximum value is 100. This can be used for pagination; in combination with skip."
+        },
+        "skip": {
+          "type": "number",
+          "text": "The number of Subscriptions to be skipped. Default value is 0. This can be used for pagination; in combination with count."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch All Subscriptions",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions",
+        "alias_endpoint": "/razorpay/v1/subscriptions",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-all-subscriptions"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id___get": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id___get",
+      "provider_alias_intent": "/v1/subscriptions/sub_id",
+      "text": "Fetch Subscriptions by ID",
+      "category": "Subscriptions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Subscriptions by ID",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-a-subscription-by-id"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__cancel___post": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__cancel___post",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/cancel",
+      "text": "Cancel Subscription",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "cancel_at_cycle_end": {
+          "type": "boolean",
+          "text": "Use this parameter to cancel a Subscription at the end of a billing cycle. Possible values-0 (default)- Cancel the subscription immediately.1- Cancel the subscription at the end of the current billing cycle.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Cancel Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/cancel",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/cancel",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#cancel-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id___patch": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id___patch",
+      "provider_alias_intent": "/v1/subscriptions/sub_id",
+      "text": "Update Subscription",
+      "category": "Subscriptions",
+      "method": "PATCH",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "plan_id": {
+          "type": "string",
+          "text": "The unique identifier of the new plan that should be linked to the Subscription. For example; plan_00000000000001."
+        },
+        "offer_id": {
+          "type": "string",
+          "text": "The unique identifier of the offer that should be linked to the Subscription. You can obtain this from the Dashboard. For example; offer_JHD834hjbxzhd38d."
+        },
+        "quantity": {
+          "type": "number",
+          "text": "The number of times the plan should be linked to the Subscription. For example; if the plan is ₹100/user/month and the customer has 5 users; you should pass 5 as the quantity to have the customer charged ₹500 (5 x ₹100) monthly. By default; this value is set to 1"
+        },
+        "remaining_count": {
+          "type": "number",
+          "text": "This parameter is used to update the total_count for a Subscription. For example; let us consider a monthly Subscription with 12 billing cycles. The Subscription has been charged successfully 4 times and 3 more invoices have been issued; but have not been charged. The remaining count in such cases is 5. However; you can overwrite this value using this parameter"
+        },
+        "start_at": {
+          "type": "number",
+          "text": "Unix timestamp. The new start date for the Subscription."
+        },
+        "schedule_change_at": {
+          "type": "string",
+          "text": "Represents when the Subscription should be updated. now (default) Updates the Subscription immediately.cycle_end- Updates the Subscription at the end of the current billing cycle."
+        },
+        "customer_notify": {
+          "type": "boolean",
+          "text": "Represents who sends notifications to the customer. Possible values-1 (default)- Notifications sent by Razorpay.0- Notifications sent by you.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#update-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__retrieve_scheduled_changes___get": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__retrieve_scheduled_changes___get",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/retrieve_scheduled_changes",
+      "text": "Fetch Details of a Pending Update",
+      "category": "Subscriptions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Fetch Details of a Pending Update",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/retrieve_scheduled_changes",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/retrieve_scheduled_changes",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#fetch-details-of-a-pending-update"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__cancel_scheduled_changes___post": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__cancel_scheduled_changes___post",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/cancel_scheduled_changes",
+      "text": "Cancel Pending Update",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Cancel Pending Update",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/cancel_scheduled_changes",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/cancel_scheduled_changes",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#cancel-an-update"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__pause___post": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__pause___post",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/pause",
+      "text": "Pause a Subscription",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "pause_at": {
+          "type": "string",
+          "text": "The value should be now to pause a Subscription immediately."
+        }
+      },
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Pause a Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/pause",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/pause",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#pause-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__resume___post": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__resume___post",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/resume",
+      "text": "Resume a Subscription",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001."
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "resume_at": {
+          "type": "string",
+          "text": "The value should be now to resume a Subscription immediately."
+        }
+      },
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier linked to a Subscription. For example; sub_00000000000001."
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Resume a Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/resume",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/resume",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#resume-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "razorpay__v1__subscriptions__sub_id__offer_id___delete": {
+      "provider_intent": "razorpay__v1__subscriptions__sub_id__offer_id___delete",
+      "provider_alias_intent": "/v1/subscriptions/sub_id/offer_id",
+      "text": "Delete an Offer Linked to a Subscription",
+      "category": "Subscriptions",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier of the Subscription from which you want to remove the offer. For example; sub_00000000000001.",
+          "required": true
+        },
+        "offer_id": {
+          "type": "string",
+          "text": "The unique identifier of the offer you want remove from the Subscription. For example; offer_JHD834hjbxzhd38d.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": "",
+      "path": {
+        "sub_id": {
+          "type": "string",
+          "text": "The unique identifier of the Subscription from which you want to remove the offer. For example; sub_00000000000001.",
+          "required": true
+        },
+        "offer_id": {
+          "type": "string",
+          "text": "The unique identifier of the offer you want remove from the Subscription. For example; offer_JHD834hjbxzhd38d.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete an Offer Linked to a Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://api.razorpay.com/v1/subscriptions/:sub_id/:offer_id",
+        "alias_endpoint": "/razorpay/v1/subscriptions/sub_id/offer_id",
+        "api_ref": "https://razorpay.com/docs/api/payments/subscriptions#delete-an-offer-linked-to-a-subscription"
+      },
+      "auth": {
+        "basicauth": {
+          "username": "api_key",
+          "password": "api_secret"
+        }
+      },
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    }
+  }
+}

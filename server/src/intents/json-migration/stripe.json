@@ -1,0 +1,3664 @@
+{
+  "config": {
+    "id": "stripe",
+    "name": "Stripe",
+    "description": "",
+    "logo_url": "stripe.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "secret_key",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_secret",
+        "type": "input",
+        "field": "input",
+        "label": "API Secret",
+        "message": "API Secret is used for accessing the API.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.stripe.com",
+    "released": 1,
+    "updated_at": "2024-12-22T10:22:28.000Z",
+    "website": "https://stripe.com",
+    "api_link_ref": "https://stripe.com/docs",
+    "total_api": 55,
+    "credential_link": "https://dashboard.stripe.com"
+  },
+  "routes": {
+    "PostCoupons": {
+      "provider_intent": "PostCoupons",
+      "provider_alias_intent": "/v1/coupons",
+      "text": "Create a coupon",
+      "category": "Coupons",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "amount_off": {
+          "type": "number",
+          "text": "A positive integer representing the amount to subtract from an invoice total (required if percent_off is not passed)"
+        },
+        "currency": {
+          "type": "string",
+          "text": "Three-letter ISO code for the currency of the amount_off parameter (required if amount_off is passed)"
+        },
+        "duration": {
+          "type": "enum",
+          "text": "Specifies how long the discount will be in effect if used on a subscription",
+          "enum": [
+            "once",
+            "repeating",
+            "forever"
+          ]
+        },
+        "duration_in_months": {
+          "type": "number",
+          "text": "Required only if duration is repeating in which case it must be a positive integer that specifies the number of months the discount will be in effect."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "name": {
+          "type": "string",
+          "text": "Name of the coupon displayed to customers on for instance invoices; or receipts. By default the id is shown if name is not set."
+        },
+        "percent_off": {
+          "type": "number",
+          "text": "A positive float larger than 0; and smaller or equal to 100; that represents the discount the coupon will apply (required if amount_off is not passed)."
+        },
+        "id": {
+          "type": "string",
+          "text": "Unique string of your choice that will be used to identify this coupon when applying it to a customer. If you don’t want to specify a particular code; you can leave the ID blank and we’ll generate a random code for you."
+        },
+        "applies_to": {
+          "type": "object",
+          "text": "A hash containing directions for what this Coupon will apply discounts to."
+        },
+        "currency_options": {
+          "type": "object",
+          "text": "Coupons defined in each available currency option (only supported if amount_off is passed). Each key must be a three-letter ISO currency code and a supported currency. For example; to define your coupon in eur; pass the fields below in the eur key of currency_options."
+        },
+        "max_redemptions": {
+          "type": "number",
+          "text": "A positive integer specifying the number of times the coupon can be redeemed before it’s no longer valid. For example; you might have a 50% off coupon that the first 20 readers of your blog can use."
+        },
+        "redeem_by": {
+          "type": "number",
+          "text": "Unix timestamp specifying the last time at which the coupon can be redeemed. After the redeem_by date; the coupon can no longer be applied to new customers."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a coupon",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/coupons",
+        "alias_endpoint": "/stripe/v1/coupons",
+        "api_ref": "https://stripe.com/docs/api/coupons/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCoupons",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCouponsCoupon": {
+      "provider_intent": "GetCouponsCoupon",
+      "provider_alias_intent": "/v1/coupons/id",
+      "text": "Retrieve a coupon",
+      "category": "Coupons",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a coupon",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/coupons/:id",
+        "alias_endpoint": "/stripe/v1/coupons/id",
+        "api_ref": "https://stripe.com/docs/api/coupons/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCouponsCoupon",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCouponsCoupon": {
+      "provider_intent": "PostCouponsCoupon",
+      "provider_alias_intent": "/v1/coupons/id",
+      "text": "Update a coupon",
+      "category": "Coupons",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "name": {
+          "type": "string",
+          "text": "Name of the coupon displayed to customers on; for instance invoices; or receipts. By default the id is shown if name is not set."
+        },
+        "currency_options": {
+          "type": "object",
+          "text": "Coupons defined in each available currency option (only supported if the coupon is amount-based). Each key must be a three-letter ISO currency code and a supported currency. For example; to define your coupon in eur; pass the fields below in the eur key of currency_options."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a coupon",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/coupons/:id",
+        "alias_endpoint": "/stripe/v1/coupons/id",
+        "api_ref": "https://stripe.com/docs/api/coupons/update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCouponsCoupon",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "DeleteCouponsCoupon": {
+      "provider_intent": "DeleteCouponsCoupon",
+      "provider_alias_intent": "/v1/coupons/id",
+      "text": "Delete a coupon",
+      "category": "Coupons",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Coupons ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a coupon",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/coupons/:id",
+        "alias_endpoint": "/stripe/v1/coupons/id",
+        "api_ref": "https://stripe.com/docs/api/coupons/delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "DeleteCouponsCoupon",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCoupons": {
+      "provider_intent": "GetCoupons",
+      "provider_alias_intent": "/v1/coupons",
+      "text": "List all coupons",
+      "category": "Coupons",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "created": {
+          "type": "object",
+          "text": "A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all coupons",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/coupons",
+        "alias_endpoint": "/stripe/v1/coupons",
+        "api_ref": "https://stripe.com/docs/api/coupons/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCoupons",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "stripe__v1__customers__id__discount___delete": {
+      "provider_intent": "stripe__v1__customers__id__discount___delete",
+      "provider_alias_intent": "/v1/customers/id/discount",
+      "text": "Delete a customer discount",
+      "category": "Discounts",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Customer code ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Customer code ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a customer discount",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers/:id/discount",
+        "alias_endpoint": "/stripe/v1/customers/id/discount",
+        "api_ref": "https://stripe.com/docs/api/discounts/delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "stripe__v1__subscriptions__id__discount___delete": {
+      "provider_intent": "stripe__v1__subscriptions__id__discount___delete",
+      "provider_alias_intent": "/v1/subscriptions/id/discount",
+      "text": "Delete a subscription discount",
+      "category": "Discounts",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Subscription code ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Subscription code ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a subscription discount",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/subscriptions/:id/discount",
+        "alias_endpoint": "/stripe/v1/subscriptions/id/discount",
+        "api_ref": "https://stripe.com/docs/api/discounts/subscription_delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPrices": {
+      "provider_intent": "PostPrices",
+      "provider_alias_intent": "/v1/prices",
+      "text": "Create a price",
+      "category": "Prices",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "currency": {
+          "type": "string",
+          "text": "Three-letter ISO currency code; in lowercase. Must be a supported currency.",
+          "required": true
+        },
+        "product": {
+          "type": "string",
+          "text": "The ID of the product that this price will belong to.",
+          "required": true
+        },
+        "unit_amount": {
+          "type": "number",
+          "text": "A positive integer in cents (or 0 for a free price) representing how much to charge. One of unit_amount or custom_unit_amount is required; unless billing_scheme=tiered.",
+          "required": true
+        },
+        "active": {
+          "type": "boolean",
+          "text": "Whether the price can be used for new purchases",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "nickname": {
+          "type": "string",
+          "text": "A brief description of the price; hidden from customers."
+        },
+        "recurring": {
+          "type": "object",
+          "text": "The recurring components of a price such as interval and usage_type."
+        },
+        "custom_unit_amount": {
+          "type": "",
+          "text": "When set; provides configuration for the amount to be adjusted by the customer during Checkout Sessions and Payment Links.",
+          "required": true
+        },
+        "product_data": {
+          "type": "string",
+          "text": "These fields can be used to create a new product that this price will belong to.",
+          "required": true
+        },
+        "tiers": {
+          "type": "number",
+          "text": "Each element represents a pricing tier. This parameter requires billing_scheme to be set to tiered. See also the documentation for billing_scheme.",
+          "required": true
+        },
+        "tiers_mode": {
+          "type": "string",
+          "text": "Defines if the tiering price should be graduated or volume based. In volume-based tiering; the maximum quantity within a period determines the per unit price; in graduated tiering pricing can successively change as the quantity grows.",
+          "required": true
+        },
+        "billing_scheme": {
+          "type": "string",
+          "text": "Describes how to compute the price per period. Either per_unit or tiered. per_unit indicates that the fixed amount (specified in unit_amount or unit_amount_decimal) will be charged per unit in quantity (for prices with usage_type=licensed) or per unit of total usage (for prices with usage_type=metered). tiered indicates that the unit pricing will be computed using a tiering strategy as defined using the tiers and tiers_mode attributes."
+        },
+        "currency_options": {
+          "type": "object",
+          "text": "Prices defined in each available currency option. Each key must be a three-letter ISO currency code and a supported currency. For example; to define your price in eur; pass the fields below in the eur key of currency_options."
+        },
+        "lookup_key": {
+          "type": "string",
+          "text": "A lookup key used to retrieve prices dynamically from a static string. This may be up to 200 characters."
+        },
+        "tax_behavioroptional": {
+          "type": "string",
+          "text": "Specifies whether the price is considered inclusive of taxes or exclusive of taxes. One of inclusive; exclusive; or unspecified. Once specified as either inclusive or exclusive; it cannot be changed."
+        },
+        "transfer_lookup_key": {
+          "type": "boolean",
+          "text": "If set to true will atomically remove the lookup key from the existing price and assign it to this price.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "transform_quantity": {
+          "type": "object",
+          "text": "Apply a transformation to the reported usage or set quantity before computing the billed price. Cannot be combined with tiers."
+        },
+        "unit_amount_decimal": {
+          "type": "number",
+          "text": "Same as unit_amount; but accepts a decimal value in cents with at most 12 decimal places. Only one of unit_amount and unit_amount_decimal can be set."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a price",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/prices",
+        "alias_endpoint": "/stripe/v1/prices",
+        "api_ref": "https://stripe.com/docs/api/prices/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPrices",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPricesPrice": {
+      "provider_intent": "GetPricesPrice",
+      "provider_alias_intent": "/v1/prices/id",
+      "text": "Retrieve a price",
+      "category": "Prices",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Prices ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Prices ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a price",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/prices/:id",
+        "alias_endpoint": "/stripe/v1/prices/id",
+        "api_ref": "https://stripe.com/docs/api/prices/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPricesPrice",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPricesPrice": {
+      "provider_intent": "PostPricesPrice",
+      "provider_alias_intent": "/v1/prices/id",
+      "text": "Update a price",
+      "category": "Prices",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Prices ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "active": {
+          "type": "boolean",
+          "text": "Whether the price can be used for new purchases",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "nickname": {
+          "type": "string",
+          "text": "A brief description of the price; hidden from customers."
+        },
+        "currency_options": {
+          "type": "string",
+          "text": "Prices defined in each available currency option. Each key must be a three-letter ISO currency code and a supported currency. For example; to define your price in eur; pass the fields below in the eur key of currency_options."
+        },
+        "lookup_key": {
+          "type": "string",
+          "text": "A lookup key used to retrieve prices dynamically from a static string. This may be up to 200 characters."
+        },
+        "tax_behavior": {
+          "type": "string",
+          "text": "Specifies whether the price is considered inclusive of taxes or exclusive of taxes. One of inclusive exclusive or unspecified. Once specified as either inclusive or exclusive; it cannot be changed."
+        },
+        "transfer_lookup_key": {
+          "type": "boolean",
+          "text": "If set to true; will atomically remove the lookup key from the existing price; and assign it to this price.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Prices ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a price",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/prices/:id",
+        "alias_endpoint": "/stripe/v1/prices/id",
+        "api_ref": "https://stripe.com/docs/api/prices/update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPricesPrice",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPrices": {
+      "provider_intent": "GetPrices",
+      "provider_alias_intent": "/v1/prices",
+      "text": "List all prices",
+      "category": "Prices",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "active": {
+          "type": "boolean",
+          "text": "Only return prices that are active or inactive (e.g. pass false to list all inactive prices).",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "text": "Only return prices for the given currency."
+        },
+        "product": {
+          "type": "number",
+          "text": "Only return prices for the given product."
+        },
+        "type": {
+          "type": "number",
+          "text": "Only return prices of type recurring or one_time."
+        },
+        "created": {
+          "type": "string",
+          "text": "A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "lookup_keys": {
+          "type": "number",
+          "text": "Only return the price with these lookup_keys; if any exist."
+        },
+        "recurring": {
+          "type": "number",
+          "text": "Only return prices with these recurring fields."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all prices",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/prices",
+        "alias_endpoint": "/stripe/v1/prices",
+        "api_ref": "https://stripe.com/docs/api/prices/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPrices",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPricesSearch": {
+      "provider_intent": "GetPricesSearch",
+      "provider_alias_intent": "/v1/prices/search",
+      "text": "Search prices",
+      "category": "Prices",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string",
+          "text": "The search query string. See search query language and the list of supported query fields for prices.",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "page": {
+          "type": "string",
+          "text": "A cursor for pagination across multiple pages of results. Don’t include this parameter on the first call. Use the next_page value returned in a previous response to request subsequent results."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Search prices",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/prices/search",
+        "alias_endpoint": "/stripe/v1/prices/search",
+        "api_ref": "https://stripe.com/docs/api/prices/search"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPricesSearch",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostProducts": {
+      "provider_intent": "PostProducts",
+      "provider_alias_intent": "/v1/products",
+      "text": "Create a product",
+      "category": "Product",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "id": {
+          "type": "string",
+          "text": "An identifier will be randomly generated by Stripe. You can optionally override this ID but the ID must be unique across all products in your Stripe account."
+        },
+        "name": {
+          "type": "string",
+          "text": "The product’s name; meant to be displayable to the customer."
+        },
+        "active": {
+          "type": "boolean",
+          "text": "Whether the product is currently available for purchase",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "description": {
+          "type": "string",
+          "text": "The product’s description; meant to be displayable to the customer. Use this field to optionally store a long form explanation of the product being sold for your own rendering purposes."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products",
+        "alias_endpoint": "/stripe/v1/products",
+        "api_ref": "https://stripe.com/docs/api/products/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostProducts",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetProductsId": {
+      "provider_intent": "GetProductsId",
+      "provider_alias_intent": "/v1/products/id",
+      "text": "Retrieve a product",
+      "category": "Product",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products/:id",
+        "alias_endpoint": "/stripe/v1/products/id",
+        "api_ref": "https://stripe.com/docs/api/products/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetProductsId",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostProductsId": {
+      "provider_intent": "PostProductsId",
+      "provider_alias_intent": "/v1/products/id",
+      "text": "Update a product",
+      "category": "Product",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "active": {
+          "type": "string",
+          "text": "Whether the product is available for purchase."
+        },
+        "default_price": {
+          "type": "string",
+          "text": "The ID of the Price object that is the default price for this product."
+        },
+        "description": {
+          "type": "string",
+          "text": "The product’s description; meant to be displayable to the customer. Use this field to optionally store a long form explanation of the product being sold for your own rendering purposes."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "name": {
+          "type": "string",
+          "text": "The product’s name; meant to be displayable to the customer."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products/:id",
+        "alias_endpoint": "/stripe/v1/products/id",
+        "api_ref": "https://stripe.com/docs/api/products/update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostProductsId",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetProducts": {
+      "provider_intent": "GetProducts",
+      "provider_alias_intent": "/v1/products",
+      "text": "List all products",
+      "category": "Product",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "active": {
+          "type": "boolean",
+          "text": "Only return products that are active or inactive (e.g. pass false to list all inactive products).",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "created": {
+          "type": "string",
+          "text": "A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "ids": {
+          "type": "string",
+          "text": "Only return products with the given IDs. Cannot be used with starting_after or ending_before."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "shippable": {
+          "type": "string",
+          "text": "Only return products that can be shipped (i.e. physical and not digital products)."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        },
+        "url": {
+          "type": "string",
+          "text": "Only return products with the given url."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all products",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products",
+        "alias_endpoint": "/stripe/v1/products",
+        "api_ref": "https://stripe.com/docs/api/products/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetProducts",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "DeleteProductsId": {
+      "provider_intent": "DeleteProductsId",
+      "provider_alias_intent": "/v1/products/id",
+      "text": "Delete a product",
+      "category": "Product",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Products ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products/:id",
+        "alias_endpoint": "/stripe/v1/products/id",
+        "api_ref": "https://stripe.com/docs/api/products/delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "DeleteProductsId",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetProductsSearch": {
+      "provider_intent": "GetProductsSearch",
+      "provider_alias_intent": "/v1/products/search",
+      "text": "Search products",
+      "category": "Product",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string",
+          "text": "The search query string. See search query language and the list of supported query fields for products.",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "page": {
+          "type": "string",
+          "text": "A cursor for pagination across multiple pages of results. Don’t include this parameter on the first call. Use the next_page value returned in a previous response to request subsequent results."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Search products",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/products/search",
+        "alias_endpoint": "/stripe/v1/products/search",
+        "api_ref": "https://stripe.com/docs/api/products/search"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetProductsSearch",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPromotionCodes": {
+      "provider_intent": "PostPromotionCodes",
+      "provider_alias_intent": "/v1/promotion_codes",
+      "text": "Create a promotion code",
+      "category": "Promotion Code",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "coupon": {
+          "type": "string",
+          "text": "The coupon for this promotion code.",
+          "required": true
+        },
+        "code": {
+          "type": "string",
+          "text": "The customer-facing code. Regardless of case; this code must be unique across all active promotion codes for a specific customer. If left blank; we will generate one automatically."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "active": {
+          "type": "boolean",
+          "text": "Whether the promotion code is currently active.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "customer": {
+          "type": "string",
+          "text": "The customer that this promotion code can be used by. If not set; the promotion code can be used by all customers."
+        },
+        "expires_at": {
+          "type": "number",
+          "text": "The timestamp at which this promotion code will expire. If the coupon has specified a redeems_by; then this value cannot be after the coupon’s redeems_by."
+        },
+        "max_redemptions": {
+          "type": "number",
+          "text": "A positive integer specifying the number of times the promotion code can be redeemed. If the coupon has specified a max_redemptions; then this value cannot be greater than the coupon’s max_redemptions."
+        },
+        "restrictions": {
+          "type": "object",
+          "text": "Settings that restrict the redemption of the promotion code."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a promotion code",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/promotion_codes",
+        "alias_endpoint": "/stripe/v1/promotion_codes",
+        "api_ref": "https://stripe.com/docs/api/promotion_codes/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPromotionCodes",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPromotionCodesPromotionCode": {
+      "provider_intent": "PostPromotionCodesPromotionCode",
+      "provider_alias_intent": "/v1/promotion_codes/id",
+      "text": "Update a promotion code",
+      "category": "Promotion Code",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Promotion code ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "active": {
+          "type": "boolean",
+          "text": "Whether the promotion code is currently active. A promotion code can only be reactivated when the coupon is still valid and the promotion code is otherwise redeemable.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "restrictions": {
+          "type": "object",
+          "text": "Settings that restrict the redemption of the promotion code."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Promotion code ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a promotion code",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/promotion_codes/:id",
+        "alias_endpoint": "/stripe/v1/promotion_codes/id",
+        "api_ref": "https://stripe.com/docs/api/promotion_codes/update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPromotionCodesPromotionCode",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPromotionCodesPromotionCode": {
+      "provider_intent": "GetPromotionCodesPromotionCode",
+      "provider_alias_intent": "/v1/promotion_codes/id",
+      "text": "Retrieve a promotion code",
+      "category": "Promotion Code",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Promotion code ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Promotion code ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a promotion code",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/promotion_codes/:id",
+        "alias_endpoint": "/stripe/v1/promotion_codes/id",
+        "api_ref": "https://stripe.com/docs/api/promotion_codes/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPromotionCodesPromotionCode",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPromotionCodes": {
+      "provider_intent": "GetPromotionCodes",
+      "provider_alias_intent": "/v1/promotion_codes",
+      "text": "List all promotion codes",
+      "category": "Promotion Code",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "active": {
+          "type": "boolean",
+          "text": "Filter promotion codes by whether they are active.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "code": {
+          "type": "string",
+          "text": "Only return promotion codes that have this case-insensitive code."
+        },
+        "coupon": {
+          "type": "string",
+          "text": "Only return promotion codes for this coupon."
+        },
+        "created": {
+          "type": "object",
+          "text": "A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp."
+        },
+        "customer": {
+          "type": "string",
+          "text": "Only return promotion codes that are restricted to this customer."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all promotion codes",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/promotion_codes",
+        "alias_endpoint": "/stripe/v1/promotion_codes",
+        "api_ref": "https://stripe.com/docs/api/promotion_codes/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPromotionCodes",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostSources": {
+      "provider_intent": "PostSources",
+      "provider_alias_intent": "/v1/sources",
+      "text": "Create a source",
+      "category": "Source ",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "type": {
+          "type": "string",
+          "text": "The type of the source to create. Required unless customer and original_source are specified (see the Cloning card Sources guide)",
+          "required": true
+        },
+        "amount": {
+          "type": "number",
+          "text": "Amount associated with the source. This is the amount for which the source will be chargeable once ready. Required for single_use sources. Not supported for receiver type sources, where charge amount may not be specified until funds land."
+        },
+        "currency": {
+          "type": "enum",
+          "text": "Three-letter ISO code for the currency associated with the source. This is the currency for which the source will be chargeable once ready."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "owner": {
+          "type": "object",
+          "text": "Information about the owner of the payment instrument that may be used or required by particular source types.",
+          "properties": {
+            "owner.address": {
+              "type": "object",
+              "text": "Owner’s address.",
+              "properties": {
+                "owner.address.city": {
+                  "type": "string",
+                  "text": "City, district, suburb, town, or village."
+                },
+                "owner.address.country": {
+                  "type": "string",
+                  "text": "Two-letter country code (ISO 3166-1 alpha-2)."
+                },
+                "owner.address.line1": {
+                  "type": "string",
+                  "text": "Address line 1 (e.g., street, PO Box, or company name)."
+                },
+                "owner.address.line2": {
+                  "type": "string",
+                  "text": "Address line 2 (e.g., apartment, suite, unit, or building)."
+                },
+                "owner.address.postal_code": {
+                  "type": "string",
+                  "text": "ZIP or postal code."
+                },
+                "owner.address.state": {
+                  "type": "string",
+                  "text": "State, county, province, or region."
+                }
+              }
+            },
+            "owner.email": {
+              "type": "string",
+              "text": "Owner’s email address."
+            },
+            "owner.name": {
+              "type": "string",
+              "text": "Owner’s full name."
+            },
+            "owner.phone": {
+              "type": "string",
+              "text": "Owner’s phone number."
+            }
+          }
+        },
+        "redirect": {
+          "type": "object",
+          "text": "Parameters required for the redirect flow. Required if the source is authenticated by a redirect (flow is redirect).",
+          "properties": {
+            "redirect.return_url": {
+              "type": "string",
+              "text": "The URL you provide to redirect the customer back to you after they authenticated their payment. It can use your application URI scheme in the context of a mobile application.",
+              "riquired": true
+            }
+          }
+        },
+        "statement_descriptor": {
+          "type": "string",
+          "text": "An arbitrary string to be displayed on your customer’s statement. As an example, if your website is RunClub and the item you’re charging for is a race ticket, you may want to specify a statement_descriptor of RunClub 5K race ticket. While many payment types will display this information, some may not display it at all."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a source",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/sources",
+        "alias_endpoint": "/stripe/v1/sources",
+        "api_ref": "https://stripe.com/docs/api/sources/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostSources",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetSourcesSource": {
+      "provider_intent": "GetSourcesSource",
+      "provider_alias_intent": "/v1/sources/id",
+      "text": "Retrieve a source",
+      "category": "Source ",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Sources ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Sources ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a source",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/sources/:id",
+        "alias_endpoint": "/stripe/v1/sources/id",
+        "api_ref": "https://stripe.com/docs/api/sources/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetSourcesSource",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostSourcesSource": {
+      "provider_intent": "PostSourcesSource",
+      "provider_alias_intent": "/v1/sources/id",
+      "text": "Update a source",
+      "category": "Source ",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Sources ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Sources ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a source",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/sources/:id",
+        "alias_endpoint": "/stripe/v1/sources/id",
+        "api_ref": "https://stripe.com/docs/api/sources/update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostSourcesSource",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCharges": {
+      "provider_intent": "PostCharges",
+      "provider_alias_intent": "/v1/charges",
+      "text": "Create a charge",
+      "category": "Charges",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "Amount intended to be collected by this payment. A positive integer representing how much to charge in the smallest currency unit (e.g. 100 cents to charge $1.00 or 100 to charge ¥100 a zero-decimal currency). The minimum amount is $0.50 US or equivalent in charge currency. The amount value supports up to eight digits (e.g. a value of 99999999 for a USD charge of $999999.99)",
+          "required": true
+        },
+        "currency": {
+          "type": "string",
+          "text": "Three-letter ISO currency code; in lowercase. Must be a supported currency\ncustomer",
+          "required": true,
+          "enum": [
+            "string"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "text": "An arbitrary string which you can attach to a Charge object. It is displayed when in the web interface alongside the charge. Note that if you use Stripe to send automatic email receipts to your customers; your receipt emails will include the description of the charge(s) that they are describing"
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata"
+        },
+        "receipt_email": {
+          "type": "string",
+          "text": "The email address to which this charge’s receipt will be sent. The receipt will not be sent until the charge is paid; and no receipts will be sent for test mode charges. If this charge is for a Customer; the email address specified here will override the customer’s email address. If receipt_email is specified for a charge in live mode; a receipt will be sent regardless of your email settings"
+        },
+        "shipping": {
+          "type": "string",
+          "text": "Shipping information for the charge. Helps prevent fraud on charges for physical goods"
+        },
+        "source": {
+          "type": "string",
+          "text": "A payment source to be charged. This can be the ID of a card (i.e. credit or debit card); a bank account; a source; a token; or a connected account. For certain sources—namely; cards; bank accounts; and attached sources—you must also pass the ID of the associated customer"
+        },
+        "statement_descriptor": {
+          "type": "string",
+          "text": "For card charges use statement_descriptor_suffix instead. Otherwise; you can use this value as the complete description of a charge on your customers’ statements. Must contain at least one letter; maximum 22 characters'"
+        },
+        "statement_descriptor_suffix": {
+          "type": "string",
+          "text": "Provides information about the charge that customers see on their statements. Concatenated with the prefix (shortened descriptor) or statement descriptor that’s set on the account to form the complete statement descriptor. Maximum 22 characters for the concatenated descriptor."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a charge",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges",
+        "alias_endpoint": "/stripe/v1/charges",
+        "api_ref": "https://stripe.com/docs/api/charges/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCharges",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetChargesCharge": {
+      "provider_intent": "GetChargesCharge",
+      "provider_alias_intent": "/v1/charges/id",
+      "text": "Retrieve a charge",
+      "category": "Charges",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a charge",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges/:id",
+        "alias_endpoint": "/stripe/v1/charges/id",
+        "api_ref": "https://stripe.com/docs/api/charges/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetChargesCharge",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostChargesCharge": {
+      "provider_intent": "PostChargesCharge",
+      "provider_alias_intent": "/v1/charges/id",
+      "text": "Update a charge",
+      "category": "Charges",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "customer": {
+          "type": "string",
+          "text": "The ID of an existing customer that will be associated with this request. This field may only be updated if there is no existing associated customer with this charge."
+        },
+        "description": {
+          "type": "string",
+          "text": "An arbitrary string which you can attach to a charge object. It is displayed when in the web interface alongside the charge. Note that if you use Stripe to send automatic email receipts to your customers; your receipt emails will include the description of the charge(s) that they are describing."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "receipt_email": {
+          "type": "string",
+          "text": "This is the email address that the receipt for this charge will be sent to. If this field is updated; then a new email receipt will be sent to the updated address."
+        },
+        "shipping": {
+          "type": "string",
+          "text": "Shipping information for the charge. Helps prevent fraud on charges for physical goods."
+        },
+        "fraud_details": {
+          "type": "srring",
+          "text": "A set of key-value pairs you can attach to a charge giving information about its riskiness. If you believe a charge is fraudulent include a user_report key with a value of fraudulent. If you believe a charge is safe; include a user_report key with a value of safe. Stripe will use the information you send to improve our fraud detection algorithms."
+        },
+        "ransfer_group": {
+          "type": "string",
+          "text": "A string that identifies this transaction as part of a group. transfer_group may only be provided if it has not been set. See the Connect documentation for details."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a charge",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges/:id",
+        "alias_endpoint": "/stripe/v1/charges/id",
+        "api_ref": "https://stripe.com/docs/api/charges/update#update_charge"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostChargesCharge",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostChargesChargeCapture": {
+      "provider_intent": "PostChargesChargeCapture",
+      "provider_alias_intent": "/v1/charges/id/capture",
+      "text": "Capture a charge",
+      "category": "Charges",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "amount": {
+          "type": "number",
+          "text": "The amount to capture which must be less than or equal to the original amount. Any additional amount will be automatically refunded."
+        },
+        "receipt_email": {
+          "type": "string",
+          "text": "The email address to send this charge’s receipt to. This will override the previously-specified email address for this charge; if one was set. Receipts will not be sent in test mode."
+        },
+        "statement_descriptor": {
+          "type": "string",
+          "text": "For card charges use statement_descriptor_suffix instead. Otherwise; you can use this value as the complete description of a charge on your customers’ statements. Must contain at least one letter maximum 22 characters."
+        },
+        "statement_descriptor_suffix": {
+          "type": "string",
+          "text": "Provides information about the charge that customers see on their statements. Concatenated with the prefix (shortened descriptor) or statement descriptor that’s set on the account to form the complete statement descriptor. Maximum 22 characters for the concatenated descriptor."
+        },
+        "application_fee_amount": {
+          "type": "string",
+          "text": "An application fee amount to add on to this charge which must be less than or equal to the original amount."
+        },
+        "transfer_data optional": {
+          "type": "string",
+          "text": "An optional dictionary including the account to automatically transfer to as part of a destination charge. See the Connect documentation for details."
+        },
+        "ransfer_group": {
+          "type": "string",
+          "text": "A string that identifies this transaction as part of a group. transfer_group may only be provided if it has not been set. See the Connect documentation for details."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Charges ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Capture a charge",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges/:id/capture",
+        "alias_endpoint": "/stripe/v1/charges/id/capture",
+        "api_ref": "https://stripe.com/docs/api/charges/capture#capture_charge"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostChargesChargeCapture",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCharges": {
+      "provider_intent": "GetCharges",
+      "provider_alias_intent": "/v1/charges",
+      "text": "List all charges",
+      "category": "Charges",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "customer": {
+          "type": "string",
+          "text": "Only return charges for the customer specified by this customer ID."
+        },
+        "created": {
+          "type": "string",
+          "text": "A filter on the list based on the object created field."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "payment_intent": {
+          "type": "string",
+          "text": "Only return charges that were created by the PaymentIntent specified by this PaymentIntent ID."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        },
+        "transfer_group": {
+          "type": "string",
+          "text": "Only return charges for this transfer group."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all charges",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges",
+        "alias_endpoint": "/stripe/v1/charges",
+        "api_ref": "https://stripe.com/docs/api/charges#list_charges"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCharges",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetChargesSearch": {
+      "provider_intent": "GetChargesSearch",
+      "provider_alias_intent": "/v1/charges/search",
+      "text": "Search charges",
+      "category": "Charges",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string",
+          "text": "The search query string. See search query language and the list of supported query fields for charges.",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Search charges",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/charges/search",
+        "alias_endpoint": "/stripe/v1/charges/search",
+        "api_ref": "https://stripe.com/docs/api/charges/search#search_charges"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetChargesSearch",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCustomers": {
+      "provider_intent": "PostCustomers",
+      "provider_alias_intent": "/v1/customers",
+      "text": "Create a customer",
+      "category": "Customers",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "address optional": {
+          "type": "string",
+          "text": "The customer’s address."
+        },
+        "description": {
+          "type": "string",
+          "text": "An arbitrary string that you can attach to a customer object. It is displayed alongside the customer in the dashboard."
+        },
+        "email": {
+          "type": "object",
+          "text": "Customer’s email address. It’s displayed alongside the customer in your dashboard and can be useful for searching and tracking. This may be up to 512 characters."
+        },
+        "name": {
+          "type": "string",
+          "text": "The customer’s full name or business name."
+        },
+        "payment_method": {
+          "type": "string",
+          "text": "The ID of the PaymentMethod to attach to the customer."
+        },
+        "phone": {
+          "type": "number",
+          "text": "The customer’s phone number."
+        },
+        "shipping": {
+          "type": "string",
+          "text": "The customer’s shipping information. Appears on invoices emailed to this customer."
+        },
+        "balance": {
+          "type": "number",
+          "text": "An integer amount in cents that represents the customer’s current balance; which affect the customer’s future invoices. A negative amount represents a credit that decreases the amount due on an invoice; a positive amount increases the amount due on an invoice."
+        },
+        "cash_balance": {
+          "type": "string",
+          "text": "Balance information and default balance settings for this customer."
+        },
+        "coupon": {
+          "type": "string",
+          "text": "If you provide a coupon code the customer will have a discount applied on all recurring charges. Charges you create through the API will not have the discount."
+        },
+        "invoice_prefix": {
+          "type": "number",
+          "text": "The prefix for the customer used to generate unique invoice numbers. Must be 3–12 uppercase letters or numbers."
+        },
+        "invoice_settings": {
+          "type": "string",
+          "text": "Default invoice settings for this customer."
+        },
+        "next_invoice_sequence": {
+          "type": "number",
+          "text": "The sequence to be used on the customer’s next invoice. Defaults to 1."
+        },
+        "preferred_locales": {
+          "type": "number",
+          "text": "Customer’s preferred languages ordered by preference."
+        },
+        "promotion_code": {
+          "type": "string",
+          "text": "The API ID of a promotion code to apply to the customer. The customer will have a discount applied on all recurring payments. Charges you create through the API will not have the discount."
+        },
+        "source": {
+          "type": "string",
+          "text": "When using payment sources created via the Token or Sources APIs; passing source will create a new source object; make it the new customer default source; and delete the old customer default if one exists. If you want to add additional sources instead of replacing the existing default; use the card creation API. Whenever you attach a card to a customer; Stripe will automatically validate the card."
+        },
+        "tax": {
+          "type": "string",
+          "text": "Tax details about the customer."
+        },
+        "tax_exempt": {
+          "type": "string",
+          "text": "The customer’s tax exemption. One of - none; exempt; reverse."
+        },
+        "tax_id_data": {
+          "type": "string",
+          "text": "The customer’s tax IDs."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers",
+        "alias_endpoint": "/stripe/v1/customers",
+        "api_ref": "https://stripe.com/docs/api/customers/create#create_customer"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCustomers",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCustomersCustomer": {
+      "provider_intent": "GetCustomersCustomer",
+      "provider_alias_intent": "/v1/customers/id",
+      "text": "Retrieve a customer",
+      "category": "Customers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers/:id",
+        "alias_endpoint": "/stripe/v1/customers/id",
+        "api_ref": "https://stripe.com/docs/api/customers/retrieve#retrieve_customer"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCustomersCustomer",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCustomersCustomer": {
+      "provider_intent": "PostCustomersCustomer",
+      "provider_alias_intent": "/v1/customers/id",
+      "text": "Update a customer",
+      "category": "Customers",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "address": {
+          "type": "string",
+          "text": "The customer’s address.description",
+          "enum": [
+            "string"
+          ]
+        },
+        "email": {
+          "type": "string",
+          "text": "Customer’s email address. It’s displayed alongside the customer in your dashboard and can be useful for searching and tracking. This may be up to 512 characters."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "name": {
+          "type": "string",
+          "text": "The customer’s full name or business name."
+        },
+        "phone": {
+          "type": "number",
+          "text": "The customer’s phone number."
+        },
+        "shipping": {
+          "type": "string",
+          "text": "The customer’s shipping information. Appears on invoices emailed to this customer."
+        },
+        "balance": {
+          "type": "number",
+          "text": "An integer amount in cents that represents the customer’s current balance; which affect the customer’s future invoices. A negative amount represents a credit that decreases the amount due on an invoice; a positive amount increases the amount due on an invoice."
+        },
+        "cash_balance": {
+          "type": "string",
+          "text": "Balance information and default balance settings for this customer."
+        },
+        "coupon": {
+          "type": "string",
+          "text": "If you provide a coupon code; the customer will have a discount applied on all recurring charges. Charges you create through the API will not have the discount."
+        },
+        "default_source": {
+          "type": "string",
+          "text": "f you are using payment methods created via the PaymentMethods API see the invoice_settings.default_payment_method parameter.Provide the ID of a payment source already attached to this customer to make it this customer’s default payment source.If you want to add a new payment source and make it the default see the source property."
+        },
+        "invoice_prefix": {
+          "type": "number",
+          "text": "The prefix for the customer used to generate unique invoice numbers. Must be 3–12 uppercase letters or numbers."
+        },
+        "invoice_settings": {
+          "type": "string",
+          "text": "Default invoice settings for this customer."
+        },
+        "next_invoice_sequence": {
+          "type": "number",
+          "text": "The sequence to be used on the customer’s next invoice. Defaults to 1."
+        },
+        "preferred_locales": {
+          "type": "string",
+          "text": "Customer’s preferred languages; ordered by preference."
+        },
+        "promotion_code": {
+          "type": "string",
+          "text": "The API ID of a promotion code to apply to the customer. The customer will have a discount applied on all recurring payments. Charges you create through the API will not have the discount."
+        },
+        "source": {
+          "type": "string",
+          "text": "When using payment sources created via the Token or Sources APIs passing source will create a new source object; make it the new customer default source and delete the old customer default if one exists. If you want to add additional sources instead of replacing the existing default; use the card creation API. Whenever you attach a card to a customer Stripe will automatically validate the card."
+        },
+        "tax": {
+          "type": "string",
+          "text": "Tax details about the customer."
+        },
+        "tax_exempt": {
+          "type": "string",
+          "text": "The customer’s tax exemption. One  - none;exempt; reverse."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers/:id",
+        "alias_endpoint": "/stripe/v1/customers/id",
+        "api_ref": "https://stripe.com/docs/api/customers/update#update_customer"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCustomersCustomer",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "DeleteCustomersCustomer": {
+      "provider_intent": "DeleteCustomersCustomer",
+      "provider_alias_intent": "/v1/customers/id",
+      "text": "Delete a customer",
+      "category": "Customers",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Customer ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a customer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers/:id",
+        "alias_endpoint": "/stripe/v1/customers/id",
+        "api_ref": "https://stripe.com/docs/api/customers/delete#delete_customer"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "DeleteCustomersCustomer",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCustomers": {
+      "provider_intent": "GetCustomers",
+      "provider_alias_intent": "/v1/customers",
+      "text": "List all customers",
+      "category": "Customers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "email": {
+          "type": "string",
+          "text": "A case-sensitive filter on the list based on the customer’s email field. The value must be a string"
+        },
+        "created": {
+          "type": "string",
+          "text": "A filter on the list based on the object created field"
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        },
+        "test_clock": {
+          "type": "string",
+          "text": "Provides a list of customers that are associated with the specified test clock. The response will not include customers with test clocks if this parameter is not set."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all customers",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers",
+        "alias_endpoint": "/stripe/v1/customers",
+        "api_ref": "https://stripe.com/docs/api/customers/list#list_customers"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCustomers",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCustomersSearch": {
+      "provider_intent": "GetCustomersSearch",
+      "provider_alias_intent": "/v1/customers/search",
+      "text": "Search customers",
+      "category": "Customers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string",
+          "text": "The search query string. See search query language and the list of supported query fields for customers.",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "page": {
+          "type": "string",
+          "text": "A cursor for pagination across multiple pages of results. Don’t include this parameter on the first call. Use the next_page value returned in a previous response to request subsequent results."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Search customers",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/customers/search",
+        "alias_endpoint": "/stripe/v1/customers/search",
+        "api_ref": "https://stripe.com/docs/api/customers/search#search_customers"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCustomersSearch",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostWebhookEndpoints": {
+      "provider_intent": "PostWebhookEndpoints",
+      "provider_alias_intent": "/v1/webhook_endpoints",
+      "text": "Create a webhook endpoint",
+      "category": "Webhook Endpoints",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "enabled_events": {
+          "type": "string",
+          "text": "The list of events to enable for this endpoint. You may specify [’*’] to enable all events; except those that require explicit selection.",
+          "required": true
+        },
+        "url": {
+          "type": "string",
+          "text": "The URL of the webhook endpoint.",
+          "required": true
+        },
+        "api_version": {
+          "type": "string",
+          "text": "Events sent to this endpoint will be generated with this Stripe Version instead of your account’s default Stripe Version."
+        },
+        "description": {
+          "type": "string",
+          "text": "An optional description of what the webhook is used for."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "connect": {
+          "type": "boolean",
+          "text": "Whether this endpoint should receive events from connected accounts (true), or from your account (false). Defaults to false.",
+          "enum": [
+            true,
+            false
+          ],
+          "default": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a webhook endpoint",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/webhook_endpoints",
+        "alias_endpoint": "/stripe/v1/webhook_endpoints",
+        "api_ref": "https://stripe.com/docs/api/webhook_endpoints/create?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostWebhookEndpoints",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetWebhookEndpointsWebhookEndpoint": {
+      "provider_intent": "GetWebhookEndpointsWebhookEndpoint",
+      "provider_alias_intent": "/v1/webhook_endpoints/id",
+      "text": "Retrieve a webhook endpoint",
+      "category": "Webhook Endpoints",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a webhook endpoint",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/webhook_endpoints/:id",
+        "alias_endpoint": "/stripe/v1/webhook_endpoints/id",
+        "api_ref": "https://stripe.com/docs/api/webhook_endpoints/retrieve?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetWebhookEndpointsWebhookEndpoint",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostWebhookEndpointsWebhookEndpoint": {
+      "provider_intent": "PostWebhookEndpointsWebhookEndpoint",
+      "provider_alias_intent": "/v1/webhook_endpoints/id",
+      "text": "Update a webhook endpoint",
+      "category": "Webhook Endpoints",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "description": {
+          "type": "string",
+          "text": "An optional description of what the webhook is used for."
+        },
+        "enabled_events": {
+          "type": "string",
+          "text": "The list of events to enable for this endpoint. You may specify [’*’] to enable all events; except those that require explicit selection."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "url": {
+          "type": "string",
+          "text": "The URL of the webhook endpoint."
+        },
+        "disabled": {
+          "type": "boolean",
+          "text": "Disable the webhook endpoint if set to true.",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a webhook endpoint",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/webhook_endpoints/:id",
+        "alias_endpoint": "/stripe/v1/webhook_endpoints/id",
+        "api_ref": "https://stripe.com/docs/api/webhook_endpoints/update?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostWebhookEndpointsWebhookEndpoint",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetWebhookEndpoints": {
+      "provider_intent": "GetWebhookEndpoints",
+      "provider_alias_intent": "/v1/webhook_endpoints",
+      "text": "List all webhook endpoints",
+      "category": "Webhook Endpoints",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all webhook endpoints",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/webhook_endpoints",
+        "alias_endpoint": "/stripe/v1/webhook_endpoints",
+        "api_ref": "https://stripe.com/docs/api/webhook_endpoints/list?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetWebhookEndpoints",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "DeleteWebhookEndpointsWebhookEndpoint": {
+      "provider_intent": "DeleteWebhookEndpointsWebhookEndpoint",
+      "provider_alias_intent": "/v1/webhook_endpoints/id",
+      "text": "Delete a webhook endpoint",
+      "category": "Webhook Endpoints",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Webhook endpoint ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a webhook endpoint",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/webhook_endpoints/:id",
+        "alias_endpoint": "/stripe/v1/webhook_endpoints/id",
+        "api_ref": "https://stripe.com/docs/api/webhook_endpoints/delete?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "DeleteWebhookEndpointsWebhookEndpoint",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetBalance": {
+      "provider_intent": "GetBalance",
+      "provider_alias_intent": "/v1/balance",
+      "text": "Retrieve balance",
+      "category": "Balance",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieves the current account balance, based on the authentication that was used to make the request. For a sample request, see Accounting for negative balances.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/balance",
+        "alias_endpoint": "/stripe/v1/balance",
+        "api_ref": "https://stripe.com/docs/api/balance"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetBalance",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCheckoutSessions": {
+      "provider_intent": "PostCheckoutSessions",
+      "provider_alias_intent": "/v1/checkout/sessions",
+      "text": "Create a Session",
+      "category": "Checkout ",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "mode": {
+          "type": "string",
+          "text": "The mode of the Checkout Session. Pass subscription if the Checkout Session includes at least one recurring item.",
+          "required": true
+        },
+        "success_url": {
+          "type": "string",
+          "text": "The URL to which Stripe should send customers when payment or setup is complete. If you’d like to use information from the successful Checkout Session on your page; read the guide on customizing your success page.",
+          "required": true
+        },
+        "cancel_url": {
+          "type": "string",
+          "text": "If set; Checkout displays a back button and customers will be directed to this URL if they decide to cancel payment and return to your website."
+        },
+        "client_reference_id": {
+          "type": "string",
+          "text": "A unique string to reference the Checkout Session. This can be a customer ID; a cart ID; or similar; and can be used to reconcile the session with your internal systems."
+        },
+        "currency": {
+          "type": "number",
+          "text": "Three-letter ISO currency code; in lowercase. Must be a supported currency."
+        },
+        "customer": {
+          "type": "string",
+          "text": "ID of an existing Customer; if one exists. In payment mode the customer’s most recent card payment method will be used to prefill the email name; card details; and billing address on the Checkout page. In subscription mode; the customer’s default payment method will be used if it’s a card; and otherwise the most recent card will be used. A valid billing address; billing name and billing email are required on the payment method for Checkout to prefill the customer’s card details.If the Customer already has a valid email set; the email will be prefilled and not editable in Checkout. If the Customer does not have a valid email; Checkout will set the email entered during the session on the Customer.If blank for Checkout Sessions in payment or subscription mode; Checkout will create a new Customer object based on information provided during the payment flow.You can set payment_intent_data.setup_future_usage to have Checkout automatically attach the payment method to the Customer you pass in for future reuse."
+        },
+        "customer_email": {
+          "type": "string",
+          "text": "If provided this value will be used when the Customer object is created. If not provided; customers will be asked to enter their email address. Use this parameter to prefill customer data if you already have an email on file. To access information about the customer once a session is complete use the customer field."
+        },
+        "line_items": {
+          "type": "string",
+          "text": "A list of items the customer is purchasing. Use this parameter to pass one-time or recurring Prices.For payment mode there is a maximum of 100 line items; however it is recommended to consolidate line items if there are more than a few dozen.For subscription mode there is a maximum of 20 line items with recurring Prices and 20 line items with one-time Prices. Line items with one-time Prices will be on the initial invoice only."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata."
+        },
+        "payment_method_types": {
+          "type": "string",
+          "text": "A list of the types of payment methods (e.g. card) this Checkout Session can accept.In payment and subscription mode you can omit this attribute to manage your payment methods from the Stripe Dashboard. It is required in setup mode.Read more about the supported payment methods and their requirements in our payment method details guide.If multiple payment methods are passed; Checkout will dynamically reorder them to prioritize the most relevant payment methods based on the customer’s location and other characteristics."
+        },
+        "after_expiration": {
+          "type": "string",
+          "text": "Configure actions after a Checkout Session has expired."
+        },
+        "allow_promotion_codes": {
+          "type": "string",
+          "text": "Enables user redeemable promotion codes."
+        },
+        "automatic_tax": {
+          "type": "string",
+          "text": "Settings for automatic tax lookup for this session and resulting payments; invoices and subscriptions."
+        },
+        "billing_address_collection": {
+          "type": "string",
+          "text": "Specify whether Checkout should collect the customer’s billing address."
+        },
+        "consent_collection": {
+          "type": "string",
+          "text": "Configure fields for the Checkout Session to gather active consent from customers."
+        },
+        "custom_text": {
+          "type": "string",
+          "text": "Display additional text for your customers using custom text."
+        },
+        "customer_creation": {
+          "type": "string",
+          "text": "Configure whether a Checkout Session creates a Customer during Session confirmation.When a Customer is not created; you can still retrieve email; address; and other customer data entered in Checkout with customer_details.Sessions that don’t create Customers instead are grouped by guest customers in the Dashboard. Promotion codes limited to first time customers will return invalid for these Sessions.Can only be set in payment and setup mode.\ncustomer_update",
+          "enum": [
+            "string"
+          ]
+        },
+        "discounts": {
+          "type": "string",
+          "text": "The coupon or promotion code to apply to this Session. Currently; only up to one may be specified."
+        },
+        "expires_at": {
+          "type": "string",
+          "text": "The Epoch time in seconds at which the Checkout Session will expire. It can be anywhere from 30 minutes to 24 hours after Checkout Session creation. By default; this value is 24 hours from creation."
+        },
+        "invoice_creation": {
+          "type": "string",
+          "text": "Generate a post-purchase Invoice for one-time payments."
+        },
+        "locale": {
+          "type": "string",
+          "text": "The IETF language tag of the locale Checkout is displayed in. If blank or auto; the browser’s locale is used."
+        },
+        "payment_intent_data": {
+          "type": "string",
+          "text": "A subset of parameters to be passed to PaymentIntent creation for Checkout Sessions in payment mode."
+        },
+        "payment_method_collection": {
+          "type": "string",
+          "text": "Specify whether Checkout should collect a payment method. When set to if_required; Checkout will not collect a payment method when the total due for the session is 0. This may occur if the Checkout Session includes a free trial or a discount.Can only be set in subscription mode."
+        },
+        "payment_method_options": {
+          "type": "string",
+          "text": "Payment-method-specific configuration."
+        },
+        "phone_number_collection": {
+          "type": "string",
+          "text": "Controls phone number collection settings for the session.We recommend that you review your privacy policy and check with your legal contacts before using this feature. Learn more about collecting phone numbers with Checkout."
+        },
+        "setup_intent_data": {
+          "type": "string",
+          "text": "A subset of parameters to be passed to SetupIntent creation for Checkout Sessions in setup mode."
+        },
+        "shipping_address_collection": {
+          "type": "string",
+          "text": "When set; provides configuration for Checkout to collect a shipping address from a customer."
+        },
+        "shipping_options": {
+          "type": "string",
+          "text": "The shipping rate options to apply to this Session."
+        },
+        "submit_type optional": {
+          "type": "string",
+          "text": "Describes the type of transaction being performed by Checkout in order to customize relevant text on the page; such as the submit button. submit_type can only be specified on Checkout Sessions in payment mode; but not Checkout Sessions in subscription or setup mode."
+        },
+        "subscription_data": {
+          "type": "string",
+          "text": "A subset of parameters to be passed to subscription creation for Checkout Sessions in subscription mode."
+        },
+        "tax_id_collection": {
+          "type": "string",
+          "text": "Controls tax ID collection settings for the session."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a Session",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/checkout/sessions",
+        "alias_endpoint": "/stripe/v1/checkout/sessions",
+        "api_ref": "https://stripe.com/docs/api/checkout/sessions/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCheckoutSessions",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostCheckoutSessionsSessionExpire": {
+      "provider_intent": "PostCheckoutSessionsSessionExpire",
+      "provider_alias_intent": "/v1/checkout/sessions/id/expire",
+      "text": "Expire a Session",
+      "category": "Checkout ",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Expire a Session",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/checkout/sessions/:id/expire",
+        "alias_endpoint": "/stripe/v1/checkout/sessions/id/expire",
+        "api_ref": "https://stripe.com/docs/api/checkout/sessions/expire"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostCheckoutSessionsSessionExpire",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCheckoutSessionsSession": {
+      "provider_intent": "GetCheckoutSessionsSession",
+      "provider_alias_intent": "/v1/checkout/sessions/id",
+      "text": "Retrieve a Session",
+      "category": "Checkout ",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a Session",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/checkout/sessions/:id",
+        "alias_endpoint": "/stripe/v1/checkout/sessions/id",
+        "api_ref": "https://stripe.com/docs/api/checkout/sessions/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCheckoutSessionsSession",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCheckoutSessions": {
+      "provider_intent": "GetCheckoutSessions",
+      "provider_alias_intent": "/v1/checkout/sessions",
+      "text": "List all Checkout Sessions",
+      "category": "Checkout ",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "payment_intent": {
+          "type": "string",
+          "text": "Only return the Checkout Session for the PaymentIntent specified."
+        },
+        "subscription": {
+          "type": "string",
+          "text": "Only return the Checkout Session for the subscription specified."
+        },
+        "created": {
+          "type": "string",
+          "text": "Only return Checkout Sessions that were created during the given date interval."
+        },
+        "customer": {
+          "type": "string",
+          "text": "Only return the Checkout Sessions for the Customer specified."
+        },
+        "customer_details": {
+          "type": "string",
+          "text": "Only return the Checkout Sessions for the Customer details specified."
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100"
+        },
+        "payment_link": {
+          "type": "string",
+          "text": "Only return the Checkout Sessions for the Payment Link specified."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        },
+        "status": {
+          "type": "enum",
+          "text": "Only return the Checkout Sessions matching the given status.",
+          "enum": [
+            "complete",
+            "expired",
+            "open"
+          ]
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all Checkout Sessions",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/checkout/sessions",
+        "alias_endpoint": "/stripe/v1/checkout/sessions",
+        "api_ref": "https://stripe.com/docs/api/checkout/sessions/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCheckoutSessions",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetCheckoutSessionsSessionLineItems": {
+      "provider_intent": "GetCheckoutSessionsSessionLineItems",
+      "provider_alias_intent": "/v1/checkout/sessions/id/line_items",
+      "text": "Retrieve a Checkout Session's line items",
+      "category": "Checkout ",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Checkout ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a Checkout Session's line items",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/checkout/sessions/:id/line_items",
+        "alias_endpoint": "/stripe/v1/checkout/sessions/id/line_items",
+        "api_ref": "https://stripe.com/docs/api/checkout/sessions/line_items"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetCheckoutSessionsSessionLineItems",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPaymentLinks": {
+      "provider_intent": "PostPaymentLinks",
+      "provider_alias_intent": "/v1/payment_links",
+      "text": "Create a payment link",
+      "category": "Payment Link",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "line_items": {
+          "type": "string",
+          "text": "The line items representing what is being sold. Each line item represents an item being sold. Up to 20 line items are supported.",
+          "required": true
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata. Metadata associated with this Payment Link will automatically be copied to checkout sessions created by this payment link."
+        },
+        "payment_method_types": {
+          "type": "string",
+          "text": "The list of payment method types that customers can use."
+        },
+        "after_completion": {
+          "type": "string",
+          "text": "Behavior after the purchase is complete."
+        },
+        "allow_promotion_codes": {
+          "type": "string",
+          "text": "Enables user redeemable promotion codes."
+        },
+        "application_fee_amount": {
+          "type": "string",
+          "text": "The amount of the application fee (if any) that will be requested to be applied to the payment and transferred to the application owner’s Stripe account. Can only be applied when there are no line items with recurring prices."
+        },
+        "application_fee_percent": {
+          "type": "number",
+          "text": "A non-negative decimal between 0 and 100"
+        },
+        "automatic_tax": {
+          "type": "string",
+          "text": "Configuration for automatic tax collection."
+        },
+        "billing_address_collection": {
+          "type": "string",
+          "text": "Configuration for collecting the customer’s billing address."
+        },
+        "consent_collection": {
+          "type": "string",
+          "text": "Configure fields to gather active consent from customers."
+        },
+        "currency": {
+          "type": "string",
+          "text": "Three-letter ISO currency code; in lowercase. Must be a supported currency and supported by each line item’s price."
+        },
+        "custom_text": {
+          "type": "string",
+          "text": "Display additional text for your customers using custom text."
+        },
+        "customer_creation": {
+          "type": "string",
+          "text": "Configures whether checkout sessions created by this payment link create a Customer."
+        },
+        "on_behalf_of": {
+          "type": "string",
+          "text": "The account on behalf of which to charge."
+        },
+        "payment_intent_data": {
+          "type": "string",
+          "text": "A subset of parameters to be passed to PaymentIntent creation for Checkout Sessions in payment mode."
+        },
+        "payment_method_collection": {
+          "type": "string",
+          "text": "Specify whether Checkout should collect a payment method. When set to if_required; Checkout will not collect a payment method when the total due for the session is 0.This may occur if the Checkout Session includes a free trial or a discount."
+        },
+        "phone_number_collection": {
+          "type": "number",
+          "text": "Controls phone number collection settings during checkout.We recommend that you review your privacy policy and check with your legal contacts."
+        },
+        "shipping_address_collection": {
+          "type": "string",
+          "text": "Configuration for collecting the customer’s shipping address."
+        },
+        "shipping_options": {
+          "type": "string",
+          "text": "The shipping rate options to apply to checkout sessions created by this payment link."
+        },
+        "submit_type": {
+          "type": "string",
+          "text": "Describes the type of transaction being performed in order to customize relevant text on the page such as the submit button. Changing this value will also affect the hostname in the url property (example",
+          "enum": [
+            "donate.stripe.com)."
+          ]
+        },
+        "subscription_data": {
+          "type": "string",
+          "text": "When creating a subscription the specified configuration data will be used. There must be at least one line item with a recurring price to use subscription_data."
+        },
+        "tax_id_collection": {
+          "type": "string",
+          "text": "Controls tax ID collection during checkout."
+        },
+        "transfer_data": {
+          "type": "string",
+          "text": "The account (if any) the payments will be attributed to for tax reporting; and where funds from each payment will be transferred to."
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a payment link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/payment_links",
+        "alias_endpoint": "/stripe/v1/payment_links",
+        "api_ref": "https://stripe.com/docs/api/payment_links/payment_links/create?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPaymentLinks",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPaymentLinksPaymentLink": {
+      "provider_intent": "GetPaymentLinksPaymentLink",
+      "provider_alias_intent": "/v1/payment_links/id",
+      "text": "Retrieve payment link",
+      "category": "Payment Link",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve payment link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/payment_links/:id",
+        "alias_endpoint": "/stripe/v1/payment_links/id",
+        "api_ref": "https://stripe.com/docs/api/payment_links/payment_links/retrieve?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPaymentLinksPaymentLink",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "PostPaymentLinksPaymentLink": {
+      "provider_intent": "PostPaymentLinksPaymentLink",
+      "provider_alias_intent": "/v1/payment_links/id",
+      "text": "Update a payment link",
+      "category": "Payment Link",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "active": {
+          "type": "boolean",
+          "text": "Whether the payment link’s url is active. If false; customers visiting the URL will be shown a page saying that the link has been deactivated.",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "line_items": {
+          "type": "string",
+          "text": "The line items representing what is being sold. Each line item represents an item being sold. Up to 20 line items are supported."
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata. Metadata associated with this Payment Link will automatically be copied to checkout sessions created by this payment link."
+        },
+        "payment_method_types": {
+          "type": "string",
+          "text": "The list of payment method types that customers can use. Pass an empty string to enable automatic payment methods that use your payment method settings."
+        },
+        "after_completion": {
+          "type": "string",
+          "text": "Behavior after the purchase is complete."
+        },
+        "allow_promotion_codes": {
+          "type": "string",
+          "text": "Enables user redeemable promotion codes."
+        },
+        "automatic_tax": {
+          "type": "string",
+          "text": "Configuration for automatic tax collection."
+        },
+        "billing_address_collection": {
+          "type": "string",
+          "text": "Configuration for collecting the customer’s billing address."
+        },
+        "custom_text": {
+          "type": "string",
+          "text": "Display additional text for your customers using custom text."
+        },
+        "customer_creation": {
+          "type": "string",
+          "text": "Configures whether checkout sessions created by this payment link create a Customer."
+        },
+        "payment_method_collection": {
+          "type": "string",
+          "text": "Specify whether Checkout should collect a payment method. When set to if_required; Checkout will not collect a payment method when the total due for the session is 0.This may occur if the Checkout Session includes a free trial or a discount."
+        },
+        "shipping_address_collection": {
+          "type": "string",
+          "text": "Configuration for collecting the customer’s shipping address."
+        }
+      },
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a payment link",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/payment_links/:id",
+        "alias_endpoint": "/stripe/v1/payment_links/id",
+        "api_ref": "https://stripe.com/docs/api/payment_links/payment_links/update?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "PostPaymentLinksPaymentLink",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPaymentLinks": {
+      "provider_intent": "GetPaymentLinks",
+      "provider_alias_intent": "/v1/payment_links",
+      "text": "List all payment links",
+      "category": "Payment Link",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "active": {
+          "type": "boolean",
+          "text": "Only return payment links that are active or inactive (e.g. pass false to list all inactive payment links).",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all payment links",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/payment_links",
+        "alias_endpoint": "/stripe/v1/payment_links",
+        "api_ref": "https://stripe.com/docs/api/payment_links/payment_links/list?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPaymentLinks",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetPaymentLinksPaymentLinkLineItems": {
+      "provider_intent": "GetPaymentLinksPaymentLinkLineItems",
+      "provider_alias_intent": "/v1/payment_links/id/line_items",
+      "text": "Retrieve a payment link's line items",
+      "category": "Payment Link",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list."
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10."
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Payment link ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieve a payment link's line items",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/payment_links/:id/line_items",
+        "alias_endpoint": "/stripe/v1/payment_links/id/line_items",
+        "api_ref": "https://stripe.com/docs/api/payment_links/line_items?lang=node"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetPaymentLinksPaymentLinkLineItems",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetBalanceTransactionsId": {
+      "provider_intent": "GetBalanceTransactionsId",
+      "provider_alias_intent": "/v1/balance_transactions/id",
+      "text": "Retrieve a balance transaction",
+      "category": "Balance Transactions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Transaction ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "id": {
+          "type": "string",
+          "text": "Transaction ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieves the balance transaction with the given ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/balance_transactions/:id",
+        "alias_endpoint": "/stripe/v1/balance_transactions/id",
+        "api_ref": "https://stripe.com/docs/api/balance_transactions/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetBalanceTransactionsId",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    },
+    "GetBalanceTransactions": {
+      "provider_intent": "GetBalanceTransactions",
+      "provider_alias_intent": "/v1/balance_transactions",
+      "text": "List all balance transactions",
+      "category": "Balance Transactions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "payout": {
+          "type": "string",
+          "text": "For automatic Stripe payouts only; only returns transactions that were paid out on the specified payout ID"
+        },
+        "type": {
+          "type": "string",
+          "text": "Only returns transactions of the given type. One of - adjustment; advance; advance_funding; anticipation_repayment; application_fee; application_fee_refund; charge; connect_collection_transfer; contribution; issuing_authorization_hold; issuing_authorization_release; issuing_dispute; issuing_transaction; payment; payment_failure_refund; payment_refund; payout; payout_cancel; payout_failure; refund; refund_failure; reserve_transaction; reserved_funds; stripe_fee; stripe_fx_fee; tax_fee; topup; topup_reversal transfer; transfer_cancel; transfer_failure; or transfer_refund"
+        },
+        "created": {
+          "type": "string",
+          "text": "A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp; or it can be a dictionary with the following options"
+        },
+        "currency": {
+          "type": "string",
+          "text": "Only return transactions in a certain currency. Three-letter ISO currency code in lowercase. Must be a supported currency"
+        },
+        "ending_before": {
+          "type": "string",
+          "text": "A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; starting with obj_bar; your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list"
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100; and the default is 10"
+        },
+        "source": {
+          "type": "string",
+          "text": "Only returns the original transaction"
+        },
+        "starting_after": {
+          "type": "string",
+          "text": "A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance; if you make a list request and receive 100 objects; ending with obj_foo; your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Returns a list of transactions that have contributed to the Stripe account balance (e.g., charges, transfers, and so forth). The transactions are returned in sorted order, with the most recent transactions appearing first.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.stripe.com/v1/balance_transactions",
+        "alias_endpoint": "/stripe/v1/balance_transactions",
+        "api_ref": "https://stripe.com/docs/api/balance_transactions/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "secret_key"
+        }
+      },
+      "response_type": "",
+      "wip": 0,
+      "intent": "GetBalanceTransactions",
+      "pinned": 0,
+      "featured": 0,
+      "payload_type": ""
+    }
+  }
+}
