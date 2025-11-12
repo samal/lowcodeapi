@@ -78,8 +78,8 @@
     "total_api": 4,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "googledocs__/v1/documents/documentid___GET": {
+  "routes": [
+    {
       "provider_alias_intent": "/v1/documents/documentid",
       "text": "Fetch Google doc",
       "category": "Regular API",
@@ -129,9 +129,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.830Z"
+      "updated_at": "2025-11-12T15:50:59.837Z"
     },
-    "googledocs__/v1/documents___POST": {
+    {
       "provider_alias_intent": "/v1/documents",
       "text": "Create new Google doc",
       "category": "Regular API",
@@ -164,9 +164,9 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.830Z"
+      "updated_at": "2025-11-12T15:50:59.838Z"
     },
-    "googledocs__/v1/documents/documentid-batchupdate___POST": {
+    {
       "provider_alias_intent": "/v1/documents/documentid-batchupdate",
       "text": "Batch update",
       "category": "Regular API",
@@ -230,9 +230,9 @@
       },
       "response_type": "",
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.830Z"
+      "updated_at": "2025-11-12T15:50:59.838Z"
     },
-    "googledocs__/documentid/get___GET": {
+    {
       "provider_alias_intent": "/documentid/get",
       "text": "Fetch formatted Google doc",
       "category": "Simplified API",
@@ -282,7 +282,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T11:55:18.830Z"
+      "updated_at": "2025-11-12T15:50:59.838Z"
     }
-  }
+  ]
 }

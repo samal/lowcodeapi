@@ -1,4 +1,4 @@
-import express, { Response, Router } from 'express';
+import express, { Application, Response, Router } from 'express';
 import moment from 'moment';
 
 import config from '../../../../config';
@@ -1379,4 +1379,12 @@ apiBase.forEach((base) => {
   });
 });
 
-export default router;
+export default (app: Application) => {
+  if (!intents[PROVIDER]) {
+    loggerService.info(
+      `Skipping custom /googlesheets routes, no intent found for provider ${PROVIDER}`,
+    );
+    return;
+  }
+  app.use('/', router);
+};

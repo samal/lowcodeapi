@@ -1,4 +1,4 @@
-import express, { Response, Router } from 'express';
+import express, { Application, Response, Router } from 'express';
 import moment from 'moment';
 
 import { safePromise, loggerService, logIntentRequest } from '../../../../utilities';
@@ -11,6 +11,17 @@ import response from '../../../../utilities/response';
 import creds from '../../../../auth-middleware';
 
 const PROVIDER = 'googledocs';
+
+let intent : any = null;
+
+const { routes = null } = intents[PROVIDER];
+
+if (routes && Array.isArray(routes) && routes.length) {
+  const found = routes.filter((route) => route.provider_alias_intent === '/v1/documents/documentid');
+  if (found && found.length) {
+    [intent] = found;
+  }
+}
 
 const router: Router = express.Router();
 
@@ -54,12 +65,7 @@ async function handlerWithApiToken(req: any) {
 
   // const cache_duration_key = `${cache_key}_duration`;
 
-  let target = null;
-  const intent = intents[PROVIDER];
-
-  if (intent && intent.routes && intent.routes.googledocs__v1__documents__documentid___get) {
-    target = intent.routes.googledocs__v1__documents__documentid___get;
-  }
+  const target = intent;
 
   if (!target) {
     loggerService.error(
@@ -186,168 +192,12 @@ router.get('/googledocs/documentid/get', async (req: any, res) => {
   await logIntentRequest(PROVIDER, 'get', api_mount, req.user_ref_id);
 });
 
-// @deprecate
-async function handlerAppend(req: any) {
-  const { document_id } = req.params;
-  const { content } = req.body;
-  const { api_token } = req.query;
-
-  const [credsError, userCreds] = await safePromise(
-    creds.checkToken({
-      req,
-      api_token,
-      provider: PROVIDER,
-    }),
-  );
-
-  if (credsError) {
-    throw credsError;
-  }
-
-  // used for logging
-  req.user_ref_id = userCreds.user_ref_id;
-
-  if (!userCreds || !userCreds.creds) {
-    const error: any = new Error(
-      'Some error accessing your googlesheet access token.',
+export default (app : Application) => {
+  if (!intents[PROVIDER]) {
+    loggerService.info(
+      `Skipping custom /googledocs routes, no intent found for provider ${PROVIDER}`,
     );
-    error.code = 401;
-    throw error;
+    return;
   }
-
-  let target = null;
-  const intent = intents[PROVIDER];
-
-  if (intent && intent.routes && intent.routes.batchUpdate) {
-    target = intent.routes.batchUpdate;
-  }
-
-  if (!target) {
-    loggerService.error(
-      `googledocs.ts ${PROVIDER} targetPicker[provider] 'batchUpdate' not found.`,
-    );
-    const error: { [key: string]: any } = new Error(
-      'Unknown provider send request',
-    );
-    error.code = 422;
-    throw error;
-  }
-
-  const [error, resp] = await safePromise(
-    generic({
-      provider: PROVIDER,
-      target,
-      payload: {
-        params: {
-          documentId: document_id,
-        },
-        body: {
-          requests: content,
-        },
-      },
-      credsObj: {
-        authToken: {
-          accessToken: userCreds.creds.accessToken,
-          refreshToken: userCreds.creds.refreshToken,
-          ...userCreds.authToken,
-        },
-      },
-    }),
-  );
-
-  if (error) {
-    throw error;
-  }
-
-  return {
-    message: '',
-    info: {
-      data_lookup_key: 'res',
-    },
-    res: resp,
-  };
-}
-
-// @deprecate
-router.post(
-  '/googledocs/:document_id/append',
-  async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
-    const api_mount = `/document/${req.params.document_id}`;
-
-    if (!req.query.api_token) {
-      return res.status(403).json({
-        message: 'api_token is required to access this endpoint.',
-      });
-    }
-
-    const [error, data] = await safePromise(handlerAppend(req));
-    if (error) {
-      const {
-        status,
-        data = {},
-        code,
-        message,
-        errors,
-      } = error.response || error;
-      const statusCode = status || code || 500;
-      const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
-      const logging = {
-        user_ref_id: req.user_ref_id || null,
-        service_ref_id: null,
-        cached: req.cached,
-        method: req.method,
-        status_code: statusCode,
-        message: error.message,
-        path: req.path,
-        api_mount,
-        headers: req.headers,
-        body: undefined,
-        query: {
-          ...req.query,
-          params: req.params,
-        },
-        data: error,
-        started_at,
-        completed_at,
-      };
-      // Is it good idea to calculate the data size here?
-      // Stringify may slow down the system for next request;
-      logRequest(logging);
-      return res.status(statusCode).json({
-        message: text,
-      });
-    }
-    const result = {
-      ...data,
-    };
-    res.json(result);
-    const completed_at = moment().utc().format();
-    const logging = {
-      user_ref_id: req.user_ref_id || null,
-      service_ref_id: null,
-      cached: req.cached,
-      provider: 'googledocs',
-      method: req.method,
-      status_code: 200,
-      message: data.message,
-      path: req.path,
-      api_mount,
-      headers: req.headers,
-      body: undefined,
-      query: {
-        ...req.query,
-        params: req.params,
-      },
-      response: data,
-      started_at,
-      completed_at,
-    };
-    // Is it good idea to calculate the data size here?
-    // Stringify may slow down the system for next request;
-    logRequest(logging);
-  },
-);
-
-export default router;
+  app.use('/', router);
+};

@@ -4,33 +4,14 @@ import {
 
 import { loggerService } from '../../utilities';
 
-import {
-  // redirect,
-  googlesheets,
-  googledocs,
-  // notion,
-  // airtable,
-  // twitter,
-} from './routes';
+import googledocs from './routes/custom/googledocs';
+import googlesheets from './routes/custom/googlesheets';
 
 const message = 'LowCodeAPI';
 const infoMessage = 'Provider\'s simplified apis implementations are now initialized and ready to access request.';
-const mount = '/';
 export default (app: Application) : void => {
-  // app.use('/', redirect);
-  app.use('/', googlesheets);
-  app.use('/', googledocs);
-  // app.use('/', twitter);
-  // app.use('/', airtable);
-  // app.use('/', notion);
-
-  app.get(mount, async (req: Request, res: Response) => {
-    res.json({
-      res: {
-        message,
-      },
-    });
-  });
+  googledocs(app);
+  googlesheets(app);
   app.get('/', async (req: Request, res: Response) => {
     res.json({
       res: {
