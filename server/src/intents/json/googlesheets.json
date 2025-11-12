@@ -78,10 +78,9 @@
     "total_api": 22,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
-  "routes": {
-    "googlesheets__/spreadsheetid/update___POST": {
+  "routes": [
+    {
       "provider_alias_intent": "/spreadsheetid/update",
-      "provider_proxy_intent": "https://api.lowcodeapi.com/googlesheets/spreadsheetid/update",
       "text": "Replace Googlesheet data",
       "category": "Simplified API",
       "method": "POST",
@@ -138,11 +137,10 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.910Z"
     },
-    "googlesheets__/spreadsheetid/append___POST": {
+    {
       "provider_alias_intent": "/spreadsheetid/append",
-      "provider_proxy_intent": "https://api.lowcodeapi.com/googlesheets/spreadsheetid/append",
       "text": "Append Googlesheets",
       "category": "Simplified API",
       "method": "POST",
@@ -196,9 +194,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.910Z"
     },
-    "googlesheets__/v4/spreadsheets___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets",
       "provider_proxy_intent": "/v4/spreadsheets",
       "text": "Create new Googlesheet",
@@ -259,9 +257,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid-batchupdate___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid-batchupdate",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}:batchUpdate",
       "text": "Batch update Googlesheet",
@@ -338,9 +336,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values/range___GET": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values/range",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values/{range}",
       "text": "Retruns the data of specified range",
@@ -404,9 +402,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetidgetbydatafilter___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetidgetbydatafilter",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}:getByDataFilter",
       "text": "Get Googlesheet sheet data using the given filter",
@@ -457,11 +455,10 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/spreadsheetid/get___GET": {
+    {
       "provider_alias_intent": "/spreadsheetid/get",
-      "provider_proxy_intent": "https://api.lowcodeapi.com/googlesheets/spreadsheetid/get",
       "text": "Fetch Googlesheet data",
       "category": "Simplified API",
       "method": "GET",
@@ -512,9 +509,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid___GET": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}",
       "text": "Fetch data from Googlesheet",
@@ -563,11 +560,10 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/spreadsheetid/add___POST": {
+    {
       "provider_alias_intent": "/spreadsheetid/add",
-      "provider_proxy_intent": "https://api.lowcodeapi.com/googlesheets/spreadsheetid/add",
       "text": "Insert new sheet in Googlesheet",
       "category": "Simplified API",
       "method": "POST",
@@ -612,11 +608,10 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.911Z"
     },
-    "googlesheets__/spreadsheetid/clear___POST": {
+    {
       "provider_alias_intent": "/spreadsheetid/clear",
-      "provider_proxy_intent": "https://api.lowcodeapi.com/googlesheets/spreadsheetid/clear",
       "text": "Clear specific sheet data of Googlesheets",
       "category": "Simplified API",
       "method": "POST",
@@ -656,9 +651,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values/range-clear___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values/range-clear",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values/{range}:clear",
       "text": "Clears the sheet data",
@@ -710,9 +705,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values/range___PUT": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values/range",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values/{range}",
       "text": "Updates the data of specified range",
@@ -776,9 +771,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchclear___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchclear",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchClear",
       "text": "Clears the sheet data of one or more ranges",
@@ -824,9 +819,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchclearbydatafilter___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchclearbydatafilter",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchClearByDataFilter",
       "text": "Clears the ranges matching one or more data filter",
@@ -892,9 +887,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values/range-append___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values/range-append",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values/{range}:append",
       "text": "Appends value at the end",
@@ -961,9 +956,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/sheets/sheetid-copyto___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/sheets/sheetid-copyto",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/sheets/{sheetId}:copyTo",
       "text": "Copies a range from one sheet to another sheet",
@@ -1010,9 +1005,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchget___GET": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchget",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchGet",
       "text": "Retruns data from one or more sheets",
@@ -1071,9 +1066,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchgetbydatafilter___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchgetbydatafilter",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchGetByDataFilter",
       "text": "Retruns data from one or more sheets based on matched condition",
@@ -1132,9 +1127,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchupdate___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchupdate",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchUpdate",
       "text": "Updates one more more ranges in the spreadsheet",
@@ -1196,9 +1191,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/developermetadata/metadataid___GET": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/developermetadata/metadataid",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/developerMetadata/{metadataId}",
       "text": "Fetch developer metadata",
@@ -1248,9 +1243,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/developermetadata-search___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/developermetadata-search",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/developerMetadata:search",
       "text": "Search developer metadata",
@@ -1297,9 +1292,9 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     },
-    "googlesheets__/v4/spreadsheets/spreadsheetid/values-batchupdatebydatafilter___POST": {
+    {
       "provider_alias_intent": "/v4/spreadsheets/spreadsheetid/values-batchupdatebydatafilter",
       "provider_proxy_intent": "/v4/spreadsheets/{spreadsheetId}/values:batchUpdateByDataFilter",
       "text": "Updates one more more ranges in the spreadsheet based on condition",
@@ -1361,7 +1356,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T11:55:18.832Z"
+      "updated_at": "2025-11-12T16:12:50.912Z"
     }
-  }
+  ]
 }

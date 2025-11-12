@@ -6,7 +6,7 @@ import {
   safePromise, loggerService, cacheService, logIntentRequest,
 } from '../../../../utilities';
 import logRequest from '../../../../utilities/request-log';
-import intents from '../../../../intents';
+import intentsMap from '../../../../intents';
 import generic from '../../../../api-dispatch';
 import response from '../../../../utilities/response';
 
@@ -20,6 +20,22 @@ const router: Router = express.Router();
 
 const PROVIDER = 'googlesheets';
 
+const { routes = [] } = intentsMap[PROVIDER];
+
+const intentsRouteMap : { [key: string]: any} = {};
+
+routes.forEach((route: { [key: string]: any}) => {
+  intentsRouteMap[`${route.provider_alias_intent}___${route.method}`.toLowerCase()] = route;
+});
+
+const intent = {
+  spreadsheets___get: intentsRouteMap['/v4/spreadsheets/spreadsheetid___get'],
+  values__range___get: intentsRouteMap['/v4/spreadsheets/spreadsheetid/values/range__get'],
+  values_batchgetbydatafilter___post: intentsRouteMap['/v4/spreadsheets/spreadsheetid/values-batchgetbydatafilter___post'],
+  batchupdate___post: intentsRouteMap['/v4/spreadsheets/spreadsheetid-batchupdate___post'],
+  values__range_append___post: intentsRouteMap['/v4/spreadsheets/spreadsheetid/values/range-append___post'],
+  values__range_clear___post: intentsRouteMap['/v4/spreadsheets/spreadsheetid/values/range-clear___post'],
+};
 async function getHandlerWithApiToken(req: any) {
   const { spreadsheetId: sheet_id } = req.query;
   const {
@@ -27,7 +43,6 @@ async function getHandlerWithApiToken(req: any) {
     gid,
     row = 2,
     // eslint-disable-next-line no-unused-vars
-    data_from,
     api_token,
     lookup = '',
     format,
@@ -116,21 +131,18 @@ async function getHandlerWithApiToken(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (tab && intent && intent.routes
-    && intent.routes.googlesheets__v4__spreadsheets__spreadsheetid__values__range___get) {
-    target = intent.routes.googlesheets__v4__spreadsheets__spreadsheetid__values__range___get;
+  if (tab && intent && intent.values__range___get) {
+    target = intent.values__range___get;
   } else if (
     intent
-    && intent.routes
-    && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values-batchgetbydatafilter___post']
+    && intent.values_batchgetbydatafilter___post
   ) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values-batchgetbydatafilter___post'];
+    target = intent.values_batchgetbydatafilter___post;
   }
 
   if (!target) {
-    loggerService.error(`googlesheet.ts ${PROVIDER} targetPicker[provider] 'value_get' or 'googlesheets__v4__spreadsheets__spreadsheetid__values-batchgetbydatafilter___post ' not found.`);
+    loggerService.error(`googlesheet.ts ${PROVIDER} targetPicker[provider] 'value_get' or 'values_batchgetbydatafilter___post ' not found.`);
     const error: { [key: string]: any } = new Error('Unknown request');
     error.code = 422;
     throw error;
@@ -159,7 +171,7 @@ async function getHandlerWithApiToken(req: any) {
     payloadOptions.payload = {
       params: {
         spreadsheetId: sheet_id,
-        range: null
+        range: null,
       },
       body:
           {
@@ -292,15 +304,14 @@ async function handlerReplace(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post']) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post'];
+  if (intent && intent.batchupdate___post) {
+    target = intent.batchupdate___post;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'batchupdate___post' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -398,15 +409,14 @@ async function appendHandler(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values__range-append___post']) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values__range-append___post'];
+  if (intent && intent.values__range_append___post) {
+    target = intent.values__range_append___post;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid__values__range-append___post' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'values__range_append___post' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -477,15 +487,14 @@ async function clearHandler(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values__range-clear___post']) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid__values__range-clear___post'];
+  if (intent && intent.values__range_clear___post) {
+    target = intent.values__range_clear___post;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid__values__range-clear___post' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'values__range_clear___post' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -552,15 +561,14 @@ async function addSheetHandler(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post']) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post'];
+  if (intent && intent.batchupdate___post) {
+    target = intent.batchupdate___post;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'batchupdate___post' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -637,15 +645,14 @@ async function removeSheetHandler(req: any) {
     throw error;
   }
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes && intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post']) {
-    target = intent.routes['googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post'];
+  if (intent && intent.batchupdate___post) {
+    target = intent.batchupdate___post;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid-batchupdate___post' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'batchupdate___post' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -718,16 +725,15 @@ async function getSheetsHandler(req: any) {
   }
 
   let target = null;
-  const intent = intents[PROVIDER];
 
-  if (intent && intent.routes
-    && intent.routes.googlesheets__v4__spreadsheets__spreadsheetid___get) {
-    target = intent.routes.googlesheets__v4__spreadsheets__spreadsheetid___get;
+  if (intent
+    && intent.spreadsheets___get) {
+    target = intent.spreadsheets___get;
   }
 
   if (!target) {
     loggerService.error(
-      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'googlesheets__v4__spreadsheets__spreadsheetid___get' not found.`,
+      `googlesheet.ts ${PROVIDER} targetPicker[provider] 'spreadsheets___get' not found.`,
     );
     const error: { [key: string]: any } = new Error(
       'Unknown provider request',
@@ -1380,7 +1386,7 @@ apiBase.forEach((base) => {
 });
 
 export default (app: Application) => {
-  if (!intents[PROVIDER]) {
+  if (!intentsMap[PROVIDER]) {
     loggerService.info(
       `Skipping custom /googlesheets routes, no intent found for provider ${PROVIDER}`,
     );
