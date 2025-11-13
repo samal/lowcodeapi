@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import queryString from 'query-string';
 import axios from 'axios';
 
 import apiFetch from '@/utils/request';
 import { isAuthenticated } from '@/utils/auth';
-
-import processPath from '@/utils/process-path';
 
 import SEO from '@/components/seo';
 
@@ -68,9 +66,13 @@ export default function ExplorerClient({
     const provider = params.provider;
     const pathsParam = params.paths;
     // Handle optional catch-all: pathsParam can be undefined, array, or single string
-    const paths = pathsParam 
-        ? (Array.isArray(pathsParam) ? pathsParam : [pathsParam])
-        : [];
+     // Handle optional catch-all: pathsParam can be undefined, array, or single string
+    // Memoize paths to prevent unnecessary re-renders
+    const paths = useMemo(() => {
+        return pathsParam 
+            ? (Array.isArray(pathsParam) ? pathsParam : [pathsParam])
+            : [];
+    }, [pathsParam]);
     
     // Extract query parameters from searchParams
     const providersall = searchParams.get('providersall');
@@ -800,7 +802,6 @@ export default function ExplorerClient({
         title = `${selected.name} ${!!(details.integrated || details.authorized)? '(Connected)': `${details.credential_found ? '(Authorization Pending)': `(Configure API Credentials)`}`}`
     }
 
-    console.log()
     return (
         <Layout info={info} navs={config.navs} user={user} cover={image} provider={provider} selected={selected} config={config} show={false} endpoints={api_endpoints}>
             {
