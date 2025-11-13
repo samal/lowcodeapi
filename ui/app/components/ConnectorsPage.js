@@ -1,20 +1,20 @@
+"use client";
+
 import React, { useState, useEffect, Fragment } from 'react';
 import Link from 'next/link'
 import axios from 'axios';
 
-import apiFetch from '../../utils/request';
-import { isAuthenticated } from '../../utils/auth';
+import apiFetch from '@/utils/request';
+import { isAuthenticated } from '@/utils/auth';
 
-import getBuildContext from '@/utils/get-context';
+import getLogoUrl from '@/utils/logo-url';
 
-import getLogoUrl from '../../utils/logo-url';
+import SEO from '@/components/seo';
 
-import SEO from '../../components/seo';
-
-import Layout from '../../components/Layout';
+import Layout from '@/components/Layout';
 
 
-export default function Studio({ info= {}, api_endpoints ={}, user: userSession, config:configProps, sidebar,  providers: released, upcoming, tba, categories: cl, categoryIndex }) {
+export default function ConnectorsPageClient({ info= {}, api_endpoints ={}, user: userSession, config:configProps, sidebar,  providers: released, upcoming, tba, categories: cl, categoryIndex }) {
   const { name } = info;
   const  { BASE_PATH, PROVIDER_LIST_API, INTEGRATIONS_API, APP_CONFIG_API}  = api_endpoints;
   const [user, setUser] = useState({ ...userSession });
@@ -271,36 +271,4 @@ export default function Studio({ info= {}, api_endpoints ={}, user: userSession,
       </div>
     </Layout>
   );
-}
-
-export const getStaticProps = async () => {
-  try {
-    const contextObj = await getBuildContext();
-    const {
-      info,
-      api_endpoints,
-      config,
-      categories,
-      categoryIndex,
-      providers,
-      user
-    } = contextObj;
-  
-    return { 
-      props: { 
-        providers: providers.filter((item) => item.released && !item.testing),
-        upcoming: [] || providers.filter((item) => !item.released),
-        tba: []|| providers.filter((item) => item.testing),
-        categories: [`All`, ...categories],
-        categoryIndex,
-        config, 
-        user, 
-        sidebar: config.sidebar,
-        api_endpoints,
-        info
-      } 
-    };
-  } catch (e) {
-    throw e;
-  }
 }
