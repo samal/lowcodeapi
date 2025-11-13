@@ -1,12 +1,13 @@
+"use client";
+
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/router'
+import { useSearchParams } from 'next/navigation'; // Added useSearchParams
 
 import axios from 'axios';
 import queryString from 'query-string';
 
 import apiFetch from '@/utils/request';
 import { isAuthenticated } from '@/utils/auth';
-import getBuildContext from '@/utils/get-context';
 
 import i18n from '@/static-json/i18n.json';
 
@@ -14,10 +15,8 @@ import ExplorerViewNew from '@/components/ExplorerView';
 import { IntentTab, ConnectorStatus, IntentHead } from '@/components/ProviderPage';
 import APIRequestLogs from '@/components/ExplorerView/APIRequestLogs';
 import APIResponse from '@/components/ExplorerView/APIResponse';
-import SEO from '@/components/seo';
 import Layout from '@/components/EditorLayout';
 import EditorCanvas from '@/components/EditorCanvas';
-import processPath from '@/utils/process-path';
 
 export default function Home({
   info={},
@@ -27,13 +26,13 @@ export default function Home({
   sidebar,
   apis = [],
   providers : providersList,
-  endpoint = {}
+  endpoint = {},
 }) {
-  const { name } = info;
 
-  const router = useRouter();
+  const searchParams = useSearchParams(); // Initialize useSearchParams
 
-  const { provider, providers : providerDisplay, } = router.query;
+  const provider = searchParams.get('provider'); // Get 'provider' from search params
+  const providerDisplay = searchParams.get('providers'); // Get 'providers' from search params
 
   const {
     BASE_API,
@@ -86,6 +85,7 @@ export default function Home({
 
   ]);
 
+  // @ Review: If this filter is needed or we can remove it.
   useEffect(() => {
     if (providerDisplay && providerDisplay.trim()) {
       const filterProviders = providerDisplay.split(',');
@@ -94,17 +94,18 @@ export default function Home({
         let list = [ ...local.list ];
 
         list = list.filter(i => {
-            return filterProviders.includes(i.id) || i.id === provider;
+            return filterProviders.includes(i.id);
         });
         local.list = list;
         return local;
       });
-      setProvidersAll([ ...lpg ]);
+
+      setProvidersAll([ ...lpg[0].list ]);
       setPaneView(true);
     } else if (apis.length) {
       setSelected(apis[0].selected);
     }
-  }, [apis, providerDisplay]);
+  }, [apis, providerDisplay, providersList, provider]); // Added 'provider' to dependency array
   
   useEffect(() => {
     ;(async () => {    
@@ -369,13 +370,9 @@ export default function Home({
         });
   };
 
+  console.log('providersAll', providersAll);
   return (
     <Layout info={info} navs={config.navs} user={user} show={false} config={config} endpoints={api_endpoints}>
-      <SEO 
-        info={info} 
-        title={`${name} - Explorer`}
-        scale={false} 
-      />
       <EditorCanvas 
         paneView={paneView}
         user={user}
@@ -413,16 +410,6 @@ export default function Home({
               }
               </div>
             </div>
-            {/* {
-              !(user && user.name) ? <div className='col-span-2 flex justify-end items-center'>
-                <div className='w-40 text-xs text-gray-600 p-1 bg-gray-600/30 rounded-md'>
-                  <a href={`${endpoint.ENDPOINT}/auth/google`} className="w-full flex items-center justify-center p-1 pr-3 pl-1 bg-white border border-gray-300 rounded-md">
-                      <img src={`https://assets.lowcodeapi.com/connectors/logos/google.svg`} className="w-4 h-4" alt={`Authenticate with Google`}  />
-                      <span className='ml-1 text-gray-600 font-semibold'>Sign in with Google</span>
-                  </a>
-                </div>
-              </div>: null
-            } */}
           </div>
         </div>
         {
@@ -495,39 +482,4 @@ export default function Home({
       </EditorCanvas>
     </Layout>
   );
-}
-
-export const getStaticProps = async () => {
-  try {
-    const contextObj = await getBuildContext();
-    const {
-      info,
-      api_endpoints,
-      endpoint,
-      config,
-      categories,
-      categoryIndex,
-      providers,
-      providerGroup,
-      user
-    } = contextObj;
-  
-    return { 
-      props: { 
-        providerGroup,
-        providers: providers.filter((item) => item.released && !item.testing),
-        apis : [],
-        categories: [`All`, ...categories],
-        categoryIndex,
-        config, 
-        user, 
-        sidebar: config.sidebar,
-        api_endpoints,
-        endpoint,
-        info
-      } 
-    };
-  } catch (e) {
-    throw e;
-  }
 }
