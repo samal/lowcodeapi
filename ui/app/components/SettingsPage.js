@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
 import axios from 'axios';
@@ -8,13 +10,11 @@ import SEO from '@/components/seo';
 import apiFetch from '@/utils/request';
 import { isAuthenticated } from '@/utils/auth';
 
-import getBuildContext from '@/utils/get-context';
-
 import Layout from '@/components/Layout';
 import IconPack from '@/components/IconPack';
 import Clipbaord from '@/components/Clipbaord';
 
-export function APIKeysPage({ info ={}, api_endpoints ={}, user: userSession, config:configProps }) {
+export default function SettingsPageClient({ info ={}, api_endpoints ={}, user: userSession, config:configProps }) {
   const { ACCOUNT_API, PROVIDER_LIST_API, APP_CONFIG_API, INTEGRATIONS_API} = api_endpoints;
   const i18n = i18nText.api_keys;
   const [user, setUser] = useState({ ...userSession });
@@ -264,24 +264,3 @@ export function APIKeysPage({ info ={}, api_endpoints ={}, user: userSession, co
     </Layout>
   );
 }
-
-export const getStaticProps = async () => {
-  try {
-    const contextObj = await getBuildContext();
-    const {
-      info,
-      api_endpoints,
-    } = contextObj;
-
-    return { 
-      props: { 
-        api_endpoints,
-        info
-      } 
-    };
-  } catch (e) {
-    throw e;
-  }
-}
-
-export default APIKeysPage;
