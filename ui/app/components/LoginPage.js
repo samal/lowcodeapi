@@ -1,21 +1,18 @@
-
+"use client";
 
 import React, { useEffect, useState } from 'react';
 import localstorage from 'local-storage';
+import { useSearchParams, useRouter } from 'next/navigation'; 
 
-import i18nText from '../../static-json/i18n.json';
+import i18nText from '@/static-json/i18n.json';
 
-import apiFetch from '../../utils/request';
+import apiFetch from '@/utils/request';
 import { isAuthenticated } from '@/utils/auth';
 
-import getBuildContext from '@/utils/get-context';
+import Layout from '@/components/Layout';
+import UserView from '@/components/UserLoginUI/view';
 
-import SEO from '../../components/seo';
-
-import Layout from '../../components/Layout';
-import UserView from '../../components/UserLoginUI/view';
-
-import form from '../../static-json/login';
+import form from '@/static-json/login';
 
 const { email } = form;
 const formLength = 2;
@@ -66,12 +63,22 @@ const defaulEmailFields = {
   new_email: '',
   new_email_2: ''
 }
-export function User({ i18n, info= {}, api_endpoints ={}, user, config, providers }) {
+export default function LoginPage({
+  i18n, 
+  info= {}, 
+  api_endpoints ={}, 
+  user, 
+  config, 
+  providers
+}) {
   const { name } = info;
+
+  const router = useRouter(); 
+  const searchParams = useSearchParams(); 
 
   const  { ACCOUNT_API, BASE_PATH, BASE_PATH_FALLBACK, ENDPOINT } = api_endpoints;
 
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(undefined);
   const [passwordChange, setPasswordChange] = useState({ ...defaulFields });
   const [emailChange, setEmailChange] = useState({ ...defaulEmailFields });
 
@@ -80,25 +87,27 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
   const [message, setMessage] = useState('');
   
   useEffect(() => {
-    let freshToken = new URLSearchParams(window.location.search).get('token');
-    let token = null;
-    if (freshToken) {
-      localstorage.set('token', freshToken);
-    } else {
-      token = localstorage.get('token');
-    }
+    if (typeof window !== 'undefined') { // Guard against SSR
+      let freshToken = searchParams.get('token'); 
+      let localToken = null; // Use a distinct variable name to avoid confusion with the state variable
+      if (freshToken) {
+        localstorage.set('token', freshToken);
+      } else {
+        localToken = localstorage.get('token');
+      }
 
-    if(freshToken || token) {
-      console.log('.........', freshToken, formLength, email.fields.length);
-      setToken(freshToken || token);
-      if (formLength !== email.fields.length || freshToken) {
-        ;(async () => {
-          window.location.href = BASE_PATH || BASE_PATH_FALLBACK;
-        })();
+      if(freshToken || localToken) {
+        console.log('.........', freshToken, formLength, email.fields.length);
+        setToken(freshToken || localToken);
+        if (formLength !== email.fields.length || freshToken) {
+          ;(async () => {
+            router.push(BASE_PATH || BASE_PATH_FALLBACK);
+          })();
+        }
       }
     }
     return function cleanup() {};
-  }, [user]);
+  }, [user, searchParams, router, BASE_PATH, BASE_PATH_FALLBACK]); 
 
   const onSubmit = async body => {
     if (!body.email) return;
@@ -116,7 +125,7 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
         localstorage.remove('token');
         localstorage.set('token', data.token);
         (async () => {
-          window.location.href = BASE_PATH || BASE_PATH_FALLBACK;
+          router.push(BASE_PATH || BASE_PATH_FALLBACK);
         })();
       } else if (data){
         localstorage.remove('token');
@@ -160,7 +169,7 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
         localstorage.remove('token');
         setMessage('Login email updated successfully, reloading in 1 sec.');
         setTimeout(() => {
-          window.location.reload();
+          router.refresh(); 
         }, 1000);
       }else {
         setIntent(false);
@@ -200,7 +209,7 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
         setMessage('Login password updated successfully, reloading in 1 sec.');
         setTimeout(() => {
           localstorage.remove('token');
-          window.location.reload();
+          router.refresh();
         }, 1000);
       }else {
         setIntent(false);
@@ -217,7 +226,7 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
   
   return (
     <Layout info={info} navs={config.navs} user={user} show={false} config={config} hideNav={true} endpoints={api_endpoints}>
-      <SEO info={info} scale={false} title={`Login - ${name}`} ogTitle={`Login and access 3rd party API's using ${name} common interface`} />
+      {/* <SEO info={info} scale={false} title={`Login - ${name}`} ogTitle={`Login and access 3rd party API's using ${name} common interface`} /> */}
       <div className='container mx-auto px-8 relative overflow-y-auto focus:outline-none md:my-12'>
         <div className='md:grid md:grid-cols-1  mb-8 rounded-md transition ease-in-out delay-700'>
           { token ? <></>:
@@ -277,30 +286,4 @@ export function User({ i18n, info= {}, api_endpoints ={}, user, config, provider
       </div>
     </Layout>
   );
-}
-
-export default User;
-
-export const getStaticProps = async () => {
-  try {
-    const contextObj = await getBuildContext();
-    const {
-      info,
-      api_endpoints,
-      providers,
-      config,
-    } = contextObj;
-
-    return { 
-      props: { 
-        i18n : { ...i18nText.login },
-        providers: providers.filter((item) => item.released && !item.testing),
-        api_endpoints,
-        config,
-        info
-      } 
-    };
-  } catch (e) {
-    throw e;
-  }
 }
