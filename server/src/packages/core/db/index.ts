@@ -4,7 +4,7 @@ import { prisma } from './prisma';
 
 // User
 // UserSchema - Migrated to Prisma, removed from Sequelize
-import UsersAPITokenSchema from './schema/user/UsersAPIToken';
+// UsersAPITokenSchema - Migrated to Prisma, removed from Sequelize
 import UsersLoginIntentSchema from './schema/user/UsersLoginIntent';
 import UsersActivatedProvidersSchema from './schema/user/UsersActivatedProviders';
 import UsersProvidersSavedIntent from './schema/user/UsersProvidersSavedIntent';
@@ -70,7 +70,7 @@ const sequelize = sequelizePick[dbOptions.DB_TYPE];
 export default {
   models: {
     // User: Migrated to Prisma - removed from Sequelize
-    UsersAPIToken: UsersAPITokenSchema(sequelize),
+    // UsersAPIToken: Migrated to Prisma - removed from Sequelize
     UsersActivatedProviders: UsersActivatedProvidersSchema(sequelize),
     UsersProvidersSavedIntent: UsersProvidersSavedIntent(sequelize),
     UsersProvidersIntentHydration: UsersProvidersIntentHydration(sequelize),

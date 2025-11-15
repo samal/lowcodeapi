@@ -128,3 +128,82 @@ export function userCamelCaseToSnakeCase(prismaUser: any): any {
   return apiUser;
 }
 
+/**
+ * UsersAPIToken field mappings
+ * Maps API snake_case → Prisma format
+ * Currently Prisma uses snake_case, so this is 1:1, but ready for camelCase migration
+ */
+export const USERS_API_TOKEN_FIELD_MAP = {
+  ref_id: 'ref_id', // Will be 'refId' if we update schema to camelCase
+  user_ref_id: 'user_ref_id', // Will be 'userRefId'
+  api_token: 'api_token', // Will be 'apiToken'
+  api_token_credits: 'api_token_credits', // Will be 'apiTokenCredits'
+  api_credit_consumed: 'api_credit_consumed', // Will be 'apiCreditConsumed'
+  last_used: 'last_used', // Will be 'lastUsed'
+  api_token_expiry: 'api_token_expiry', // Will be 'apiTokenExpiry'
+  api_token_config: 'api_token_config', // Will be 'apiTokenConfig'
+  created_at: 'created_at', // Will be 'createdAt'
+  updated_at: 'updated_at', // Will be 'updatedAt'
+} as const;
+
+/**
+ * Convert UsersAPIToken from snake_case (API format) to Prisma format
+ */
+export function usersApiTokenSnakeCaseToCamelCase(apiToken: any): any {
+  if (!apiToken) return null;
+  
+  const prismaToken: any = {
+    // Fields that don't need conversion (already match)
+    active: apiToken.active !== undefined ? apiToken.active : false,
+    remark: apiToken.remark,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_API_TOKEN_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiToken[apiKey] !== undefined) {
+      prismaToken[prismaKey] = apiToken[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaToken.created_at) {
+    prismaToken.created_at = new Date();
+  }
+  if (!prismaToken.updated_at) {
+    prismaToken.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaToken)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersAPIToken from Prisma format to snake_case (API format)
+ */
+export function usersApiTokenCamelCaseToSnakeCase(prismaToken: any): any {
+  if (!prismaToken) return null;
+  
+  const apiToken: any = {
+    // Fields that don't need conversion
+    id: prismaToken.id,
+    active: prismaToken.active,
+    remark: prismaToken.remark,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_API_TOKEN_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaToken[prismaKey] !== undefined) {
+      apiToken[apiKey] = prismaToken[prismaKey];
+    }
+  });
+  
+  return apiToken;
+}
+
