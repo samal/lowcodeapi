@@ -1,5 +1,5 @@
 import { safePromise, loggerService } from '../../../../../utilities';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 import cryptograper from '../../../../../utilities/cryptograper';
 
 const { generateMD5 } = cryptograper;
@@ -11,8 +11,10 @@ export default async ({
   
   const query = 'SELECT provider, method, intent, path FROM log_request WHERE user_ref_id=? AND provider=?;';
   
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, provider.toLowerCase())
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, provider.toLowerCase()]
   );
   if (error) {
     throw error;

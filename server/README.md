@@ -8,7 +8,7 @@ A backend that provides a unified API gateway for third-party service integratio
 
 - **Node.js** 18+ 
 - **npm** or **yarn**
-- **MySQL**
+- **Database**: MySQL 8.0+ or PostgreSQL 12+ (see [Database Setup](#database-setup))
 - **Redis** (for sessions and caching)
 
 ### Installation
@@ -29,8 +29,14 @@ cp .env.example .env
 
 3. **Database setup:**
 ```bash
-# For MySQL
+# The server supports both MySQL and PostgreSQL
+# Set your DATABASE_URL in .env file (see Environment Variables below)
 
+# Generate Prisma schema for your database
+npm run prisma:generate
+
+# Run migrations
+npm run prisma:migrate
 ```
 
 4. **Start development server:**
@@ -70,11 +76,11 @@ PORT=3001
 NODE_ENV=development
 
 # Database Configuration
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=lowcodeapi
-DB_USER=root
-DB_PASSWORD=your_password
+# Option 1: MySQL
+DATABASE_URL=mysql://user:password@localhost:3306/lowcodeapi
+
+# Option 2: PostgreSQL
+# DATABASE_URL=postgresql://user:password@localhost:5432/lowcodeapi
 
 # Redis Configuration
 REDIS_HOST=localhost
@@ -89,19 +95,41 @@ JWT_EXPIRES_IN=24h
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 
-# AWS Configuration (optional)
-AWS_ACCESS_KEY_ID=your_aws_access_key
-AWS_SECRET_ACCESS_KEY=your_aws_secret_key
-AWS_REGION=us-east-1
 ```
 
 ## 🔧 Configuration
 
 ### Database Setup
 
-The server supports both MySQL and SQLite databases:
+The server supports both **MySQL** and **PostgreSQL** databases:
 
-- **MySQL**: Recommended for production environments
+- **MySQL 8.0+**: Fully supported, original database
+- **PostgreSQL 12+**: Fully supported, recommended for new deployments
+
+#### Switching Database Providers
+
+The server automatically detects the database provider from your `DATABASE_URL`:
+
+```bash
+# MySQL
+DATABASE_URL=mysql://user:password@localhost:3306/database
+
+# PostgreSQL
+DATABASE_URL=postgresql://user:password@localhost:5432/database
+```
+
+#### Prisma Schema Generation
+
+The Prisma schema is automatically generated based on your database provider:
+
+```bash
+# Auto-detect from DATABASE_URL
+npm run prisma:generate
+
+# Or explicitly specify provider
+DB_PROVIDER=mysql npm run prisma:generate
+DB_PROVIDER=postgresql npm run prisma:generate
+```
 
 ## 🚀 Deployment
 

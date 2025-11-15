@@ -5,8 +5,7 @@ import findUser from './find-user';
 import userLoginIntent from './user-login';
 import usersActivatedProvider from './activated';
 
-import { safePromise } from '../../../../utilities';
-import { prisma } from '../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../db';
 
 const fetchUserAvatar = async (user: any) => {
   const query = `
@@ -18,8 +17,11 @@ const fetchUserAvatar = async (user: any) => {
     WHERE pct.user_ref_id=?;
   `;
   
-  const [queryError, list] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, list] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id]
   );
 
   if (queryError) {

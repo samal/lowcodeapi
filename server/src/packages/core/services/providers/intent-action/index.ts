@@ -1,5 +1,5 @@
 import { safePromise, loggerService } from '../../../../../utilities';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 import {
   usersProvidersSavedIntentSnakeCaseToCamelCase,
   usersProvidersIntentHydrationSnakeCaseToCamelCase,
@@ -17,8 +17,10 @@ const get = async ({
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
   
   const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider=? AND intent=? LIMIT 1';
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, mode, method, provider, intent)
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, mode, method, provider, intent]
   );
   if (error) {
     throw error;
@@ -33,8 +35,10 @@ const list = async ({ user, mode = '', provider = '' }: {[key:string]: any}) => 
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
   
   const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND provider=?';
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, mode, provider)
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, mode, provider]
   );
   if (error) {
     throw error;
@@ -49,8 +53,10 @@ const list = async ({ user, mode = '', provider = '' }: {[key:string]: any}) => 
 
 const listFeaturedIntent = async ({ mode = '' }: {[key:string]: any}) => {
   const query = 'SELECT * FROM providers_intents_featured ORDER BY weight DESC LIMIT 50';
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query)
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    []
   );
   if (error) {
     throw error;
@@ -93,8 +99,10 @@ const usersAllIntentList = async ({ user, mode = '' }: {[key:string]: any}) => {
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
   
   const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=?';
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, mode)
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, mode]
   );
   if (error) {
     throw error;
@@ -161,8 +169,10 @@ const remove = async ({
   user, mode = '', provider, method, intent,
 }: {[key:string]: any}) => {
   const query = 'DELETE FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider=? AND intent=?';
-  const [error] = await safePromise(
-    prisma.$executeRawUnsafe(query, user.ref_id, mode, method, provider, intent)
+  const [error] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, mode, method, provider, intent]
   );
   if (error) {
     throw error;
@@ -175,8 +185,10 @@ const hydrate = async ({
   user, intent, method, provider = '',
 }: {[key:string]: any}) => {
   const query = 'SELECT * FROM users_providers_intent_hydration WHERE user_ref_id=? AND method=? AND provider=? AND intent=?';
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, method, provider, intent)
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, method, provider, intent]
   );
   if (error) {
     throw error;
@@ -264,8 +276,10 @@ const hydrateDefault = async ({
   user, intent, method, provider = '',
 }: {[key:string]: any}) => {
   const query = 'SELECT * FROM providers_intent_default_payloads WHERE method=? AND provider=? AND intent=?';
-  const [error] = await safePromise(
-    prisma.$queryRawUnsafe(query, method, provider, intent)
+  const [error] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [method, provider, intent]
   );
   if (error) {
     throw error;

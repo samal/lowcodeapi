@@ -1,5 +1,5 @@
 import { cryptograper, safePromise, loggerService } from '../../../../../utilities';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 import { providersCredentialAndTokenSnakeCaseToCamelCase } from '../../../db/prisma/converters';
 
 import usersActivatedProviders from '../../user/activated';
@@ -22,8 +22,10 @@ const fetchActivatedProviderCredsAndTokens = async (
         AND pct.provider=?;
     `;
 
-  const [queryError, list] = await safePromise(
-    prisma.$queryRawUnsafe(dbQuery, user.ref_id, provider.toLowerCase())
+  const [queryError, list] = await executeRawQuerySafe(
+    prisma,
+    dbQuery,
+    [user.ref_id, provider.toLowerCase()]
   );
 
   if (queryError) {
@@ -52,12 +54,14 @@ const fetchActivatedProviderDetail = async ({ user, provider }: { [key: string]:
       SELECT
         uap.*
       FROM users_activated_providers uap
-      WHERE uap.user_ref_id=? and uap.provider_ref_id=?
+      WHERE uap.user_ref_id=? AND uap.provider_ref_id=?
       LIMIT 1;
     `;
 
-  const [queryError, result] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id, provider.toLowerCase())
+  const [queryError, result] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id, provider.toLowerCase()]
   );
 
   if (queryError) {
@@ -92,10 +96,12 @@ const fetchActivatedProviders = async ({ user }: { [key: string]: any }) => {
       SELECT
         uap.*
       FROM users_activated_providers uap
-      WHERE uap.user_ref_id=? and uap.active=1;
+      WHERE uap.user_ref_id=? AND uap.active=1;
     `;
-  const [queryError, result] = await safePromise(
-    prisma.$queryRawUnsafe(query, user.ref_id)
+  const [queryError, result] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [user.ref_id]
   );
 
   if (queryError) {
