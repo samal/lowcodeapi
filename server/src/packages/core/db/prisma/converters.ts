@@ -669,3 +669,252 @@ export function trackIntentRequestCamelCaseToSnakeCase(prismaTrack: any): any {
   return apiTrack;
 }
 
+/**
+ * UsersProvidersSavedIntent field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const USERS_PROVIDERS_SAVED_INTENT_FIELD_MAP = {
+  user_ref_id: 'user_ref_id',
+  provider: 'provider',
+  method: 'method',
+  intent: 'intent',
+  path: 'path',
+  saved_mode: 'saved_mode',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert UsersProvidersSavedIntent from snake_case (API format) to Prisma format
+ */
+export function usersProvidersSavedIntentSnakeCaseToCamelCase(apiSaved: any): any {
+  if (!apiSaved) return null;
+  
+  const prismaSaved: any = {};
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_PROVIDERS_SAVED_INTENT_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiSaved[apiKey] !== undefined) {
+      prismaSaved[prismaKey] = apiSaved[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaSaved.created_at) {
+    prismaSaved.created_at = new Date();
+  }
+  if (!prismaSaved.updated_at) {
+    prismaSaved.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaSaved)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersProvidersSavedIntent from Prisma format to snake_case (API format)
+ */
+export function usersProvidersSavedIntentCamelCaseToSnakeCase(prismaSaved: any): any {
+  if (!prismaSaved) return null;
+  
+  const apiSaved: any = {
+    id: prismaSaved.id,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_PROVIDERS_SAVED_INTENT_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaSaved[prismaKey] !== undefined) {
+      apiSaved[apiKey] = prismaSaved[prismaKey];
+    }
+  });
+  
+  return apiSaved;
+}
+
+/**
+ * UsersProvidersIntentHydration field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const USERS_PROVIDERS_INTENT_HYDRATION_FIELD_MAP = {
+  user_ref_id: 'user_ref_id',
+  name: 'name',
+  provider: 'provider',
+  method: 'method',
+  intent: 'intent',
+  body: 'body',
+  query_params: 'query_params',
+  path_params: 'path_params',
+  headers: 'headers',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert UsersProvidersIntentHydration from snake_case (API format) to Prisma format
+ */
+export function usersProvidersIntentHydrationSnakeCaseToCamelCase(apiHydration: any): any {
+  if (!apiHydration) return null;
+  
+  const prismaHydration: any = {};
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_PROVIDERS_INTENT_HYDRATION_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiHydration[apiKey] !== undefined) {
+      prismaHydration[prismaKey] = apiHydration[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaHydration.created_at) {
+    prismaHydration.created_at = new Date();
+  }
+  if (!prismaHydration.updated_at) {
+    prismaHydration.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaHydration)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersProvidersIntentHydration from Prisma format to snake_case (API format)
+ */
+export function usersProvidersIntentHydrationCamelCaseToSnakeCase(prismaHydration: any): any {
+  if (!prismaHydration) return null;
+  
+  const apiHydration: any = {
+    id: prismaHydration.id,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_PROVIDERS_INTENT_HYDRATION_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaHydration[prismaKey] !== undefined) {
+      apiHydration[apiKey] = prismaHydration[prismaKey];
+    }
+  });
+  
+  return apiHydration;
+}
+
+/**
+ * ProvidersIntentDefaultPayloads field mappings
+ * Maps API snake_case → Prisma format
+ * Note: Prisma schema has different fields than Sequelize model
+ */
+export const PROVIDERS_INTENT_DEFAULT_PAYLOADS_FIELD_MAP = {
+  ref_id: 'ref_id',
+  intent_ref_id: 'intent_ref_id',
+  title: 'title',
+  description: 'description',
+  method: 'method',
+  query_params: 'query_params',
+  path_params: 'path_params',
+  body: 'body',
+  custom_headers: 'custom_headers',
+  response_format: 'response_format',
+  status: 'status',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert ProvidersIntentDefaultPayloads from snake_case (API format) to Prisma format
+ * Note: The code uses user_ref_id, name, provider, intent but Prisma schema has different fields
+ * This converter maps to Prisma schema fields
+ */
+export function providersIntentDefaultPayloadsSnakeCaseToCamelCase(apiPayload: any): any {
+  if (!apiPayload) return null;
+  
+  const prismaPayload: any = {
+    active: apiPayload.active !== undefined ? apiPayload.active : 0,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(PROVIDERS_INTENT_DEFAULT_PAYLOADS_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiPayload[apiKey] !== undefined) {
+      prismaPayload[prismaKey] = apiPayload[apiKey];
+    }
+  });
+  
+  // Handle mapping from code fields to Prisma fields
+  // Code uses: user_ref_id, name, provider, intent, body, query_params, path_params, headers
+  // Prisma has: ref_id, intent_ref_id, title, description, method, query_params, path_params, body, custom_headers
+  if (apiPayload.intent !== undefined && !prismaPayload.intent_ref_id) {
+    prismaPayload.intent_ref_id = apiPayload.intent;
+  }
+  if (apiPayload.name !== undefined && !prismaPayload.title) {
+    prismaPayload.title = apiPayload.name;
+  }
+  if (apiPayload.headers !== undefined && !prismaPayload.custom_headers) {
+    prismaPayload.custom_headers = apiPayload.headers;
+  }
+  if (apiPayload.provider !== undefined && !prismaPayload.ref_id) {
+    // Use provider as ref_id if ref_id not provided
+    prismaPayload.ref_id = apiPayload.provider;
+  }
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaPayload.created_at) {
+    prismaPayload.created_at = new Date();
+  }
+  if (!prismaPayload.updated_at) {
+    prismaPayload.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaPayload)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert ProvidersIntentDefaultPayloads from Prisma format to snake_case (API format)
+ */
+export function providersIntentDefaultPayloadsCamelCaseToSnakeCase(prismaPayload: any): any {
+  if (!prismaPayload) return null;
+  
+  const apiPayload: any = {
+    id: prismaPayload.id,
+    active: prismaPayload.active,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(PROVIDERS_INTENT_DEFAULT_PAYLOADS_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaPayload[prismaKey] !== undefined) {
+      apiPayload[apiKey] = prismaPayload[prismaKey];
+    }
+  });
+  
+  // Map Prisma fields to code expected fields
+  if (prismaPayload.intent_ref_id !== undefined) {
+    apiPayload.intent = prismaPayload.intent_ref_id;
+  }
+  if (prismaPayload.title !== undefined) {
+    apiPayload.name = prismaPayload.title;
+  }
+  if (prismaPayload.custom_headers !== undefined) {
+    apiPayload.headers = prismaPayload.custom_headers;
+  }
+  
+  return apiPayload;
+}
+

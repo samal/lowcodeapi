@@ -7,14 +7,14 @@ import { prisma } from './prisma';
 // UsersAPITokenSchema - Migrated to Prisma, removed from Sequelize
 // UsersLoginIntentSchema - Migrated to Prisma, removed from Sequelize
 // UsersActivatedProvidersSchema - Migrated to Prisma, removed from Sequelize
-import UsersProvidersSavedIntent from './schema/user/UsersProvidersSavedIntent';
-import UsersProvidersIntentHydration from './schema/user/UsersProvidersIntentHydration';
+// UsersProvidersSavedIntent - Migrated to Prisma, removed from Sequelize
+// UsersProvidersIntentHydration - Migrated to Prisma, removed from Sequelize
 
 // Provider
 // ProvidersCredentialAndTokenSchema - Migrated to Prisma, removed from Sequelize
 // TrackIntentRequest - Migrated to Prisma, removed from Sequelize (not currently used, converters ready)
 // LogRequest - Migrated to Prisma, removed from Sequelize
-import ProvidersIntentDefaultPayloads from './schema/provider/ProvidersIntentDefaultPayloads';
+// ProvidersIntentDefaultPayloads - Migrated to Prisma, removed from Sequelize
 
 // Unified
 // UsersUnifiedConfig - Migrated to Prisma, removed from Sequelize
@@ -76,9 +76,9 @@ export default {
     // TrackIntentRequest: Migrated to Prisma - removed from Sequelize
     // LogRequest: Migrated to Prisma - removed from Sequelize
     // UsersUnifiedConfig: Migrated to Prisma - removed from Sequelize
-    UsersProvidersSavedIntent: UsersProvidersSavedIntent(sequelize),
-    UsersProvidersIntentHydration: UsersProvidersIntentHydration(sequelize),
-    ProvidersIntentDefaultPayloads: ProvidersIntentDefaultPayloads(sequelize),
+    // UsersProvidersSavedIntent: Migrated to Prisma - removed from Sequelize
+    // UsersProvidersIntentHydration: Migrated to Prisma - removed from Sequelize
+    // ProvidersIntentDefaultPayloads: Migrated to Prisma - removed from Sequelize
   },
   connect() {
     return sequelize;

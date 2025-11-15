@@ -1,13 +1,15 @@
 import Sequelize from 'sequelize';
 import { safePromise, loggerService } from '../../../../../utilities';
 import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
+import {
+  usersProvidersSavedIntentSnakeCaseToCamelCase,
+  usersProvidersIntentHydrationSnakeCaseToCamelCase,
+  providersIntentDefaultPayloadsSnakeCaseToCamelCase,
+} from '../../../db/prisma/converters';
 import providers, { providerMap } from '../../../../../intents';
 import openapi from '../../../../openapi/fn/openapi-converter';
 import requestLogs from '../request-logs';
-
-const {
-  UsersProvidersSavedIntent, UsersProvidersIntentHydration, ProvidersIntentDefaultPayloads,
-} = DBConfig.models;
 
 const { connection } = DBConfig;
 
@@ -152,7 +154,12 @@ const save = async ({
     path: intent,
   };
 
-  const [error] = await safePromise(UsersProvidersSavedIntent.create(payload));
+  const prismaPayload = usersProvidersSavedIntentSnakeCaseToCamelCase(payload);
+  const [error] = await safePromise(
+    prisma.users_providers_saved_intents.create({
+      data: prismaPayload,
+    }),
+  );
   if (error) {
     throw error;
   }
@@ -258,7 +265,12 @@ const storePayload = async ({
     headers: payload.headers,
   };
 
-  const [error, data] = await safePromise(UsersProvidersIntentHydration.create(savePayload));
+  const prismaPayload = usersProvidersIntentHydrationSnakeCaseToCamelCase(savePayload);
+  const [error, data] = await safePromise(
+    prisma.users_providers_intent_hydration.create({
+      data: prismaPayload,
+    }),
+  );
   if (error) {
     throw error;
   }
@@ -336,7 +348,12 @@ const storeDefaultPayload = async ({
     headers: payload.headers,
   };
 
-  const [errorD, data] = await safePromise(ProvidersIntentDefaultPayloads.create(savePayload));
+  const prismaPayload = providersIntentDefaultPayloadsSnakeCaseToCamelCase(savePayload);
+  const [errorD, data] = await safePromise(
+    prisma.providers_intent_default_payloads.create({
+      data: prismaPayload,
+    }),
+  );
   if (errorD) {
     throw errorD;
   }
