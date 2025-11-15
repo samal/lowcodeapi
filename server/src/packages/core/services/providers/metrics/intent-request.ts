@@ -1,9 +1,6 @@
-import Sequelize from 'sequelize';
 import { safePromise, loggerService } from '../../../../../utilities';
-import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
 import cryptograper from '../../../../../utilities/cryptograper';
-
-const { connection } = DBConfig;
 
 const { generateMD5 } = cryptograper;
 
@@ -11,13 +8,12 @@ export default async ({
   user, provider, method, intent: path,
 } : {[key:string]: any}) => {
   loggerService.info(`Intent request: ${provider} ${method} ${path}`);
+  
   const query = 'SELECT provider, method, intent, path FROM log_request WHERE user_ref_id=? AND provider=?;';
-  const replacements = [user.ref_id, provider.toLowerCase()];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, provider.toLowerCase())
+  );
   if (error) {
     throw error;
   }
