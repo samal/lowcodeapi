@@ -4,7 +4,7 @@ import { loggerService, safePromise } from '../../../../../utilities';
 import { providerList, providerMap } from '../../../../../intents';
 
 import Middlewares from '../../../middlewares';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 
 const { isAuthorized } = Middlewares;
 
@@ -28,8 +28,11 @@ async function providers({ query } : { [key:string]: any}) {
 
   sqlQuery = `${sqlQuery} ORDER BY name ASC;`;
 
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, ...replacements)
+  // Using executeRawQuerySafe for multi-database support
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    replacements
   );
 
   if (error) {
@@ -53,8 +56,11 @@ async function providers({ query } : { [key:string]: any}) {
 async function providersIntents({ provider, release } : { [key:string]: any}) {
   const sqlQuery = 'SELECT * from providers_intents WHERE provider_id=?';
 
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, provider.toLowerCase().trim())
+  // Using executeRawQuerySafe for multi-database support
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [provider.toLowerCase().trim()]
   );
   if (error) {
     throw error;
@@ -159,8 +165,11 @@ router.get('/providers/list-all', isAuthorized, async (req: Request, res: Respon
   const { user } : any = req.session;
 
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlUQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -196,8 +205,11 @@ router.get('/providers/list-all', isAuthorized, async (req: Request, res: Respon
 
   sqlQuery = `${sqlQuery} ORDER BY name ASC;`;
 
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, ...replacements)
+  // Using executeRawQuerySafe for multi-database support
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    replacements
   );
 
   if (error) {
@@ -252,8 +264,11 @@ router.post('/providers', isAuthorized, async (req: Request, res: Response) => {
   const { user } : any = req.session;
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -277,8 +292,11 @@ router.post('/providers', isAuthorized, async (req: Request, res: Response) => {
 
   const query = 'SELECT * from providers WHERE ref_id=?';
 
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, body.provider.trim().toLowerCase())
+  // Using executeRawQuerySafe for multi-database support
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [body.provider.trim().toLowerCase()]
   );
 
   if (error) {
@@ -342,8 +360,11 @@ router.put('/providers', isAuthorized, async (req: Request, res: Response) => {
   }
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -411,8 +432,11 @@ router.put('/providers/release', isAuthorized, async (req: Request, res: Respons
   }
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -464,8 +488,11 @@ router.get('/providers/intents', isAuthorized, async (req: Request, res: Respons
   const { user } : any = req.session;
 
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlUQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -494,8 +521,11 @@ router.get('/providers/intents', isAuthorized, async (req: Request, res: Respons
   }
   const sqlQuery = 'SELECT * from providers_intents WHERE provider_id=?';
 
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, query.provider.toLowerCase().trim())
+  // Using executeRawQuerySafe for multi-database support
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [query.provider.toLowerCase().trim()]
   );
   if (error) {
     console.log(error);
@@ -567,8 +597,11 @@ router.post('/providers/intents', isAuthorized, async (req: Request, res: Respon
   const { user } : any = req.session;
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -643,8 +676,11 @@ router.put('/providers/intents', isAuthorized, async (req: Request, res: Respons
   }
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -717,8 +753,11 @@ router.delete('/providers/intents', isAuthorized, async (req: Request, res: Resp
   }
 
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlQuery,
+    [user.ref_id]
   );
 
   if (queryError) {
@@ -767,8 +806,11 @@ router.post('/providers/commit', isAuthorized, async (req: Request, res: Respons
   const { user } : any = req.session;
 
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(
-    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  // Using executeRawQuerySafe for multi-database support
+  const [queryError, queryResult] = await executeRawQuerySafe(
+    prisma,
+    sqlUQuery,
+    [user.ref_id]
   );
 
   if (queryError) {

@@ -1,4 +1,4 @@
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 
 import { loggerService, safePromise } from '../../../../../utilities';
 import tokenService from '../../user/key-service';
@@ -49,8 +49,10 @@ export default async ({ api_token, provider }: { [key: string]: any }) => {
     LIMIT 1;
   `;
   
-  const [queryError, credsData] = await safePromise(
-    prisma.$queryRawUnsafe(query, token.user_ref_id, provider.toLowerCase(), provider.toLowerCase())
+  const [queryError, credsData] = await executeRawQuerySafe(
+    prisma,
+    query,
+    [token.user_ref_id, provider.toLowerCase(), provider.toLowerCase()]
   );
 
   if (queryError) {

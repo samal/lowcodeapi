@@ -18,7 +18,12 @@
     "format:check": "prettier --check \"src/**/*.{js,ts,json,md}\"",
     "test": "jest --coverage",
     "env": "node setup/env-seed.js",
-    "create": "node setup/create-user.js"
+    "create": "node setup/create-user.js",
+    "prisma:generate-schema": "node server/prisma/generate-schema.js",
+    "prisma:generate": "npm run prisma:generate-schema && cd server && npx prisma generate",
+    "prisma:migrate": "npm run prisma:generate-schema && cd server && npx prisma migrate dev",
+    "prisma:migrate:deploy": "npm run prisma:generate-schema && cd server && npx prisma migrate deploy",
+    "prisma:studio": "npm run prisma:generate-schema && cd server && npx prisma studio"
   },
   "dependencies": {
     "@aws-crypto/sha256-js": "^4.0.0",
@@ -75,7 +80,6 @@
     "passport-trello": "^1.1.0",
     "pm2": "^5.4.3",
     "postcss": "8.4.24",
-    "prisma": "^6.19.0",
     "qs": "^6.11.2",
     "query-string": "^8.1.0",
     "randomatic": "^3.1.1",
@@ -141,6 +145,7 @@
     "javascript-obfuscator": "^4.0.2",
     "jest": "^29.7.0",
     "mkdirp": "^3.0.0",
+    "prisma": "^6.19.0",
     "redis-mock": "^0.56.3",
     "rimraf": "^5.0.0",
     "supertest": "^7.1.3",

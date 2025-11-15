@@ -1,5 +1,5 @@
 import { loggerService, safePromise } from '../../../../../utilities';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 
 export default async (user: { [key: string]: any } = {}) => {
   let query = `
@@ -18,10 +18,12 @@ export default async (user: { [key: string]: any } = {}) => {
     query += ';';
   }
 
-  // Using $queryRawUnsafe because query is built conditionally
-  // Replacements are still parameterized for safety
-  const [queryError, tokenList] = await safePromise(
-    prisma.$queryRawUnsafe(query, ...replacements)
+  // Using executeRawQuerySafe for multi-database support
+  // Query is built conditionally but replacements are still parameterized for safety
+  const [queryError, tokenList] = await executeRawQuerySafe(
+    prisma,
+    query,
+    replacements
   );
 
   if (queryError) {

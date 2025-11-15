@@ -1,5 +1,5 @@
 import { safePromise } from '../../../../../utilities';
-import { prisma } from '../../../db/prisma';
+import { prisma, executeRawQuerySafe } from '../../../db';
 import { Prisma } from '@prisma/client';
 
 const DEFAULT_COLUMN = 'method, service_type, provider, via_provider, payload as request_payload, response, client_ip, client_headers, response_headers, status_code, started_at, completed_at';
@@ -19,10 +19,12 @@ export default async ({
   query = `${query} ORDER BY created_at DESC LIMIT ? OFFSET ?;`;
   const replacements = [method, provider, path, user.ref_id, 20, +skip || 0];
 
-  // Using $queryRawUnsafe because column names are dynamic
-  // Replacements are still parameterized for safety
-  const [error, data] = await safePromise(
-    prisma.$queryRawUnsafe(query, ...replacements)
+  // Using executeRawQuerySafe for multi-database support
+  // Column names are dynamic but replacements are still parameterized for safety
+  const [error, data] = await executeRawQuerySafe(
+    prisma,
+    query,
+    replacements
   );
   if (error) {
     throw error;

@@ -3,7 +3,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -20,8 +20,8 @@ model log_request {
   response         Json
   status_code      Int
   trace            Json
-  started_at       DateTime @default(now()) @db.Timestamp(0)
-  completed_at     DateTime @default(now()) @db.Timestamp(0)
+  started_at       DateTime @default(now()) @db.DateTime(0)
+  completed_at     DateTime @default(now()) @db.DateTime(0)
   client_ip        String   @db.VarChar(255)
   client_headers   Json
   response_headers Json
@@ -29,12 +29,12 @@ model log_request {
   error            Json?
   via_provider     String?  @db.VarChar(25)
   service_type     String?  @db.VarChar(25)
-  created_at       DateTime @default(now()) @db.Timestamp(0)
-  updated_at       DateTime @default(now()) @db.Timestamp(0)
+  created_at       DateTime @default(now()) @db.DateTime(0)
+  updated_at       DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider], map: "log_request_provider_idx")
-  @@index([ref_id], map: "log_request_ref_idx")
-  @@index([user_ref_id], map: "log_request_user_ref_idx")
+  @@index([provider], map: "provider_idx")
+  @@index([ref_id], map: "ref_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
 }
 
 model providers {
@@ -49,13 +49,13 @@ model providers {
   presets             Json?
   description         String?  @db.Text
   status              String?  @db.VarChar(255)
-  active              Int      @default(1) @db.SmallInt
-  hidden              Int      @default(0) @db.SmallInt
+  active              Int      @default(1) @db.TinyInt
+  hidden              Int      @default(0) @db.TinyInt
   image_url           String?  @db.Text
-  created_at          DateTime @default(now()) @db.Timestamp(0)
-  updated_at          DateTime @default(now()) @db.Timestamp(0)
+  created_at          DateTime @default(now()) @db.DateTime(0)
+  updated_at          DateTime @default(now()) @db.DateTime(0)
 
-  @@index([ref_id], map: "providers_ref_idx")
+  @@index([ref_id], map: "ref_idx")
 }
 
 model providers_credential_and_tokens {
@@ -70,11 +70,11 @@ model providers_credential_and_tokens {
   descriptions   String?  @db.Text
   remark         String?  @db.Text
   provider_error Json?
-  created_at     DateTime @default(now()) @db.Timestamp(0)
-  updated_at     DateTime @default(now()) @db.Timestamp(0)
+  created_at     DateTime @default(now()) @db.DateTime(0)
+  updated_at     DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider], map: "providers_credential_and_tokens_provider_idx")
-  @@index([user_ref_id], map: "providers_credential_and_tokens_user_ref_idx")
+  @@index([provider], map: "provider_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
 }
 
 model providers_intent_default_payloads {
@@ -90,13 +90,13 @@ model providers_intent_default_payloads {
   custom_headers  Json?
   response_format Json?
   status          String?  @db.VarChar(10)
-  active          Int      @default(0) @db.SmallInt
-  created_at      DateTime @default(now()) @db.Timestamp(0)
-  updated_at      DateTime @default(now()) @db.Timestamp(0)
+  active          Int      @default(0) @db.TinyInt
+  created_at      DateTime @default(now()) @db.DateTime(0)
+  updated_at      DateTime @default(now()) @db.DateTime(0)
 
-  @@index([intent_ref_id], map: "providers_intent_default_payloads_intent_ref_idx")
-  @@index([method], map: "providers_intent_default_payloads_method_idx")
-  @@index([ref_id], map: "providers_intent_default_payloads_ref_idx")
+  @@index([intent_ref_id], map: "intent_ref_idx")
+  @@index([method], map: "method_idx")
+  @@index([ref_id], map: "ref_idx")
 }
 
 model providers_intents {
@@ -119,14 +119,14 @@ model providers_intents {
   auth                  Json?
   response_format       Json?
   status                String?  @db.VarChar(10)
-  active                Int      @default(0) @db.SmallInt
-  created_at            DateTime @default(now()) @db.Timestamp(0)
-  updated_at            DateTime @default(now()) @db.Timestamp(0)
+  active                Int      @default(0) @db.TinyInt
+  created_at            DateTime @default(now()) @db.DateTime(0)
+  updated_at            DateTime @default(now()) @db.DateTime(0)
 
-  @@index([category], map: "providers_intents_category_idx")
-  @@index([method], map: "providers_intents_method_idx")
-  @@index([provider_id], map: "providers_intents_provider_id_idx")
-  @@index([ref_id], map: "providers_intents_ref_idx")
+  @@index([category(length: 50)], map: "category_idx")
+  @@index([method], map: "method_idx")
+  @@index([provider_id], map: "provider_id_idx")
+  @@index([ref_id], map: "ref_idx")
 }
 
 model providers_oauth_credentials {
@@ -137,11 +137,11 @@ model providers_oauth_credentials {
   credentials  Json?
   active       Boolean? @default(true)
   descriptions String?  @db.Text
-  created_at   DateTime @default(now()) @db.Timestamp(0)
-  updated_at   DateTime @default(now()) @db.Timestamp(0)
+  created_at   DateTime @default(now()) @db.DateTime(0)
+  updated_at   DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider], map: "providers_oauth_credentials_provider_idx")
-  @@index([user_ref_id], map: "providers_oauth_credentials_user_ref_idx")
+  @@index([provider], map: "provider_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
 }
 
 model users {
@@ -169,12 +169,12 @@ model users {
   extra           Json?
   export_user     Boolean?
   active          Boolean   @default(false)
-  login_at        DateTime? @db.Timestamp(0)
-  last_login_at   DateTime? @db.Timestamp(0)
-  created_at      DateTime  @default(now()) @db.Timestamp(0)
-  updated_at      DateTime  @default(now()) @db.Timestamp(0)
+  login_at        DateTime? @db.DateTime(0)
+  last_login_at   DateTime? @db.DateTime(0)
+  created_at      DateTime  @default(now()) @db.DateTime(0)
+  updated_at      DateTime  @default(now()) @db.DateTime(0)
 
-  @@index([ref_id], map: "users_ref_idx")
+  @@index([ref_id], map: "ref_idx")
 }
 
 model users_activated_providers {
@@ -182,13 +182,13 @@ model users_activated_providers {
   ref_id          String?  @db.VarChar(50)
   user_ref_id     String   @db.VarChar(50)
   provider_ref_id String   @db.VarChar(50)
-  active          Int      @default(1) @db.SmallInt
-  created_at      DateTime @default(now()) @db.Timestamp(0)
-  updated_at      DateTime @default(now()) @db.Timestamp(0)
+  active          Int      @default(1) @db.TinyInt
+  created_at      DateTime @default(now()) @db.DateTime(0)
+  updated_at      DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider_ref_id], map: "users_activated_providers_provider_ref_id")
-  @@index([ref_id], map: "users_activated_providers_ref_idx")
-  @@index([user_ref_id], map: "users_activated_providers_user_ref_id")
+  @@index([provider_ref_id], map: "provider_ref_id")
+  @@index([ref_id], map: "ref_idx")
+  @@index([user_ref_id], map: "user_ref_id")
 }
 
 model users_api_tokens {
@@ -198,16 +198,16 @@ model users_api_tokens {
   api_token           String    @db.VarChar(255)
   api_token_credits   Int?      @default(500)
   api_credit_consumed Int?      @default(0)
-  last_used           DateTime? @db.Timestamp(0)
+  last_used           DateTime? @db.DateTime(0)
   api_token_expiry    Int?      @default(90)
   api_token_config    Json?
   remark              String?   @db.Text
   active              Boolean   @default(false)
-  created_at          DateTime  @db.Timestamp(0)
-  updated_at          DateTime  @db.Timestamp(0)
+  created_at          DateTime  @db.DateTime(0)
+  updated_at          DateTime  @db.DateTime(0)
 
-  @@index([ref_id], map: "users_api_tokens_ref_idx")
-  @@index([user_ref_id], map: "users_api_tokens_user_ref_idx")
+  @@index([ref_id], map: "ref_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
 }
 
 model users_login_intents {
@@ -216,16 +216,16 @@ model users_login_intents {
   user_ref_id     String    @db.VarChar(255)
   login_intent    String    @db.VarChar(255)
   login_code_hash String   @db.VarChar(255)
-  expires_at      DateTime  @db.Timestamp(0)
-  login_at        DateTime? @db.Timestamp(0)
+  expires_at      DateTime  @db.DateTime(0)
+  login_at        DateTime? @db.DateTime(0)
   active          Boolean   @default(true)
   attempt         Int       @default(0)
-  created_at      DateTime  @default(now()) @db.Timestamp(0)
-  updated_at      DateTime  @default(now()) @db.Timestamp(0)
+  created_at      DateTime  @default(now()) @db.DateTime(0)
+  updated_at      DateTime  @default(now()) @db.DateTime(0)
 
-  @@index([ref_id], map: "users_login_intents_ref_idx")
-  @@index([user_ref_id], map: "users_login_intents_user_ref_idx")
-  @@index([login_code_hash], map: "users_login_intents_login_code_hash_idx")
+  @@index([ref_id], map: "ref_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
+  @@index([login_code_hash], map: "login_code_hash_idx")
 }
 
 model users_providers_intent_hydration {
@@ -239,11 +239,11 @@ model users_providers_intent_hydration {
   query_params Json?
   path_params  Json?
   headers      Json?
-  created_at   DateTime @default(now()) @db.Timestamp(0)
-  updated_at   DateTime @default(now()) @db.Timestamp(0)
+  created_at   DateTime @default(now()) @db.DateTime(0)
+  updated_at   DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider], map: "users_providers_intent_hydration_provider_idx")
-  @@index([user_ref_id], map: "users_providers_intent_hydration_user_ref_idx")
+  @@index([provider], map: "provider_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
   @@index([intent], map: "users_providers_intent_hydration_idx")
 }
 
@@ -255,12 +255,12 @@ model users_providers_saved_intents {
   intent      String   @db.VarChar(255)
   path        String   @db.VarChar(255)
   saved_mode  String   @default("fav") @db.VarChar(10)
-  created_at  DateTime @default(now()) @db.Timestamp(0)
-  updated_at  DateTime @default(now()) @db.Timestamp(0)
+  created_at  DateTime @default(now()) @db.DateTime(0)
+  updated_at  DateTime @default(now()) @db.DateTime(0)
 
-  @@index([provider], map: "users_providers_saved_intents_provider_idx")
-  @@index([user_ref_id], map: "users_providers_saved_intents_user_ref_idx")
-  @@index([intent], map: "users_providers_saved_intents_users_saved_intent_idx")
+  @@index([provider], map: "provider_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
+  @@index([intent], map: "users_saved_intent_idx")
 }
 
 model users_unified_config {
@@ -276,8 +276,8 @@ model users_unified_config {
   updated_at   DateTime? @default(now()) @db.Timestamp(0)
 
   @@unique([user_ref_id, unified_type], map: "fk_users_unified_config_idx")
-  @@index([ref_id], map: "users_unified_config_ref_idx")
-  @@index([unified_type], map: "users_unified_config_unified_type_idx")
-  @@index([user_ref_id], map: "users_unified_config_user_ref_idx")
+  @@index([ref_id], map: "ref_idx")
+  @@index([unified_type], map: "unified_type_idx")
+  @@index([user_ref_id], map: "user_ref_idx")
 }
 
