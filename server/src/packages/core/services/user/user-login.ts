@@ -13,11 +13,11 @@ import {
 import { template } from '../../template';
 
 import DBConfig from '../../db';
+import { prisma } from '../../db/prisma';
+import { usersLoginIntentSnakeCaseToCamelCase, usersLoginIntentCamelCaseToSnakeCase } from '../../db/prisma/converters';
 
 import findUser from './find-user';
 import userService from './user';
-
-const { UsersLoginIntent } = DBConfig.models;
 
 const { theme } = template;
 const { random, jwt } = modules;
@@ -44,7 +44,10 @@ export default {
       login_code_hash,
       expires_at,
     };
-    const [error] = await safePromise(UsersLoginIntent.create(payload));
+    const prismaData = usersLoginIntentSnakeCaseToCamelCase(payload);
+    const [error] = await safePromise(
+      prisma.users_login_intents.create({ data: prismaData })
+    );
 
     if (error) {
       loggerService.error('Inten error', error);
@@ -136,9 +139,16 @@ export default {
       login_code_hash: token,
       active: 1,
     };
-    const [error, result] = await safePromise(UsersLoginIntent.findOne({
-      where,
-    }));
+    // Convert active: 1 to active: true for Prisma
+    const prismaWhere: any = {
+      login_intent: where.login_intent,
+      login_code_hash: where.login_code_hash,
+      active: where.active === 1 ? true : where.active,
+    };
+
+    const [error, result] = await safePromise(
+      prisma.users_login_intents.findFirst({ where: prismaWhere })
+    );
 
     if (error) {
       const message = 'Error fetch the token details';
@@ -153,7 +163,7 @@ export default {
       throw error;
     }
 
-    const data = result.toJSON();
+    const data = usersLoginIntentCamelCaseToSnakeCase(result);
     const linkExpired = moment().isAfter(data.expires_at);
 
     if (linkExpired) {
@@ -199,11 +209,24 @@ export default {
     const update: { [key: string]: any } = {
       login_at: moment().utc().format(),
       attempt: data.attempt + 1,
-      active: 0,
+      active: false,
     };
-    const [errorInt] = await safePromise(UsersLoginIntent.update(update, {
-      where,
-    }));
+    
+    // Find intent by login_code_hash first, then update by id (unique field)
+    const existingIntent = await prisma.users_login_intents.findFirst({
+      where: prismaWhere,
+    });
+    
+    if (!existingIntent) {
+      throw new Error('Login intent not found');
+    }
+
+    const [errorInt] = await safePromise(
+      prisma.users_login_intents.update({
+        where: { id: existingIntent.id },
+        data: update,
+      })
+    );
 
     if (errorInt) {
       const message = 'Error updating login details';

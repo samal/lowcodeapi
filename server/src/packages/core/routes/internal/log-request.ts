@@ -5,11 +5,8 @@ import config from '../../../../config';
 import { safePromise } from '../../../../utilities';
 import intents, { providerList } from '../../../../intents';
 
-import DBConfig from '../../db';
-
-const { connection } = DBConfig;
-
-const { LogRequest } = DBConfig.models;
+import { prisma } from '../../db/prisma';
+import { logRequestSnakeCaseToCamelCase } from '../../db/prisma/converters';
 
 const router: Router = express.Router();
 
@@ -57,8 +54,11 @@ router.post('/:m1gonaon/log-request', async (req: Request, res: Response) => {
     trace: { ...body, query: { ...body.query, api_token: undefined } },
   };
 
+  const prismaPayload = logRequestSnakeCaseToCamelCase(payload);
   const [queryError] = await safePromise(
-    LogRequest.create(payload),
+    prisma.log_request.create({
+      data: prismaPayload,
+    }),
   );
 
   if (queryError) {
@@ -107,9 +107,8 @@ router.get('/:m1gonaon/providers-seed', async (req: Request, res: Response) => {
       list.forEach(async (item : any) => {
         const placeholders = new Array(item.length).fill('?').join(',');
         console.log(item);
-        await connection.query(`INSERT INTO providers (ref_id, name, description, logo_url, auth_type, auth_config, status, released, active, website, credential_link, endpoint, total_api) values (${placeholders})`, {
-          replacements: item,
-        });
+        const query = `INSERT INTO providers (ref_id, name, description, logo_url, auth_type, auth_config, status, released, active, website, credential_link, endpoint, total_api) values (${placeholders})`;
+        await prisma.$executeRawUnsafe(query, ...item);
       });
     } catch (e) {
       console.log(e);
@@ -135,7 +134,9 @@ router.get('/:m1gonaon/intents-seed', async (req: Request, res: Response) => {
     }
     try {
       const keys = Object.keys(routes);
-      await connection.query(`DELETE FROM providers_intents WHERE provider_id='${intent}';`);
+      // Fixed security issue: use parameterized query instead of string interpolation
+      const deleteQuery = 'DELETE FROM providers_intents WHERE provider_id=?';
+      await prisma.$executeRawUnsafe(deleteQuery, intent);
       const promise = Promise.all([...keys.map(async (key : any) => {
         const temp = [
           key,
@@ -159,9 +160,8 @@ router.get('/:m1gonaon/intents-seed', async (req: Request, res: Response) => {
           routes[key].wip || 0,
         ];
         const placeholders = new Array(temp.length).fill('?').join(',');
-        await connection.query(`INSERT INTO providers_intents (ref_id, provider_id, text, provider_alias_intent, category, type, request_type, method, query_params, path_params, body, custom_headers,domain_params, meta, auth, response_format, status, active) values (${placeholders})`, {
-          replacements: temp,
-        });
+        const insertQuery = `INSERT INTO providers_intents (ref_id, provider_id, text, provider_alias_intent, category, type, request_type, method, query_params, path_params, body, custom_headers,domain_params, meta, auth, response_format, status, active) values (${placeholders})`;
+        await prisma.$executeRawUnsafe(insertQuery, ...temp);
       })]);
 
       await promise;

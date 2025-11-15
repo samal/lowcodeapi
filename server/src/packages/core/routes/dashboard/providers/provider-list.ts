@@ -1,39 +1,36 @@
-import Sequelize from 'sequelize';
 import axios from 'axios';
 import express, { Request, Response, Router } from 'express';
 import { loggerService, safePromise } from '../../../../../utilities';
 import { providerList, providerMap } from '../../../../../intents';
 
 import Middlewares from '../../../middlewares';
-
-import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
 
 const { isAuthorized } = Middlewares;
 
 const ASSET_ENDPOINT = process.env.ASSET_ENDPOINT || '/images/providers/logos';
 const { TARGET_BUILD_ENDPOINT, API_HEX } : any = process.env;
-const { connection } = DBConfig;
 
 const router: Router = express.Router();
 
 async function providers({ query } : { [key:string]: any}) {
-  // const sqlQuery = `SELECT * from providers ORDER BY name ASC;`;
+  // Fixed security issue: use parameterized queries instead of string interpolation
   let sqlQuery = 'SELECT *, (select COUNT(*) from providers_intents where providers.ref_id=providers_intents.provider_id) as total_api FROM providers';
+  const replacements: any = [];
 
   if (query.search_by_name) {
-    sqlQuery = `${sqlQuery} WHERE name LIKE '%${query.search_by_name}%'`;
+    sqlQuery = `${sqlQuery} WHERE name LIKE ?`;
+    replacements.push(`%${query.search_by_name}%`);
   } else if (query.search_by_auth_type) {
-    sqlQuery = `${sqlQuery} WHERE auth_type = '${query.search_by_auth_type}'`;
+    sqlQuery = `${sqlQuery} WHERE auth_type = ?`;
+    replacements.push(query.search_by_auth_type);
   }
 
   sqlQuery = `${sqlQuery} ORDER BY name ASC;`;
 
-  const replacements: any = [];
-
-  const [error, data] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, ...replacements)
+  );
 
   if (error) {
     throw error;
@@ -54,13 +51,11 @@ async function providers({ query } : { [key:string]: any}) {
 }
 
 async function providersIntents({ provider, release } : { [key:string]: any}) {
-  const replacements: any = [provider.toLowerCase().trim()];
   const sqlQuery = 'SELECT * from providers_intents WHERE provider_id=?';
 
-  const [error, data] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, provider.toLowerCase().trim())
+  );
   if (error) {
     throw error;
   }
@@ -163,12 +158,10 @@ router.get('/providers/list-all', isAuthorized, async (req: Request, res: Respon
   const { query } : any = req;
   const { user } : any = req.session;
 
-  const uReplacements: any = [user.ref_id];
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlUQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: uReplacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -189,23 +182,23 @@ router.get('/providers/list-all', isAuthorized, async (req: Request, res: Respon
     });
   }
 
-  // const sqlQuery = `SELECT * from providers ORDER BY name ASC;`;
+  // Fixed security issue: use parameterized queries instead of string interpolation
   let sqlQuery = 'SELECT *, (select COUNT(*) from providers_intents where providers.ref_id=providers_intents.provider_id) as total_api FROM providers';
+  const replacements: any = [];
 
   if (query.search_by_name) {
-    sqlQuery = `${sqlQuery} WHERE name LIKE '%${query.search_by_name}%'`;
+    sqlQuery = `${sqlQuery} WHERE name LIKE ?`;
+    replacements.push(`%${query.search_by_name}%`);
   } else if (query.search_by_auth_type) {
-    sqlQuery = `${sqlQuery} WHERE auth_type = '${query.search_by_auth_type}'`;
+    sqlQuery = `${sqlQuery} WHERE auth_type = ?`;
+    replacements.push(query.search_by_auth_type);
   }
 
   sqlQuery = `${sqlQuery} ORDER BY name ASC;`;
 
-  const replacements: any = [];
-
-  const [error, data] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, ...replacements)
+  );
 
   if (error) {
     console.log(error);
@@ -258,12 +251,10 @@ router.post('/providers', isAuthorized, async (req: Request, res: Response) => {
 
   const { user } : any = req.session;
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -286,12 +277,9 @@ router.post('/providers', isAuthorized, async (req: Request, res: Response) => {
 
   const query = 'SELECT * from providers WHERE ref_id=?';
 
-  const sReplacements: any = [body.provider.trim().toLowerCase()];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: sReplacements,
-  }));
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, body.provider.trim().toLowerCase())
+  );
 
   if (error) {
     console.log(error);
@@ -327,9 +315,9 @@ router.post('/providers', isAuthorized, async (req: Request, res: Response) => {
   const placeholders = Array(iReplacements.length).fill('?').join(',');
   const sqlUQuery = `INSERT INTO providers (ref_id, name, description, logo_url, auth_type, auth, auth_config, headers, credential_link, api_endpoint, website, api_link_ref, last_edited_by_user_ref_id, last_edited_by_user) VALUES (${placeholders});`;
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: iReplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...iReplacements)
+  );
 
   if (queryError1) {
     return res.status(500).json({
@@ -353,12 +341,10 @@ router.put('/providers', isAuthorized, async (req: Request, res: Response) => {
     });
   }
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -399,9 +385,9 @@ router.put('/providers', isAuthorized, async (req: Request, res: Response) => {
   ];
   const sqlUQuery = 'UPDATE providers SET released=?, name=?, description=?, logo_url=?, auth_type=?, auth=?, auth_config=?, headers=?, credential_link=?, api_endpoint=?, website=?, api_link_ref=?, last_edited_by_user_ref_id=?, last_edited_by_user=?  WHERE ref_id=?;';
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: ureplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...ureplacements)
+  );
 
   if (queryError1) {
     return res.status(500).json({
@@ -424,12 +410,10 @@ router.put('/providers/release', isAuthorized, async (req: Request, res: Respons
     });
   }
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -459,9 +443,9 @@ router.put('/providers/release', isAuthorized, async (req: Request, res: Respons
   ];
   const sqlUQuery = 'UPDATE providers SET released=?, last_edited_by_user_ref_id=?, last_edited_by_user=? WHERE ref_id=?;';
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: ureplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...ureplacements)
+  );
 
   if (queryError1) {
     return res.status(500).json({
@@ -479,12 +463,10 @@ router.get('/providers/intents', isAuthorized, async (req: Request, res: Respons
   const { query } : any = req;
   const { user } : any = req.session;
 
-  const uReplacements: any = [user.ref_id];
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlUQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: uReplacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -510,13 +492,11 @@ router.get('/providers/intents', isAuthorized, async (req: Request, res: Respons
       message: 'Provider is required for intent.',
     });
   }
-  const replacements: any = [query.provider.toLowerCase().trim()];
   const sqlQuery = 'SELECT * from providers_intents WHERE provider_id=?';
 
-  const [error, data] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, query.provider.toLowerCase().trim())
+  );
   if (error) {
     console.log(error);
     return res.status(500).json({
@@ -586,12 +566,10 @@ router.post('/providers/intents', isAuthorized, async (req: Request, res: Respon
 
   const { user } : any = req.session;
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -637,9 +615,9 @@ router.post('/providers/intents', isAuthorized, async (req: Request, res: Respon
   const placeholders = Array(iReplacements.length).fill('?').join(',');
   const sqlUQuery = `INSERT INTO providers_intents (provider_id,ref_id, provider_intent, provider_alias_intent, provider_proxy_intent, text, category, method, type, request_type, query_params, path_params, body, custom_headers , domain_params, meta, response_format, last_edited_by_user_ref_id, last_edited_by_user) VALUES (${placeholders});`;
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: iReplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...iReplacements)
+  );
 
   if (queryError1) {
     console.log(queryError1);
@@ -664,12 +642,10 @@ router.put('/providers/intents', isAuthorized, async (req: Request, res: Respons
     });
   }
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -715,9 +691,9 @@ router.put('/providers/intents', isAuthorized, async (req: Request, res: Respons
   ];
   const sqlUQuery = 'UPDATE providers_intents SET text=?, provider_intent=?, provider_alias_intent=?, provider_proxy_intent=?, category=?, method=?, type=?, request_type=?, query_params=?, path_params=?, body=?, custom_headers=? , domain_params=? , meta=?, response_format=?, status=?, last_edited_by_user_ref_id=?, last_edited_by_user=? WHERE provider_id=? AND ref_id=?;';
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: ureplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...ureplacements)
+  );
 
   if (queryError1) {
     return res.status(500).json({
@@ -740,12 +716,10 @@ router.delete('/providers/intents', isAuthorized, async (req: Request, res: Resp
     });
   }
 
-  const replacements: any = [user.ref_id];
   const sqlQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);
@@ -773,9 +747,9 @@ router.delete('/providers/intents', isAuthorized, async (req: Request, res: Resp
   ];
   const sqlUQuery = 'DELETE FROM providers_intents WHERE provider_id=? AND ref_id=? LIMIT 1;';
 
-  const [queryError1] = await safePromise(connection.query(sqlUQuery, {
-    replacements: ureplacements,
-  }));
+  const [queryError1] = await safePromise(
+    prisma.$executeRawUnsafe(sqlUQuery, ...ureplacements)
+  );
 
   if (queryError1) {
     return res.status(500).json({
@@ -792,12 +766,10 @@ router.post('/providers/commit', isAuthorized, async (req: Request, res: Respons
   const { query } : any = req;
   const { user } : any = req.session;
 
-  const uReplacements: any = [user.ref_id];
   const sqlUQuery = 'SELECT first_name, last_name, email, extra FROM users where ref_id=?';
-  const [queryError, queryResult] = await safePromise(connection.query(sqlUQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: uReplacements,
-  }));
+  const [queryError, queryResult] = await safePromise(
+    prisma.$queryRawUnsafe(sqlUQuery, user.ref_id)
+  );
 
   if (queryError) {
     console.log(queryError);

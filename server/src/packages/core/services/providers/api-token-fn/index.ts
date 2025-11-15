@@ -1,5 +1,4 @@
-import Sequelize from 'sequelize';
-import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
 
 import { loggerService, safePromise } from '../../../../../utilities';
 import tokenService from '../../user/key-service';
@@ -7,8 +6,6 @@ import tokenService from '../../user/key-service';
 import config from '../../../../../config';
 
 const OAUTH_CREDS = config.OAUTH;
-
-const { connection } = DBConfig;
 
 export default async ({ api_token, provider }: { [key: string]: any }) => {
   const [tokenError, token] = await safePromise(tokenService.get(api_token));
@@ -39,24 +36,22 @@ export default async ({ api_token, provider }: { [key: string]: any }) => {
   }
 
   // FIX: Due to Twitters double auth_type, we have to check the auth_type also
-  const dbQuery = `
+  const query = `
     SELECT 
       pct.config as config,
       pct.credentials as credentials,
       pct.provider_data as oauth_data
-
     FROM providers_credential_and_tokens pct
     INNER JOIN users_activated_providers uap ON (uap.user_ref_id=pct.user_ref_id)
-    
     WHERE uap.user_ref_id=?
     AND pct.provider=? 
-    AND uap.provider_ref_id=? LIMIT 1;
+    AND uap.provider_ref_id=? 
+    LIMIT 1;
   `;
-
-  const [queryError, credsData] = await safePromise(connection.query(dbQuery, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: [token.user_ref_id, provider.toLowerCase(), provider.toLowerCase()],
-  }));
+  
+  const [queryError, credsData] = await safePromise(
+    prisma.$queryRawUnsafe(query, token.user_ref_id, provider.toLowerCase(), provider.toLowerCase())
+  );
 
   if (queryError) {
     throw queryError;
