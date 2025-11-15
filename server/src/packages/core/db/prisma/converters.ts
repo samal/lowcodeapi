@@ -207,3 +207,165 @@ export function usersApiTokenCamelCaseToSnakeCase(prismaToken: any): any {
   return apiToken;
 }
 
+/**
+ * UsersLoginIntent field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const USERS_LOGIN_INTENT_FIELD_MAP = {
+  ref_id: 'ref_id', // Will be 'refId' if we update schema to camelCase
+  user_ref_id: 'user_ref_id', // Will be 'userRefId'
+  login_intent: 'login_intent', // Will be 'loginIntent'
+  login_code_hash: 'login_code_hash', // Will be 'loginCodeHash'
+  expires_at: 'expires_at', // Will be 'expiresAt'
+  login_at: 'login_at', // Will be 'loginAt'
+  created_at: 'created_at', // Will be 'createdAt'
+  updated_at: 'updated_at', // Will be 'updatedAt'
+} as const;
+
+/**
+ * Convert UsersLoginIntent from snake_case (API format) to Prisma format
+ */
+export function usersLoginIntentSnakeCaseToCamelCase(apiIntent: any): any {
+  if (!apiIntent) return null;
+  
+  const prismaIntent: any = {
+    // Fields that don't need conversion (already match)
+    id: apiIntent.id,
+    active: apiIntent.active !== undefined ? apiIntent.active : true,
+    attempt: apiIntent.attempt !== undefined ? apiIntent.attempt : 0,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_LOGIN_INTENT_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiIntent[apiKey] !== undefined) {
+      prismaIntent[prismaKey] = apiIntent[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaIntent.created_at) {
+    prismaIntent.created_at = new Date();
+  }
+  if (!prismaIntent.updated_at) {
+    prismaIntent.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaIntent)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersLoginIntent from Prisma format to snake_case (API format)
+ */
+export function usersLoginIntentCamelCaseToSnakeCase(prismaIntent: any): any {
+  if (!prismaIntent) return null;
+  
+  const apiIntent: any = {
+    // Fields that don't need conversion
+    id: prismaIntent.id,
+    active: prismaIntent.active,
+    attempt: prismaIntent.attempt,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_LOGIN_INTENT_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaIntent[prismaKey] !== undefined) {
+      apiIntent[apiKey] = prismaIntent[prismaKey];
+    }
+  });
+  
+  return apiIntent;
+}
+
+/**
+ * UsersActivatedProviders field mappings
+ * Maps API snake_case → Prisma format
+ * Note: active is Int (TinyInt) in Prisma, but Boolean in API
+ */
+export const USERS_ACTIVATED_PROVIDERS_FIELD_MAP = {
+  ref_id: 'ref_id', // Will be 'refId' if we update schema to camelCase
+  user_ref_id: 'user_ref_id', // Will be 'userRefId'
+  provider_ref_id: 'provider_ref_id', // Will be 'providerRefId'
+  created_at: 'created_at', // Will be 'createdAt'
+  updated_at: 'updated_at', // Will be 'updatedAt'
+} as const;
+
+/**
+ * Convert UsersActivatedProviders from snake_case (API format) to Prisma format
+ * Handles active: boolean → active: Int (1/0)
+ */
+export function usersActivatedProvidersSnakeCaseToCamelCase(apiProvider: any): any {
+  if (!apiProvider) return null;
+  
+  const prismaProvider: any = {
+    // Fields that don't need conversion
+    id: apiProvider.id,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_ACTIVATED_PROVIDERS_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiProvider[apiKey] !== undefined) {
+      prismaProvider[prismaKey] = apiProvider[apiKey];
+    }
+  });
+  
+  // Handle active: boolean → Int (1/0) for Prisma
+  if (apiProvider.active !== undefined) {
+    prismaProvider.active = apiProvider.active === true || apiProvider.active === 1 ? 1 : 0;
+  } else {
+    prismaProvider.active = 1; // Default
+  }
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaProvider.created_at) {
+    prismaProvider.created_at = new Date();
+  }
+  if (!prismaProvider.updated_at) {
+    prismaProvider.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaProvider)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersActivatedProviders from Prisma format to snake_case (API format)
+ * Handles active: Int (1/0) → active: boolean
+ */
+export function usersActivatedProvidersCamelCaseToSnakeCase(prismaProvider: any): any {
+  if (!prismaProvider) return null;
+  
+  const apiProvider: any = {
+    // Fields that don't need conversion
+    id: prismaProvider.id,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_ACTIVATED_PROVIDERS_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaProvider[prismaKey] !== undefined) {
+      apiProvider[apiKey] = prismaProvider[prismaKey];
+    }
+  });
+  
+  // Handle active: Int (1/0) → boolean for API
+  if (prismaProvider.active !== undefined) {
+    apiProvider.active = prismaProvider.active === 1 || prismaProvider.active === true;
+  }
+  
+  return apiProvider;
+}
+

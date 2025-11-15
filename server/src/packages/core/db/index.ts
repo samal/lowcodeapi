@@ -5,8 +5,8 @@ import { prisma } from './prisma';
 // User
 // UserSchema - Migrated to Prisma, removed from Sequelize
 // UsersAPITokenSchema - Migrated to Prisma, removed from Sequelize
-import UsersLoginIntentSchema from './schema/user/UsersLoginIntent';
-import UsersActivatedProvidersSchema from './schema/user/UsersActivatedProviders';
+// UsersLoginIntentSchema - Migrated to Prisma, removed from Sequelize
+// UsersActivatedProvidersSchema - Migrated to Prisma, removed from Sequelize
 import UsersProvidersSavedIntent from './schema/user/UsersProvidersSavedIntent';
 import UsersProvidersIntentHydration from './schema/user/UsersProvidersIntentHydration';
 
@@ -71,10 +71,10 @@ export default {
   models: {
     // User: Migrated to Prisma - removed from Sequelize
     // UsersAPIToken: Migrated to Prisma - removed from Sequelize
-    UsersActivatedProviders: UsersActivatedProvidersSchema(sequelize),
+    // UsersLoginIntent: Migrated to Prisma - removed from Sequelize
+    // UsersActivatedProviders: Migrated to Prisma - removed from Sequelize
     UsersProvidersSavedIntent: UsersProvidersSavedIntent(sequelize),
     UsersProvidersIntentHydration: UsersProvidersIntentHydration(sequelize),
-    UsersLoginIntent: UsersLoginIntentSchema(sequelize),
     ProvidersCredentialAndToken: ProvidersCredentialAndTokenSchema(sequelize),
     ProvidersIntentDefaultPayloads: ProvidersIntentDefaultPayloads(sequelize),
     TrackIntentRequest: TrackIntentRequest(sequelize),
