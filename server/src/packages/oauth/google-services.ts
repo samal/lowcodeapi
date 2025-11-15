@@ -169,8 +169,10 @@ export default (app: Application): void => {
   };
 
   GOOGLE_SERVICE.forEach((provider) => {
-    if (!config.OAUTH[provider]) return;
-    let { SCOPE: MERGED_SCOPE, CLIENT_ID, CLIENT_SECRET } = config.OAUTH[provider];
+    // if (!config.OAUTH[provider]) return;
+    let { SCOPE: MERGED_SCOPE } : { SCOPE: string[] } = config.OAUTH && config.OAUTH[provider] ? config.OAUTH[provider] :  config.OAUTH.GOOGLE;
+    let CLIENT_ID : string;
+    let CLIENT_SECRET : string;
 
     const GOOGLE_AUTH_PATH = `${AUTH_MOUNT_POINT}/${provider.toLowerCase()}`;
     const GOOGLE_AUTH_CALLBACK_PATH = `${GOOGLE_AUTH_PATH}/callback`;
