@@ -447,3 +447,225 @@ export function providersCredentialAndTokenCamelCaseToSnakeCase(prismaCred: any)
   return apiCred;
 }
 
+/**
+ * LogRequest field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const LOG_REQUEST_FIELD_MAP = {
+  ref_id: 'ref_id',
+  user_ref_id: 'user_ref_id',
+  service_type: 'service_type',
+  provider: 'provider',
+  via_provider: 'via_provider',
+  method: 'method',
+  intent: 'intent',
+  path: 'path',
+  api_endpoint: 'api_endpoint',
+  status_code: 'status_code',
+  payload: 'payload',
+  response: 'response',
+  client_ip: 'client_ip',
+  client_headers: 'client_headers',
+  response_headers: 'response_headers',
+  is_error: 'is_error',
+  error: 'error',
+  trace: 'trace',
+  started_at: 'started_at',
+  completed_at: 'completed_at',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert LogRequest from snake_case (API format) to Prisma format
+ */
+export function logRequestSnakeCaseToCamelCase(apiLog: any): any {
+  if (!apiLog) return null;
+  
+  const prismaLog: any = {};
+  
+  // Map snake_case fields using field map
+  Object.entries(LOG_REQUEST_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiLog[apiKey] !== undefined) {
+      prismaLog[prismaKey] = apiLog[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaLog.created_at) {
+    prismaLog.created_at = new Date();
+  }
+  if (!prismaLog.updated_at) {
+    prismaLog.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaLog)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert LogRequest from Prisma format to snake_case (API format)
+ */
+export function logRequestCamelCaseToSnakeCase(prismaLog: any): any {
+  if (!prismaLog) return null;
+  
+  const apiLog: any = {
+    id: prismaLog.id,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(LOG_REQUEST_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaLog[prismaKey] !== undefined) {
+      apiLog[apiKey] = prismaLog[prismaKey];
+    }
+  });
+  
+  return apiLog;
+}
+
+/**
+ * UsersUnifiedConfig field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const USERS_UNIFIED_CONFIG_FIELD_MAP = {
+  ref_id: 'ref_id',
+  user_ref_id: 'user_ref_id',
+  unified_type: 'unified_type',
+  provider: 'provider',
+  json_config: 'json_config',
+  remark: 'remark',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert UsersUnifiedConfig from snake_case (API format) to Prisma format
+ */
+export function usersUnifiedConfigSnakeCaseToCamelCase(apiConfig: any): any {
+  if (!apiConfig) return null;
+  
+  const prismaConfig: any = {
+    active: apiConfig.active !== undefined ? apiConfig.active : false,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(USERS_UNIFIED_CONFIG_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiConfig[apiKey] !== undefined) {
+      prismaConfig[prismaKey] = apiConfig[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaConfig.created_at) {
+    prismaConfig.created_at = new Date();
+  }
+  if (!prismaConfig.updated_at) {
+    prismaConfig.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaConfig)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert UsersUnifiedConfig from Prisma format to snake_case (API format)
+ */
+export function usersUnifiedConfigCamelCaseToSnakeCase(prismaConfig: any): any {
+  if (!prismaConfig) return null;
+  
+  const apiConfig: any = {
+    id: prismaConfig.id,
+    active: prismaConfig.active,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(USERS_UNIFIED_CONFIG_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaConfig[prismaKey] !== undefined) {
+      apiConfig[apiKey] = prismaConfig[prismaKey];
+    }
+  });
+  
+  return apiConfig;
+}
+
+/**
+ * TrackIntentRequest field mappings
+ * Maps API snake_case → Prisma format
+ */
+export const TRACK_INTENT_REQUEST_FIELD_MAP = {
+  user_ref_id: 'user_ref_id',
+  provider: 'provider',
+  method: 'method',
+  intent: 'intent',
+  created_at: 'created_at',
+  updated_at: 'updated_at',
+} as const;
+
+/**
+ * Convert TrackIntentRequest from snake_case (API format) to Prisma format
+ */
+export function trackIntentRequestSnakeCaseToCamelCase(apiTrack: any): any {
+  if (!apiTrack) return null;
+  
+  const prismaTrack: any = {};
+  
+  // Map snake_case fields using field map
+  Object.entries(TRACK_INTENT_REQUEST_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiTrack[apiKey] !== undefined) {
+      prismaTrack[prismaKey] = apiTrack[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaTrack.created_at) {
+    prismaTrack.created_at = new Date();
+  }
+  if (!prismaTrack.updated_at) {
+    prismaTrack.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaTrack)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert TrackIntentRequest from Prisma format to snake_case (API format)
+ */
+export function trackIntentRequestCamelCaseToSnakeCase(prismaTrack: any): any {
+  if (!prismaTrack) return null;
+  
+  const apiTrack: any = {
+    id: prismaTrack.id,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(TRACK_INTENT_REQUEST_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaTrack[prismaKey] !== undefined) {
+      apiTrack[apiKey] = prismaTrack[prismaKey];
+    }
+  });
+  
+  return apiTrack;
+}
+

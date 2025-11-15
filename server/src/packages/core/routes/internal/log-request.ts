@@ -6,10 +6,10 @@ import { safePromise } from '../../../../utilities';
 import intents, { providerList } from '../../../../intents';
 
 import DBConfig from '../../db';
+import { prisma } from '../../db/prisma';
+import { logRequestSnakeCaseToCamelCase } from '../../db/prisma/converters';
 
 const { connection } = DBConfig;
-
-const { LogRequest } = DBConfig.models;
 
 const router: Router = express.Router();
 
@@ -57,8 +57,11 @@ router.post('/:m1gonaon/log-request', async (req: Request, res: Response) => {
     trace: { ...body, query: { ...body.query, api_token: undefined } },
   };
 
+  const prismaPayload = logRequestSnakeCaseToCamelCase(payload);
   const [queryError] = await safePromise(
-    LogRequest.create(payload),
+    prisma.log_request.create({
+      data: prismaPayload,
+    }),
   );
 
   if (queryError) {

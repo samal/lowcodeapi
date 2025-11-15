@@ -12,13 +12,12 @@ import UsersProvidersIntentHydration from './schema/user/UsersProvidersIntentHyd
 
 // Provider
 // ProvidersCredentialAndTokenSchema - Migrated to Prisma, removed from Sequelize
+// TrackIntentRequest - Migrated to Prisma, removed from Sequelize (not currently used, converters ready)
+// LogRequest - Migrated to Prisma, removed from Sequelize
 import ProvidersIntentDefaultPayloads from './schema/provider/ProvidersIntentDefaultPayloads';
 
-import TrackIntentRequest from './schema/provider/TrackIntentRequest';
-import LogRequest from './schema/provider/LogRequest';
-
 // Unified
-import UsersUnifiedConfig from './schema/unified/UsersUnifiedConfig';
+// UsersUnifiedConfig - Migrated to Prisma, removed from Sequelize
 
 const dbOptions = config.DB;
 
@@ -74,12 +73,12 @@ export default {
     // UsersLoginIntent: Migrated to Prisma - removed from Sequelize
     // UsersActivatedProviders: Migrated to Prisma - removed from Sequelize
     // ProvidersCredentialAndToken: Migrated to Prisma - removed from Sequelize
+    // TrackIntentRequest: Migrated to Prisma - removed from Sequelize
+    // LogRequest: Migrated to Prisma - removed from Sequelize
+    // UsersUnifiedConfig: Migrated to Prisma - removed from Sequelize
     UsersProvidersSavedIntent: UsersProvidersSavedIntent(sequelize),
     UsersProvidersIntentHydration: UsersProvidersIntentHydration(sequelize),
     ProvidersIntentDefaultPayloads: ProvidersIntentDefaultPayloads(sequelize),
-    TrackIntentRequest: TrackIntentRequest(sequelize),
-    LogRequest: LogRequest(sequelize),
-    UsersUnifiedConfig: UsersUnifiedConfig(sequelize),
   },
   connect() {
     return sequelize;
