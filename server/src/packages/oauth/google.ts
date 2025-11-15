@@ -17,6 +17,8 @@ import {
   tokenService,
 } from '../core/services/user';
 import db from '../core/db';
+import { prisma } from '../core/db/prisma';
+import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase } from '../core/db/prisma/converters';
 import { loggerService } from '../../utilities';
 import { notify } from '../../utilities/notify';
 
@@ -57,12 +59,12 @@ const notifyEvent = async (isNew: boolean, provider: string, user: any, req: any
 
 const { generateApiToken } = random;
 
-const { User, ProvidersCredentialAndToken } = db.models;
+const { ProvidersCredentialAndToken } = db.models;
 
 const { AUTH_MOUNT_POINT } = config;
 
 const isNewUserAllowed = async () => {
-  const [error, count] = await safePromise(User.count());
+  const [error, count] = await safePromise(prisma.users.count());
 
   if (error) throw error;
   return !(count >= +USER_ALLOWED_COUNT);
@@ -90,7 +92,7 @@ export default (app: Application): void => {
   ) => {
     const email = profile.emails[0].value;
     let userData = null;
-    let findWhere = {};
+    let findWhere : { where: any } = { where: {} };
     if (req.session && req.session.user) {
       const { ref_id } = req.session.user;
       findWhere = {
@@ -109,12 +111,32 @@ export default (app: Application): void => {
         },
       };
     }
-    const [error, userDataObj] = await safePromise(User.findOne(findWhere));
+    // Convert Sequelize where clause to Prisma format
+    let prismaWhere: any = {};
+    if (findWhere.where) {
+      if (findWhere.where[Op.or]) {
+        // Handle OR condition
+        const orConditions = findWhere.where[Op.or];
+        prismaWhere = {
+          OR: orConditions.map((cond: any) => {
+            if (cond.ref_id) return { ref_id: cond.ref_id };
+            if (cond.email) return { email: cond.email };
+            return cond;
+          }),
+        };
+      } else {
+        prismaWhere = findWhere.where;
+      }
+    }
+
+    const [error, userDataObj] = await safePromise(
+      prisma.users.findFirst({ where: prismaWhere })
+    );
 
     if (error) {
       return cb(error);
     }
-    userData = userDataObj;
+    userData = userDataObj ? userCamelCaseToSnakeCase(userDataObj) : null;
     if (!userData) {
       const [nerror, newUserAllowed] = await safePromise(isNewUserAllowed());
       if (nerror) {
@@ -141,12 +163,15 @@ export default (app: Application): void => {
         suffix: SEED_USER_API_KEY_SUFFIX,
         api_token_limit: SEED_USER_API_TOKEN_LIMIT,
       };
-      const [error, userNew] = await safePromise(User.create(user));
+      const prismaData = userSnakeCaseToCamelCase(user);
+      const [error, userNew] = await safePromise(
+        prisma.users.create({ data: prismaData })
+      );
       if (error) {
         loggerService.error(error);
         return cb(error);
       }
-      userData = userNew.toJSON();
+      userData = userCamelCaseToSnakeCase(userNew);
       userData.new = true;
 
       if (USER_API_TOKEN_ENABLED) {
@@ -163,7 +188,7 @@ export default (app: Application): void => {
         }
       }
     } else {
-      userData = userData.toJSON();
+      // userData is already converted from Prisma
 
       // session exists found but the not same email
       if (userData.email !== email) {

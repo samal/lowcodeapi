@@ -21,12 +21,14 @@ import {
 } from '../core/services/user';
 
 import db from '../core/db';
+import { prisma } from '../core/db/prisma';
+import { userCamelCaseToSnakeCase } from '../core/db/prisma/converters';
 
 import providersJsonFile from './providers.json';
 
 const providerJson: { [key: string]: any } = { ...providersJsonFile };
 
-const { User, ProvidersCredentialAndToken } = db.models;
+const { ProvidersCredentialAndToken } = db.models;
 
 const { AUTH_MOUNT_POINT } = config;
 
@@ -54,7 +56,7 @@ export default async (app: Application) => {
     if (req.session) {
       loggerService.info('Session Found', req.session);
       const [error, userDataObj] = await safePromise(
-        User.findOne({
+        prisma.users.findFirst({
           where: {
             id: req.session.user!.id,
           },
@@ -64,9 +66,8 @@ export default async (app: Application) => {
       if (error) {
         return cb(error);
       }
-      let userData = userDataObj;
+      let userData = userDataObj ? userCamelCaseToSnakeCase(userDataObj) : null;
       if (userData) {
-        userData = userData.toJSON();
         userData.new = false;
       }
 

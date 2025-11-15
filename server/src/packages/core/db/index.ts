@@ -1,8 +1,9 @@
 import { Sequelize, Dialect } from 'sequelize';
 import config from '../../../config';
+import { prisma } from './prisma';
 
 // User
-import UserSchema from './schema/user/User';
+// UserSchema - Migrated to Prisma, removed from Sequelize
 import UsersAPITokenSchema from './schema/user/UsersAPIToken';
 import UsersLoginIntentSchema from './schema/user/UsersLoginIntent';
 import UsersActivatedProvidersSchema from './schema/user/UsersActivatedProviders';
@@ -68,7 +69,7 @@ const sequelize = sequelizePick[dbOptions.DB_TYPE];
 
 export default {
   models: {
-    User: UserSchema(sequelize),
+    // User: Migrated to Prisma - removed from Sequelize
     UsersAPIToken: UsersAPITokenSchema(sequelize),
     UsersActivatedProviders: UsersActivatedProvidersSchema(sequelize),
     UsersProvidersSavedIntent: UsersProvidersSavedIntent(sequelize),
@@ -85,5 +86,6 @@ export default {
   },
   connection: sequelize,
   Sequelize,
-
+  // Expose Prisma for migration
+  prisma,
 };

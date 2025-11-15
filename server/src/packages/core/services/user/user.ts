@@ -1,12 +1,10 @@
 import bcrypt from 'bcrypt';
 import { modules } from '../../common';
 import { safePromise } from '../../../../utilities';
-
-import db from '../../db';
+import { prisma } from '../../db/prisma';
+import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase } from '../../db/prisma/converters';
 
 const { generate } = modules;
-
-const { User } = db.models;
 
 const bcryptSaltRounds = 10;
 
@@ -21,7 +19,9 @@ export default {
     user.email_verified = false;
     user.ref_id = generate();
 
-    return User.create(user);
+    const prismaData = userSnakeCaseToCamelCase(user);
+    const created = await prisma.users.create({ data: prismaData });
+    return userCamelCaseToSnakeCase(created);
   },
   verifyPassword: async (verify: { [key: string]: any }) => {
     if (!verify.password_hash && verify.password) {
@@ -44,36 +44,67 @@ export default {
     const salt = await bcrypt.genSalt(bcryptSaltRounds);
     const new_password_hash = await bcrypt.hash(payload.new_password, salt);
 
-    const udpateObj: { [key: string]: any } = { password_hash: new_password_hash };
+    const updateObj: { [key: string]: any } = { password_hash: new_password_hash };
+    const prismaData = userSnakeCaseToCamelCase(updateObj);
 
-    return User.update(udpateObj, {
-      where: {
-        ref_id: user.ref_id,
-      },
+    // Find user by ref_id first, then update by id (unique field)
+    const existingUser = await prisma.users.findFirst({
+      where: { ref_id: user.ref_id },
     });
+    
+    if (!existingUser) {
+      throw new Error('User not found');
+    }
+
+    const updated = await prisma.users.update({
+      where: { id: existingUser.id },
+      data: prismaData,
+    });
+    return userCamelCaseToSnakeCase(updated);
   },
   changeEmail: async (update: { [key: string]: any }, user: { [key: string]: any }) => {
     const { email } = update;
-    const udpateObj: { [key: string]: any } = { email };
-    delete udpateObj.password_hash;
-    return User.update(udpateObj, {
-      where: {
-        ref_id: user.ref_id,
-      },
+    const updateObj: { [key: string]: any } = { email };
+    delete updateObj.password_hash;
+    
+    // Find user by ref_id first, then update by id (unique field)
+    const existingUser = await prisma.users.findFirst({
+      where: { ref_id: user.ref_id },
     });
+    
+    if (!existingUser) {
+      throw new Error('User not found');
+    }
+
+    const updated = await prisma.users.update({
+      where: { id: existingUser.id },
+      data: updateObj,
+    });
+    return userCamelCaseToSnakeCase(updated);
   },
   update: async (update: { [key: string]: any }, user: { [key: string]: any }) => {
     const {
       first_name, last_name, profile_picture, extra = {}, username,
     } = update;
-    const udpateObj: { [key: string]: any } = {
+    const updateObj: { [key: string]: any } = {
       first_name, last_name, profile_picture, extra, username,
     };
-    delete udpateObj.password_hash;
-    return User.update(udpateObj, {
-      where: {
-        ref_id: user.ref_id,
-      },
+    delete updateObj.password_hash;
+    
+    // Find user by ref_id first, then update by id (unique field)
+    const existingUser = await prisma.users.findFirst({
+      where: { ref_id: user.ref_id },
     });
+    
+    if (!existingUser) {
+      throw new Error('User not found');
+    }
+
+    const prismaData = userSnakeCaseToCamelCase(updateObj);
+    const updated = await prisma.users.update({
+      where: { id: existingUser.id },
+      data: prismaData,
+    });
+    return userCamelCaseToSnakeCase(updated);
   },
 };
