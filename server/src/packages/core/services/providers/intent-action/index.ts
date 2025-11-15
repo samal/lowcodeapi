@@ -1,15 +1,13 @@
-import Sequelize from 'sequelize';
 import { safePromise, loggerService } from '../../../../../utilities';
-import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
+import {
+  usersProvidersSavedIntentSnakeCaseToCamelCase,
+  usersProvidersIntentHydrationSnakeCaseToCamelCase,
+  providersIntentDefaultPayloadsSnakeCaseToCamelCase,
+} from '../../../db/prisma/converters';
 import providers, { providerMap } from '../../../../../intents';
 import openapi from '../../../../openapi/fn/openapi-converter';
 import requestLogs from '../request-logs';
-
-const {
-  UsersProvidersSavedIntent, UsersProvidersIntentHydration, ProvidersIntentDefaultPayloads,
-} = DBConfig.models;
-
-const { connection } = DBConfig;
 
 const USERS_ALLOWED_SAVE_MODE = ['fav', 'pin'];
 
@@ -17,13 +15,11 @@ const get = async ({
   user, mode = '', intent, method, provider = '',
 }: {[key:string]: any}) => {
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
-  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider =? AND intent=?  LIMIT 1;';
-  const replacements = [user.ref_id, mode, method, provider, intent];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  
+  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider=? AND intent=? LIMIT 1';
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, mode, method, provider, intent)
+  );
   if (error) {
     throw error;
   }
@@ -35,13 +31,11 @@ const get = async ({
 
 const list = async ({ user, mode = '', provider = '' }: {[key:string]: any}) => {
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
-  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND provider =?;';
-  const replacements = [user.ref_id, mode, provider];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  
+  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND provider=?';
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, mode, provider)
+  );
   if (error) {
     throw error;
   }
@@ -54,12 +48,10 @@ const list = async ({ user, mode = '', provider = '' }: {[key:string]: any}) => 
 };
 
 const listFeaturedIntent = async ({ mode = '' }: {[key:string]: any}) => {
-  const query = 'SELECT * FROM providers_intents_featured ORDER BY weight DESC LIMIT ?;';
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: [50],
-  }));
+  const query = 'SELECT * FROM providers_intents_featured ORDER BY weight DESC LIMIT 50';
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query)
+  );
   if (error) {
     throw error;
   }
@@ -99,13 +91,11 @@ const listFeaturedIntent = async ({ mode = '' }: {[key:string]: any}) => {
 
 const usersAllIntentList = async ({ user, mode = '' }: {[key:string]: any}) => {
   if (!USERS_ALLOWED_SAVE_MODE.includes(mode.toLowerCase())) throw new Error('Wrong mode');
-  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=?;';
-  const replacements = [user.ref_id, mode];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  
+  const query = 'SELECT * FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=?';
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, mode)
+  );
   if (error) {
     throw error;
   }
@@ -152,7 +142,12 @@ const save = async ({
     path: intent,
   };
 
-  const [error] = await safePromise(UsersProvidersSavedIntent.create(payload));
+  const prismaPayload = usersProvidersSavedIntentSnakeCaseToCamelCase(payload);
+  const [error] = await safePromise(
+    prisma.users_providers_saved_intents.create({
+      data: prismaPayload,
+    }),
+  );
   if (error) {
     throw error;
   }
@@ -165,13 +160,10 @@ const save = async ({
 const remove = async ({
   user, mode = '', provider, method, intent,
 }: {[key:string]: any}) => {
-  const query = 'DELETE FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider =? AND intent=?;';
-  const replacements = [user.ref_id, mode, method, provider, intent];
-
-  const [error] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.DELETE,
-    replacements,
-  }));
+  const query = 'DELETE FROM users_providers_saved_intents WHERE user_ref_id=? AND saved_mode=? AND method=? AND provider=? AND intent=?';
+  const [error] = await safePromise(
+    prisma.$executeRawUnsafe(query, user.ref_id, mode, method, provider, intent)
+  );
   if (error) {
     throw error;
   }
@@ -182,13 +174,10 @@ const remove = async ({
 const hydrate = async ({
   user, intent, method, provider = '',
 }: {[key:string]: any}) => {
-  const query = 'SELECT * FROM users_providers_intent_hydration WHERE user_ref_id=? AND method=? AND provider =? AND intent=?;';
-  const replacements = [user.ref_id, method, provider, intent];
-
-  const [error, data] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const query = 'SELECT * FROM users_providers_intent_hydration WHERE user_ref_id=? AND method=? AND provider=? AND intent=?';
+  const [error, data] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, method, provider, intent)
+  );
   if (error) {
     throw error;
   }
@@ -258,7 +247,12 @@ const storePayload = async ({
     headers: payload.headers,
   };
 
-  const [error, data] = await safePromise(UsersProvidersIntentHydration.create(savePayload));
+  const prismaPayload = usersProvidersIntentHydrationSnakeCaseToCamelCase(savePayload);
+  const [error, data] = await safePromise(
+    prisma.users_providers_intent_hydration.create({
+      data: prismaPayload,
+    }),
+  );
   if (error) {
     throw error;
   }
@@ -269,13 +263,10 @@ const storePayload = async ({
 const hydrateDefault = async ({
   user, intent, method, provider = '',
 }: {[key:string]: any}) => {
-  const query = 'SELECT * FROM providers_intent_default_payloads WHERE method=? AND provider =? AND intent=?;';
-  const replacements = [method, provider, intent];
-
-  const [error] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const query = 'SELECT * FROM providers_intent_default_payloads WHERE method=? AND provider=? AND intent=?';
+  const [error] = await safePromise(
+    prisma.$queryRawUnsafe(query, method, provider, intent)
+  );
   if (error) {
     throw error;
   }
@@ -336,7 +327,12 @@ const storeDefaultPayload = async ({
     headers: payload.headers,
   };
 
-  const [errorD, data] = await safePromise(ProvidersIntentDefaultPayloads.create(savePayload));
+  const prismaPayload = providersIntentDefaultPayloadsSnakeCaseToCamelCase(savePayload);
+  const [errorD, data] = await safePromise(
+    prisma.providers_intent_default_payloads.create({
+      data: prismaPayload,
+    }),
+  );
   if (errorD) {
     throw errorD;
   }

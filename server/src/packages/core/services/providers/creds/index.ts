@@ -1,8 +1,5 @@
-import Sequelize from 'sequelize';
 import { loggerService, safePromise } from '../../../../../utilities';
-import DBConfig from '../../../db';
-
-const { connection } = DBConfig;
+import { prisma } from '../../../db/prisma';
 
 export default async (user: { [key: string]: any } = {}) => {
   let query = `
@@ -12,7 +9,7 @@ export default async (user: { [key: string]: any } = {}) => {
     WHERE pro.user_ref_id=?
     `;
 
-  const replacements = [user.user_ref_id || user.ref_id];
+  const replacements: any[] = [user.user_ref_id || user.ref_id];
   if (user.provider) {
     query += ' AND pro.provider=? AND pro.auth_type=? LIMIT 1;';
     replacements.push(user.provider);
@@ -21,10 +18,11 @@ export default async (user: { [key: string]: any } = {}) => {
     query += ';';
   }
 
-  const [queryError, tokenList] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  // Using $queryRawUnsafe because query is built conditionally
+  // Replacements are still parameterized for safety
+  const [queryError, tokenList] = await safePromise(
+    prisma.$queryRawUnsafe(query, ...replacements)
+  );
 
   if (queryError) {
     loggerService.error(queryError);

@@ -5,7 +5,6 @@ import passport from 'passport';
 import { Strategy } from 'passport-google-oauth20';
 
 import moment from 'moment';
-import { Op } from 'sequelize';
 
 import config from '../../config';
 import endpoint from '../core/utilities/endpoint';
@@ -16,7 +15,8 @@ import {
   usersActivatedProvider,
   tokenService,
 } from '../core/services/user';
-import db from '../core/db';
+import { prisma } from '../core/db/prisma';
+import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase, providersCredentialAndTokenSnakeCaseToCamelCase } from '../core/db/prisma/converters';
 import { loggerService } from '../../utilities';
 import { notify } from '../../utilities/notify';
 
@@ -57,12 +57,10 @@ const notifyEvent = async (isNew: boolean, provider: string, user: any, req: any
 
 const { generateApiToken } = random;
 
-const { User, ProvidersCredentialAndToken } = db.models;
-
 const { AUTH_MOUNT_POINT } = config;
 
 const isNewUserAllowed = async () => {
-  const [error, count] = await safePromise(User.count());
+  const [error, count] = await safePromise(prisma.users.count());
 
   if (error) throw error;
   return !(count >= +USER_ALLOWED_COUNT);
@@ -90,31 +88,30 @@ export default (app: Application): void => {
   ) => {
     const email = profile.emails[0].value;
     let userData = null;
-    let findWhere = {};
+    // Build Prisma where clause directly
+    let prismaWhere: any = {};
     if (req.session && req.session.user) {
       const { ref_id } = req.session.user;
-      findWhere = {
-        where: {
-          // ref_id: req.session.user.ref_id,
-          [Op.or]: [
-            { ref_id },
-            { email },
-          ],
-        },
+      prismaWhere = {
+        OR: [
+          { ref_id },
+          { email },
+        ],
       };
     } else {
-      findWhere = {
-        where: {
-          email,
-        },
+      prismaWhere = {
+        email,
       };
     }
-    const [error, userDataObj] = await safePromise(User.findOne(findWhere));
+
+    const [error, userDataObj] = await safePromise(
+      prisma.users.findFirst({ where: prismaWhere })
+    );
 
     if (error) {
       return cb(error);
     }
-    userData = userDataObj;
+    userData = userDataObj ? userCamelCaseToSnakeCase(userDataObj) : null;
     if (!userData) {
       const [nerror, newUserAllowed] = await safePromise(isNewUserAllowed());
       if (nerror) {
@@ -141,12 +138,15 @@ export default (app: Application): void => {
         suffix: SEED_USER_API_KEY_SUFFIX,
         api_token_limit: SEED_USER_API_TOKEN_LIMIT,
       };
-      const [error, userNew] = await safePromise(User.create(user));
+      const prismaData = userSnakeCaseToCamelCase(user);
+      const [error, userNew] = await safePromise(
+        prisma.users.create({ data: prismaData })
+      );
       if (error) {
         loggerService.error(error);
         return cb(error);
       }
-      userData = userNew.toJSON();
+      userData = userCamelCaseToSnakeCase(userNew);
       userData.new = true;
 
       if (USER_API_TOKEN_ENABLED) {
@@ -163,7 +163,7 @@ export default (app: Application): void => {
         }
       }
     } else {
-      userData = userData.toJSON();
+      // userData is already converted from Prisma
 
       // session exists found but the not same email
       if (userData.email !== email) {
@@ -182,27 +182,43 @@ export default (app: Application): void => {
     };
     let updateStatus = null;
     if (!userData.new) {
-      // TODO: Encrypt this payload
-      const update = {
-        config: {
-          name: getFullName(userData),
-          email: userData.email,
-        },
-        // eslint-disable-next-line no-underscore-dangle
-        provider_data: profile._json,
-      };
-      const [error, data] = await safePromise(ProvidersCredentialAndToken.update(update, {
-        where: {
-          user_ref_id: userData.ref_id,
-          provider,
-        },
-      }));
-      if (error) {
-        loggerService.error('Error updating provider token ', { error });
-        return cb(error);
+      // Find existing credential first
+      const [findError, existingCred] = await safePromise(
+        prisma.providers_credential_and_tokens.findFirst({
+          where: {
+            user_ref_id: userData.ref_id,
+            provider,
+          },
+        }),
+      );
+
+      if (findError) {
+        loggerService.error('Error finding provider token ', { error: findError });
+        return cb(findError);
       }
-      updateStatus = data ? data[0] : null;
-      if (updateStatus) {
+
+      if (existingCred) {
+        // TODO: Encrypt this payload
+        const update = {
+          config: {
+            name: getFullName(userData),
+            email: userData.email,
+          },
+          // eslint-disable-next-line no-underscore-dangle
+          provider_data: profile._json,
+        };
+        const prismaUpdate = providersCredentialAndTokenSnakeCaseToCamelCase(update);
+        const [error] = await safePromise(
+          prisma.providers_credential_and_tokens.update({
+            where: { id: existingCred.id },
+            data: prismaUpdate,
+          }),
+        );
+        if (error) {
+          loggerService.error('Error updating provider token ', { error });
+          return cb(error);
+        }
+        updateStatus = true;
         tokenLogs.remark = `${tokenLogs.remark} & token updated.`;
       }
     }
@@ -210,7 +226,6 @@ export default (app: Application): void => {
     if (!updateStatus) {
       // TODO: Encrypt this payload
       const payload: any = {
-        user_id: userData.id,
         user_ref_id: userData.ref_id,
         provider,
         auth_type: 'OAUTH2.0',
@@ -222,7 +237,12 @@ export default (app: Application): void => {
         provider_data: profile._json,
       };
 
-      const [tokenError] = await safePromise(ProvidersCredentialAndToken.create(payload));
+      const prismaPayload = providersCredentialAndTokenSnakeCaseToCamelCase(payload);
+      const [tokenError] = await safePromise(
+        prisma.providers_credential_and_tokens.create({
+          data: prismaPayload,
+        }),
+      );
 
       if (tokenError) {
         return cb(tokenError);

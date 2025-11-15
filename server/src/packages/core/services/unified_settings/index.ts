@@ -1,7 +1,7 @@
 import { safePromise } from '../../../../utilities';
 import db from '../../db';
-
-const { UsersUnifiedConfig } = db.models;
+import { prisma } from '../../db/prisma';
+import { usersUnifiedConfigSnakeCaseToCamelCase, usersUnifiedConfigCamelCaseToSnakeCase } from '../../db/prisma/converters';
 
 interface UnifiedSettingsInterface {
     // user_ref_id: string,
@@ -15,36 +15,41 @@ interface UnifiedSettingsInterface {
 
 export default {
   get: async ({ user_ref_id, unified_type } : UnifiedSettingsInterface) => {
-    const [error, unified_config] = await safePromise(UsersUnifiedConfig.findOne({
-      where: {
-        user_ref_id,
-        unified_type,
-        active: true,
-      },
-    }));
+    const [error, unified_config] = await safePromise(
+      prisma.users_unified_config.findFirst({
+        where: {
+          user_ref_id,
+          unified_type,
+          active: true,
+        },
+      }),
+    );
 
     if (error) {
       throw new Error(error);
     }
     // check integration status of the provider
     if (!unified_config) return null;
+    const apiConfig = usersUnifiedConfigCamelCaseToSnakeCase(unified_config);
     return {
-      user_ref_id: unified_config.user_ref_id,
-      unified_type: unified_config.unified_type,
-      provider: unified_config.provider,
-      active: unified_config.active,
+      user_ref_id: apiConfig.user_ref_id,
+      unified_type: apiConfig.unified_type,
+      provider: apiConfig.provider,
+      active: apiConfig.active,
     };
   },
   addOrUpdate: async ({
     user_ref_id, unified_type, provider, json_config, // eslint-disable-line no-unused-vars
   }: UnifiedSettingsInterface) => {
-    const [error, unified_config] = await safePromise(UsersUnifiedConfig.findOne({
-      where: {
-        user_ref_id,
-        unified_type,
-        active: true,
-      },
-    }));
+    const [error, unified_config] = await safePromise(
+      prisma.users_unified_config.findFirst({
+        where: {
+          user_ref_id,
+          unified_type,
+          active: true,
+        },
+      }),
+    );
 
     if (error) {
       throw new Error(error);
@@ -52,18 +57,18 @@ export default {
 
     // check integration status of the provider, then only proceed.
     if (unified_config) {
-      const [error] = await safePromise(UsersUnifiedConfig.update({
-        provider,
-      }, {
-        where: {
-          user_ref_id,
-          unified_type,
-          active: true,
-        },
-      }));
+      const updateData = usersUnifiedConfigSnakeCaseToCamelCase({ provider });
+      const [updateError] = await safePromise(
+        prisma.users_unified_config.update({
+          where: {
+            id: unified_config.id,
+          },
+          data: updateData,
+        }),
+      );
 
-      if (error) {
-        throw new Error(error);
+      if (updateError) {
+        throw new Error(updateError);
       }
       return {
         user_ref_id,
@@ -78,15 +83,21 @@ export default {
       provider,
       active: true,
     };
-    const [error1, unified_config1] = await safePromise(UsersUnifiedConfig.create(payload));
+    const prismaPayload = usersUnifiedConfigSnakeCaseToCamelCase(payload);
+    const [error1, unified_config1] = await safePromise(
+      prisma.users_unified_config.create({
+        data: prismaPayload,
+      }),
+    );
 
     if (error1) {
       throw new Error(error1);
     }
+    const apiConfig = usersUnifiedConfigCamelCaseToSnakeCase(unified_config1);
     return {
       user_ref_id,
-      provider: unified_config1.provider,
-      unified_type: unified_config1.unified_type,
+      provider: apiConfig.provider,
+      unified_type: apiConfig.unified_type,
       active: 1,
     };
   },

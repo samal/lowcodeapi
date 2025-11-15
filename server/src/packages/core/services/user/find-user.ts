@@ -1,7 +1,6 @@
 import { safePromise } from '../../../../utilities';
-import db from '../../db';
-
-const { User } = db.models;
+import { findUserByKey } from '../../db/prisma/helpers';
+import { userCamelCaseToSnakeCase } from '../../db/prisma/converters';
 
 const ALLOWED_KEYS = ['id', 'ref_id', 'email'];
 
@@ -13,17 +12,17 @@ export default async (user = { key: 'id', value: null }) => {
     error.code = 422;
     throw error;
   }
-  const [userError, userData] = await safePromise(User.findOne({
-    where: {
-      [userObj.key]: userObj.value,
-    },
-  }));
+  
+  const [userError, userData] = await safePromise(
+    findUserByKey(userObj.key, userObj.value)
+  );
 
   if (userError) {
     throw userError;
   }
+  
   if (userData) {
-    return userData.toJSON();
+    return userCamelCaseToSnakeCase(userData);
   }
   return {};
 };

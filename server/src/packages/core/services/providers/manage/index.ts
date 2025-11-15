@@ -1,12 +1,8 @@
-import Sequelize from 'sequelize';
 import { cryptograper, safePromise, loggerService } from '../../../../../utilities';
-import DBConfig from '../../../db';
+import { prisma } from '../../../db/prisma';
+import { providersCredentialAndTokenSnakeCaseToCamelCase } from '../../../db/prisma/converters';
 
 import usersActivatedProviders from '../../user/activated';
-
-const { connection } = DBConfig;
-
-const { ProvidersCredentialAndToken } = DBConfig.models;
 
 const fetchActivatedProviderCredsAndTokens = async (
   user: { [key: string]: any },
@@ -27,10 +23,7 @@ const fetchActivatedProviderCredsAndTokens = async (
     `;
 
   const [queryError, list] = await safePromise(
-    connection.query(dbQuery, {
-      type: Sequelize.QueryTypes.SELECT,
-      replacements: [user.ref_id, provider.toLowerCase()],
-    }),
+    prisma.$queryRawUnsafe(dbQuery, user.ref_id, provider.toLowerCase())
   );
 
   if (queryError) {
@@ -63,10 +56,9 @@ const fetchActivatedProviderDetail = async ({ user, provider }: { [key: string]:
       LIMIT 1;
     `;
 
-  const [queryError, result] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: [user.ref_id, provider.toLowerCase()],
-  }));
+  const [queryError, result] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, provider.toLowerCase())
+  );
 
   if (queryError) {
     loggerService.error(queryError);
@@ -96,18 +88,15 @@ const fetchActivatedProviderDetail = async ({ user, provider }: { [key: string]:
 };
 
 const fetchActivatedProviders = async ({ user }: { [key: string]: any }) => {
-  let replacements: any[] = [];
   const query = `
       SELECT
         uap.*
       FROM users_activated_providers uap
       WHERE uap.user_ref_id=? and uap.active=1;
     `;
-  replacements = [user.ref_id];
-  const [queryError, result] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, result] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id)
+  );
 
   if (queryError) {
     loggerService.error(queryError);
@@ -138,13 +127,14 @@ const saveProviderCredsAndTokens = async ({ body: bodyObj, user }: { [key: strin
   const body = bodyObj;
 
   const provider = body.provider ? body.provider.toLowerCase() : '';
-  const where = {
-    user_ref_id: user.ref_id,
-    provider,
-  };
+  
+  // Delete existing credentials for this user/provider combination
   const [findError] = await safePromise(
-    ProvidersCredentialAndToken.destroy({
-      where,
+    prisma.providers_credential_and_tokens.deleteMany({
+      where: {
+        user_ref_id: user.ref_id,
+        provider,
+      },
     }),
   );
 
@@ -205,8 +195,11 @@ const saveProviderCredsAndTokens = async ({ body: bodyObj, user }: { [key: strin
     payload.config = config;
   }
 
+  const prismaPayload = providersCredentialAndTokenSnakeCaseToCamelCase(payload);
   const [queryError, result] = await safePromise(
-    ProvidersCredentialAndToken.create(payload),
+    prisma.providers_credential_and_tokens.create({
+      data: prismaPayload,
+    }),
   );
 
   if (queryError) {
@@ -224,30 +217,43 @@ const saveProviderCredsAndTokens = async ({ body: bodyObj, user }: { [key: strin
     throw new Error(activationError.message);
   }
 
-  return result.toJSON();
+  return result;
 };
 
 const deleteProviderCredsAndTokens = async ({ provider, user }: { [key: string]: any }) => {
-  const where = {
-    user_ref_id: user.ref_id,
-    provider: provider.toLowerCase(),
-  };
-
-  const update = {
-    active: false,
-    config: {},
-    credentials: {},
-    provider_data: {},
-  };
-
-  const [deleteCredsError] = await safePromise(
-    ProvidersCredentialAndToken.update(update, {
-      where,
+  // Find the credential record first
+  const [findError, existingCred] = await safePromise(
+    prisma.providers_credential_and_tokens.findFirst({
+      where: {
+        user_ref_id: user.ref_id,
+        provider: provider.toLowerCase(),
+      },
     }),
   );
 
-  if (deleteCredsError) {
-    throw new Error(deleteCredsError.message);
+  if (findError) {
+    throw new Error(findError.message);
+  }
+
+  if (existingCred) {
+    const update = {
+      active: false,
+      config: {},
+      credentials: {},
+      provider_data: {},
+    };
+
+    const prismaUpdate = providersCredentialAndTokenSnakeCaseToCamelCase(update);
+    const [deleteCredsError] = await safePromise(
+      prisma.providers_credential_and_tokens.update({
+        where: { id: existingCred.id },
+        data: prismaUpdate,
+      }),
+    );
+
+    if (deleteCredsError) {
+      throw new Error(deleteCredsError.message);
+    }
   }
 
   const [activationError] = await safePromise(
