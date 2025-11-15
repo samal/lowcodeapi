@@ -5,7 +5,6 @@ import passport from 'passport';
 import { Strategy } from 'passport-google-oauth20';
 
 import moment from 'moment';
-import { Op } from 'sequelize';
 
 import config from '../../config';
 import endpoint from '../core/utilities/endpoint';
@@ -16,7 +15,6 @@ import {
   usersActivatedProvider,
   tokenService,
 } from '../core/services/user';
-import db from '../core/db';
 import { prisma } from '../core/db/prisma';
 import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase, providersCredentialAndTokenSnakeCaseToCamelCase } from '../core/db/prisma/converters';
 import { loggerService } from '../../utilities';
@@ -90,41 +88,20 @@ export default (app: Application): void => {
   ) => {
     const email = profile.emails[0].value;
     let userData = null;
-    let findWhere : { where: any } = { where: {} };
+    // Build Prisma where clause directly
+    let prismaWhere: any = {};
     if (req.session && req.session.user) {
       const { ref_id } = req.session.user;
-      findWhere = {
-        where: {
-          // ref_id: req.session.user.ref_id,
-          [Op.or]: [
-            { ref_id },
-            { email },
-          ],
-        },
+      prismaWhere = {
+        OR: [
+          { ref_id },
+          { email },
+        ],
       };
     } else {
-      findWhere = {
-        where: {
-          email,
-        },
+      prismaWhere = {
+        email,
       };
-    }
-    // Convert Sequelize where clause to Prisma format
-    let prismaWhere: any = {};
-    if (findWhere.where) {
-      if (findWhere.where[Op.or]) {
-        // Handle OR condition
-        const orConditions = findWhere.where[Op.or];
-        prismaWhere = {
-          OR: orConditions.map((cond: any) => {
-            if (cond.ref_id) return { ref_id: cond.ref_id };
-            if (cond.email) return { email: cond.email };
-            return cond;
-          }),
-        };
-      } else {
-        prismaWhere = findWhere.where;
-      }
     }
 
     const [error, userDataObj] = await safePromise(
