@@ -14,11 +14,9 @@ import {
 
 import db from '../core/db';
 import { prisma } from '../core/db/prisma';
-import { userCamelCaseToSnakeCase } from '../core/db/prisma/converters';
+import { userCamelCaseToSnakeCase, providersCredentialAndTokenSnakeCaseToCamelCase } from '../core/db/prisma/converters';
 import middlewares from '../core/middlewares';
 import { cryptograper, loggerService } from '../../utilities';
-
-const { ProvidersCredentialAndToken } = db.models;
 
 const GOOGLE_SERVICE = [
   'GOOGLESHEETS',
@@ -104,32 +102,46 @@ export default (app: Application): void => {
     };
     let updateStatus = null;
     if (!userData.new) {
-      const update = {
-        config: {
-          encrypted: cryptograper.encrypt(
-            {
-              refreshToken,
-              accessToken,
-            },
-          ),
-        },
-        // eslint-disable-next-line no-underscore-dangle
-        provider_data: profile._json,
-      };
-      const [error, data] = await safePromise(
-        ProvidersCredentialAndToken.update(update, {
+      // Find existing credential first
+      const [findError, existingCred] = await safePromise(
+        prisma.providers_credential_and_tokens.findFirst({
           where: {
             user_ref_id: userData.ref_id,
             provider: provider.toLowerCase(),
           },
         }),
       );
-      if (error) {
-        loggerService.error('Error updating provider token ', { error });
-        return cb(error);
+
+      if (findError) {
+        loggerService.error('Error finding provider token ', { error: findError });
+        return cb(findError);
       }
-      updateStatus = data ? data[0] : null;
-      if (updateStatus) {
+
+      if (existingCred) {
+        const update = {
+          config: {
+            encrypted: cryptograper.encrypt(
+              {
+                refreshToken,
+                accessToken,
+              },
+            ),
+          },
+          // eslint-disable-next-line no-underscore-dangle
+          provider_data: profile._json,
+        };
+        const prismaUpdate = providersCredentialAndTokenSnakeCaseToCamelCase(update);
+        const [error] = await safePromise(
+          prisma.providers_credential_and_tokens.update({
+            where: { id: existingCred.id },
+            data: prismaUpdate,
+          }),
+        );
+        if (error) {
+          loggerService.error('Error updating provider token ', { error });
+          return cb(error);
+        }
+        updateStatus = true;
         tokenLogs.remark = `${tokenLogs.remark} & token updated.`;
       }
     }
@@ -152,8 +164,11 @@ export default (app: Application): void => {
         provider_data: profile._json,
       };
 
+      const prismaPayload = providersCredentialAndTokenSnakeCaseToCamelCase(payload);
       const [tokenError] = await safePromise(
-        ProvidersCredentialAndToken.create(payload),
+        prisma.providers_credential_and_tokens.create({
+          data: prismaPayload,
+        }),
       );
 
       if (tokenError) {

@@ -18,7 +18,7 @@ import {
 } from '../core/services/user';
 import db from '../core/db';
 import { prisma } from '../core/db/prisma';
-import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase } from '../core/db/prisma/converters';
+import { userSnakeCaseToCamelCase, userCamelCaseToSnakeCase, providersCredentialAndTokenSnakeCaseToCamelCase } from '../core/db/prisma/converters';
 import { loggerService } from '../../utilities';
 import { notify } from '../../utilities/notify';
 
@@ -58,8 +58,6 @@ const notifyEvent = async (isNew: boolean, provider: string, user: any, req: any
 };
 
 const { generateApiToken } = random;
-
-const { ProvidersCredentialAndToken } = db.models;
 
 const { AUTH_MOUNT_POINT } = config;
 
@@ -207,27 +205,43 @@ export default (app: Application): void => {
     };
     let updateStatus = null;
     if (!userData.new) {
-      // TODO: Encrypt this payload
-      const update = {
-        config: {
-          name: getFullName(userData),
-          email: userData.email,
-        },
-        // eslint-disable-next-line no-underscore-dangle
-        provider_data: profile._json,
-      };
-      const [error, data] = await safePromise(ProvidersCredentialAndToken.update(update, {
-        where: {
-          user_ref_id: userData.ref_id,
-          provider,
-        },
-      }));
-      if (error) {
-        loggerService.error('Error updating provider token ', { error });
-        return cb(error);
+      // Find existing credential first
+      const [findError, existingCred] = await safePromise(
+        prisma.providers_credential_and_tokens.findFirst({
+          where: {
+            user_ref_id: userData.ref_id,
+            provider,
+          },
+        }),
+      );
+
+      if (findError) {
+        loggerService.error('Error finding provider token ', { error: findError });
+        return cb(findError);
       }
-      updateStatus = data ? data[0] : null;
-      if (updateStatus) {
+
+      if (existingCred) {
+        // TODO: Encrypt this payload
+        const update = {
+          config: {
+            name: getFullName(userData),
+            email: userData.email,
+          },
+          // eslint-disable-next-line no-underscore-dangle
+          provider_data: profile._json,
+        };
+        const prismaUpdate = providersCredentialAndTokenSnakeCaseToCamelCase(update);
+        const [error] = await safePromise(
+          prisma.providers_credential_and_tokens.update({
+            where: { id: existingCred.id },
+            data: prismaUpdate,
+          }),
+        );
+        if (error) {
+          loggerService.error('Error updating provider token ', { error });
+          return cb(error);
+        }
+        updateStatus = true;
         tokenLogs.remark = `${tokenLogs.remark} & token updated.`;
       }
     }
@@ -235,7 +249,6 @@ export default (app: Application): void => {
     if (!updateStatus) {
       // TODO: Encrypt this payload
       const payload: any = {
-        user_id: userData.id,
         user_ref_id: userData.ref_id,
         provider,
         auth_type: 'OAUTH2.0',
@@ -247,7 +260,12 @@ export default (app: Application): void => {
         provider_data: profile._json,
       };
 
-      const [tokenError] = await safePromise(ProvidersCredentialAndToken.create(payload));
+      const prismaPayload = providersCredentialAndTokenSnakeCaseToCamelCase(payload);
+      const [tokenError] = await safePromise(
+        prisma.providers_credential_and_tokens.create({
+          data: prismaPayload,
+        }),
+      );
 
       if (tokenError) {
         return cb(tokenError);

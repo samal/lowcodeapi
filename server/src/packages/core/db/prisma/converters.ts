@@ -369,3 +369,81 @@ export function usersActivatedProvidersCamelCaseToSnakeCase(prismaProvider: any)
   return apiProvider;
 }
 
+/**
+ * ProvidersCredentialAndToken field mappings
+ * Maps API snake_case → Prisma format
+ * Currently Prisma uses snake_case, so this is 1:1, but ready for camelCase migration
+ */
+export const PROVIDERS_CREDENTIAL_AND_TOKEN_FIELD_MAP = {
+  user_ref_id: 'user_ref_id', // Will be 'userRefId' if we update schema to camelCase
+  provider: 'provider',
+  auth_type: 'auth_type', // Will be 'authType'
+  config: 'config',
+  provider_data: 'provider_data', // Will be 'providerData'
+  credentials: 'credentials',
+  descriptions: 'descriptions',
+  remark: 'remark',
+  provider_error: 'provider_error', // Will be 'providerError'
+  created_at: 'created_at', // Will be 'createdAt'
+  updated_at: 'updated_at', // Will be 'updatedAt'
+} as const;
+
+/**
+ * Convert ProvidersCredentialAndToken from snake_case (API format) to Prisma format
+ */
+export function providersCredentialAndTokenSnakeCaseToCamelCase(apiCred: any): any {
+  if (!apiCred) return null;
+  
+  const prismaCred: any = {
+    // Fields that don't need conversion (already match)
+    active: apiCred.active !== undefined ? apiCred.active : true,
+  };
+  
+  // Map snake_case fields using field map
+  Object.entries(PROVIDERS_CREDENTIAL_AND_TOKEN_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (apiCred[apiKey] !== undefined) {
+      prismaCred[prismaKey] = apiCred[apiKey];
+    }
+  });
+  
+  // Set timestamps if not provided (required by Prisma schema)
+  if (!prismaCred.created_at) {
+    prismaCred.created_at = new Date();
+  }
+  if (!prismaCred.updated_at) {
+    prismaCred.updated_at = new Date();
+  }
+  
+  // Remove undefined values to avoid passing them to Prisma
+  const cleaned: any = {};
+  for (const [key, value] of Object.entries(prismaCred)) {
+    if (value !== undefined) {
+      cleaned[key] = value;
+    }
+  }
+  
+  return cleaned;
+}
+
+/**
+ * Convert ProvidersCredentialAndToken from Prisma format to snake_case (API format)
+ */
+export function providersCredentialAndTokenCamelCaseToSnakeCase(prismaCred: any): any {
+  if (!prismaCred) return null;
+  
+  const apiCred: any = {
+    // Fields that don't need conversion
+    id: prismaCred.id,
+    active: prismaCred.active,
+  };
+  
+  // Map Prisma fields back to snake_case API format
+  Object.entries(PROVIDERS_CREDENTIAL_AND_TOKEN_FIELD_MAP).forEach(([apiKey, prismaKey]) => {
+    if (prismaCred[prismaKey] !== undefined) {
+      apiCred[apiKey] = prismaCred[prismaKey];
+    }
+  });
+  
+  return apiCred;
+}
+
