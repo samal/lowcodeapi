@@ -1,12 +1,8 @@
-import Sequelize from 'sequelize';
 import { cryptograper, safePromise, loggerService } from '../../../../../utilities';
-import DBConfig from '../../../db';
 import { prisma } from '../../../db/prisma';
 import { providersCredentialAndTokenSnakeCaseToCamelCase } from '../../../db/prisma/converters';
 
 import usersActivatedProviders from '../../user/activated';
-
-const { connection } = DBConfig;
 
 const fetchActivatedProviderCredsAndTokens = async (
   user: { [key: string]: any },
@@ -27,10 +23,7 @@ const fetchActivatedProviderCredsAndTokens = async (
     `;
 
   const [queryError, list] = await safePromise(
-    connection.query(dbQuery, {
-      type: Sequelize.QueryTypes.SELECT,
-      replacements: [user.ref_id, provider.toLowerCase()],
-    }),
+    prisma.$queryRawUnsafe(dbQuery, user.ref_id, provider.toLowerCase())
   );
 
   if (queryError) {
@@ -63,10 +56,9 @@ const fetchActivatedProviderDetail = async ({ user, provider }: { [key: string]:
       LIMIT 1;
     `;
 
-  const [queryError, result] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements: [user.ref_id, provider.toLowerCase()],
-  }));
+  const [queryError, result] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id, provider.toLowerCase())
+  );
 
   if (queryError) {
     loggerService.error(queryError);
@@ -96,18 +88,15 @@ const fetchActivatedProviderDetail = async ({ user, provider }: { [key: string]:
 };
 
 const fetchActivatedProviders = async ({ user }: { [key: string]: any }) => {
-  let replacements: any[] = [];
   const query = `
       SELECT
         uap.*
       FROM users_activated_providers uap
       WHERE uap.user_ref_id=? and uap.active=1;
     `;
-  replacements = [user.ref_id];
-  const [queryError, result] = await safePromise(connection.query(query, {
-    type: Sequelize.QueryTypes.SELECT,
-    replacements,
-  }));
+  const [queryError, result] = await safePromise(
+    prisma.$queryRawUnsafe(query, user.ref_id)
+  );
 
   if (queryError) {
     loggerService.error(queryError);
