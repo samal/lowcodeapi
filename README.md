@@ -3,64 +3,88 @@
    <img src="guide/images/lowcodeapi.png" alt="Logo">
   </a>
   <h3 align="center">LowCodeAPI</h3>
-  <p align="center">A unified API connector for third-party service integrations.</p>
+  <p align="center">A connector for third-party service integrations.</p>
   <div align="center">
     <a href="https://github.com/samal/lowcodeapi/blob/main/LICENSE">
       <img src="https://img.shields.io/badge/license-AGPLv3-purple" alt="License">
     </a>
-    <a href="https://github.com/samal/lowcodeapi/graphs/contributors">
-      <img src="https://img.shields.io/github/contributors/samal/lowcodeapi.svg" alt="GitHub Contributors">
-    </a>
   </div>
 </div>
 
-### Overview
+## Overview
 
-LowCodeAPI has two main components:
+LowCodeAPI is an unified API connector for integrating with third-party services. It consists of:
 
-- **[🚀 Server](./server/README.md)** - Backend with unified API gateway
-- **[🎨 UI](./ui/README.md)** - Frontend
+- **Server** - Backend API connector (Node.js/Express)
+- **UI** - Frontend interface (Next.js)
 
-### Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend UI   │    │  Backend API    │    │ Third-party     │
-│   (Next.js)     │◄──►│   (Node.js)     │◄──►│   Services      │
-│   Port: 3000    │    │   Port: 3456    │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-## Getting started
-
-To get a copy up and running, please follow these simple steps.
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (Version: >=18.x)
-- MySQL (Version: >=8.x)
-- Npm
+- Node.js 20+
+- MySQL 8+ or PostgreSQL 12+
+- Redis
+- Docker & Docker Compose (for local development)
 
-Follow [How to start](./guide/how-to-start.md) guide here.
+### Quick Start
 
-### Developer Documentation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/samal/lowcodeapi.git
+   cd lowcodeapi
+   ```
 
-- **[Server](./server/README.md)** - Backend setup, API endpoints, and development
-- **[UI](./ui/README.md)** - Frontend development, components, and deployment
-- Database tables [TBA]
-- Docker [TBA]
+2. **Start services with Docker:**
+   ```bash
+   cd docker
+   docker compose -f docker-compose.dev.yml up
+   ```
 
-### Contributors
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Setup environment:**
+   ```bash
+   npm run env
+   ```
+
+5. **Setup database:**
+   ```bash
+   npm run prisma:generate
+   npm run prisma:migrate
+   ```
+
+6. **Create a user:**
+   ```bash
+   EMAIL=you@example.com PASSWORD=your_password npm run create
+   ```
+
+7. **Start development servers:**
+   ```bash
+   npm run server/dev  # Backend on http://localhost:3001
+   npm run web/dev     # Frontend on http://localhost:3000
+   ```
+
+For detailed setup instructions, see the [Getting Started Guide](./guide/how-to-start.md).
+
+## Documentation
+
+- **[Server Documentation](./server/README.md)** - Backend setup and API development
+- **[UI Documentation](./ui/README.md)** - Frontend development guide
+- **[Contributing Guide](./CONTRIBUTING.md)** - How to contribute
+
+## Contributors
 
 <a href="https://github.com/samal/lowcodeapi/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=samal/lowcodeapi" alt="Contributors" />
 </a>
 
-Please see our [Contributing Guide](./CONTRIBUTING.md).
-
 ## License
 
-See [LICENSE](./LICENSE) for more information.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](./LICENSE) file for details.
 
 ## Support
 
