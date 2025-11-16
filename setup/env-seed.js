@@ -26,13 +26,13 @@ REDIS_HOST=localhost
 REDIS_PORT=6379
 SESSION_STORE_IN_REDIS="YES"
 
-DB_TYPE=mysql
+#For MySQL
+#DATABASE_URL=mysql://user:password@$localhost:3306/database
 
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=lowcodeapi
-DB_USER=lowcodeapi
-DB_PASS=lowcodeapi
+#For Postgres
+#DATABASE_URL=postgresql://user:password@$localhost:5432/postgres
+
+DATABASE_URL=
 
 PORT={{PORT}}
 APP_DOMAIN={{APP_DOMAIN}}
