@@ -988,43 +988,42 @@ export const getStaticPaths = async (props) => {
                 paths: []
             }
         });
-        try {
-            const resp = await axios(`${DATA_ENDPOINT}/${provider}/metadata`);
-            const result = resp.data;
-            const { res: metadata } = result;
-            if (metadata) {
-                // Root level keys
-                const categories = Object.keys(metadata);
+        // try {
+        //     const resp = await axios(`${DATA_ENDPOINT}/${provider}/metadata`);
+        //     const result = resp.data;
+        //     const { res: metadata } = result;
+        //     if (metadata) {
+        //         // Root level keys
+        //         const categories = Object.keys(metadata);
 
-                categories.forEach((category) => {
-                    const base = metadata[category].id.toString().toLowerCase().trim().replaceAll(' ', '-');
-                    providersPath.push({
-                        params: {
-                            provider,
-                            paths: [base]
-                        }
-                    });
-                    // if (metadata[category].paths && metadata[category].paths.length) {
-                    //     metadata[category].paths.forEach((endpoint) => {
-                    //         providersPath.push({
-                    //             params: {
-                    //                 provider,
-                    //                 paths: [...endpoint.replace('/', '').split('/')]
-                    //             }
-                    //         });
-                    //     });
-                    // }
-                })
-            }
-        } catch (e) {
-            console.error(`${provider} does not have any other path due to error occurred in metadata fetch`, e);
-        }
+        //         categories.forEach((category) => {
+        //             const base = metadata[category].id.toString().toLowerCase().trim().replaceAll(' ', '-');
+        //             providersPath.push({
+        //                 params: {
+        //                     provider,
+        //                     paths: [base]
+        //                 }
+        //             });
+        //             // if (metadata[category].paths && metadata[category].paths.length) {
+        //             //     metadata[category].paths.forEach((endpoint) => {
+        //             //         providersPath.push({
+        //             //             params: {
+        //             //                 provider,
+        //             //                 paths: [...endpoint.replace('/', '').split('/')]
+        //             //             }
+        //             //         });
+        //             //     });
+        //             // }
+        //         })
+        //     }
+        // } catch (e) {
+        //     console.error(`${provider} does not have any other path due to error occurred in metadata fetch`, e);
+        // }
     });
 
-    console.log('Waiting for all providers to finish metadata hydration');
     await Promise.all(allowedProviders);
 
-    console.table({ 'total metadata hydrated': providersPath.length});
+    console.table({'total metadata hydrated': providersPath.length});
 
     return {
         paths: providersPath,

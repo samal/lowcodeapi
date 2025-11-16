@@ -20,25 +20,25 @@ export async function generateStaticParams() {
             provider,
             paths: undefined
         });
-        try {
-            const resp = await axios(`${DATA_ENDPOINT}/${provider}/metadata`);
-            const result = resp.data;
-            const { res: metadata } = result;
-            if (metadata) {
-                // Root level keys
-                const categories = Object.keys(metadata);
+        // try {
+        //     const resp = await axios(`${DATA_ENDPOINT}/${provider}/metadata`);
+        //     const result = resp.data;
+        //     const { res: metadata } = result;
+        //     if (metadata) {
+        //         // Root level keys
+        //         const categories = Object.keys(metadata);
 
-                categories.forEach((category) => {
-                    const base = metadata[category].id.toString().toLowerCase().trim().replaceAll(' ', '-');
-                    providersPath.push({
-                        provider,
-                        paths: [base]
-                    });
-                })
-            }
-        } catch (e) {
-            console.error(`${provider} does not have any other path due to error occurred in metadata fetch`, e);
-        }
+        //         categories.forEach((category) => {
+        //             const base = metadata[category].id.toString().toLowerCase().trim().replaceAll(' ', '-');
+        //             providersPath.push({
+        //                 provider,
+        //                 paths: [base]
+        //             });
+        //         })
+        //     }
+        // } catch (e) {
+        //     console.error(`${provider} does not have any other path due to error occurred in metadata fetch`, e);
+        // }
     });
 
     console.log('Waiting for all providers to finish metadata hydration');
