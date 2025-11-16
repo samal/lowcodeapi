@@ -1,19 +1,17 @@
-import React, { memo, Fragment, useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import axios from 'axios';
 import lodash, { capitalize, set } from 'lodash';
 import FormData from 'form-data';
 import ReactMarkdown from 'react-markdown'
 
-import CodeEditor, { theme } from '../CodeEditor';
+import CodeEditor from '../CodeEditor';
+
 import CodeSnippet from './snippet';
 import IconPack from '../IconPack';
 import FormUI from '../ExplorerFormUI';
-import { FieldMap } from '../ExplorerFormUI/Field'
 import HTTPMethodLabel from '../HTTPMethodLabel';
 
 import { generate, codeMap } from './lang';
-import getLogoUrl from '../../utils/logo-url';
 
 import Link from 'next/link';
 
@@ -677,14 +675,8 @@ function API_IntentView({ children, requestWait, api, cachedPayload = {}, onChan
                       </div>
                       <div>
                         <div className='rounded-md border border-gray-900 mt-4'>
-                          <CodeEditor 
+                          <CodeEditor
                             value={JSON.stringify(body, null, 2)}
-                            options={{
-                              mode: 'javascript',
-                              theme,
-                              lineNumbers: true
-                            }}
-                            autoCursor={false}
                             onChange={onBodyChange}
                           />
                         </div>
