@@ -29,10 +29,10 @@
     },
     "api_endpoint": "https://api.anthropic.com",
     "released": 1,
-    "updated_at": "2024-12-22T03:01:13.000Z",
+    "updated_at": "2025-01-27T00:00:00.000Z",
     "website": "https://www.anthropic.com",
-    "api_link_ref": "https://docs.anthropic.com/en/home",
-    "total_api": 32,
+    "api_link_ref": "https://docs.claude.com/en/api/overview",
+    "total_api": 30,
     "credential_link": "https://console.anthropic.com/settings/keys"
   },
   "routes": [
@@ -89,8 +89,8 @@
           "required": true
         },
         "metadata": {
-          "text": "Custom text sequences that will cause the model to stop generating",
-          "type": "array"
+          "text": "An object describing metadata about the request",
+          "type": "object"
         },
         "max_tokens": {
           "text": "The maximum number of tokens to generate before stopping",
@@ -103,8 +103,8 @@
           "type": "number"
         },
         "stop_sequences": {
-          "text": "An object describing metadata about the request",
-          "type": "object"
+          "text": "Custom text sequences that will cause the model to stop generating",
+          "type": "array"
         }
       },
       "custom_headers": {
@@ -131,8 +131,8 @@
       "updated_at": "2025-11-11T15:34:13.428Z"
     },
     {
-      "provider_alias_intent": "/v1/users",
-      "provider_proxy_intent": "/v1/users",
+      "provider_alias_intent": "/v1/messages/count-tokens",
+      "provider_proxy_intent": "/v1/messages/count-tokens",
       "text": "Count Message tokens",
       "category": "Message",
       "method": "POST",
@@ -144,23 +144,30 @@
         "model": {
           "text": "The model that will complete your prompt",
           "type": "string",
-          "required": true
+          "required": true,
+          "examples": "claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1"
         },
         "tools": {
-          "text": "Definitions of tools that the model may use.",
-          "type": "object"
+          "text": "Definitions of tools that the model may use",
+          "type": "array"
         },
         "system": {
           "text": "System prompt",
           "type": "string"
         },
         "messages": {
-          "text": "Input messages.",
-          "type": "object",
-          "required": true
+          "text": "Input messages",
+          "type": "array",
+          "required": true,
+          "examples": [
+            {
+              "role": "user",
+              "content": "Hello, world"
+            }
+          ]
         },
         "tool_choice": {
-          "text": "The model can use a specific tool, any available tool, or decide by itself.",
+          "text": "The model can use a specific tool, any available tool, or decide by itself",
           "type": "object"
         }
       },
@@ -173,16 +180,564 @@
         "api_ref": "https://docs.anthropic.com/en/api/messages-count-tokens",
         "version": "v1",
         "rate_limit": [],
-        "description": "Count the number of tokens in a Message.",
-        "api_endpoint": "https://api.anthropic.com/v1/users"
+        "description": "Count the number of tokens in a Message",
+        "api_endpoint": "https://api.anthropic.com/v1/messages/count-tokens",
+        "alias_endpoint": "/anthropic/v1/messages/count-tokens"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
       "response_format": {},
       "updated_at": "2025-11-11T15:34:13.429Z"
     },
     {
-      "provider_alias_intent": "/v1/users",
-      "provider_proxy_intent": "/v1/users",
+      "provider_alias_intent": "/v1/models",
+      "provider_proxy_intent": "/v1/models",
+      "text": "List Models",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+      "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/models/list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List all available models",
+        "api_endpoint": "https://api.anthropic.com/v1/models",
+        "alias_endpoint": "/anthropic/v1/models"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/{model_id}",
+      "provider_proxy_intent": "/v1/models/{model_id}",
+      "text": "Get a Model",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_id": {
+          "text": "The model ID",
+          "type": "string",
+          "required": true,
+          "examples": "claude-sonnet-4-5|claude-haiku-4-5|claude-opus-4-1"
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/models/get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a specific model by ID",
+        "api_endpoint": "https://api.anthropic.com/v1/models/{model_id}",
+        "alias_endpoint": "/anthropic/v1/models/{model_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches",
+      "provider_proxy_intent": "/v1/message_batches",
+      "text": "Create a Message Batch",
+      "category": "Message Batches",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "input_file_id": {
+          "text": "The ID of an uploaded file that contains requests for the new batch",
+          "type": "string",
+          "required": true
+        },
+        "endpoint": {
+          "text": "The endpoint to be used for the batch",
+          "type": "string",
+          "required": true,
+          "examples": "/v1/messages"
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Creates a batch job that processes multiple requests asynchronously",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches",
+        "alias_endpoint": "/anthropic/v1/message_batches"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches/{batch_id}",
+      "provider_proxy_intent": "/v1/message_batches/{batch_id}",
+      "text": "Retrieve a Message Batch",
+      "category": "Message Batches",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "batch_id": {
+          "text": "The ID of the batch",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/retrieve",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Retrieve a specific batch by ID",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches/{batch_id}",
+        "alias_endpoint": "/anthropic/v1/message_batches/{batch_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches/{batch_id}/results",
+      "provider_proxy_intent": "/v1/message_batches/{batch_id}/results",
+      "text": "Retrieve Message Batch Results",
+      "category": "Message Batches",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "batch_id": {
+          "text": "The ID of the batch",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/retrieve-results",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Retrieve the results of a completed batch",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches/{batch_id}/results",
+        "alias_endpoint": "/anthropic/v1/message_batches/{batch_id}/results"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches",
+      "provider_proxy_intent": "/v1/message_batches",
+      "text": "List Message Batches",
+      "category": "Message Batches",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "Number of items to return per page",
+          "type": "number",
+          "default": 20
+        },
+        "after_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object",
+          "type": "string"
+        },
+        "before_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List all message batches",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches",
+        "alias_endpoint": "/anthropic/v1/message_batches"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches/{batch_id}/cancel",
+      "provider_proxy_intent": "/v1/message_batches/{batch_id}/cancel",
+      "text": "Cancel a Message Batch",
+      "category": "Message Batches",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "batch_id": {
+          "text": "The ID of the batch",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/cancel",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Cancel a running batch",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches/{batch_id}/cancel",
+        "alias_endpoint": "/anthropic/v1/message_batches/{batch_id}/cancel"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/message_batches/{batch_id}",
+      "provider_proxy_intent": "/v1/message_batches/{batch_id}",
+      "text": "Delete a Message Batch",
+      "category": "Message Batches",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "batch_id": {
+          "text": "The ID of the batch",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/message-batches/delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a message batch",
+        "api_endpoint": "https://api.anthropic.com/v1/message_batches/{batch_id}",
+        "alias_endpoint": "/anthropic/v1/message_batches/{batch_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files",
+      "provider_proxy_intent": "/v1/files",
+      "text": "Create a File",
+      "category": "Files",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "file": {
+          "text": "The file to upload",
+          "type": "file",
+          "required": true
+        },
+        "purpose": {
+          "text": "The purpose of the file",
+          "type": "string"
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/files/create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Upload a file to use with Claude",
+        "api_endpoint": "https://api.anthropic.com/v1/files",
+        "alias_endpoint": "/anthropic/v1/files"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files",
+      "provider_proxy_intent": "/v1/files",
+      "text": "List Files",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "Number of items to return per page",
+          "type": "number",
+          "default": 20
+        },
+        "after_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object",
+          "type": "string"
+        },
+        "before_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/files/list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List all files",
+        "api_endpoint": "https://api.anthropic.com/v1/files",
+        "alias_endpoint": "/anthropic/v1/files"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/{file_id}",
+      "provider_proxy_intent": "/v1/files/{file_id}",
+      "text": "Get File Metadata",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/files/get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get metadata for a specific file",
+        "api_endpoint": "https://api.anthropic.com/v1/files/{file_id}",
+        "alias_endpoint": "/anthropic/v1/files/{file_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/{file_id}/download",
+      "provider_proxy_intent": "/v1/files/{file_id}/download",
+      "text": "Download a File",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/files/download",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Download a file",
+        "api_endpoint": "https://api.anthropic.com/v1/files/{file_id}/download",
+        "alias_endpoint": "/anthropic/v1/files/{file_id}/download"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/{file_id}",
+      "provider_proxy_intent": "/v1/files/{file_id}",
+      "text": "Delete a File",
+      "category": "Files",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.claude.com/en/api/files/delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a file",
+        "api_endpoint": "https://api.anthropic.com/v1/files/{file_id}",
+        "alias_endpoint": "/anthropic/v1/files/{file_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/api_keys",
+      "provider_proxy_intent": "/v1/organizations/api_keys",
       "text": "List Api Keys",
       "category": "Admin API",
       "method": "GET",
@@ -190,28 +745,28 @@
       "request_type": "API",
       "params": {
         "limit": {
-          "text": "Number of items to return per page.",
+          "text": "Number of items to return per page",
           "type": "number",
           "default": 20
         },
         "status": {
-          "text": "Filter by API key status.",
+          "text": "Filter by API key status",
           "type": "string"
         },
         "after_id": {
-          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object.",
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object",
           "type": "string"
         },
         "before_id": {
-          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object.",
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object",
           "type": "string"
         },
         "workspace_id": {
-          "text": "Filter by Workspace ID.",
+          "text": "Filter by Workspace ID",
           "type": "string"
         },
         "created_by_user_id": {
-          "text": "Filter by the ID of the User who created the object.",
+          "text": "Filter by the ID of the User who created the object",
           "type": "string"
         }
       },
@@ -227,15 +782,611 @@
         "version": "v1",
         "rate_limit": [],
         "description": "List Api Keys",
-        "api_endpoint": "https://api.anthropic.com/v1/users"
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/api_keys",
+        "alias_endpoint": "/anthropic/v1/organizations/api_keys"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
       "response_format": {},
       "updated_at": "2025-11-11T15:34:13.429Z"
     },
     {
-      "provider_alias_intent": "/v1/users",
-      "provider_proxy_intent": "/v1/users",
+      "provider_alias_intent": "/v1/organizations/api_keys",
+      "provider_proxy_intent": "/v1/organizations/api_keys",
+      "text": "Create Api Key",
+      "category": "Admin API",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "name": {
+          "text": "Name for the API key",
+          "type": "string",
+          "required": true
+        },
+        "workspace_id": {
+          "text": "ID of the workspace to associate the API key with",
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+      "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/apikeys/create-api-key",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a new API key",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/api_keys",
+        "alias_endpoint": "/anthropic/v1/organizations/api_keys"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "provider_proxy_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "text": "Get Api Key",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "api_key_id": {
+          "text": "ID of the API key",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/apikeys/get-api-key",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a specific API key by ID",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/api_keys/{api_key_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/api_keys/{api_key_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "provider_proxy_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "text": "Update Api Key",
+      "category": "Admin API",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "api_key_id": {
+          "text": "ID of the API key",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "text": "New name for the API key",
+          "type": "string"
+        },
+        "status": {
+          "text": "Status of the API key",
+          "type": "string",
+          "enum": ["active", "inactive"]
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/apikeys/update-api-key",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Update an API key",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/api_keys/{api_key_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/api_keys/{api_key_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "provider_proxy_intent": "/v1/organizations/api_keys/{api_key_id}",
+      "text": "Delete Api Key",
+      "category": "Admin API",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "api_key_id": {
+          "text": "ID of the API key",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/apikeys/delete-api-key",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete an API key",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/api_keys/{api_key_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/api_keys/{api_key_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces",
+      "provider_proxy_intent": "/v1/organizations/workspaces",
+      "text": "List Workspaces",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "Number of items to return per page",
+          "type": "number",
+          "default": 20
+        },
+        "after_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object",
+          "type": "string"
+        },
+        "before_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspaces/list-workspaces",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List all workspaces",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces",
+      "provider_proxy_intent": "/v1/organizations/workspaces",
+      "text": "Create Workspace",
+      "category": "Admin API",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "name": {
+          "text": "Name for the workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspaces/create-workspace",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a new workspace",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "text": "Get Workspace",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspaces/get-workspace",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a specific workspace by ID",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "text": "Update Workspace",
+      "category": "Admin API",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "text": "New name for the workspace",
+          "type": "string"
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspaces/update-workspace",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Update a workspace",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}",
+      "text": "Delete Workspace",
+      "category": "Admin API",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspaces/delete-workspace",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a workspace",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}/members",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}/members",
+      "text": "List Workspace Members",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "Number of items to return per page",
+          "type": "number",
+          "default": 20
+        },
+        "after_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object",
+          "type": "string"
+        },
+        "before_id": {
+          "text": "ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object",
+          "type": "string"
+        }
+      },
+      "path": {
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/list-workspace-members",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List all members of a workspace",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}/members",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}/members"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}/members",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}/members",
+      "text": "Create Workspace Member",
+      "category": "Admin API",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "user_id": {
+          "text": "ID of the User to add to the workspace",
+          "type": "string",
+          "required": true
+        },
+        "role": {
+          "text": "Role for the user in the workspace",
+          "type": "string",
+          "enum": ["admin", "member"]
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/create-workspace-member",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Add a member to a workspace",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}/members",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}/members"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+      "text": "Get Workspace Member",
+      "category": "Admin API",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "user_id": {
+          "text": "ID of the User",
+          "type": "string",
+          "required": true
+        },
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/get-workspace-member",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a specific workspace member",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}/members/{user_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+      "text": "Update Workspace Member",
+      "category": "Admin API",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "user_id": {
+          "text": "ID of the User",
+          "type": "string",
+          "required": true
+        },
+        "workspace_id": {
+          "text": "ID of the Workspace",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "role": {
+          "text": "New role for the user in the workspace",
+          "type": "string",
+          "enum": ["admin", "member"]
+        }
+      },
+      "custom_headers": {
+        "anthropic-version": "2023-06-01"
+      },
+      "domain_params": {},
+      "meta": {
+      "auth": [],
+        "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/update-workspace-member",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Update a workspace member",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}/members/{user_id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:34:13.429Z"
+    },
+    {
+      "provider_alias_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+      "provider_proxy_intent": "/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
       "text": "Delete Workspace Member",
       "category": "Admin API",
       "method": "DELETE",
@@ -244,12 +1395,12 @@
       "params": {},
       "path": {
         "user_id": {
-          "text": "ID of the User.",
+          "text": "ID of the User",
           "type": "string",
           "required": true
         },
         "workspace_id": {
-          "text": "ID of the Workspace.",
+          "text": "ID of the Workspace",
           "type": "string",
           "required": true
         }
@@ -264,10 +1415,17 @@
         "api_ref": "https://docs.anthropic.com/en/api/admin-api/workspace_members/delete-workspace-member",
         "version": "v1",
         "rate_limit": [],
-        "description": "Delete Workspace Member.",
-        "api_endpoint": "https://api.anthropic.com/v1/users"
+        "description": "Delete Workspace Member",
+        "api_endpoint": "https://api.anthropic.com/v1/organizations/workspaces/{workspace_id}/members/{user_id}",
+        "alias_endpoint": "/anthropic/v1/organizations/workspaces/{workspace_id}/members/{user_id}"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "x-api-key",
+          "headerValue": ""
+        }
+      },
       "response_format": {},
       "updated_at": "2025-11-11T15:34:13.429Z"
     }

@@ -27,10 +27,10 @@
     "headers": {},
     "api_endpoint": "https://api.openai.com",
     "released": 1,
-    "updated_at": "2024-12-22T10:22:16.000Z",
+    "updated_at": "2025-11-11T15:34:13.464Z",
     "website": "https://openai.com",
     "api_link_ref": "https://platform.openai.com/docs/api-reference/introduction",
-    "total_api": 122,
+    "total_api": 135,
     "credential_link": "https://platform.openai.com/account/api-keys"
   },
   "routes": [
@@ -2630,6 +2630,645 @@
         "api_endpoint": "https://api.openai.com/v1/threads/{thread_id}",
         "alias_endpoint": "/openai/v1/threads/thread_id",
         "api_ref": "https://platform.openai.com/docs/api-reference/threads/deleteThread"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/batches",
+      "text": "Create batch",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "input_file_id": {
+          "type": "string",
+          "text": "The ID of an uploaded file that contains requests for the new batch",
+          "required": true
+        },
+        "endpoint": {
+          "type": "string",
+          "text": "The endpoint to be used for the batch. Currently only /v1/chat/completions is supported",
+          "required": true,
+          "examples": "/v1/chat/completions"
+        },
+        "completion_window": {
+          "type": "string",
+          "text": "The time frame within which the batch should be processed. Currently only 24h is supported",
+          "examples": "24h"
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of 16 key-value pairs that can be attached to an object"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Creates a batch job that processes multiple requests asynchronously",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/batches",
+        "alias_endpoint": "/openai/v1/batches",
+        "api_ref": "https://platform.openai.com/docs/api-reference/batch/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/batches",
+      "text": "List batches",
+      "category": "Batch",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "after": {
+          "type": "string",
+          "text": "A cursor for use in pagination"
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 20"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List your organization's batches",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/batches",
+        "alias_endpoint": "/openai/v1/batches",
+        "api_ref": "https://platform.openai.com/docs/api-reference/batch/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/batches/batch_id",
+      "text": "Retrieve batch",
+      "category": "Batch",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "batch_id": {
+          "type": "string",
+          "text": "The ID of the batch to retrieve",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "batch_id": {
+          "type": "string",
+          "text": "The ID of the batch to retrieve",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieves a batch",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/batches/{batch_id}",
+        "alias_endpoint": "/openai/v1/batches/batch_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/batch/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/batches/batch_id/cancel",
+      "text": "Cancel batch",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "batch_id": {
+          "type": "string",
+          "text": "The ID of the batch to cancel",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "batch_id": {
+          "type": "string",
+          "text": "The ID of the batch to cancel",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Cancels an in-progress batch",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/batches/{batch_id}/cancel",
+        "alias_endpoint": "/openai/v1/batches/batch_id/cancel",
+        "api_ref": "https://platform.openai.com/docs/api-reference/batch/cancel"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores",
+      "text": "Create vector store",
+      "category": "Vector Stores",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the vector store"
+        },
+        "file_ids": {
+          "type": "array",
+          "text": "A list of File IDs that the vector store should use. Useful for tools like file_search that can access files"
+        },
+        "expires_after": {
+          "type": "object",
+          "text": "The expiration policy for a vector store"
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of 16 key-value pairs that can be attached to an object"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores",
+        "alias_endpoint": "/openai/v1/vector_stores",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores",
+      "text": "List vector stores",
+      "category": "Vector Stores",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned"
+        },
+        "order": {
+          "type": "string",
+          "text": "Sort order by the created_at timestamp of the objects"
+        },
+        "after": {
+          "type": "string",
+          "text": "A cursor for use in pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "A cursor for use in pagination"
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Returns a list of vector stores",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores",
+        "alias_endpoint": "/openai/v1/vector_stores",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id",
+      "text": "Retrieve vector store",
+      "category": "Vector Stores",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to retrieve",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to retrieve",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieves a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id",
+      "text": "Modify vector store",
+      "category": "Vector Stores",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to modify",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the vector store"
+        },
+        "expires_after": {
+          "type": "object",
+          "text": "The expiration policy for a vector store"
+        },
+        "metadata": {
+          "type": "object",
+          "text": "Set of 16 key-value pairs that can be attached to an object"
+        }
+      },
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to modify",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Modifies a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores/modify"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id",
+      "text": "Delete vector store",
+      "category": "Vector Stores",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to delete",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store to delete",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores/delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id/files",
+      "text": "Create vector store file",
+      "category": "Vector Stores",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store for which to create a File",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {
+        "file_id": {
+          "type": "string",
+          "text": "A File ID that the vector store should use",
+          "required": true
+        }
+      },
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store for which to create a File",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a vector store file by attaching a File to a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}/files",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id/files",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores-files/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id/files",
+      "text": "List vector store files",
+      "category": "Vector Stores",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the files belong to",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "A limit on the number of objects to be returned"
+        },
+        "order": {
+          "type": "string",
+          "text": "Sort order by the created_at timestamp of the objects"
+        },
+        "after": {
+          "type": "string",
+          "text": "A cursor for use in pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "A cursor for use in pagination"
+        },
+        "filter": {
+          "type": "string",
+          "text": "Filter by file status"
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the files belong to",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Returns a list of files in a vector store",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}/files",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id/files",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores-files/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id/files/file_id",
+      "text": "Retrieve vector store file",
+      "category": "Vector Stores",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the file belongs to",
+          "required": true
+        },
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file being retrieved",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the file belongs to",
+          "required": true
+        },
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file being retrieved",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Retrieves a vector store file",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}/files/{file_id}",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id/files/file_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores-files/retrieve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:34:13.464Z"
+    },
+    {
+      "provider_alias_intent": "/v1/vector_stores/vector_store_id/files/file_id",
+      "text": "Delete vector store file",
+      "category": "Vector Stores",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the file belongs to",
+          "required": true
+        },
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file to delete",
+          "required": true
+        }
+      },
+      "custom_headers": {
+        "OpenAI-Beta": "assistants=v1"
+      },
+      "body": {},
+      "path": {
+        "vector_store_id": {
+          "type": "string",
+          "text": "The ID of the vector store that the file belongs to",
+          "required": true
+        },
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file to delete",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a vector store file",
+        "rate_limit": [],
+        "api_endpoint": "https://api.openai.com/v1/vector_stores/{vector_store_id}/files/{file_id}",
+        "alias_endpoint": "/openai/v1/vector_stores/vector_store_id/files/file_id",
+        "api_ref": "https://platform.openai.com/docs/api-reference/vector-stores-files/delete"
       },
       "auth": {
         "header": {
