@@ -1,372 +1,340 @@
 {
-  "config": {
-    "id": "colossyan",
-    "name": "Colossyan",
-    "description": "",
-    "logo_url": "colossyan.svg",
-    "auth_type": "TOKEN",
-    "auth": {
-      "header": {
-        "authKey": "token",
-        "headerName": "authorizationtoken",
-        "headerValue": "Bearer"
-      }
+  "provider_alias_intent": "/assets/actors",
+  "text": "Actors",
+  "category": "Assets",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {
+    "text": {
+      "type": "string",
+      "text": "The text we want to turn into speech.",
+      "required": true
     },
-    "auth_config": [
-      {
-        "name": "api_key",
-        "type": "input",
-        "field": "input",
-        "label": "API Key",
-        "message": "This API key will be used for accessing APIs.",
-        "required": true,
-        "className": "",
-        "placeholder": ""
-      }
-    ],
-    "headers": {},
-    "api_endpoint": "https://app.colossyan.com/api",
-    "released": 1,
-    "updated_at": "2024-12-22T06:48:36.000Z",
-    "website": "https://www.colossyan.com/",
-    "api_link_ref": "https://docs.colossyan.com/",
-    "total_api": 6,
-    "credential_link": ""
-  },
-  "routes": [
-    {
-      "provider_alias_intent": "/assets/actors",
-      "text": "Actors",
-      "category": "Assets",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {
-        "text": {
-          "type": "string",
-          "text": "The text we want to turn into speech.",
-          "required": true
-        },
-        "speaker_id": {
-          "type": "string",
-          "text": "The voice id of the desired speaker.",
-          "required": true
-        },
-        "speed": {
-          "type": "number",
-          "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pitch": {
-          "type": "number",
-          "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pause": {
-          "type": "number",
-          "text": "Pause between sentences. Minimum: 0. Maximum: 5."
-        }
-      },
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "A list of actors can be retrieved by fetching\n",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/assets/actors",
-        "alias_endpoint": "/colossyan/assets/actors",
-        "api_ref": "https://docs.colossyan.com/assets/actors"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
+    "speaker_id": {
+      "type": "string",
+      "text": "The voice id of the desired speaker.",
+      "required": true
     },
-    {
-      "provider_alias_intent": "/assets/voices",
-      "text": "Voices",
-      "category": "Assets",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {
-        "text": {
-          "type": "string",
-          "text": "The text we want to turn into speech.",
-          "required": true
-        },
-        "speaker_id": {
-          "type": "string",
-          "text": "The voice id of the desired speaker.",
-          "required": true
-        },
-        "speed": {
-          "type": "number",
-          "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pitch": {
-          "type": "number",
-          "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pause": {
-          "type": "number",
-          "text": "Pause between sentences. Minimum: 0. Maximum: 5."
-        }
-      },
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Here you can see a list of the speaker voices supported by our Actor Track. Refer to them by their id through the API.",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/assets/voices",
-        "alias_endpoint": "/colossyan/assets/voices",
-        "api_ref": "https://docs.colossyan.com/assets/voices"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
+    "speed": {
+      "type": "number",
+      "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
     },
-    {
-      "provider_alias_intent": "/video-generation-jobs",
-      "text": "Creating video",
-      "category": "Usage",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {
-        "videoCreative": {
-          "type": "object",
-          "text": "Everything describing how the video should look.",
-          "required": true
-        },
-        "dynamicVariables": {
-          "type": "object",
-          "text": "A simple object of your choice containing the dynamic variables to replace the tokens in the video creative"
-        },
-        "callback": {
-          "type": "string",
-          "text": "A url we will ping with a POST request once the video is generated"
-        },
-        "callbackPayload": {
-          "type": "object",
-          "text": "A simple object of your choice containing things to put into the callback function's body"
-        }
-      },
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Whenever you would like to create a new video, you have to post a new video generation job. This job will be picked up by our workers, executed and then you will be notified about the result.",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/video-generation-jobs",
-        "alias_endpoint": "/colossyan/video-generation-jobs",
-        "api_ref": "https://docs.colossyan.com/usage/creating-video"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
+    "pitch": {
+      "type": "number",
+      "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
     },
-    {
-      "provider_alias_intent": "/video-generation-jobs/jobid",
-      "text": "Getting video",
-      "category": "Usage",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "status": {
-          "type": "enum",
-          "text": "The status of the job. It can be any of the following: in_queue, preprocessing, preprocessing_finished, generating, finished, failed, deleted",
-          "enum": [
-            "in_queue",
-            "preprocessing",
-            "preprocessing_finished",
-            "generating",
-            "finished",
-            "failed",
-            "deleted"
-          ]
-        },
-        "videoId": {
-          "type": "string",
-          "text": "The id of the video the job will produce or has produced."
-        },
-        "progress": {
-          "type": "string",
-          "text": "The amount of progress the job has completed during its runtime."
-        },
-        "maximumProgress": {
-          "type": "string",
-          "text": "The amount of progress it takes to generate the video. Hint: use progress / maximumProgress to calculate the progress percentage."
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Polling is there to speed up development efforts and it allows you to get access to your generated videos without having to spin up your own server.",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/video-generation-jobs/{jobId}",
-        "alias_endpoint": "/colossyan/video-generation-jobs/jobid",
-        "api_ref": "https://docs.colossyan.com/usage/getting-video#polling"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
-    },
-    {
-      "provider_alias_intent": "/generated-videos/videoid",
-      "text": "Getting the video URL",
-      "category": "Usage",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "publicUrl": {
-          "type": "string",
-          "text": "The public URL of the video. This can be accessed without the need of authentication."
-        },
-        "shareId": {
-          "type": "string",
-          "text": "Use this to share the video on Colossyan's video sharing platform: https://app.colossyan.com/share/{shareId}"
-        },
-        "videoSizeBytes": {
-          "type": "number",
-          "text": "The video's file size in bytes."
-        },
-        "videoDurationSeconds": {
-          "type": "number",
-          "text": "The video's duration in seconds."
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "When a job is finished, you can call the following endpoint to retrieve the resulting video's URL and other properties. (Replace {videoId} with the video id in the job object).",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/generated-videos/{videoId}",
-        "alias_endpoint": "/colossyan/generated-videos/videoid",
-        "api_ref": "https://docs.colossyan.com/usage/getting-video#getting-the-video-url"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
-    },
-    {
-      "provider_alias_intent": "/audio-generation-jobs",
-      "text": "Text to Speech",
-      "category": "Usage",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {
-        "text": {
-          "type": "string",
-          "text": "The text we want to turn into speech.",
-          "required": true
-        },
-        "speaker_id": {
-          "type": "string",
-          "text": "The voice id of the desired speaker.",
-          "required": true
-        },
-        "speed": {
-          "type": "number",
-          "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pitch": {
-          "type": "number",
-          "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
-        },
-        "pause": {
-          "type": "number",
-          "text": "Pause between sentences. Minimum: 0. Maximum: 5."
-        }
-      },
-      "path": {},
-      "domain_params": {
-        "endpoint": {
-          "type": "string"
-        }
-      },
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "We offer the option to listen to the voices with your custom text input.\n",
-        "rate_limit": [],
-        "api_endpoint": "https://app.colossyan.com/api/audio-generation-jobs",
-        "alias_endpoint": "/colossyan/audio-generation-jobs",
-        "api_ref": "https://docs.colossyan.com/usage/listen"
-      },
-      "auth": {
-        "header": {
-          "headerName": "authorizationtoken",
-          "headerValue": "Bearer",
-          "authKey": "token"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.838Z"
+    "pause": {
+      "type": "number",
+      "text": "Pause between sentences. Minimum: 0. Maximum: 5."
     }
-  ]
+  },
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "A list of actors can be retrieved by fetching\n",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/assets/actors",
+    "alias_endpoint": "/colossyan/assets/actors",
+    "api_ref": "https://docs.colossyan.com/assets/actors"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/assets/actors"
+}
+{
+  "provider_alias_intent": "/assets/voices",
+  "text": "Voices",
+  "category": "Assets",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {
+    "text": {
+      "type": "string",
+      "text": "The text we want to turn into speech.",
+      "required": true
+    },
+    "speaker_id": {
+      "type": "string",
+      "text": "The voice id of the desired speaker.",
+      "required": true
+    },
+    "speed": {
+      "type": "number",
+      "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
+    },
+    "pitch": {
+      "type": "number",
+      "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
+    },
+    "pause": {
+      "type": "number",
+      "text": "Pause between sentences. Minimum: 0. Maximum: 5."
+    }
+  },
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Here you can see a list of the speaker voices supported by our Actor Track. Refer to them by their id through the API.",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/assets/voices",
+    "alias_endpoint": "/colossyan/assets/voices",
+    "api_ref": "https://docs.colossyan.com/assets/voices"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/assets/voices"
+}
+{
+  "provider_alias_intent": "/video-generation-jobs",
+  "text": "Creating video",
+  "category": "Usage",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {
+    "videoCreative": {
+      "type": "object",
+      "text": "Everything describing how the video should look.",
+      "required": true
+    },
+    "dynamicVariables": {
+      "type": "object",
+      "text": "A simple object of your choice containing the dynamic variables to replace the tokens in the video creative"
+    },
+    "callback": {
+      "type": "string",
+      "text": "A url we will ping with a POST request once the video is generated"
+    },
+    "callbackPayload": {
+      "type": "object",
+      "text": "A simple object of your choice containing things to put into the callback function's body"
+    }
+  },
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Whenever you would like to create a new video, you have to post a new video generation job. This job will be picked up by our workers, executed and then you will be notified about the result.",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/video-generation-jobs",
+    "alias_endpoint": "/colossyan/video-generation-jobs",
+    "api_ref": "https://docs.colossyan.com/usage/creating-video"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/video-generation-jobs"
+}
+{
+  "provider_alias_intent": "/video-generation-jobs/jobid",
+  "text": "Getting video",
+  "category": "Usage",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "status": {
+      "type": "enum",
+      "text": "The status of the job. It can be any of the following: in_queue, preprocessing, preprocessing_finished, generating, finished, failed, deleted",
+      "enum": [
+        "in_queue",
+        "preprocessing",
+        "preprocessing_finished",
+        "generating",
+        "finished",
+        "failed",
+        "deleted"
+      ]
+    },
+    "videoId": {
+      "type": "string",
+      "text": "The id of the video the job will produce or has produced."
+    },
+    "progress": {
+      "type": "string",
+      "text": "The amount of progress the job has completed during its runtime."
+    },
+    "maximumProgress": {
+      "type": "string",
+      "text": "The amount of progress it takes to generate the video. Hint: use progress / maximumProgress to calculate the progress percentage."
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Polling is there to speed up development efforts and it allows you to get access to your generated videos without having to spin up your own server.",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/video-generation-jobs/{jobId}",
+    "alias_endpoint": "/colossyan/video-generation-jobs/jobid",
+    "api_ref": "https://docs.colossyan.com/usage/getting-video#polling"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/video-generation-jobs/jobid"
+}
+{
+  "provider_alias_intent": "/generated-videos/videoid",
+  "text": "Getting the video URL",
+  "category": "Usage",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "publicUrl": {
+      "type": "string",
+      "text": "The public URL of the video. This can be accessed without the need of authentication."
+    },
+    "shareId": {
+      "type": "string",
+      "text": "Use this to share the video on Colossyan's video sharing platform: https://app.colossyan.com/share/{shareId}"
+    },
+    "videoSizeBytes": {
+      "type": "number",
+      "text": "The video's file size in bytes."
+    },
+    "videoDurationSeconds": {
+      "type": "number",
+      "text": "The video's duration in seconds."
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "When a job is finished, you can call the following endpoint to retrieve the resulting video's URL and other properties. (Replace {videoId} with the video id in the job object).",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/generated-videos/{videoId}",
+    "alias_endpoint": "/colossyan/generated-videos/videoid",
+    "api_ref": "https://docs.colossyan.com/usage/getting-video#getting-the-video-url"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/generated-videos/videoid"
+}
+{
+  "provider_alias_intent": "/audio-generation-jobs",
+  "text": "Text to Speech",
+  "category": "Usage",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {
+    "text": {
+      "type": "string",
+      "text": "The text we want to turn into speech.",
+      "required": true
+    },
+    "speaker_id": {
+      "type": "string",
+      "text": "The voice id of the desired speaker.",
+      "required": true
+    },
+    "speed": {
+      "type": "number",
+      "text": "The talking speed of the speaker. Minimum: 0.9. Maximum: 1.1."
+    },
+    "pitch": {
+      "type": "number",
+      "text": "The pitch of the voice. Minimum: 0.9. Maximum: 1.1."
+    },
+    "pause": {
+      "type": "number",
+      "text": "Pause between sentences. Minimum: 0. Maximum: 5."
+    }
+  },
+  "path": {},
+  "domain_params": {
+    "endpoint": {
+      "type": "string"
+    }
+  },
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "We offer the option to listen to the voices with your custom text input.\n",
+    "rate_limit": [],
+    "api_endpoint": "https://app.colossyan.com/api/audio-generation-jobs",
+    "alias_endpoint": "/colossyan/audio-generation-jobs",
+    "api_ref": "https://docs.colossyan.com/usage/listen"
+  },
+  "auth": {
+    "header": {
+      "headerName": "authorizationtoken",
+      "headerValue": "Bearer",
+      "authKey": "token"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/audio-generation-jobs"
 }

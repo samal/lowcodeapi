@@ -1,548 +1,527 @@
 {
-  "config": {
-    "id": "base64ai",
-    "name": "Base64 AI",
-    "description": "",
-    "logo_url": "base64ai.svg",
-    "auth_type": "TOKEN",
-    "auth": {
-      "header": {
-        "authKey": "api_key",
-        "headerName": "Authorization",
-        "headerValue": "Bearer"
-      }
-    },
-    "auth_config": [
-      {
-        "name": "api_key",
-        "type": "input",
-        "field": "input",
-        "label": "API Key",
-        "message": "This API key will be used for accessing APIs.",
-        "required": true,
-        "className": "",
-        "placeholder": ""
-      }
-    ],
-    "headers": {},
-    "api_endpoint": "https://base64.ai",
-    "released": 1,
-    "updated_at": "2024-12-22T06:01:39.000Z",
-    "website": "https://base64.ai/",
-    "api_link_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz",
-    "total_api": 17,
-    "credential_link": ""
+  "provider_alias_intent": "/api/custom-model",
+  "text": "Create custom model",
+  "category": "Custom Model",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Create custom model",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/custom-model",
+    "alias_endpoint": "/base64/api/custom-model",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#661f62d8-258e-4ce1-b8e2-1271a9178eba"
   },
-  "routes": [
-    {
-      "provider_alias_intent": "/api/custom-model",
-      "text": "Create custom model",
-      "category": "Custom Model",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Create custom model",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/custom-model",
-        "alias_endpoint": "/base64/api/custom-model",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#661f62d8-258e-4ce1-b8e2-1271a9178eba"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/custom-model/custom-model-uuid",
-      "text": "Delete custom model",
-      "category": "Custom Model",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Delete custom model",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/custom-model/<custom-model-uuid>",
-        "alias_endpoint": "/base64/api/custom-model/custom-model-uuid",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#0dd517f5-9f77-4b0e-9795-06f76fdb175b"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/custom-model",
-      "text": "Get custom models",
-      "category": "Custom Model",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Get custom models",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/custom-model",
-        "alias_endpoint": "/base64/api/custom-model",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ae40c0c2-3757-4c5a-8f2a-2021fd61b7d9"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/scan",
-      "text": "Redact sensitive information on a document by URL",
-      "category": "Signature AI",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Redact sensitive information on a document by URL",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/scan",
-        "alias_endpoint": "/base64/api/scan",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#bee2e619-6a5d-47c7-8e02-3b4af95cce33"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/mock/scan",
-      "text": "Mock data extraction for testing (free to use)",
-      "category": "Document AI",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "You may use the mock endpoint for testing your API integration",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/mock/scan",
-        "alias_endpoint": "/base64/mock/scan",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ea06ee71-a337-4286-a2da-12754d401314"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/face",
-      "text": "Delete a stored face",
-      "category": "Face AI\n",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "This API allows you to delete a recorded face",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/face",
-        "alias_endpoint": "/base64/api/face",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#aeac7bc2-e381-4f36-b98a-9a5fc0b8131e"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/flow",
-      "text": "Create Flow",
-      "category": "Flow",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Create Flow",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/flow",
-        "alias_endpoint": "/base64/api/flow",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#c605083a-2848-4bc9-910b-b5c336454f67"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/flow/flow-uuid",
-      "text": "Delete Flow",
-      "category": "Flow",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Delete Flow",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/flow/<flow-uuid>",
-        "alias_endpoint": "/base64/api/flow/flow-uuid",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#69394867-45c5-4770-ad56-736aa539d406"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/flow",
-      "text": "Get all Flows",
-      "category": "Flow",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Get all Flows",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/flow",
-        "alias_endpoint": "/base64/api/flow",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#c11fb0e5-d5fc-48db-b6d8-44d2cb4abfa4"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/result/resultuuid",
-      "text": "Get result by result uuid",
-      "category": "Result",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Get result by result uuid",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/result/<resultUuid>",
-        "alias_endpoint": "/base64/api/result/resultuuid",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#b9f6cd5a-15bf-499c-b1df-53cb37911b91"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/result/resultuuid",
-      "text": "Review result",
-      "category": "Flow",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "You can review your results by sending status and results to the API",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/result/:resultUuid",
-        "alias_endpoint": "/base64/api/result/resultuuid",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ae6b6bed-3099-4461-b5e0-66c37ef0fa8d"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/result/ask/resultuuid",
-      "text": "Ask a question",
-      "category": "Flow",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Ask a question",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/result/ask/:resultUuid",
-        "alias_endpoint": "/base64/api/result/ask/resultuuid",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#e62cb278-1c07-4314-bd11-3ba69c41c072"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/result",
-      "text": "Get results from a specified Flow",
-      "category": "Result",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Get results from a specified Flow\r",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/result",
-        "alias_endpoint": "/base64/api/result",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#54905a40-38aa-4b5f-be81-ac383a454573"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/report",
-      "text": "Report issues to Base64.ai Support programmatically",
-      "category": "Result",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "If you want to report an issue with our data extraction, such as a field that came out blank or incorrect",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/report",
-        "alias_endpoint": "/base64/api/report",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#2e4cf476-32a0-4e45-85eb-d09fec1143e0"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/signature",
-      "text": "Verify signatures on two documents by URL",
-      "category": "Signature AI",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "This API can also take 2 URLs (url and queryUrl parameters) and returns the signature's coordinates",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/signature",
-        "alias_endpoint": "/base64/api/signature",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ac49e0c1-beea-4a71-b624-dd26351ca6b6"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/auth/signup",
-      "text": "Create user",
-      "category": "User",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "Create user",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/auth/signup",
-        "alias_endpoint": "/base64/api/auth/signup",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#8e26a73b-de21-4d8b-bf2f-0a9d2a45f95b"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
-    },
-    {
-      "provider_alias_intent": "/api/auth/user",
-      "text": "Get user data such as name, remaining credits, and tags",
-      "category": "User",
-      "method": "GET",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "{}",
-        "auth": [],
-        "description": "This API allows you to read your user data",
-        "rate_limit": [],
-        "api_endpoint": "https://base64.ai/api/auth/user",
-        "alias_endpoint": "/base64/api/auth/user",
-        "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#39190748-5d86-4fba-a6ba-50d0df900e2f"
-      },
-      "auth": {
-        "header": {
-          "headerName": "Authorization",
-          "headerValue": "Bearer",
-          "authKey": "api_key"
-        }
-      },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.803Z"
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
     }
-  ]
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/custom-model"
+}
+{
+  "provider_alias_intent": "/api/custom-model/custom-model-uuid",
+  "text": "Delete custom model",
+  "category": "Custom Model",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Delete custom model",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/custom-model/<custom-model-uuid>",
+    "alias_endpoint": "/base64/api/custom-model/custom-model-uuid",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#0dd517f5-9f77-4b0e-9795-06f76fdb175b"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/custom-model/custom-model-uuid"
+}
+{
+  "provider_alias_intent": "/api/custom-model",
+  "text": "Get custom models",
+  "category": "Custom Model",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Get custom models",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/custom-model",
+    "alias_endpoint": "/base64/api/custom-model",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ae40c0c2-3757-4c5a-8f2a-2021fd61b7d9"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/custom-model"
+}
+{
+  "provider_alias_intent": "/api/scan",
+  "text": "Redact sensitive information on a document by URL",
+  "category": "Signature AI",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Redact sensitive information on a document by URL",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/scan",
+    "alias_endpoint": "/base64/api/scan",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#bee2e619-6a5d-47c7-8e02-3b4af95cce33"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/scan"
+}
+{
+  "provider_alias_intent": "/mock/scan",
+  "text": "Mock data extraction for testing (free to use)",
+  "category": "Document AI",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "You may use the mock endpoint for testing your API integration",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/mock/scan",
+    "alias_endpoint": "/base64/mock/scan",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ea06ee71-a337-4286-a2da-12754d401314"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/mock/scan"
+}
+{
+  "provider_alias_intent": "/api/face",
+  "text": "Delete a stored face",
+  "category": "Face AI\n",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "This API allows you to delete a recorded face",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/face",
+    "alias_endpoint": "/base64/api/face",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#aeac7bc2-e381-4f36-b98a-9a5fc0b8131e"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/face"
+}
+{
+  "provider_alias_intent": "/api/flow",
+  "text": "Create Flow",
+  "category": "Flow",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Create Flow",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/flow",
+    "alias_endpoint": "/base64/api/flow",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#c605083a-2848-4bc9-910b-b5c336454f67"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/flow"
+}
+{
+  "provider_alias_intent": "/api/flow/flow-uuid",
+  "text": "Delete Flow",
+  "category": "Flow",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Delete Flow",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/flow/<flow-uuid>",
+    "alias_endpoint": "/base64/api/flow/flow-uuid",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#69394867-45c5-4770-ad56-736aa539d406"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/flow/flow-uuid"
+}
+{
+  "provider_alias_intent": "/api/flow",
+  "text": "Get all Flows",
+  "category": "Flow",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Get all Flows",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/flow",
+    "alias_endpoint": "/base64/api/flow",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#c11fb0e5-d5fc-48db-b6d8-44d2cb4abfa4"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/flow"
+}
+{
+  "provider_alias_intent": "/api/result/resultuuid",
+  "text": "Get result by result uuid",
+  "category": "Result",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Get result by result uuid",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/result/<resultUuid>",
+    "alias_endpoint": "/base64/api/result/resultuuid",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#b9f6cd5a-15bf-499c-b1df-53cb37911b91"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/result/resultuuid"
+}
+{
+  "provider_alias_intent": "/api/result/resultuuid",
+  "text": "Review result",
+  "category": "Flow",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "You can review your results by sending status and results to the API",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/result/:resultUuid",
+    "alias_endpoint": "/base64/api/result/resultuuid",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ae6b6bed-3099-4461-b5e0-66c37ef0fa8d"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/result/resultuuid"
+}
+{
+  "provider_alias_intent": "/api/result/ask/resultuuid",
+  "text": "Ask a question",
+  "category": "Flow",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Ask a question",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/result/ask/:resultUuid",
+    "alias_endpoint": "/base64/api/result/ask/resultuuid",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#e62cb278-1c07-4314-bd11-3ba69c41c072"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/result/ask/resultuuid"
+}
+{
+  "provider_alias_intent": "/api/result",
+  "text": "Get results from a specified Flow",
+  "category": "Result",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Get results from a specified Flow\r",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/result",
+    "alias_endpoint": "/base64/api/result",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#54905a40-38aa-4b5f-be81-ac383a454573"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/result"
+}
+{
+  "provider_alias_intent": "/api/report",
+  "text": "Report issues to Base64.ai Support programmatically",
+  "category": "Result",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "If you want to report an issue with our data extraction, such as a field that came out blank or incorrect",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/report",
+    "alias_endpoint": "/base64/api/report",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#2e4cf476-32a0-4e45-85eb-d09fec1143e0"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/report"
+}
+{
+  "provider_alias_intent": "/api/signature",
+  "text": "Verify signatures on two documents by URL",
+  "category": "Signature AI",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "This API can also take 2 URLs (url and queryUrl parameters) and returns the signature's coordinates",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/signature",
+    "alias_endpoint": "/base64/api/signature",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#ac49e0c1-beea-4a71-b624-dd26351ca6b6"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/signature"
+}
+{
+  "provider_alias_intent": "/api/auth/signup",
+  "text": "Create user",
+  "category": "User",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "Create user",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/auth/signup",
+    "alias_endpoint": "/base64/api/auth/signup",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#8e26a73b-de21-4d8b-bf2f-0a9d2a45f95b"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/auth/signup"
+}
+{
+  "provider_alias_intent": "/api/auth/user",
+  "text": "Get user data such as name, remaining credits, and tags",
+  "category": "User",
+  "method": "GET",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "{}",
+    "auth": [],
+    "description": "This API allows you to read your user data",
+    "rate_limit": [],
+    "api_endpoint": "https://base64.ai/api/auth/user",
+    "alias_endpoint": "/base64/api/auth/user",
+    "api_ref": "https://documenter.getpostman.com/view/10132588/SWT5hfdz#39190748-5d86-4fba-a6ba-50d0df900e2f"
+  },
+  "auth": {
+    "header": {
+      "headerName": "Authorization",
+      "headerValue": "Bearer",
+      "authKey": "api_key"
+    }
+  },
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/api/auth/user"
 }

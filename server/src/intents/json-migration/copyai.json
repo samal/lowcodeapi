@@ -1,318 +1,287 @@
 {
-  "config": {
-    "id": "copyai",
-    "name": "Copy AI",
-    "description": "",
-    "logo_url": "copyai.svg",
-    "auth_type": "TOKEN",
-    "auth": {
-      "header": {
-        "authKey": "api_key",
-        "headerName": "x-copy-ai-api-key",
-        "headerValue": ""
-      }
+  "provider_alias_intent": "/webhook",
+  "text": "Register Webhook",
+  "category": "Webhooks",
+  "method": "POST",
+  "type": "API",
+  "params": {},
+  "custom_headers": {},
+  "body": {
+    "url": {
+      "type": "string",
+      "text": "The URL of the webhook endpoint.",
+      "required": true
     },
-    "auth_config": [
-      {
-        "name": "api_key",
-        "type": "input",
-        "field": "input",
-        "label": "API Key",
-        "message": "This API key will be used for accessing APIs.",
-        "required": true,
-        "className": "",
-        "placeholder": ""
-      }
-    ],
-    "headers": {},
-    "api_endpoint": "https://api.copy.ai/api",
-    "released": 1,
-    "updated_at": "2024-12-22T07:13:27.000Z",
-    "website": "https://www.copy.ai/",
-    "api_link_ref": "https://docs.copy.ai/reference/authentication",
-    "total_api": 7,
-    "credential_link": ""
-  },
-  "routes": [
-    {
-      "provider_alias_intent": "/webhook",
-      "text": "Register Webhook",
-      "category": "Webhooks",
-      "method": "POST",
-      "type": "API",
-      "params": {},
-      "custom_headers": {},
-      "body": {
-        "url": {
-          "type": "string",
-          "text": "The URL of the webhook endpoint.",
-          "required": true
-        },
-        "eventType": {
-          "type": "string",
-          "text": "The event type you want to receive notifications for.",
-          "required": true
-        },
-        "workflowId": {
-          "type": "string",
-          "text": "The workflow id you want to receive events for."
-        }
-      },
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "Register a webhook endpoints, to be notified about workflow events that happen in your workspace",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/webhook",
-        "alias_endpoint": "/copyai/webhook",
-        "api_ref": "https://docs.copy.ai/reference/register-webhook"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
+    "eventType": {
+      "type": "string",
+      "text": "The event type you want to receive notifications for.",
+      "required": true
     },
-    {
-      "provider_alias_intent": "/webhook/webhook_id",
-      "text": "Get Webhook",
-      "category": "Webhooks",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "webhook_id": {
-          "type": "string",
-          "text": "The ID of the webhook",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "webhook_id": {
-          "type": "string",
-          "text": "The ID of the webhook",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "View the details of a webhook",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/webhook/{webhook_id}",
-        "alias_endpoint": "/copyai/webhook/webhook_id",
-        "api_ref": "https://docs.copy.ai/reference/get-all-webhooks-copy"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
-    },
-    {
-      "provider_alias_intent": "/webhook",
-      "text": "Get All Webhooks",
-      "category": "Webhooks",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "size": {
-          "type": "number",
-          "text": "Number of webhooks to include in pagination (up to 100, defaults to 10)."
-        },
-        "page": {
-          "type": "number",
-          "text": "Used to specify further pages (starts at 1)."
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {},
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "View the details of all webhook endpoints registered for your workspace",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/webhook",
-        "alias_endpoint": "/copyai/webhook",
-        "api_ref": "https://docs.copy.ai/reference/register-webhook-copy"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
-    },
-    {
-      "provider_alias_intent": "/webhook/webhook_id",
-      "text": "Remove Webhook",
-      "category": "Webhooks",
-      "method": "DELETE",
-      "type": "API",
-      "params": {
-        "webhook_id": {
-          "type": "string",
-          "text": "The ID of the webhook",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "webhook_id": {
-          "type": "string",
-          "text": "The ID of the webhook",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "Remove a webhook endpoint",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/webhook/{webhook_id}",
-        "alias_endpoint": "/copyai/webhook/webhook_id",
-        "api_ref": "https://docs.copy.ai/reference/get-webhook-copy"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
-    },
-    {
-      "provider_alias_intent": "/workflow/workflow_id/run",
-      "text": "Start a Workflow Run",
-      "category": "Workflow Runs",
-      "method": "POST",
-      "type": "API",
-      "params": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {
-        "startVariables": {
-          "type": "object",
-          "text": "A JSON object containing all start variables for your workflow.",
-          "required": true
-        },
-        "metadata": {
-          "type": "object",
-          "text": "A JSON object containing metadata to store and return with the workflow run. Defaults to { 'api': true }"
-        }
-      },
-      "path": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "To get started with starting a Workflow Run",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/workflow/{workflow_id}/run",
-        "alias_endpoint": "/copyai/workflow/workflow_id/run",
-        "api_ref": "https://docs.copy.ai/reference/start-a-workflow-run"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
-    },
-    {
-      "provider_alias_intent": "/workflow/workflow_id/run/run_id",
-      "text": "Get Workflow Run",
-      "category": "Workflow Runs",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        },
-        "run_id": {
-          "type": "string",
-          "text": "The ID of the workflow run",
-          "required": true
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        },
-        "run_id": {
-          "type": "string",
-          "text": "The ID of the workflow run",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "View the details of a workflow run",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/workflow/{workflow_id}/run/{run_id}",
-        "alias_endpoint": "/copyai/workflow/workflow_id/run/run_id",
-        "api_ref": "https://docs.copy.ai/reference/single-workflow-run"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
-    },
-    {
-      "provider_alias_intent": "/workflow/workflow_id/run",
-      "text": "Get All Workflow Runs",
-      "category": "Workflow Runs",
-      "method": "GET",
-      "type": "API",
-      "params": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        },
-        "size": {
-          "type": "number",
-          "text": "Number of runs to include in pagination (up to 100, defaults to 10)."
-        },
-        "page": {
-          "type": "number",
-          "text": "Used to specify further pages (starts at 1)."
-        }
-      },
-      "custom_headers": {},
-      "body": {},
-      "path": {
-        "workflow_id": {
-          "type": "string",
-          "text": "The ID of the workflow",
-          "required": true
-        }
-      },
-      "domain_params": {},
-      "meta": {
-        "version": "v1.0",
-        "auth": [],
-        "description": "View the details of all workflow runs for a workflow",
-        "rate_limit": [],
-        "api_endpoint": "{endpoint}/workflow/{workflow_id}/run",
-        "alias_endpoint": "/copyai/workflow/workflow_id/run",
-        "api_ref": "https://docs.copy.ai/reference/get-workflow-run-copy"
-      },
-      "auth": [],
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.842Z"
+    "workflowId": {
+      "type": "string",
+      "text": "The workflow id you want to receive events for."
     }
-  ]
+  },
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "Register a webhook endpoints, to be notified about workflow events that happen in your workspace",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/webhook",
+    "alias_endpoint": "/copyai/webhook",
+    "api_ref": "https://docs.copy.ai/reference/register-webhook"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/webhook"
+}
+{
+  "provider_alias_intent": "/webhook/webhook_id",
+  "text": "Get Webhook",
+  "category": "Webhooks",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "webhook_id": {
+      "type": "string",
+      "text": "The ID of the webhook",
+      "required": true
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {
+    "webhook_id": {
+      "type": "string",
+      "text": "The ID of the webhook",
+      "required": true
+    }
+  },
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "View the details of a webhook",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/webhook/{webhook_id}",
+    "alias_endpoint": "/copyai/webhook/webhook_id",
+    "api_ref": "https://docs.copy.ai/reference/get-all-webhooks-copy"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/webhook/webhook_id"
+}
+{
+  "provider_alias_intent": "/webhook",
+  "text": "Get All Webhooks",
+  "category": "Webhooks",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "size": {
+      "type": "number",
+      "text": "Number of webhooks to include in pagination (up to 100, defaults to 10)."
+    },
+    "page": {
+      "type": "number",
+      "text": "Used to specify further pages (starts at 1)."
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {},
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "View the details of all webhook endpoints registered for your workspace",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/webhook",
+    "alias_endpoint": "/copyai/webhook",
+    "api_ref": "https://docs.copy.ai/reference/register-webhook-copy"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/webhook"
+}
+{
+  "provider_alias_intent": "/webhook/webhook_id",
+  "text": "Remove Webhook",
+  "category": "Webhooks",
+  "method": "DELETE",
+  "type": "API",
+  "params": {
+    "webhook_id": {
+      "type": "string",
+      "text": "The ID of the webhook",
+      "required": true
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {
+    "webhook_id": {
+      "type": "string",
+      "text": "The ID of the webhook",
+      "required": true
+    }
+  },
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "Remove a webhook endpoint",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/webhook/{webhook_id}",
+    "alias_endpoint": "/copyai/webhook/webhook_id",
+    "api_ref": "https://docs.copy.ai/reference/get-webhook-copy"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/webhook/webhook_id"
+}
+{
+  "provider_alias_intent": "/workflow/workflow_id/run",
+  "text": "Start a Workflow Run",
+  "category": "Workflow Runs",
+  "method": "POST",
+  "type": "API",
+  "params": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    }
+  },
+  "custom_headers": {},
+  "body": {
+    "startVariables": {
+      "type": "object",
+      "text": "A JSON object containing all start variables for your workflow.",
+      "required": true
+    },
+    "metadata": {
+      "type": "object",
+      "text": "A JSON object containing metadata to store and return with the workflow run. Defaults to { 'api': true }"
+    }
+  },
+  "path": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    }
+  },
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "To get started with starting a Workflow Run",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/workflow/{workflow_id}/run",
+    "alias_endpoint": "/copyai/workflow/workflow_id/run",
+    "api_ref": "https://docs.copy.ai/reference/start-a-workflow-run"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/workflow/workflow_id/run"
+}
+{
+  "provider_alias_intent": "/workflow/workflow_id/run/run_id",
+  "text": "Get Workflow Run",
+  "category": "Workflow Runs",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    },
+    "run_id": {
+      "type": "string",
+      "text": "The ID of the workflow run",
+      "required": true
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    },
+    "run_id": {
+      "type": "string",
+      "text": "The ID of the workflow run",
+      "required": true
+    }
+  },
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "View the details of a workflow run",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/workflow/{workflow_id}/run/{run_id}",
+    "alias_endpoint": "/copyai/workflow/workflow_id/run/run_id",
+    "api_ref": "https://docs.copy.ai/reference/single-workflow-run"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/workflow/workflow_id/run/run_id"
+}
+{
+  "provider_alias_intent": "/workflow/workflow_id/run",
+  "text": "Get All Workflow Runs",
+  "category": "Workflow Runs",
+  "method": "GET",
+  "type": "API",
+  "params": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    },
+    "size": {
+      "type": "number",
+      "text": "Number of runs to include in pagination (up to 100, defaults to 10)."
+    },
+    "page": {
+      "type": "number",
+      "text": "Used to specify further pages (starts at 1)."
+    }
+  },
+  "custom_headers": {},
+  "body": {},
+  "path": {
+    "workflow_id": {
+      "type": "string",
+      "text": "The ID of the workflow",
+      "required": true
+    }
+  },
+  "domain_params": {},
+  "meta": {
+    "version": "v1.0",
+    "auth": [],
+    "description": "View the details of all workflow runs for a workflow",
+    "rate_limit": [],
+    "api_endpoint": "{endpoint}/workflow/{workflow_id}/run",
+    "alias_endpoint": "/copyai/workflow/workflow_id/run",
+    "api_ref": "https://docs.copy.ai/reference/get-workflow-run-copy"
+  },
+  "auth": [],
+  "payload_type": "",
+  "updated_at": "2025-01-27T12:12:18.000Z",
+  "provider_proxy_intent": "/workflow/workflow_id/run"
 }

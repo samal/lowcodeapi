@@ -1,3 +1,6 @@
+## Use the official api reference link to update and add missing endpoints.
+
+Provider| API Reference Link
 anthropic|https://docs.claude.com/en/api/overview
 ashbyhq|https://developers.ashbyhq.com/reference/introduction
 assemblyai|https://www.assemblyai.com/docs/api-reference/overview
@@ -34,7 +37,7 @@ hive|https://developers.hive.com/reference/introduction
 hubspot|https://developers.hubspot.com
 humeai|https://dev.hume.ai/reference/empathic-voice-interface-evi/tools/list-tools
 jasper|https://developers.jasper.ai/reference/command-3
-klaviyo|https://developers.klaviyo.com/en/docs/authenticate_#private-key-authentication
+klaviyo|https://developers.klaviyo.com/en/docs
 leapai|https://docs.tryleap.ai/api-reference/getting-started
 lemonsqueezy|https://docs.lemonsqueezy.com/api
 letterdrop|https://docs.letterdrop.com/api
@@ -48,13 +51,12 @@ mailjet|https://dev.mailjet.com/email/reference/
 mistralai|https://docs.mistral.ai
 name|https://www.name.com/api-docs
 namecheap|https://www.namecheap.com/support/api/intro/
-nanonets|https://nanonets.com/documentation/#section/Authentication
+nanonets|https://nanonets.com/documentation
 notion|https://developers.notion.com
 olamaps|https://maps.olakrutrim.com/apidocs
-oneai|https://docs.oneai.com/reference/create_agent_v1_create_post
 openai|https://platform.openai.com/docs/api-reference/introduction
-perplexityai|https://docs.perplexity.ai/api-reference/chat-completions
-pexels|https://www.pexels.com/api/documentation/#authorization
+perplexityai|https://docs.perplexity.ai/api-reference
+pexels|https://www.pexels.com/api/documentation
 pixabay|https://pixabay.com/api/docs/
 playht|https://docs.play.ht/reference/api-getting-started
 porkbun|https://porkbun.com/api/json/v3/documentation
@@ -86,7 +88,6 @@ unsplash|https://unsplash.com/documentation
 voicegainai|https://console.voicegain.ai/api/v1/index.html#tag/transcribe
 voicemaker|https://www.developer.voicemaker.in/apidocs
 voicerss|https://www.voicerss.org/api/
-weatherunion|https://b.zmtcdn.com/data/file_assets/915d4e8e95d067c47e1ae38d77d572b21715104204.pdf
 whatsapp|https://developers.facebook.com/docs/whatsapp/cloud-api/reference
 wordpress|https://developer.wordpress.org/docs
 writerai|https://dev.writer.com/api-guides/introduction
