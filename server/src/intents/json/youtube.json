@@ -1,0 +1,4112 @@
+{
+  "config": {
+    "id": "youtube",
+    "name": "YouTube",
+    "description": "YouTube Data API v3 allows you to incorporate YouTube functionality into your application",
+    "logo_url": "youtube.svg",
+    "auth_type": "OAUTH2.0",
+    "auth": {
+      "header": {
+        "authKey": "accessToken",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": {
+      "scope": [
+        {
+          "name": "https://www.googleapis.com/auth/youtube.readonly",
+          "role": ""
+        },
+        {
+          "name": "https://www.googleapis.com/auth/youtube",
+          "role": ""
+        }
+      ],
+      "setup": [
+        {
+          "name": "client_id",
+          "type": "input",
+          "field": "input",
+          "label": "OAuth2.0 Client ID",
+          "message": "YouTube's OAuth2.0 Client Secret",
+          "required": true,
+          "className": "",
+          "placeholder": "Enter YouTube's OAuth2.0 Client ID"
+        },
+        {
+          "name": "client_secret",
+          "type": "input",
+          "field": "input",
+          "label": "OAuth2.0 Client Secret",
+          "message": "YouTube's OAuth2.0 Client Secret",
+          "required": true,
+          "className": "",
+          "placeholder": "Enter YouTube's OAuth2.0 Client Secret"
+        }
+      ]
+    },
+    "headers": {},
+    "api_endpoint": "https://www.googleapis.com/youtube/v3",
+    "released": 1,
+    "updated_at": "2025-01-28T12:00:00.000Z",
+    "website": "https://www.youtube.com",
+    "api_link_ref": "https://developers.google.com/youtube/v3",
+    "total_api": 70,
+    "credential_link": "https://console.cloud.google.com/apis/credentials"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v3/activities",
+      "provider_proxy_intent": "/v3/activities",
+      "text": "List activities",
+      "category": "Activities",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more activity resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "channelId": {
+          "text": "The channelId parameter specifies a unique YouTube channel ID",
+          "type": "string"
+        },
+        "home": {
+          "text": "Set this parameter's value to true to retrieve the activity feed that displays on the YouTube home page for the authenticated user",
+          "type": "boolean"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "Set this parameter's value to true to retrieve a feed of the authenticated user's activities",
+          "type": "boolean"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "publishedAfter": {
+          "text": "The publishedAfter parameter specifies the earliest date and time that an activity could have occurred",
+          "type": "string"
+        },
+        "publishedBefore": {
+          "text": "The publishedBefore parameter specifies the date and time before which an activity must have occurred",
+          "type": "string"
+        },
+        "regionCode": {
+          "text": "The regionCode parameter instructs the API to return results for the specified country",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/activities/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of channel activity events that match the request criteria",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/activities",
+        "alias_endpoint": "/youtube/v3/activities"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/activities",
+      "provider_proxy_intent": "/v3/activities",
+      "text": "Insert activity",
+      "category": "Activities",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more activity resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the activity",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the content associated with the activity",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/activities/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Posts a bulletin for a user",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/activities",
+        "alias_endpoint": "/youtube/v3/activities"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channels",
+      "provider_proxy_intent": "/v3/channels",
+      "text": "List channels",
+      "category": "Channels",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more channel resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,statistics"
+        },
+        "categoryId": {
+          "text": "The categoryId parameter specifies a YouTube guide category, thereby restricting YouTube's search to that category",
+          "type": "string"
+        },
+        "forUsername": {
+          "text": "The forUsername parameter specifies a YouTube username, thereby requesting the channel associated with that username",
+          "type": "string"
+        },
+        "forHandle": {
+          "text": "The forHandle parameter specifies a YouTube handle, thereby requesting the channel associated with that handle",
+          "type": "string"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube channel ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "managedByMe": {
+          "text": "Set this parameter's value to true to instruct the API to only return channels managed by the content owner that the onBehalfOfContentOwner parameter specifies",
+          "type": "boolean"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "Set this parameter's value to true to instruct the API to only return channels owned by the authenticated user",
+          "type": "boolean"
+        },
+        "mySubscribers": {
+          "text": "Set this parameter's value to true to retrieve a list of channels that subscribed to the authenticated user's channel",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channels/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a collection of zero or more channel resources that match the request criteria",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channels",
+        "alias_endpoint": "/youtube/v3/channels"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channels",
+      "provider_proxy_intent": "/v3/channels",
+      "text": "Update channel",
+      "category": "Channels",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,statistics,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the channel",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the channel, such as its title, description, and thumbnail images",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object encapsulates information about the channel's content",
+          "type": "object"
+        },
+        "statistics": {
+          "text": "The statistics object encapsulates statistics for the channel",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object encapsulates information about the privacy status of the channel",
+          "type": "object"
+        },
+        "brandingSettings": {
+          "text": "The brandingSettings object encapsulates information about the branding of the channel",
+          "type": "object"
+        },
+        "auditDetails": {
+          "text": "The auditDetails object encapsulates channel data that is relevant for YouTube Partners during the audit process",
+          "type": "object"
+        },
+        "contentOwnerDetails": {
+          "text": "The contentOwnerDetails object encapsulates channel data that is relevant for YouTube Partners linked with the channel",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the channel's metadata",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channels/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a channel's metadata",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channels",
+        "alias_endpoint": "/youtube/v3/channels"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channelSections",
+      "provider_proxy_intent": "/v3/channelSections",
+      "text": "List channel sections",
+      "category": "Channel Sections",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more channelSection resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "channelId": {
+          "text": "The channelId parameter specifies a YouTube channel ID",
+          "type": "string"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube channelSection ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "mine": {
+          "text": "Set this parameter's value to true to instruct the API to only return channelSections owned by the authenticated user",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channelSections/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a collection of channelSection resources that match the request criteria",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channelSections",
+        "alias_endpoint": "/youtube/v3/channelSections"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channelSections",
+      "provider_proxy_intent": "/v3/channelSections",
+      "text": "Insert channel section",
+      "category": "Channel Sections",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the channel section, such as its type and style",
+          "type": "object",
+          "required": true
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains details about the channel section's content, such as a list of playlists or channels featured in the section",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the channel section's metadata",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channelSections/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Adds a channelSection resource",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channelSections",
+        "alias_endpoint": "/youtube/v3/channelSections"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channelSections",
+      "provider_proxy_intent": "/v3/channelSections",
+      "text": "Update channel section",
+      "category": "Channel Sections",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the channel section",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the channel section, such as its type and style",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains details about the channel section's content, such as a list of playlists or channels featured in the section",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the channel section's metadata",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channelSections/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a channel section",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channelSections",
+        "alias_endpoint": "/youtube/v3/channelSections"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channelSections",
+      "provider_proxy_intent": "/v3/channelSections",
+      "text": "Delete channel section",
+      "category": "Channel Sections",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube channelSection ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channelSections/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a channel section",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channelSections",
+        "alias_endpoint": "/youtube/v3/channelSections"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/comments",
+      "provider_proxy_intent": "/v3/comments",
+      "text": "List comments",
+      "category": "Comments",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more comment resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of comment IDs for the resources that are being retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 20
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "parentId": {
+          "text": "The parentId parameter specifies the ID of the comment for which replies should be retrieved",
+          "type": "string"
+        },
+        "textFormat": {
+          "text": "Set this parameter's value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text",
+          "type": "string",
+          "enum": ["html", "plainText"]
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/comments/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of comment resources that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/comments",
+        "alias_endpoint": "/youtube/v3/comments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/comments",
+      "provider_proxy_intent": "/v3/comments",
+      "text": "Insert comment",
+      "category": "Comments",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter identifies the properties that the API response will include. Set the parameter value to snippet. The snippet part has a quota cost of 1 unit",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the comment, including its text",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/comments/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Creates a new top-level comment",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/comments",
+        "alias_endpoint": "/youtube/v3/comments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/comments",
+      "provider_proxy_intent": "/v3/comments",
+      "text": "Update comment",
+      "category": "Comments",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter identifies the properties that the API response will include. You must at least include the snippet part in the parameter value since that part contains all of the properties that the API uses to update a comment's text",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the comment",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the comment, including its text",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/comments/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Modifies a comment",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/comments",
+        "alias_endpoint": "/youtube/v3/comments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/comments",
+      "provider_proxy_intent": "/v3/comments",
+      "text": "Set comment moderation status",
+      "category": "Comments",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of comment IDs that are having their moderation status changed",
+          "type": "string",
+          "required": true
+        },
+        "moderationStatus": {
+          "text": "Identifies the new moderation status of the specified comments",
+          "type": "string",
+          "required": true,
+          "enum": ["heldForReview", "published", "rejected"]
+        },
+        "banAuthor": {
+          "text": "The banAuthor parameter lets you indicate that you want to automatically reject any additional comments written by the comment's author",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/comments/setModerationStatus",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Sets the moderation status of one or more comments",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/comments/setModerationStatus",
+        "alias_endpoint": "/youtube/v3/comments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/comments",
+      "provider_proxy_intent": "/v3/comments",
+      "text": "Delete comment",
+      "category": "Comments",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube comment ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/comments/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a comment",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/comments",
+        "alias_endpoint": "/youtube/v3/comments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/commentThreads",
+      "provider_proxy_intent": "/v3/commentThreads",
+      "text": "List comment threads",
+      "category": "Comment Threads",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more commentThread resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,replies"
+        },
+        "allThreadsRelatedToChannelId": {
+          "text": "The allThreadsRelatedToChannelId parameter instructs the API to return all comment threads associated with the specified channel",
+          "type": "string"
+        },
+        "channelId": {
+          "text": "The channelId parameter instructs the API to return comment threads containing comments about the specified channel",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of comment thread IDs for the resources that should be retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 20
+        },
+        "moderationStatus": {
+          "text": "Set this parameter to limit the returned comment threads to a particular moderation state",
+          "type": "string",
+          "enum": ["heldForReview", "likelySpam", "published"]
+        },
+        "order": {
+          "text": "The order parameter specifies the order in which the API response should list comment threads",
+          "type": "string",
+          "enum": ["time", "relevance"]
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "searchTerms": {
+          "text": "The searchTerms parameter instructs the API to limit the API response to only contain comments that contain the specified search terms",
+          "type": "string"
+        },
+        "textFormat": {
+          "text": "Set this parameter's value to html or plainText to instruct the API to return the comments left by users in html formatted or in plain text",
+          "type": "string",
+          "enum": ["html", "plainText"]
+        },
+        "videoId": {
+          "text": "The videoId parameter instructs the API to return comment threads associated with the specified video ID",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/commentThreads/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of comment threads that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/commentThreads",
+        "alias_endpoint": "/youtube/v3/commentThreads"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/commentThreads",
+      "provider_proxy_intent": "/v3/commentThreads",
+      "text": "Insert comment thread",
+      "category": "Comment Threads",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter identifies the properties that the API response will include. Set the parameter value to snippet. The snippet part has a quota cost of 1 unit",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the comment thread, including its top-level comment",
+          "type": "object",
+          "required": true
+        },
+        "replies": {
+          "text": "The replies object is a container object for a list of replies to the comment",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/commentThreads/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Creates a new top-level comment",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/commentThreads",
+        "alias_endpoint": "/youtube/v3/commentThreads"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/commentThreads",
+      "provider_proxy_intent": "/v3/commentThreads",
+      "text": "Update comment thread",
+      "category": "Comment Threads",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter identifies the properties that the API response will include. You must at least include the snippet part in the parameter value since that part contains all of the properties that the API uses to update a comment thread's top-level comment",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the comment thread",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the comment thread, including its top-level comment",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/commentThreads/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Modifies the top-level comment in a comment thread",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/commentThreads",
+        "alias_endpoint": "/youtube/v3/commentThreads"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/i18nLanguages",
+      "provider_proxy_intent": "/v3/i18nLanguages",
+      "text": "List i18n languages",
+      "category": "i18n Languages",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the i18nLanguage resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "hl": {
+          "text": "The hl parameter specifies the language that should be used for text values in the API response",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/i18nLanguages/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of application languages that the YouTube website supports",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/i18nLanguages",
+        "alias_endpoint": "/youtube/v3/i18nLanguages"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/i18nRegions",
+      "provider_proxy_intent": "/v3/i18nRegions",
+      "text": "List i18n regions",
+      "category": "i18n Regions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the i18nRegion resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "hl": {
+          "text": "The hl parameter specifies the language that should be used for text values in the API response",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/i18nRegions/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of content regions that the YouTube website supports",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/i18nRegions",
+        "alias_endpoint": "/youtube/v3/i18nRegions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/members",
+      "provider_proxy_intent": "/v3/members",
+      "text": "List members",
+      "category": "Members",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the member resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "filterByMemberChannelId": {
+          "text": "Comma-separated list of channel IDs. Only data about members that are part of this list will be included in the response",
+          "type": "string"
+        },
+        "hasAccessToLevel": {
+          "text": "Filter results to members that have access to a specific level",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 5
+        },
+        "mode": {
+          "text": "The mode parameter indicates which members to return",
+          "type": "string",
+          "enum": ["all_current", "updates"]
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/members/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves a list of members that match the request criteria for a channel",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/members",
+        "alias_endpoint": "/youtube/v3/members"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/membershipsLevels",
+      "provider_proxy_intent": "/v3/membershipsLevels",
+      "text": "List membership levels",
+      "category": "Memberships",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the membershipsLevel resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/membershipsLevels/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves a list of all pricing levels offered by a creator to their fans",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/membershipsLevels",
+        "alias_endpoint": "/youtube/v3/membershipsLevels"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlistItems",
+      "provider_proxy_intent": "/v3/playlistItems",
+      "text": "List playlist items",
+      "category": "Playlist Items",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more playlistItem resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of one or more unique playlist item IDs",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "playlistId": {
+          "text": "The playlistId parameter specifies the unique ID of the playlist for which you want to retrieve playlist items",
+          "type": "string"
+        },
+        "videoId": {
+          "text": "The videoId parameter specifies that the request should return only the playlist items that contain the specified video",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlistItems/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a collection of playlist items that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlistItems",
+        "alias_endpoint": "/youtube/v3/playlistItems"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlistItems",
+      "provider_proxy_intent": "/v3/playlistItems",
+      "text": "Insert playlist item",
+      "category": "Playlist Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the playlist item, such as its title and position in the playlist",
+          "type": "object",
+          "required": true
+        },
+        "contentDetails": {
+          "text": "The contentDetails object is included in the resource if the included item is a YouTube video",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the playlist item's privacy status",
+          "type": "object"
+        },
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the playlist item",
+          "type": "string"
+        },
+        "kind": {
+          "text": "Identifies what kind of resource this is",
+          "type": "string"
+        },
+        "etag": {
+          "text": "Etag of this resource",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlistItems/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Adds a resource to a playlist",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlistItems",
+        "alias_endpoint": "/youtube/v3/playlistItems"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlistItems",
+      "provider_proxy_intent": "/v3/playlistItems",
+      "text": "Update playlist item",
+      "category": "Playlist Items",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the playlist item",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the playlist item, such as its title and position in the playlist",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object is included in the resource if the included item is a YouTube video",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the playlist item's privacy status",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlistItems/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Modifies a playlist item",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlistItems",
+        "alias_endpoint": "/youtube/v3/playlistItems"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlistItems",
+      "provider_proxy_intent": "/v3/playlistItems",
+      "text": "Delete playlist item",
+      "category": "Playlist Items",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube playlist item ID for the playlist item that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlistItems/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a playlist item",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlistItems",
+        "alias_endpoint": "/youtube/v3/playlistItems"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlists",
+      "provider_proxy_intent": "/v3/playlists",
+      "text": "List playlists",
+      "category": "Playlists",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more playlist resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "channelId": {
+          "text": "This value indicates that the API should only return the specified channel's playlists",
+          "type": "string"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube playlist ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "Set this parameter's value to true to instruct the API to only return playlists owned by the authenticated user",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlists/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a collection of playlists that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlists",
+        "alias_endpoint": "/youtube/v3/playlists"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlists",
+      "provider_proxy_intent": "/v3/playlists",
+      "text": "Insert playlist",
+      "category": "Playlists",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the playlist, such as its title and description",
+          "type": "object",
+          "required": true
+        },
+        "status": {
+          "text": "The status object contains information about the playlist's privacy status",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the playlist content, including the item count",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the playlist's metadata",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlists/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Creates a playlist",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlists",
+        "alias_endpoint": "/youtube/v3/playlists"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlists",
+      "provider_proxy_intent": "/v3/playlists",
+      "text": "Update playlist",
+      "category": "Playlists",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the playlist",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the playlist, such as its title and description",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the playlist's privacy status",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the playlist content, including the item count",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the playlist's metadata",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlists/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Modifies a playlist",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlists",
+        "alias_endpoint": "/youtube/v3/playlists"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/playlists",
+      "provider_proxy_intent": "/v3/playlists",
+      "text": "Delete playlist",
+      "category": "Playlists",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube playlist ID for the playlist that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/playlists/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a playlist",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/playlists",
+        "alias_endpoint": "/youtube/v3/playlists"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/search",
+      "provider_proxy_intent": "/v3/search",
+      "text": "Search",
+      "category": "Search",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more search resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "channelId": {
+          "text": "The channelId parameter indicates that the API response should only contain resources created by the channel",
+          "type": "string"
+        },
+        "channelType": {
+          "text": "The channelType parameter lets you restrict a search to a particular type of channel",
+          "type": "string",
+          "enum": ["any", "show"]
+        },
+        "eventType": {
+          "text": "The eventType parameter restricts a search to broadcast events",
+          "type": "string",
+          "enum": ["completed", "live", "upcoming"]
+        },
+        "forContentOwner": {
+          "text": "The forContentOwner parameter restricts the search to only retrieve resources owned by the content owner specified by the onBehalfOfContentOwner parameter",
+          "type": "boolean"
+        },
+        "forDeveloper": {
+          "text": "The forDeveloper parameter restricts the search to only retrieve videos uploaded via the developer's application or website",
+          "type": "boolean"
+        },
+        "forMine": {
+          "text": "The forMine parameter restricts the search to only retrieve videos owned by the authenticated user",
+          "type": "boolean"
+        },
+        "location": {
+          "text": "The location parameter, in conjunction with the locationRadius parameter, defines a circular geographic area",
+          "type": "string"
+        },
+        "locationRadius": {
+          "text": "The locationRadius parameter, in conjunction with the location parameter, defines a circular geographic area",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "order": {
+          "text": "The order parameter specifies the method that will be used to order resources in the API response",
+          "type": "string",
+          "enum": ["date", "rating", "relevance", "title", "videoCount", "viewCount"]
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "publishedAfter": {
+          "text": "The publishedAfter parameter indicates that the API response should only contain resources created at or after the specified time",
+          "type": "string"
+        },
+        "publishedBefore": {
+          "text": "The publishedBefore parameter indicates that the API response should only contain resources created before or at the specified time",
+          "type": "string"
+        },
+        "q": {
+          "text": "The q parameter specifies the query term to search for",
+          "type": "string"
+        },
+        "regionCode": {
+          "text": "The regionCode parameter instructs the API to return search results for the specified country",
+          "type": "string"
+        },
+        "relatedToVideoId": {
+          "text": "The relatedToVideoId parameter retrieves a list of videos that are related to the video that the parameter value identifies",
+          "type": "string"
+        },
+        "relevanceLanguage": {
+          "text": "The relevanceLanguage parameter instructs the API to return search results that are most relevant to the specified language",
+          "type": "string"
+        },
+        "safeSearch": {
+          "text": "The safeSearch parameter indicates whether the search results should include restricted content as well as standard content",
+          "type": "string",
+          "enum": ["moderate", "none", "strict"]
+        },
+        "topicId": {
+          "text": "The topicId parameter indicates that the API response should only contain resources associated with the specified topic",
+          "type": "string"
+        },
+        "type": {
+          "text": "The type parameter restricts a search query to only retrieve a particular type of resource",
+          "type": "string",
+          "examples": "video,channel,playlist"
+        },
+        "videoCaption": {
+          "text": "The videoCaption parameter indicates whether the API should filter video search results based on whether they have captions",
+          "type": "string",
+          "enum": ["any", "closedCaption", "none"]
+        },
+        "videoCategoryId": {
+          "text": "The videoCategoryId parameter filters video search results based on their category",
+          "type": "string"
+        },
+        "videoDefinition": {
+          "text": "The videoDefinition parameter lets you restrict a search to only include either high definition (HD) or standard definition (SD) videos",
+          "type": "string",
+          "enum": ["any", "high", "standard"]
+        },
+        "videoDimension": {
+          "text": "The videoDimension parameter lets you restrict a search to only retrieve 2D or 3D videos",
+          "type": "string",
+          "enum": ["2d", "3d", "any"]
+        },
+        "videoDuration": {
+          "text": "The videoDuration parameter filters video search results based on their duration",
+          "type": "string",
+          "enum": ["any", "long", "medium", "short"]
+        },
+        "videoEmbeddable": {
+          "text": "The videoEmbeddable parameter lets you to restrict a search to only videos that can be embedded into a webpage",
+          "type": "string",
+          "enum": ["any", "true"]
+        },
+        "videoLicense": {
+          "text": "The videoLicense parameter filters search results to only include videos with a particular license",
+          "type": "string",
+          "enum": ["any", "creativeCommon", "youtube"]
+        },
+        "videoSyndicated": {
+          "text": "The videoSyndicated parameter lets you to restrict a search to only videos that can be played outside youtube.com",
+          "type": "string",
+          "enum": ["any", "true"]
+        },
+        "videoType": {
+          "text": "The videoType parameter lets you restrict a search to a particular type of videos",
+          "type": "string",
+          "enum": ["any", "episode", "movie"]
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/search/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a collection of search results that match the query parameters specified in the API request",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/search",
+        "alias_endpoint": "/youtube/v3/search"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/subscriptions",
+      "provider_proxy_intent": "/v3/subscriptions",
+      "text": "List subscriptions",
+      "category": "Subscriptions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more subscription resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails"
+        },
+        "channelId": {
+          "text": "The channelId parameter specifies a YouTube channel ID",
+          "type": "string"
+        },
+        "forChannelId": {
+          "text": "The forChannelId parameter specifies a comma-separated list of channel IDs",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube subscription ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "Set this parameter's value to true to retrieve a feed of the authenticated user's subscriptions",
+          "type": "boolean"
+        },
+        "myRecentSubscribers": {
+          "text": "Set this parameter's value to true to retrieve a feed of the subscribers of the authenticated user in reverse chronological order (newest first)",
+          "type": "boolean"
+        },
+        "mySubscribers": {
+          "text": "Set this parameter's value to true to retrieve a feed of the subscribers of the authenticated user",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "order": {
+          "text": "The order parameter specifies the method that will be used to sort resources in the API response",
+          "type": "string",
+          "enum": ["alphabetical", "relevance", "unread"]
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/subscriptions/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns subscription resources that match the API request criteria",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/subscriptions",
+        "alias_endpoint": "/youtube/v3/subscriptions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/subscriptions",
+      "provider_proxy_intent": "/v3/subscriptions",
+      "text": "Insert subscription",
+      "category": "Subscriptions",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to",
+          "type": "object",
+          "required": true
+        },
+        "contentDetails": {
+          "text": "The contentDetails object is included in the subscription resource returned by the API",
+          "type": "object"
+        },
+        "subscriberSnippet": {
+          "text": "The subscriberSnippet object contains basic details about the subscriber",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/subscriptions/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Adds a subscription for the authenticated user's channel",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/subscriptions",
+        "alias_endpoint": "/youtube/v3/subscriptions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/subscriptions",
+      "provider_proxy_intent": "/v3/subscriptions",
+      "text": "Delete subscription",
+      "category": "Subscriptions",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube subscription ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/subscriptions/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a subscription",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/subscriptions",
+        "alias_endpoint": "/youtube/v3/subscriptions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/thumbnails",
+      "provider_proxy_intent": "/v3/thumbnails/set",
+      "text": "Set thumbnail",
+      "category": "Thumbnails",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "videoId": {
+          "text": "The videoId parameter specifies a YouTube video ID for which the custom video thumbnail is being provided",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "file": {
+          "text": "The image file to upload as a custom video thumbnail",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/thumbnails/set",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Uploads a custom video thumbnail to YouTube and sets it for a video",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/thumbnails/set",
+        "alias_endpoint": "/youtube/v3/thumbnails"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos",
+      "provider_proxy_intent": "/v3/videos",
+      "text": "List videos",
+      "category": "Videos",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more video resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,statistics,status"
+        },
+        "chart": {
+          "text": "The chart parameter identifies the chart that you want to retrieve",
+          "type": "string",
+          "enum": ["mostPopular"]
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube video ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "locale": {
+          "text": "The locale parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "maxHeight": {
+          "text": "The maxHeight parameter specifies the maximum height of the embedded player",
+          "type": "number"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "maxWidth": {
+          "text": "The maxWidth parameter specifies the maximum width of the embedded player",
+          "type": "number"
+        },
+        "myRating": {
+          "text": "Set this parameter's value to like or dislike to instruct the API to only return videos liked or disliked by the authenticated user",
+          "type": "string",
+          "enum": ["dislike", "like"]
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "regionCode": {
+          "text": "The regionCode parameter instructs the API to return results for the specified country",
+          "type": "string"
+        },
+        "videoCategoryId": {
+          "text": "The videoCategoryId parameter identifies the video category for which the chart should be retrieved",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of videos that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos",
+        "alias_endpoint": "/youtube/v3/videos"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos",
+      "provider_proxy_intent": "/v3/videos",
+      "text": "Insert video",
+      "category": "Videos",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "autoLevels": {
+          "text": "The autoLevels parameter indicates whether YouTube should automatically enhance the video's lighting and color",
+          "type": "boolean"
+        },
+        "notifySubscribers": {
+          "text": "The notifySubscribers parameter indicates whether YouTube should send a notification about the new video to users who subscribe to the video's channel",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "stabilize": {
+          "text": "The stabilize parameter indicates whether YouTube should adjust the video to remove shaky camera motions",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the video, including its title, description, and category",
+          "type": "object",
+          "required": true
+        },
+        "status": {
+          "text": "The status object contains information about the video's uploading, processing, and privacy statuses",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the video content, including the length of the video and an indication of whether captions are available for the video",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the video's metadata",
+          "type": "object"
+        },
+        "recordingDetails": {
+          "text": "The recordingDetails object encapsulates information about the location, date and address where the video was recorded",
+          "type": "object"
+        },
+        "file": {
+          "text": "The video file to upload",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Uploads a video to YouTube and optionally sets the video's metadata",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos",
+        "alias_endpoint": "/youtube/v3/videos"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos",
+      "provider_proxy_intent": "/v3/videos",
+      "text": "Update video",
+      "category": "Videos",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the video",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the video, including its title, description, and category",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the video's uploading, processing, and privacy statuses",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the video content, including the length of the video and an indication of whether captions are available for the video",
+          "type": "object"
+        },
+        "localizations": {
+          "text": "The localizations object encapsulates translations of the video's metadata",
+          "type": "object"
+        },
+        "recordingDetails": {
+          "text": "The recordingDetails object encapsulates information about the location, date and address where the video was recorded",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a video's metadata",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos",
+        "alias_endpoint": "/youtube/v3/videos"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos",
+      "provider_proxy_intent": "/v3/videos",
+      "text": "Delete video",
+      "category": "Videos",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube video ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a YouTube video",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos",
+        "alias_endpoint": "/youtube/v3/videos"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos/rate",
+      "provider_proxy_intent": "/v3/videos/rate",
+      "text": "Rate video",
+      "category": "Videos",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube video ID for the resource that is being rated",
+          "type": "string",
+          "required": true
+        },
+        "rating": {
+          "text": "Specifies the rating to record",
+          "type": "string",
+          "required": true,
+          "enum": ["dislike", "like", "none"]
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/rate",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Adds a like or dislike rating to a video or removes a rating from a video",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos/rate",
+        "alias_endpoint": "/youtube/v3/videos/rate"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos/getRating",
+      "provider_proxy_intent": "/v3/videos/getRating",
+      "text": "Get video rating",
+      "category": "Videos",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube video ID(s) for the resource(s) for which you are retrieving rating data",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/getRating",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves the ratings that the authorized user gave to a list of specified videos",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos/getRating",
+        "alias_endpoint": "/youtube/v3/videos/getRating"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videos/reportAbuse",
+      "provider_proxy_intent": "/v3/videos/reportAbuse",
+      "text": "Report video abuse",
+      "category": "Videos",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "videoId": {
+          "text": "The videoId parameter identifies the video that is being reported",
+          "type": "string",
+          "required": true
+        },
+        "reasonId": {
+          "text": "The reasonId parameter identifies the reason that the video is being reported",
+          "type": "string",
+          "required": true
+        },
+        "secondaryReasonId": {
+          "text": "The secondaryReasonId parameter lets you specify a secondary reason if the primary reason does not fully capture the violation",
+          "type": "string"
+        },
+        "comments": {
+          "text": "The comments parameter lets you provide additional information about the abuse report",
+          "type": "string"
+        },
+        "language": {
+          "text": "The language parameter identifies the language of the abuse report",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videos/reportAbuse",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Reports a video for containing abusive content",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videos/reportAbuse",
+        "alias_endpoint": "/youtube/v3/videos/reportAbuse"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/commentThreads",
+      "provider_proxy_intent": "/v3/commentThreads",
+      "text": "Delete comment thread",
+      "category": "Comment Threads",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube comment thread ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/commentThreads/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a comment thread",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/commentThreads",
+        "alias_endpoint": "/youtube/v3/commentThreads"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/guideCategories",
+      "provider_proxy_intent": "/v3/guideCategories",
+      "text": "List guide categories",
+      "category": "Guide Categories",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the guideCategory resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube channel category ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "regionCode": {
+          "text": "The regionCode parameter instructs the API to return results for the specified country",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/guideCategories/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of categories that can be associated with YouTube channels",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/guideCategories",
+        "alias_endpoint": "/youtube/v3/guideCategories"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/videoCategories",
+      "provider_proxy_intent": "/v3/videoCategories",
+      "text": "List video categories",
+      "category": "Video Categories",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the videoCategory resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of the YouTube video category ID(s) for the resource(s) that are being retrieved",
+          "type": "string"
+        },
+        "regionCode": {
+          "text": "The regionCode parameter instructs the API to return results for the specified country",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/videoCategories/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of video categories that can be associated with YouTube videos",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/videoCategories",
+        "alias_endpoint": "/youtube/v3/videoCategories"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/captions",
+      "provider_proxy_intent": "/v3/captions",
+      "text": "List captions",
+      "category": "Captions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more caption resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "videoId": {
+          "text": "The videoId parameter specifies the YouTube video ID of the video for which the API should return caption tracks",
+          "type": "string",
+          "required": true
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of IDs that identify the caption resources that should be retrieved",
+          "type": "string"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOf": {
+          "text": "ID of the Google+ Page or Channel on behalf of which the caption track is being uploaded",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/captions/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of caption tracks that are associated with a specified video",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/captions",
+        "alias_endpoint": "/youtube/v3/captions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/captions",
+      "provider_proxy_intent": "/v3/captions",
+      "text": "Insert caption",
+      "category": "Captions",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOf": {
+          "text": "ID of the Google+ Page or Channel on behalf of which the caption track is being uploaded",
+          "type": "string"
+        },
+        "sync": {
+          "text": "The sync parameter indicates whether YouTube should automatically synchronize the caption file with the audio track of the video",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the caption track, such as its language and name",
+          "type": "object",
+          "required": true
+        },
+        "file": {
+          "text": "The caption track file to upload",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/captions/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Uploads a caption track",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/captions",
+        "alias_endpoint": "/youtube/v3/captions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/captions",
+      "provider_proxy_intent": "/v3/captions",
+      "text": "Update caption",
+      "category": "Captions",
+      "method": "PUT",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOf": {
+          "text": "ID of the Google+ Page or Channel on behalf of which the caption track is being updated",
+          "type": "string"
+        },
+        "sync": {
+          "text": "The sync parameter indicates whether YouTube should automatically synchronize the caption file with the audio track of the video",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the caption track",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the caption track, such as its language and name",
+          "type": "object"
+        },
+        "file": {
+          "text": "The caption track file to upload",
+          "type": "file"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/captions/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a caption track",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/captions",
+        "alias_endpoint": "/youtube/v3/captions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/captions",
+      "provider_proxy_intent": "/v3/captions",
+      "text": "Delete caption",
+      "category": "Captions",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube caption track ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOf": {
+          "text": "ID of the Google+ Page or Channel on behalf of which the caption track is being deleted",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/captions/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a caption track",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/captions",
+        "alias_endpoint": "/youtube/v3/captions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/captions/{id}",
+      "provider_proxy_intent": "/v3/captions/{id}",
+      "text": "Download caption",
+      "category": "Captions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube caption track ID of the caption track that is being retrieved",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOf": {
+          "text": "ID of the Google+ Page or Channel on behalf of which the caption track is being downloaded",
+          "type": "string"
+        },
+        "tfmt": {
+          "text": "The tfmt parameter specifies the format that the caption track should be returned in",
+          "type": "string",
+          "enum": ["sbv", "scc", "srt", "ttml", "vtt"]
+        },
+        "tlang": {
+          "text": "The tlang parameter specifies the language that the caption track should be translated to",
+          "type": "string"
+        }
+      },
+      "path": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the caption track",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/captions/download",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Downloads a caption track",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/captions/{id}",
+        "alias_endpoint": "/youtube/v3/captions/{id}"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/watermarks",
+      "provider_proxy_intent": "/v3/watermarks/set",
+      "text": "Set watermark",
+      "category": "Watermarks",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "channelId": {
+          "text": "The channelId parameter specifies the YouTube channel ID for which the watermark is being provided",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "timing": {
+          "text": "The timing object specifies when the watermark appears and disappears during video playback",
+          "type": "object",
+          "required": true
+        },
+        "position": {
+          "text": "The position object specifies where the watermark appears in the video frame",
+          "type": "object",
+          "required": true
+        },
+        "file": {
+          "text": "The image file to upload as a watermark",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/watermarks/set",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Uploads a watermark image to YouTube and sets it for a channel",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/watermarks/set",
+        "alias_endpoint": "/youtube/v3/watermarks"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/watermarks",
+      "provider_proxy_intent": "/v3/watermarks/unset",
+      "text": "Unset watermark",
+      "category": "Watermarks",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "channelId": {
+          "text": "The channelId parameter specifies the YouTube channel ID for which the watermark is being unset",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/watermarks/unset",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Removes a channel's watermark image",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/watermarks/unset",
+        "alias_endpoint": "/youtube/v3/watermarks"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts",
+      "provider_proxy_intent": "/v3/liveBroadcasts",
+      "text": "List live broadcasts",
+      "category": "Live Broadcasts",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "broadcastStatus": {
+          "text": "The broadcastStatus parameter filters the API response to only include broadcasts with the specified status",
+          "type": "string",
+          "enum": ["active", "all", "completed", "upcoming"]
+        },
+        "broadcastType": {
+          "text": "The broadcastType parameter filters the API response to only include broadcasts with the specified type",
+          "type": "string",
+          "enum": ["all", "event", "persistent"]
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of YouTube broadcast IDs that identify the broadcasts being retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "The mine parameter can be used to instruct the API to only return broadcasts owned by the authenticated user",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of YouTube broadcasts that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts",
+      "provider_proxy_intent": "/v3/liveBroadcasts",
+      "text": "Insert live broadcast",
+      "category": "Live Broadcasts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the broadcast, including its title, description, and scheduled time",
+          "type": "object",
+          "required": true
+        },
+        "status": {
+          "text": "The status object contains information about the broadcast's status",
+          "type": "object",
+          "required": true
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the broadcast's content",
+          "type": "object"
+        },
+        "kind": {
+          "text": "Identifies what kind of resource this is",
+          "type": "string"
+        },
+        "etag": {
+          "text": "Etag of this resource",
+          "type": "string"
+        },
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the broadcast",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Creates a broadcast",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts",
+      "provider_proxy_intent": "/v3/liveBroadcasts",
+      "text": "Update live broadcast",
+      "category": "Live Broadcasts",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the broadcast",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the broadcast, including its title, description, and scheduled time",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the broadcast's status",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the broadcast's content",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a broadcast",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts",
+      "provider_proxy_intent": "/v3/liveBroadcasts",
+      "text": "Delete live broadcast",
+      "category": "Live Broadcasts",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube broadcast ID for the broadcast that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a broadcast",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts/bind",
+      "provider_proxy_intent": "/v3/liveBroadcasts/bind",
+      "text": "Bind live broadcast",
+      "category": "Live Broadcasts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "id": {
+          "text": "The id parameter specifies the unique ID of the broadcast that is being bound to a video stream",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "streamId": {
+          "text": "The streamId parameter specifies the unique ID of the video stream that is being bound to a broadcast",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/bind",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Binds a YouTube broadcast to a stream or removes an existing binding between a broadcast and a stream",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts/bind",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts/bind"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts/transition",
+      "provider_proxy_intent": "/v3/liveBroadcasts/transition",
+      "text": "Transition live broadcast",
+      "category": "Live Broadcasts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "broadcastStatus": {
+          "text": "The broadcastStatus parameter identifies the state to which the broadcast is changing",
+          "type": "string",
+          "required": true,
+          "enum": ["complete", "testing"]
+        },
+        "id": {
+          "text": "The id parameter specifies the unique ID of the broadcast that is transitioning to another status",
+          "type": "string",
+          "required": true
+        },
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/transition",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Changes the status of a YouTube live broadcast",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts/transition",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts/transition"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveBroadcasts/control",
+      "provider_proxy_intent": "/v3/liveBroadcasts/control",
+      "text": "Control live broadcast",
+      "category": "Live Broadcasts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube broadcast ID that uniquely identifies the broadcast whose slate is being updated",
+          "type": "string",
+          "required": true
+        },
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "displaySlate": {
+          "text": "The displaySlate parameter determines whether a slate is displayed during the broadcast",
+          "type": "boolean"
+        },
+        "offsetTimeMs": {
+          "text": "The offsetTimeMs parameter specifies a positive time offset when the slate is being displayed",
+          "type": "number"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "walltime": {
+          "text": "The walltime parameter specifies the wall clock time at which the slate is being displayed",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveBroadcasts/control",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Controls the settings for a YouTube live broadcast",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveBroadcasts/control",
+        "alias_endpoint": "/youtube/v3/liveBroadcasts/control"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveStreams",
+      "provider_proxy_intent": "/v3/liveStreams",
+      "text": "List live streams",
+      "category": "Live Streams",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies a comma-separated list of one or more liveStream resource properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "id": {
+          "text": "The id parameter specifies a comma-separated list of YouTube stream IDs that identify the streams being retrieved",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "mine": {
+          "text": "The mine parameter can be used to instruct the API to only return streams owned by the authenticated user",
+          "type": "boolean"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveStreams/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Returns a list of video streams that match the API request parameters",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveStreams",
+        "alias_endpoint": "/youtube/v3/liveStreams"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveStreams",
+      "provider_proxy_intent": "/v3/liveStreams",
+      "text": "Insert live stream",
+      "category": "Live Streams",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the stream, including its title and description",
+          "type": "object",
+          "required": true
+        },
+        "cdn": {
+          "text": "The cdn object defines the live stream's content delivery network (CDN) settings",
+          "type": "object",
+          "required": true
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the stream, such as its format and ingestion type",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the stream's status",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveStreams/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Creates a video stream",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveStreams",
+        "alias_endpoint": "/youtube/v3/liveStreams"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveStreams",
+      "provider_proxy_intent": "/v3/liveStreams",
+      "text": "Update live stream",
+      "category": "Live Streams",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include",
+          "type": "string",
+          "required": true,
+          "examples": "snippet,contentDetails,status"
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "id": {
+          "text": "The ID that YouTube uses to uniquely identify the video stream",
+          "type": "string",
+          "required": true
+        },
+        "snippet": {
+          "text": "The snippet object contains basic details about the stream, including its title and description",
+          "type": "object"
+        },
+        "cdn": {
+          "text": "The cdn object defines the live stream's content delivery network (CDN) settings",
+          "type": "object"
+        },
+        "contentDetails": {
+          "text": "The contentDetails object contains information about the stream, such as its format and ingestion type",
+          "type": "object"
+        },
+        "status": {
+          "text": "The status object contains information about the stream's status",
+          "type": "object"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveStreams/update",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Updates a video stream",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveStreams",
+        "alias_endpoint": "/youtube/v3/liveStreams"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveStreams",
+      "provider_proxy_intent": "/v3/liveStreams",
+      "text": "Delete live stream",
+      "category": "Live Streams",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube stream ID for the stream that is being deleted",
+          "type": "string",
+          "required": true
+        },
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "onBehalfOfContentOwnerChannel": {
+          "text": "The onBehalfOfContentOwnerChannel parameter specifies the YouTube channel ID of the channel to which a video is being added",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveStreams/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a video stream",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveStreams",
+        "alias_endpoint": "/youtube/v3/liveStreams"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/messages",
+      "provider_proxy_intent": "/v3/liveChat/messages",
+      "text": "List live chat messages",
+      "category": "Live Chat",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "liveChatId": {
+          "text": "The liveChatId parameter identifies the chat whose messages will be returned",
+          "type": "string",
+          "required": true
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of messages that should be returned in the result set",
+          "type": "number",
+          "examples": 200
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        },
+        "profileImageSize": {
+          "text": "The profileImageSize parameter specifies the size of the user profile pictures that should be returned in the result set",
+          "type": "number"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/messages/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves a list of resources, possibly filtered",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/messages",
+        "alias_endpoint": "/youtube/v3/liveChat/messages"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/messages",
+      "provider_proxy_intent": "/v3/liveChat/messages",
+      "text": "Insert live chat message",
+      "category": "Live Chat",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the chat message, including the message text, timing and author details",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/messages/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Inserts a new resource into this collection",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/messages",
+        "alias_endpoint": "/youtube/v3/liveChat/messages"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/messages",
+      "provider_proxy_intent": "/v3/liveChat/messages",
+      "text": "Delete live chat message",
+      "category": "Live Chat",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube live chat message ID of the resource that is being deleted",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/messages/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a chat message",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/messages",
+        "alias_endpoint": "/youtube/v3/liveChat/messages"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/moderators",
+      "provider_proxy_intent": "/v3/liveChat/moderators",
+      "text": "List live chat moderators",
+      "category": "Live Chat",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "liveChatId": {
+          "text": "The liveChatId parameter identifies the chat whose moderators will be returned",
+          "type": "string",
+          "required": true
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/moderators/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves a list of resources, possibly filtered",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/moderators",
+        "alias_endpoint": "/youtube/v3/liveChat/moderators"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/moderators",
+      "provider_proxy_intent": "/v3/liveChat/moderators",
+      "text": "Insert live chat moderator",
+      "category": "Live Chat",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        }
+      },
+      "path": {},
+      "body": {
+        "snippet": {
+          "text": "The snippet object contains basic details about the moderator, including the moderator's identity",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/moderators/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Inserts a new resource into this collection",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/moderators",
+        "alias_endpoint": "/youtube/v3/liveChat/moderators"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/liveChat/moderators",
+      "provider_proxy_intent": "/v3/liveChat/moderators",
+      "text": "Delete live chat moderator",
+      "category": "Live Chat",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "text": "The id parameter specifies the YouTube live chat moderator ID for the resource that is being deleted",
+          "type": "string",
+          "required": true
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/liveChat/moderators/delete",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Deletes a chat moderator",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/liveChat/moderators",
+        "alias_endpoint": "/youtube/v3/liveChat/moderators"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/superChatEvents",
+      "provider_proxy_intent": "/v3/superChatEvents",
+      "text": "List super chat events",
+      "category": "Super Chat Events",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "part": {
+          "text": "The part parameter specifies the superChatEvent resource properties that the API response will include. Set the parameter value to snippet",
+          "type": "string",
+          "required": true,
+          "examples": "snippet"
+        },
+        "hl": {
+          "text": "The hl parameter instructs the API to retrieve localized resource metadata for a specific application language",
+          "type": "string"
+        },
+        "maxResults": {
+          "text": "The maxResults parameter specifies the maximum number of items that should be returned in the result set",
+          "type": "number",
+          "examples": 25
+        },
+        "pageToken": {
+          "text": "The pageToken parameter identifies a specific page in the result set that should be returned",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/superChatEvents/list",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Retrieves a list of resources, possibly filtered",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/superChatEvents",
+        "alias_endpoint": "/youtube/v3/superChatEvents"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/channelBanners",
+      "provider_proxy_intent": "/v3/channelBanners/insert",
+      "text": "Insert channel banner",
+      "category": "Channel Banners",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {
+        "onBehalfOfContentOwner": {
+          "text": "The onBehalfOfContentOwner parameter indicates that the request's authorization credentials identify a YouTube CMS user who is acting on behalf of the content owner specified in the parameter value",
+          "type": "string"
+        },
+        "channelId": {
+          "text": "The channelId parameter identifies the YouTube channel to which the banner is uploaded",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {
+        "file": {
+          "text": "The image file to upload as a channel banner",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/docs/channelBanners/insert",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Uploads a channel banner image to YouTube",
+        "api_endpoint": "https://www.googleapis.com/youtube/v3/channelBanners/insert",
+        "alias_endpoint": "/youtube/v3/channelBanners"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v3/batch",
+      "provider_proxy_intent": "/v3/batch",
+      "text": "Batch requests",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "requests": {
+          "text": "Array of API requests to batch process. Each request should include method, path, and body/params as needed",
+          "type": "array",
+          "required": true,
+          "examples": [
+            {
+              "method": "GET",
+              "path": "/v3/videos",
+              "params": {
+                "part": "snippet",
+                "id": "VIDEO_ID"
+              }
+            }
+          ]
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/youtube/v3/guides/batch-processing",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Combines multiple API calls into a single HTTP request to reduce the number of HTTP connections",
+        "api_endpoint": "https://www.googleapis.com/batch/youtube/v3",
+        "alias_endpoint": "/youtube/v3/batch"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    }
+  ]
+}

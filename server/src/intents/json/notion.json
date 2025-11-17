@@ -29,7 +29,7 @@
     },
     "api_endpoint": "https://api.notion.com",
     "released": 1,
-    "updated_at": "2024-12-22T10:14:37.000Z",
+    "updated_at": "2025-11-17T15:56:48.000Z",
     "website": "https://notion.com",
     "api_link_ref": "https://developers.notion.com",
     "total_api": 20,
@@ -71,8 +71,7 @@
         },
         "properties": {
           "text": "Property values of this page. The keys are the names or IDs of the property and the values are property values",
-          "type": "json",
-          "required": true
+          "type": "json"
         }
       },
       "custom_headers": {
@@ -96,7 +95,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/pages/page_id",
@@ -144,7 +143,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/pages/page_id/properties/property_id",
@@ -198,7 +197,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/blocks/block_id",
@@ -238,7 +237,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/blocks/block_id",
@@ -287,7 +286,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/pages",
@@ -382,7 +381,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/databases/database_id",
@@ -422,7 +421,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/databases/database_id/query",
@@ -488,7 +487,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/databases/database_id",
@@ -541,7 +540,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/databases",
@@ -611,7 +610,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/blocks/block_id/children",
@@ -660,7 +659,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/blocks/block_id/children",
@@ -710,7 +709,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/blocks/block_id",
@@ -750,7 +749,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/comments",
@@ -798,7 +797,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/comments",
@@ -846,7 +845,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/search",
@@ -904,7 +903,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/users/user_id",
@@ -944,7 +943,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/users",
@@ -960,7 +959,7 @@
           "type": "number"
         },
         "start_cursor": {
-          "text": "Filter response by specific page property IDs",
+          "text": "Supply cursor for next page when available",
           "type": "string"
         }
       },
@@ -987,7 +986,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/oauth/token",
@@ -1025,7 +1024,7 @@
         "rate_limit": [],
         "description": "Access token that a third-party service can use to authenticate with Notion",
         "api_endpoint": "https://api.notion.com/v1/oauth/token",
-        "alias_endpoint": ""
+        "alias_endpoint": "/notion/v1/oauth/token"
       },
       "auth": {
         "header": {
@@ -1035,7 +1034,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     },
     {
       "provider_alias_intent": "/v1/users/me",
@@ -1069,7 +1068,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.315Z"
+      "updated_at": "2025-11-17T15:56:48.000Z"
     }
   ]
 }
