@@ -15,21 +15,21 @@ const load = () => {
   const list = fs.readdirSync(dirPath);
   const json : { [key: string]: any } = {};
 
-  try {
-    list.forEach((item) => {
-      const [provider_name, extension] = item.split('.');
-      if (extension !== 'json') return;
-      const filePath = path.resolve(__dirname, `./json/${item}`);
+  list.forEach((item) => {
+    const [provider_name, extension] = item.split('.');
+    if (extension !== 'json') return;
+    const filePath = path.resolve(__dirname, `./json/${item}`);
+
+    try {
       const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
       if (jsonData.config) {
         providerList.push({ ...jsonData.config });
         json[provider_name] = jsonData;
       }
-    });
-  } catch (e : any) {
-    loggerService.error('Error loading json files for intents', e.message);
-    throw e;
-  }
+    } catch (e : any) {
+      loggerService.error('Error loading json for ',item,  e.message, 'Ignoring this file');
+    }
+  });
 
   return json;
 };

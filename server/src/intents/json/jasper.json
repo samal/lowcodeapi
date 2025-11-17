@@ -27,7 +27,7 @@
     "headers": {},
     "api_endpoint": "https://api.jasper.ai",
     "released": 1,
-    "updated_at": "2024-12-22T09:46:27.000Z",
+    "updated_at": "2025-01-28T12:00:00.000Z",
     "website": "https://www.jasper.ai/",
     "api_link_ref": "https://developers.jasper.ai/reference/command-3",
     "total_api": 19,
@@ -72,7 +72,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.188Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/image/remove-background",
@@ -107,7 +107,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/keep-writing",
@@ -147,7 +147,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/knowledge",
@@ -204,7 +204,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/knowledge",
@@ -243,7 +243,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/knowledge/knowledge_id",
@@ -285,7 +285,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/knowledge/knowledge_id",
@@ -352,7 +352,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/knowledge/knowledge_id",
@@ -394,7 +394,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/styles",
@@ -424,10 +424,10 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
-      "provider_alias_intent": "i/v1/styles/style_id/apply",
+      "provider_alias_intent": "/v1/styles/style_id/apply",
       "text": "Apply style guide",
       "category": "Styles",
       "method": "POST",
@@ -460,8 +460,8 @@
         "auth": [],
         "description": "Applies style rules to content and returns the styled content",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}i/v1/styles/{style_id}/apply",
-        "alias_endpoint": "/jasperi/v1/styles/style_id/apply",
+        "api_endpoint": "{endpoint}/v1/styles/{style_id}/apply",
+        "alias_endpoint": "/jasper/v1/styles/style_id/apply",
         "api_ref": "https://developers.jasper.ai/reference/applystyle"
       },
       "auth": {
@@ -472,7 +472,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/templates",
@@ -502,7 +502,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/templates/template_id",
@@ -544,7 +544,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/templates/template_id/run",
@@ -596,7 +596,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/tones",
@@ -645,7 +645,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/tones",
@@ -684,7 +684,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/tones/tone_id",
@@ -726,7 +726,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/tones/tone_id",
@@ -785,7 +785,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/tones/tone_id",
@@ -827,7 +827,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/usage",
@@ -873,7 +873,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.189Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }

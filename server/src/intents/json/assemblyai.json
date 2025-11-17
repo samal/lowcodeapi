@@ -27,10 +27,10 @@
     "headers": {},
     "api_endpoint": "https://api.assemblyai.com",
     "released": 1,
-    "updated_at": "2024-12-23T06:26:04.000Z",
+    "updated_at": "2025-01-27T12:12:18.000Z",
     "website": "https://www.assemblyai.com",
     "api_link_ref": "https://www.assemblyai.com/docs/api-reference/overview",
-    "total_api": 19,
+    "total_api": 20,
     "credential_link": "https://www.assemblyai.com/app/account"
   },
   "routes": [
@@ -70,7 +70,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.791Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript",
@@ -260,7 +260,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id",
@@ -298,11 +298,11 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript",
-      "provider_proxy_intent": " /v2/transcript",
+      "provider_proxy_intent": "/v2/transcript",
       "text": "List transcripts",
       "category": "Transcript",
       "method": "GET",
@@ -344,7 +344,7 @@
         "version": "v2",
         "rate_limit": [],
         "description": "Retrieve a list of transcripts you created. Transcripts are sorted from newest to oldest. The previous URL always points to a page with older transcripts.",
-        "api_endpoint": " https://api.assemblyai.com/v2/transcript",
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript",
         "alias_endpoint": "/assemblyai/v2/transcript"
       },
       "auth": {
@@ -355,7 +355,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id/sentences",
@@ -393,7 +393,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id/subtitle_format",
@@ -424,7 +424,7 @@
         "version": "v2",
         "rate_limit": [],
         "description": "Export your completed transcripts in SRT (srt) or VTT (vtt) format, which can be used for subtitles and closed captions in videos.",
-        "api_endpoint": " https://api.assemblyai.com/v2/transcript/:transcript_id/:subtitle_format",
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript/:transcript_id/:subtitle_format",
         "alias_endpoint": "/assemblyai/v2/transcript/id/subtitle_format"
       },
       "auth": {
@@ -435,7 +435,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id/redacted-audio",
@@ -458,11 +458,11 @@
       "domain_params": {},
       "meta": {
         "auth": [],
-        "api_ref": " https://api.assemblyai.com/v2/transcript/:transcript_id/redacted-audio",
+        "api_ref": "https://www.assemblyai.com/docs/api-reference/transcripts/get-redacted-audio",
         "version": "v2",
         "rate_limit": [],
         "description": "If you enable PII redaction, get the redacted audio, as described in the Create a redacted audio file section.",
-        "api_endpoint": " https://api.assemblyai.com/v2/transcript/:transcript_id/redacted-audio",
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript/:transcript_id/redacted-audio",
         "alias_endpoint": "/assemblyai/v2/transcript/id/redacted-audio"
       },
       "auth": {
@@ -473,7 +473,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id/paragraphs",
@@ -511,7 +511,83 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v2/transcript/transcript_id/words",
+      "provider_proxy_intent": "/v2/transcript/:transcript_id/words",
+      "text": "Get word timestamps in transcript",
+      "category": "Transcript",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "transcript_id": {
+          "text": "ID of the transcript",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://www.assemblyai.com/docs/api-reference/transcripts/get-words",
+        "version": "v2",
+        "rate_limit": [],
+        "description": "Get the transcript with word-level timestamps. Each word in the transcript will have a start and end time in milliseconds.",
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript/:transcript_id/words",
+        "alias_endpoint": "/assemblyai/v2/transcript/id/words"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v2/transcript/transcript_id/chapters",
+      "provider_proxy_intent": "/v2/transcript/:transcript_id/chapters",
+      "text": "Get chapters in transcript",
+      "category": "Transcript",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "transcript_id": {
+          "text": "ID of the transcript",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://www.assemblyai.com/docs/api-reference/transcripts/get-chapters",
+        "version": "v2",
+        "rate_limit": [],
+        "description": "Get the transcript split by chapters. Chapters are automatically detected sections of the transcript.",
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript/:transcript_id/chapters",
+        "alias_endpoint": "/assemblyai/v2/transcript/id/chapters"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/upload",
@@ -534,9 +610,15 @@
         "description": "Upload a media file to AssemblyAI’s servers.",
         "api_endpoint": "https://api.assemblyai.com/v2/upload"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/transcript/transcript_id/word-search",
@@ -569,11 +651,17 @@
         "version": "v2",
         "rate_limit": [],
         "description": "Search through the transcript for keywords. You can search for individual words, numbers, or phrases containing up to five words or numbers.",
-        "api_endpoint": " https://api.assemblyai.com/v2/transcript/:transcript_id/word-search"
+        "api_endpoint": "https://api.assemblyai.com/v2/transcript/:transcript_id/word-search"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/generate/task",
@@ -625,9 +713,15 @@
         "description": "Use the LeMUR task endpoint to input your own LLM prompt.",
         "api_endpoint": "https://api.assemblyai.com/lemur/v3/generate/task"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/generate/summary",
@@ -677,11 +771,17 @@
         "version": "v3",
         "rate_limit": [],
         "description": "Custom Summary allows you to distill a piece of audio into a few impactful sentences. You can give the model context to obtain more targeted results while outputting the results in a variety of formats described in human language.",
-        "api_endpoint": " https://api.assemblyai.com/lemur/v3/generate/summary"
+        "api_endpoint": "https://api.assemblyai.com/lemur/v3/generate/summary"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/generate/question-answer",
@@ -733,9 +833,15 @@
         "description": "Question & Answer allows you to ask free-form questions about a single transcript or a group of transcripts. The questions can be any whose answers you find useful, such as judging whether a caller is likely to become a customer or whether all items on a meeting’s agenda were covered.",
         "api_endpoint": "https://api.assemblyai.com/lemur/v3/generate/question-answer"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/generate/action-items",
@@ -787,9 +893,15 @@
         "description": "Use LeMUR to generate a list of action items from a transcript.",
         "api_endpoint": "https://api.assemblyai.com/lemur/v3/generate/action-items"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/request_id",
@@ -818,9 +930,15 @@
         "description": "Retrieve a LeMUR response that was previously generated.",
         "api_endpoint": "https://api.assemblyai.com/lemur/v3/:request_id"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/lemur/v3/request_id",
@@ -847,11 +965,17 @@
         "version": "v3",
         "rate_limit": [],
         "description": "Delete the data for a previously submitted LeMUR request. The LLM response data, as well as any context provided in the original request will be removed.",
-        "api_endpoint": " https://api.assemblyai.com/lemur/v3/:request_id"
+        "api_endpoint": "https://api.assemblyai.com/lemur/v3/:request_id"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/realtime/token",
@@ -878,15 +1002,21 @@
         "version": "v2",
         "rate_limit": [],
         "description": "Create a temporary authentication token for Streaming Speech-to-Text.",
-        "api_endpoint": " https://api.assemblyai.com/v2/realtime/token"
+        "api_endpoint": "https://api.assemblyai.com/v2/realtime/token"
       },
-      "auth": [],
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "wss//api.assemblyai.com/v2/realtime/ws",
-      "provider_proxy_intent": "wss://api.assemblyai.com/v2/realtime/ws",
+      "provider_alias_intent": "/v2/realtime/ws",
+      "provider_proxy_intent": "/v2/realtime/ws",
       "text": "Streaming Speech-to-Text",
       "category": "Streaming",
       "method": "GET",
@@ -930,188 +1060,15 @@
         "description": "Streaming Speech-to-Text.",
         "api_endpoint": "wss://api.assemblyai.com/v2/realtime/ws"
       },
-      "auth": [],
-      "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
-    },
-    {
-      "provider_alias_intent": "createatranscriptfromamediafilethatisaccessibleviaaurl.",
-      "provider_proxy_intent": "Create a transcript from a media file that is accessible via a URL.",
-      "text": "Transcribe audio",
-      "category": "Transcript",
-      "method": "POST",
-      "type": "API",
-      "request_type": "API",
-      "params": {},
-      "path": {},
-      "body": {
-        "topics": {
-          "text": "The list of custom topics",
-          "type": "list of strings"
-        },
-        "audio_url": {
-          "text": "The URL of the audio or video file to transcribe.",
-          "type": "string",
-          "required": true
-        },
-        "punctuate": {
-          "text": "Enable Automatic Punctuation, can be true or false",
-          "type": "boolean"
-        },
-        "redact_pii": {
-          "text": "Redact PII from the transcribed text using the Redact PII model, can be true or false",
-          "type": "boolean"
-        },
-        "word_boost": {
-          "text": "The list of custom vocabulary to boost transcription probability for",
-          "type": "list of strings"
-        },
-        "boost_param": {
-          "text": "Allowed values:low default high",
-          "type": "enum"
-        },
-        "format_text": {
-          "text": "Enable Text Formatting, can be true or false",
-          "type": "boolean"
-        },
-        "webhook_url": {
-          "text": "The URL to which we send webhook requests. We sends two different types of webhook requests. One request when a transcript is completed or failed, and one request when the redacted audio is ready if redact_pii_audio is enabled.",
-          "type": "string"
-        },
-        "audio_end_at": {
-          "text": "The point in time, in milliseconds, to stop transcribing in your media file",
-          "type": "number"
-        },
-        "disfluencies": {
-          "text": "Transcribe Filler Words, like “umm”, in your media file; can be true or false",
-          "type": "boolean"
-        },
-        "dual_channel": {
-          "text": "Enable Dual Channel transcription, can be true or false.",
-          "type": "boolean"
-        },
-        "multichannel": {
-          "text": "Enable Multichannel transcription, can be true or false.",
-          "type": "boolean"
-        },
-        "speech_model": {
-          "text": "The speech model to use for the transcription.",
-          "type": "enum"
-        },
-        "summary_type": {
-          "text": "Allowed values: bullets bullets_verbose gist headline pargraph",
-          "type": "enum"
-        },
-        "auto_chapters": {
-          "text": "Enable Auto Chapters, can be true or false",
-          "type": "boolean"
-        },
-        "custom_topics": {
-          "text": "Enable custom topics, either true or false",
-          "type": "boolean"
-        },
-        "language_code": {
-          "text": "The language of your audio file. Possible values are found in Supported Languages. The default value is ‘en_us’.",
-          "type": "enum"
-        },
-        "summary_model": {
-          "text": "The model to summarize the transcript Allowed values: informative conversational catchy",
-          "type": "enum"
-        },
-        "content_safety": {
-          "text": "Enable Content Moderation, can be true or false",
-          "type": "boolean"
-        },
-        "iab_categories": {
-          "text": "Enable Topic Detection, can be true or false",
-          "type": "boolean"
-        },
-        "redact_pii_sub": {
-          "text": "The replacement logic for detected PII, can be “entity_name” or “hash”. See PII redaction for more details.",
-          "type": "enum"
-        },
-        "speaker_labels": {
-          "text": "Enable Speaker diarization, can be true or false",
-          "type": "boolean"
-        },
-        "auto_highlights": {
-          "text": "Enable Key Phrases, either true or false",
-          "type": "boolean"
-        },
-        "custom_spelling": {
-          "text": "Customize how words are spelled and formatted using to and from values",
-          "type": "llist of objects"
-        },
-        "audio_start_from": {
-          "text": "The point in time, in milliseconds, to begin transcribing in your media file",
-          "type": "number"
-        },
-        "entity_detection": {
-          "text": "Enable Entity Detection, can be true or false",
-          "type": "boolean"
-        },
-        "filter_profanity": {
-          "text": "Filter profanity from the transcribed text, can be true or false",
-          "type": "boolean"
-        },
-        "redact_pii_audio": {
-          "text": "Generate a copy of the original media file with spoken PII “beeped” out, can be true or false. See PII redaction for more details.",
-          "type": "boolean"
-        },
-        "speech_threshold": {
-          "text": "Reject audio files that contain less than this fraction of speech. Valid values are in the range [0, 1] inclusive.",
-          "type": "number"
-        },
-        "speakers_expected": {
-          "text": "Tells the speaker label model how many speakers it should attempt to identify, up to 10. See Speaker diarization for more details.",
-          "type": "number"
-        },
-        "language_detection": {
-          "text": "Enable Automatic language detection, either true or false.",
-          "type": "boolean"
-        },
-        "sentiment_analysis": {
-          "text": "Enable Sentiment Analysis, can be true or false",
-          "type": "boolean"
-        },
-        "redact_pii_policies": {
-          "text": "The list of PII Redaction policies to enable. See PII redaction for more details.",
-          "type": "list of enums"
-        },
-        "redact_pii_audio_quality": {
-          "text": "Controls the filetype of the audio created by redact_pii_audio. Currently supports mp3 (default) and wav. See PII redaction for more details.",
-          "type": "enum"
-        },
-        "webhook_auth_header_name": {
-          "text": "The header name to be sent with the transcript completed or failed webhook requests",
-          "type": "string"
-        },
-        "content_safety_confidence": {
-          "text": "The confidence threshold for the Content Moderation model. Values must be between 25 and 100.",
-          "type": "number"
-        },
-        "webhook_auth_header_value": {
-          "text": "The header value to send back with the transcript completed or failed webhook requests for added security",
-          "type": "string"
-        },
-        "language_confidence_threshold": {
-          "text": "The confidence threshold for the automatically detected language. An error will be returned if the language confidence is below this threshold. Defaults to 0.",
-          "type": "number"
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
         }
       },
-      "custom_headers": {},
-      "domain_params": {},
-      "meta": {
-        "auth": [],
-        "api_ref": "https://www.assemblyai.com/docs/api-reference/transcripts/submit",
-        "version": "v2",
-        "rate_limit": [],
-        "description": "Create a transcript from a media file that is accessible via a URL.\n\n",
-        "api_endpoint": "Create a transcript from a media file that is accessible via a URL."
-      },
-      "auth": [],
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:34.792Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     }
   ]
 }

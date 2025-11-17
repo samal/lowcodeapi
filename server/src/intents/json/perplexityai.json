@@ -27,7 +27,7 @@
     "headers": {},
     "api_endpoint": "https://api.perplexity.ai",
     "released": 1,
-    "updated_at": "2024-12-22T10:23:43.000Z",
+    "updated_at": "2025-01-27T12:12:18.000Z",
     "website": "https://www.perplexity.ai/",
     "api_link_ref": "https://docs.perplexity.ai/api-reference/chat-completions",
     "total_api": 1,
@@ -36,10 +36,12 @@
   "routes": [
     {
       "provider_alias_intent": "/chat/completions",
+      "provider_proxy_intent": "/chat/completions",
       "text": "Chat Completions",
       "category": "Perplexity AI API",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {},
       "custom_headers": {},
       "body": {
@@ -109,11 +111,11 @@
         }
       },
       "meta": {
-        "version": "{}",
+        "version": "v1",
         "auth": [],
         "description": "Generates a model's response for the given chat conversation",
         "rate_limit": [],
-        "api_endpoint": "https://api.perplexity.ai",
+        "api_endpoint": "https://api.perplexity.ai/chat/completions",
         "alias_endpoint": "/perplexityai/chat/completions",
         "api_ref": "https://docs.perplexity.ai/reference/post_chat_completions"
       },
@@ -124,8 +126,9 @@
           "authKey": "api_key"
         }
       },
+      "response_format": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.376Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     }
   ]
 }

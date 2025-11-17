@@ -27,9 +27,9 @@
     "headers": {},
     "api_endpoint": "https://app.nanonets.com",
     "released": 1,
-    "updated_at": "2024-12-22T11:23:22.000Z",
+    "updated_at": "2025-01-28T12:00:00.000Z",
     "website": "https://nanonets.com/",
-    "api_link_ref": "https://nanonets.com/documentation/#section/Authentication",
+    "api_link_ref": "https://nanonets.com/documentation",
     "total_api": 19,
     "credential_link": "https://app.nanonets.com/#/keys"
   },
@@ -74,7 +74,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/model",
@@ -112,7 +112,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/model",
@@ -150,7 +150,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/models",
@@ -182,7 +182,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/labelurls",
@@ -225,7 +225,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/train",
@@ -263,7 +263,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/uploadfile",
@@ -311,7 +311,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/labelfile",
@@ -354,7 +354,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/imagecategorization/uploadurls",
@@ -402,7 +402,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model",
@@ -419,7 +419,7 @@
           "text": "Type of model, 'ocr' for OCR model",
           "type": "string"
         },
-        " categories": {
+        "categories": {
           "text": "Categories",
           "type": "array",
           "required": true
@@ -444,7 +444,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id",
@@ -456,7 +456,7 @@
       "request_type": "API",
       "params": {},
       "path": {
-        " model_id": {
+        "model_id": {
           "text": "Model ID",
           "type": "string",
           "required": true
@@ -482,7 +482,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/labelurls",
@@ -543,7 +543,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/imagelevelinferences/id",
@@ -586,7 +586,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/inferencerequestfiles/getpredictions/request_file_id",
@@ -629,7 +629,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/labelfile",
@@ -640,14 +640,14 @@
       "type": "API",
       "request_type": "API",
       "params": {
-        " async": {
+        "async": {
           "text": "This parameter specifies whether you'd like to upload the file for processing and then query the results with a unique id at a later point in time",
-          "type": "file",
+          "type": "boolean",
           "required": true
         }
       },
       "path": {
-        " model_id": {
+        "model_id": {
           "text": "Model ID",
           "type": "string",
           "required": true
@@ -689,7 +689,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/inferences/model/model_id/imagelevelinferences",
@@ -738,7 +738,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/train",
@@ -750,7 +750,7 @@
       "request_type": "API",
       "params": {},
       "path": {
-        " model_id": {
+        "model_id": {
           "text": "Model ID",
           "type": "string",
           "required": true
@@ -776,7 +776,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/uploadurls",
@@ -788,7 +788,7 @@
       "request_type": "API",
       "params": {},
       "path": {
-        " model_id": {
+        "model_id": {
           "text": "Model ID",
           "type": "string",
           "required": true
@@ -825,7 +825,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/api/v2/ocr/model/model_id/uploadfile",
@@ -837,7 +837,7 @@
       "request_type": "API",
       "params": {},
       "path": {
-        " model_id": {
+        "model_id": {
           "text": "Model ID",
           "type": "string",
           "required": true
@@ -874,7 +874,7 @@
         }
       },
       "response_format": {},
-      "updated_at": "2025-11-11T15:37:35.261Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }
