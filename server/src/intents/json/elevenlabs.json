@@ -27,10 +27,10 @@
     "headers": {},
     "api_endpoint": "https://api.elevenlabs.io",
     "released": 1,
-    "updated_at": "2024-12-22T09:22:48.000Z",
+    "updated_at": "2025-01-27T00:00:00.000Z",
     "website": "https://elevenlabs.io/",
     "api_link_ref": "https://elevenlabs.io/docs/api-reference/introduction",
-    "total_api": 118,
+    "total_api": 61,
     "credential_link": "https://elevenlabs.io/app/speech-synthesis"
   },
   "routes": [
@@ -1875,7 +1875,7 @@
     },
     {
       "provider_alias_intent": "/v1/text-to-speech/voice_id/with-timestamps",
-      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps",
       "text": "Text To Speech With Timestamps",
       "category": "Text To Speech",
       "method": "POST",
@@ -1953,7 +1953,7 @@
         "version": "v1",
         "rate_limit": [],
         "description": "Converts text into audio together with timestamps on when which word was spoken.",
-        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps",
+        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/with-timestamps",
         "alias_endpoint": "/elevenlabs/v1/text-to-speech/voice_id/with-timestamps"
       },
       "auth": {
@@ -2125,7 +2125,7 @@
     },
     {
       "provider_alias_intent": "/v1/text-to-speech/voice_id/stream/with-timestamps",
-      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/stream/with-timestamps",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream/with-timestamps",
       "text": "Text To Speech Streaming With Timestamps",
       "category": "Text To Speech",
       "method": "POST",
@@ -2203,7 +2203,7 @@
         "version": "v1",
         "rate_limit": [],
         "description": "Converts text into audio together with timestamps on when which word was spoken in a streaming way.",
-        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/stream/with-timestamps",
+        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-speech/{voice_id}/stream/with-timestamps",
         "alias_endpoint": "/elevenlabs/v1/text-to-speech/voice_id/stream/with-timestamps"
       },
       "auth": {
@@ -2950,6 +2950,207 @@
       },
       "response_format": {},
       "updated_at": "2025-11-11T15:37:34.919Z"
+    },
+    {
+      "provider_alias_intent": "/v1/workspace/members",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/workspace/members",
+      "text": "Get Workspace Members",
+      "category": "Workspace",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://elevenlabs.io/docs/api-reference/workspace-get-members",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Returns a list of all workspace members and their metadata.",
+        "api_endpoint": "https://api.elevenlabs.io/v1/workspace/members",
+        "alias_endpoint": "/elevenlabs/v1/workspace/members"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "xi-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/text-to-dialogue",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-dialogue",
+      "text": "Text To Dialogue",
+      "category": "Text To Speech",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "output_format": {
+          "text": "Output format of the generated audio. Must be one of: mp3_22050_32 - output format, mp3 with 22.05kHz sample rate at 32kbps. mp3_44100_32 - output format, mp3 with 44.1kHz sample rate at 32kbps. mp3_44100_64 - output format, mp3 with 44.1kHz sample rate at 64kbps. mp3_44100_96 - output format, mp3 with 44.1kHz sample rate at 96kbps. mp3_44100_128 - default output format, mp3 with 44.1kHz sample rate at 128kbps. mp3_44100_192 - output format, mp3 with 44.1kHz sample rate at 192kbps. Requires you to be subscribed to Creator tier or above. pcm_16000 - PCM format (S16LE) with 16kHz sample rate. pcm_22050 - PCM format (S16LE) with 22.05kHz sample rate. pcm_24000 - PCM format (S16LE) with 24kHz sample rate. pcm_44100 - PCM format (S16LE) with 44.1kHz sample rate. Requires you to be subscribed to Pro tier or above. ulaw_8000 - μ-law format (sometimes written mu-law, often approximated as u-law) with 8kHz sample rate. Note that this format is commonly used for Twilio audio inputs.",
+          "type": "string"
+        },
+        "enable_logging": {
+          "enum": [
+            true,
+            false
+          ],
+          "text": "When enable_logging is set to false full privacy mode will be used for the request. This will mean history features are unavailable for this request, including request stitching. Full privacy mode may only be used by enterprise customers.",
+          "type": "boolean"
+        },
+        "optimize_streaming_latency": {
+          "text": "You can turn on latency optimizations at some cost of quality. The best possible final latency varies by model",
+          "type": "number"
+        }
+      },
+      "path": {},
+      "body": {
+        "dialogue": {
+          "text": "A list of text and voice ID pairs to convert into speech (dialogue).",
+          "type": "array",
+          "required": true
+        },
+        "model_id": {
+          "text": "Identifier of the model that will be used, you can query them using GET /v1/models. The model needs to have support for text to speech, you can check this using the can_do_text_to_speech property",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://elevenlabs.io/docs/api-reference/text-to-dialogue",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Converts a list of text and voice ID pairs into speech (dialogue) and returns audio.",
+        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-dialogue",
+        "alias_endpoint": "/elevenlabs/v1/text-to-dialogue"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "xi-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/text-to-voice",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/text-to-voice",
+      "text": "Text To Voice Design",
+      "category": "Voice Generation",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "text": {
+          "text": "Text prompt used to design the voice.",
+          "type": "string",
+          "required": true
+        },
+        "gender": {
+          "enum": [
+            "female",
+            "male"
+          ],
+          "text": "Category code corresponding to the gender of the generated voice. Possible values: female, male.",
+          "type": "enum"
+        },
+        "age": {
+          "enum": [
+            "young",
+            "middle_aged",
+            "old"
+          ],
+          "text": "Category code corresponding to the age of the generated voice. Possible values: young, middle_aged, old.",
+          "type": "enum"
+        },
+        "accent": {
+          "text": "Category code corresponding to the accent of the generated voice. Possible values: american, british, african, australian, indian",
+          "type": "string"
+        },
+        "accent_strength": {
+          "text": "The strength of the accent of the generated voice. Has to be between 0.3 and 2.0.",
+          "type": "number"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://elevenlabs.io/docs/api-reference/text-to-voice",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Design a voice via a prompt, returning a list of voice previews.",
+        "api_endpoint": "https://api.elevenlabs.io/v1/text-to-voice",
+        "alias_endpoint": "/elevenlabs/v1/text-to-voice"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "xi-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/pronunciation-dictionaries/pronunciation_dictionary_id",
+      "provider_proxy_intent": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{pronunciation_dictionary_id}",
+      "text": "Update Pronunciation Dictionary",
+      "category": "Pronunciation Dictionaries",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "pronunciation_dictionary_id": {
+          "text": "The id of the pronunciation dictionary",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "text": "The name of the pronunciation dictionary, used for identification only.",
+          "type": "string"
+        },
+        "description": {
+          "text": "A description of the pronunciation dictionary, used for identification only.",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://elevenlabs.io/docs/api-reference/pronunciation-dictionaries-update",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Updates metadata for a pronunciation dictionary.",
+        "api_endpoint": "https://api.elevenlabs.io/v1/pronunciation-dictionaries/{pronunciation_dictionary_id}",
+        "alias_endpoint": "/elevenlabs/v1/pronunciation-dictionaries/pronunciation_dictionary_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "xi-api-key",
+          "headerValue": ""
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-27T00:00:00.000Z"
     }
   ]
 }

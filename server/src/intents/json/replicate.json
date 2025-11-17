@@ -1,0 +1,1570 @@
+{
+  "config": {
+    "id": "replicate",
+    "name": "Replicate",
+    "description": "",
+    "logo_url": "replicate.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "api_key",
+        "headerName": "Authorization",
+        "headerValue": "TOKEN"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "Replicate API Key",
+        "message": "This API key will be used for accessing Replicate service.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.replicate.com",
+    "released": 1,
+    "updated_at": "2025-01-27T00:00:00.000Z",
+    "website": "https://replicate.com",
+    "api_link_ref": "https://replicate.com/docs",
+    "total_api": 36,
+    "credential_link": "https://replicate.com/account/api-tokens"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}",
+      "text": "Get a model",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/collections/collection_slug",
+      "provider_proxy_intent": "/v1/collections/{collection_slug}",
+      "text": "Get a collection of models",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "collection_slug": {
+          "text": "The slug of the collection like `super-resolution` or `image-restoration`",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#collections.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a collection of models.",
+        "api_endpoint": "https://api.replicate.com/v1/collections/{collection_slug}",
+        "alias_endpoint": "/replicate/v1/collections/collection_slug"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/versions",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions",
+      "text": "List model versions",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.versions.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List model versions.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/versions",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/versions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}",
+      "text": "Delete a model version",
+      "category": "Models",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "version_id": {
+          "text": "The ID of the version",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.versions.delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a model version.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/versions/{version_id}",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/versions/version_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/collections",
+      "provider_proxy_intent": "/v1/collections",
+      "text": "List collections of models",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#collections.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List collections of models.",
+        "api_endpoint": "https://api.replicate.com/v1/collections",
+        "alias_endpoint": "/replicate/v1/collections"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}",
+      "text": "Get a model version",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "version_id": {
+          "text": "The ID of the version",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.versions.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a model version.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/versions/{version_id}",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/versions/version_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/predictions",
+      "provider_proxy_intent": "/v1/predictions",
+      "text": "List predictions",
+      "category": "Predictions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#predictions.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List predictions.",
+        "api_endpoint": "https://api.replicate.com/v1/predictions",
+        "alias_endpoint": "/replicate/v1/predictions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/versions/version_id/trainings",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/versions/{version_id}/trainings",
+      "text": "Create a training",
+      "category": "Models",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "version_id": {
+          "text": "The ID of the version",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "input": {
+          "text": "An object containing inputs to the Cog model's `train()` function",
+          "type": "object"
+        },
+        "webhook": {
+          "text": "An HTTPS URL for receiving a webhook when the training completes",
+          "type": "string"
+        },
+        "destination": {
+          "text": "A string representing the desired model to push to in the format `{destination_model_owner}/{destination_model_name}`",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#trainings.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a training.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/versions/{version_id}/trainings",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/versions/version_id/trainings"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/predictions",
+      "provider_proxy_intent": "/v1/predictions",
+      "text": "Create a prediction",
+      "category": "Predictions",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "input": {
+          "text": "The model's input as a JSON object",
+          "type": "object"
+        },
+        "version": {
+          "text": "The ID of the model version that you want to run",
+          "type": "string"
+        },
+        "webhook": {
+          "text": "An HTTPS URL for receiving a webhook when the prediction has new output",
+          "type": "string"
+        },
+        "webhook_events_filter": {
+          "text": "By default we will send requests to your webhook URL whenever there are new logs new outputs or the prediction has finished",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#predictions.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a prediction.",
+        "api_endpoint": "https://api.replicate.com/v1/predictions",
+        "alias_endpoint": "/replicate/v1/predictions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/predictions/prediction_id",
+      "provider_proxy_intent": "/v1/predictions/{prediction_id}",
+      "text": "Get a prediction",
+      "category": "Predictions",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "prediction_id": {
+          "text": "The ID of the prediction you want to get",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#predictions.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a prediction.",
+        "api_endpoint": "https://api.replicate.com/v1/predictions/{prediction_id}",
+        "alias_endpoint": "/replicate/v1/predictions/prediction_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/predictions/prediction_id/cancel",
+      "provider_proxy_intent": "/v1/predictions/{prediction_id}/cancel",
+      "text": "Cancel a prediction",
+      "category": "Predictions",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "prediction_id": {
+          "text": "The ID of the prediction you want to cancel",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#predictions.cancel",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Cancel a prediction.",
+        "api_endpoint": "https://api.replicate.com/v1/predictions/{prediction_id}/cancel",
+        "alias_endpoint": "/replicate/v1/predictions/prediction_id/cancel"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/trainings",
+      "provider_proxy_intent": "/v1/trainings",
+      "text": "List trainings",
+      "category": "Trainings",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#trainings.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List trainings.",
+        "api_endpoint": "https://api.replicate.com/v1/trainings",
+        "alias_endpoint": "/replicate/v1/trainings"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/trainings/training_id",
+      "provider_proxy_intent": "/v1/trainings/{training_id}",
+      "text": "Get a training",
+      "category": "Trainings",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "training_id": {
+          "text": "The ID of the training you want to get",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#trainings.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a training.",
+        "api_endpoint": "https://api.replicate.com/v1/trainings/{training_id}",
+        "alias_endpoint": "/replicate/v1/trainings/training_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/trainings/training_id/cancel",
+      "provider_proxy_intent": "/v1/trainings/{training_id}/cancel",
+      "text": "Cancel a training",
+      "category": "Trainings",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "training_id": {
+          "text": "The ID of the training you want to cancel",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#trainings.cancel",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Cancel a training.",
+        "api_endpoint": "https://api.replicate.com/v1/trainings/{training_id}/cancel",
+        "alias_endpoint": "/replicate/v1/trainings/training_id/cancel"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.420Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks/default/secret",
+      "provider_proxy_intent": "/v1/webhooks/default/secret",
+      "text": "Get the signing secret for the default webhook",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#webhooks.default.secret.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get the signing secret for the default webhook endpoint. This is used to verify that webhook requests are coming from Replicate.",
+        "api_endpoint": "https://api.replicate.com/v1/webhooks/default/secret",
+        "alias_endpoint": "/replicate/v1/webhooks/default/secret"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}",
+      "text": "Delete a model",
+      "category": "Models",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/predictions",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/predictions",
+      "text": "Create a prediction using an official model",
+      "category": "Models",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "input": {
+          "text": "The model's input as a JSON object",
+          "type": "object"
+        },
+        "webhook": {
+          "text": "An HTTPS URL for receiving a webhook when the prediction has new output",
+          "type": "string"
+        },
+        "webhook_events_filter": {
+          "text": "By default we will send requests to your webhook URL whenever there are new logs new outputs or the prediction has finished",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.predictions.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a prediction for the model and inputs you provide.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/predictions",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/predictions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models",
+      "provider_proxy_intent": "/v1/models",
+      "text": "Create a model",
+      "category": "Models",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "name": {
+          "text": "The name of the model. This must be unique among all models owned by the user or organization.",
+          "type": "string",
+          "required": true
+        },
+        "owner": {
+          "text": "Model Owner: The user or organization owning the model, matching the API token holder making the request.",
+          "type": "string",
+          "required": true
+        },
+        "hardware": {
+          "text": "Hardware SKU: The identifier for the hardware running the model. Available options can be fetched via the hardware.list endpoint.",
+          "type": "string",
+          "required": true
+        },
+        "paper_url": {
+          "text": "A URL for the model's paper.",
+          "type": "string"
+        },
+        "github_url": {
+          "text": "A URL for the model's source code on GitHub.",
+          "type": "string"
+        },
+        "visibility": {
+          "text": "Model Visibility: Determines if the model is public (accessible to all) or private (restricted to the owner and organization members).",
+          "type": "string",
+          "required": true
+        },
+        "description": {
+          "text": "A description of the model.",
+          "type": "string"
+        },
+        "license_url": {
+          "text": "A URL for the model's license.",
+          "type": "string"
+        },
+        "cover_image_url": {
+          "text": "A URL for the model's cover image. This should be an image file.",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models",
+        "alias_endpoint": "/replicate/v1/models"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/account",
+      "provider_proxy_intent": "/v1/account",
+      "text": "Get the authenticated account",
+      "category": "Account",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#account.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Returns information about the user or organization associated with the provided API token.",
+        "api_endpoint": "https://api.replicate.com/v1/account",
+        "alias_endpoint": "/replicate/v1/account"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models",
+      "provider_proxy_intent": "/v1/models",
+      "text": "List models",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List models.",
+        "api_endpoint": "https://api.replicate.com/v1/models",
+        "alias_endpoint": "/replicate/v1/models"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}",
+      "text": "Update a model",
+      "category": "Models",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "description": {
+          "text": "A description of the model",
+          "type": "string"
+        },
+        "github_url": {
+          "text": "A URL for the model's source code on GitHub",
+          "type": "string"
+        },
+        "paper_url": {
+          "text": "A URL for the model's paper",
+          "type": "string"
+        },
+        "license_url": {
+          "text": "A URL for the model's license",
+          "type": "string"
+        },
+        "cover_image_url": {
+          "text": "A URL for the model's cover image",
+          "type": "string"
+        },
+        "visibility": {
+          "text": "Model visibility: public or private",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.update",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Update a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/examples",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/examples",
+      "text": "Get model examples",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.examples.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get examples for a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/examples",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/examples"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/models/model_owner/model_name/readme",
+      "provider_proxy_intent": "/v1/models/{model_owner}/{model_name}/readme",
+      "text": "Get model readme",
+      "category": "Models",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "model_name": {
+          "text": "The name of the model",
+          "type": "string",
+          "required": true
+        },
+        "model_owner": {
+          "text": "The name of the user or organization that owns the model",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#models.readme.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get the README for a model.",
+        "api_endpoint": "https://api.replicate.com/v1/models/{model_owner}/{model_name}/readme",
+        "alias_endpoint": "/replicate/v1/models/model_owner/model_name/readme"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments",
+      "provider_proxy_intent": "/v1/deployments",
+      "text": "List deployments",
+      "category": "Deployments",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List deployments.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments",
+        "alias_endpoint": "/replicate/v1/deployments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments",
+      "provider_proxy_intent": "/v1/deployments",
+      "text": "Create a deployment",
+      "category": "Deployments",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "name": {
+          "text": "The name of the deployment",
+          "type": "string",
+          "required": true
+        },
+        "model": {
+          "text": "The model to deploy in the format {owner}/{model_name}",
+          "type": "string",
+          "required": true
+        },
+        "version": {
+          "text": "The version ID of the model to deploy",
+          "type": "string",
+          "required": true
+        },
+        "hardware": {
+          "text": "The hardware SKU to run the deployment on",
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a deployment.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments",
+        "alias_endpoint": "/replicate/v1/deployments"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments/deployment_owner/deployment_name",
+      "provider_proxy_intent": "/v1/deployments/{deployment_owner}/{deployment_name}",
+      "text": "Get a deployment",
+      "category": "Deployments",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "deployment_name": {
+          "text": "The name of the deployment",
+          "type": "string",
+          "required": true
+        },
+        "deployment_owner": {
+          "text": "The name of the user or organization that owns the deployment",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a deployment.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments/{deployment_owner}/{deployment_name}",
+        "alias_endpoint": "/replicate/v1/deployments/deployment_owner/deployment_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments/deployment_owner/deployment_name",
+      "provider_proxy_intent": "/v1/deployments/{deployment_owner}/{deployment_name}",
+      "text": "Update a deployment",
+      "category": "Deployments",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "deployment_name": {
+          "text": "The name of the deployment",
+          "type": "string",
+          "required": true
+        },
+        "deployment_owner": {
+          "text": "The name of the user or organization that owns the deployment",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "version": {
+          "text": "The version ID of the model to deploy",
+          "type": "string"
+        },
+        "hardware": {
+          "text": "The hardware SKU to run the deployment on",
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.update",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Update a deployment.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments/{deployment_owner}/{deployment_name}",
+        "alias_endpoint": "/replicate/v1/deployments/deployment_owner/deployment_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments/deployment_owner/deployment_name",
+      "provider_proxy_intent": "/v1/deployments/{deployment_owner}/{deployment_name}",
+      "text": "Delete a deployment",
+      "category": "Deployments",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "deployment_name": {
+          "text": "The name of the deployment",
+          "type": "string",
+          "required": true
+        },
+        "deployment_owner": {
+          "text": "The name of the user or organization that owns the deployment",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a deployment.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments/{deployment_owner}/{deployment_name}",
+        "alias_endpoint": "/replicate/v1/deployments/deployment_owner/deployment_name"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/deployments/deployment_owner/deployment_name/predictions",
+      "provider_proxy_intent": "/v1/deployments/{deployment_owner}/{deployment_name}/predictions",
+      "text": "Create a deployment prediction",
+      "category": "Deployments",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "deployment_name": {
+          "text": "The name of the deployment",
+          "type": "string",
+          "required": true
+        },
+        "deployment_owner": {
+          "text": "The name of the user or organization that owns the deployment",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "input": {
+          "text": "The model's input as a JSON object",
+          "type": "object"
+        },
+        "webhook": {
+          "text": "An HTTPS URL for receiving a webhook when the prediction has new output",
+          "type": "string"
+        },
+        "webhook_events_filter": {
+          "text": "By default we will send requests to your webhook URL whenever there are new logs new outputs or the prediction has finished",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#deployments.predictions.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Create a prediction for the deployment and inputs you provide.",
+        "api_endpoint": "https://api.replicate.com/v1/deployments/{deployment_owner}/{deployment_name}/predictions",
+        "alias_endpoint": "/replicate/v1/deployments/deployment_owner/deployment_name/predictions"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files",
+      "provider_proxy_intent": "/v1/files",
+      "text": "List files",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#files.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List files.",
+        "api_endpoint": "https://api.replicate.com/v1/files",
+        "alias_endpoint": "/replicate/v1/files"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files",
+      "provider_proxy_intent": "/v1/files",
+      "text": "Upload a file",
+      "category": "Files",
+      "method": "POST",
+      "type": "Upload",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "file": {
+          "text": "The file to upload",
+          "type": "file",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#files.create",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Upload a file.",
+        "api_endpoint": "https://api.replicate.com/v1/files",
+        "alias_endpoint": "/replicate/v1/files"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/file_id",
+      "provider_proxy_intent": "/v1/files/{file_id}",
+      "text": "Get a file",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#files.get",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Get a file.",
+        "api_endpoint": "https://api.replicate.com/v1/files/{file_id}",
+        "alias_endpoint": "/replicate/v1/files/file_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/file_id",
+      "provider_proxy_intent": "/v1/files/{file_id}",
+      "text": "Delete a file",
+      "category": "Files",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#files.delete",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Delete a file.",
+        "api_endpoint": "https://api.replicate.com/v1/files/{file_id}",
+        "alias_endpoint": "/replicate/v1/files/file_id"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/files/file_id/download",
+      "provider_proxy_intent": "/v1/files/{file_id}/download",
+      "text": "Download a file",
+      "category": "Files",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "file_id": {
+          "text": "The ID of the file",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#files.download",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Download a file.",
+        "api_endpoint": "https://api.replicate.com/v1/files/{file_id}/download",
+        "alias_endpoint": "/replicate/v1/files/file_id/download"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/hardware",
+      "provider_proxy_intent": "/v1/hardware",
+      "text": "List hardware",
+      "category": "Hardware",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#hardware.list",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "List available hardware options.",
+        "api_endpoint": "https://api.replicate.com/v1/hardware",
+        "alias_endpoint": "/replicate/v1/hardware"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    },
+    {
+      "provider_alias_intent": "/v1/search",
+      "provider_proxy_intent": "/v1/search",
+      "text": "Search models",
+      "category": "Search",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "q": {
+          "text": "The search query",
+          "type": "string"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://replicate.com/docs/reference/http#search",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Search for models.",
+        "api_endpoint": "https://api.replicate.com/v1/search",
+        "alias_endpoint": "/replicate/v1/search"
+      },
+      "auth": {
+        "header": {
+          "authKey": "api_key",
+          "headerName": "Authorization",
+          "headerValue": "TOKEN"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-11-11T15:37:35.421Z"
+    }
+  ]
+}
