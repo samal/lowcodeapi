@@ -27,7 +27,7 @@
     "headers": {},
     "api_endpoint": "https://app.resemble.ai/api",
     "released": 1,
-    "updated_at": "2024-12-22T10:37:40.000Z",
+    "updated_at": "2025-01-27T12:12:18.000Z",
     "website": "https://www.resemble.ai/",
     "api_link_ref": "https://docs.app.resemble.ai/docs/getting_started/quick_start",
     "total_api": 39,
@@ -44,17 +44,17 @@
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         },
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": true
         },
         "page_size": {
           "type": "number",
           "text": "Determines the number of items per page",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -63,7 +63,7 @@
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -88,7 +88,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices/voice_uuid/recordings/recording_uuid",
@@ -100,12 +100,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -114,12 +114,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -144,7 +144,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices/voice_uuid/recordings",
@@ -156,47 +156,55 @@
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
       "body": {
-        "{\n    \"file\"": {
-          "type": "{\n        \"type\""
+        "file": {
+          "type": "file",
+          "text": "Audio file to upload for the recording",
+          "required": true
         },
-        "\"text\"": {
-          "type": "\"Defaulted to false. If true"
+        "text": {
+          "type": "string",
+          "text": "Transcript of the recording",
+          "required": false
         },
-        "\"riquired\"": {
-          "type": "true\n    }"
+        "emotion": {
+          "type": "string",
+          "text": "Emotion of the recording",
+          "required": false
         },
-        "\"emotion\"": {
-          "type": "{\n        \"type\""
+        "is_active": {
+          "type": "boolean",
+          "text": "If false, the recording is not used to train the voice model",
+          "required": false,
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"is_active\"": {
-          "type": "{\n        \"type\""
+        "name": {
+          "type": "string",
+          "text": "Name of the recording",
+          "required": false
         },
-        "the recording is not used to train the voice model\"": {
-          "type": ""
-        },
-        "\"name\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"fill\"": {
-          "type": "{\n        \"type\""
-        },
-        "the recording will be used for Resemble Fill.\"\n    }": {
-          "type": ""
-        },
-        "}": {
-          "type": ""
+        "fill": {
+          "type": "boolean",
+          "text": "Defaulted to false. If true, the recording will be used for Resemble Fill.",
+          "required": false,
+          "enum": [
+            true,
+            false
+          ]
         }
       },
       "path": {
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -221,10 +229,10 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v2/voices/voice_uuid/recordings/recording_uuid\n",
+      "provider_alias_intent": "/v2/voices/voice_uuid/recordings/recording_uuid",
       "text": "Update a recording",
       "category": "Create Voices / Recordings",
       "method": "PUT",
@@ -233,12 +241,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -246,12 +254,12 @@
         "emotion": {
           "type": "string",
           "text": "Emotion of the recording",
-          "riquired": true
+          "required": true
         },
         "is_active": {
           "type": "boolean",
           "text": "If false, the recording is not used to train the voice model",
-          "riquired": true,
+          "required": true,
           "enum": [
             true,
             false
@@ -260,12 +268,12 @@
         "name": {
           "type": "string",
           "text": "Name of the recording",
-          "riquired": true
+          "required": true
         },
         "text": {
           "type": "string",
           "text": "Transcript of the recording",
-          "riquired": true
+          "required": true
         },
         "fill": {
           "type": "boolean",
@@ -280,12 +288,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -310,10 +318,10 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v2/voices/voice_uuid/recordings/recording_uuid\n",
+      "provider_alias_intent": "/v2/voices/voice_uuid/recordings/recording_uuid",
       "text": "Delete a recording",
       "category": "Create Voices / Recordings",
       "method": "DELETE",
@@ -322,12 +330,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -336,12 +344,12 @@
         "recording_uuid": {
           "type": "string",
           "text": "UUID of the recording to delete",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to which the recording belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -366,7 +374,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices",
@@ -420,7 +428,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices/voice_uuid",
@@ -430,14 +438,14 @@
       "type": "API",
       "params": {
         "voice_uuid": {
-          "type": "number",
+          "type": "string",
           "text": "UUID of the voice to fetch",
           "required": true
         },
         "advanced": {
           "type": "boolean",
           "text": "Returns advanced voice information such as underlying model versions when set to true.",
-          "required": true,
+          "required": false,
           "enum": [
             true,
             false
@@ -448,18 +456,9 @@
       "body": {},
       "path": {
         "voice_uuid": {
-          "type": "number",
+          "type": "string",
           "text": "UUID of the voice to fetch",
           "required": true
-        },
-        "advanced": {
-          "type": "boolean",
-          "text": "Returns advanced voice information such as underlying model versions when set to true.",
-          "required": true,
-          "enum": [
-            true,
-            false
-          ]
         }
       },
       "domain_params": {
@@ -484,7 +483,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices",
@@ -498,12 +497,12 @@
         "name": {
           "type": "string",
           "text": "Name of the voice",
-          "riquired": true
+          "required": true
         },
         "consent": {
           "type": "string",
           "text": "A base-64 encoded Wavefile string containing your consent and authorization to create and clone a voice. Please see the Voice Consent section for more details.",
-          "riquired": true
+          "required": true
         },
         "voice_type": {
           "type": "string",
@@ -541,7 +540,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices/voice_uuid/build",
@@ -584,7 +583,57 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v2/voice_design",
+      "text": "Create a voice from prompt",
+      "category": "Create Voices / Voice Design",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "prompt": {
+          "type": "string",
+          "text": "Text description of the voice to create",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "text": "Name for the generated voice",
+          "required": false
+        },
+        "callback_uri": {
+          "type": "string",
+          "text": "A URL (webhook) that will be notified upon voice generation completion",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "This endpoint creates a voice from a text prompt description. It generates three different voice samples matching your description.",
+        "rate_limit": [],
+        "api_endpoint": "https://app.resemble.ai/api/v2/voice_design",
+        "alias_endpoint": "/resembleai/v2/voice_design",
+        "api_ref": "https://docs.app.resemble.ai/docs/create_voices/resource_voice_design/create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/voices/voice_uuid",
@@ -593,7 +642,7 @@
       "method": "DELETE",
       "type": "API",
       "params": {
-        "voiceUuid": {
+        "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to delete",
           "required": true
@@ -602,7 +651,7 @@
       "custom_headers": {},
       "body": {},
       "path": {
-        "voiceUuid": {
+        "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to delete",
           "required": true
@@ -630,7 +679,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/detect",
@@ -644,7 +693,7 @@
         "url": {
           "type": "string",
           "text": "The URL of the audio file to be analyzed for deepfake detection. The audio file should be in WAV format. Provide a valid HTTPS URL pointing to the audio file.",
-          "riquired": true
+          "required": true
         },
         "callback_url": {
           "type": "string",
@@ -674,7 +723,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/detect/:uuid",
@@ -708,7 +757,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/watermark/apply",
@@ -722,7 +771,7 @@
         "url": {
           "type": "string",
           "text": "The URL of the audio file to be watermarked. The audio file should be in WAV format. Provide a valid HTTPS URL pointing to the audio file.",
-          "riquired": true
+          "required": true
         }
       },
       "path": {},
@@ -748,7 +797,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/watermark/detect",
@@ -762,7 +811,7 @@
         "url": {
           "type": "string",
           "text": "The URL of the audio file to be watermarked. The audio file should be in WAV format. Provide a valid HTTPS URL pointing to the audio file.",
-          "riquired": true
+          "required": true
         }
       },
       "path": {},
@@ -788,7 +837,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/batch",
@@ -800,17 +849,17 @@
         "project_uuid": {
           "type": "string",
           "text": "Batches for the project with this UUID will be returned",
-          "riquired": true
+          "required": true
         },
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": true
         },
         "page_size": {
           "type": "number",
           "text": "Determines the number of items per page",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -819,7 +868,7 @@
         "project_uuid": {
           "type": "string",
           "text": "Batches for the project with this UUID will be returned",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -844,7 +893,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/batch/batch_uuid",
@@ -856,12 +905,12 @@
         "batch_uuid": {
           "type": "string",
           "text": "UUID of the batch to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the batch belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -870,12 +919,12 @@
         "batch_uuid": {
           "type": "string",
           "text": "UUID of the batch to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the batch belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -900,11 +949,11 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/batch",
-      "text": "Creat a batch",
+      "text": "Create a batch",
       "category": "Generate Speech / Synthesize / Batch",
       "method": "POST",
       "type": "API",
@@ -912,7 +961,7 @@
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -920,35 +969,43 @@
         "body": {
           "type": "string",
           "text": "An array of strings where each string is content to be synthesized (this can be raw text or ssml) or an array of arrays where each element in the nested array conforms to the shape of ['title', ssml']. Max size of each element in the batch is 3,000 characters excluding ssml tags. Max size of the array is 1,000.",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to use for synthesizing",
-          "riquired": true
+          "required": true
         },
         "callback_uri": {
           "type": "string",
           "text": "The URL to POST the result of the batch to."
         },
         "precision": {
-          "type": "string",
-          "text": "one of the following values: PCM_32, PCM_24, PCM_16, or MULAW  The audio bit depth of generated audio"
+          "type": "enum",
+          "text": "The audio bit depth of generated audio",
+          "enum": [
+            "PCM_32",
+            "PCM_24",
+            "PCM_16",
+            "MULAW"
+          ]
         },
         "sample_rate": {
-          "type": "boolean",
-          "text": "one of the following values: 8000, 16000, 22050 or 44100 The sample rate (Hz) of the generated audio",
+          "type": "enum",
+          "text": "The sample rate (Hz) of the generated audio",
           "enum": [
-            true,
-            false
+            8000,
+            16000,
+            22050,
+            44100
           ]
         },
         "output_format": {
-          "type": "boolean",
-          "text": "one of the following values: wav or mp3 The format of the generated audio",
+          "type": "enum",
+          "text": "The format of the generated audio",
           "enum": [
-            true,
-            false
+            "wav",
+            "mp3"
           ]
         }
       },
@@ -956,7 +1013,7 @@
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -981,7 +1038,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/batch/batch_uuid",
@@ -993,12 +1050,12 @@
         "batch_uuid": {
           "type": "string",
           "text": "UUID of the batch to delete",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the batch belongs",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1007,12 +1064,12 @@
         "batch_uuid": {
           "type": "string",
           "text": "UUID of the batch to delete",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the batch belongs",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1037,43 +1094,43 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v2/projects/project_uuid/clips\n",
+      "provider_alias_intent": "/v2/projects/project_uuid/clips",
       "text": "Get all clips",
       "category": "Generate Speech / Synthesize / Clip",
       "method": "GET",
       "type": "API",
       "params": {
         "project_uuid": {
-          "type": "number",
+          "type": "string",
           "text": "Clips for the project with this UUID will be returned",
-          "riquired": true
+          "required": true
         },
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": false
         },
         "page_size": {
           "type": "number",
-          "text": "Determines the number of items per page ",
-          "riquired": true
+          "text": "Determines the number of items per page",
+          "required": false
         },
         "q": {
-          "type": "number",
-          "text": " Searches for clips with a title matching the value ",
-          "riquired": true
+          "type": "string",
+          "text": "Searches for clips with a title matching the value",
+          "required": false
         }
       },
       "custom_headers": {},
       "body": {},
       "path": {
         "project_uuid": {
-          "type": "number",
+          "type": "string",
           "text": "Clips for the project with this UUID will be returned",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1098,11 +1155,11 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/clips/clip_uuid",
-      "text": "Get a clips",
+      "text": "Get a clip",
       "category": "Generate Speech / Synthesize / Clip",
       "method": "GET",
       "type": "API",
@@ -1110,12 +1167,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip ",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1124,12 +1181,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip ",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1154,7 +1211,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/clips",
@@ -1166,7 +1223,7 @@
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1178,12 +1235,12 @@
         "body": {
           "type": "string",
           "text": "Content to be synthesized. Max size of 3,000 characters excluding SSML tags.",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to use for synthesizing",
-          "riquired": true
+          "required": true
         },
         "is_archived": {
           "type": "boolean",
@@ -1260,7 +1317,7 @@
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1285,7 +1342,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/clips/clip_uuid",
@@ -1297,12 +1354,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1314,12 +1371,12 @@
         "body": {
           "type": "string",
           "text": "Content to be synthesized. Max size of 3,000 characters excluding SSML tags.",
-          "riquired": true
+          "required": true
         },
         "voice_uuid": {
           "type": "string",
           "text": "UUID of the voice to use for synthesizing",
-          "riquired": true
+          "required": true
         },
         "is_archived": {
           "type": "boolean",
@@ -1335,8 +1392,14 @@
           "text": "The URL to POST the final clip to"
         },
         "precision": {
-          "type": "string",
-          "text": " The audio bit depth of generated audio"
+          "type": "enum",
+          "text": "The audio bit depth of generated audio",
+          "enum": [
+            "PCM_32",
+            "PCM_24",
+            "PCM_16",
+            "MULAW"
+          ]
         },
         "sample_rate": {
           "type": "enum",
@@ -1371,12 +1434,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to fetch",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1401,7 +1464,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid/clips/clip_uuid",
@@ -1413,12 +1476,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to delete",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1427,12 +1490,12 @@
         "clip_uuid": {
           "type": "string",
           "text": "UUID of the clip to delete",
-          "riquired": true
+          "required": true
         },
         "project_uuid": {
           "type": "string",
           "text": "UUID of the project to which the clip should belong",
-          "riquired": true
+          "required": true
         }
       },
       "domain_params": {
@@ -1457,7 +1520,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/account",
@@ -1491,7 +1554,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/account/teams",
@@ -1525,7 +1588,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/phonemes",
@@ -1537,12 +1600,12 @@
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": true
         },
         "page_size": {
           "type": "number",
           "text": "Determines the number of items per page",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1570,7 +1633,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/phonemes/phonemeuuid",
@@ -1616,11 +1679,11 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/phonemes",
-      "text": "Creat a phoneme",
+      "text": "Create a phoneme",
       "category": "Management / Phoneme",
       "method": "POST",
       "type": "API",
@@ -1661,7 +1724,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/phonemes/phonemeuuid",
@@ -1707,7 +1770,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects",
@@ -1719,12 +1782,12 @@
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": true
         },
         "page_size": {
           "type": "number",
           "text": "Determines the number of items per page",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -1752,7 +1815,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid",
@@ -1798,11 +1861,11 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects",
-      "text": "Creat a project",
+      "text": "Create a project",
       "category": "Management / Project",
       "method": "POST",
       "type": "API",
@@ -1861,7 +1924,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid",
@@ -1936,7 +1999,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/projects/project_uuid",
@@ -1945,7 +2008,7 @@
       "method": "DELETE",
       "type": "API",
       "params": {
-        "projectUuid": {
+        "project_uuid": {
           "type": "string",
           "text": "UUID of the project to delete",
           "required": true
@@ -1954,7 +2017,7 @@
       "custom_headers": {},
       "body": {},
       "path": {
-        "projectUuid": {
+        "project_uuid": {
           "type": "string",
           "text": "UUID of the project to delete",
           "required": true
@@ -1982,7 +2045,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/term_substitutions",
@@ -1994,12 +2057,12 @@
         "page": {
           "type": "number",
           "text": "The page to fetch",
-          "riquired": true
+          "required": true
         },
         "page_size": {
           "type": "number",
           "text": "Determines the number of items per page",
-          "riquired": true
+          "required": true
         }
       },
       "custom_headers": {},
@@ -2027,7 +2090,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/term_substitutions/substitutionuuid",
@@ -2073,11 +2136,11 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/term_substitutions",
-      "text": "Creat a term substitution",
+      "text": "Create a term substitution",
       "category": "Management / Term substitutions",
       "method": "POST",
       "type": "API",
@@ -2118,7 +2181,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v2/term_substitutions/term_substitution_uuid",
@@ -2127,7 +2190,7 @@
       "method": "DELETE",
       "type": "API",
       "params": {
-        "term_substitution_Uuid": {
+        "term_substitution_uuid": {
           "type": "string",
           "text": "UUID of the term substitution to delete",
           "required": true
@@ -2136,7 +2199,7 @@
       "custom_headers": {},
       "body": {},
       "path": {
-        "term_substitution_Uuid": {
+        "term_substitution_uuid": {
           "type": "string",
           "text": "UUID of the term substitution to delete",
           "required": true
@@ -2152,7 +2215,7 @@
         "auth": [],
         "description": "This endpoint deletes a term substitution.",
         "rate_limit": [],
-        "api_endpoint": "https://app.resemble.ai/api/v2/term_substitutions/<term_substitution_Uuid>",
+        "api_endpoint": "https://app.resemble.ai/api/v2/term_substitutions/<term_substitution_uuid>",
         "alias_endpoint": "/resembleai/v2/term_substitutions/term_substitution_uuid",
         "api_ref": "https://docs.app.resemble.ai/docs/management/resource_term_substitutions/delete"
       },
@@ -2164,7 +2227,7 @@
         }
       },
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.424Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     }
   ]
 }
