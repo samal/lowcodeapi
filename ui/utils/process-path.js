@@ -1,4 +1,4 @@
-import md5 from 'md5';
+import CryptoJS from 'crypto-js';
 import sanitize from '@/utils/sanitize';
 
 const fieldType = {
@@ -87,7 +87,7 @@ function processPath(data, provider, filter = [], selected) {
                 }
             }
             obj.route_name = item;
-            obj.hash = md5(`${provider}.${method.toUpperCase()}./${provider}${item}`);
+            obj.hash = CryptoJS.MD5(`${provider}.${method.toUpperCase()}./${provider}${item}`).toString();
             // obj.hashtxt = `${provider}.${method.toUpperCase()}./${provider}${item}`;
             obj.endpoint = obj.externalDocs.api_endpoint;
         });

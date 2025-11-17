@@ -1,5 +1,10 @@
 import express, { Application, Response, Router } from 'express';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(utc);
+dayjs.extend(relativeTime);
 
 import config from '../../../../config';
 import {
@@ -119,7 +124,7 @@ async function getHandlerWithApiToken(req: any) {
         message: data.message || '',
         info: {
           cache_message: cachedStatus
-            ? `Cache will get invalidated ${moment(cachedStatus).fromNow()}.`
+            ? `Cache will get invalidated ${dayjs(cachedStatus).fromNow()}.`
             : 'Data is cached',
           cache_expiry_at: cachedStatus,
           cache: true,
@@ -254,7 +259,7 @@ async function getHandlerWithApiToken(req: any) {
         loggerService.info(`Cache set error cache_key ${cache_key}`, err);
       });
 
-    const cache_duration_time = moment()
+    const cache_duration_time = dayjs()
       .utc()
       .add(cache_duration, 'seconds')
       .format();
@@ -774,7 +779,7 @@ const apiBase = ['spreadsheets', 'googlesheets'];
 
 apiBase.forEach((base) => {
   router.get(`/${base}/spreadsheetid/get`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/get';
     if (!req.query.api_token) {
       return res.status(403).json({
@@ -799,7 +804,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       res.status(statusCode).json({
         message: text,
         error: data.error,
@@ -838,7 +843,7 @@ apiBase.forEach((base) => {
       ...data,
     };
     response(res, result, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -868,7 +873,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'get', api_mount, req.user_ref_id);
   });
   router.post(`/${base}/spreadsheetid/update`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/update';
 
     if (!req.query.api_token) {
@@ -888,7 +893,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -924,7 +929,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -954,7 +959,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'post', api_mount, req.user_ref_id);
   });
   router.post(`/${base}/spreadsheetid/append`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/append';
 
     if (!req.query.api_token) {
@@ -974,7 +979,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -1010,7 +1015,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -1040,7 +1045,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'post', api_mount, req.user_ref_id);
   });
   router.post(`/${base}/spreadsheetid/clear`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/clear';
 
     if (!req.query.api_token) {
@@ -1060,7 +1065,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -1096,7 +1101,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -1126,7 +1131,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'post', api_mount, req.user_ref_id);
   });
   router.post(`/${base}/spreadsheetid/add`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/add';
 
     if (!req.query.api_token) {
@@ -1146,7 +1151,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -1182,7 +1187,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -1212,7 +1217,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'post', api_mount, req.user_ref_id);
   });
   router.post(`/${base}/spreadsheetid/remove`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/remove';
 
     if (!req.query.api_token) {
@@ -1232,7 +1237,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -1268,7 +1273,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,
@@ -1298,7 +1303,7 @@ apiBase.forEach((base) => {
     await logIntentRequest(PROVIDER, 'post', api_mount, req.user_ref_id);
   });
   router.get(`/${base}/spreadsheetid/sheets`, async (req: any, res: Response) => {
-    const started_at = moment().utc().format();
+    const started_at = dayjs().utc().format();
     const api_mount = '/spreadsheetid/sheets';
 
     if (!req.query.api_token) {
@@ -1318,7 +1323,7 @@ apiBase.forEach((base) => {
       } = error.response || error;
       const statusCode = status || code || 500;
       const text = data.message || message || errors;
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         user_ref_id: req.user_ref_id || null,
         service_ref_id: null,
@@ -1354,7 +1359,7 @@ apiBase.forEach((base) => {
     }
 
     response(res, data.data, { provider: 'googlesheets' });
-    const completed_at = moment().utc().format();
+    const completed_at = dayjs().utc().format();
     const logging = {
       user_ref_id: req.user_ref_id || null,
       service_ref_id: null,

@@ -1,10 +1,5 @@
 import nanoid from 'nanoid';
 import crypto from 'crypto';
-import shortid from 'shortid';
-
-function short(): string {
-  return shortid.generate().toUpperCase();
-}
 
 function nano(length: number = 8): string {
   const id = nanoid.nanoid(length).replace(/[~]/g, 'z').replace(/[_]/g, 'y');
@@ -33,9 +28,7 @@ function generateApiToken(type = 'r', prefix = '', suffix = ''): string {
 }
 
 export default {
-  short,
   nano,
-  hash: short,
   token: genToken,
   generateApiToken,
 };

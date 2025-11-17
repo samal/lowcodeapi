@@ -1,5 +1,8 @@
 import express, { Application, Response, Router } from 'express';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+
+dayjs.extend(utc);
 
 import { safePromise, loggerService, logIntentRequest } from '../../../../utilities';
 import logRequest from '../../../../utilities/request-log';
@@ -141,7 +144,7 @@ async function handlerWithApiToken(req: any) {
 }
 
 router.get('/googledocs/documentid/get', async (req: any, res) => {
-  const started_at = moment().utc().format();
+  const started_at = dayjs().utc().format();
   const api_mount = '/googledocs/documentid/get';
   if (!req.query.api_token) {
     return res.status(403).json({
@@ -162,7 +165,7 @@ router.get('/googledocs/documentid/get', async (req: any, res) => {
   }
 
   response(res, data, { provider: PROVIDER });
-  const completed_at = moment().utc().format();
+  const completed_at = dayjs().utc().format();
   const logging = {
     user_ref_id: req.user_ref_id || null,
     service_ref_id: null,

@@ -1,4 +1,4 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
 import jwt from 'jsonwebtoken';
 import { SignatureV4 } from '@aws-sdk/signature-v4';
 import { HttpRequest } from '@aws-sdk/protocol-http';
@@ -142,8 +142,8 @@ const appledeveloper: Function = async (url: string, { method, body, headers }: 
 
   const jwtPayload = {
     sub: 'user',
-    iat: moment().unix(),
-    exp: moment().add(10, 'm').unix(),
+    iat: dayjs().unix(),
+    exp: dayjs().add(10, 'm').unix(),
     aud: 'appstoreconnect-v1',
     scope: [
       // "GET /v1/apps?filter[platform]=IOS"

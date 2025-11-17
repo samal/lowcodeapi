@@ -1,5 +1,5 @@
 import express from 'express';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import rateLimit from 'express-rate-limit';
 
 import { loggerService, safePromise } from '../../../../utilities';
@@ -36,7 +36,7 @@ const notify = async ({
 
   User: ${getFullName(user)}
   Email: ${user.email}
-  Date: ${moment().format('YYYY-MM-DD HH:mm A')}
+  Date: ${dayjs().format('YYYY-MM-DD HH:mm A')}
   IP: ${ip || 'localhost'}
   
   ${iptarget}

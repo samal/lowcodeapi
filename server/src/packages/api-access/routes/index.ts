@@ -1,7 +1,10 @@
 import express, { Request, Response, NextFunction } from 'express';
 import fs from 'fs';
 import multer from 'multer';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+
+dayjs.extend(utc);
 
 import { loggerService, safePromise, logIntentRequest } from '../../../utilities';
 import logRequest from '../../../utilities/request-log';
@@ -56,7 +59,7 @@ const errorResponse = (res: any, error: any, options: any, route: any, req: any)
         error: error.data || error.errors || error.error || error,
         headers: error.headers,
       });
-      const completed_at = moment().utc().format();
+      const completed_at = dayjs().utc().format();
       const logging = {
         provider: options.provider,
         user_ref_id: req.user_ref_id || null,
@@ -106,7 +109,7 @@ const handleGetRequest = async (res: any, route: any, req: any, options: any = {
 
   const extra = { headers: resp.headers, provider: options.provider };
   response(res, resp.data, extra);
-  const completed_at = moment().utc().format();
+  const completed_at = dayjs().utc().format();
   const logging = {
     provider: options.provider,
     user_ref_id: req.user_ref_id || null,
@@ -148,7 +151,7 @@ const handlePostRequest = async (res: any, route: any, req: any, options: any = 
 
   const extra = { headers: resp.headers, provider: options.provider };
   response(res, resp.data, extra);
-  const completed_at = moment().utc().format();
+  const completed_at = dayjs().utc().format();
   const logging = {
     provider: options.provider,
     user_ref_id: req.user_ref_id || null,
@@ -242,7 +245,7 @@ Object.keys(providers).forEach((provider) => {
 
     if (router[method]) { // mount path in http method
       router[method](routePath, async (req: any, res: Response, next: NextFunction) => {
-        req.started_at = moment().utc().format();
+        req.started_at = dayjs().utc().format();
         if (method === 'post' && intent.type && UPLOAD.includes(intent.type.toLowerCase())) {
           console.log('File upload', intent.provider_alias_intent);
 
@@ -386,7 +389,7 @@ Object.keys(providers).forEach((provider) => {
         const routeProxyPath = `/${provider}${intent.provider_proxy_intent}`.replace(/[}>]/g, '').replace(/[{<]/g, ':').trim();
         // console.log('Proxy route', routeProxyPath);
         router[method](routeProxyPath, async (req: any, res: Response, next: NextFunction) => {
-          req.started_at = moment().utc().format();
+          req.started_at = dayjs().utc().format();
           if (method === 'post' && intent.type && UPLOAD.includes(intent.type.toLowerCase())) {
             console.log('File upload', intent.provider_alias_intent);
 

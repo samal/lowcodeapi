@@ -1,7 +1,7 @@
 import React from 'react';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
-const copyright = `© ${moment().format('YYYY')}`;
+const copyright = `© ${dayjs().format('YYYY')}`;
 
 function Copyright({ extendClass, copyright_name }) {
   return (

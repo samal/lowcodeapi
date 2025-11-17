@@ -1,4 +1,4 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
 import getLogoUrl from '@/utils/logo-url';
 
 
@@ -7,7 +7,7 @@ function Footer({ info = {} }) {
         <div className='text-xs text-gray-500 flex items-center justify-between'>
             <div>
                 <a href={`https://lowcodeapi.com?utm_ref=${info.BUILD_ID}&generated_by=${info.BUILD_FOR_USER}`} className='flex items-center text-xs text-gray-500 hover:text-gray-600' target='_blank'>
-                    © {moment().format('YYYY')}
+                    © {dayjs().format('YYYY')}
                     
                     <span className='mx-1.5'>{info.copyright}</span> 
                 </a>

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import axios from 'axios';
 
 import i18nText from '@/static-json/i18n.json';
@@ -191,8 +191,8 @@ export default function SettingsPageClient({ info ={}, api_endpoints ={}, user: 
                         list.map((item) => (
                             <tr key={item.ref_id} className="border-b border-gray-300">
                                 <td className='p-2'>{item.api_token}</td>
-                                <td className='p-2'>{moment(item.created_at).format('DD MMM YYYY')}</td>
-                                <td className='p-2'>{item.last_used ? moment(item.last_used).format('DD MMM YYYY') : 'Never'}</td>
+                                <td className='p-2'>{dayjs(item.created_at).format('DD MMM YYYY')}</td>
+                                <td className='p-2'>{item.last_used ? dayjs(item.last_used).format('DD MMM YYYY') : 'Never'}</td>
                                 <td className='p-2'>
                                     <button onClick={() => removeAPIToken(item)} className="hover:text-red-600">
                                         <IconPack name='trash' />

@@ -4,7 +4,7 @@ import {
 import passport from 'passport';
 import { Strategy } from 'passport-google-oauth20';
 
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 import config from '../../config';
 import endpoint from '../core/utilities/endpoint';
@@ -47,7 +47,7 @@ const notifyEvent = async (isNew: boolean, provider: string, user: any, req: any
     text = `
       New Login or Registration Attempt from Google
       
-      Date: ${moment().format('YYYY-MM-DD HH:mm A')}
+      Date: ${dayjs().format('YYYY-MM-DD HH:mm A')}
       🌐 IP: ${req.headers['x-real-ip'] || req.headers['x-forwarded-for'] || 'local'}
     `;
   }

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import moment from 'moment';
+import dayjs from 'dayjs';
 
 import getLogoUrl from '../../utils/logo-url';
 import StatusCodeColor from '../StatusCodeColor';
@@ -70,7 +70,7 @@ export default function APIRequestLogs({ requestLogs, api }) {
                                     <div className='col-span-1'>{`{...}`}</div>
                                     <div className='col-span-1'>{`{...}`}</div>
                                     <div className='col-span-1'>{`{...}`}</div>
-                                    <div className='col-span-3'>{moment(item.started_at).format('YYYY-MM-DD HH:mm:ss')}</div>
+                                    <div className='col-span-3'>{dayjs(item.started_at).format('YYYY-MM-DD HH:mm:ss')}</div>
                                     {/* <div className='col-span-1'>{moment(item.completed_at).diff(item.started_at, 'seconds')}</div> */}
                                     </div>))
                                 }

@@ -1,5 +1,8 @@
-import moment from 'moment';
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
 import axios from 'axios';
+
+dayjs.extend(utc);
 
 import { modules } from '../../common';
 
@@ -35,7 +38,7 @@ export default {
   process: async (user: { [key: string]: any }, { directLogin = false, onboard = false }) => {
     loggerService.info(user);
 
-    const expires_at = moment().utc().add(1, 'hour').format();
+    const expires_at = dayjs().utc().add(1, 'hour').format();
     const login_code = random.token(32);
     const login_code_hash = login_code;
     const payload: any = {
@@ -164,7 +167,7 @@ export default {
     }
 
     const data = usersLoginIntentCamelCaseToSnakeCase(result);
-    const linkExpired = moment().isAfter(data.expires_at);
+    const linkExpired = dayjs().isAfter(dayjs(data.expires_at));
 
     if (linkExpired) {
       const message = 'Link expired';
@@ -207,7 +210,7 @@ export default {
     }
 
     const update: { [key: string]: any } = {
-      login_at: moment().utc().format(),
+      login_at: dayjs().utc().format(),
       attempt: data.attempt + 1,
       active: false,
     };
