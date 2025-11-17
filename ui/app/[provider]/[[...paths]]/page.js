@@ -7,7 +7,6 @@ import ExplorerClient from './ExplorerClient';
 export async function generateStaticParams() {
     const contextObj = await getApplicationContext();
     const {
-        DATA_ENDPOINT,
         providers,
     } = contextObj;
 
@@ -20,31 +19,10 @@ export async function generateStaticParams() {
             provider,
             paths: undefined
         });
-        // try {
-        //     const resp = await axios(`${DATA_ENDPOINT}/${provider}/metadata`);
-        //     const result = resp.data;
-        //     const { res: metadata } = result;
-        //     if (metadata) {
-        //         // Root level keys
-        //         const categories = Object.keys(metadata);
-
-        //         categories.forEach((category) => {
-        //             const base = metadata[category].id.toString().toLowerCase().trim().replaceAll(' ', '-');
-        //             providersPath.push({
-        //                 provider,
-        //                 paths: [base]
-        //             });
-        //         })
-        //     }
-        // } catch (e) {
-        //     console.error(`${provider} does not have any other path due to error occurred in metadata fetch`, e);
-        // }
     });
 
     console.log('Waiting for all providers to finish metadata hydration');
     await Promise.all(allowedProviders);
-
-    console.table({ 'total metadata hydrated': providersPath.length});
 
     return providersPath;
 }
@@ -63,14 +41,10 @@ export default async function ProviderPage({ params }) {
         user
     } = contextObj;
 
-    const { provider, paths: pathsParam } = await params;
-    // Handle optional catch-all: pathsParam can be undefined, array, or single string
-    const paths = pathsParam 
-        ? (Array.isArray(pathsParam) ? pathsParam : [pathsParam])
-        : [];
+    const { provider } = await params;
 
     try {
-        const filter = paths.length ? [...paths] : [];
+        const filter = [];
         let qs = 'extra_key=1';
         
         const intents = targetIntentsMap[provider];
@@ -105,19 +79,12 @@ export default async function ProviderPage({ params }) {
     
         selected = selected[0];
 
-        if (selected && ['unified', 'utilities'].includes(provider)) {
-            selected.ignore = true;
-            selected.aiEnabled = false;
-            selected.title = info.title
-        } else if (!selected) {
+        if (!selected) {
             selected = {
                 title: info.title
             }
         }
 
-        if (info.DISABLE_FEATURE) {
-            selected.title = info.title;
-        }
         if (!selected.id) {
             throw `Selected object is empty for '${provider}'`;
         }

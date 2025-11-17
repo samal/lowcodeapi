@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams } from 'next/navigation';
 import queryString from 'query-string';
 import axios from 'axios';
@@ -17,7 +17,7 @@ import APIResponse from '@/components/ExplorerView/APIResponse';
 import ProviderSetup from '@/components/ExplorerView/Configure';
 import EditorCanvas from '@/components/EditorCanvas';
 
-import { IntentTab , ConnectorSteps, ConnectorStatus, IntentAction, IntentHead } from '@/components/ProviderPage';
+import { IntentTab , ConnectorSteps, ConnectorStatus, IntentHead } from '@/components/ProviderPage';
 
 import providerTabs from '@/static-json/provider-tabs.json';
 
@@ -26,26 +26,11 @@ import IconPack from '@/components/IconPack';
 
 const { customTabs, defaultTabs } = providerTabs;
 
-const generateQueryParams = (paths = [], params = {}) => {
-    const queryObj = {};
-    if (paths && paths.length === 1 && !/~/.test(paths[0])) {
-        queryObj.category = paths[0];
-    } else if (paths.length) {
-        const lp = [ ...paths ];
-        queryObj.paths = lp.join('-').toLowerCase()
-    }
-
-    if (!Object.keys(queryObj).length) {
-        queryObj.keys = true;
-    }
-    return `${queryString.stringify({ ...queryObj, ...params })}`;
-}
-
 export default function ExplorerClient({ 
     info = {},
     api_endpoints = {},
     providerGroup,
-    selected, definition = {}, user: userSession, config:configProps, sidebar,
+    selected, definition = {}, user: userSession, config:configProps,
     breadcrumbs: defaultBreadcrumbs,
     endpoint = {}
 }) {
@@ -64,15 +49,7 @@ export default function ExplorerClient({
     
     // Extract provider and paths from params
     const provider = params.provider;
-    const pathsParam = params.paths;
-    // Handle optional catch-all: pathsParam can be undefined, array, or single string
-     // Handle optional catch-all: pathsParam can be undefined, array, or single string
-    // Memoize paths to prevent unnecessary re-renders
-    const paths = useMemo(() => {
-        return pathsParam 
-            ? (Array.isArray(pathsParam) ? pathsParam : [pathsParam])
-            : [];
-    }, [pathsParam]);
+
     
     // Extract query parameters from searchParams
     const providersall = searchParams.get('providersall');
@@ -82,7 +59,6 @@ export default function ExplorerClient({
     const category = searchParams.get('category');
     const categories = searchParams.get('categories');
     const categoriesall = searchParams.get('categoriesall');
-    const focus = searchParams.get('focus');
     const path = searchParams.get('path');
     
     const image = `${endpoint.ui_base}/og/${provider}.jpeg`;
@@ -121,13 +97,7 @@ export default function ExplorerClient({
     const [submitLock, setSubmitLock] = useState(false);
     const [error, setError] = useState(''); //
     const [intentAction, setIntentAction] = useState({});
-    const [providersAll, setProvidersAll] = useState([
-        // {
-        //     id: 'released',
-        //     title: '',
-        //     list: released,
-        // },
-    ]);
+    const [providersAll, setProvidersAll] = useState([]);
     const [status, setStatus] = useState({
         wait: true,
         message: '',
@@ -425,7 +395,7 @@ export default function ExplorerClient({
             total: definition.total || 0,
             error: null
         });
-    }, [provider, paths]);
+    }, [provider]);
     
     useEffect(() => {
         if (data.apiList) {
