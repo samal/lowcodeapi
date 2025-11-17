@@ -10,10 +10,10 @@
     "headers": {},
     "api_endpoint": "https://api.beyondwords.io",
     "released": 1,
-    "updated_at": "2024-12-22T08:04:29.000Z",
+    "updated_at": "2025-01-27T15:00:00.000Z",
     "website": "https://beyondwords.io/",
     "api_link_ref": "https://developers.beyondwords.io/reference/api-overview",
-    "total_api": 75,
+    "total_api": 80,
     "credential_link": "https://dash.beyondwords.io/dashboard"
   },
   "routes": [
@@ -63,7 +63,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/ads",
@@ -80,93 +80,120 @@
       },
       "custom_headers": {},
       "body": {
-        "{\n    \"type\"": {
-          "type": "{\n        \"type\""
+        "type": {
+          "type": "enum",
+          "text": "The type of ad. Either custom or vast. Ads of type custom must have title, url and media fields. Ads of type vast must have title and vast_url fields.",
+          "enum": [
+            "custom",
+            "vast"
+          ]
         },
-        "\"text\"": {
-          "type": "\"The time range for when the ad should play in the player\"\n    }\n}"
+        "placement": {
+          "type": "enum",
+          "text": "Whether the ad should play before/during/after the audio content. Possible values are pre-roll, mid-roll, or post-roll",
+          "enum": [
+            "pre-roll",
+            "mid-roll",
+            "post-roll"
+          ],
+          "default": "pre-roll"
         },
-        "either custom or vast. Ads of type custom must have title": {
-          "type": ""
+        "title": {
+          "type": "string",
+          "text": "The title of the ad"
         },
-        "url and media fields. Ads of type vast must have title and vast_url fields.\"": {
-          "type": ""
+        "click_through_url": {
+          "type": "string",
+          "text": "The click-through URL of the custom ad to show in the player"
         },
-        "\"default\"": {
-          "type": "\"pre-roll\"\n    }"
+        "image_url": {
+          "type": "string",
+          "text": "The image URL to show in the player while the ad is playing"
         },
-        "\"placement\"": {
-          "type": "{\n        \"type\""
+        "media_url": {
+          "type": "string",
+          "text": "The URL of the media file of the custom ad to play in the player"
         },
-        "mid-roll": {
-          "type": ""
+        "vast_url": {
+          "type": "string",
+          "text": "The VAST URL for VAST ads"
         },
-        "or post-roll\"": {
-          "type": ""
+        "theme": {
+          "type": "enum",
+          "text": "The color theme to use for the ad when it is playing. Possible values are auto, dark, light. The auto theme is based on the user's light/dark mode system preference.",
+          "enum": [
+            "auto",
+            "dark",
+            "light"
+          ]
         },
-        "\"enum\"": {
-          "type": "[\"auto\""
+        "dark_theme": {
+          "type": "object",
+          "properties": {
+            "text_color": {
+              "type": "string",
+              "text": "The hexadecimal text color to use in the player"
+            },
+            "background_color": {
+              "type": "string",
+              "text": "The hexadecimal background color to use in the player"
+            },
+            "icon_color": {
+              "type": "string",
+              "text": "The hexadecimal icon color to use in the player"
+            }
+          },
+          "text": "The dark theme colors"
         },
-        "\"mid-roll\"": {
-          "type": ""
+        "light_theme": {
+          "type": "object",
+          "properties": {
+            "text_color": {
+              "type": "string",
+              "text": "The hexadecimal text color to use in the player"
+            },
+            "background_color": {
+              "type": "string",
+              "text": "The hexadecimal background color to use in the player"
+            },
+            "icon_color": {
+              "type": "string",
+              "text": "The hexadecimal icon color to use in the player"
+            }
+          },
+          "text": "The light theme colors"
         },
-        "\"post-roll\"]": {
-          "type": ""
+        "video_theme": {
+          "type": "object",
+          "properties": {
+            "text_color": {
+              "type": "string",
+              "text": "The hexadecimal text color to use in the player"
+            },
+            "background_color": {
+              "type": "string",
+              "text": "The hexadecimal background color to use in the player"
+            },
+            "icon_color": {
+              "type": "string",
+              "text": "The hexadecimal icon color to use in the player"
+            }
+          },
+          "text": "The video theme colors"
         },
-        "\"title\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"click_through_url\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"image_url\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"media_url\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"theme\"": {
-          "type": "{\n        \"type\""
-        },
-        "dark": {
-          "type": ""
-        },
-        "light The autoß theme is based on the user's light/dark mode system preference.\"": {
-          "type": ""
-        },
-        "\"dark\"": {
-          "type": ""
-        },
-        "\"light\"]\n    }": {
-          "type": ""
-        },
-        "\"numeric_output\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"dark_theme\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"properties\"": {
-          "type": "{\n            \"start\"",
-          "text": "\"string\""
-        },
-        "\"background_color\"": {
-          "type": "{\n                \"type\""
-        },
-        "\"icon_color\"": {
-          "type": "{\n                \"type\""
-        },
-        "\"light_theme\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"video_theme\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"time_range\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"end\"": {
-          "type": "{\n                \"type\""
+        "time_range": {
+          "type": "object",
+          "properties": {
+            "start": {
+              "type": "string",
+              "text": "The start time of when the ad should play"
+            },
+            "end": {
+              "type": "string",
+              "text": "The end time of when the ad should play"
+            }
+          },
+          "text": "The time range for when the ad should play in the player"
         }
       },
       "path": {
@@ -192,7 +219,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
@@ -242,7 +269,7 @@
         },
         "theme": {
           "type": "enum",
-          "text": "The color theme to use for the ad when it is playing. Possible values are auto, dark,light The autoß theme is based on the user's light/dark mode system preference.",
+          "text": "The color theme to use for the ad when it is playing. Possible values are auto, dark, light. The auto theme is based on the user's light/dark mode system preference.",
           "enum": [
             "auto",
             "dark",
@@ -346,7 +373,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
@@ -396,7 +423,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/ads/id",
@@ -446,7 +473,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/organization/analytics",
@@ -503,7 +530,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/analytics",
@@ -569,7 +596,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/id/analytics",
@@ -637,10 +664,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/content/analytics\n",
+      "provider_alias_intent": "/v1/projects/project_id/content/analytics",
       "text": "Contents analytics",
       "category": "Analytics",
       "method": "GET",
@@ -708,13 +735,13 @@
         "auth": [],
         "description": "Retrieves an analytics overview for all content items in a project\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/content/analytics\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/content/analytics\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/content/analytics",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/content/analytics",
         "api_ref": "https://developers.beyondwords.io/reference/contentanalytics_list"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id/analytics",
@@ -792,7 +819,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/ads/analytics",
@@ -873,10 +900,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/ads/id/analytics\n",
+      "provider_alias_intent": "/v1/projects/project_id/ads/id/analytics",
       "text": "Ad analytics",
       "category": "Analytics",
       "method": "GET",
@@ -933,13 +960,13 @@
         "auth": [],
         "description": "Retrieve analytics for a single ad in a project.\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/ads/{id}/analytics\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/ads/id/analytics\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/ads/{id}/analytics",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/ads/id/analytics",
         "api_ref": "https://developers.beyondwords.io/reference/adsanalytics"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/background_tracks",
@@ -988,7 +1015,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/background_tracks",
@@ -1045,7 +1072,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/background_tracks/id",
@@ -1072,7 +1099,7 @@
         },
         "project": {
           "type": "object",
-          "propertise": {
+          "properties": {
             "id": {
               "type": "number",
               "text": "Backrgound track project id"
@@ -1082,7 +1109,7 @@
         },
         "media": {
           "type": "object",
-          "propertise": {
+          "properties": {
             "url": {
               "type": "string",
               "text": "Background track media url"
@@ -1114,7 +1141,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/background_tracks/id",
@@ -1154,7 +1181,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/background_tracks/id",
@@ -1194,7 +1221,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content",
@@ -1256,7 +1283,7 @@
         "order[dir]": {
           "type": "enum",
           "enum": [
-            "ace",
+            "asc",
             "desc"
           ],
           "text": "This is used to order analytics in the ascending or descending order"
@@ -1264,7 +1291,7 @@
         "segments": {
           "type": "enum",
           "enum": [
-            "partil",
+            "partial",
             "full"
           ],
           "text": "The level of detail to show for segments in the response: 'none', 'partial' or 'full'"
@@ -1295,10 +1322,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/content\n",
+      "provider_alias_intent": "/v1/projects/project_id/content",
       "text": "Create",
       "category": "Content",
       "method": "POST",
@@ -1312,7 +1339,7 @@
         "segments": {
           "type": "enum",
           "enum": [
-            "partil",
+            "partial",
             "full"
           ],
           "text": "The level of detail to show for segments in the response: 'none', 'partial' or 'full'"
@@ -1320,102 +1347,141 @@
       },
       "custom_headers": {},
       "body": {
-        "{\n    \"type\"": {
-          "type": "{\n        \"type\""
+        "type": {
+          "type": "enum",
+          "text": "The type of content. Possible values are auto_segment, manual_segment, or audio_upload",
+          "enum": [
+            "auto_segment",
+            "manual_segment",
+            "audio_upload"
+          ],
+          "default": "auto_segment"
         },
-        "\"enum\"": {
-          "type": "[\n            \"auto_segment\""
+        "title": {
+          "type": "string",
+          "text": "The title of the content"
         },
-        "\"manual_segment\"": {
-          "type": ""
+        "summary": {
+          "type": "string",
+          "text": "The summary of the content"
         },
-        "\"audio_upload\"\n        ]": {
-          "type": ""
+        "body": {
+          "type": "string",
+          "text": "The body text of the content"
         },
-        "\"defaults\"": {
-          "type": "\"auto_segment\""
+        "title_enabled": {
+          "type": "boolean",
+          "text": "Whether the title is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"text\"": {
-          "type": "\"Background track\"\n    }\n}"
+        "body_enabled": {
+          "type": "boolean",
+          "text": "Whether the body is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "manual_segment or audio_upload\"": {
-          "type": ""
+        "summary_enabled": {
+          "type": "boolean",
+          "text": "Whether the summary is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"required\"": {
-          "type": "true\n    }"
+        "summary_title_enabled": {
+          "type": "boolean",
+          "text": "Whether the summary title is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"title\"": {
-          "type": "{\n        \"type\""
+        "source_id": {
+          "type": "string",
+          "text": "The source ID of the content"
         },
-        "\"summary\"": {
-          "type": "{\n        \"type\""
+        "source_url": {
+          "type": "string",
+          "text": "The source URL of the content"
         },
-        "\"body\"": {
-          "type": "{\n        \"type\""
+        "author": {
+          "type": "string",
+          "text": "The author of the content"
         },
-        "\"title_enabled\"": {
-          "type": "{\n        \"type\""
+        "image_url": {
+          "type": "string",
+          "text": "The image URL for the content"
         },
-        "\"body_enabled\"": {
-          "type": "{\n        \"type\""
+        "metadata": {
+          "type": "object",
+          "text": "Metadata for the content"
         },
-        "\"summary_enabled\"": {
-          "type": "{\n        \"type\""
+        "published": {
+          "type": "boolean",
+          "text": "Whether the content is published",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"summary_title_enabled\"": {
-          "type": "{\n        \"type\""
+        "publish_date": {
+          "type": "string",
+          "text": "The publish date of the content"
         },
-        "\"source_id\"": {
-          "type": "{\n        \"type\""
+        "ads_enabled": {
+          "type": "boolean",
+          "text": "Whether ads are enabled for the content",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"source_url\"": {
-          "type": "{\n        \"type\""
+        "auto_segment_updates_enabled": {
+          "type": "boolean",
+          "text": "Whether auto segment updates are enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"author\"": {
-          "type": "{\n        \"type\""
+        "title_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the title"
         },
-        "\"image_url\"": {
-          "type": "{\n        \"type\""
+        "summary_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the summary"
         },
-        "\"metadata\"": {
-          "type": "{\n        \"type\""
+        "body_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the body"
         },
-        "\"published\"": {
-          "type": "{\n        \"type\""
+        "ai_summary_updates_enabled": {
+          "type": "boolean",
+          "text": "Whether AI summary updates are enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"publish_date\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"ads_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"auto_segment_updates_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"title_voice_id\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"summary_voice_id\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"body_voice_id\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"ai_summary_updates_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"background_track\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"properties\"": {
-          "type": "{\n                    \"id\"",
-          "text": "\"number\""
-        },
-        "\"track\"": {
-          "type": "{\n                \"type\""
-        },
-        "}": {
-          "type": ""
+        "background_track": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The background track ID"
+            },
+            "track": {
+              "type": "string",
+              "text": "The track identifier"
+            }
+          },
+          "text": "Background track configuration"
         }
       },
       "path": {
@@ -1435,13 +1501,13 @@
         "auth": [],
         "description": "Creates a content item in your project\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/content\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/content\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/content",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/content",
         "api_ref": "https://developers.beyondwords.io/reference/contentcreate"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
@@ -1467,96 +1533,140 @@
       },
       "custom_headers": {},
       "body": {
-        "{\n    \"title\"": {
-          "type": "{\n        \"type\""
+        "title": {
+          "type": "string",
+          "text": "The title of the content"
         },
-        "\"text\"": {
-          "type": "\"Background track\"\n    }\n}"
+        "summary": {
+          "type": "string",
+          "text": "The summary of the content"
         },
-        "\"summary\"": {
-          "type": "{\n        \"type\""
+        "body": {
+          "type": "string",
+          "text": "The body text of the content"
         },
-        "\"body\"": {
-          "type": "{\n        \"type\""
+        "title_enabled": {
+          "type": "boolean",
+          "text": "Whether the title is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"title_enabled\"": {
-          "type": "{\n        \"type\""
+        "body_enabled": {
+          "type": "boolean",
+          "text": "Whether the body is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"body_enabled\"": {
-          "type": "{\n        \"type\""
+        "summary_enabled": {
+          "type": "boolean",
+          "text": "Whether the summary is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"summary_enabled\"": {
-          "type": "{\n        \"type\""
+        "summary_title_enabled": {
+          "type": "boolean",
+          "text": "Whether the summary title is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"summary_title_enabled\"": {
-          "type": "{\n        \"type\""
+        "source_id": {
+          "type": "string",
+          "text": "The source ID of the content"
         },
-        "\"source_id\"": {
-          "type": "{\n        \"type\""
+        "source_url": {
+          "type": "string",
+          "text": "The source URL of the content"
         },
-        "\"source_url\"": {
-          "type": "{\n        \"type\""
+        "author": {
+          "type": "string",
+          "text": "The author of the content"
         },
-        "\"author\"": {
-          "type": "{\n        \"type\""
+        "image_url": {
+          "type": "string",
+          "text": "The image URL for the content"
         },
-        "\"image_url\"": {
-          "type": "{\n        \"type\""
+        "metadata": {
+          "type": "object",
+          "text": "Metadata for the content"
         },
-        "\"metadata\"": {
-          "type": "{\n        \"type\""
+        "published": {
+          "type": "boolean",
+          "text": "Whether the content is published",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"published\"": {
-          "type": "{\n        \"type\""
+        "publish_date": {
+          "type": "string",
+          "text": "The publish date of the content"
         },
-        "\"publish_date\"": {
-          "type": "{\n        \"type\""
+        "ads_enabled": {
+          "type": "boolean",
+          "text": "Whether ads are enabled for the content",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"ads_enabled\"": {
-          "type": "{\n        \"type\""
+        "auto_segment_updates_enabled": {
+          "type": "boolean",
+          "text": "Whether auto segment updates are enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"auto_segment_updates_enabled\"": {
-          "type": "{\n        \"type\""
+        "title_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the title"
         },
-        "\"title_voice_id\"": {
-          "type": "{\n        \"type\""
+        "summary_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the summary"
         },
-        "\"summary_voice_id\"": {
-          "type": "{\n        \"type\""
+        "body_voice_id": {
+          "type": "number",
+          "text": "The voice ID for the body"
         },
-        "\"body_voice_id\"": {
-          "type": "{\n        \"type\""
+        "type": {
+          "type": "enum",
+          "text": "The type of content. Possible values are auto_segment, manual_segment, or audio_upload",
+          "enum": [
+            "auto_segment",
+            "manual_segment",
+            "audio_upload"
+          ]
         },
-        "\"type\"": {
-          "type": "{\n        \"type\""
+        "ai_summary_updates_enabled": {
+          "type": "boolean",
+          "text": "Whether AI summary updates are enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"enum\"": {
-          "type": "[\n            \"auto_segment\""
-        },
-        "\"manual_segment\"": {
-          "type": ""
-        },
-        "\"audio_upload\"\n        ]": {
-          "type": ""
-        },
-        "manual_segment or audio_upload\"\n    }": {
-          "type": ""
-        },
-        "\"ai_summary_updates_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"background_track\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"propertise\"": {
-          "type": "{\n                    \"id\"",
-          "text": "\"number\""
-        },
-        "\"track\"": {
-          "type": "{\n                \"type\""
-        },
-        "}": {
-          "type": ""
+        "background_track": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The background track ID"
+            },
+            "track": {
+              "type": "string",
+              "text": "The track identifier"
+            }
+          },
+          "text": "Background track configuration"
         }
       },
       "path": {
@@ -1587,7 +1697,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
@@ -1645,7 +1755,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id",
@@ -1695,7 +1805,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id/regenerate",
@@ -1745,7 +1855,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/search_fields",
@@ -1785,7 +1895,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/content/id/summarize",
@@ -1844,7 +1954,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/html_filters",
@@ -1885,7 +1995,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/html_filters",
@@ -1929,7 +2039,7 @@
           ]
         },
         "project": {
-          "type": "onject",
+          "type": "object",
           "properties": {
             "id": {
               "type": "number",
@@ -1956,7 +2066,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/html_filters/id",
@@ -2006,8 +2116,8 @@
           ]
         },
         "project": {
-          "type": "onject",
-          "propertise": {
+          "type": "object",
+          "properties": {
             "id": {
               "type": "number",
               "text": "The project id"
@@ -2039,10 +2149,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/html_filters/id\n",
+      "provider_alias_intent": "/v1/html_filters/id",
       "text": "Show",
       "category": "Html filters",
       "method": "GET",
@@ -2073,16 +2183,16 @@
         "auth": [],
         "description": "Gets a html filter\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/html_filters/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/html_filters/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/html_filters/{id}",
+        "alias_endpoint": "/beyondwords/v1/html_filters/id",
         "api_ref": "https://developers.beyondwords.io/reference/html_filtersshow"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/html_filters/id\n",
+      "provider_alias_intent": "/v1/html_filters/id",
       "text": "Delete",
       "category": "Html filters",
       "method": "DELETE",
@@ -2113,13 +2223,13 @@
         "auth": [],
         "description": "Deletes a html filter\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/html_filters/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/html_filters/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/html_filters/{id}",
+        "alias_endpoint": "/beyondwords/v1/html_filters/id",
         "api_ref": "https://developers.beyondwords.io/reference/html_filtersdelete"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/organization/languages",
@@ -2147,7 +2257,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player/by_content_id/id",
@@ -2201,10 +2311,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/player/by_playlist_id/id\n",
+      "provider_alias_intent": "/v1/projects/project_id/player/by_playlist_id/id",
       "text": "Show",
       "category": "Player",
       "method": "GET",
@@ -2245,13 +2355,13 @@
         "auth": [],
         "description": "Gets player data related to a playlist\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/player/by_playlist_id/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/player/by_playlist_id/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/player/by_playlist_id/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/player/by_playlist_id/id",
         "api_ref": "https://developers.beyondwords.io/reference/playerby_playlist_id"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player/by_source_id/id",
@@ -2305,7 +2415,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player/by_source_url/url",
@@ -2359,7 +2469,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player/by_identifiers/array",
@@ -2409,7 +2519,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player_settings",
@@ -2449,7 +2559,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/player_settings",
@@ -2482,7 +2592,7 @@
             "large",
             "video"
           ],
-          "text": "he style of user interface to show for the player. Possible values are small, standard, large, or video"
+          "text": "The style of user interface to show for the player. Possible values are small, standard, large, or video"
         },
         "player_title": {
           "type": "string",
@@ -2514,7 +2624,7 @@
           "text": "The color theme to use for the player. The color theme to use for the player. Possible values are auto, dark, or light"
         },
         "dark_theme": {
-          "type": "onject",
+          "type": "object",
           "properties": {
             "text_color": {
               "type": "string",
@@ -2536,7 +2646,7 @@
           "text": "The dark theme colors"
         },
         "light_theme": {
-          "type": "onject",
+          "type": "object",
           "properties": {
             "text_color": {
               "type": "string",
@@ -2558,7 +2668,7 @@
           "text": "The light theme colors"
         },
         "video_theme": {
-          "type": "onject",
+          "type": "object",
           "properties": {
             "text_color": {
               "type": "string",
@@ -2720,10 +2830,275 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects\n",
+      "provider_alias_intent": "/v1/projects/project_id/playlists",
+      "text": "List",
+      "category": "Playlists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "pagination[limit]": {
+          "type": "number",
+          "text": "'limit' sets the number of results to return in each page."
+        },
+        "pagination[offset]": {
+          "type": "number",
+          "text": "'offset' sets the first position to return from the results of the query. The default is 0, which starts the page at the first result."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Lists playlists within a project",
+        "rate_limit": [],
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/playlists",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/playlists",
+        "api_ref": "https://developers.beyondwords.io/reference/playlistsindex"
+      },
+      "auth": [],
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/projects/project_id/playlists",
+      "text": "Create",
+      "category": "Playlists",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the playlist",
+          "required": true
+        },
+        "content_ids": {
+          "type": "array",
+          "text": "Array of content item IDs to include in the playlist"
+        },
+        "description": {
+          "type": "string",
+          "text": "The description of the playlist"
+        }
+      },
+      "path": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Creates a playlist in a project",
+        "rate_limit": [],
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/playlists",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/playlists",
+        "api_ref": "https://developers.beyondwords.io/reference/playlistscreate"
+      },
+      "auth": [],
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/projects/project_id/playlists/id",
+      "text": "Update",
+      "category": "Playlists",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the playlist"
+        },
+        "content_ids": {
+          "type": "array",
+          "text": "Array of content item IDs to include in the playlist"
+        },
+        "description": {
+          "type": "string",
+          "text": "The description of the playlist"
+        }
+      },
+      "path": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Updates a playlist in a project",
+        "rate_limit": [],
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/playlists/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/playlists/id",
+        "api_ref": "https://developers.beyondwords.io/reference/playlistsupdate"
+      },
+      "auth": [],
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/projects/project_id/playlists/id",
+      "text": "Show",
+      "category": "Playlists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Gets a playlist from a project",
+        "rate_limit": [],
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/playlists/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/playlists/id",
+        "api_ref": "https://developers.beyondwords.io/reference/playlistsshow"
+      },
+      "auth": [],
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/projects/project_id/playlists/id",
+      "text": "Delete",
+      "category": "Playlists",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "project_id": {
+          "type": "string",
+          "text": "The numeric ID of your project",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "The numeric ID of your playlist",
+          "required": true
+        }
+      },
+      "domain_params": {
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Deletes a playlist from a project",
+        "rate_limit": [],
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/playlists/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/playlists/id",
+        "api_ref": "https://developers.beyondwords.io/reference/playlistsdelete"
+      },
+      "auth": [],
+      "payload_type": "",
+      "updated_at": "2025-01-27T12:12:18.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/projects",
       "text": "List",
       "category": "Projects",
       "method": "GET",
@@ -2751,13 +3126,13 @@
         "auth": [],
         "description": "Lists all projects in your organization\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects\n",
-        "alias_endpoint": "/beyondwords/v1/projects\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects",
+        "alias_endpoint": "/beyondwords/v1/projects",
         "api_ref": "https://developers.beyondwords.io/reference/projectsindex"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects",
@@ -2768,51 +3143,113 @@
       "params": {},
       "custom_headers": {},
       "body": {
-        "{\n    \"name\"": {
-          "type": "{\n        \"type\""
+        "name": {
+          "type": "string",
+          "text": "The name of the project",
+          "required": true
         },
-        "\"text\"": {
-          "type": "\"The project time zone\"\n    }\n}"
+        "language": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The language ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Language configuration"
         },
-        "\"required\"": {
-          "type": "true\n    }"
+        "title": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The title voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Title voice configuration"
         },
-        "\"language\"": {
-          "type": "{\n        \"type\""
+        "summary": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The summary voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Summary voice configuration"
         },
-        "\"title\"": {
-          "type": "{\n        \"type\""
+        "body": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The body voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Body voice configuration"
         },
-        "\"properties\"": {
-          "type": "{\n                    \"id\"",
-          "text": "\"number\""
+        "background_track": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string",
+              "text": "The track identifier"
+            }
+          },
+          "text": "Background track configuration"
         },
-        "\"default\"": {
-          "type": "true"
+        "auto_publish_enabled": {
+          "type": "boolean",
+          "text": "Whether auto publish is enabled",
+          "enum": [
+            true,
+            false
+          ],
+          "default": true
         },
-        "\"voice\"": {
-          "type": "{\n                \"type\""
-        },
-        "}\n        }": {
-          "type": ""
-        },
-        "\"summary\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"body\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"background_track\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"track\"": {
-          "type": "{\n                \"type\""
-        },
-        "\"auto_publish_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"time_zone\"": {
-          "type": "{\n        \"type\""
+        "time_zone": {
+          "type": "string",
+          "text": "The project time zone"
         }
       },
       "path": {},
@@ -2832,7 +3269,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/id",
@@ -2849,51 +3286,111 @@
       },
       "custom_headers": {},
       "body": {
-        "{\n    \"name\"": {
-          "type": "{\n        \"type\""
+        "name": {
+          "type": "string",
+          "text": "The name of the project"
         },
-        "\"text\"": {
-          "type": "\"The project time zone\"\n    }\n}"
+        "language": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The language ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Language configuration"
         },
-        "\"required\"": {
-          "type": "true\n    }"
+        "title": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The title voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Title voice configuration"
         },
-        "\"language\"": {
-          "type": "{\n        \"type\""
+        "summary": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The summary voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Summary voice configuration"
         },
-        "\"title\"": {
-          "type": "{\n        \"type\""
+        "body": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "text": "The body voice ID"
+            },
+            "voice": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number",
+                  "text": "The voice ID"
+                }
+              },
+              "text": "Voice configuration"
+            }
+          },
+          "text": "Body voice configuration"
         },
-        "\"properties\"": {
-          "type": "{\n                    \"id\"",
-          "text": "\"number\""
+        "background_track": {
+          "type": "object",
+          "properties": {
+            "track": {
+              "type": "string",
+              "text": "The track identifier"
+            }
+          },
+          "text": "Background track configuration"
         },
-        "\"default\"": {
-          "type": "true"
+        "auto_publish_enabled": {
+          "type": "boolean",
+          "text": "Whether auto publish is enabled",
+          "enum": [
+            true,
+            false
+          ]
         },
-        "\"voice\"": {
-          "type": "{\n                \"type\""
-        },
-        "}\n        }": {
-          "type": ""
-        },
-        "\"summary\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"body\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"background_track\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"track\"": {
-          "type": "{\n                \"type\""
-        },
-        "\"auto_publish_enabled\"": {
-          "type": "{\n        \"type\""
-        },
-        "\"time_zone\"": {
-          "type": "{\n        \"type\""
+        "time_zone": {
+          "type": "string",
+          "text": "The project time zone"
         }
       },
       "path": {
@@ -2919,7 +3416,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/id",
@@ -2959,10 +3456,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/id\n",
+      "provider_alias_intent": "/v1/projects/id",
       "text": "Delete",
       "category": "Projects",
       "method": "DELETE",
@@ -2993,13 +3490,13 @@
         "auth": [],
         "description": "Deletes a project\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/projects/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/id",
         "api_ref": "https://developers.beyondwords.io/reference/projectsdelete"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds",
@@ -3047,7 +3544,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds",
@@ -3174,7 +3671,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id",
@@ -3311,10 +3808,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id\n",
+      "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id",
       "text": "Delete",
       "category": "RSS Feed",
       "method": "DELETE",
@@ -3355,13 +3852,13 @@
         "auth": [],
         "description": "User should be able to delete an RSS feed.\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/integrations/rss_importer/feeds/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/integrations/rss_importer/feeds/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/integrations/rss_importer/feeds/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/integrations/rss_importer/feeds/id",
         "api_ref": "https://developers.beyondwords.io/reference/rss_importerfeeddelete"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/id/run",
@@ -3411,7 +3908,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/integrations/rss_importer/feeds/test",
@@ -3538,7 +4035,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/rules",
@@ -3608,7 +4105,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/rules",
@@ -3636,7 +4133,7 @@
           "type": "string",
           "text": "The text you want the rule to be applied to"
         },
-        "vakue": {
+        "value": {
           "type": "string",
           "text": ""
         },
@@ -3688,7 +4185,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/rules/id",
@@ -3722,7 +4219,7 @@
           "type": "string",
           "text": "The text you want the rule to be applied to"
         },
-        "vakue": {
+        "value": {
           "type": "string",
           "text": ""
         },
@@ -3780,10 +4277,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/rules/id\n",
+      "provider_alias_intent": "/v1/rules/id",
       "text": "Show",
       "category": "Rules",
       "method": "GET",
@@ -3814,16 +4311,16 @@
         "auth": [],
         "description": "Gets a rule from your organization\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/rules/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}",
+        "alias_endpoint": "/beyondwords/v1/rules/id",
         "api_ref": "https://developers.beyondwords.io/reference/rulesshow"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/rules/id\n",
+      "provider_alias_intent": "/v1/rules/id",
       "text": "Delete",
       "category": "Rules",
       "method": "DELETE",
@@ -3854,16 +4351,16 @@
         "auth": [],
         "description": "Deletes a rule from your organization\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/rules/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}",
+        "alias_endpoint": "/beyondwords/v1/rules/id",
         "api_ref": "https://developers.beyondwords.io/reference/rulesdelete"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/rules/id/regenerate_preview\n",
+      "provider_alias_intent": "/v1/rules/id/regenerate_preview",
       "text": "Regenerate preview",
       "category": "Rules",
       "method": "POST",
@@ -3894,13 +4391,13 @@
         "auth": [],
         "description": "Regenerate organization rule preview\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}/regenerate_preview\n",
-        "alias_endpoint": "/beyondwords/v1/rules/id/regenerate_preview\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/rules/{id}/regenerate_preview",
+        "alias_endpoint": "/beyondwords/v1/rules/id/regenerate_preview",
         "api_ref": "https://developers.beyondwords.io/reference/rulesregenerate_preview"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/rules/preview",
@@ -3928,7 +4425,7 @@
           "type": "string",
           "text": "The text you want the rule to be applied to"
         },
-        "vakue": {
+        "value": {
           "type": "string",
           "text": ""
         },
@@ -3990,7 +4487,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/rules/phonemes",
@@ -4018,7 +4515,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/summarization_settings",
@@ -4058,7 +4555,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/summarization_settings",
@@ -4111,7 +4608,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/upload",
@@ -4145,7 +4642,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/video_settings",
@@ -4185,7 +4682,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/video_settings",
@@ -4290,7 +4787,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/voice_issues",
@@ -4358,7 +4855,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/voice_issues",
@@ -4437,7 +4934,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/voice_issues/id",
@@ -4528,7 +5025,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/voice_issues/id",
@@ -4568,7 +5065,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/voice_issues/id",
@@ -4608,7 +5105,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/organization/voices",
@@ -4649,7 +5146,7 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/organization/voices/id",
@@ -4695,10 +5192,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/webhooks\n",
+      "provider_alias_intent": "/v1/projects/project_id/webhooks",
       "text": "List",
       "category": "Webhooks",
       "method": "GET",
@@ -4737,13 +5234,13 @@
         "auth": [],
         "description": "Lists webhooks within a project",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks",
         "api_ref": "https://developers.beyondwords.io/reference/projectswebhooksindex"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/webhooks",
@@ -4790,10 +5287,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/webhooks/id\n",
+      "provider_alias_intent": "/v1/projects/project_id/webhooks/id",
       "text": "Update",
       "category": "Webhooks",
       "method": "PUT",
@@ -4852,16 +5349,16 @@
         "auth": [],
         "description": "Updates a webhook in a project\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/id",
         "api_ref": "https://developers.beyondwords.io/reference/projectswebhooksupdate"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/webhooks/id\n",
+      "provider_alias_intent": "/v1/projects/project_id/webhooks/id",
       "text": "Show",
       "category": "Webhooks",
       "method": "GET",
@@ -4902,13 +5399,13 @@
         "auth": [],
         "description": "Gets a webhook in a project\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/{id}\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/id\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/{id}",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/id",
         "api_ref": "https://developers.beyondwords.io/reference/projectswebhooksshow"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
       "provider_alias_intent": "/v1/projects/project_id/webhooks/id",
@@ -4958,10 +5455,10 @@
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     },
     {
-      "provider_alias_intent": "/v1/projects/project_id/webhooks/test\n",
+      "provider_alias_intent": "/v1/projects/project_id/webhooks/test",
       "text": "Test",
       "category": "Webhooks",
       "method": "POST",
@@ -5001,13 +5498,13 @@
         "auth": [],
         "description": "Test project webhook\n\n",
         "rate_limit": [],
-        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/test\n",
-        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/test\n",
+        "api_endpoint": "https://api.beyondwords.io/v1/projects/{project_id}/webhooks/test",
+        "alias_endpoint": "/beyondwords/v1/projects/project_id/webhooks/test",
         "api_ref": "https://developers.beyondwords.io/reference/projectswebhookstest"
       },
       "auth": [],
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.807Z"
+      "updated_at": "2025-01-27T12:12:18.000Z"
     }
   ]
 }
