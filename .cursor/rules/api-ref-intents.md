@@ -627,6 +627,17 @@ todo_write({
 - [ ] Linter checks passed
 - [ ] Route count matches `total_api`
 
+### Sanitization and Quality:
+- [ ] All emoji characters removed from text and description fields
+- [ ] All routes have `provider_proxy_intent` field
+- [ ] All routes have `request_type` field
+- [ ] All routes have `response_format` field (empty object if not used)
+- [ ] Invalid fields removed (`response_type`, empty `subdomain`, empty `payload_type`)
+- [ ] All categories properly capitalized (Title Case)
+- [ ] All params and body fields have `text` property with descriptions
+- [ ] All endpoint texts are unique (no duplicates)
+- [ ] Categories standardized (no sentence-like categories)
+
 ### Incremental Updates (For Large APIs):
 - [ ] Created atomic task list using `todo_write` tool
 - [ ] Tasks broken down by resource category (2-10 endpoints per task)
@@ -653,4 +664,208 @@ todo_write({
 - When in doubt about endpoint structure, refer back to the official API documentation
 - **Validate JSON frequently** during large updates to catch errors early
 - **Count routes and update total_api** as the final step before completion
+
+### 13. API Version Updates
+
+When updating API versions (e.g., v3 to v4), follow this systematic approach:
+
+#### Version Update Process:
+1. **Update Config Object**:
+   - Update `config.api_endpoint` to new version base URL
+   - Update `config.api_link_ref` if documentation URL changed
+   - Update `config.updated_at` timestamp
+
+2. **Update All Endpoints**:
+   - Replace version in `provider_alias_intent` (e.g., `/v3/` → `/v4/`)
+   - Update `meta.api_endpoint` URLs to new version
+   - Update `meta.alias_endpoint` paths to new version
+   - Update `meta.version` field to new version string
+
+3. **Batch Update Script Pattern**:
+```python
+import json
+import re
+
+with open('file.json', 'r') as f:
+    data = json.load(f)
+
+# Update config
+data['config']['api_endpoint'] = "https://api.provider.com/v4"
+data['config']['api_link_ref'] = "https://docs.provider.com/api/v4/"
+
+# Update all routes
+for route in data['routes']:
+    # Update provider_alias_intent
+    route['provider_alias_intent'] = route['provider_alias_intent'].replace('/v3/', '/v4/', 1)
+    
+    # Update api_endpoint
+    if 'meta' in route and 'api_endpoint' in route['meta']:
+        route['meta']['api_endpoint'] = route['meta']['api_endpoint'].replace('/api/v3/', '/api/v4/')
+    
+    # Update alias_endpoint
+    if 'meta' in route and 'alias_endpoint' in route['meta']:
+        route['meta']['alias_endpoint'] = route['meta']['alias_endpoint'].replace('/v3/', '/v4/', 1)
+    
+    # Update version
+    if 'meta' in route:
+        route['meta']['version'] = 'v4'
+
+with open('file.json', 'w') as f:
+    json.dump(data, f, indent=2)
+```
+
+4. **Add Missing API Reference Links**:
+   - After version update, ensure all endpoints have `meta.api_ref` links
+   - Update API reference links to point to new version documentation
+   - Use pattern matching to assign appropriate API reference URLs based on endpoint paths
+
+5. **Add Missing Endpoints**:
+   - Compare with official API documentation for new version
+   - Add any new endpoints introduced in the new version
+   - Remove deprecated endpoints if necessary (check official docs)
+
+### 14. Sanitization and Quality Improvements
+
+After updating or adding endpoints, perform comprehensive sanitization to ensure file quality:
+
+#### Sanitization Checklist:
+1. **Remove Emoji Characters**: Clean all emoji characters (🚧, etc.) from `text` and `description` fields
+2. **Add Missing Required Fields**:
+   - Ensure all routes have `provider_proxy_intent` (should match `provider_alias_intent` if not set)
+   - Ensure all routes have `request_type` (should match `type` field, typically "API")
+   - Ensure all routes have `response_format` (empty object `{}` if not needed)
+3. **Remove Empty/Invalid Fields**:
+   - Remove `response_type` field (use `response_format` instead)
+   - Remove empty `subdomain` fields
+   - Remove empty `payload_type` fields
+4. **Category Standardization**:
+   - Capitalize all category names (Title Case)
+   - Fix sentence-like categories to proper category names
+   - Standardize multi-word categories (e.g., "notification settings" → "Notification Settings")
+5. **Parameter and Body Field Descriptions**:
+   - Ensure all `params` and `body` fields have `text` property with descriptive text
+   - Use common parameter descriptions for standard fields (page, per_page, search, etc.)
+   - Generate descriptions from parameter names if missing
+6. **Endpoint Text Uniqueness**:
+   - Ensure all endpoint `text` values are unique
+   - Use full endpoint path context to create unique, descriptive texts
+   - Include HTTP method and resource context in text descriptions
+   - Avoid generic texts like "Projects", "Groups" - be specific (e.g., "List project access requests", "Get project by ID")
+
+#### Sanitization Script Pattern:
+```python
+import json
+import re
+from collections import defaultdict, Counter
+
+# Read file
+with open('file.json', 'r') as f:
+    data = json.load(f)
+
+# 1. Remove emojis
+def clean_text(text):
+    if not text:
+        return text
+    text = re.sub(r'[\U0001F300-\U0001F9FF]', '', text)
+    text = re.sub(r'[\u2600-\u27BF]', '', text)
+    return re.sub(r'\s+', ' ', text).strip()
+
+# 2. Add missing fields
+for route in data['routes']:
+    if 'provider_proxy_intent' not in route:
+        route['provider_proxy_intent'] = route['provider_alias_intent']
+    if 'request_type' not in route:
+        route['request_type'] = route.get('type', 'API')
+    if 'response_format' not in route:
+        route['response_format'] = {}
+    
+    # Remove invalid fields
+    if 'response_type' in route:
+        del route['response_type']
+    if 'subdomain' in route and (not route['subdomain'] or route['subdomain'] == {}):
+        del route['subdomain']
+    if 'payload_type' in route and (not route['payload_type'] or route['payload_type'] == ''):
+        del route['payload_type']
+    
+    # Clean text
+    route['text'] = clean_text(route['text'])
+    if 'meta' in route and 'description' in route['meta']:
+        route['meta']['description'] = clean_text(route['meta']['description'])
+
+# 3. Fix categories
+category_mapping = {
+    "projects": "Projects",
+    "users": "Users",
+    # ... add mappings
+}
+for route in data['routes']:
+    if route['category'] in category_mapping:
+        route['category'] = category_mapping[route['category']]
+    else:
+        # Title case
+        route['category'] = ' '.join(word.capitalize() for word in route['category'].split())
+
+# 4. Add missing param/body text descriptions
+common_params = {
+    'page': 'Page number',
+    'per_page': 'Number of results per page',
+    'search': 'Search query',
+    # ... add common descriptions
+}
+for route in data['routes']:
+    # Fix params
+    if 'params' in route and route['params']:
+        for param_name, param_def in route['params'].items():
+            if isinstance(param_def, dict) and 'text' not in param_def:
+                param_def['text'] = common_params.get(param_name, param_name.replace('_', ' ').title())
+    
+    # Fix body
+    if 'body' in route and route['body']:
+        for body_name, body_def in route['body'].items():
+            if isinstance(body_def, dict) and 'text' not in body_def:
+                body_def['text'] = common_params.get(body_name, body_name.replace('_', ' ').title())
+
+# 5. Ensure unique endpoint texts
+text_to_routes = defaultdict(list)
+for route in data['routes']:
+    text_to_routes[route['text']].append(route)
+
+for text, routes in text_to_routes.items():
+    if len(routes) > 1:
+        # Make each unique using full path context
+        for route in routes:
+            intent = route['provider_alias_intent']
+            method = route['method']
+            path = intent.replace('/v4/', '').strip('/')
+            # Generate unique text based on path and method
+            # ... implementation
+
+# Write back
+with open('file.json', 'w') as f:
+    json.dump(data, f, indent=2)
+```
+
+#### Validation After Sanitization:
+```bash
+# Check for duplicates
+cat file.json | jq -r '.routes[] | .text' | sort | uniq -d
+
+# Verify all have required fields
+cat file.json | jq '.routes[] | select(.provider_proxy_intent == null or .request_type == null)'
+
+# Check for empty param/body texts
+cat file.json | jq '.routes[] | select(.params != {} and (.params | to_entries[] | .value.text == null))'
+
+# Verify JSON validity
+cat file.json | jq empty && echo "✅ JSON is valid"
+```
+
+#### Common Issues to Fix:
+- **Emoji characters**: Remove all emoji Unicode characters from text fields
+- **Missing provider_proxy_intent**: Should match provider_alias_intent for standard endpoints
+- **Missing request_type**: Should be "API" for standard API calls, "Upload" for file uploads
+- **Empty response_format**: Add empty object `{}` if not used
+- **Generic categories**: "projects" → "Projects", "Get a namespaces list" → "Namespaces"
+- **Missing param descriptions**: All params and body fields must have `text` property
+- **Duplicate texts**: Each endpoint must have a unique `text` value based on its full path and method
 
