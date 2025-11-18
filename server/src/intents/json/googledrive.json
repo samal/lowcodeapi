@@ -142,10 +142,10 @@
     "headers": {},
     "api_endpoint": "https://www.googleapis.com",
     "released": 1,
-    "updated_at": "2024-12-22T09:31:48.000Z",
+    "updated_at": "2025-11-18T02:59:54.000Z",
     "website": "https://drive.google.com/",
     "api_link_ref": "https://developers.google.com/drive/api/reference/rest/v3",
-    "total_api": 45,
+    "total_api": 51,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
   "routes": [
@@ -176,8 +176,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/about",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/apps/app_id",
@@ -218,8 +220,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/apps/app_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/apps",
@@ -261,8 +265,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/apps",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/changes/startpagetoken",
@@ -304,8 +310,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/changes/startpagetoken",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/changes",
@@ -400,8 +408,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/changes",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/changes/watch",
@@ -547,8 +557,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/changes/watch",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/channels/stop",
@@ -628,8 +640,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/channels/stop",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments",
@@ -684,8 +698,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
@@ -736,8 +752,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
@@ -796,8 +814,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments",
@@ -858,8 +878,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id",
@@ -924,8 +946,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives",
@@ -990,8 +1014,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
@@ -1048,8 +1074,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives/drive_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
@@ -1098,8 +1126,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives/drive_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives/drive_id/hide",
@@ -1140,8 +1170,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives/drive_id/hide",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives",
@@ -1191,8 +1223,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives/drive_id/unhide",
@@ -1233,8 +1267,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives/drive_id/unhide",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/drives/drive_id",
@@ -1313,8 +1349,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/drives/drive_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/copy",
@@ -1483,8 +1521,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/copy",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files",
@@ -1656,8 +1696,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id",
@@ -1706,8 +1748,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/trash",
@@ -1741,8 +1785,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/trash",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/export",
@@ -1788,8 +1834,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/export",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/generateids",
@@ -1839,8 +1887,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/generateids",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id",
@@ -1908,8 +1958,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files",
@@ -1991,8 +2043,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/listlabels",
@@ -2041,8 +2095,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/listlabels",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/modifylabels",
@@ -2092,8 +2148,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/modifylabels",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id",
@@ -2276,8 +2334,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/watch",
@@ -2393,8 +2453,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/watch",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions",
@@ -2510,8 +2572,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/permissions",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
@@ -2578,8 +2642,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/permissions/permission_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
@@ -2646,8 +2712,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/permissions/permission_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions",
@@ -2716,8 +2784,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/permissions",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/permissions/permission_id",
@@ -2831,8 +2901,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/permissions/permission_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
@@ -2893,8 +2965,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
@@ -2955,8 +3029,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
@@ -3025,8 +3101,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
@@ -3093,8 +3171,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id/replies",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
@@ -3165,8 +3245,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/comments/comment_id/replies/reply_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
@@ -3217,8 +3299,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/revisions/revision_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
@@ -3277,8 +3361,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/revisions/revision_id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions",
@@ -3327,8 +3413,10 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/revisions",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/drive/v3/files/file_id/revisions/revision_id",
@@ -3412,8 +3500,336 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.056Z"
+      "updated_at": "2025-11-11T15:37:35.056Z",
+      "provider_proxy_intent": "/drive/v3/files/file_id/revisions/revision_id",
+      "request_type": "API",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/drive/v3/files/file_id/accessproposals",
+      "provider_proxy_intent": "/drive/v3/files/file_id/accessproposals",
+      "text": "List access proposals",
+      "category": "Access Proposals",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        },
+        "pageSize": {
+          "type": "number",
+          "text": "The number of results per page"
+        },
+        "pageToken": {
+          "type": "string",
+          "text": "The continuation token on the list of access requests"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "List the access proposals on a file. For more information, see Manage pending access proposals. Note: Only approvers are able to list access proposals on a file. If the user isn't an approver, a 403 error is returned.",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/drive/v3/files/{file_id}/accessproposals",
+        "alias_endpoint": "/googledrive/drive/v3/files/file_id/accessproposals",
+        "api_ref": "https://developers.google.com/drive/api/reference/rest/v3/accessproposals/list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/drive/v3/files/file_id/accessproposals/proposal_id",
+      "provider_proxy_intent": "/drive/v3/files/file_id/accessproposals/proposal_id",
+      "text": "Get access proposal",
+      "category": "Access Proposals",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        },
+        "proposal_id": {
+          "type": "string",
+          "text": "The ID of the access proposal to retrieve",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        },
+        "proposal_id": {
+          "type": "string",
+          "text": "The ID of the access proposal to retrieve",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieves an access proposal by ID. For more information, see Manage pending access proposals.",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/drive/v3/files/{file_id}/accessproposals/{proposal_id}",
+        "alias_endpoint": "/googledrive/drive/v3/files/file_id/accessproposals/proposal_id",
+        "api_ref": "https://developers.google.com/drive/api/reference/rest/v3/accessproposals/get"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/drive/v3/files/file_id/accessproposals/proposal_id:resolve",
+      "provider_proxy_intent": "/drive/v3/files/file_id/accessproposals/proposal_id:resolve",
+      "text": "Resolve access proposal",
+      "category": "Access Proposals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        },
+        "proposal_id": {
+          "type": "string",
+          "text": "The ID of the access proposal to resolve",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "action": {
+          "type": "string",
+          "text": "The action to take on the access proposal",
+          "required": true,
+          "enum": [
+            "ACTION_UNSPECIFIED",
+            "ACCEPT",
+            "DENY"
+          ]
+        },
+        "role": {
+          "type": "array",
+          "text": "The roles that the approver has allowed, if any. For more information, see Roles and permissions. Note: This field is required for the ACCEPT action."
+        },
+        "sendNotification": {
+          "type": "boolean",
+          "text": "Whether to send an email to the requester when the access proposal is denied or accepted"
+        },
+        "view": {
+          "type": "string",
+          "text": "Indicates the view for this access proposal. This should only be set when the proposal belongs to a view. Only published is supported."
+        }
+      },
+      "path": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the item the request is on",
+          "required": true
+        },
+        "proposal_id": {
+          "type": "string",
+          "text": "The ID of the access proposal to resolve",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Approves or denies an access proposal. For more information, see Manage pending access proposals.",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/drive/v3/files/{file_id}/accessproposals/{proposal_id}:resolve",
+        "alias_endpoint": "/googledrive/drive/v3/files/file_id/accessproposals/proposal_id:resolve",
+        "api_ref": "https://developers.google.com/drive/api/reference/rest/v3/accessproposals/resolve"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/drive/v3/operations/name",
+      "provider_proxy_intent": "/drive/v3/operations/name",
+      "text": "Get operation",
+      "category": "Operations",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "name": {
+          "type": "string",
+          "text": "The name of the operation resource",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "name": {
+          "type": "string",
+          "text": "The name of the operation resource",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Gets the latest state of a long-running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/drive/v3/operations/{name}",
+        "alias_endpoint": "/googledrive/drive/v3/operations/name",
+        "api_ref": "https://developers.google.com/drive/api/reference/rest/v3/operations/get"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/drive/v3/files/file_id/download",
+      "provider_proxy_intent": "/drive/v3/files/file_id/download",
+      "text": "Download file",
+      "category": "Files",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file to download",
+          "required": true
+        },
+        "mimeType": {
+          "type": "string",
+          "text": "The MIME type the file should be downloaded as. This field can only be set when downloading Google Workspace documents. For a list of supported MIME types, see Export MIME types for Google Workspace documents. If not set, a Google Workspace document is downloaded with a default MIME type."
+        },
+        "revisionId": {
+          "type": "string",
+          "text": "The revision ID of the file to download. This field can only be set when downloading blob files, Google Docs, and Google Sheets. Returns INVALID_ARGUMENT if downloading a specific revision on the file is unsupported."
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "file_id": {
+          "type": "string",
+          "text": "The ID of the file to download",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Downloads the content of a file. For more information, see Download and export files. Operations are valid for 24 hours from the time of creation.",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/drive/v3/files/{file_id}/download",
+        "alias_endpoint": "/googledrive/drive/v3/files/file_id/download",
+        "api_ref": "https://developers.google.com/drive/api/reference/rest/v3/files/download"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/drive/v3/batch",
+      "provider_proxy_intent": "/drive/v3/batch",
+      "text": "Batch requests",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "requests": {
+          "type": "array",
+          "text": "Array of API requests to batch process. Each request should include method, path, and body/params as needed",
+          "required": true,
+          "examples": [
+            {
+              "method": "GET",
+              "path": "/drive/v3/files",
+              "params": {
+                "q": "name contains 'test'"
+              }
+            }
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Combines multiple API calls into a single HTTP request to reduce the number of HTTP connections",
+        "rate_limit": [],
+        "api_endpoint": "https://www.googleapis.com/batch/drive/v3",
+        "alias_endpoint": "/googledrive/drive/v3/batch",
+        "api_ref": "https://developers.google.com/drive/api/guides/batch"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }

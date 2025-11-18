@@ -92,13 +92,62 @@
     "headers": {},
     "api_endpoint": "https://gmail.googleapis.com",
     "released": 1,
-    "updated_at": "2025-03-12T07:12:31.000Z",
+    "updated_at": "2025-01-28T12:00:00.000Z",
     "website": "https://developers.google.com/gmail",
     "api_link_ref": "https://developers.google.com/gmail",
-    "total_api": 68,
+    "total_api": 69,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
   "routes": [
+    {
+      "provider_alias_intent": "/batch",
+      "provider_proxy_intent": "/batch",
+      "text": "Batch requests",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "requests": {
+          "text": "Array of API requests to batch process. Each request should include method, path, and body/params as needed",
+          "type": "array",
+          "required": true,
+          "examples": [
+            {
+              "method": "GET",
+              "path": "/gmail/v1/users/me/messages",
+              "params": {
+                "maxResults": 10
+              }
+            }
+          ]
+        }
+      },
+      "custom_headers": {
+        "Content-Type": "multipart/mixed; boundary=boundary_string"
+      },
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.google.com/gmail/api/guides/batch",
+        "version": "v1",
+        "rate_limit": [],
+        "description": "Combines multiple API calls into a single HTTP request to reduce the number of HTTP connections",
+        "api_endpoint": "https://gmail.googleapis.com/batch",
+        "alias_endpoint": "/gmail/batch"
+      },
+      "auth": {
+        "header": {
+          "authKey": "accessToken",
+          "headerName": "Authorization",
+          "headerValue": "Bearer"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
     {
       "provider_alias_intent": "/v1/users/userId/messages/send",
       "text": "Send email",
@@ -143,7 +192,7 @@
       "meta": {
         "version": "v1",
         "auth": [],
-        "description": "Send email\n\nGamil uses RFC 2822 formatted, base64url encoded string as a payload for sending email. To, From, Subject, CC, BCC, ReplyTo gets formatted as per RFC 2822 and gets converted to base64string \n\n\n```\n\n\n\n// RFC2822 payload format\n\nFrom: Name<send@example.com>\nTo: hello@example.com\nContent-Type: text/html; charset=utf-8\nMIME-Version: 1.0\nSubject: =?utf-8?B?SGVsbG8=?=\n\n<p>This is email</p>\n\n\n\n\n```\n\n\n\n### Sending Quota\n\nYou can send 100* email per day on free gmail account. \nYou can send 1500 - 2000* email per day on Google workspace account. \n\nMore details [https://developers.google.com/apps-script/guides/services/quotas](https://developers.google.com/apps-script/guides/services/quotas)",
+        "description": "Send email Gamil uses RFC 2822 formatted, base64url encoded string as a payload for sending email. To, From, Subject, CC, BCC, ReplyTo gets formatted as per RFC 2822 and gets converted to base64string ``` // RFC2822 payload format From: Name<send@example.com> To: hello@example.com Content-Type: text/html; charset=utf-8 MIME-Version: 1.0 Subject: =?utf-8?B?SGVsbG8=?= <p>This is email</p> ``` ### Sending Quota You can send 100* email per day on free gmail account. You can send 1500 - 2000* email per day on Google workspace account. More details [https://developers.google.com/apps-script/guides/services/quotas](https://developers.google.com/apps-script/guides/services/quotas)",
         "rate_limit": [],
         "api_endpoint": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages/send",
         "alias_endpoint": "/gmail/v1/users/userId/messages/send",
@@ -156,10 +205,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "send",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/send",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/upload/v1/users/userId/messages/send",
@@ -212,7 +262,7 @@
       "meta": {
         "version": "v1",
         "auth": [],
-        "description": "Send email with attachments\n\nGamil uses RFC 2822 formatted, base64url encoded string as a payload for sending email. To, From, Subject, CC, BCC, ReplyTo gets formatted as per RFC 2822 and gets converted to base64string \n\n\n```\n\n\n\n\n// RFC2822 payload format\n\nFrom: Name<send@example.com>\nTo: hello@example.com\nContent-Type: text/html; charset=utf-8\nMIME-Version: 1.0\nSubject: =?utf-8?B?SGVsbG8=?=\n\n<p>This is email</p>\n\n\n\n\n```\n\n\n\n### Sending Quota\n\nYou can send 100* email per day on free gmail account. \nYou can send 1500 - 2000* email per day on Google workspace account. \n\nMore details [https://developers.google.com/apps-script/guides/services/quotas](https://developers.google.com/apps-script/guides/services/quotas)",
+        "description": "Send email with attachments Gamil uses RFC 2822 formatted, base64url encoded string as a payload for sending email. To, From, Subject, CC, BCC, ReplyTo gets formatted as per RFC 2822 and gets converted to base64string ``` // RFC2822 payload format From: Name<send@example.com> To: hello@example.com Content-Type: text/html; charset=utf-8 MIME-Version: 1.0 Subject: =?utf-8?B?SGVsbG8=?= <p>This is email</p> ``` ### Sending Quota You can send 100* email per day on free gmail account. You can send 1500 - 2000* email per day on Google workspace account. More details [https://developers.google.com/apps-script/guides/services/quotas](https://developers.google.com/apps-script/guides/services/quotas)",
         "rate_limit": [],
         "api_endpoint": "https://gmail.googleapis.com/upload/gmail/v1/users/{userId}/messages/send",
         "alias_endpoint": "/gmail/upload/v1/users/userId/messages/send",
@@ -225,10 +275,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesSend",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/upload/v1/users/userId/messages/send",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/profile",
@@ -275,10 +326,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userGetProfile",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/profile",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/stop",
@@ -325,10 +377,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userStop",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/stop",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/watch",
@@ -354,11 +407,19 @@
         },
         "labelFilterAction": {
           "type": "enum",
-          "text": "Filtering behavior of labelIds list specified"
+          "text": "Filtering behavior of labelIds list specified",
+          "enum": [
+            "include",
+            "exclude"
+          ]
         },
         "labelFilterBehavior": {
           "type": "enum",
-          "text": "Filtering behavior of labelIds list specified"
+          "text": "Filtering behavior of labelIds list specified",
+          "enum": [
+            "include",
+            "exclude"
+          ]
         },
         "topicName": {
           "type": "string",
@@ -392,10 +453,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userWatch",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/watch",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/history",
@@ -433,7 +495,13 @@
         },
         "historyTypes": {
           "type": "enum",
-          "enum": []
+          "text": "History types to be returned by the function",
+          "enum": [
+            "messageAdded",
+            "messageDeleted",
+            "labelAdded",
+            "labelRemoved"
+          ]
         }
       },
       "custom_headers": {},
@@ -465,10 +533,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userHistoryList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/history",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts",
@@ -515,10 +584,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
@@ -573,10 +643,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
@@ -600,7 +671,12 @@
         "format": {
           "type": "enum",
           "text": "The format to return the draft in",
-          "enum": []
+          "enum": [
+            "minimal",
+            "full",
+            "raw",
+            "metadata"
+          ]
         }
       },
       "custom_headers": {},
@@ -636,10 +712,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts",
@@ -709,10 +786,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts/send",
@@ -759,10 +837,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftSend",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts/send",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/drafts/id",
@@ -817,10 +896,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userDraftUpdate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/drafts/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels",
@@ -867,10 +947,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/labels",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels/id",
@@ -925,10 +1006,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/labels/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels/id",
@@ -983,10 +1065,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/labels/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels",
@@ -1033,10 +1116,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/labels",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels/id",
@@ -1091,10 +1175,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelPatch",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.044Z"
+      "updated_at": "2025-11-11T15:37:35.044Z",
+      "provider_proxy_intent": "/v1/users/userId/labels/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/labels/id",
@@ -1149,10 +1234,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userLabelUpdate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/labels/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/batchDelete",
@@ -1204,10 +1290,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesBatchDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/batchDelete",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/batchModify",
@@ -1262,10 +1349,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesBatchModify",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/batchModify",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/id",
@@ -1320,10 +1408,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/id",
@@ -1347,7 +1436,13 @@
         },
         "format": {
           "type": "enum",
-          "text": "The format to return the message in"
+          "text": "The format to return the message in",
+          "enum": [
+            "minimal",
+            "full",
+            "raw",
+            "metadata"
+          ]
         },
         "metadataHeaders[]": {
           "type": "string",
@@ -1388,35 +1483,76 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/import",
+      "provider_proxy_intent": "/v1/users/userId/messages/import",
       "text": "Message imported to user's mailbox",
       "category": "Messages",
       "method": "POST",
-      "type": "API",
+      "type": "Upload",
+      "request_type": "Upload",
       "params": {
         "userId": {
           "type": "string",
-          "text": "The user's email address",
+          "text": "The user's email address. The special value 'me' can be used to indicate the authenticated user.",
           "required": true,
           "disabled": true,
           "replace_key": "{userId}",
           "key_alias": "sub"
+        },
+        "internalDateSource": {
+          "type": "string",
+          "text": "Source for Gmail's internal date of the message",
+          "enum": [
+            "receivedTime",
+            "dateHeader"
+          ]
+        },
+        "neverMarkSpam": {
+          "type": "boolean",
+          "text": "Ignore the Gmail spam classifier decision and never mark this email as SPAM in the mailbox"
+        },
+        "processForCalendar": {
+          "type": "boolean",
+          "text": "Process calendar invites in the email and add any extracted meetings to the Google Calendar for this user"
+        },
+        "deleted": {
+          "type": "boolean",
+          "text": "Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for Google Workspace accounts."
         }
       },
       "custom_headers": {},
       "body": {
-        "internalDateSource": {
-          "type": "enum",
-          "text": "Source for Gmail's internal date of the message;\nneverMarkSpam",
-          "enum": [
-            "boolean"
-          ]
+        "raw": {
+          "type": "string",
+          "text": "RFC 2822 formatted and base64url encoded string",
+          "required": false
+        },
+        "payload": {
+          "type": "object",
+          "text": "The parsed email structure in the message parts",
+          "required": false
+        },
+        "snippet": {
+          "type": "string",
+          "text": "A short part of the message text",
+          "required": false
+        },
+        "labelIds": {
+          "type": "array",
+          "text": "List of IDs of labels to apply to this message",
+          "required": false
+        },
+        "threadId": {
+          "type": "string",
+          "text": "The ID of the thread the message belongs to",
+          "required": false
         }
       },
       "path": {
@@ -1446,35 +1582,65 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
-      "provider_intent_unknown": "userMessagesImport",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages",
+      "provider_proxy_intent": "/v1/users/userId/messages",
       "text": "Message insertion into user's mailbox",
       "category": "Messages",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {
         "userId": {
           "type": "string",
-          "text": "The user's email address",
+          "text": "The user's email address. The special value 'me' can be used to indicate the authenticated user.",
           "required": true,
           "disabled": true,
           "replace_key": "{userId}",
           "key_alias": "sub"
+        },
+        "internalDateSource": {
+          "type": "string",
+          "text": "Source for Gmail's internal date of the message",
+          "enum": [
+            "receivedTime",
+            "dateHeader"
+          ]
+        },
+        "deleted": {
+          "type": "boolean",
+          "text": "Mark the email as permanently deleted (not TRASH) and only visible in Google Vault to a Vault administrator. Only used for Google Workspace accounts."
         }
       },
       "custom_headers": {},
       "body": {
-        "internalDateSource": {
-          "type": "enum",
-          "text": "Source for Gmail's internal date of the message;\ndeleted",
-          "enum": [
-            "boolean"
-          ]
+        "raw": {
+          "type": "string",
+          "text": "RFC 2822 formatted and base64url encoded string",
+          "required": false
+        },
+        "payload": {
+          "type": "object",
+          "text": "The parsed email structure in the message parts",
+          "required": false
+        },
+        "snippet": {
+          "type": "string",
+          "text": "A short part of the message text",
+          "required": false
+        },
+        "labelIds": {
+          "type": "array",
+          "text": "List of IDs of labels to apply to this message",
+          "required": false
+        },
+        "threadId": {
+          "type": "string",
+          "text": "The ID of the thread the message belongs to",
+          "required": false
         }
       },
       "path": {
@@ -1493,7 +1659,7 @@
         "auth": [],
         "description": "Directly inserts a message into only this user's mailbox",
         "rate_limit": [],
-        "api_endpoint": "https://gmail.googleapis.com/upload/gmail/v1/users/{userId}/messages",
+        "api_endpoint": "https://gmail.googleapis.com/gmail/v1/users/{userId}/messages",
         "alias_endpoint": "/gmail/v1/users/userId/messages",
         "api_ref": "https://developers.google.com/gmail/api/reference/rest/v1/users.messages/insert"
       },
@@ -1504,10 +1670,8 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
-      "provider_intent_unknown": "userMessagesInsert",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages",
@@ -1578,10 +1742,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/id/modify",
@@ -1644,10 +1809,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesModify",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/id/modify",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/id/trash",
@@ -1702,10 +1868,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesTrash",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/id/trash",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/id/untrash",
@@ -1744,10 +1911,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesUntrash",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/id/untrash",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/messages/messageId/attachments/id",
@@ -1757,10 +1925,12 @@
       "type": "API",
       "params": {
         "messageId": {
-          "type": "string"
+          "type": "string",
+          "text": "Messageid"
         },
         "id": {
-          "type": "string"
+          "type": "string",
+          "text": "Id"
         },
         "userId": {
           "type": "string",
@@ -1806,10 +1976,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userMessagesAttachmentsGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/messages/messageId/attachments/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/autoForwarding",
@@ -1856,10 +2027,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingGetAutoForwarding",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/autoForwarding",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/imap",
@@ -1906,10 +2078,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingGetImap",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/imap",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/language",
@@ -1956,10 +2129,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingGetLanguage",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/language",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/pop",
@@ -2006,10 +2180,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingGetPop",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/pop",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/vacation",
@@ -2056,10 +2231,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingGetVacation",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/vacation",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/autoForwarding",
@@ -2106,10 +2282,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingUpdateAutoForwarding",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/autoForwarding",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/imap",
@@ -2156,10 +2333,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingUpdateImap",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/imap",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/language",
@@ -2206,10 +2384,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingUpdateLanguage",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/language",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/pop",
@@ -2256,10 +2435,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingUpdatePop",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/pop",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/vacation",
@@ -2306,10 +2486,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingUpdateVacation",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/vacation",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/delegates",
@@ -2356,10 +2537,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/delegates",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/delegates/delegateEmail",
@@ -2414,10 +2596,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/delegates/delegateEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/delegates/delegateEmail",
@@ -2456,10 +2639,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/delegates/delegateEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/delegates",
@@ -2506,10 +2690,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingDelegatesList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/delegates",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/filters",
@@ -2558,10 +2743,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingFiltersCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/filters",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/filters/id",
@@ -2616,10 +2802,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingFiltersDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/filters/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/filters/id",
@@ -2674,10 +2861,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingFiltersGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/filters/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/filters",
@@ -2720,10 +2908,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingFiltersList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/filters",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
@@ -2770,10 +2959,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingforwardingAddressesCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/forwardingAddresses",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
@@ -2828,10 +3018,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/forwardingAddresses",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses/forwardingEmail",
@@ -2886,10 +3077,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/forwardingAddresses/forwardingEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/forwardingAddresses",
@@ -2936,10 +3128,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingForwardingAddressesList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/forwardingAddresses",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs",
@@ -2986,10 +3179,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsCreate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
@@ -3044,10 +3238,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingsendAsDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
@@ -3102,10 +3297,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingsendAsGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs",
@@ -3148,10 +3344,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingsendAsList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
@@ -3206,10 +3403,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsPatch",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
@@ -3264,10 +3462,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsUpdate",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/verify",
@@ -3306,10 +3505,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsVerify",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/verify",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
@@ -3372,10 +3572,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoDelete",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
@@ -3438,10 +3639,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
@@ -3496,10 +3698,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoInsert",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
@@ -3554,10 +3757,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id/setDefault",
@@ -3620,10 +3824,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userSettingSendAsSmimeInfoSetDefault",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/settings/sendAs/sendAsEmail/smimeInfo/id/setDefault",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/threads/id",
@@ -3646,14 +3851,16 @@
         },
         "format": {
           "type": "enum",
-          "enum": []
+          "text": "The format to return the messages in",
+          "enum": [
+            "full",
+            "metadata",
+            "minimal"
+          ]
         },
         "metadataHeaders": {
           "type": "string",
-          "text": "When given and format is METADATA"
-        },
-        "only include headers specified": {
-          "type": ""
+          "text": "When given and format is METADATA, only include headers specified"
         }
       },
       "custom_headers": {},
@@ -3689,10 +3896,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userThreadGet",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/threads/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/threads",
@@ -3763,10 +3971,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userThreadList",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/threads",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/threads/id/modify",
@@ -3829,10 +4038,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userThreadModify",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/threads/id/modify",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/threads/id/trash",
@@ -3887,10 +4097,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userThreadTrash",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/threads/id/trash",
+      "request_type": "API",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/v1/users/userId/threads/id/untrash",
@@ -3945,10 +4156,11 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
       "provider_intent_unknown": "userThreadUntrash",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.045Z"
+      "updated_at": "2025-11-11T15:37:35.045Z",
+      "provider_proxy_intent": "/v1/users/userId/threads/id/untrash",
+      "request_type": "API",
+      "response_format": {}
     }
   ]
 }

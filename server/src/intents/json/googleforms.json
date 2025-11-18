@@ -72,19 +72,21 @@
     "headers": {},
     "api_endpoint": "https://forms.googleapis.com",
     "released": 1,
-    "updated_at": "2024-12-22T09:33:38.000Z",
+    "updated_at": "2025-01-28T12:00:00.000Z",
     "website": "https://docs.google.com/forms",
     "api_link_ref": "https://developers.google.com/forms/api/reference/rest",
-    "total_api": 9,
+    "total_api": 10,
     "credential_link": "https://console.cloud.google.com/apis/credentials"
   },
   "routes": [
     {
       "provider_alias_intent": "/v1/forms",
-      "text": "Generate a form with the provided message title.",
+      "provider_proxy_intent": "/v1/forms",
+      "text": "Create a new form",
       "category": "Forms",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {},
       "custom_headers": {},
       "body": {
@@ -116,16 +118,17 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid",
-      "text": "Get a form.",
+      "provider_proxy_intent": "/v1/forms/formid",
+      "text": "Get a form",
       "category": "Forms",
       "method": "GET",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -159,15 +162,17 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid-batchupdate",
-      "text": "Update form with batch updates.",
+      "provider_proxy_intent": "/v1/forms/formid-batchupdate",
+      "text": "Batch update form",
       "category": "Forms",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -178,7 +183,7 @@
       "custom_headers": {},
       "body": {
         "requests": {
-          "type": "array of object",
+          "type": "array",
           "text": "The update requests of this batch",
           "required": true,
           "examples": [
@@ -199,7 +204,7 @@
             true,
             false
           ],
-          "examples": 1
+          "examples": true
         },
         "writeControl": {
           "type": "object",
@@ -234,16 +239,17 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/responses",
-      "text": "List a form's responses.",
+      "provider_proxy_intent": "/v1/forms/formid/responses",
+      "text": "List form responses",
       "category": "Forms Responses",
       "method": "GET",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -252,25 +258,15 @@
         },
         "pageSize": {
           "type": "integer",
-          "text": "The maximum number of responses to return.The service may return fewer than this value. If unspecified or zero at most 5000 responses are returned."
+          "text": "The maximum number of responses to return. The service may return fewer than this value. If unspecified or zero, at most 5000 responses are returned."
         },
         "pageToken": {
           "type": "string",
-          "text": "A page token returned by a previous list response. If this field is set the form and the values of the filter must be the same as for the original request."
+          "text": "A page token returned by a previous list response. If this field is set, the form and the values of the filter must be the same as for the original request."
         },
         "filter": {
           "type": "string",
-          "text": "Which form responses to return. Currently the only supported filters are",
-          "enum": [
-            "* timestamp > *N* which means to get all form responses submitted after (but not at) timestamp *N*. * timestamp >= *N* which means to get all form responses submitted at and after timestamp *N*. For both supported filters"
-          ]
-        },
-        "timestamp must be formatted in RFC3339 UTC \"Zulu\" format. Examples": {
-          "type": "\"2014-10-02T15",
-          "text": "23Z\" and \"2014-10-02T15",
-          "enum": [
-            "01"
-          ]
+          "text": "Which form responses to return. Currently the only supported filters are: timestamp > N (get all form responses submitted after timestamp N) and timestamp >= N (get all form responses submitted at and after timestamp N). Timestamp must be formatted in RFC3339 UTC \"Zulu\" format (e.g., \"2014-10-02T15:01:23Z\")"
         }
       },
       "custom_headers": {},
@@ -299,15 +295,17 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/responses/responseid",
-      "text": "Get a single form response.",
+      "provider_proxy_intent": "/v1/forms/formid/responses/responseid",
+      "text": "Get form response",
       "category": "Forms Responses",
       "method": "GET",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -351,15 +349,17 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/watches",
-      "text": "List project's owned watches.",
+      "provider_proxy_intent": "/v1/forms/formid/watches",
+      "text": "List form watches",
       "category": "Forms Watches",
       "method": "GET",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -393,15 +393,17 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/watches",
-      "text": "Create a new watch.",
+      "provider_proxy_intent": "/v1/forms/formid/watches",
+      "text": "Create form watch",
       "category": "Forms Watches",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -458,16 +460,17 @@
           "authKey": "accessToken"
         }
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/watches/watchid",
-      "text": "Delete a watch.",
+      "provider_proxy_intent": "/v1/forms/formid/watches/watchid",
+      "text": "Delete form watch",
       "category": "Forms Watches",
       "method": "DELETE",
       "type": "API",
+      "request_type": "API",
       "params": {
         "watchId": {
           "type": "string",
@@ -511,15 +514,17 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/v1/forms/formid/watches/watchid-renew",
-      "text": "Renew an existing watch for seven days.",
+      "provider_proxy_intent": "/v1/forms/formid/watches/watchid-renew",
+      "text": "Renew form watch",
       "category": "Forms Watches",
       "method": "POST",
       "type": "API",
+      "request_type": "API",
       "params": {
         "formId": {
           "type": "string",
@@ -563,8 +568,64 @@
           "authKey": "accessToken"
         }
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.058Z"
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v1/forms/formid-setpublishsettings",
+      "provider_proxy_intent": "/v1/forms/formid-setpublishsettings",
+      "text": "Set form publish settings",
+      "category": "Forms",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "formId": {
+          "type": "string",
+          "text": "The form ID.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "publishSettings": {
+          "type": "object",
+          "text": "The publish settings for the form",
+          "required": true,
+          "examples": {
+            "publishToWeb": false,
+            "publishToDomain": false,
+            "requireLogin": false,
+            "allowResponses": true
+          }
+        }
+      },
+      "path": {
+        "formId": {
+          "type": "string",
+          "text": "The form ID.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update the publish settings of a form.",
+        "rate_limit": [],
+        "api_endpoint": "https://forms.googleapis.com/v1/forms/{formId}:setPublishSettings",
+        "alias_endpoint": "/googleforms/v1/forms/formid-setpublishsettings",
+        "api_ref": "https://developers.google.com/forms/api/reference/rest/v1/forms/setPublishSettings"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }
