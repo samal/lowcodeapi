@@ -35,15 +35,15 @@
     "headers": {},
     "api_endpoint": "https://api.cal.com",
     "released": 1,
-    "updated_at": "2024-12-22T08:04:41.000Z",
+    "updated_at": "2025-11-18T02:04:40.000Z",
     "website": "https://cal.com",
-    "api_link_ref": "https://cal.com/docs/api-reference/v1/introduction",
+    "api_link_ref": "https://cal.com/docs/api-reference/v2/introduction",
     "total_api": 67,
     "credential_link": "https://app.cal.com/settings/developer/api-keys"
   },
   "routes": [
     {
-      "provider_alias_intent": "/v1/attendees",
+      "provider_alias_intent": "/v2/attendees",
       "text": "Find all attendees",
       "category": "Attendees",
       "method": "GET",
@@ -54,24 +54,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all attendees",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/attendees",
-        "alias_endpoint": "/cal/v1/attendees",
-        "api_ref": "https://developer.cal.com/api/api-reference/attendees#find-all-attendees"
+        "api_endpoint": "{endpoint}/v2/attendees",
+        "alias_endpoint": "/cal/v2/attendees",
+        "api_ref": "https://cal.com/docs/api-reference/v2/attendees#find-all-attendees"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/attendees",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/attendees",
+      "provider_alias_intent": "/v2/attendees",
       "text": "Create a new attendee",
       "category": "Attendees",
       "method": "POST",
@@ -102,25 +104,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new attendee",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/attendees",
-        "alias_endpoint": "/cal/v1/attendees",
-        "api_ref": "https://developer.cal.com/api/api-reference/attendees#create-a-new-attendee"
+        "api_endpoint": "{endpoint}/v2/attendees",
+        "alias_endpoint": "/cal/v2/attendees",
+        "api_ref": "https://cal.com/docs/api-reference/v2/attendees#create-a-new-attendee"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/attendees",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/attendees/id",
+      "provider_alias_intent": "/v2/attendees/id",
       "text": "Find an attendee",
       "category": "Attendees",
       "method": "GET",
@@ -143,24 +146,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find an attendee",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/attendees/{id}",
-        "alias_endpoint": "/cal/v1/attendees/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/attendees#find-an-attendee"
+        "api_endpoint": "{endpoint}/v2/attendees/{id}",
+        "alias_endpoint": "/cal/v2/attendees/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/attendees#find-an-attendee"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/attendees/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/attendees/id",
+      "provider_alias_intent": "/v2/attendees/id",
       "text": "Edit an existing attendee",
       "category": "Attendees",
       "method": "PATCH",
@@ -199,25 +204,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing attendee",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/attendees/{id}",
-        "alias_endpoint": "/cal/v1/attendees/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/attendees#edit-an-existing-attendee"
+        "api_endpoint": "{endpoint}/v2/attendees/{id}",
+        "alias_endpoint": "/cal/v2/attendees/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/attendees#edit-an-existing-attendee"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/attendees/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/attendees/id",
+      "provider_alias_intent": "/v2/attendees/id",
       "text": "Remove an existing attendee",
       "category": "Attendees",
       "method": "DELETE",
@@ -240,24 +246,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing attendee",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/attendees/{id}",
-        "alias_endpoint": "/cal/v1/attendees/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/attendees#remove-an-existing-attendee"
+        "api_endpoint": "{endpoint}/v2/attendees/{id}",
+        "alias_endpoint": "/cal/v2/attendees/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/attendees#remove-an-existing-attendee"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/attendees/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/availabilities",
+      "provider_alias_intent": "/v2/availabilities",
       "text": "Create a new availability",
       "category": "Availabilities",
       "method": "POST",
@@ -288,25 +296,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new availability",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/availabilities",
-        "alias_endpoint": "/cal/v1/availabilities",
-        "api_ref": "https://developer.cal.com/api/api-reference/availabilities#create-a-new-availability"
+        "api_endpoint": "{endpoint}/v2/availabilities",
+        "alias_endpoint": "/cal/v2/availabilities",
+        "api_ref": "https://cal.com/docs/api-reference/v2/availabilities#create-a-new-availability"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/availabilities",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/availabilities/id",
+      "provider_alias_intent": "/v2/availabilities/id",
       "text": "Find an availability",
       "category": "Availabilities",
       "method": "GET",
@@ -329,24 +338,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find an availability",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/availabilities/{id}",
-        "alias_endpoint": "/cal/v1/availabilities/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/availabilities#find-an-availability"
+        "api_endpoint": "{endpoint}/v2/availabilities/{id}",
+        "alias_endpoint": "/cal/v2/availabilities/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/availabilities#find-an-availability"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/availabilities/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/availabilities/id",
+      "provider_alias_intent": "/v2/availabilities/id",
       "text": "Edit an existing availability",
       "category": "Availabilities",
       "method": "PATCH",
@@ -389,25 +400,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing availability",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/availabilities/{id}",
-        "alias_endpoint": "/cal/v1/availabilities/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/availabilities#edit-an-existing-availability"
+        "api_endpoint": "{endpoint}/v2/availabilities/{id}",
+        "alias_endpoint": "/cal/v2/availabilities/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/availabilities#edit-an-existing-availability"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/availabilities/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/availabilities/id",
+      "provider_alias_intent": "/v2/availabilities/id",
       "text": "Remove an existing availability",
       "category": "Availabilities",
       "method": "DELETE",
@@ -430,24 +442,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing availability",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/availabilities/{id}",
-        "alias_endpoint": "/cal/v1/availabilities/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/availabilities#remove-an-existing-availability"
+        "api_endpoint": "{endpoint}/v2/availabilities/{id}",
+        "alias_endpoint": "/cal/v2/availabilities/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/availabilities#remove-an-existing-availability"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/availabilities/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/booking-references",
+      "provider_alias_intent": "/v2/booking-references",
       "text": "Find all booking references",
       "category": "Booking References",
       "method": "GET",
@@ -458,24 +472,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all booking references",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/booking-references",
-        "alias_endpoint": "/cal/v1/booking-references",
-        "api_ref": "https://developer.cal.com/api/api-reference/booking-references#find-all-booking-references"
+        "api_endpoint": "{endpoint}/v2/booking-references",
+        "alias_endpoint": "/cal/v2/booking-references",
+        "api_ref": "https://cal.com/docs/api-reference/v2/booking-references#find-all-booking-references"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/booking-references",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/booking-references",
+      "provider_alias_intent": "/v2/booking-references",
       "text": "Create a new booking reference",
       "category": "Booking References",
       "method": "POST",
@@ -519,25 +535,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new booking reference",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/booking-references",
-        "alias_endpoint": "/cal/v1/booking-references",
-        "api_ref": "https://developer.cal.com/api/api-reference/booking-references#create-a-new-booking-reference"
+        "api_endpoint": "{endpoint}/v2/booking-references",
+        "alias_endpoint": "/cal/v2/booking-references",
+        "api_ref": "https://cal.com/docs/api-reference/v2/booking-references#create-a-new-booking-reference"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/booking-references",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/booking-references/id",
+      "provider_alias_intent": "/v2/booking-references/id",
       "text": "Find a booking reference",
       "category": "Booking References",
       "method": "GET",
@@ -560,24 +577,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a booking reference",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/booking-references/{id}",
-        "alias_endpoint": "/cal/v1/booking-references/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/booking-references#find-a-booking-reference"
+        "api_endpoint": "{endpoint}/v2/booking-references/{id}",
+        "alias_endpoint": "/cal/v2/booking-references/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/booking-references#find-a-booking-reference"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/booking-references/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/booking-references/id",
+      "provider_alias_intent": "/v2/booking-references/id",
       "text": "Edit an existing booking reference",
       "category": "Booking References",
       "method": "PATCH",
@@ -624,25 +643,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing booking reference",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/booking-references/{id}",
-        "alias_endpoint": "/cal/v1/booking-references/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/booking-references#edit-an-existing-booking-reference"
+        "api_endpoint": "{endpoint}/v2/booking-references/{id}",
+        "alias_endpoint": "/cal/v2/booking-references/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/booking-references#edit-an-existing-booking-reference"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/booking-references/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/booking-references/id",
+      "provider_alias_intent": "/v2/booking-references/id",
       "text": "Remove an existing booking reference",
       "category": "Booking References",
       "method": "DELETE",
@@ -665,24 +685,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing booking reference",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/booking-references/{id}",
-        "alias_endpoint": "/cal/v1/booking-references/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/booking-references#remove-an-existing-booking-reference"
+        "api_endpoint": "{endpoint}/v2/booking-references/{id}",
+        "alias_endpoint": "/cal/v2/booking-references/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/booking-references#remove-an-existing-booking-reference"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/booking-references/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/bookings",
+      "provider_alias_intent": "/v2/bookings",
       "text": "Find all bookings",
       "category": "Bookings",
       "method": "GET",
@@ -700,24 +722,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all bookings",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/bookings",
-        "alias_endpoint": "/cal/v1/bookings",
-        "api_ref": "https://developer.cal.com/api/api-reference/bookings#find-all-bookings"
+        "api_endpoint": "{endpoint}/v2/bookings",
+        "alias_endpoint": "/cal/v2/bookings",
+        "api_ref": "https://cal.com/docs/api-reference/v2/bookings#find-all-bookings"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/bookings",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/bookings",
+      "provider_alias_intent": "/v2/bookings",
       "text": "Create a new booking",
       "category": "Bookings",
       "method": "POST",
@@ -793,25 +817,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new booking",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/bookings",
-        "alias_endpoint": "/cal/v1/bookings",
-        "api_ref": "https://developer.cal.com/api/api-reference/bookings#create-a-new-booking"
+        "api_endpoint": "{endpoint}/v2/bookings",
+        "alias_endpoint": "/cal/v2/bookings",
+        "api_ref": "https://cal.com/docs/api-reference/v2/bookings#create-a-new-booking"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/bookings",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/bookings/id",
+      "provider_alias_intent": "/v2/bookings/id",
       "text": "Find a booking",
       "category": "Bookings",
       "method": "GET",
@@ -830,24 +855,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a booking",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/bookings/{id}",
-        "alias_endpoint": "/cal/v1/bookings/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/bookings#find-a-booking"
+        "api_endpoint": "{endpoint}/v2/bookings/{id}",
+        "alias_endpoint": "/cal/v2/bookings/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/bookings#find-a-booking"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/bookings/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/bookings/id",
+      "provider_alias_intent": "/v2/bookings/id",
       "text": "Edit an existing booking",
       "category": "Bookings",
       "method": "PATCH",
@@ -888,25 +915,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing booking",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/bookings/{id}",
-        "alias_endpoint": "/cal/v1/bookings/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/bookings#edit-an-existing-booking"
+        "api_endpoint": "{endpoint}/v2/bookings/{id}",
+        "alias_endpoint": "/cal/v2/bookings/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/bookings#edit-an-existing-booking"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/bookings/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/bookings/id/cancel",
+      "provider_alias_intent": "/v2/bookings/id/cancel",
       "text": "Remove an existing booking",
       "category": "Bookings",
       "method": "DELETE",
@@ -938,24 +966,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing booking",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/bookings/{id}/cancel",
-        "alias_endpoint": "/cal/v1/bookings/id/cancel",
-        "api_ref": "https://developer.cal.com/api/api-reference/bookings#remove-an-existing-booking"
+        "api_endpoint": "{endpoint}/v2/bookings/{id}/cancel",
+        "alias_endpoint": "/cal/v2/bookings/id/cancel",
+        "api_ref": "https://cal.com/docs/api-reference/v2/bookings#remove-an-existing-booking"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/bookings/id/cancel",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/custom-inputs",
+      "provider_alias_intent": "/v2/custom-inputs",
       "text": "Find all custom inputs",
       "category": "Custom Inputs",
       "method": "GET",
@@ -966,24 +996,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all custom inputs",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/custom-inputs",
-        "alias_endpoint": "/cal/v1/custom-inputs",
-        "api_ref": "https://developer.cal.com/api/api-reference/custom-inputs#find-all-custom-inputs"
+        "api_endpoint": "{endpoint}/v2/custom-inputs",
+        "alias_endpoint": "/cal/v2/custom-inputs",
+        "api_ref": "https://cal.com/docs/api-reference/v2/custom-inputs#find-all-custom-inputs"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/custom-inputs",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/custom-inputs",
+      "provider_alias_intent": "/v2/custom-inputs",
       "text": "Create a new custom input",
       "category": "Custom Inputs",
       "method": "POST",
@@ -1023,25 +1055,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new custom input",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/custom-inputs",
-        "alias_endpoint": "/cal/v1/custom-inputs",
-        "api_ref": "https://developer.cal.com/api/api-reference/custom-inputs#create-a-new-custom-input"
+        "api_endpoint": "{endpoint}/v2/custom-inputs",
+        "alias_endpoint": "/cal/v2/custom-inputs",
+        "api_ref": "https://cal.com/docs/api-reference/v2/custom-inputs#create-a-new-custom-input"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/custom-inputs",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/custom-inputs/id",
+      "provider_alias_intent": "/v2/custom-inputs/id",
       "text": "Find a custom input",
       "category": "Custom Inputs",
       "method": "GET",
@@ -1064,24 +1097,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a custom input",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/custom-inputs/{id}",
-        "alias_endpoint": "/cal/v1/custom-inputs/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/custom-inputs#find-a-custom-input"
+        "api_endpoint": "{endpoint}/v2/custom-inputs/{id}",
+        "alias_endpoint": "/cal/v2/custom-inputs/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/custom-inputs#find-a-custom-input"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/custom-inputs/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/custom-inputs/id",
+      "provider_alias_intent": "/v2/custom-inputs/id",
       "text": "Edit an existing custom input",
       "category": "Custom Inputs",
       "method": "PATCH",
@@ -1137,25 +1172,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing custom input",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/custom-inputs/{id}",
-        "alias_endpoint": "/cal/v1/custom-inputs/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/custom-inputs#edit-an-existing-custom-input"
+        "api_endpoint": "{endpoint}/v2/custom-inputs/{id}",
+        "alias_endpoint": "/cal/v2/custom-inputs/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/custom-inputs#edit-an-existing-custom-input"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/custom-inputs/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/custom-inputs/id",
+      "provider_alias_intent": "/v2/custom-inputs/id",
       "text": "Remove an existing custom input",
       "category": "Custom Inputs",
       "method": "DELETE",
@@ -1178,52 +1214,56 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing custom input",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/custom-inputs/{id}",
-        "alias_endpoint": "/cal/v1/custom-inputs/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/custom-inputs#remove-an-existing-custom-input"
+        "api_endpoint": "{endpoint}/v2/custom-inputs/{id}",
+        "alias_endpoint": "/cal/v2/custom-inputs/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/custom-inputs#remove-an-existing-custom-input"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/custom-inputs/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/destination-calendars\r\n",
+      "provider_alias_intent": "/v2/destination-calendars",
+      "provider_proxy_intent": "/v2/destination-calendars",
       "text": "Find all destination calendars",
       "category": "Destination Calendars",
       "method": "GET",
       "type": "API",
+      "request_type": "API",
       "params": {},
       "custom_headers": {},
       "body": {},
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all destination calendars",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/destination-calendars",
-        "alias_endpoint": "/cal/v1/destination-calendars\r\n",
-        "api_ref": "https://developer.cal.com/api/api-reference/destination-calendars#find-all-destination-calendars"
+        "api_endpoint": "{endpoint}/v2/destination-calendars",
+        "alias_endpoint": "/cal/v2/destination-calendars",
+        "api_ref": "https://cal.com/docs/api-reference/v2/destination-calendars#find-all-destination-calendars"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/destination-calendars",
+      "provider_alias_intent": "/v2/destination-calendars",
       "text": "Create a new destination calendar",
       "category": "Destination Calendars",
       "method": "POST",
@@ -1253,24 +1293,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new destination calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/destination-calendars",
-        "alias_endpoint": "/cal/v1/destination-calendars",
-        "api_ref": "https://developer.cal.com/api/api-reference/destination-calendars#create-a-new-destination-calendar"
+        "api_endpoint": "{endpoint}/v2/destination-calendars",
+        "alias_endpoint": "/cal/v2/destination-calendars",
+        "api_ref": "https://cal.com/docs/api-reference/v2/destination-calendars#create-a-new-destination-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/destination-calendars",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/destination-calendars/id",
+      "provider_alias_intent": "/v2/destination-calendars/id",
       "text": "Find a destination calendar",
       "category": "Destination Calendars",
       "method": "GET",
@@ -1293,24 +1335,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a destination calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/destination-calendars/{id}",
-        "alias_endpoint": "/cal/v1/destination-calendars/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/destination-calendars#find-a-destination-calendar"
+        "api_endpoint": "{endpoint}/v2/destination-calendars/{id}",
+        "alias_endpoint": "/cal/v2/destination-calendars/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/destination-calendars#find-a-destination-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/destination-calendars/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/destination-calendars/id",
+      "provider_alias_intent": "/v2/destination-calendars/id",
       "text": "Edit an existing destination calendar",
       "category": "Destination Calendars",
       "method": "PATCH",
@@ -1333,24 +1377,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing destination calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/destination-calendars/{id}",
-        "alias_endpoint": "/cal/v1/destination-calendars/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/destination-calendars#edit-an-existing-destination-calendar"
+        "api_endpoint": "{endpoint}/v2/destination-calendars/{id}",
+        "alias_endpoint": "/cal/v2/destination-calendars/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/destination-calendars#edit-an-existing-destination-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/destination-calendars/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/destination-calendars/id",
+      "provider_alias_intent": "/v2/destination-calendars/id",
       "text": "Remove an existing destination calendar",
       "category": "Destination Calendars",
       "method": "DELETE",
@@ -1373,24 +1419,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing destination calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/destination-calendars/{id}",
-        "alias_endpoint": "/cal/v1/destination-calendars/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/destination-calendars#remove-an-existing-destination-calendar"
+        "api_endpoint": "{endpoint}/v2/destination-calendars/{id}",
+        "alias_endpoint": "/cal/v2/destination-calendars/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/destination-calendars#remove-an-existing-destination-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/destination-calendars/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/event-types",
+      "provider_alias_intent": "/v2/event-types",
       "text": "Find all event types",
       "category": "Event Types",
       "method": "GET",
@@ -1401,24 +1449,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all event types",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/event-types",
-        "alias_endpoint": "/cal/v1/event-types",
-        "api_ref": "https://developer.cal.com/api/api-reference/event-types#find-all-event-types"
+        "api_endpoint": "{endpoint}/v2/event-types",
+        "alias_endpoint": "/cal/v2/event-types",
+        "api_ref": "https://cal.com/docs/api-reference/v2/event-types#find-all-event-types"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/event-types",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/event-types",
+      "provider_alias_intent": "/v2/event-types",
       "text": "Create a new event type",
       "category": "Event Types",
       "method": "POST",
@@ -1534,25 +1584,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new event type",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/event-types",
-        "alias_endpoint": "/cal/v1/event-types",
-        "api_ref": "https://developer.cal.com/api/api-reference/event-types#create-a-new-event-type"
+        "api_endpoint": "{endpoint}/v2/event-types",
+        "alias_endpoint": "/cal/v2/event-types",
+        "api_ref": "https://cal.com/docs/api-reference/v2/event-types#create-a-new-event-type"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/event-types",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/event-types/id",
+      "provider_alias_intent": "/v2/event-types/id",
       "text": "Find an event type",
       "category": "Event Types",
       "method": "GET",
@@ -1575,24 +1626,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find an event type",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/event-types/{id}",
-        "alias_endpoint": "/cal/v1/event-types/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/event-types#find-an-event-type"
+        "api_endpoint": "{endpoint}/v2/event-types/{id}",
+        "alias_endpoint": "/cal/v2/event-types/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/event-types#find-an-event-type"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/event-types/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/event-types/id",
+      "provider_alias_intent": "/v2/event-types/id",
       "text": "Edit an existing event type",
       "category": "Event Types",
       "method": "PATCH",
@@ -1615,25 +1668,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing event type",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/event-types/{id}",
-        "alias_endpoint": "/cal/v1/event-types/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/event-types#edit-an-existing-event-type"
+        "api_endpoint": "{endpoint}/v2/event-types/{id}",
+        "alias_endpoint": "/cal/v2/event-types/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/event-types#edit-an-existing-event-type"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/event-types/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/event-types/id",
+      "provider_alias_intent": "/v2/event-types/id",
       "text": "Remove an existing event type",
       "category": "Event Types",
       "method": "DELETE",
@@ -1656,24 +1710,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing event type",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/event-types/{id}",
-        "alias_endpoint": "/cal/v1/event-types/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/event-types#remove-an-existing-event-type"
+        "api_endpoint": "{endpoint}/v2/event-types/{id}",
+        "alias_endpoint": "/cal/v2/event-types/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/event-types#remove-an-existing-event-type"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/event-types/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/memberships",
+      "provider_alias_intent": "/v2/memberships",
       "text": "Find all memberships",
       "category": "Memberships",
       "method": "GET",
@@ -1684,24 +1740,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all memberships",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/memberships",
-        "alias_endpoint": "/cal/v1/memberships",
-        "api_ref": "https://developer.cal.com/api/api-reference/memberships#find-all-memberships"
+        "api_endpoint": "{endpoint}/v2/memberships",
+        "alias_endpoint": "/cal/v2/memberships",
+        "api_ref": "https://cal.com/docs/api-reference/v2/memberships#find-all-memberships"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/memberships",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/memberships",
+      "provider_alias_intent": "/v2/memberships",
       "text": "Create a new membership",
       "category": "Memberships",
       "method": "POST",
@@ -1712,25 +1770,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new membership",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/memberships",
-        "alias_endpoint": "/cal/v1/memberships",
-        "api_ref": "https://developer.cal.com/api/api-reference/memberships#create-a-new-membership"
+        "api_endpoint": "{endpoint}/v2/memberships",
+        "alias_endpoint": "/cal/v2/memberships",
+        "api_ref": "https://cal.com/docs/api-reference/v2/memberships#create-a-new-membership"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/memberships",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/memberships/userId_teamId",
+      "provider_alias_intent": "/v2/memberships/userId_teamId",
       "text": "Find a membership",
       "category": "Memberships",
       "method": "GET",
@@ -1763,24 +1822,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a membership",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/memberships/{userId}_{teamId}",
-        "alias_endpoint": "/cal/v1/memberships/userId_teamId",
-        "api_ref": "https://developer.cal.com/api/api-reference/memberships#find-a-membership"
+        "api_endpoint": "{endpoint}/v2/memberships/{userId}_{teamId}",
+        "alias_endpoint": "/cal/v2/memberships/userId_teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/memberships#find-a-membership"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/memberships/userId_teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/memberships/userId_teamId",
+      "provider_alias_intent": "/v2/memberships/userId_teamId",
       "text": "Edit an existing membership",
       "category": "Memberships",
       "method": "PATCH",
@@ -1813,25 +1874,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing membership",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/memberships/{userId}_{teamId}",
-        "alias_endpoint": "/cal/v1/memberships/userId_teamId",
-        "api_ref": "https://developer.cal.com/api/api-reference/memberships#edit-an-existing-membership"
+        "api_endpoint": "{endpoint}/v2/memberships/{userId}_{teamId}",
+        "alias_endpoint": "/cal/v2/memberships/userId_teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/memberships#edit-an-existing-membership"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/memberships/userId_teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/memberships/userId_teamId",
+      "provider_alias_intent": "/v2/memberships/userId_teamId",
       "text": "Remove an existing membership",
       "category": "Memberships",
       "method": "DELETE",
@@ -1864,24 +1926,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing membership",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/memberships/{userId}_{teamId}",
-        "alias_endpoint": "/cal/v1/memberships/userId_teamId",
-        "api_ref": "https://developer.cal.com/api/api-reference/memberships#remove-an-existing-membership"
+        "api_endpoint": "{endpoint}/v2/memberships/{userId}_{teamId}",
+        "alias_endpoint": "/cal/v2/memberships/userId_teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/memberships#remove-an-existing-membership"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/memberships/userId_teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/payments",
+      "provider_alias_intent": "/v2/payments",
       "text": "Find all payments",
       "category": "Payments",
       "method": "GET",
@@ -1892,24 +1956,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all payments",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/payments",
-        "alias_endpoint": "/cal/v1/payments",
-        "api_ref": "https://developer.cal.com/api/api-reference/payments#find-all-payments"
+        "api_endpoint": "{endpoint}/v2/payments",
+        "alias_endpoint": "/cal/v2/payments",
+        "api_ref": "https://cal.com/docs/api-reference/v2/payments#find-all-payments"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/payments",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/payments/id",
+      "provider_alias_intent": "/v2/payments/id",
       "text": "Find a payment",
       "category": "Payments",
       "method": "GET",
@@ -1932,24 +1998,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a payment",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/payments/{id}",
-        "alias_endpoint": "/cal/v1/payments/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/payments#find-a-payment"
+        "api_endpoint": "{endpoint}/v2/payments/{id}",
+        "alias_endpoint": "/cal/v2/payments/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/payments#find-a-payment"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/payments/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/schedules",
+      "provider_alias_intent": "/v2/schedules",
       "text": "Find all schedules",
       "category": "Schedules",
       "method": "GET",
@@ -1960,24 +2028,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all schedules",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/schedules",
-        "alias_endpoint": "/cal/v1/schedules",
-        "api_ref": "https://developer.cal.com/api/api-reference/schedules#find-all-schedules"
+        "api_endpoint": "{endpoint}/v2/schedules",
+        "alias_endpoint": "/cal/v2/schedules",
+        "api_ref": "https://cal.com/docs/api-reference/v2/schedules#find-all-schedules"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/schedules",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/schedules",
+      "provider_alias_intent": "/v2/schedules",
       "text": "Create a new schedule",
       "category": "Schedules",
       "method": "POST",
@@ -1999,25 +2069,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new schedule",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/schedules",
-        "alias_endpoint": "/cal/v1/schedules",
-        "api_ref": "https://developer.cal.com/api/api-reference/schedules#create-a-new-schedule"
+        "api_endpoint": "{endpoint}/v2/schedules",
+        "alias_endpoint": "/cal/v2/schedules",
+        "api_ref": "https://cal.com/docs/api-reference/v2/schedules#create-a-new-schedule"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/schedules",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/schedules/id",
+      "provider_alias_intent": "/v2/schedules/id",
       "text": "Find a schedule",
       "category": "Schedules",
       "method": "GET",
@@ -2040,24 +2111,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a schedule",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/schedules/{id}",
-        "alias_endpoint": "/cal/v1/schedules/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/schedules#find-a-schedule"
+        "api_endpoint": "{endpoint}/v2/schedules/{id}",
+        "alias_endpoint": "/cal/v2/schedules/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/schedules#find-a-schedule"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/schedules/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/schedules/id",
+      "provider_alias_intent": "/v2/schedules/id",
       "text": "Edit an existing schedule",
       "category": "Schedules",
       "method": "PATCH",
@@ -2091,25 +2164,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing schedule",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/schedules/{id}",
-        "alias_endpoint": "/cal/v1/schedules/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/schedules#edit-an-existing-schedule"
+        "api_endpoint": "{endpoint}/v2/schedules/{id}",
+        "alias_endpoint": "/cal/v2/schedules/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/schedules#edit-an-existing-schedule"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/schedules/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/schedules/id",
+      "provider_alias_intent": "/v2/schedules/id",
       "text": "Remove an existing schedule",
       "category": "Schedules",
       "method": "DELETE",
@@ -2132,24 +2206,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing schedule",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/schedules/{id}",
-        "alias_endpoint": "/cal/v1/schedules/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/schedules#remove-an-existing-schedule"
+        "api_endpoint": "{endpoint}/v2/schedules/{id}",
+        "alias_endpoint": "/cal/v2/schedules/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/schedules#remove-an-existing-schedule"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/schedules/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/selected-calendars",
+      "provider_alias_intent": "/v2/selected-calendars",
       "text": "Find all selected calendars",
       "category": "Selected Calendars",
       "method": "GET",
@@ -2160,24 +2236,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all selected calendars",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/selected-calendars",
-        "alias_endpoint": "/cal/v1/selected-calendars",
-        "api_ref": "https://developer.cal.com/api/api-reference/selected-calendars#find-all-selected-calendars"
+        "api_endpoint": "{endpoint}/v2/selected-calendars",
+        "alias_endpoint": "/cal/v2/selected-calendars",
+        "api_ref": "https://cal.com/docs/api-reference/v2/selected-calendars#find-all-selected-calendars"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/selected-calendars",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/selected-calendars",
+      "provider_alias_intent": "/v2/selected-calendars",
       "text": "Create a new selected calendar",
       "category": "Selected Calendars",
       "method": "POST",
@@ -2201,25 +2279,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new selected calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/selected-calendars",
-        "alias_endpoint": "/cal/v1/selected-calendars",
-        "api_ref": "https://developer.cal.com/api/api-reference/selected-calendars#create-a-new-selected-calendar"
+        "api_endpoint": "{endpoint}/v2/selected-calendars",
+        "alias_endpoint": "/cal/v2/selected-calendars",
+        "api_ref": "https://cal.com/docs/api-reference/v2/selected-calendars#create-a-new-selected-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/selected-calendars",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
+      "provider_alias_intent": "/v2/selected-calendars/userId_integration_externalId",
       "text": "Find a selected calendar",
       "category": "Selected Calendars",
       "method": "GET",
@@ -2262,24 +2341,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a selected calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/selected-calendars/{userId}_{integration}_{externalId}",
-        "alias_endpoint": "/cal/v1/selected-calendars/userId_integration_externalId",
-        "api_ref": "https://developer.cal.com/api/api-reference/selected-calendars#find-a-selected-calendar"
+        "api_endpoint": "{endpoint}/v2/selected-calendars/{userId}_{integration}_{externalId}",
+        "alias_endpoint": "/cal/v2/selected-calendars/userId_integration_externalId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/selected-calendars#find-a-selected-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/selected-calendars/userId_integration_externalId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
+      "provider_alias_intent": "/v2/selected-calendars/userId_integration_externalId",
       "text": "Edit an existing selected calendar",
       "category": "Selected Calendars",
       "method": "PATCH",
@@ -2322,25 +2403,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing selected calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/selected-calendars/{userId}_{integration}_{externalId}",
-        "alias_endpoint": "/cal/v1/selected-calendars/userId_integration_externalId",
-        "api_ref": "https://developer.cal.com/api/api-reference/selected-calendars#edit-an-existing-selected-calendar"
+        "api_endpoint": "{endpoint}/v2/selected-calendars/{userId}_{integration}_{externalId}",
+        "alias_endpoint": "/cal/v2/selected-calendars/userId_integration_externalId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/selected-calendars#edit-an-existing-selected-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/selected-calendars/userId_integration_externalId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/selected-calendars/userId_integration_externalId",
+      "provider_alias_intent": "/v2/selected-calendars/userId_integration_externalId",
       "text": "Remove an existing selected calendar",
       "category": "Selected Calendars",
       "method": "DELETE",
@@ -2383,24 +2465,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing selected calendar",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/selected-calendars/{userId}_{integration}_{externalId}",
-        "alias_endpoint": "/cal/v1/selected-calendars/userId_integration_externalId",
-        "api_ref": "https://developer.cal.com/api/api-reference/selected-calendars#remove-an-existing-selected-calendar"
+        "api_endpoint": "{endpoint}/v2/selected-calendars/{userId}_{integration}_{externalId}",
+        "alias_endpoint": "/cal/v2/selected-calendars/userId_integration_externalId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/selected-calendars#remove-an-existing-selected-calendar"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/selected-calendars/userId_integration_externalId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams",
+      "provider_alias_intent": "/v2/teams",
       "text": "Find all teams",
       "category": "Teams",
       "method": "GET",
@@ -2411,24 +2495,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all teams",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams",
-        "alias_endpoint": "/cal/v1/teams",
-        "api_ref": "https://developer.cal.com/api/api-reference/teams#find-all-teams"
+        "api_endpoint": "{endpoint}/v2/teams",
+        "alias_endpoint": "/cal/v2/teams",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#find-all-teams"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams",
+      "provider_alias_intent": "/v2/teams",
       "text": "Create a new team",
       "category": "Teams",
       "method": "POST",
@@ -2452,25 +2538,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new team",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams",
-        "alias_endpoint": "/cal/v1/teams",
-        "api_ref": "https://developer.cal.com/api/api-reference/teams#create-a-new-team"
+        "api_endpoint": "{endpoint}/v2/teams",
+        "alias_endpoint": "/cal/v2/teams",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#create-a-new-team"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams/teamId",
+      "provider_alias_intent": "/v2/teams/teamId",
       "text": "Find a team",
       "category": "Teams",
       "method": "GET",
@@ -2493,24 +2580,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a team",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams/{teamId}",
-        "alias_endpoint": "/cal/v1/teams/teamId",
-        "api_ref": "https://developer.cal.com/api/api-reference/teams#find-a-team"
+        "api_endpoint": "{endpoint}/v2/teams/{teamId}",
+        "alias_endpoint": "/cal/v2/teams/teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#find-a-team"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams/teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams/teamId",
+      "provider_alias_intent": "/v2/teams/teamId",
       "text": "Edit an existing team",
       "category": "Teams",
       "method": "PATCH",
@@ -2542,25 +2631,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing team",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams/{teamId}",
-        "alias_endpoint": "/cal/v1/teams/teamId",
-        "api_ref": "https://developer.cal.com/api/api-reference/teams#edit-an-existing-team"
+        "api_endpoint": "{endpoint}/v2/teams/{teamId}",
+        "alias_endpoint": "/cal/v2/teams/teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#edit-an-existing-team"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams/teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams/teamId",
+      "provider_alias_intent": "/v2/teams/teamId",
       "text": "Remove an existing team",
       "category": "Teams",
       "method": "DELETE",
@@ -2583,24 +2673,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing team",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams/{teamId}",
-        "alias_endpoint": "/cal/v1/teams/teamId",
-        "api_ref": "https://cal.com/docs/enterprise-features/api/api-reference/teams#remove-an-existing-team"
+        "api_endpoint": "{endpoint}/v2/teams/{teamId}",
+        "alias_endpoint": "/cal/v2/teams/teamId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#remove-an-existing-team"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams/teamId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/teams/teamId/availability",
+      "provider_alias_intent": "/v2/teams/teamId/availability",
       "text": "Get team availability",
       "category": "Teams",
       "method": "GET",
@@ -2623,24 +2715,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Get team availability",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/teams/{teamId}/availability",
-        "alias_endpoint": "/cal/v1/teams/teamId/availability",
-        "api_ref": "https://cal.com/docs/enterprise-features/api/api-reference/teams#get-team-availability"
+        "api_endpoint": "{endpoint}/v2/teams/{teamId}/availability",
+        "alias_endpoint": "/cal/v2/teams/teamId/availability",
+        "api_ref": "https://cal.com/docs/api-reference/v2/teams#get-team-availability"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/teams/teamId/availability",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/users",
+      "provider_alias_intent": "/v2/users",
       "text": "Find all users",
       "category": "Users",
       "method": "GET",
@@ -2651,24 +2745,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all users",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/users",
-        "alias_endpoint": "/cal/v1/users",
-        "api_ref": "https://developer.cal.com/api/api-reference/users#find-all-users"
+        "api_endpoint": "{endpoint}/v2/users",
+        "alias_endpoint": "/cal/v2/users",
+        "api_ref": "https://cal.com/docs/api-reference/v2/users#find-all-users"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/users",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/users/userId",
+      "provider_alias_intent": "/v2/users/userId",
       "text": "Find a user",
       "category": "Users",
       "method": "GET",
@@ -2691,24 +2787,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a user",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/users/{userId}",
-        "alias_endpoint": "/cal/v1/users/userId",
-        "api_ref": "https://developer.cal.com/api/api-reference/users#find-a-user"
+        "api_endpoint": "{endpoint}/v2/users/{userId}",
+        "alias_endpoint": "/cal/v2/users/userId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/users#find-a-user"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/users/userId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/users/userId",
+      "provider_alias_intent": "/v2/users/userId",
       "text": "Edit an existing user",
       "category": "Users",
       "method": "PATCH",
@@ -2769,25 +2867,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing user",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/users/{userId}",
-        "alias_endpoint": "/cal/v1/users/userId",
-        "api_ref": "https://developer.cal.com/api/api-reference/users#edit-an-existing-user"
+        "api_endpoint": "{endpoint}/v2/users/{userId}",
+        "alias_endpoint": "/cal/v2/users/userId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/users#edit-an-existing-user"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/users/userId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/users/userId",
+      "provider_alias_intent": "/v2/users/userId",
       "text": "Remove an existing user",
       "category": "Users",
       "method": "DELETE",
@@ -2810,24 +2909,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Remove an existing user",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/users/{userId}",
-        "alias_endpoint": "/cal/v1/users/userId",
-        "api_ref": "https://developer.cal.com/api/api-reference/users#remove-an-existing-user"
+        "api_endpoint": "{endpoint}/v2/users/{userId}",
+        "alias_endpoint": "/cal/v2/users/userId",
+        "api_ref": "https://cal.com/docs/api-reference/v2/users#remove-an-existing-user"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/users/userId",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/users",
+      "provider_alias_intent": "/v2/users",
       "text": "Create a new user",
       "category": "Users",
       "method": "POST",
@@ -2879,25 +2980,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new user",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/users",
-        "alias_endpoint": "/cal/v1/users",
-        "api_ref": "https://developer.cal.com/api/api-reference/users#create-a-new-user"
+        "api_endpoint": "{endpoint}/v2/users",
+        "alias_endpoint": "/cal/v2/users",
+        "api_ref": "https://cal.com/docs/api-reference/v2/users#create-a-new-user"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/users",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/hooks",
+      "provider_alias_intent": "/v2/hooks",
       "text": "Find all webhooks",
       "category": "Webhooks",
       "method": "GET",
@@ -2908,24 +3010,26 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find all webhooks",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/hooks",
-        "alias_endpoint": "/cal/v1/hooks",
-        "api_ref": "https://developer.cal.com/api/api-reference/webhooks#find-all-webhooks"
+        "api_endpoint": "{endpoint}/v2/hooks",
+        "alias_endpoint": "/cal/v2/hooks",
+        "api_ref": "https://cal.com/docs/api-reference/v2/webhooks#find-all-webhooks"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/hooks",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/hooks",
+      "provider_alias_intent": "/v2/hooks",
       "text": "Create a new webhook",
       "category": "Webhooks",
       "method": "POST",
@@ -2986,25 +3090,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Create a new webhook",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/hooks",
-        "alias_endpoint": "/cal/v1/hooks",
-        "api_ref": "https://developer.cal.com/api/api-reference/webhooks#create-a-new-webhook"
+        "api_endpoint": "{endpoint}/v2/hooks",
+        "alias_endpoint": "/cal/v2/hooks",
+        "api_ref": "https://cal.com/docs/api-reference/v2/webhooks#create-a-new-webhook"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/hooks",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/hooks/id",
+      "provider_alias_intent": "/v2/hooks/id",
       "text": "Find a webhook",
       "category": "Webhooks",
       "method": "GET",
@@ -3027,24 +3132,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Find a webhook",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/hooks/{id}",
-        "alias_endpoint": "/cal/v1/hooks/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/webhooks#find-a-webhook"
+        "api_endpoint": "{endpoint}/v2/hooks/{id}",
+        "alias_endpoint": "/cal/v2/hooks/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/webhooks#find-a-webhook"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/hooks/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/hooks/id",
+      "provider_alias_intent": "/v2/hooks/id",
       "text": "Edit an existing webhook",
       "category": "Webhooks",
       "method": "PATCH",
@@ -3091,25 +3198,26 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Edit an existing webhook",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/hooks/{id}",
-        "alias_endpoint": "/cal/v1/hooks/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/webhooks#edit-an-existing-webhook"
+        "api_endpoint": "{endpoint}/v2/hooks/{id}",
+        "alias_endpoint": "/cal/v2/hooks/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/webhooks#edit-an-existing-webhook"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "response_type": "",
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/hooks/id",
+      "request_type": "API",
+      "response_format": {}
     },
     {
-      "provider_alias_intent": "/v1/hooks/id",
+      "provider_alias_intent": "/v2/hooks/id",
       "text": "Delete a webhook",
       "category": "Webhooks",
       "method": "DELETE",
@@ -3132,21 +3240,23 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v1",
+        "version": "v2",
         "auth": [],
         "description": "Delete a webhook",
         "rate_limit": [],
-        "api_endpoint": "{endpoint}/v1/hooks/{id}",
-        "alias_endpoint": "/cal/v1/hooks/id",
-        "api_ref": "https://developer.cal.com/api/api-reference/webhooks#delete-a-webhook"
+        "api_endpoint": "{endpoint}/v2/hooks/{id}",
+        "alias_endpoint": "/cal/v2/hooks/id",
+        "api_ref": "https://cal.com/docs/api-reference/v2/webhooks#delete-a-webhook"
       },
       "auth": {
         "query": [
           "apiKey"
         ]
       },
-      "payload_type": "",
-      "updated_at": "2025-11-11T15:37:34.821Z"
+      "updated_at": "2025-11-11T15:37:34.821Z",
+      "provider_proxy_intent": "/v2/hooks/id",
+      "request_type": "API",
+      "response_format": {}
     }
   ]
 }
