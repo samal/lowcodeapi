@@ -1,0 +1,2684 @@
+{
+  "config": {
+    "id": "x-twitter",
+    "name": "X (Formerly Twitter)",
+    "description": "",
+    "logo_url": "twitter.svg",
+    "auth_type": "OAUTH2.0",
+    "auth": {},
+    "auth_config": {},
+    "headers": {},
+    "api_endpoint": "https://api.x.com",
+    "released": 1,
+    "updated_at": "2025-03-12T06:54:55.000Z",
+    "website": "",
+    "api_link_ref": "https://developer.x.com/en/docs/x-api",
+    "total_api": 64,
+    "credential_link": ""
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/2/tweets/id",
+      "text": "Returns the data associated with the given tweet id.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the data associated with the given tweet id.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id",
+        "alias_endpoint": "/x-twitter/2/tweets/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.562Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id",
+      "text": "Returns a single List by ID.",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "list.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns a single List by ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id",
+        "alias_endpoint": "/x-twitter/2/lists/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-lookup/api-reference/get-lists-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id",
+      "text": "Delete a List owned by the authenticated user.",
+      "category": "Lists",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "list_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Delete a List owned by the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id",
+        "alias_endpoint": "/x-twitter/2/lists/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/delete-lists-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id",
+      "text": "Update a List owned by the authenticated user.",
+      "category": "Lists",
+      "method": "PUT",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "list_id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "private": {
+          "type": "boolean",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Update a List owned by the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id",
+        "alias_endpoint": "/x-twitter/2/lists/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/put-lists-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id/members",
+      "text": "Returns the members of a List.",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the members of a List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id/members",
+        "alias_endpoint": "/x-twitter/2/lists/id/members",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-members/api-reference/get-lists-id-members"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id/members",
+      "text": "Add a member to a List.",
+      "category": "Lists",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "list_id": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Add a member to a List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id/members",
+        "alias_endpoint": "/x-twitter/2/lists/id/members",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-members/api-reference/post-lists-id-members"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id/tweets",
+      "text": "Returns Tweets from the specified List.",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Tweets from the specified List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id/tweets",
+        "alias_endpoint": "/x-twitter/2/lists/id/tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-tweets/api-reference/get-lists-id-tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id/followers",
+      "text": "Returns users who are following the specified List.",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "string"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns users who are following the specified List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id/followers",
+        "alias_endpoint": "/x-twitter/2/lists/id/followers",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-follows/api-reference/get-lists-id-followers"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists",
+      "text": "Create a new List.",
+      "category": "Lists",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "private": {
+          "type": "boolean",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Create a new List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists",
+        "alias_endpoint": "/x-twitter/2/lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/manage-lists/api-reference/post-lists"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/lists/id/members/user_id",
+      "text": "Remove a member from a List.",
+      "category": "Lists",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "list_id": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Remove a member from a List.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/lists/:id/members/:user_id",
+        "alias_endpoint": "/x-twitter/2/lists/id/members/user_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-members/api-reference/delete-lists-id-members-user_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/id",
+      "text": "Delete a Tweet by ID.",
+      "category": "Tweets",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Delete a Tweet by ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id",
+        "alias_endpoint": "/x-twitter/2/tweets/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/delete-tweets-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets",
+      "text": "Returns the data associated with the given list of tweet ids.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "ids": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the data associated with the given list of tweet ids.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets",
+        "alias_endpoint": "/x-twitter/2/tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/lookup/api-reference/get-tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets",
+      "text": "Tweet on behalf of the authenticated user.",
+      "category": "Tweets",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "text": {
+          "type": "string"
+        },
+        "quote_tweet_id": {
+          "type": "string"
+        },
+        "media": {
+          "type": ""
+        },
+        "reply": {
+          "type": ""
+        },
+        "reply_settings": {
+          "type": "array"
+        },
+        "geo": {
+          "type": ""
+        },
+        "poll": {
+          "type": ""
+        },
+        "for_super_followers_only": {
+          "type": "boolean",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "direct_message_deep_link": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets",
+        "alias_endpoint": "/x-twitter/2/tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/manage-tweets/api-reference/post-tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/id/retweeted_by",
+      "text": "Returns users who have retweeted the specified Tweet.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "tweet_id": {
+          "type": "string"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns users who have retweeted the specified Tweet.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id/retweeted_by",
+        "alias_endpoint": "/x-twitter/2/tweets/id/retweeted_by",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/retweets/api-reference/get-tweets-id-retweeted_by"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/recent",
+      "text": "Search and retrieve Tweets from the last 7 days.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "since_id": {
+          "type": "string"
+        },
+        "until_id": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "number"
+        },
+        "end_time": {
+          "type": "number"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "next_token": {
+          "type": "string"
+        },
+        "search": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        },
+        "sort_order": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Search and retrieve Tweets from the last 7 days.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/recent",
+        "alias_endpoint": "/x-twitter/2/tweets/search/recent",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/id/liking_users",
+      "text": "Returns the users who liked the the given tweet.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the users who liked the the given tweet.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id/liking_users",
+        "alias_endpoint": "/x-twitter/2/tweets/id/liking_users",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/get-tweets-id-liking_users"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/id/hidden",
+      "text": "Hide or unhide replies to a Tweet.",
+      "category": "Tweets",
+      "method": "PUT",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "tweet_id": {
+          "type": "string"
+        },
+        "hidden": {
+          "type": "boolean",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Hide or unhide replies to a Tweet.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id/hidden",
+        "alias_endpoint": "/x-twitter/2/tweets/id/hidden",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/hide-replies/api-reference/put-tweets-id-hidden"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/retweets",
+      "text": "Retweet on behalf of the authenticated user, requires `userid` of the authenticated user and `tweetid` that to be retweeted.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retweet on behalf of the authenticated user, requires `userid` of the authenticated user and `tweetid` that to be retweeted.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/retweets",
+        "alias_endpoint": "/x-twitter/2/users/id/retweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/retweets/api-reference/post-users-id-retweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/retweets/source_tweet_id",
+      "text": "Unretweet a Tweet on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "source_tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unretweet a Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/retweets/:source_tweet_id",
+        "alias_endpoint": "/x-twitter/2/users/id/retweets/source_tweet_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/retweets/api-reference/delete-users-id-retweets-tweet_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/tweets",
+      "text": "Returns the tweets by a give `userid`. By default the most recent tweets are returned and using `paginationtoken` maximum **3200*** (max 800 in-case of excluding replies) tweets can be retrieved.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "since_id": {
+          "type": "string"
+        },
+        "until_id": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "number"
+        },
+        "end_time": {
+          "type": "number"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        },
+        "exclude": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the tweets by a give `userid`. By default the most recent tweets are returned and using `paginationtoken` maximum **3200*** (max 800 in-case of excluding replies) tweets can be retrieved.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/tweets",
+        "alias_endpoint": "/x-twitter/2/users/id/tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/mentions",
+      "text": "Returns Tweets mentioning the specified user.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "since_id": {
+          "type": "string"
+        },
+        "until_id": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "number"
+        },
+        "end_time": {
+          "type": "number"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Tweets mentioning the specified user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/mentions",
+        "alias_endpoint": "/x-twitter/2/users/id/mentions",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-mentions"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/timelines/reverse_chronological",
+      "text": "Returns Tweets from the user's home timeline in reverse chronological order.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "since_id": {
+          "type": "string"
+        },
+        "until_id": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "number"
+        },
+        "end_time": {
+          "type": "number"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "exclude": {
+          "type": "array"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Tweets from the user's home timeline in reverse chronological order.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/timelines/reverse_chronological",
+        "alias_endpoint": "/x-twitter/2/users/id/timelines/reverse_chronological",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/timelines/api-reference/get-users-id-reverse-chronological"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/liked_tweets",
+      "text": "Returns the list of tweet like by the user. Response is paginated and max `100` tweets can retrieved, use `paginationtoken` to retrieve the next page.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the list of tweet like by the user. Response is paginated and max `100` tweets can retrieved, use `paginationtoken` to retrieve the next page.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/liked_tweets",
+        "alias_endpoint": "/x-twitter/2/users/id/liked_tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/get-users-id-liked_tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/me",
+      "text": "Returns information about an authorized user.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns information about an authorized user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/me",
+        "alias_endpoint": "/x-twitter/2/users/me",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-me"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users",
+      "text": "Returns the list of user details of specified `userids` upto `100` userids are allowed in a single request.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_ids": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns the list of user details of specified `userids` upto `100` userids are allowed in a single request.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users",
+        "alias_endpoint": "/x-twitter/2/users",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id",
+      "text": "Returns a variety of information about a single user specified by the requested ID.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns a variety of information about a single user specified by the requested ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id",
+        "alias_endpoint": "/x-twitter/2/users/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/by/username/username",
+      "text": "Returns a variety of information about a single user specified by their username.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "username": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns a variety of information about a single user specified by their username.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/by/username/:username",
+        "alias_endpoint": "/x-twitter/2/users/by/username/username",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-by-username-username"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/by",
+      "text": "Returns a variety of information about one or more users specified by their usernames.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "usernames": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns a variety of information about one or more users specified by their usernames.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/by",
+        "alias_endpoint": "/x-twitter/2/users/by",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/lookup/api-reference/get-users-by"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/followers",
+      "text": "Returns a list of Twitter users who are following the given user, a maximum of 1000 users are returned in a single request and the remaining are paginated using nexttoken returned in the response.. The `nexttoken` becomes `paginationtoken` in the next request to fetch the next set of followers.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns a list of Twitter users who are following the given user, a maximum of 1000 users are returned in a single request and the remaining are paginated using nexttoken returned in the response.. The `nexttoken` becomes `paginationtoken` in the next request to fetch the next set of followers.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/followers",
+        "alias_endpoint": "/x-twitter/2/users/id/followers",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/get-users-id-followers"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/following",
+      "text": "Returns users the specified user is following.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns users the specified user is following.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/following",
+        "alias_endpoint": "/x-twitter/2/users/id/following",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/get-users-id-following"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/following",
+      "text": "Follow a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Follow a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/following",
+        "alias_endpoint": "/x-twitter/2/users/id/following",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/post-users-source_user_id-following"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/bookmarks",
+      "text": "Returns Tweets that the specified user has bookmarked.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Tweets that the specified user has bookmarked.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/bookmarks",
+        "alias_endpoint": "/x-twitter/2/users/id/bookmarks",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/bookmarks/api-reference/get-users-id-bookmarks"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/bookmarks",
+      "text": "Bookmark a Tweet on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Bookmark a Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/bookmarks",
+        "alias_endpoint": "/x-twitter/2/users/id/bookmarks",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/bookmarks/api-reference/post-users-id-bookmarks"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/likes",
+      "text": "Like a Tweet on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Like a Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/likes",
+        "alias_endpoint": "/x-twitter/2/users/id/likes",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/post-users-id-likes"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/likes/tweet_id",
+      "text": "Unlike a Tweet on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unlike a Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/likes/:tweet_id",
+        "alias_endpoint": "/x-twitter/2/users/id/likes/tweet_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/likes/api-reference/delete-users-id-likes-tweet_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/source_user_id/following/target_user_id",
+      "text": "Unfollow a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unfollow a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:source_user_id/following/:target_user_id",
+        "alias_endpoint": "/x-twitter/2/users/source_user_id/following/target_user_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/follows/api-reference/delete-users-source_id-following"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/muting",
+      "text": "Mute a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "source_user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Mute a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/muting",
+        "alias_endpoint": "/x-twitter/2/users/id/muting",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/delete-users-user_id-muting"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/muting",
+      "text": "Returns users the specified user has muted.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns users the specified user has muted.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/muting",
+        "alias_endpoint": "/x-twitter/2/users/id/muting",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/get-users-muting"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/source_user_id/muting/target_user_id",
+      "text": "Unmute a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "source-user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unmute a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:source_user_id/muting/:target_user_id",
+        "alias_endpoint": "/x-twitter/2/users/source_user_id/muting/target_user_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/mutes/api-reference/delete-users-user_id-muting"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/blocking",
+      "text": "Block a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Block a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/blocking",
+        "alias_endpoint": "/x-twitter/2/users/id/blocking",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/post-users-user_id-blocking"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/blocking",
+      "text": "Returns users the specified user has blocked.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "number"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns users the specified user has blocked.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/blocking",
+        "alias_endpoint": "/x-twitter/2/users/id/blocking",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/get-users-blocking"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/source_user_id/blocking/target_user_id",
+      "text": "Unblock a user on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "target_user_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unblock a user on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:source_user_id/blocking/:target_user_id",
+        "alias_endpoint": "/x-twitter/2/users/source_user_id/blocking/target_user_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/users/blocks/api-reference/delete-users-user_id-blocking"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/bookmarks/tweet_id",
+      "text": "Remove a bookmark from a Tweet on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "tweet_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Remove a bookmark from a Tweet on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/bookmarks/:tweet_id",
+        "alias_endpoint": "/x-twitter/2/users/id/bookmarks/tweet_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/bookmarks/api-reference/delete-users-id-bookmarks-tweet_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/owned_lists",
+      "text": "Returns Lists owned by the specified user.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "string"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "list.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Lists owned by the specified user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/owned_lists",
+        "alias_endpoint": "/x-twitter/2/users/id/owned_lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-lookup/api-reference/get-users-id-owned_lists"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/list_memberships",
+      "text": "Returns Lists the specified user is a member of.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "user_id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "list.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Lists the specified user is a member of.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/list_memberships",
+        "alias_endpoint": "/x-twitter/2/users/id/list_memberships",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-members/api-reference/get-users-id-list_memberships"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/pinned_lists",
+      "text": "Pin a List on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Pin a List on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/pinned_lists",
+        "alias_endpoint": "/x-twitter/2/users/id/pinned_lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/pinned-lists/api-reference/post-users-id-pinned-lists"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/pinned_lists",
+      "text": "Returns Lists pinned by the specified user.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "list_fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Lists pinned by the specified user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/pinned_lists",
+        "alias_endpoint": "/x-twitter/2/users/id/pinned_lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-members/api-reference/get-users-id-list_memberships"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/pinned_lists/list_id",
+      "text": "Unpin a List on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unpin a List on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/pinned_lists/:list_id",
+        "alias_endpoint": "/x-twitter/2/users/id/pinned_lists/list_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/pinned-lists/api-reference/delete-users-id-pinned-lists-list_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/followed_lists",
+      "text": "Follow a List on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Follow a List on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/followed_lists",
+        "alias_endpoint": "/x-twitter/2/users/id/followed_lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-follows/api-reference/delete-users-id-followed-lists-list_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/followed_lists/list_id",
+      "text": "Unfollow a List on behalf of the authenticated user.",
+      "category": "Users",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "user_id": {
+          "type": "string"
+        },
+        "list_id": {
+          "type": "string"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Unfollow a List on behalf of the authenticated user.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/followed_lists/:list_id",
+        "alias_endpoint": "/x-twitter/2/users/id/followed_lists/list_id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-follows/api-reference/delete-users-id-followed-lists-list_id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/stream",
+      "text": "Streams tweets in real-time based on a set of filter rules. This endpoint provides a continuous stream of tweets matching your specified criteria.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "backfill_minutes": {
+          "type": "number"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Streams tweets in real-time based on a set of filter rules. This endpoint provides a continuous stream of tweets matching your specified criteria.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/stream",
+        "alias_endpoint": "/x-twitter/2/tweets/search/stream",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/api-reference/get-tweets-search-stream"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/stream/rules",
+      "text": "Retrieve the list of rules currently active on the filtered stream.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "ids": {
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve the list of rules currently active on the filtered stream.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/stream/rules",
+        "alias_endpoint": "/x-twitter/2/tweets/search/stream/rules",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/api-reference/get-tweets-search-stream-rules"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/stream/rules",
+      "text": "Add or delete rules for the filtered stream.",
+      "category": "Tweets",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "add": {
+          "type": "array"
+        },
+        "delete": {
+          "type": "object"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Add or delete rules for the filtered stream.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/stream/rules",
+        "alias_endpoint": "/x-twitter/2/tweets/search/stream/rules",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/api-reference/post-tweets-search-stream-rules"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/stream/rules",
+      "text": "Delete one or more rules from the filtered stream by rule IDs.",
+      "category": "Tweets",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "ids": {
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Delete one or more rules from the filtered stream by rule IDs.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/stream/rules",
+        "alias_endpoint": "/x-twitter/2/tweets/search/stream/rules",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/filtered-stream/api-reference/delete-tweets-search-stream-rules"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/search/all",
+      "text": "Search all public tweets from the full archive of Twitter. This endpoint requires Academic Research access.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string"
+        },
+        "start_time": {
+          "type": "string"
+        },
+        "end_time": {
+          "type": "string"
+        },
+        "since_id": {
+          "type": "string"
+        },
+        "until_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "next_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        },
+        "sort_order": {
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Search all public tweets from the full archive of Twitter. This endpoint requires Academic Research access.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/search/all",
+        "alias_endpoint": "/x-twitter/2/tweets/search/all",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/spaces",
+      "text": "Retrieve details about multiple Spaces by their IDs.",
+      "category": "Spaces",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "ids": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "space.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "topic.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve details about multiple Spaces by their IDs.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/spaces",
+        "alias_endpoint": "/x-twitter/2/spaces",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/spaces/lookup/api-reference/get-spaces"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/spaces/id",
+      "text": "Retrieve details about a single Space by its ID.",
+      "category": "Spaces",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "space.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "topic.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve details about a single Space by its ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/spaces/:id",
+        "alias_endpoint": "/x-twitter/2/spaces/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/spaces/lookup/api-reference/get-spaces-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/spaces/by/creator_ids",
+      "text": "Retrieve Spaces created by the specified user IDs.",
+      "category": "Spaces",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_ids": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "space.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "topic.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve Spaces created by the specified user IDs.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/spaces/by/creator_ids",
+        "alias_endpoint": "/x-twitter/2/spaces/by/creator_ids",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/spaces/lookup/api-reference/get-spaces-by-creator-ids"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/spaces/search",
+      "text": "Search for Spaces matching your query criteria.",
+      "category": "Spaces",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "query": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "space.fields": {
+          "type": "array"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "topic.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Search for Spaces matching your query criteria.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/spaces/search",
+        "alias_endpoint": "/x-twitter/2/spaces/search",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/spaces/lookup/api-reference/get-spaces-search"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/compliance/jobs",
+      "text": "Retrieve compliance jobs.",
+      "category": "Compliance",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "type": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve compliance jobs.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/compliance/jobs",
+        "alias_endpoint": "/x-twitter/2/compliance/jobs",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/compliance/batch-compliance/api-reference/get-compliance-jobs"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/compliance/jobs",
+      "text": "Create a new compliance job for downloading Twitter data.",
+      "category": "Compliance",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "resumable": {
+          "type": "boolean",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Create a new compliance job for downloading Twitter data.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/compliance/jobs",
+        "alias_endpoint": "/x-twitter/2/compliance/jobs",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/compliance/batch-compliance/api-reference/post-compliance-jobs"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/compliance/jobs/id",
+      "text": "Retrieve a single compliance job by its ID.",
+      "category": "Compliance",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve a single compliance job by its ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/compliance/jobs/:id",
+        "alias_endpoint": "/x-twitter/2/compliance/jobs/id",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/compliance/batch-compliance/api-reference/get-compliance-jobs-id"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/tweets/id/quote_tweets",
+      "text": "Returns Quote Tweets for a Tweet specified by the requested Tweet ID.",
+      "category": "Tweets",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "tweet_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "tweet.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        },
+        "media.fields": {
+          "type": "array"
+        },
+        "place.fields": {
+          "type": "array"
+        },
+        "poll.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Quote Tweets for a Tweet specified by the requested Tweet ID.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/tweets/:id/quote_tweets",
+        "alias_endpoint": "/x-twitter/2/tweets/id/quote_tweets",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/tweets/quote-tweets/api-reference/get-tweets-id-quote_tweets"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    },
+    {
+      "provider_alias_intent": "/2/users/id/followed_lists",
+      "text": "Returns Lists the specified user follows.",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "user_id": {
+          "type": "string"
+        },
+        "max_results": {
+          "type": "number"
+        },
+        "pagination_token": {
+          "type": "string"
+        },
+        "expansions": {
+          "type": "array"
+        },
+        "list.fields": {
+          "type": "array"
+        },
+        "user.fields": {
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Returns Lists the specified user follows.",
+        "rate_limit": [],
+        "api_endpoint": "https://api.twitter.com/2/users/:id/followed_lists",
+        "alias_endpoint": "/x-twitter/2/users/id/followed_lists",
+        "api_ref": "https://developer.twitter.com/en/docs/twitter-api/lists/list-follows/api-reference/get-users-id-followed-lists"
+      },
+      "auth": [],
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.563Z"
+    }
+  ]
+}

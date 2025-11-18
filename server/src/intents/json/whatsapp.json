@@ -1,0 +1,1339 @@
+{
+  "config": {
+    "id": "whatsapp",
+    "name": "WhatsApp",
+    "description": "",
+    "logo_url": "whatsapp.svg",
+    "auth_type": "OAUTH2.0",
+    "auth": {},
+    "auth_config": {},
+    "headers": {},
+    "api_endpoint": "https://graph.facebook.com",
+    "released": 1,
+    "updated_at": "2025-03-12T03:43:25.000Z",
+    "website": "https://meta.com",
+    "api_link_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference",
+    "total_api": 25,
+    "credential_link": "https://developers.facebook.com/docs/whatsapp"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/messages",
+      "text": "Send a message",
+      "category": "Messages",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "audio": {
+          "type": "object",
+          "text": "A media object containing audio",
+          "required": false
+        },
+        "contacts": {
+          "type": "object",
+          "text": "A contacts object",
+          "required": false
+        },
+        "context": {
+          "type": "object",
+          "text": "An object containing the ID of a previous message you are replying to",
+          "required": false
+        },
+        "document": {
+          "type": "object",
+          "text": "A media object containing a document",
+          "required": false
+        },
+        "hsm": {
+          "type": "object",
+          "text": "Contains an hsm object",
+          "required": false
+        },
+        "image": {
+          "type": "object",
+          "text": "A media object containing an image",
+          "required": false
+        },
+        "interactive": {
+          "type": "object",
+          "text": "An interactive object",
+          "required": false
+        },
+        "location": {
+          "type": "object",
+          "text": "A location object",
+          "required": false
+        },
+        "messaging_product": {
+          "type": "string",
+          "text": "Messaging service used for the request",
+          "required": true
+        },
+        "preview_url": {
+          "type": "boolean",
+          "text": "Allows for URL previews in text messages — See the Sending URLs in Text Messages",
+          "required": false,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "recipient_type": {
+          "type": "string",
+          "text": "Currently you can only send messages to individuals"
+        },
+        "status": {
+          "type": "string",
+          "text": "A message's status"
+        },
+        "sticker": {
+          "type": "object",
+          "text": "A media object containing a sticker",
+          "required": false
+        },
+        "template": {
+          "type": "object",
+          "text": "A template object",
+          "required": false
+        },
+        "text": {
+          "type": "object",
+          "text": "A text object",
+          "required": false
+        },
+        "to": {
+          "type": "string",
+          "text": "WhatsApp ID or phone number of the customer you want to send a message to",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "text": "The type of message you want to send."
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Send a message",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/messages",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/messages",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/messages/message_id",
+      "text": "Mark message as read",
+      "category": "Messages",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "MESSAGE_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "MESSAGE_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Mark message as read",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/messages/<MESSAGE_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/messages/message_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/messages#mark-message-as-read"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/media_id/media",
+      "text": "Upload media",
+      "category": "Media",
+      "method": "POST",
+      "type": "Upload",
+      "params": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "file": {
+          "type": "file",
+          "text": "Path to the file stored in your local directory",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "text": "Type of media file being uploaded",
+          "required": true
+        },
+        "messaging_product": {
+          "type": "string",
+          "text": "Messaging service used for the request.",
+          "required": true
+        }
+      },
+      "path": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Upload media",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MEDIA_ID>/media",
+        "alias_endpoint": "/whatsapp/v22.0/media_id/media",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media#upload-media"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/media_id",
+      "text": "Retrieve Media URL",
+      "category": "Media",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "phone_number_id": {
+          "type": "string",
+          "text": "Business phone number ID"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Retrieve Media URL",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MEDIA_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/media_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media#retrieve-media-url"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/media_id",
+      "text": "Delete a specific media",
+      "category": "Media",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "phone_number_id": {
+          "type": "string",
+          "text": "Business phone number ID"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Delete a specific media",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MEDIA_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/media_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media#delete-media"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/media_url",
+      "text": "Download media from a media URL",
+      "category": "Media",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "MEDIA_URL": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "MEDIA_URL": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Download media from a media URL",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MEDIA_URL>",
+        "alias_endpoint": "/whatsapp/v22.0/media_url",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/media#download-media"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/request_code",
+      "text": "Verify Phone Number",
+      "category": "Phone Numbers",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "code_method": {
+          "type": "string",
+          "text": "Chosen method for verification",
+          "required": true
+        },
+        "language": {
+          "type": "string",
+          "text": "The language's two-character language code",
+          "required": true
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Verify Phone Number",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/request_code",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/request_code",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/phone-numbers"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/verify_code",
+      "text": "Verify Code",
+      "category": "Phone Numbers",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "code": {
+          "type": "string",
+          "text": "The verification code you received",
+          "required": true
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Verify Code",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/verify_code",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/verify_code",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/phone-numbers#verify-code"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id",
+      "text": "Get Phone Number Information",
+      "category": "Phone Numbers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Phone Number Information",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/phone-numbers#get-phone-number"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/register",
+      "text": "Migrate account",
+      "category": "Account Migration",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "messaging_product": {
+          "type": "string",
+          "text": "Messaging service used for the request",
+          "required": true
+        },
+        "pin": {
+          "type": "string",
+          "text": "A 6-digit pin you have previously set up",
+          "required": true
+        },
+        "backup.data": {
+          "type": "string",
+          "text": "The data value you get when you backup your on-premise deployment",
+          "required": true
+        },
+        "backup.password": {
+          "type": "string",
+          "text": "The password you used in the backup API of your On-Premises deployment",
+          "required": true
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Migrate account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/register",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/register",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/account-migration"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id",
+      "text": "Set Two-Step Verification",
+      "category": "Verification",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "pin": {
+          "type": "string",
+          "text": "A 6-digit PIN you wish to use for two-step verification",
+          "required": true
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Set Two-Step Verification",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/two-step-verification"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/whatsapp_business_profile",
+      "text": "Get Business Profile",
+      "category": "Business Profiles",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Business Profile",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/whatsapp_business_profile",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/whatsapp_business_profile",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/business-profiles"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/whatsapp_business_profile",
+      "text": "Update Business Profile",
+      "category": "Business Profiles",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "about": {
+          "type": "string",
+          "text": "The business's About text"
+        },
+        "address": {
+          "type": "string",
+          "text": "Address of the business"
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the business"
+        },
+        "email": {
+          "type": "string",
+          "text": "The contact email address (in valid email format) of the business"
+        },
+        "messaging_product": {
+          "type": "string",
+          "text": "The messaging service used for the request",
+          "required": true
+        },
+        "profile_picture_url": {
+          "type": "string",
+          "text": "Handle of the profile picture"
+        },
+        "vertical": {
+          "type": "string",
+          "text": "Industry of the business"
+        },
+        "websites": {
+          "type": "array",
+          "text": "The URLs associated with the business"
+        }
+      },
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Update Business Profile",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/whatsapp_business_profile",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/whatsapp_business_profile",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/business-profiles"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/from_phone_number_id/deregister",
+      "text": "Deregister a Business Phone Number",
+      "category": "Registration",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "FROM_PHONE_NUMBER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Deregister a Business Phone Number",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<FROM_PHONE_NUMBER_ID>/deregister",
+        "alias_endpoint": "/whatsapp/v22.0/from_phone_number_id/deregister",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/registration"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/whatsapp_business_account_id/message_templates",
+      "text": "Create Message Template",
+      "category": "Templates",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the template",
+          "required": true
+        },
+        "language": {
+          "type": "string",
+          "text": "Language code of the template",
+          "required": true
+        },
+        "category": {
+          "type": "string",
+          "text": "Category of the template",
+          "required": true
+        },
+        "components": {
+          "type": "array",
+          "text": "Array of template components",
+          "required": true
+        }
+      },
+      "path": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Create Message Template",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<WHATSAPP_BUSINESS_ACCOUNT_ID>/message_templates",
+        "alias_endpoint": "/whatsapp/v22.0/whatsapp_business_account_id/message_templates",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/message-templates"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/whatsapp_business_account_id/message_templates",
+      "text": "Get Message Templates",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of templates to retrieve"
+        },
+        "name": {
+          "type": "string",
+          "text": "Filter by template name"
+        },
+        "status": {
+          "type": "string",
+          "text": "Filter by template status"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Message Templates",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<WHATSAPP_BUSINESS_ACCOUNT_ID>/message_templates",
+        "alias_endpoint": "/whatsapp/v22.0/whatsapp_business_account_id/message_templates",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/message-templates#get-templates"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/message_template_id",
+      "text": "Delete Message Template",
+      "category": "Templates",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "MESSAGE_TEMPLATE_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "MESSAGE_TEMPLATE_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Delete Message Template",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MESSAGE_TEMPLATE_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/message_template_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/message-templates#delete-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/message_template_id",
+      "text": "Get Message Template",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "MESSAGE_TEMPLATE_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "MESSAGE_TEMPLATE_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Message Template",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<MESSAGE_TEMPLATE_ID>",
+        "alias_endpoint": "/whatsapp/v22.0/message_template_id",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/message-templates#get-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/whatsapp_business_account_id/conversations",
+      "text": "Get Conversations",
+      "category": "Conversations",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of conversations to retrieve"
+        },
+        "user_id": {
+          "type": "string",
+          "text": "Filter by user ID"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Conversations",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<WHATSAPP_BUSINESS_ACCOUNT_ID>/conversations",
+        "alias_endpoint": "/whatsapp/v22.0/whatsapp_business_account_id/conversations",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/conversations"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/whatsapp_business_account_id/conversations",
+      "text": "Mark Conversation as Read",
+      "category": "Conversations",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "conversation_id": {
+          "type": "string",
+          "text": "ID of the conversation to mark as read",
+          "required": true
+        }
+      },
+      "path": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Mark Conversation as Read",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<WHATSAPP_BUSINESS_ACCOUNT_ID>/conversations",
+        "alias_endpoint": "/whatsapp/v22.0/whatsapp_business_account_id/conversations",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/conversations#mark-as-read"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/app_id/subscriptions",
+      "text": "Create Webhook Subscription",
+      "category": "Webhooks",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "object": {
+          "type": "string",
+          "text": "Object type to subscribe to",
+          "required": true
+        },
+        "callback_url": {
+          "type": "string",
+          "text": "URL to receive webhook notifications",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to subscribe to",
+          "required": true
+        },
+        "verify_token": {
+          "type": "string",
+          "text": "Token for webhook verification",
+          "required": true
+        }
+      },
+      "path": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Create Webhook Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<APP_ID>/subscriptions",
+        "alias_endpoint": "/whatsapp/v22.0/app_id/subscriptions",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/app_id/subscriptions",
+      "text": "Get Webhook Subscriptions",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Webhook Subscriptions",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<APP_ID>/subscriptions",
+        "alias_endpoint": "/whatsapp/v22.0/app_id/subscriptions",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks#get-subscriptions"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/app_id/subscriptions",
+      "text": "Delete Webhook Subscription",
+      "category": "Webhooks",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        },
+        "object": {
+          "type": "string",
+          "text": "Object type to unsubscribe from",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "APP_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Delete Webhook Subscription",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<APP_ID>/subscriptions",
+        "alias_endpoint": "/whatsapp/v22.0/app_id/subscriptions",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks#delete-subscription"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    },
+    {
+      "provider_alias_intent": "/v22.0/whatsapp_business_account_id/analytics",
+      "text": "Get Analytics",
+      "category": "Analytics",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        },
+        "start": {
+          "type": "string",
+          "text": "Start date for analytics (YYYY-MM-DD)"
+        },
+        "end": {
+          "type": "string",
+          "text": "End date for analytics (YYYY-MM-DD)"
+        },
+        "granularity": {
+          "type": "string",
+          "text": "Granularity of the analytics data"
+        },
+        "phone_numbers": {
+          "type": "array",
+          "text": "Phone number IDs to filter by"
+        },
+        "metric_types": {
+          "type": "array",
+          "text": "Types of metrics to retrieve"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "WHATSAPP_BUSINESS_ACCOUNT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v22.0",
+        "auth": [],
+        "description": "Get Analytics",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v22.0/<WHATSAPP_BUSINESS_ACCOUNT_ID>/analytics",
+        "alias_endpoint": "/whatsapp/v22.0/whatsapp_business_account_id/analytics",
+        "api_ref": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/analytics"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.623Z"
+    }
+  ]
+}
