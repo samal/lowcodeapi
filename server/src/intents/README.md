@@ -1,125 +1,57 @@
-## Use the official api reference link to update and add missing endpoints.
+## Available Connectors
 
-Provider| API Reference Link
-anthropic|https://docs.claude.com/en/api/overview
-ashbyhq|https://developers.ashbyhq.com/reference/introduction
-assemblyai|https://www.assemblyai.com/docs/api-reference/overview
-awss3|https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html
-awsses|https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html
-base64ai|https://documenter.getpostman.com/view/10132588/SWT5hfdz
-beyondwords|https://developers.beyondwords.io/reference/api-overview
-bullhorn|https://bullhorn.github.io/rest-api-docs/index.html#general-conventions
-cal|https://cal.com/docs/api-reference/v1/introduction
-cloudflare-r2|https://developers.cloudflare.com/r2/api
-cohere|https://docs.cohere.com/reference/about
-colossyan|https://docs.colossyan.com/
-convertkit|https://developers.kit.com/v4#introduction
-copyai|https://docs.copy.ai/reference/authentication
-crelate|https://app.crelate.com/api3/docs/index.html
-customgptai|https://docs.customgpt.ai/reference/i-api-homepage
-deepseek|https://api-docs.deepseek.com
-descript|https://docs.descriptapi.com/#section/Authentication
-discord|https://discord.com/developers/docs/reference
-dropbox|https://dropbox.github.io/dropbox-api-v2-explorer/
-elevenlabs|https://elevenlabs.io/docs/api-reference/introduction
-freshdesk|https://developers.freshdesk.com/api
-github|
-gmail|https://developers.google.com/gmail
-googlecalendar|https://developers.google.com/calendar/api/v3/reference
-googledocs|https://developers.google.com/docs/api/reference/rest
-googledrive|https://developers.google.com/drive/api/reference/rest/v3
-googleforms|https://developers.google.com/forms/api/reference/rest
-googlesheets|https://developers.google.com/sheets/api/reference/rest
-gorgias|https://developers.gorgias.com/docs
-gumroad|https://app.gumroad.com/api
-heygen|https://docs.heygen.com/reference/authentication
-hive|https://developers.hive.com/reference/introduction
-hubspot|https://developers.hubspot.com
-humeai|https://dev.hume.ai/reference/empathic-voice-interface-evi/tools/list-tools
-jasper|https://developers.jasper.ai/reference/command-3
-klaviyo|https://developers.klaviyo.com/en/docs
-leapai|https://docs.tryleap.ai/api-reference/getting-started
-lemonsqueezy|https://docs.lemonsqueezy.com/api
-letterdrop|https://docs.letterdrop.com/api
-lilt|https://developers.lilt.com/api
-linguix|https://help.linguix.com/docs/linguix-api/linguix-checker-rest-api/
-lovo|https://docs.genny.lovo.ai/reference/sync-tts
-mailchimp|https://mailchimp.com/developer/transactional/api/
-mailersend|https://developers.mailersend.com
-mailgun|https://documentation.mailgun.com/docs/mailgun/api-reference/intro/
-mailjet|https://dev.mailjet.com/email/reference/
-mistralai|https://docs.mistral.ai
-name|https://www.name.com/api-docs
-namecheap|https://www.namecheap.com/support/api/intro/
-nanonets|https://nanonets.com/documentation
-notion|https://developers.notion.com
-olamaps|https://maps.olakrutrim.com/apidocs
-openai|https://platform.openai.com/docs/api-reference/introduction
-perplexityai|https://docs.perplexity.ai/api-reference
-pexels|https://www.pexels.com/api/documentation
-pixabay|https://pixabay.com/api/docs/
-playht|https://docs.play.ht/reference/api-getting-started
-porkbun|https://porkbun.com/api/json/v3/documentation
-postmark|https://postmarkapp.com/developer/
-razorpay|https://razorpay.com/docs
-replicate|https://replicate.com/docs
-resembleai|https://docs.app.resemble.ai/docs/getting_started/quick_start
-resend|https://resend.com/docs/api-reference
-rossum|https://elis.rossum.ai/api/docs/#api-reference
-rows|https://developers.rows.com/#tag/Workspace/
-runwayml|https://docs.dev.runwayml.com/api
-scenario|https://docs.scenario.com/docs/getting-started
-sendfox|https://help.sendfox.com/article/278-endpoints
-sendgrid|https://www.twilio.com/docs/sendgrid/api-reference
-shopify|https://shopify.dev/docs/api/admin-rest
-smallestai|https://awaaz-docs.smallest.ai/introduction
-spaceship|https://docs.spaceship.dev
-squadcast|https://developers.squadcast.fm/reference
-stabilityai|https://platform.stability.ai/docs/getting-started
-strava|https://developers.strava.com/docs/reference
-stripe|https://stripe.com/docs
-telegram|https://core.telegram.org/api
-textcortex|https://docs.textcortex.com/api
-trello|https://developer.atlassian.com/cloud/trello/res
-twelvelabs|https://docs.twelvelabs.io/reference/api-reference
-twitter|
-unrealspeech|https://docs.unrealspeech.com/reference/getting-started-with-our-api
-unsplash|https://unsplash.com/documentation
-voicegainai|https://console.voicegain.ai/api/v1/index.html#tag/transcribe
-voicemaker|https://www.developer.voicemaker.in/apidocs
-voicerss|https://www.voicerss.org/api/
-whatsapp|https://developers.facebook.com/docs/whatsapp/cloud-api/reference
-wordpress|https://developer.wordpress.org/docs
-writerai|https://dev.writer.com/api-guides/introduction
-xero|https://developer.xero.com/documentation/api/accounting/overview
-yepicai|https://docs.yepic.ai
-zendesk|https://developer.zendesk.com/documentation
-zohoanalytics|https://www.zoho.com/analytics/api/v2/introduction.html
-zohoassist|https://www.zoho.com/assist/api/introduction.html
-zohobookings|https://www.zoho.com/bookings/help/api/v1/generate-accesstoken.html
-zohobugtracker|https://www.zoho.com/projects/help/rest-api/bugtracker-portal-api.html
-zohocalendar|https://www.zoho.com/calendar/help/api/introduction.html
-zohocampaigns|https://www.zoho.com/campaigns/help/developers/
-zohocommerce|https://www.zoho.com/commerce/api/introduction.html
-zohoconnect|https://www.zoho.com/connect/api/intro.html
-zohocontracts|https://www.zoho.com/contracts/api/introduction.html
-zohocrm|https://www.zoho.com/crm/developer/docs/api/v6/
-zohoexpense|https://www.zoho.com/expense/api/v1/introduction
-zohofsm|https://www.zoho.com/fsm/developer/help/api
-zohoinventory|https://www.zoho.com/inventory/api/v1
-zohoinvoice|https://www.zoho.com/invoice/api/v3/introduction
-zoholens|https://www.zoho.com/lens/resources/api/introduction.html
-zohomail|https://www.zoho.com/mail/help/api/overview.html
-zohomarketing|https://www.zoho.com/marketingautomation/help/developers/v1
-zohopeople|https://www.zoho.com/people/api/overview.html
-zohoprojects|https://www.zoho.com/projects/help/rest-api/zohoprojectsapi.html
-zohosalesiq|https://www.zoho.com/salesiq/help/developer-section/rest-api-new.html
-zohosheet|https://www.zoho.com/sheet/help/api/v2/
-zohosign|https://www.zoho.com/sign/api/
-zohotables|https://tables.zoho.com/help/api/v1
-zohowebinar|https://www.zoho.com/meeting/api-integration/webinar-api.html
-zohoworkdrive|https://workdrive.zoho.com/apidocs/v1/overview
-zohoworkely|https://www.zoho.com/workerly/developer-guide/whats-new.html
-zohowriter|https://www.zoho.com/writer/help/api/v1/getting-started.html
-zohozeptomail|https://www.zoho.com/zeptomail/email-api.html
+Use the official API reference link to update and add missing endpoints.
 
+| Connector | Logo | API Reference Link |
+|-----------|------|-------------------|
+|Anthropic|![Anthropic](../../ui/public/images/providers/logos/anthropic.svg)|https://docs.claude.com/en/api/overview|
+|AssemblyAI|![AssemblyAI](../../ui/public/images/providers/logos/assemblyai.svg)|https://www.assemblyai.com/docs/api-reference/overview|
+|AWS S3|![AWS S3](../../ui/public/images/providers/logos/awss3.svg)|https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html|
+|AWS SES|![AWS SES](../../ui/public/images/providers/logos/awsses.svg)|https://docs.aws.amazon.com/AmazonS3/latest/API/Type_API_Reference.html|
+|BeyondWords |![BeyondWords ](../../ui/public/images/providers/logos/beyondwords.svg)|https://developers.beyondwords.io/reference/api-overview|
+|Cal|![Cal](../../ui/public/images/providers/logos/cal.svg)|https://cal.com/docs/api-reference/v1/introduction|
+|Cloudflare|![Cloudflare](../../ui/public/images/providers/logos/cloudflare.svg)||
+|Cloudflare R2|![Cloudflare R2](../../ui/public/images/providers/logos/cloudflare-r2.svg)|https://developers.cloudflare.com/r2/api|
+|Cohere|![Cohere](../../ui/public/images/providers/logos/cohere.svg)|https://docs.cohere.com/reference/about|
+|CustomGPT.ai|![CustomGPT.ai](../../ui/public/images/providers/logos/customgptai.svg)|https://docs.customgpt.ai/reference/i-api-homepage|
+|DeepSeek|![DeepSeek](../../ui/public/images/providers/logos/deepseek.svg)|https://api-docs.deepseek.com|
+|Descript|![Descript](../../ui/public/images/providers/logos/descript.svg)|https://docs.descriptapi.com/#section/Authentication|
+|Dodo Payments|![Dodo Payments](../../ui/public/images/providers/logos/dodopayments.svg)||
+|ElevenLabs|![ElevenLabs](../../ui/public/images/providers/logos/elevenlabs.svg)|https://elevenlabs.io/docs/api-reference/introduction|
+|Github|![Github](../../ui/public/images/providers/logos/github.svg)||
+|GitLab|![GitLab](../../ui/public/images/providers/logos/gitlab.svg)||
+|Gmail|![Gmail](../../ui/public/images/providers/logos/gmail.svg)|https://developers.google.com/gmail|
+|Google Calendar|![Google Calendar](../../ui/public/images/providers/logos/googlecalendar.svg)|https://developers.google.com/calendar/api/v3/reference|
+|Google Docs|![Google Docs](../../ui/public/images/providers/logos/googledocs.svg)|https://developers.google.com/docs/api/reference/rest|
+|Google Drive|![Google Drive](../../ui/public/images/providers/logos/googledrive.svg)|https://developers.google.com/drive/api/reference/rest/v3|
+|Google Forms|![Google Forms](../../ui/public/images/providers/logos/googleforms.svg)|https://developers.google.com/forms/api/reference/rest|
+|Google Sheets|![Google Sheets](../../ui/public/images/providers/logos/googlesheets.svg)|https://developers.google.com/sheets/api/reference/rest|
+|Heygen AI|![Heygen AI](../../ui/public/images/providers/logos/heygen.svg)|https://docs.heygen.com/reference/authentication|
+|Hume AI|![Hume AI](../../ui/public/images/providers/logos/humeai.svg)|https://dev.hume.ai/reference/empathic-voice-interface-evi/tools/list-tools|
+|Jasper|![Jasper](../../ui/public/images/providers/logos/jasper.svg)|https://developers.jasper.ai/reference/command-3|
+|Leap AI|![Leap AI](../../ui/public/images/providers/logos/leapai.svg)|https://docs.tryleap.ai/api-reference/getting-started|
+|Mailgun|![Mailgun](../../ui/public/images/providers/logos/mailgun.svg)|https://documentation.mailgun.com/docs/mailgun/api-reference/intro/|
+|Mistral AI|![Mistral AI](../../ui/public/images/providers/logos/mistralai.svg)|https://docs.mistral.ai|
+|Nanonets|![Nanonets](../../ui/public/images/providers/logos/nanonets.svg)|https://nanonets.com/documentation|
+|Notion|![Notion](../../ui/public/images/providers/logos/notion.svg)|https://developers.notion.com|
+|OpenAI|![OpenAI](../../ui/public/images/providers/logos/openai.svg)|https://platform.openai.com/docs/api-reference/introduction|
+|Perplexity AI|![Perplexity AI](../../ui/public/images/providers/logos/perplexityai.svg)|https://docs.perplexity.ai/api-reference|
+|Razorpay|![Razorpay](../../ui/public/images/providers/logos/razorpay.svg)|https://razorpay.com/docs|
+|Replicate|![Replicate](../../ui/public/images/providers/logos/replicate.svg)|https://replicate.com/docs|
+|Resemble AI|![Resemble AI](../../ui/public/images/providers/logos/resembleai.svg)|https://docs.app.resemble.ai/docs/getting_started/quick_start|
+|Resend|![Resend](../../ui/public/images/providers/logos/resend.svg)|https://resend.com/docs/api-reference|
+|runwayml|![runwayml](../../ui/public/images/providers/logos/runwayml.svg)|https://docs.dev.runwayml.com/api|
+|Scenario|![Scenario](../../ui/public/images/providers/logos/scenario.svg)|https://docs.scenario.com/docs/getting-started|
+|Smallest AI|![Smallest AI](../../ui/public/images/providers/logos/smallestai.svg)|https://awaaz-docs.smallest.ai/introduction|
+|Stability AI|![Stability AI](../../ui/public/images/providers/logos/stabilityai.svg)|https://platform.stability.ai/docs/getting-started|
+|Stripe|![Stripe](../../ui/public/images/providers/logos/stripe.svg)|https://stripe.com/docs|
+|Telegram|![Telegram](../../ui/public/images/providers/logos/telegram.svg)|https://core.telegram.org/api|
+|TextCortex|![TextCortex](../../ui/public/images/providers/logos/textcortex.svg)|https://docs.textcortex.com/api|
+|Twelve Labs|![Twelve Labs](../../ui/public/images/providers/logos/twelvelabs.svg)|https://docs.twelvelabs.io/reference/api-reference|
+|Unreal Speech|![Unreal Speech](../../ui/public/images/providers/logos/unrealspeech.svg)|https://docs.unrealspeech.com/reference/getting-started-with-our-api|
+|Voice rss|![Voice rss](../../ui/public/images/providers/logos/voicerss.svg)|https://www.voicerss.org/api/|
+|VoiceGain AI|![VoiceGain AI](../../ui/public/images/providers/logos/voicegainai.svg)|https://console.voicegain.ai/api/v1/index.html#tag/transcribe|
+|Voicemaker|![Voicemaker](../../ui/public/images/providers/logos/voicemaker.svg)|https://www.developer.voicemaker.in/apidocs|
+|Writer AI|![Writer AI](../../ui/public/images/providers/logos/writerai.svg)|https://dev.writer.com/api-guides/introduction|
+|Yepic AI|![Yepic AI](../../ui/public/images/providers/logos/yepicai.svg)|https://docs.yepic.ai|
+|YouTube|![YouTube](../../ui/public/images/providers/logos/youtube.svg)||
