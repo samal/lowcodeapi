@@ -81,6 +81,15 @@ For detailed setup instructions, see the [Getting Started Guide](./guide/how-to-
 - **[UI Documentation](./ui/README.md)** - Frontend development guide
 - **[Contributing Guide](./CONTRIBUTING.md)** - How to contribute
 
+## Sponsor
+
+Support the development and maintenance of LowCodeAPI:
+
+- **[Cursor Subscription](https://cursor.sh/)** - AI-powered code editor
+- **[Claude Code](https://www.anthropic.com/claude)** - AI coding assistant by Anthropic
+- **[Buy Me a Coffee](https://www.buymeacoffee.com/)** - One-time donations
+- **Maintenance Support** - Ongoing project maintenance and updates
+
 ## License
 
 This project is licensed under the AGPL-3.0 License - see the [LICENSE](./LICENSE) file for details.
