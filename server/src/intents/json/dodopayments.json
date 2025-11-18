@@ -1,8 +1,52 @@
 {
-  "config": {},
+  "config": {
+    "id": "dodopayments",
+    "name": "Dodo Payments",
+    "description": "",
+    "logo_url": "dodopayments.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "api_key",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "endpoint",
+        "type": "input",
+        "field": "input",
+        "label": "Dodo Payments Endpoint",
+        "message": "Enter Dodo Payments endpoint, {endpoint}, https://live.dodopayments.com",
+        "required": true,
+        "className": "",
+        "placeholder": "{endpoint}"
+      },
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Key",
+        "message": "This API key will be used for accessing Dodo Payments APIs.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "{endpoint}",
+    "released": 1,
+    "updated_at": "2025-01-28T12:00:00.000Z",
+    "website": "https://dodopayments.com",
+    "api_link_ref": "https://docs.dodopayments.com/api-reference",
+    "total_api": 34,
+    "credential_link": "https://dodopayments.com"
+  },
   "routes": [
     {
       "provider_alias_intent": "/payments",
+      "provider_proxy_intent": "/payments",
       "text": "List Payments",
       "category": "Payments",
       "method": "GET",
@@ -28,7 +72,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all payments associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/payments"
+        "api_endpoint": "{endpoint}/payments"
       },
       "auth": [],
       "response_format": {},
@@ -36,6 +80,7 @@
     },
     {
       "provider_alias_intent": "/payments/payment_id",
+      "provider_proxy_intent": "/payments/payment_id",
       "text": "Get Payment Detail",
       "category": "Payments",
       "method": "GET",
@@ -58,7 +103,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific payment.",
-        "api_endpoint": " https://test.dodopayments.com/payments/{payment_id} "
+        "api_endpoint": "{endpoint}/payments/{payment_id}"
       },
       "auth": [],
       "response_format": {
@@ -115,6 +160,7 @@
     },
     {
       "provider_alias_intent": "/licenses/activate",
+      "provider_proxy_intent": "/licenses/activate",
       "text": "Activate License",
       "category": "Licenses",
       "method": "POST",
@@ -138,11 +184,11 @@
       "domain_params": {},
       "meta": {
         "auth": [],
-        "api_ref": "",
+        "api_ref": "https://docs.dodopayments.com/api-reference/licenses/activate-license",
         "version": "",
         "rate_limit": [],
         "description": "This endpoint allows you to activate a license for the user.",
-        "api_endpoint": "https://test.dodopayments.com/licenses/activate"
+        "api_endpoint": "{endpoint}/licenses/activate"
       },
       "auth": [],
       "response_format": {},
@@ -150,6 +196,7 @@
     },
     {
       "provider_alias_intent": "/licenses/deactivate",
+      "provider_proxy_intent": "/licenses/deactivate",
       "text": "Deactivate License",
       "category": "Licenses",
       "method": "POST",
@@ -177,7 +224,7 @@
         "version": "",
         "rate_limit": [],
         "description": "This endpoint allows you to deactivate a license for the user.",
-        "api_endpoint": "https://test.dodopayments.com/licenses/deactivate"
+        "api_endpoint": "{endpoint}/licenses/deactivate"
       },
       "auth": [],
       "response_format": {},
@@ -185,6 +232,7 @@
     },
     {
       "provider_alias_intent": "/licenses/validate",
+      "provider_proxy_intent": "/licenses/validate",
       "text": "Validate License",
       "category": "Licenses",
       "method": "POST",
@@ -211,7 +259,7 @@
         "version": "",
         "rate_limit": [],
         "description": "This endpoint allows you to validate a license for the user.",
-        "api_endpoint": "https://test.dodopayments.com/licenses/validate"
+        "api_endpoint": "{endpoint}/licenses/validate"
       },
       "auth": [],
       "response_format": {},
@@ -219,6 +267,7 @@
     },
     {
       "provider_alias_intent": "/license_keys",
+      "provider_proxy_intent": "/license_keys",
       "text": "Get License Keys",
       "category": "Licenses",
       "method": "GET",
@@ -256,7 +305,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Retrieve a list of license keys associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/license_keys"
+        "api_endpoint": "{endpoint}/license_keys"
       },
       "auth": [],
       "response_format": {},
@@ -264,6 +313,7 @@
     },
     {
       "provider_alias_intent": "/license_keys/id",
+      "provider_proxy_intent": "/license_keys/id",
       "text": "Get License Key",
       "category": "Licenses",
       "method": "GET",
@@ -286,7 +336,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Retrieve the details of a specific license key by its ID.",
-        "api_endpoint": "https://test.dodopayments.com/license_keys/{id}"
+        "api_endpoint": "{endpoint}/license_keys/{id}"
       },
       "auth": [],
       "response_format": {},
@@ -294,6 +344,7 @@
     },
     {
       "provider_alias_intent": "/license_keys/id",
+      "provider_proxy_intent": "/license_keys/id",
       "text": "Update License Key",
       "category": "Licenses",
       "method": "PATCH",
@@ -329,7 +380,7 @@
         "version": "",
         "rate_limit": [],
         "description": "This endpoint allows you to update a license key by its ID.",
-        "api_endpoint": "https://test.dodopayments.com/license_keys/{id}"
+        "api_endpoint": "{endpoint}/license_keys/{id}"
       },
       "auth": [],
       "response_format": {},
@@ -337,6 +388,7 @@
     },
     {
       "provider_alias_intent": "/subscriptions/subscription_id",
+      "provider_proxy_intent": "/subscriptions/subscription_id",
       "text": "Get Subscription Detail",
       "category": "Subscriptions",
       "method": "GET",
@@ -359,7 +411,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific subscription.",
-        "api_endpoint": "https://test.dodopayments.com/subscriptions/{subscription_id}"
+        "api_endpoint": "{endpoint}/subscriptions/{subscription_id}"
       },
       "auth": [],
       "response_format": {
@@ -387,6 +439,7 @@
     },
     {
       "provider_alias_intent": "/license_key_instances",
+      "provider_proxy_intent": "/license_key_instances",
       "text": "Get License Key Instances",
       "category": "Licenses",
       "method": "GET",
@@ -416,7 +469,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Retrieve a list of instances for a specific license key.",
-        "api_endpoint": "https://test.dodopayments.com/license_key_instances"
+        "api_endpoint": "{endpoint}/license_key_instances"
       },
       "auth": [],
       "response_format": [
@@ -436,6 +489,7 @@
     },
     {
       "provider_alias_intent": "/license_key_instances/id",
+      "provider_proxy_intent": "/license_key_instances/id",
       "text": "Update License Key Instance",
       "category": "Licenses",
       "method": "PATCH",
@@ -464,7 +518,7 @@
         "version": "",
         "rate_limit": [],
         "description": "This endpoint allows you to update a specific license key instance by its ID.",
-        "api_endpoint": "https://test.dodopayments.com/license_key_instances/{id}"
+        "api_endpoint": "{endpoint}/license_key_instances/{id}"
       },
       "auth": [],
       "response_format": {},
@@ -472,6 +526,7 @@
     },
     {
       "provider_alias_intent": "/customers",
+      "provider_proxy_intent": "/customers",
       "text": "Create Customer",
       "category": "Customers",
       "method": "POST",
@@ -503,7 +558,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Create a new customer in your Dodo Payments account.",
-        "api_endpoint": "https://test.dodopayments.com/customers"
+        "api_endpoint": "{endpoint}/customers"
       },
       "auth": [],
       "response_format": {
@@ -518,6 +573,7 @@
     },
     {
       "provider_alias_intent": "/customers",
+      "provider_proxy_intent": "/customers",
       "text": "List Customers",
       "category": "Customers",
       "method": "GET",
@@ -543,7 +599,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all customers associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/customers"
+        "api_endpoint": "{endpoint}/customers"
       },
       "auth": [],
       "response_format": {
@@ -562,6 +618,7 @@
     },
     {
       "provider_alias_intent": "/customers/customer_id",
+      "provider_proxy_intent": "/customers/customer_id",
       "text": "Get Customer Detail",
       "category": "Customers",
       "method": "GET",
@@ -584,7 +641,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific customer.",
-        "api_endpoint": "https://test.dodopayments.com/customers/{customer_id}"
+        "api_endpoint": "{endpoint}/customers/{customer_id}"
       },
       "auth": [],
       "response_format": {
@@ -599,6 +656,7 @@
     },
     {
       "provider_alias_intent": "/customers/customer_id",
+      "provider_proxy_intent": "/customers/customer_id",
       "text": "Patch Customer",
       "category": "Customers",
       "method": "PATCH",
@@ -629,8 +687,8 @@
         "api_ref": "https://docs.dodopayments.com/api-reference/customers/patch-customer",
         "version": "",
         "rate_limit": [],
-        "description": "Update a customer’s information.",
-        "api_endpoint": "https://test.dodopayments.com/customers/{customer_id}"
+        "description": "Update a customer\u2019s information.",
+        "api_endpoint": "{endpoint}/customers/{customer_id}"
       },
       "auth": [],
       "response_format": {
@@ -645,6 +703,7 @@
     },
     {
       "provider_alias_intent": "/webhook_events",
+      "provider_proxy_intent": "/webhook_events",
       "text": "List Webhook Events",
       "category": "Webhooks",
       "method": "GET",
@@ -686,7 +745,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all webhook events associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/webhook_events "
+        "api_endpoint": "{endpoint}/webhook_events"
       },
       "auth": [],
       "response_format": {
@@ -707,6 +766,7 @@
     },
     {
       "provider_alias_intent": "/webhook_events/webhook_event_id",
+      "provider_proxy_intent": "/webhook_events/webhook_event_id",
       "text": "Get Webhook Event Detail",
       "category": "Webhooks",
       "method": "GET",
@@ -729,7 +789,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific webhook event.",
-        "api_endpoint": "https://test.dodopayments.com/webhook_events/{webhook_event_id}"
+        "api_endpoint": "{endpoint}/webhook_events/{webhook_event_id}"
       },
       "auth": [],
       "response_format": {
@@ -746,6 +806,7 @@
     },
     {
       "provider_alias_intent": "/your-webhook-url",
+      "provider_proxy_intent": "/your-webhook-url",
       "text": "Outgoing Webhooks",
       "category": "Webhooks",
       "method": "POST",
@@ -783,7 +844,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Send a POST request to your webhook URL to receive notifications about events that occur in your account.",
-        "api_endpoint": "https://test.dodopayments.com/your-webhook-url"
+        "api_endpoint": "{endpoint}/your-webhook-url"
       },
       "auth": [],
       "response_format": {},
@@ -791,6 +852,7 @@
     },
     {
       "provider_alias_intent": "/products/id/images",
+      "provider_proxy_intent": "/products/id/images",
       "text": "Update Product Images",
       "category": "Products",
       "method": "PUT",
@@ -812,8 +874,8 @@
         "api_ref": "https://docs.dodopayments.com/api-reference/products/put-products-images",
         "version": "",
         "rate_limit": [],
-        "description": "Update a product’s images.",
-        "api_endpoint": "https://test.dodopayments.com/products/{id}/images"
+        "description": "Update a product\u2019s images.",
+        "api_endpoint": "{endpoint}/products/{id}/images"
       },
       "auth": [],
       "response_format": {
@@ -823,6 +885,7 @@
     },
     {
       "provider_alias_intent": "/refunds",
+      "provider_proxy_intent": "/refunds",
       "text": "List Refunds",
       "category": "Refunds",
       "method": "GET",
@@ -848,7 +911,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all refunds associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/refunds"
+        "api_endpoint": "{endpoint}/refunds"
       },
       "auth": [],
       "response_format": {
@@ -869,6 +932,7 @@
     },
     {
       "provider_alias_intent": "/refunds",
+      "provider_proxy_intent": "/refunds",
       "text": "Create Refund",
       "category": "Refunds",
       "method": "POST",
@@ -899,7 +963,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Create a refund for a payment.",
-        "api_endpoint": "https://test.dodopayments.com/refunds"
+        "api_endpoint": "{endpoint}/refunds"
       },
       "auth": [],
       "response_format": {
@@ -916,6 +980,7 @@
     },
     {
       "provider_alias_intent": "/refunds/refund_id",
+      "provider_proxy_intent": "/refunds/refund_id",
       "text": "Get Refund Detail",
       "category": "Refunds",
       "method": "GET",
@@ -938,7 +1003,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific refund.\n\n",
-        "api_endpoint": "https://test.dodopayments.com/refunds/{refund_id}"
+        "api_endpoint": "{endpoint}/refunds/{refund_id}"
       },
       "auth": [],
       "response_format": {
@@ -955,6 +1020,7 @@
     },
     {
       "provider_alias_intent": "/disputes",
+      "provider_proxy_intent": "/disputes",
       "text": "List Disputes",
       "category": "Disputes",
       "method": "GET",
@@ -980,7 +1046,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all disputes associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/disputes"
+        "api_endpoint": "{endpoint}/disputes"
       },
       "auth": [],
       "response_format": {
@@ -1001,6 +1067,7 @@
     },
     {
       "provider_alias_intent": "/disputes/dispute_id",
+      "provider_proxy_intent": "/disputes/dispute_id",
       "text": "Get Dispute Detail",
       "category": "Disputes",
       "method": "GET",
@@ -1023,7 +1090,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific dispute",
-        "api_endpoint": "https://test.dodopayments.com/disputes/{dispute_id}"
+        "api_endpoint": "{endpoint}/disputes/{dispute_id}"
       },
       "auth": [],
       "response_format": {
@@ -1040,6 +1107,7 @@
     },
     {
       "provider_alias_intent": "/payouts",
+      "provider_proxy_intent": "/payouts",
       "text": "List Payouts",
       "category": "Payouts",
       "method": "GET",
@@ -1065,7 +1133,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all payouts associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/payouts"
+        "api_endpoint": "{endpoint}/payouts"
       },
       "auth": [],
       "response_format": {
@@ -1093,6 +1161,7 @@
     },
     {
       "provider_alias_intent": "/checkout/supported_countries",
+      "provider_proxy_intent": "/checkout/supported_countries",
       "text": "Supported Countries",
       "category": "Miscellaneous",
       "method": "GET",
@@ -1109,7 +1178,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Retrieve a list of countries that are supported by the Dodo Payments for your customers.",
-        "api_endpoint": "https://test.dodopayments.com/checkout/supported_countries"
+        "api_endpoint": "{endpoint}/checkout/supported_countries"
       },
       "auth": [],
       "response_format": {},
@@ -1117,6 +1186,7 @@
     },
     {
       "provider_alias_intent": "/subscriptions/subscription_id",
+      "provider_proxy_intent": "/subscriptions/subscription_id",
       "text": "Update Subscription",
       "category": "Subscriptions",
       "method": "PATCH",
@@ -1149,8 +1219,8 @@
         "api_ref": "https://docs.dodopayments.com/api-reference/subscriptions/patch-subscriptions",
         "version": "",
         "rate_limit": [],
-        "description": "Update a subscription’s details.",
-        "api_endpoint": "https://test.dodopayments.com/subscriptions/{subscription_id}"
+        "description": "Update a subscription\u2019s details.",
+        "api_endpoint": "{endpoint}/subscriptions/{subscription_id}"
       },
       "auth": [],
       "response_format": {
@@ -1178,6 +1248,7 @@
     },
     {
       "provider_alias_intent": "/subscriptions",
+      "provider_proxy_intent": "/subscriptions",
       "text": "List subscriptions",
       "category": "Subscriptions",
       "method": "GET",
@@ -1193,25 +1264,8 @@
           "type": "number"
         }
       },
-      "path": {
-        "subscription_id": {
-          "text": "Subscription Id",
-          "type": "string",
-          "required": true
-        }
-      },
-      "body": {
-        "status": {
-          "text": "Status",
-          "type": "string",
-          "required": false
-        },
-        "metadata": {
-          "text": "Metadata",
-          "type": "string",
-          "required": false
-        }
-      },
+      "path": {},
+      "body": {},
       "custom_headers": {},
       "domain_params": {},
       "meta": {
@@ -1220,7 +1274,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all subscriptions associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/subscriptions"
+        "api_endpoint": "{endpoint}/subscriptions"
       },
       "auth": [],
       "response_format": {},
@@ -1228,6 +1282,7 @@
     },
     {
       "provider_alias_intent": "/subscriptions",
+      "provider_proxy_intent": "/subscriptions",
       "text": "Create Subscription",
       "category": "Subscriptions",
       "method": "POST",
@@ -1266,7 +1321,7 @@
         },
         "payment_link": {
           "text": "Payment Link",
-          "type": "boolen"
+          "type": "boolean"
         }
       },
       "custom_headers": {},
@@ -1277,7 +1332,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Create a subscription for a customer.",
-        "api_endpoint": "https://test.dodopayments.com/subscriptions"
+        "api_endpoint": "{endpoint}/subscriptions"
       },
       "auth": [],
       "response_format": {},
@@ -1285,6 +1340,7 @@
     },
     {
       "provider_alias_intent": "/license_key_instances/id",
+      "provider_proxy_intent": "/license_key_instances/id",
       "text": "Get License Key Instance",
       "category": "Licenses",
       "method": "GET",
@@ -1295,43 +1351,10 @@
         "id": {
           "text": "License key instance ID",
           "type": "string",
-          "required": false
+          "required": true
         }
       },
-      "body": {
-        "billing": {
-          "text": "Billing",
-          "type": "object",
-          "required": true
-        },
-        "customer": {
-          "text": "Customer",
-          "type": "object",
-          "required": true
-        },
-        "metadata": {
-          "text": "Metadata",
-          "type": "object"
-        },
-        "quantity": {
-          "text": "Quantity",
-          "type": "number",
-          "required": true
-        },
-        "product_id": {
-          "text": "Product Id",
-          "type": "string",
-          "required": true
-        },
-        "return_url": {
-          "text": "Return Url",
-          "type": "string"
-        },
-        "payment_link": {
-          "text": "Payment Link",
-          "type": "boolen"
-        }
-      },
+      "body": {},
       "custom_headers": {},
       "domain_params": {},
       "meta": {
@@ -1340,7 +1363,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Retrieve details of a specific license key instance by its ID.",
-        "api_endpoint": "https://test.dodopayments.com/license_key_instances/{id}"
+        "api_endpoint": "{endpoint}/license_key_instances/{id}"
       },
       "auth": [],
       "response_format": {},
@@ -1348,6 +1371,7 @@
     },
     {
       "provider_alias_intent": "/products",
+      "provider_proxy_intent": "/products",
       "text": "List Products",
       "category": "Products",
       "method": "GET",
@@ -1373,7 +1397,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get a list of all products associated with your account.",
-        "api_endpoint": "https://test.dodopayments.com/products"
+        "api_endpoint": "{endpoint}/products"
       },
       "auth": [],
       "response_format": {
@@ -1396,6 +1420,7 @@
     },
     {
       "provider_alias_intent": "/products",
+      "provider_proxy_intent": "/products",
       "text": "Create Product",
       "category": "Products",
       "method": "POST",
@@ -1447,7 +1472,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Create a new product.",
-        "api_endpoint": "https://test.dodopayments.com/products"
+        "api_endpoint": "{endpoint}/products"
       },
       "auth": [],
       "response_format": {},
@@ -1455,6 +1480,7 @@
     },
     {
       "provider_alias_intent": "/products/id",
+      "provider_proxy_intent": "/products/id",
       "text": "Get Product Detail",
       "category": "Products",
       "method": "GET",
@@ -1465,7 +1491,7 @@
         "id": {
           "text": "Product Id",
           "type": "string",
-          "required": false
+          "required": true
         }
       },
       "body": {},
@@ -1477,7 +1503,7 @@
         "version": "",
         "rate_limit": [],
         "description": "Get detailed information about a specific product.",
-        "api_endpoint": "https://test.dodopayments.com/products/{id}"
+        "api_endpoint": "{endpoint}/products/{id}"
       },
       "auth": [],
       "response_format": {
@@ -1509,6 +1535,7 @@
     },
     {
       "provider_alias_intent": "/products/id",
+      "provider_proxy_intent": "/products/id",
       "text": "Update Product",
       "category": "Products",
       "method": "PATCH",
@@ -1559,8 +1586,8 @@
         "api_ref": "https://docs.dodopayments.com/api-reference/products/patch-products",
         "version": "",
         "rate_limit": [],
-        "description": "Update a product’s details.",
-        "api_endpoint": "https://test.dodopayments.com/products/{id}"
+        "description": "Update a product\u2019s details.",
+        "api_endpoint": "{endpoint}/products/{id}"
       },
       "auth": [],
       "response_format": {},

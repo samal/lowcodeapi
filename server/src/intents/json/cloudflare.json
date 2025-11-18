@@ -1,0 +1,4006 @@
+{
+  "config": {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "description": "Cloudflare API for managing DNS, zones, workers, security, and more",
+    "logo_url": "cloudflare.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "api_key",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Token",
+        "message": "Your Cloudflare API token. Create one at https://dash.cloudflare.com/profile/api-tokens",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.cloudflare.com/client/v4",
+    "released": 1,
+    "updated_at": "2025-01-28T12:00:00.000Z",
+    "website": "https://www.cloudflare.com",
+    "api_link_ref": "https://developers.cloudflare.com/api/",
+    "total_api": 77,
+    "credential_link": "https://dash.cloudflare.com/profile/api-tokens"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/accounts",
+      "provider_proxy_intent": "/accounts",
+      "text": "List accounts",
+      "category": "Accounts",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        },
+        "direction": {
+          "type": "string",
+          "text": "Direction to order results",
+          "required": false,
+          "enum": ["asc", "desc"]
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all accounts you have access to",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts",
+        "alias_endpoint": "/cloudflare/accounts",
+        "api_ref": "https://developers.cloudflare.com/api/resources/accounts/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}",
+      "provider_proxy_intent": "/accounts/{account_id}",
+      "text": "Get account details",
+      "category": "Accounts",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get information about a specific account that you are a member of",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/accounts/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}",
+      "provider_proxy_intent": "/accounts/{account_id}",
+      "text": "Update account",
+      "category": "Accounts",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Account name",
+          "required": false
+        },
+        "settings": {
+          "type": "object",
+          "text": "Account settings",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update an existing account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/accounts/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/user",
+      "provider_proxy_intent": "/user",
+      "text": "Get user details",
+      "category": "User",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get information about the authenticated user",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/user",
+        "alias_endpoint": "/cloudflare/user",
+        "api_ref": "https://developers.cloudflare.com/api/resources/user/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/user",
+      "provider_proxy_intent": "/user",
+      "text": "Update user",
+      "category": "User",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "email": {
+          "type": "string",
+          "text": "User email address",
+          "required": false
+        },
+        "first_name": {
+          "type": "string",
+          "text": "User first name",
+          "required": false
+        },
+        "last_name": {
+          "type": "string",
+          "text": "User last name",
+          "required": false
+        },
+        "telephone": {
+          "type": "string",
+          "text": "User telephone number",
+          "required": false
+        },
+        "country": {
+          "type": "string",
+          "text": "User country",
+          "required": false
+        },
+        "zipcode": {
+          "type": "string",
+          "text": "User zipcode",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update part of your user details",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/user",
+        "alias_endpoint": "/cloudflare/user",
+        "api_ref": "https://developers.cloudflare.com/api/resources/user/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/members",
+      "provider_proxy_intent": "/accounts/{account_id}/members",
+      "text": "List account members",
+      "category": "Memberships",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all members of an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/members",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/members",
+        "api_ref": "https://developers.cloudflare.com/api/resources/memberships/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/members",
+      "provider_proxy_intent": "/accounts/{account_id}/members",
+      "text": "Add account member",
+      "category": "Memberships",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "email": {
+          "type": "string",
+          "text": "Email address of the user to add",
+          "required": true
+        },
+        "roles": {
+          "type": "array",
+          "text": "Array of role identifiers for the user",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Add a user to an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/members",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/members",
+        "api_ref": "https://developers.cloudflare.com/api/resources/memberships/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/members/{member_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/members/{member_id}",
+      "text": "Get account member",
+      "category": "Memberships",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "member_id": {
+          "type": "string",
+          "text": "Membership identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific member of an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/members/{member_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/members/{member_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/memberships/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/members/{member_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/members/{member_id}",
+      "text": "Update account member",
+      "category": "Memberships",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "member_id": {
+          "type": "string",
+          "text": "Membership identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "roles": {
+          "type": "array",
+          "text": "Array of role identifiers for the user",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update the roles of an account member",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/members/{member_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/members/{member_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/memberships/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/members/{member_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/members/{member_id}",
+      "text": "Remove account member",
+      "category": "Memberships",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "member_id": {
+          "type": "string",
+          "text": "Membership identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Remove a member from an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/members/{member_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/members/{member_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/memberships/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones",
+      "provider_proxy_intent": "/zones",
+      "text": "List zones",
+      "category": "Zones",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "match": {
+          "type": "string",
+          "text": "Whether to match all search requirements or at least one",
+          "required": false,
+          "enum": ["any", "all"]
+        },
+        "name": {
+          "type": "string",
+          "text": "A domain name",
+          "required": false
+        },
+        "account.id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": false
+        },
+        "account.name": {
+          "type": "string",
+          "text": "Account name",
+          "required": false
+        },
+        "status": {
+          "type": "string",
+          "text": "Status of the zone",
+          "required": false,
+          "enum": ["active", "pending", "initializing", "moved", "deleted", "deactivated"]
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        },
+        "order": {
+          "type": "string",
+          "text": "Field to order zones by",
+          "required": false,
+          "enum": ["name", "status", "account.id", "account.name"]
+        },
+        "direction": {
+          "type": "string",
+          "text": "Direction to order zones",
+          "required": false,
+          "enum": ["asc", "desc"]
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List, search, sort, and filter your zones",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones",
+        "alias_endpoint": "/cloudflare/zones",
+        "api_ref": "https://developers.cloudflare.com/api/resources/zones/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones",
+      "provider_proxy_intent": "/zones",
+      "text": "Create zone",
+      "category": "Zones",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The domain name",
+          "required": true
+        },
+        "account": {
+          "type": "object",
+          "text": "Account identifier tag",
+          "required": false
+        },
+        "type": {
+          "type": "string",
+          "text": "Type of zone to create",
+          "required": false,
+          "enum": ["full", "partial"]
+        },
+        "jump_start": {
+          "type": "boolean",
+          "text": "Automatically attempt to fetch existing DNS records",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones",
+        "alias_endpoint": "/cloudflare/zones",
+        "api_ref": "https://developers.cloudflare.com/api/resources/zones/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}",
+      "provider_proxy_intent": "/zones/{zone_id}",
+      "text": "Get zone details",
+      "category": "Zones",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get details about a specific zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/zones/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}",
+      "provider_proxy_intent": "/zones/{zone_id}",
+      "text": "Update zone",
+      "category": "Zones",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "plan": {
+          "type": "object",
+          "text": "The zone plan",
+          "required": false
+        },
+        "type": {
+          "type": "string",
+          "text": "Type of zone",
+          "required": false,
+          "enum": ["full", "partial"]
+        },
+        "vanity_name_servers": {
+          "type": "array",
+          "text": "Custom nameservers for the zone",
+          "required": false
+        },
+        "paused": {
+          "type": "boolean",
+          "text": "Whether the zone is paused",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/zones/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}",
+      "provider_proxy_intent": "/zones/{zone_id}",
+      "text": "Delete zone",
+      "category": "Zones",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete an existing zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/zones/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/dns_records",
+      "provider_proxy_intent": "/zones/{zone_id}/dns_records",
+      "text": "List DNS records",
+      "category": "DNS",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "match": {
+          "type": "string",
+          "text": "Whether to match all search requirements or at least one",
+          "required": false,
+          "enum": ["any", "all"]
+        },
+        "name": {
+          "type": "string",
+          "text": "DNS record name",
+          "required": false
+        },
+        "content": {
+          "type": "string",
+          "text": "DNS record content",
+          "required": false
+        },
+        "type": {
+          "type": "string",
+          "text": "DNS record type",
+          "required": false,
+          "enum": ["A", "AAAA", "CAA", "CERT", "CNAME", "DNSKEY", "DS", "HTTPS", "LOC", "MX", "NAPTR", "NS", "PTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TXT", "URI"]
+        },
+        "proxied": {
+          "type": "boolean",
+          "text": "Whether the record is proxied through Cloudflare",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        },
+        "order": {
+          "type": "string",
+          "text": "Field to order records by",
+          "required": false,
+          "enum": ["type", "name", "content", "ttl", "proxied"]
+        },
+        "direction": {
+          "type": "string",
+          "text": "Direction to order records",
+          "required": false,
+          "enum": ["asc", "desc"]
+        },
+        "search": {
+          "type": "string",
+          "text": "Search term",
+          "required": false
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List, search, sort, and filter a zone's DNS records",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/dns_records",
+        "api_ref": "https://developers.cloudflare.com/api/resources/dns-records/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/dns_records",
+      "provider_proxy_intent": "/zones/{zone_id}/dns_records",
+      "text": "Create DNS record",
+      "category": "DNS",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "type": {
+          "type": "string",
+          "text": "DNS record type",
+          "required": true,
+          "enum": ["A", "AAAA", "CAA", "CERT", "CNAME", "DNSKEY", "DS", "HTTPS", "LOC", "MX", "NAPTR", "NS", "PTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TXT", "URI"]
+        },
+        "name": {
+          "type": "string",
+          "text": "DNS record name",
+          "required": true
+        },
+        "content": {
+          "type": "string",
+          "text": "DNS record content",
+          "required": true
+        },
+        "ttl": {
+          "type": "number",
+          "text": "Time to live for DNS record",
+          "required": false
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority for MX, SRV, and URI records",
+          "required": false
+        },
+        "proxied": {
+          "type": "boolean",
+          "text": "Whether the record is proxied through Cloudflare",
+          "required": false
+        },
+        "comment": {
+          "type": "string",
+          "text": "Comments or notes about the DNS record",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "text": "Tags for the DNS record",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new DNS record for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/dns_records",
+        "api_ref": "https://developers.cloudflare.com/api/resources/dns-records/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "text": "Get DNS record",
+      "category": "DNS",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "dns_record_id": {
+          "type": "string",
+          "text": "DNS record identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get details about a specific DNS record",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{dns_record_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/dns_records/{dns_record_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/dns-records/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "text": "Update DNS record",
+      "category": "DNS",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "dns_record_id": {
+          "type": "string",
+          "text": "DNS record identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "type": {
+          "type": "string",
+          "text": "DNS record type",
+          "required": true,
+          "enum": ["A", "AAAA", "CAA", "CERT", "CNAME", "DNSKEY", "DS", "HTTPS", "LOC", "MX", "NAPTR", "NS", "PTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TXT", "URI"]
+        },
+        "name": {
+          "type": "string",
+          "text": "DNS record name",
+          "required": true
+        },
+        "content": {
+          "type": "string",
+          "text": "DNS record content",
+          "required": true
+        },
+        "ttl": {
+          "type": "number",
+          "text": "Time to live for DNS record",
+          "required": false
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority for MX, SRV, and URI records",
+          "required": false
+        },
+        "proxied": {
+          "type": "boolean",
+          "text": "Whether the record is proxied through Cloudflare",
+          "required": false
+        },
+        "comment": {
+          "type": "string",
+          "text": "Comments or notes about the DNS record",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "text": "Tags for the DNS record",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update an existing DNS record",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{dns_record_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/dns_records/{dns_record_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/dns-records/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/dns_records/{dns_record_id}",
+      "text": "Delete DNS record",
+      "category": "DNS",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "dns_record_id": {
+          "type": "string",
+          "text": "DNS record identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a DNS record",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{dns_record_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/dns_records/{dns_record_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/dns-records/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/workers/scripts",
+      "provider_proxy_intent": "/accounts/{account_id}/workers/scripts",
+      "text": "List workers scripts",
+      "category": "Workers",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all Workers scripts",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/scripts",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/workers/scripts",
+        "api_ref": "https://developers.cloudflare.com/api/resources/workers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "provider_proxy_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "text": "Get worker script",
+      "category": "Workers",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "script_name": {
+          "type": "string",
+          "text": "Name of the script",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a Workers script",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/scripts/{script_name}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/workers/scripts/{script_name}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/workers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "provider_proxy_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "text": "Upload worker script",
+      "category": "Workers",
+      "method": "PUT",
+      "type": "Upload",
+      "request_type": "Upload",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "script_name": {
+          "type": "string",
+          "text": "Name of the script",
+          "required": true
+        }
+      },
+      "body": {
+        "metadata": {
+          "type": "object",
+          "text": "Metadata for the worker script",
+          "required": false
+        },
+        "main_module": {
+          "type": "string",
+          "text": "Main module content",
+          "required": false
+        },
+        "bindings": {
+          "type": "array",
+          "text": "Bindings for the worker",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Upload a Workers script",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/scripts/{script_name}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/workers/scripts/{script_name}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/workers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "provider_proxy_intent": "/accounts/{account_id}/workers/scripts/{script_name}",
+      "text": "Delete worker script",
+      "category": "Workers",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "script_name": {
+          "type": "string",
+          "text": "Name of the script",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a Workers script",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/workers/scripts/{script_name}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/workers/scripts/{script_name}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/workers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/firewall/rules",
+      "provider_proxy_intent": "/zones/{zone_id}/firewall/rules",
+      "text": "List firewall rules",
+      "category": "Firewall",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "id": {
+          "type": "string",
+          "text": "Firewall rule identifier",
+          "required": false
+        },
+        "action": {
+          "type": "string",
+          "text": "Action to perform",
+          "required": false,
+          "enum": ["block", "challenge", "allow", "js_challenge", "managed_challenge", "log", "bypass"]
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all firewall rules",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/firewall/rules",
+        "api_ref": "https://developers.cloudflare.com/api/resources/firewall-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/firewall/rules",
+      "provider_proxy_intent": "/zones/{zone_id}/firewall/rules",
+      "text": "Create firewall rule",
+      "category": "Firewall",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "action": {
+          "type": "string",
+          "text": "Action to perform",
+          "required": true,
+          "enum": ["block", "challenge", "allow", "js_challenge", "managed_challenge", "log", "bypass"]
+        },
+        "filter": {
+          "type": "object",
+          "text": "Filter expression",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the firewall rule",
+          "required": false
+        },
+        "paused": {
+          "type": "boolean",
+          "text": "Whether the rule is paused",
+          "required": false
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority of the rule",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new firewall rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/firewall/rules",
+        "api_ref": "https://developers.cloudflare.com/api/resources/firewall-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "text": "Get firewall rule",
+      "category": "Firewall",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Firewall rule identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific firewall rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/firewall/rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/firewall-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "text": "Update firewall rule",
+      "category": "Firewall",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Firewall rule identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "action": {
+          "type": "string",
+          "text": "Action to perform",
+          "required": true,
+          "enum": ["block", "challenge", "allow", "js_challenge", "managed_challenge", "log", "bypass"]
+        },
+        "filter": {
+          "type": "object",
+          "text": "Filter expression",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the firewall rule",
+          "required": false
+        },
+        "paused": {
+          "type": "boolean",
+          "text": "Whether the rule is paused",
+          "required": false
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority of the rule",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a firewall rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/firewall/rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/firewall-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/firewall/rules/{id}",
+      "text": "Delete firewall rule",
+      "category": "Firewall",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Firewall rule identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a firewall rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/firewall/rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/firewall/rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/firewall-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/ssl/universal/settings",
+      "provider_proxy_intent": "/zones/{zone_id}/ssl/universal/settings",
+      "text": "Get SSL universal settings",
+      "category": "SSL",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get SSL universal settings for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/ssl/universal/settings",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/ssl/universal/settings",
+        "api_ref": "https://developers.cloudflare.com/api/resources/ssl/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/ssl/universal/settings",
+      "provider_proxy_intent": "/zones/{zone_id}/ssl/universal/settings",
+      "text": "Update SSL universal settings",
+      "category": "SSL",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "enabled": {
+          "type": "boolean",
+          "text": "Whether SSL is enabled",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update SSL universal settings for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/ssl/universal/settings",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/ssl/universal/settings",
+        "api_ref": "https://developers.cloudflare.com/api/resources/ssl/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/ssl/certificate_packs",
+      "provider_proxy_intent": "/zones/{zone_id}/ssl/certificate_packs",
+      "text": "List SSL certificate packs",
+      "category": "SSL",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "status": {
+          "type": "string",
+          "text": "Status of the certificate pack",
+          "required": false,
+          "enum": ["initializing", "pending_validation", "deleted", "pending_issuance", "pending_deployment", "pending_deletion", "validated", "issuing", "active", "deployment_timed_out", "deletion_timed_out"]
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all SSL certificate packs for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/ssl/certificate_packs",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/ssl/certificate_packs",
+        "api_ref": "https://developers.cloudflare.com/api/resources/ssl/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rate_limits",
+      "provider_proxy_intent": "/zones/{zone_id}/rate_limits",
+      "text": "List rate limits",
+      "category": "Rate Limits",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number of paginated results",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all rate limits for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rate_limits",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rate_limits",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rate-limits/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rate_limits",
+      "provider_proxy_intent": "/zones/{zone_id}/rate_limits",
+      "text": "Create rate limit",
+      "category": "Rate Limits",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "match": {
+          "type": "object",
+          "text": "Request matching criteria",
+          "required": true
+        },
+        "bypass": {
+          "type": "array",
+          "text": "Bypass criteria",
+          "required": false
+        },
+        "threshold": {
+          "type": "number",
+          "text": "Threshold value",
+          "required": true
+        },
+        "period": {
+          "type": "number",
+          "text": "Period in seconds",
+          "required": true
+        },
+        "action": {
+          "type": "object",
+          "text": "Action to take when threshold is exceeded",
+          "required": true
+        },
+        "disabled": {
+          "type": "boolean",
+          "text": "Whether the rate limit is disabled",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the rate limit",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new rate limit",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rate_limits",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rate_limits",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rate-limits/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "text": "Get rate limit",
+      "category": "Rate Limits",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Rate limit identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific rate limit",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rate_limits/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rate_limits/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rate-limits/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "text": "Update rate limit",
+      "category": "Rate Limits",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Rate limit identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "match": {
+          "type": "object",
+          "text": "Request matching criteria",
+          "required": true
+        },
+        "bypass": {
+          "type": "array",
+          "text": "Bypass criteria",
+          "required": false
+        },
+        "threshold": {
+          "type": "number",
+          "text": "Threshold value",
+          "required": true
+        },
+        "period": {
+          "type": "number",
+          "text": "Period in seconds",
+          "required": true
+        },
+        "action": {
+          "type": "object",
+          "text": "Action to take when threshold is exceeded",
+          "required": true
+        },
+        "disabled": {
+          "type": "boolean",
+          "text": "Whether the rate limit is disabled",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the rate limit",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a rate limit",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rate_limits/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rate_limits/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rate-limits/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/rate_limits/{id}",
+      "text": "Delete rate limit",
+      "category": "Rate Limits",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Rate limit identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a rate limit",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rate_limits/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rate_limits/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rate-limits/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/analytics/dashboard",
+      "provider_proxy_intent": "/zones/{zone_id}/analytics/dashboard",
+      "text": "Get zone analytics dashboard",
+      "category": "Analytics",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "since": {
+          "type": "string",
+          "text": "Start date for analytics data",
+          "required": false
+        },
+        "until": {
+          "type": "string",
+          "text": "End date for analytics data",
+          "required": false
+        },
+        "continuous": {
+          "type": "boolean",
+          "text": "Whether to return continuous data",
+          "required": false
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get analytics dashboard data for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/analytics/dashboard",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/analytics/dashboard",
+        "api_ref": "https://developers.cloudflare.com/api/resources/analytics/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/page_rules",
+      "provider_proxy_intent": "/zones/{zone_id}/page_rules",
+      "text": "List page rules",
+      "category": "Page Rules",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "status": {
+          "type": "string",
+          "text": "Status of the page rule",
+          "required": false,
+          "enum": ["active", "disabled"]
+        },
+        "order": {
+          "type": "string",
+          "text": "Field to order by",
+          "required": false,
+          "enum": ["status", "priority"]
+        },
+        "direction": {
+          "type": "string",
+          "text": "Direction to order",
+          "required": false,
+          "enum": ["asc", "desc"]
+        },
+        "match": {
+          "type": "string",
+          "text": "Whether to match all search requirements or at least one",
+          "required": false,
+          "enum": ["any", "all"]
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all page rules for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/page_rules",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/page_rules",
+        "api_ref": "https://developers.cloudflare.com/api/resources/page-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/page_rules",
+      "provider_proxy_intent": "/zones/{zone_id}/page_rules",
+      "text": "Create page rule",
+      "category": "Page Rules",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "targets": {
+          "type": "array",
+          "text": "Targets for the page rule",
+          "required": true
+        },
+        "actions": {
+          "type": "array",
+          "text": "Actions to perform",
+          "required": true
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority of the page rule",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "text": "Status of the page rule",
+          "required": false,
+          "enum": ["active", "disabled"]
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new page rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/page_rules",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/page_rules",
+        "api_ref": "https://developers.cloudflare.com/api/resources/page-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/page_rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/page_rules/{id}",
+      "text": "Get page rule",
+      "category": "Page Rules",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Page rule identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific page rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/page_rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/page_rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/page-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/page_rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/page_rules/{id}",
+      "text": "Update page rule",
+      "category": "Page Rules",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Page rule identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "targets": {
+          "type": "array",
+          "text": "Targets for the page rule",
+          "required": true
+        },
+        "actions": {
+          "type": "array",
+          "text": "Actions to perform",
+          "required": true
+        },
+        "priority": {
+          "type": "number",
+          "text": "Priority of the page rule",
+          "required": true
+        },
+        "status": {
+          "type": "string",
+          "text": "Status of the page rule",
+          "required": false,
+          "enum": ["active", "disabled"]
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a page rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/page_rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/page_rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/page-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/page_rules/{id}",
+      "provider_proxy_intent": "/zones/{zone_id}/page_rules/{id}",
+      "text": "Delete page rule",
+      "category": "Page Rules",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "id": {
+          "type": "string",
+          "text": "Page rule identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a page rule",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/page_rules/{id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/page_rules/{id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/page-rules/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rulesets",
+      "provider_proxy_intent": "/zones/{zone_id}/rulesets",
+      "text": "List rulesets",
+      "category": "Rulesets",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all rulesets for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rulesets",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rulesets/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rulesets/{ruleset_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/rulesets/{ruleset_id}",
+      "text": "Get ruleset",
+      "category": "Rulesets",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "ruleset_id": {
+          "type": "string",
+          "text": "Ruleset identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific ruleset",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rulesets/{ruleset_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rulesets/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/rulesets/{ruleset_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/rulesets/{ruleset_id}",
+      "text": "Update ruleset",
+      "category": "Rulesets",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "ruleset_id": {
+          "type": "string",
+          "text": "Ruleset identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "rules": {
+          "type": "array",
+          "text": "Array of rules in the ruleset",
+          "required": false
+        },
+        "phase": {
+          "type": "string",
+          "text": "Phase of the ruleset",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the ruleset",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a ruleset",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets/{ruleset_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/rulesets/{ruleset_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rulesets/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/load_balancers",
+      "provider_proxy_intent": "/accounts/{account_id}/load_balancers",
+      "text": "List load balancers",
+      "category": "Load Balancers",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all load balancers for an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/load_balancers",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/load_balancers",
+        "api_ref": "https://developers.cloudflare.com/api/resources/load-balancers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/load_balancers",
+      "provider_proxy_intent": "/accounts/{account_id}/load_balancers",
+      "text": "Create load balancer",
+      "category": "Load Balancers",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the load balancer",
+          "required": true
+        },
+        "fallback_pool": {
+          "type": "string",
+          "text": "Fallback pool identifier",
+          "required": true
+        },
+        "default_pools": {
+          "type": "array",
+          "text": "Array of default pool identifiers",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the load balancer",
+          "required": false
+        },
+        "ttl": {
+          "type": "number",
+          "text": "Time to live",
+          "required": false
+        },
+        "steering_policy": {
+          "type": "string",
+          "text": "Steering policy",
+          "required": false,
+          "enum": ["off", "geo", "random", "dynamic_latency"]
+        },
+        "session_affinity": {
+          "type": "string",
+          "text": "Session affinity",
+          "required": false,
+          "enum": ["none", "cookie", "ip_cookie"]
+        },
+        "session_affinity_ttl": {
+          "type": "number",
+          "text": "Session affinity TTL",
+          "required": false
+        },
+        "session_affinity_attributes": {
+          "type": "object",
+          "text": "Session affinity attributes",
+          "required": false
+        },
+        "proxied": {
+          "type": "boolean",
+          "text": "Whether the load balancer is proxied",
+          "required": false
+        },
+        "enabled": {
+          "type": "boolean",
+          "text": "Whether the load balancer is enabled",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new load balancer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/load_balancers",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/load_balancers",
+        "api_ref": "https://developers.cloudflare.com/api/resources/load-balancers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "text": "Get load balancer",
+      "category": "Load Balancers",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "lb_id": {
+          "type": "string",
+          "text": "Load balancer identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific load balancer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/load_balancers/{lb_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/load_balancers/{lb_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/load-balancers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "text": "Update load balancer",
+      "category": "Load Balancers",
+      "method": "PUT",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "lb_id": {
+          "type": "string",
+          "text": "Load balancer identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the load balancer",
+          "required": false
+        },
+        "fallback_pool": {
+          "type": "string",
+          "text": "Fallback pool identifier",
+          "required": false
+        },
+        "default_pools": {
+          "type": "array",
+          "text": "Array of default pool identifiers",
+          "required": false
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the load balancer",
+          "required": false
+        },
+        "ttl": {
+          "type": "number",
+          "text": "Time to live",
+          "required": false
+        },
+        "steering_policy": {
+          "type": "string",
+          "text": "Steering policy",
+          "required": false,
+          "enum": ["off", "geo", "random", "dynamic_latency"]
+        },
+        "session_affinity": {
+          "type": "string",
+          "text": "Session affinity",
+          "required": false,
+          "enum": ["none", "cookie", "ip_cookie"]
+        },
+        "session_affinity_ttl": {
+          "type": "number",
+          "text": "Session affinity TTL",
+          "required": false
+        },
+        "session_affinity_attributes": {
+          "type": "object",
+          "text": "Session affinity attributes",
+          "required": false
+        },
+        "proxied": {
+          "type": "boolean",
+          "text": "Whether the load balancer is proxied",
+          "required": false
+        },
+        "enabled": {
+          "type": "boolean",
+          "text": "Whether the load balancer is enabled",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a load balancer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/load_balancers/{lb_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/load_balancers/{lb_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/load-balancers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/load_balancers/{lb_id}",
+      "text": "Delete load balancer",
+      "category": "Load Balancers",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "lb_id": {
+          "type": "string",
+          "text": "Load balancer identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a load balancer",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/load_balancers/{lb_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/load_balancers/{lb_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/load-balancers/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/purge_cache",
+      "provider_proxy_intent": "/zones/{zone_id}/purge_cache",
+      "text": "Purge cache",
+      "category": "Cache",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "files": {
+          "type": "array",
+          "text": "Array of URLs to purge",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "text": "Array of cache tags to purge",
+          "required": false
+        },
+        "hosts": {
+          "type": "array",
+          "text": "Array of hostnames to purge",
+          "required": false
+        },
+        "prefixes": {
+          "type": "array",
+          "text": "Array of URL prefixes to purge",
+          "required": false
+        },
+        "purge_everything": {
+          "type": "boolean",
+          "text": "Purge everything in the zone",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Purge cached files",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/purge_cache",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/purge_cache",
+        "api_ref": "https://developers.cloudflare.com/api/resources/cache/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/settings/cache_level",
+      "provider_proxy_intent": "/zones/{zone_id}/settings/cache_level",
+      "text": "Get cache level setting",
+      "category": "Cache",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get cache level setting for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/settings/cache_level",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/settings/cache_level",
+        "api_ref": "https://developers.cloudflare.com/api/resources/cache/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/settings/cache_level",
+      "provider_proxy_intent": "/zones/{zone_id}/settings/cache_level",
+      "text": "Update cache level setting",
+      "category": "Cache",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "value": {
+          "type": "string",
+          "text": "Cache level",
+          "required": true,
+          "enum": ["aggressive", "basic", "simplified"]
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update cache level setting for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/settings/cache_level",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/settings/cache_level",
+        "api_ref": "https://developers.cloudflare.com/api/resources/cache/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/storage/kv/namespaces",
+      "provider_proxy_intent": "/accounts/{account_id}/storage/kv/namespaces",
+      "text": "List KV namespaces",
+      "category": "KV",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all KV namespaces for an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/storage/kv/namespaces",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/storage/kv/namespaces",
+        "api_ref": "https://developers.cloudflare.com/api/resources/kv/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/storage/kv/namespaces",
+      "provider_proxy_intent": "/accounts/{account_id}/storage/kv/namespaces",
+      "text": "Create KV namespace",
+      "category": "KV",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "title": {
+          "type": "string",
+          "text": "Title of the namespace",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new KV namespace",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/storage/kv/namespaces",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/storage/kv/namespaces",
+        "api_ref": "https://developers.cloudflare.com/api/resources/kv/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/storage/kv/namespaces/{namespace_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/storage/kv/namespaces/{namespace_id}",
+      "text": "Delete KV namespace",
+      "category": "KV",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "namespace_id": {
+          "type": "string",
+          "text": "Namespace identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a KV namespace",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/storage/kv/namespaces/{namespace_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/storage/kv/namespaces/{namespace_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/kv/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/stream",
+      "provider_proxy_intent": "/accounts/{account_id}/stream",
+      "text": "List stream videos",
+      "category": "Stream",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "search": {
+          "type": "string",
+          "text": "Search query",
+          "required": false
+        },
+        "asc": {
+          "type": "boolean",
+          "text": "Sort ascending",
+          "required": false
+        },
+        "include_counts": {
+          "type": "boolean",
+          "text": "Include counts",
+          "required": false
+        }
+      },
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all stream videos for an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/stream",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/stream",
+        "api_ref": "https://developers.cloudflare.com/api/resources/stream/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/stream/{video_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/stream/{video_id}",
+      "text": "Get stream video",
+      "category": "Stream",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "video_id": {
+          "type": "string",
+          "text": "Video identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific stream video",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/stream/{video_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/stream/{video_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/stream/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/stream/{video_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/stream/{video_id}",
+      "text": "Delete stream video",
+      "category": "Stream",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "video_id": {
+          "type": "string",
+          "text": "Video identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a stream video",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/stream/{video_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/stream/{video_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/stream/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/images/v1",
+      "provider_proxy_intent": "/accounts/{account_id}/images/v1",
+      "text": "List images",
+      "category": "Images",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "List all images for an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/images/v1",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/images/v1",
+        "api_ref": "https://developers.cloudflare.com/api/resources/images/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/images/v1/{image_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/images/v1/{image_id}",
+      "text": "Get image",
+      "category": "Images",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "image_id": {
+          "type": "string",
+          "text": "Image identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a specific image",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/images/v1/{image_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/images/v1/{image_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/images/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/images/v1/{image_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/images/v1/{image_id}",
+      "text": "Delete image",
+      "category": "Images",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "image_id": {
+          "type": "string",
+          "text": "Image identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete an image",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/images/v1/{image_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/images/v1/{image_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/images/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/bot_management",
+      "provider_proxy_intent": "/zones/{zone_id}/bot_management",
+      "text": "Get bot management",
+      "category": "Bot Management",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get bot management settings for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/bot_management",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/bot_management",
+        "api_ref": "https://developers.cloudflare.com/api/resources/bot-management/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/bot_management",
+      "provider_proxy_intent": "/zones/{zone_id}/bot_management",
+      "text": "Update bot management",
+      "category": "Bot Management",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "fight_mode": {
+          "type": "boolean",
+          "text": "Enable fight mode",
+          "required": false
+        },
+        "enable_js": {
+          "type": "boolean",
+          "text": "Enable JavaScript detection",
+          "required": false
+        },
+        "optimize_wordpress": {
+          "type": "boolean",
+          "text": "Optimize for WordPress",
+          "required": false
+        },
+        "suppress_session_score": {
+          "type": "boolean",
+          "text": "Suppress session score",
+          "required": false
+        },
+        "auto_update_model": {
+          "type": "boolean",
+          "text": "Auto update model",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update bot management settings for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/bot_management",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/bot_management",
+        "api_ref": "https://developers.cloudflare.com/api/resources/bot-management/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/rules/lists",
+      "provider_proxy_intent": "/accounts/{account_id}/rules/lists",
+      "text": "List rules lists",
+      "category": "Rules Lists",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all rules lists for an account",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/rules/lists",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rules-lists/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/rules/lists",
+      "provider_proxy_intent": "/accounts/{account_id}/rules/lists",
+      "text": "Create rules list",
+      "category": "Rules Lists",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the list",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "Description of the list",
+          "required": false
+        },
+        "kind": {
+          "type": "string",
+          "text": "Type of list",
+          "required": true,
+          "enum": ["ip", "redirect", "hostname", "asn"]
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new rules list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/rules/lists",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rules-lists/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/rules/lists/{list_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/rules/lists/{list_id}",
+      "text": "Get rules list",
+      "category": "Rules Lists",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "list_id": {
+          "type": "string",
+          "text": "List identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific rules list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/{list_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/rules/lists/{list_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rules-lists/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/rules/lists/{list_id}",
+      "provider_proxy_intent": "/accounts/{account_id}/rules/lists/{list_id}",
+      "text": "Delete rules list",
+      "category": "Rules Lists",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "list_id": {
+          "type": "string",
+          "text": "List identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a rules list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/{list_id}",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/rules/lists/{list_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rules-lists/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/accounts/{account_id}/rules/lists/{list_id}/items",
+      "provider_proxy_intent": "/accounts/{account_id}/rules/lists/{list_id}/items",
+      "text": "List rules list items",
+      "category": "Rules Lists",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "account_id": {
+          "type": "string",
+          "text": "Account identifier tag",
+          "required": true
+        },
+        "list_id": {
+          "type": "string",
+          "text": "List identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all items in a rules list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/accounts/{account_id}/rules/lists/{list_id}/items",
+        "alias_endpoint": "/cloudflare/accounts/{account_id}/rules/lists/{list_id}/items",
+        "api_ref": "https://developers.cloudflare.com/api/resources/rules-lists/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/logpush/jobs",
+      "provider_proxy_intent": "/zones/{zone_id}/logpush/jobs",
+      "text": "List logpush jobs",
+      "category": "Logpush",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all logpush jobs for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/logpush/jobs",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/logpush/jobs",
+        "api_ref": "https://developers.cloudflare.com/api/resources/logpush/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/logpush/jobs",
+      "provider_proxy_intent": "/zones/{zone_id}/logpush/jobs",
+      "text": "Create logpush job",
+      "category": "Logpush",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Name of the logpush job",
+          "required": false
+        },
+        "destination_conf": {
+          "type": "string",
+          "text": "Destination configuration",
+          "required": true
+        },
+        "dataset": {
+          "type": "string",
+          "text": "Dataset to export",
+          "required": true
+        },
+        "enabled": {
+          "type": "boolean",
+          "text": "Whether the job is enabled",
+          "required": false
+        },
+        "logpull_options": {
+          "type": "string",
+          "text": "Logpull options",
+          "required": false
+        },
+        "ownership_challenge": {
+          "type": "string",
+          "text": "Ownership challenge",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new logpush job",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/logpush/jobs",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/logpush/jobs",
+        "api_ref": "https://developers.cloudflare.com/api/resources/logpush/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/logpush/jobs/{job_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/logpush/jobs/{job_id}",
+      "text": "Delete logpush job",
+      "category": "Logpush",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "job_id": {
+          "type": "string",
+          "text": "Job identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a logpush job",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/logpush/jobs/{job_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/logpush/jobs/{job_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/logpush/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/custom_hostnames",
+      "provider_proxy_intent": "/zones/{zone_id}/custom_hostnames",
+      "text": "List custom hostnames",
+      "category": "Custom Hostnames",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "hostname": {
+          "type": "string",
+          "text": "Hostname to filter by",
+          "required": false
+        },
+        "id": {
+          "type": "string",
+          "text": "Custom hostname identifier",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "per_page": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List all custom hostnames for a zone",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/custom_hostnames",
+        "api_ref": "https://developers.cloudflare.com/api/resources/custom-hostnames/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/custom_hostnames",
+      "provider_proxy_intent": "/zones/{zone_id}/custom_hostnames",
+      "text": "Create custom hostname",
+      "category": "Custom Hostnames",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        }
+      },
+      "body": {
+        "hostname": {
+          "type": "string",
+          "text": "Custom hostname",
+          "required": true
+        },
+        "ssl": {
+          "type": "object",
+          "text": "SSL configuration",
+          "required": false
+        },
+        "custom_origin_server": {
+          "type": "string",
+          "text": "Custom origin server",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a new custom hostname",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/custom_hostnames",
+        "api_ref": "https://developers.cloudflare.com/api/resources/custom-hostnames/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/custom_hostnames/{hostname_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/custom_hostnames/{hostname_id}",
+      "text": "Get custom hostname",
+      "category": "Custom Hostnames",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "hostname_id": {
+          "type": "string",
+          "text": "Custom hostname identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get a specific custom hostname",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames/{hostname_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/custom_hostnames/{hostname_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/custom-hostnames/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/zones/{zone_id}/custom_hostnames/{hostname_id}",
+      "provider_proxy_intent": "/zones/{zone_id}/custom_hostnames/{hostname_id}",
+      "text": "Delete custom hostname",
+      "category": "Custom Hostnames",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "zone_id": {
+          "type": "string",
+          "text": "Zone identifier",
+          "required": true
+        },
+        "hostname_id": {
+          "type": "string",
+          "text": "Custom hostname identifier",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Delete a custom hostname",
+        "rate_limit": [],
+        "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/custom_hostnames/{hostname_id}",
+        "alias_endpoint": "/cloudflare/zones/{zone_id}/custom_hostnames/{hostname_id}",
+        "api_ref": "https://developers.cloudflare.com/api/resources/custom-hostnames/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    }
+  ]
+}
