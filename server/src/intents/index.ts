@@ -41,6 +41,7 @@ let finalConnectorsList : any = [];
 try {
   DISABLED_CONNECTORS = DISABLE_SELECTED_CONNECTORS.trim().split(',').map((i) => i.toString().trim().toLowerCase());
   if (DISABLED_CONNECTORS.length) {
+    console.log('DISABLED_CONNECTORS', DISABLED_CONNECTORS);
     finalConnectorsList = providerList
       .filter((item : any) => !DISABLED_CONNECTORS.includes(item.id));
   }

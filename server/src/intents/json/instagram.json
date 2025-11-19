@@ -1,0 +1,1968 @@
+{
+  "config": {
+    "id": "instagram",
+    "name": "Instagram",
+    "description": "Instagram Graph API for managing Instagram Business and Creator accounts",
+    "logo_url": "instagram.svg",
+    "auth_type": "OAUTH2.0",
+    "auth": {},
+    "auth_config": {},
+    "headers": {},
+    "api_endpoint": "https://graph.facebook.com",
+    "released": 1,
+    "updated_at": "2025-01-27T00:00:00.000Z",
+    "website": "https://www.instagram.com",
+    "api_link_ref": "https://developers.facebook.com/docs/instagram-api",
+    "total_api": 38,
+    "credential_link": "https://developers.facebook.com/docs/instagram-api/getting-started"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id",
+      "text": "Get Instagram Business Account",
+      "category": "Account",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, username, account_type, media_count, profile_picture_url)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get Instagram Business Account information",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/media",
+      "text": "Get Media Objects",
+      "category": "Media",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of media objects to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get media objects for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/media",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/media",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id",
+      "text": "Get Media Object Details",
+      "category": "Media",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username, like_count, comments_count)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get details of a specific media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/media",
+      "text": "Create Media Container",
+      "category": "Media",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "image_url": {
+          "type": "string",
+          "text": "URL of the image to publish (for IMAGE media type)",
+          "required": false
+        },
+        "video_url": {
+          "type": "string",
+          "text": "URL of the video to publish (for VIDEO media type)",
+          "required": false
+        },
+        "caption": {
+          "type": "string",
+          "text": "Caption for the media",
+          "required": false
+        },
+        "location_id": {
+          "type": "string",
+          "text": "Location ID to tag in the media",
+          "required": false
+        },
+        "user_tags": {
+          "type": "array",
+          "text": "Array of user tags",
+          "required": false
+        },
+        "product_tags": {
+          "type": "array",
+          "text": "Array of product tags",
+          "required": false
+        },
+        "media_type": {
+          "type": "string",
+          "text": "Type of media: IMAGE, VIDEO, or CAROUSEL_ALBUM",
+          "required": true,
+          "enum": ["IMAGE", "VIDEO", "CAROUSEL_ALBUM"]
+        },
+        "children": {
+          "type": "string",
+          "text": "Comma-separated list of media IDs for carousel (for CAROUSEL_ALBUM)",
+          "required": false
+        },
+        "thumb_offset": {
+          "type": "number",
+          "text": "Thumbnail offset in seconds for video (for VIDEO)",
+          "required": false
+        },
+        "is_carousel_item": {
+          "type": "boolean",
+          "text": "Whether this is a carousel item",
+          "required": false
+        }
+      },
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Create a media container for publishing",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/media",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/media",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/media#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/media_publish",
+      "text": "Publish Media Container",
+      "category": "Media",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "creation_id": {
+          "type": "string",
+          "text": "The creation_id returned from creating the media container",
+          "required": true
+        }
+      },
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Publish a media container to Instagram",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/media_publish",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/media_publish",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/media_publish"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id",
+      "text": "Delete Media",
+      "category": "Media",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Delete a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media#deleting"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/comments",
+      "text": "Get Comments on Media",
+      "category": "Comments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, text, timestamp, username, like_count, replies)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of comments to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get comments on a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/comments",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/comments",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/comments"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/comments",
+      "text": "Create Comment",
+      "category": "Comments",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "message": {
+          "type": "string",
+          "text": "The comment text",
+          "required": true
+        }
+      },
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Create a comment on a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/comments",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/comments",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/comments#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_comment_id",
+      "text": "Get Comment Details",
+      "category": "Comments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, text, timestamp, username, like_count, replies)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get details of a specific comment",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_COMMENT_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_comment_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-comment"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_comment_id",
+      "text": "Delete Comment",
+      "category": "Comments",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Delete a comment",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_COMMENT_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_comment_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-comment#deleting"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_comment_id/replies",
+      "text": "Get Comment Replies",
+      "category": "Comments",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, text, timestamp, username, like_count)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of replies to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get replies to a comment",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_COMMENT_ID>/replies",
+        "alias_endpoint": "/instagram/v20.0/ig_comment_id/replies",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-comment/replies"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_comment_id/replies",
+      "text": "Reply to Comment",
+      "category": "Comments",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "message": {
+          "type": "string",
+          "text": "The reply text",
+          "required": true
+        }
+      },
+      "path": {
+        "IG_COMMENT_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Reply to a comment",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_COMMENT_ID>/replies",
+        "alias_endpoint": "/instagram/v20.0/ig_comment_id/replies",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-comment/replies#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/insights",
+      "text": "Get Account Insights",
+      "category": "Insights",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "metric": {
+          "type": "array",
+          "text": "Metrics to retrieve (e.g., impressions, reach, profile_views, website_clicks, follower_count)",
+          "required": true
+        },
+        "period": {
+          "type": "string",
+          "text": "Time period: day, week, days_28, lifetime",
+          "required": true,
+          "enum": ["day", "week", "days_28", "lifetime"]
+        },
+        "since": {
+          "type": "string",
+          "text": "Start date (Unix timestamp or ISO 8601)"
+        },
+        "until": {
+          "type": "string",
+          "text": "End date (Unix timestamp or ISO 8601)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get insights for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/insights",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/insights",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/insights"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/insights",
+      "text": "Get Media Insights",
+      "category": "Insights",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "metric": {
+          "type": "array",
+          "text": "Metrics to retrieve (e.g., impressions, reach, engagement, saved, video_views, likes, comments, shares)",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get insights for a specific media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/insights",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/insights",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/insights"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/recently_searched_hashtags",
+      "text": "Get Recently Searched Hashtags",
+      "category": "Hashtags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of hashtags to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get recently searched hashtags by the user",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/recently_searched_hashtags",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/recently_searched_hashtags",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/recently_searched_hashtags"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/hashtag_id",
+      "text": "Get Hashtag Information",
+      "category": "Hashtags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, name)"
+        },
+        "user_id": {
+          "type": "string",
+          "text": "Instagram Business Account ID to check if hashtag is followed",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get information about a hashtag",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<HASHTAG_ID>",
+        "alias_endpoint": "/instagram/v20.0/hashtag_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-hashtag"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/hashtag_id/top_media",
+      "text": "Get Top Media for Hashtag",
+      "category": "Hashtags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        },
+        "user_id": {
+          "type": "string",
+          "text": "Instagram Business Account ID",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of media objects to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get top media for a hashtag",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<HASHTAG_ID>/top_media",
+        "alias_endpoint": "/instagram/v20.0/hashtag_id/top_media",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-hashtag/top-media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/hashtag_id/recent_media",
+      "text": "Get Recent Media for Hashtag",
+      "category": "Hashtags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        },
+        "user_id": {
+          "type": "string",
+          "text": "Instagram Business Account ID",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of media objects to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "HASHTAG_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get recent media for a hashtag",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<HASHTAG_ID>/recent_media",
+        "alias_endpoint": "/instagram/v20.0/hashtag_id/recent_media",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-hashtag/recent-media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/mentions",
+      "text": "Get Mentions",
+      "category": "Mentions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, username, text, timestamp)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of mentions to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get mentions for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/mentions",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/mentions",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/mentions"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/stories",
+      "text": "Get Stories",
+      "category": "Stories",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, media_type, media_url, permalink, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of stories to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get stories for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/stories",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/stories",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/stories"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_story_id",
+      "text": "Get Story Details",
+      "category": "Stories",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_STORY_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, media_type, media_url, permalink, timestamp, username)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_STORY_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get details of a specific story",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_STORY_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_story_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/reels",
+      "text": "Get Reels",
+      "category": "Reels",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username, like_count, comments_count)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of reels to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get reels for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/reels",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/reels",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/reels"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/reels",
+      "text": "Create Reel Container",
+      "category": "Reels",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "video_url": {
+          "type": "string",
+          "text": "URL of the video to publish",
+          "required": true
+        },
+        "caption": {
+          "type": "string",
+          "text": "Caption for the reel",
+          "required": false
+        },
+        "thumb_offset": {
+          "type": "number",
+          "text": "Thumbnail offset in seconds",
+          "required": false
+        },
+        "share_to_feed": {
+          "type": "boolean",
+          "text": "Whether to share the reel to the feed",
+          "required": false
+        },
+        "cover_url": {
+          "type": "string",
+          "text": "URL of the cover image",
+          "required": false
+        },
+        "audio_name": {
+          "type": "string",
+          "text": "Name of the audio track",
+          "required": false
+        },
+        "location_id": {
+          "type": "string",
+          "text": "Location ID to tag in the reel",
+          "required": false
+        }
+      },
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Create a reel container for publishing",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/reels",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/reels",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/reels#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/reels_publish",
+      "text": "Publish Reel",
+      "category": "Reels",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "creation_id": {
+          "type": "string",
+          "text": "The creation_id returned from creating the reel container",
+          "required": true
+        }
+      },
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Publish a reel container to Instagram",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/reels_publish",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/reels_publish",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/reels_publish"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/likes",
+      "text": "Get Likes on Media",
+      "category": "Likes",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of likes to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get likes on a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/likes",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/likes",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/likes"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/likes",
+      "text": "Like Media",
+      "category": "Likes",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Like a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/likes",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/likes",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/likes#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_media_id/likes",
+      "text": "Unlike Media",
+      "category": "Likes",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_MEDIA_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Unlike a media object",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_MEDIA_ID>/likes",
+        "alias_endpoint": "/instagram/v20.0/ig_media_id/likes",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-media/likes#deleting"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/tags",
+      "text": "Get Tagged Media",
+      "category": "Tags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, thumbnail_url, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of media objects to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get media where the user is tagged",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/tags",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/tags",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/tags"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/live_media",
+      "text": "Get Live Media",
+      "category": "Live",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, caption, media_type, media_url, permalink, timestamp, username)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of live media objects to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get live media for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/live_media",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/live_media",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/live_media"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/shopping_product_tag",
+      "text": "Get Shopping Product Tags",
+      "category": "Shopping",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of product tags to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get shopping product tags for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/shopping_product_tag",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/shopping_product_tag",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/shopping_product_tag"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/content_publishing_limit",
+      "text": "Get Content Publishing Limit",
+      "category": "Publishing",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "since": {
+          "type": "string",
+          "text": "Start date (Unix timestamp or ISO 8601)"
+        },
+        "until": {
+          "type": "string",
+          "text": "End date (Unix timestamp or ISO 8601)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get content publishing limit for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/content_publishing_limit",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/content_publishing_limit",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/content_publishing_limit"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/ig_hashtag_search",
+      "text": "Search Hashtag",
+      "category": "Hashtags",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "q": {
+          "type": "string",
+          "text": "Hashtag name to search (without #)",
+          "required": true
+        },
+        "user_id": {
+          "type": "string",
+          "text": "Instagram Business Account ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Search for a hashtag by name",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/ig_hashtag_search",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/ig_hashtag_search",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/ig-hashtag-search"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/ig_user_search",
+      "text": "Search User",
+      "category": "Users",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "q": {
+          "type": "string",
+          "text": "Username to search",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Search for an Instagram user by username",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/ig_user_search",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/ig_user_search",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/ig-user-search"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/containers",
+      "text": "Get Media Containers",
+      "category": "Containers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, status, status_code)"
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of containers to retrieve (default: 25, max: 100)"
+        },
+        "after": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        },
+        "before": {
+          "type": "string",
+          "text": "Cursor for pagination"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get media containers for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/containers",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/containers",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/containers"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_container_id",
+      "text": "Get Container Status",
+      "category": "Containers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_CONTAINER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "fields": {
+          "type": "array",
+          "text": "Fields to retrieve (e.g., id, status, status_code)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_CONTAINER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get status of a media container",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_CONTAINER_ID>",
+        "alias_endpoint": "/instagram/v20.0/ig_container_id",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-container"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/product_appeal",
+      "text": "Get Product Appeals",
+      "category": "Shopping",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        },
+        "product_id": {
+          "type": "string",
+          "text": "Product ID to get appeals for",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Get product appeals for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/product_appeal",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/product_appeal",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/product_appeal"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/ig_user_id/product_appeal",
+      "text": "Create Product Appeal",
+      "category": "Shopping",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID to appeal",
+          "required": true
+        },
+        "appeal_reason": {
+          "type": "string",
+          "text": "Reason for the appeal",
+          "required": true
+        }
+      },
+      "path": {
+        "IG_USER_ID": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Create a product appeal for an Instagram Business Account",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/<IG_USER_ID>/product_appeal",
+        "alias_endpoint": "/instagram/v20.0/ig_user_id/product_appeal",
+        "api_ref": "https://developers.facebook.com/docs/instagram-api/reference/ig-user/product_appeal#creating"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/v20.0/batch",
+      "text": "Batch Request",
+      "category": "Batch",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "batch": {
+          "type": "array",
+          "text": "Array of request objects to batch",
+          "required": true
+        },
+        "access_token": {
+          "type": "string",
+          "text": "Access token for authentication",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v20.0",
+        "auth": [],
+        "description": "Execute multiple API requests in a single batch request",
+        "rate_limit": [],
+        "api_endpoint": "https://graph.facebook.com/v20.0/batch",
+        "alias_endpoint": "/instagram/v20.0/batch",
+        "api_ref": "https://developers.facebook.com/docs/graph-api/making-multiple-requests"
+      },
+      "auth": {
+        "queryMap": {
+          "access_token": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-27T00:00:00.000Z"
+    }
+  ]
+}

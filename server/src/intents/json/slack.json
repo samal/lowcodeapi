@@ -1,5 +1,75 @@
 {
-  "config": {},
+  "config": {
+    "id": "slack",
+    "name": "Slack",
+    "description": "Slack API integration",
+    "logo_url": "slack.svg",
+    "auth_type": "OAUTH2.0",
+    "auth": {
+      "header": {
+        "authKey": "accessToken",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": {
+      "setup": [
+        {
+          "name": "client_id",
+          "type": "input",
+          "field": "input",
+          "label": "OAuth2.0 Client ID",
+          "message": "Slack's OAuth2.0 Client Secret",
+          "required": true,
+          "className": "",
+          "placeholder": "Enter Slack's OAuth2.0 Client ID"
+        },
+        {
+          "name": "client_secret",
+          "type": "input",
+          "field": "input",
+          "label": "OAuth2.0 Client Secret",
+          "message": "Slack's OAuth2.0 Client Secret",
+          "required": true,
+          "className": "",
+          "placeholder": "Enter Slack's OAuth2.0 Client Secret"
+        },
+          {
+            "name": "selected_scopes",
+            "type": "input",
+            "field": "input",
+            "label": "Scopes",
+            "message": "Add comma seperated scopes for accessing Slack's api endpoints",
+            "required": true,
+            "className": "",
+            "placeholder": "Enter Slack's OAuth2.0 Scopes"
+          }
+        ],
+        "scope": [
+          {
+            "name": "channels:read",
+            "role": ""
+          }, {
+            "name": "channels:write",
+            "role": ""
+          }, {
+            "name": "chat:write",
+            "role": ""
+          }, {
+            "name": "chat:write.public",
+            "role": ""
+          }
+        ],
+        "auth_link": "/auth/slack"
+    },
+    "api_endpoint": "https://slack.com/api",
+    "released": 1,
+    "updated_at": "2025-11-19T11:16:59.000Z",
+    "website": "https://slack.com",
+    "api_link_ref": "https://api.slack.com",
+    "total_api": 200,
+    "credential_link": "https://api.slack.com/apps"
+  },
   "routes": [
     {
       "provider_alias_intent": "/admin.apps.approve",
@@ -49,7 +119,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.apps.approve",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.apps.restrict",
@@ -99,7 +172,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.apps.restrict",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.apps.approved.list",
@@ -151,7 +227,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.apps.approved.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.apps.requests.list",
@@ -200,7 +279,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.apps.requests.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.apps.restricted.list",
@@ -252,7 +334,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.apps.restricted.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.conversations.archive",
@@ -295,7 +380,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.archive",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.converttoprivate",
@@ -338,7 +427,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.converttoprivate",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.create",
@@ -406,7 +499,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.create",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.delete",
@@ -449,7 +546,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.delete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.disconnectshared",
@@ -496,7 +597,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.disconnectshared",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.getconversationprefs",
@@ -539,7 +644,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.getconversationprefs",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.getteams",
@@ -590,7 +699,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.getteams",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.invite",
@@ -638,7 +751,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.invite",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.rename",
@@ -685,7 +802,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.rename",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.search",
@@ -751,7 +872,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.search",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.setconversationprefs",
@@ -799,7 +924,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.setconversationprefs",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.setteams",
@@ -858,7 +987,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.setteams",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.unarchive",
@@ -901,7 +1034,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.unarchive",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.ekm.listoriginalconnectedchannelinfo",
@@ -954,7 +1091,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.ekm.listoriginalconnectedchannelinfo",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.restrictaccess.addgroup",
@@ -1010,7 +1151,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.restrictaccess.addgroup",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.restrictaccess.listgroups",
@@ -1055,7 +1200,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.restrictaccess.listgroups",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.conversations.restrictaccess.removegroup",
@@ -1112,7 +1261,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.conversations.restrictaccess.removegroup",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.emoji.add",
@@ -1159,7 +1312,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.emoji.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.emoji.addalias",
@@ -1206,7 +1363,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.emoji.addalias",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.emoji.list",
@@ -1251,7 +1412,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.emoji.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.emoji.remove",
@@ -1293,7 +1458,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.emoji.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.emoji.rename",
@@ -1340,7 +1509,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.emoji.rename",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.inviterequests.approve",
@@ -1387,7 +1560,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.inviterequests.approve",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/admin.inviterequests.deny",
@@ -1435,7 +1612,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.inviterequests.deny",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.inviterequests.list",
@@ -1486,7 +1666,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.inviterequests.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.inviterequests.approved.list",
@@ -1537,7 +1720,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.inviterequests.approved.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.inviterequests.denied.list",
@@ -1588,7 +1774,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.inviterequests.denied.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.create",
@@ -1645,7 +1834,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.create",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.list",
@@ -1692,7 +1884,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.admins.list",
@@ -1742,7 +1937,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.admins.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.owners.list",
@@ -1792,7 +1990,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.owners.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.info",
@@ -1835,7 +2036,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.info",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.setdefaultchannels",
@@ -1883,7 +2087,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.setdefaultchannels",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.setdescription",
@@ -1932,7 +2139,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.setdescription",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.setdiscoverability",
@@ -1981,7 +2191,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.setdiscoverability",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.seticon",
@@ -2029,7 +2242,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.seticon",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.teams.settings.setname",
@@ -2078,7 +2294,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.teams.settings.setname",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.usergroups.addchannels",
@@ -2131,7 +2350,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.usergroups.addchannels",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.usergroups.addteams",
@@ -2188,7 +2410,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.usergroups.addteams",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.usergroups.listchannels",
@@ -2244,7 +2469,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.usergroups.listchannels",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.usergroups.removechannels",
@@ -2293,7 +2521,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.usergroups.removechannels",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.assign",
@@ -2362,7 +2593,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.assign",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.invite",
@@ -2450,7 +2684,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.invite",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.list",
@@ -2502,7 +2739,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.remove",
@@ -2551,7 +2791,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.remove",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.setadmin",
@@ -2600,7 +2843,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.setadmin",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.setexpiration",
@@ -2654,7 +2900,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.setexpiration",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.setowner",
@@ -2703,7 +2952,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.setowner",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.setregular",
@@ -2752,7 +3004,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.setregular",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.session.invalidate",
@@ -2800,7 +3055,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.session.invalidate",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/admin.users.session.reset",
@@ -2858,7 +3116,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.users.session.reset",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/api.test",
@@ -2899,7 +3160,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/api.test",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.uninstall",
@@ -2943,7 +3207,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.uninstall",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/apps.event.authorizations.list",
@@ -2992,7 +3260,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.event.authorizations.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.info",
@@ -3029,7 +3300,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.info",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.request",
@@ -3077,7 +3351,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.request",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.resources.list",
@@ -3123,7 +3400,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.resources.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.scopes.list",
@@ -3161,7 +3441,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.scopes.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.users.list",
@@ -3207,7 +3490,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.users.list",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/apps.permissions.users.request",
@@ -3260,7 +3546,10 @@
       "response_type": "",
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/apps.permissions.users.request",
+      "response_format": {}
     },
     {
       "provider_alias_intent": "/auth.revoke",
@@ -3305,7 +3594,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/auth.revoke",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/auth.test",
@@ -3342,7 +3635,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/auth.test",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/bots.info",
@@ -3383,7 +3680,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/bots.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.add",
@@ -3455,7 +3756,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.end",
@@ -3502,7 +3807,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.end",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.info",
@@ -3545,7 +3854,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.update",
@@ -3600,7 +3913,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.participants.add",
@@ -3648,7 +3965,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.participants.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/calls.participants.remove",
@@ -3696,7 +4017,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/calls.participants.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.delete",
@@ -3748,7 +4073,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.delete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.deletescheduledmessage",
@@ -3803,7 +4132,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.deletescheduledmessage",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.getpermalink",
@@ -3850,7 +4183,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.getpermalink",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.memessage",
@@ -3895,7 +4232,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.memessage",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.postephemeral",
@@ -3991,7 +4332,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.postephemeral",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.postmessage",
@@ -4110,7 +4455,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.postmessage",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.schedulemessage",
@@ -4215,7 +4564,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.schedulemessage",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.unfurl",
@@ -4283,7 +4636,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.unfurl",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.update",
@@ -4355,7 +4712,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/chat.scheduledmessages.list",
@@ -4412,7 +4773,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/chat.scheduledmessages.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.archive",
@@ -4453,7 +4818,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.archive",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.close",
@@ -4494,7 +4863,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.close",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.create",
@@ -4543,7 +4916,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.create",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.history",
@@ -4607,7 +4984,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.history",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.info",
@@ -4663,7 +5044,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.invite",
@@ -4708,7 +5093,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.invite",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.join",
@@ -4749,7 +5138,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.join",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.kick",
@@ -4794,7 +5187,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.kick",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.leave",
@@ -4835,7 +5232,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.leave",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.list",
@@ -4891,7 +5292,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.mark",
@@ -4936,7 +5341,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.mark",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.members",
@@ -4984,7 +5393,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.members",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.open",
@@ -5037,7 +5450,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.open",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.rename",
@@ -5082,7 +5499,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.rename",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.replies",
@@ -5150,7 +5571,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.replies",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.setpurpose",
@@ -5195,7 +5620,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.setpurpose",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.settopic",
@@ -5240,7 +5669,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.settopic",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/conversations.unarchive",
@@ -5281,7 +5714,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.unarchive",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dialog.open",
@@ -5329,7 +5766,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dialog.open",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dnd.enddnd",
@@ -5366,7 +5807,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dnd.enddnd",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dnd.endsnooze",
@@ -5403,7 +5848,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dnd.endsnooze",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dnd.info",
@@ -5443,7 +5892,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dnd.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dnd.setsnooze",
@@ -5485,7 +5938,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.487Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dnd.setsnooze",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/dnd.teaminfo",
@@ -5525,7 +5982,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/dnd.teaminfo",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/emoji.list",
@@ -5562,7 +6023,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/emoji.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.delete",
@@ -5603,7 +6068,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.delete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.info",
@@ -5657,7 +6126,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.list",
@@ -5727,7 +6200,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.revokepublicurl",
@@ -5768,7 +6245,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.revokepublicurl",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.sharedpublicurl",
@@ -5809,7 +6290,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.sharedpublicurl",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.upload",
@@ -5877,7 +6362,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.upload",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.comments.delete",
@@ -5922,7 +6411,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.comments.delete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.add",
@@ -5982,7 +6475,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.info",
@@ -6026,7 +6523,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.list",
@@ -6082,7 +6583,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.remove",
@@ -6126,7 +6631,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.share",
@@ -6174,7 +6683,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.share",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/files.remote.update",
@@ -6238,7 +6751,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/files.remote.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/migration.exchange",
@@ -6292,7 +6809,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/migration.exchange",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/oauth.access",
@@ -6348,7 +6869,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/oauth.access",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/oauth.token",
@@ -6404,7 +6929,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/oauth.token",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/oauth.v2.access",
@@ -6453,7 +6982,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/oauth.v2.access",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/pins.add",
@@ -6500,7 +7033,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/pins.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/pins.list",
@@ -6542,7 +7079,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/pins.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/pins.remove",
@@ -6589,7 +7130,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/pins.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reactions.add",
@@ -6642,7 +7187,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reactions.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reactions.get",
@@ -6703,7 +7252,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reactions.get",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reactions.list",
@@ -6766,7 +7319,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reactions.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reactions.remove",
@@ -6825,7 +7382,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reactions.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reminders.add",
@@ -6880,7 +7441,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reminders.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reminders.complete",
@@ -6921,7 +7486,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reminders.complete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reminders.delete",
@@ -6962,7 +7531,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reminders.delete",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reminders.info",
@@ -7002,7 +7575,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reminders.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/reminders.list",
@@ -7038,7 +7615,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/reminders.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/rtm.connect",
@@ -7091,7 +7672,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/rtm.connect",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/search.messages",
@@ -7156,7 +7741,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/search.messages",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/stars.add",
@@ -7210,7 +7799,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/stars.add",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/stars.list",
@@ -7260,7 +7853,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/stars.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/stars.remove",
@@ -7314,7 +7911,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/stars.remove",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/team.accesslogs",
@@ -7361,7 +7962,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/team.accesslogs",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/team.billableinfo",
@@ -7402,7 +8007,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/team.billableinfo",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/team.info",
@@ -7443,7 +8052,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/team.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/team.integrationlogs",
@@ -7502,7 +8115,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/team.integrationlogs",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/team.profile.get",
@@ -7543,7 +8160,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/team.profile.get",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.create",
@@ -7606,7 +8227,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.create",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.disable",
@@ -7657,7 +8282,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.disable",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.enable",
@@ -7708,7 +8337,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.enable",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.list",
@@ -7769,7 +8402,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.update",
@@ -7836,7 +8473,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.users.list",
@@ -7886,7 +8527,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.users.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/usergroups.users.update",
@@ -7942,7 +8587,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/usergroups.users.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.conversations",
@@ -8002,7 +8651,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.conversations",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.deletephoto",
@@ -8039,7 +8692,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.deletephoto",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.getpresence",
@@ -8080,7 +8737,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.getpresence",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.identity",
@@ -8116,7 +8777,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.identity",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.info",
@@ -8165,7 +8830,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.info",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.list",
@@ -8217,7 +8886,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.list",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.lookupbyemail",
@@ -8259,7 +8932,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.lookupbyemail",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.setactive",
@@ -8296,7 +8973,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.setactive",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.setphoto",
@@ -8349,7 +9030,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.setphoto",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.setpresence",
@@ -8392,7 +9077,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.setpresence",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.profile.get",
@@ -8441,7 +9130,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.profile.get",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/users.profile.set",
@@ -8498,7 +9191,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/users.profile.set",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/views.open",
@@ -8546,7 +9243,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/views.open",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/views.publish",
@@ -8598,7 +9299,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/views.publish",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/views.push",
@@ -8646,7 +9351,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/views.push",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/views.update",
@@ -8700,7 +9409,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/views.update",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/workflows.stepcompleted",
@@ -8747,7 +9460,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/workflows.stepcompleted",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/workflows.stepfailed",
@@ -8795,7 +9512,11 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/workflows.stepfailed",
+      "response_format": {},
+      "response_type": ""
     },
     {
       "provider_alias_intent": "/workflows.updatestep",
@@ -8854,7 +9575,1397 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.488Z"
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/workflows.updatestep",
+      "response_format": {},
+      "response_type": ""
+    },
+    {
+      "provider_alias_intent": "/bookmarks.add",
+      "text": "Add a bookmark to a channel.",
+      "category": "Bookmarks",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "channel_id": {
+          "type": "string",
+          "text": "Channel to add bookmark in",
+          "required": true
+        },
+        "title": {
+          "type": "string",
+          "text": "Title for the bookmark",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "text": "The type of bookmark to add",
+          "required": true
+        },
+        "link": {
+          "type": "string",
+          "text": "Link to bookmark"
+        },
+        "emoji": {
+          "type": "string",
+          "text": "Emoji tag to apply to the bookmark"
+        },
+        "entity_id": {
+          "type": "string",
+          "text": "ID of the entity (message, file, etc.) to bookmark"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Add a bookmark to a channel.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/bookmarks.add",
+        "alias_endpoint": "/slack/bookmarks.add",
+        "api_ref": "https://api.slack.com/methods/bookmarks.add"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/bookmarks.add",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/bookmarks.edit",
+      "text": "Edit a bookmark.",
+      "category": "Bookmarks",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "bookmark_id": {
+          "type": "string",
+          "text": "Bookmark to update",
+          "required": true
+        },
+        "channel_id": {
+          "type": "string",
+          "text": "Channel containing the bookmark",
+          "required": true
+        },
+        "title": {
+          "type": "string",
+          "text": "New title for the bookmark"
+        },
+        "link": {
+          "type": "string",
+          "text": "New link for the bookmark"
+        },
+        "emoji": {
+          "type": "string",
+          "text": "New emoji to apply to the bookmark"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Edit a bookmark.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/bookmarks.edit",
+        "alias_endpoint": "/slack/bookmarks.edit",
+        "api_ref": "https://api.slack.com/methods/bookmarks.edit"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/bookmarks.edit",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/bookmarks.list",
+      "text": "List bookmarks for a channel.",
+      "category": "Bookmarks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "channel_id": {
+          "type": "string",
+          "text": "Channel to list bookmarks in",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "List bookmarks for a channel.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/bookmarks.list",
+        "alias_endpoint": "/slack/bookmarks.list",
+        "api_ref": "https://api.slack.com/methods/bookmarks.list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/bookmarks.list",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/bookmarks.remove",
+      "text": "Remove a bookmark from a channel.",
+      "category": "Bookmarks",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "bookmark_id": {
+          "type": "string",
+          "text": "Bookmark to remove",
+          "required": true
+        },
+        "channel_id": {
+          "type": "string",
+          "text": "Channel containing the bookmark",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Remove a bookmark from a channel.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/bookmarks.remove",
+        "alias_endpoint": "/slack/bookmarks.remove",
+        "api_ref": "https://api.slack.com/methods/bookmarks.remove"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/bookmarks.remove",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.barriers.create",
+      "text": "Create an information barrier. 🚧",
+      "category": "Admin Barriers",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "The name of the barrier",
+          "required": true
+        },
+        "barriered_from_usergroup_ids": {
+          "type": "string",
+          "text": "The list of usergroup IDs to restrict from",
+          "required": true
+        },
+        "primary_usergroup_id": {
+          "type": "string",
+          "text": "The primary usergroup ID",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Create an information barrier.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.barriers.create",
+        "alias_endpoint": "/slack/admin.barriers.create",
+        "api_ref": "https://api.slack.com/methods/admin.barriers.create"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.barriers.create",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.barriers.delete",
+      "text": "Delete an information barrier. 🚧",
+      "category": "Admin Barriers",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "barrier_id": {
+          "type": "string",
+          "text": "The ID of the barrier to delete",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Delete an information barrier.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.barriers.delete",
+        "alias_endpoint": "/slack/admin.barriers.delete",
+        "api_ref": "https://api.slack.com/methods/admin.barriers.delete"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.barriers.delete",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.barriers.list",
+      "text": "List information barriers for an organization. 🚧",
+      "category": "Admin Barriers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "cursor": {
+          "type": "string",
+          "text": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page"
+        },
+        "limit": {
+          "type": "integer",
+          "text": "The maximum number of items to return"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "List information barriers for an organization.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.barriers.list",
+        "alias_endpoint": "/slack/admin.barriers.list",
+        "api_ref": "https://api.slack.com/methods/admin.barriers.list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.barriers.list",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.barriers.update",
+      "text": "Update an information barrier. 🚧",
+      "category": "Admin Barriers",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "barrier_id": {
+          "type": "string",
+          "text": "The ID of the barrier to update",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "text": "The name of the barrier"
+        },
+        "barriered_from_usergroup_ids": {
+          "type": "string",
+          "text": "The list of usergroup IDs to restrict from"
+        },
+        "primary_usergroup_id": {
+          "type": "string",
+          "text": "The primary usergroup ID"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Update an information barrier.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.barriers.update",
+        "alias_endpoint": "/slack/admin.barriers.update",
+        "api_ref": "https://api.slack.com/methods/admin.barriers.update"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.barriers.update",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/conversations.connectShared",
+      "text": "Connect a shared channel to an org channel.",
+      "category": "Conversations",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "channel_id": {
+          "type": "string",
+          "text": "ID of the channel to connect",
+          "required": true
+        },
+        "channel_ids": {
+          "type": "string",
+          "text": "Comma-separated list of channel IDs to connect"
+        },
+        "org_channel_id": {
+          "type": "string",
+          "text": "ID of the org channel to connect to"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Connect a shared channel to an org channel.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/conversations.connectShared",
+        "alias_endpoint": "/slack/conversations.connectShared",
+        "api_ref": "https://api.slack.com/methods/conversations.connectShared"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.connectShared",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/conversations.inviteShared",
+      "text": "Invite a user to a shared channel.",
+      "category": "Conversations",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "channel": {
+          "type": "string",
+          "text": "Channel to invite user to",
+          "required": true
+        },
+        "emails": {
+          "type": "string",
+          "text": "Comma-separated list of email addresses"
+        },
+        "user_ids": {
+          "type": "string",
+          "text": "Comma-separated list of user IDs"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Invite a user to a shared channel.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/conversations.inviteShared",
+        "alias_endpoint": "/slack/conversations.inviteShared",
+        "api_ref": "https://api.slack.com/methods/conversations.inviteShared"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/conversations.inviteShared",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.functions.list",
+      "text": "List all Functions in a workspace. 🚧",
+      "category": "Admin Functions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "cursor": {
+          "type": "string",
+          "text": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page"
+        },
+        "limit": {
+          "type": "integer",
+          "text": "The maximum number of items to return"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "List all Functions in a workspace.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.functions.list",
+        "alias_endpoint": "/slack/admin.functions.list",
+        "api_ref": "https://api.slack.com/methods/admin.functions.list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.functions.list",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.functions.permissions.lookup",
+      "text": "Look up the permissions for a Function. 🚧",
+      "category": "Admin Functions Permissions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "function_id": {
+          "type": "string",
+          "text": "The ID of the Function",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Look up the permissions for a Function.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.functions.permissions.lookup",
+        "alias_endpoint": "/slack/admin.functions.permissions.lookup",
+        "api_ref": "https://api.slack.com/methods/admin.functions.permissions.lookup"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.functions.permissions.lookup",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.functions.permissions.set",
+      "text": "Set the permissions for a Function. 🚧",
+      "category": "Admin Functions Permissions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "function_id": {
+          "type": "string",
+          "text": "The ID of the Function",
+          "required": true
+        },
+        "visibility": {
+          "type": "string",
+          "text": "The visibility of the Function",
+          "required": true
+        },
+        "user_ids": {
+          "type": "string",
+          "text": "Comma-separated list of user IDs"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Set the permissions for a Function.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.functions.permissions.set",
+        "alias_endpoint": "/slack/admin.functions.permissions.set",
+        "api_ref": "https://api.slack.com/methods/admin.functions.permissions.set"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.functions.permissions.set",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.roles.addAssignments",
+      "text": "Add role assignments to a user. 🚧",
+      "category": "Admin Roles",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "entity_id": {
+          "type": "string",
+          "text": "ID of the user or group to assign roles to",
+          "required": true
+        },
+        "role_ids": {
+          "type": "string",
+          "text": "Comma-separated list of role IDs to assign",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Add role assignments to a user.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.roles.addAssignments",
+        "alias_endpoint": "/slack/admin.roles.addAssignments",
+        "api_ref": "https://api.slack.com/methods/admin.roles.addAssignments"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.roles.addAssignments",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.roles.listAssignments",
+      "text": "List role assignments for a user or group. 🚧",
+      "category": "Admin Roles",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "entity_id": {
+          "type": "string",
+          "text": "ID of the user or group to list role assignments for",
+          "required": true
+        },
+        "cursor": {
+          "type": "string",
+          "text": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page"
+        },
+        "limit": {
+          "type": "integer",
+          "text": "The maximum number of items to return"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "List role assignments for a user or group.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.roles.listAssignments",
+        "alias_endpoint": "/slack/admin.roles.listAssignments",
+        "api_ref": "https://api.slack.com/methods/admin.roles.listAssignments"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.roles.listAssignments",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.roles.removeAssignments",
+      "text": "Remove role assignments from a user. 🚧",
+      "category": "Admin Roles",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "entity_id": {
+          "type": "string",
+          "text": "ID of the user or group to remove role assignments from",
+          "required": true
+        },
+        "role_ids": {
+          "type": "string",
+          "text": "Comma-separated list of role IDs to remove",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Remove role assignments from a user.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.roles.removeAssignments",
+        "alias_endpoint": "/slack/admin.roles.removeAssignments",
+        "api_ref": "https://api.slack.com/methods/admin.roles.removeAssignments"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.roles.removeAssignments",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.collaborators.add",
+      "text": "Add collaborators to a workflow. 🚧",
+      "category": "Admin Workflows",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "workflow_id": {
+          "type": "string",
+          "text": "The ID of the workflow",
+          "required": true
+        },
+        "user_ids": {
+          "type": "string",
+          "text": "Comma-separated list of user IDs to add as collaborators",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Add collaborators to a workflow.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.collaborators.add",
+        "alias_endpoint": "/slack/admin.workflows.collaborators.add",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.collaborators.add"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.collaborators.add",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.collaborators.remove",
+      "text": "Remove collaborators from a workflow. 🚧",
+      "category": "Admin Workflows",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "workflow_id": {
+          "type": "string",
+          "text": "The ID of the workflow",
+          "required": true
+        },
+        "user_ids": {
+          "type": "string",
+          "text": "Comma-separated list of user IDs to remove as collaborators",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Remove collaborators from a workflow.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.collaborators.remove",
+        "alias_endpoint": "/slack/admin.workflows.collaborators.remove",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.collaborators.remove"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.collaborators.remove",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.permissions.lookup",
+      "text": "Look up the permissions for a workflow. 🚧",
+      "category": "Admin Workflows Permissions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "workflow_id": {
+          "type": "string",
+          "text": "The ID of the workflow",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Look up the permissions for a workflow.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.permissions.lookup",
+        "alias_endpoint": "/slack/admin.workflows.permissions.lookup",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.permissions.lookup"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.permissions.lookup",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.permissions.set",
+      "text": "Set the permissions for a workflow. 🚧",
+      "category": "Admin Workflows Permissions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "workflow_id": {
+          "type": "string",
+          "text": "The ID of the workflow",
+          "required": true
+        },
+        "visibility": {
+          "type": "string",
+          "text": "The visibility of the workflow",
+          "required": true
+        },
+        "user_ids": {
+          "type": "string",
+          "text": "Comma-separated list of user IDs"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Set the permissions for a workflow.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.permissions.set",
+        "alias_endpoint": "/slack/admin.workflows.permissions.set",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.permissions.set"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.permissions.set",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.search",
+      "text": "Search for workflows. 🚧",
+      "category": "Admin Workflows",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "query": {
+          "type": "string",
+          "text": "Search query"
+        },
+        "cursor": {
+          "type": "string",
+          "text": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page"
+        },
+        "limit": {
+          "type": "integer",
+          "text": "The maximum number of items to return"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Search for workflows.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.search",
+        "alias_endpoint": "/slack/admin.workflows.search",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.search"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.search",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.workflows.unpublish",
+      "text": "Unpublish a workflow. 🚧",
+      "category": "Admin Workflows",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "workflow_id": {
+          "type": "string",
+          "text": "The ID of the workflow to unpublish",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Unpublish a workflow.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.workflows.unpublish",
+        "alias_endpoint": "/slack/admin.workflows.unpublish",
+        "api_ref": "https://api.slack.com/methods/admin.workflows.unpublish"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.workflows.unpublish",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.analytics.getFile",
+      "text": "Retrieve analytics data file. 🚧",
+      "category": "Admin Analytics",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "type": {
+          "type": "string",
+          "text": "The type of analytics file to retrieve",
+          "required": true
+        },
+        "date": {
+          "type": "string",
+          "text": "Date of the analytics file (YYYY-MM-DD format)"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Retrieve analytics data file.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.analytics.getFile",
+        "alias_endpoint": "/slack/admin.analytics.getFile",
+        "api_ref": "https://api.slack.com/methods/admin.analytics.getFile"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.analytics.getFile",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.auth.policy.assignEntities",
+      "text": "Assign entities to an authentication policy. 🚧",
+      "category": "Admin Auth Policy",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "policy_id": {
+          "type": "string",
+          "text": "The ID of the authentication policy",
+          "required": true
+        },
+        "entity_ids": {
+          "type": "string",
+          "text": "Comma-separated list of entity IDs to assign",
+          "required": true
+        },
+        "entity_type": {
+          "type": "string",
+          "text": "The type of entity (USER, USER_GROUP, etc.)",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Assign entities to an authentication policy.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.auth.policy.assignEntities",
+        "alias_endpoint": "/slack/admin.auth.policy.assignEntities",
+        "api_ref": "https://api.slack.com/methods/admin.auth.policy.assignEntities"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.auth.policy.assignEntities",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.auth.policy.getEntities",
+      "text": "Get entities assigned to an authentication policy. 🚧",
+      "category": "Admin Auth Policy",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        },
+        "policy_id": {
+          "type": "string",
+          "text": "The ID of the authentication policy",
+          "required": true
+        },
+        "cursor": {
+          "type": "string",
+          "text": "Set `cursor` to `next_cursor` returned by the previous call to list items in the next page"
+        },
+        "limit": {
+          "type": "integer",
+          "text": "The maximum number of items to return"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Get entities assigned to an authentication policy.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.auth.policy.getEntities",
+        "alias_endpoint": "/slack/admin.auth.policy.getEntities",
+        "api_ref": "https://api.slack.com/methods/admin.auth.policy.getEntities"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.auth.policy.getEntities",
+      "response_format": {}
+    },
+    {
+      "provider_alias_intent": "/admin.auth.policy.removeEntities",
+      "text": "Remove entities from an authentication policy. 🚧",
+      "category": "Admin Auth Policy",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {
+        "token": {
+          "type": "string",
+          "text": "Authentication token",
+          "required": true
+        }
+      },
+      "body": {
+        "policy_id": {
+          "type": "string",
+          "text": "The ID of the authentication policy",
+          "required": true
+        },
+        "entity_ids": {
+          "type": "string",
+          "text": "Comma-separated list of entity IDs to remove",
+          "required": true
+        },
+        "entity_type": {
+          "type": "string",
+          "text": "The type of entity (USER, USER_GROUP, etc.)",
+          "required": true
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "-",
+        "auth": [],
+        "description": "Remove entities from an authentication policy.",
+        "rate_limit": [],
+        "api_endpoint": "https://slack.com/api/admin.auth.policy.removeEntities",
+        "alias_endpoint": "/slack/admin.auth.policy.removeEntities",
+        "api_ref": "https://api.slack.com/methods/admin.auth.policy.removeEntities"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "response_type": "",
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:16:59.000Z",
+      "request_type": "API",
+      "provider_proxy_intent": "/admin.auth.policy.removeEntities",
+      "response_format": {}
     }
   ]
 }

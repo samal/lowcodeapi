@@ -41,7 +41,7 @@
     "updated_at": "2024-12-22T10:59:32.000Z",
     "website": "https://trello.com",
     "api_link_ref": "https://developer.atlassian.com/cloud/trello/res",
-    "total_api": 244,
+    "total_api": 248,
     "credential_link": "https://trello.com/power-ups/admin"
   },
   "routes": [
@@ -13267,6 +13267,178 @@
       "intent": "postMembersOneTimeMessagesDismissed",
       "payload_type": "",
       "updated_at": "2025-11-11T15:37:35.523Z"
+    },
+    {
+      "provider_alias_intent": "/1/members/me",
+      "text": "Get authenticated Member",
+      "category": "Members",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of member fields"
+        },
+        "boards": {
+          "type": "string",
+          "text": "all or a comma-separated list of: all, closed, members, open, organization, pinned, public, starred, unpinned"
+        },
+        "board_fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of board fields"
+        },
+        "organizations": {
+          "type": "string",
+          "text": "all or a comma-separated list of: all, members, none, public"
+        },
+        "organization_fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of organization fields"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "1",
+        "auth": [],
+        "description": "Get the authenticated member",
+        "rate_limit": [],
+        "api_endpoint": "https://api.trello.com/1/members/me",
+        "alias_endpoint": "/trello/1/members/me",
+        "api_ref": "https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-me-get"
+      },
+      "auth": {
+        "query": [
+          "key",
+          "token"
+        ]
+      },
+      "response_type": "",
+      "intent": "getMembersMe",
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:03:43.000Z"
+    },
+    {
+      "provider_alias_intent": "/1/members/me/boards",
+      "text": "Get authenticated Member's Boards",
+      "category": "Members",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "filter": {
+          "type": "string",
+          "text": "Filter to apply to Boards. Valid values: all, closed, members, open, organization, pinned, public, starred, unpinned"
+        },
+        "fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of board fields"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "1",
+        "auth": [],
+        "description": "Get the boards the authenticated member is on",
+        "rate_limit": [],
+        "api_endpoint": "https://api.trello.com/1/members/me/boards",
+        "alias_endpoint": "/trello/1/members/me/boards",
+        "api_ref": "https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-me-boards-get"
+      },
+      "auth": {
+        "query": [
+          "key",
+          "token"
+        ]
+      },
+      "response_type": "",
+      "intent": "getMembersMeBoards",
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:03:43.000Z"
+    },
+    {
+      "provider_alias_intent": "/1/members/me/cards",
+      "text": "Get authenticated Member's Cards",
+      "category": "Members",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "filter": {
+          "type": "string",
+          "text": "Filter to apply to Cards. Valid values: all, closed, none, open, visible"
+        },
+        "fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of card fields"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "1",
+        "auth": [],
+        "description": "Get the cards the authenticated member is on",
+        "rate_limit": [],
+        "api_endpoint": "https://api.trello.com/1/members/me/cards",
+        "alias_endpoint": "/trello/1/members/me/cards",
+        "api_ref": "https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-me-cards-get"
+      },
+      "auth": {
+        "query": [
+          "key",
+          "token"
+        ]
+      },
+      "response_type": "",
+      "intent": "getMembersMeCards",
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:03:43.000Z"
+    },
+    {
+      "provider_alias_intent": "/1/members/me/organizations",
+      "text": "Get authenticated Member's Organizations",
+      "category": "Members",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "filter": {
+          "type": "string",
+          "text": "Filter to apply to Organizations. Valid values: all, members, none, public"
+        },
+        "fields": {
+          "type": "string",
+          "text": "all or a comma-separated list of organization fields"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "1",
+        "auth": [],
+        "description": "Get the organizations the authenticated member is associated with",
+        "rate_limit": [],
+        "api_endpoint": "https://api.trello.com/1/members/me/organizations",
+        "alias_endpoint": "/trello/1/members/me/organizations",
+        "api_ref": "https://developer.atlassian.com/cloud/trello/rest/api-group-members/#api-members-me-organizations-get"
+      },
+      "auth": {
+        "query": [
+          "key",
+          "token"
+        ]
+      },
+      "response_type": "",
+      "intent": "getMembersMeOrganizations",
+      "payload_type": "",
+      "updated_at": "2025-11-19T11:03:43.000Z"
     },
     {
       "provider_alias_intent": "/1/notifications/id",
