@@ -53,7 +53,7 @@
     "updated_at": "2024-12-22T09:42:44.000Z",
     "website": "https://hubspot.com",
     "api_link_ref": "https://developers.hubspot.com",
-    "total_api": 488,
+    "total_api": 529,
     "credential_link": "https://developers.hubspot.com/docs/api/working-with-oauth"
   },
   "routes": [
@@ -34530,6 +34530,2346 @@
         "requestedAt": "2024-12-26T05:07:55.554Z"
       },
       "updated_at": "2025-11-11T15:37:35.143Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts",
+      "text": "Read a page of contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts",
+      "text": "Create a contact",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The contact's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the contact and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a contact",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/contactId",
+      "text": "Read a contact",
+      "category": "CRM / Objects / Contacts",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "contactId": {
+          "text": "The contact ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a contact",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/{contactId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/contactId",
+      "text": "Update a contact",
+      "category": "CRM / Objects / Contacts",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "contactId": {
+          "text": "The contact ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The contact's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a contact",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/{contactId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/contactId",
+      "text": "Delete a contact",
+      "category": "CRM / Objects / Contacts",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "contactId": {
+          "text": "The contact ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a contact",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/{contactId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/batch/read",
+      "text": "Read a batch of contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The contact IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/batch/create",
+      "text": "Create a batch of contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The contacts to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/batch/update",
+      "text": "Update a batch of contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The contacts to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/batch/archive",
+      "text": "Archive a batch of contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The contact IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/contacts/search",
+      "text": "Search contacts",
+      "category": "CRM / Objects / Contacts",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/contacts",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search contacts",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/contacts/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies",
+      "text": "Read a page of companies",
+      "category": "CRM / Objects / Companies",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies",
+      "text": "Create a company",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The company's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the company and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a company",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/companyId",
+      "text": "Read a company",
+      "category": "CRM / Objects / Companies",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "companyId": {
+          "text": "The company ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a company",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/{companyId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/companyId",
+      "text": "Update a company",
+      "category": "CRM / Objects / Companies",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "companyId": {
+          "text": "The company ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The company's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a company",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/{companyId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/companyId",
+      "text": "Delete a company",
+      "category": "CRM / Objects / Companies",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "companyId": {
+          "text": "The company ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a company",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/{companyId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/batch/read",
+      "text": "Read a batch of companies",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The company IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/batch/create",
+      "text": "Create a batch of companies",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The companies to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/batch/update",
+      "text": "Update a batch of companies",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The companies to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/batch/archive",
+      "text": "Archive a batch of companies",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The company IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/companies/search",
+      "text": "Search companies",
+      "category": "CRM / Objects / Companies",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/companies",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search companies",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/companies/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals",
+      "text": "Read a page of deals",
+      "category": "CRM / Objects / Deals",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals",
+      "text": "Create a deal",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The deal's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the deal and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a deal",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/dealId",
+      "text": "Read a deal",
+      "category": "CRM / Objects / Deals",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "dealId": {
+          "text": "The deal ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a deal",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/{dealId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/dealId",
+      "text": "Update a deal",
+      "category": "CRM / Objects / Deals",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "dealId": {
+          "text": "The deal ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The deal's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a deal",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/{dealId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/dealId",
+      "text": "Delete a deal",
+      "category": "CRM / Objects / Deals",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "dealId": {
+          "text": "The deal ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a deal",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/{dealId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/batch/read",
+      "text": "Read a batch of deals",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The deal IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/batch/create",
+      "text": "Create a batch of deals",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The deals to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/batch/update",
+      "text": "Update a batch of deals",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The deals to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/batch/archive",
+      "text": "Archive a batch of deals",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The deal IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/deals/search",
+      "text": "Search deals",
+      "category": "CRM / Objects / Deals",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/deals",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search deals",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/deals/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets",
+      "text": "Read a page of tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets",
+      "text": "Create a ticket",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The ticket's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the ticket and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a ticket",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/ticketId",
+      "text": "Read a ticket",
+      "category": "CRM / Objects / Tickets",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "ticketId": {
+          "text": "The ticket ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a ticket",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/{ticketId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/ticketId",
+      "text": "Update a ticket",
+      "category": "CRM / Objects / Tickets",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "ticketId": {
+          "text": "The ticket ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The ticket's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a ticket",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/{ticketId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/ticketId",
+      "text": "Delete a ticket",
+      "category": "CRM / Objects / Tickets",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "ticketId": {
+          "text": "The ticket ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a ticket",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/{ticketId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/batch/read",
+      "text": "Read a batch of tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The ticket IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/batch/create",
+      "text": "Create a batch of tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The tickets to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/batch/update",
+      "text": "Update a batch of tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The tickets to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/batch/archive",
+      "text": "Archive a batch of tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The ticket IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/tickets/search",
+      "text": "Search tickets",
+      "category": "CRM / Objects / Tickets",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/tickets",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search tickets",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/tickets/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products",
+      "text": "Read a page of products",
+      "category": "CRM / Objects / Products",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products",
+      "text": "Create a product",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The product's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the product and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a product",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/productId",
+      "text": "Read a product",
+      "category": "CRM / Objects / Products",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "productId": {
+          "text": "The product ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a product",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/{productId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/productId",
+      "text": "Update a product",
+      "category": "CRM / Objects / Products",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "productId": {
+          "text": "The product ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The product's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a product",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/{productId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/productId",
+      "text": "Delete a product",
+      "category": "CRM / Objects / Products",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "productId": {
+          "text": "The product ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a product",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/{productId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/batch/read",
+      "text": "Read a batch of products",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The product IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/batch/create",
+      "text": "Create a batch of products",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The products to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/batch/update",
+      "text": "Update a batch of products",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The products to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/batch/archive",
+      "text": "Archive a batch of products",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The product IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/products/search",
+      "text": "Search products",
+      "category": "CRM / Objects / Products",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/products",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search products",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/products/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items",
+      "text": "Read a page of line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token of the last successfully read resource will be returned as the paging.next.after JSON property of a paged response containing more results",
+          "type": "string"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        }
+      },
+      "path": {},
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a page of line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items",
+      "text": "Create a line item",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "properties": {
+          "text": "The line item's properties",
+          "type": "object",
+          "required": true
+        },
+        "associations": {
+          "text": "Associations between the line item and other objects",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a line item",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/lineItemId",
+      "text": "Read a line item",
+      "category": "CRM / Objects / Line Items",
+      "method": "GET",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        },
+        "archived": {
+          "text": "Whether to return only results that have been archived",
+          "type": "boolean"
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "lineItemId": {
+          "text": "The line item ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a line item",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/{lineItemId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/lineItemId",
+      "text": "Update a line item",
+      "category": "CRM / Objects / Line Items",
+      "method": "PATCH",
+      "type": "API",
+      "request_type": "API",
+      "params": {
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        }
+      },
+      "path": {
+        "lineItemId": {
+          "text": "The line item ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {
+        "properties": {
+          "text": "The line item's properties",
+          "type": "object",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a line item",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/{lineItemId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/lineItemId",
+      "text": "Delete a line item",
+      "category": "CRM / Objects / Line Items",
+      "method": "DELETE",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {
+        "lineItemId": {
+          "text": "The line item ID",
+          "type": "string",
+          "required": true
+        }
+      },
+      "body": {},
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Delete a line item",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/{lineItemId}"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/batch/read",
+      "text": "Read a batch of line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "propertiesWithHistory": {
+          "text": "A comma separated list of the properties to be returned along with their history of previous values",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "inputs": {
+          "text": "The line item IDs to read",
+          "type": "array",
+          "required": true
+        },
+        "idProperty": {
+          "text": "The name of a property whose values are unique for this object type",
+          "type": "string"
+        },
+        "associations": {
+          "text": "A comma separated list of object types to retrieve associated IDs for",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Read a batch of line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/batch/read"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/batch/create",
+      "text": "Create a batch of line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The line items to create",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Create a batch of line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/batch/create"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/batch/update",
+      "text": "Update a batch of line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The line items to update",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Update a batch of line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/batch/update"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/batch/archive",
+      "text": "Archive a batch of line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "inputs": {
+          "text": "The line item IDs to archive",
+          "type": "array",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Archive a batch of line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/batch/archive"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/crm/v3/objects/line_items/search",
+      "text": "Search line items",
+      "category": "CRM / Objects / Line Items",
+      "method": "POST",
+      "type": "API",
+      "request_type": "API",
+      "params": {},
+      "path": {},
+      "body": {
+        "query": {
+          "text": "The search query",
+          "type": "string"
+        },
+        "limit": {
+          "text": "The maximum number of results to display per page",
+          "type": "number"
+        },
+        "after": {
+          "text": "The paging cursor token",
+          "type": "string"
+        },
+        "sorts": {
+          "text": "The fields to sort by",
+          "type": "array"
+        },
+        "properties": {
+          "text": "A comma separated list of the properties to be returned in the response",
+          "type": "array"
+        },
+        "filterGroups": {
+          "text": "The filter groups to apply",
+          "type": "array"
+        }
+      },
+      "custom_headers": {},
+      "domain_params": {},
+      "meta": {
+        "auth": [],
+        "api_ref": "https://developers.hubspot.com/docs/api/crm/line-items",
+        "version": "v3",
+        "rate_limit": [],
+        "description": "Search line items",
+        "api_endpoint": "https://api.hubapi.com/crm/v3/objects/line_items/search"
+      },
+      "auth": [],
+      "response_format": {},
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }
