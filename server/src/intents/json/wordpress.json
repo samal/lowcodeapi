@@ -52,8 +52,8 @@
     "released": 1,
     "updated_at": "2025-03-05T16:23:48.000Z",
     "website": "https://wordpress.org",
-    "api_link_ref": "https://developer.wordpress.org/docs",
-    "total_api": 68,
+    "api_link_ref": "https://developer.wordpress.com/docs/api",
+    "total_api": 189,
     "credential_link": "https://developer.wordpress.org/apps"
   },
   "routes": [
@@ -1213,7 +1213,7 @@
       "updated_at": "2025-11-11T15:37:35.647Z"
     },
     {
-      "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes/mine/deletee",
+      "provider_alias_intent": "/rest/v1.1/sites/site/comments/comment_id/likes/mine",
       "text": "Get your like status for a comment",
       "category": "Comment",
       "method": "GET",
@@ -1282,8 +1282,8 @@
         "auth": [],
         "description": "Get your like status for a comment.",
         "rate_limit": [],
-        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/comments/$comment_ID/likes/mine/deletee",
-        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/comments/comment_id/likes/mine/deletee",
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/comments/$comment_ID/likes/mine",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/comments/comment_id/likes/mine",
         "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/comments/%24comment_ID/likes/mine/"
       },
       "auth": {
@@ -6651,7 +6651,7 @@
       "updated_at": "2025-11-11T15:37:35.647Z"
     },
     {
-      "provider_alias_intent": "/rest/v1.1/me/publicize-connections/publicize_connection_idd",
+      "provider_alias_intent": "/rest/v1.1/me/publicize-connections/publicize_connection_id",
       "text": "Update user's publicize connection",
       "category": "Sharing",
       "method": "POST",
@@ -6723,8 +6723,8 @@
         "auth": [],
         "description": "Update a single publicize connection belonging to the current user.",
         "rate_limit": [],
-        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/me/publicize-connections/$publicize_connection_IDD",
-        "alias_endpoint": "/wordpress/rest/v1.1/me/publicize-connections/publicize_connection_idd",
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/me/publicize-connections/$publicize_connection_ID",
+        "alias_endpoint": "/wordpress/rest/v1.1/me/publicize-connections/publicize_connection_id",
         "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/me/publicize-connections/%24publicize_connection_ID/"
       },
       "auth": {
@@ -14571,6 +14571,1049 @@
         "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/videos/$guid/tracks/delete",
         "alias_endpoint": "/wordpress/rest/v1.1/videos/guid/tracks/delete",
         "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/videos/%24guid/tracks/delete/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/pages",
+      "text": "Get a list of pages",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "number": {
+          "type": "number",
+          "text": "Return the specified number of pages"
+        },
+        "offset": {
+          "type": "number",
+          "text": "Skip the specified number of pages"
+        },
+        "order": {
+          "type": "string",
+          "text": "Order pages by specified field",
+          "enum": [
+            "ASC",
+            "DESC"
+          ]
+        },
+        "order_by": {
+          "type": "string",
+          "text": "Sort collection by object attribute",
+          "enum": [
+            "date",
+            "modified",
+            "title",
+            "menu_order"
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a list of pages for a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/pages",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/pages",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/pages/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/pages/page_id",
+      "text": "Get a single page",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a single page.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/pages/$page_ID",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/pages/page_id",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/pages/%24page_ID/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/pages/new",
+      "text": "Create a new page",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "title": {
+          "type": "string",
+          "text": "The page title",
+          "required": true
+        },
+        "content": {
+          "type": "string",
+          "text": "The page content"
+        },
+        "excerpt": {
+          "type": "string",
+          "text": "The page excerpt"
+        },
+        "status": {
+          "type": "string",
+          "text": "The page status",
+          "enum": [
+            "publish",
+            "draft",
+            "pending",
+            "private",
+            "future"
+          ]
+        },
+        "parent_ID": {
+          "type": "number",
+          "text": "The ID of the parent page"
+        },
+        "menu_order": {
+          "type": "number",
+          "text": "The order of the page in the menu"
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Create a new page.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/pages/new",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/pages/new",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/pages/new/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/pages/page_id",
+      "text": "Update a page",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "title": {
+          "type": "string",
+          "text": "The page title"
+        },
+        "content": {
+          "type": "string",
+          "text": "The page content"
+        },
+        "excerpt": {
+          "type": "string",
+          "text": "The page excerpt"
+        },
+        "status": {
+          "type": "string",
+          "text": "The page status",
+          "enum": [
+            "publish",
+            "draft",
+            "pending",
+            "private",
+            "future"
+          ]
+        },
+        "parent_ID": {
+          "type": "number",
+          "text": "The ID of the parent page"
+        },
+        "menu_order": {
+          "type": "number",
+          "text": "The order of the page in the menu"
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Update a page.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/pages/$page_ID",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/pages/page_id",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/pages/%24page_ID/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/pages/page_id/delete",
+      "text": "Delete a page",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "page_ID": {
+          "type": "number",
+          "text": "The page ID.",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Delete a page.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/pages/$page_ID/delete",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/pages/page_id/delete",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/pages/%24page_ID/delete/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/plugins",
+      "text": "Get a list of plugins",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a list of plugins installed on a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/plugins",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/plugins",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/plugins/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/plugins/plugin/activate",
+      "text": "Activate a plugin",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "plugin": {
+          "type": "string",
+          "text": "The plugin slug",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "plugin": {
+          "type": "string",
+          "text": "The plugin slug",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Activate a plugin on a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/plugins/$plugin/activate",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/plugins/plugin/activate",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/plugins/%24plugin/activate/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/plugins/plugin/deactivate",
+      "text": "Deactivate a plugin",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "plugin": {
+          "type": "string",
+          "text": "The plugin slug",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "plugin": {
+          "type": "string",
+          "text": "The plugin slug",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Deactivate a plugin on a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/plugins/$plugin/deactivate",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/plugins/plugin/deactivate",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/plugins/%24plugin/deactivate/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/themes",
+      "text": "Get a list of themes",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a list of themes available for a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/themes",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/themes",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/themes/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/themes/theme/activate",
+      "text": "Activate a theme",
+      "category": "Site",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "theme": {
+          "type": "string",
+          "text": "The theme slug",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "theme": {
+          "type": "string",
+          "text": "The theme slug",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Activate a theme on a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/themes/$theme/activate",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/themes/theme/activate",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/post/sites/%24site/themes/%24theme/activate/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/domains",
+      "text": "Get a list of domains",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a list of domains for a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/domains",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/domains",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/domains/"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.647Z"
+    },
+    {
+      "provider_alias_intent": "/rest/v1.1/sites/site/plans",
+      "text": "Get a list of plans",
+      "category": "Site",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        },
+        "context": {
+          "type": "string",
+          "required": true
+        },
+        "http_envelope": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "pretty": {
+          "type": "boolean",
+          "required": true,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "meta": {
+          "type": "string",
+          "text": "Loads data from the endpoints found in the 'meta' part of the response"
+        },
+        "fields": {
+          "type": "string",
+          "text": "Returns specified fields only"
+        },
+        "callback": {
+          "type": "string",
+          "text": "An optional JSONP callback function"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "site": {
+          "type": "string",
+          "text": "Site ID or domain",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1.1",
+        "auth": [],
+        "description": "Get a list of plans available for a site.",
+        "rate_limit": [],
+        "api_endpoint": "https://public-api.wordpress.com/rest/v1.1/sites/$site/plans",
+        "alias_endpoint": "/wordpress/rest/v1.1/sites/site/plans",
+        "api_ref": "https://developer.wordpress.com/docs/api/1.1/get/sites/%24site/plans/"
       },
       "auth": {
         "header": {
