@@ -1,5 +1,7 @@
 {
-  "config": {},
+  "config": {
+    "api_link_ref": "https://developer.wordpress.org/rest-api/"
+  },
   "routes": [
     {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
@@ -30,7 +32,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.628Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords",
+      "text": "List Application Passwords",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Application Passwords",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/users/<user_id>/application-passwords",
+        "alias_endpoint": "/wordpressorg/wp/v2/users/_user_id/application-passwords",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/application-passwords/#list-application-passwords"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords",
@@ -61,7 +94,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.628Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
@@ -92,7 +125,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.628Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/_user_id/application-passwords/_uuid",
@@ -123,7 +156,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.628Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/block-types",
+      "text": "List Block Types",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Block Types",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/block-types",
+        "alias_endpoint": "/wordpressorg/wp/v2/block-types",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/block-types/#list-block-types"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/block-types/_namespace/_name",
@@ -154,7 +218,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks",
@@ -185,7 +249,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks",
@@ -216,7 +280,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks/_id",
@@ -247,7 +311,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks/_id",
@@ -278,7 +342,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks/_id",
@@ -309,7 +373,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks/_parent/autosaves/_id",
@@ -340,7 +404,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/blocks/_id/autosaves",
@@ -371,7 +435,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/block-renderer/_name",
@@ -402,7 +466,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/categories",
@@ -433,7 +497,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/categories",
@@ -464,7 +528,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/categories/_id",
@@ -495,7 +559,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/categories/_id",
@@ -526,7 +590,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/categories/_id",
@@ -557,7 +621,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/comments",
@@ -588,7 +652,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/comments",
@@ -619,7 +683,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/comments/_id",
@@ -650,7 +714,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/comments/_id",
@@ -681,7 +745,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/comments/_id",
@@ -712,7 +776,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/media",
@@ -743,7 +807,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/media",
@@ -774,7 +838,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/media/_id",
@@ -805,7 +869,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/media/_id",
@@ -836,7 +900,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/media/_id",
@@ -867,7 +931,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages",
@@ -898,7 +962,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages",
@@ -929,7 +993,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_id",
@@ -960,7 +1024,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_id",
@@ -991,7 +1055,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_id",
@@ -1022,7 +1086,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_parent/revisions",
@@ -1053,10 +1117,10 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
-      "provider_alias_intent": "/wp/v2/pages/_parent/autosaves/_id",
+      "provider_alias_intent": "/wp/v2/pages/_parent/revisions/_id",
       "text": "Retrieve a Page Revision",
       "category": "All",
       "method": "GET",
@@ -1071,6 +1135,37 @@
         "auth": [],
         "description": "Retrieve a Page Revision",
         "rate_limit": [],
+        "api_endpoint": "/wp/v2/pages/<parent>/revisions/<id>",
+        "alias_endpoint": "/wordpressorg/wp/v2/pages/_parent/revisions/_id",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/page-revisions/#retrieve-a-page-revision"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/pages/_parent/autosaves/_id",
+      "text": "Retrieve a Page Autosave",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve a Page Autosave",
+        "rate_limit": [],
         "api_endpoint": "/wp/v2/pages/<parent>/autosaves/<id>",
         "alias_endpoint": "/wordpressorg/wp/v2/pages/_parent/autosaves/_id",
         "api_ref": "https://developer.wordpress.org/rest-api/reference/page-revisions/#retrieve-a-page-revision-3"
@@ -1084,7 +1179,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_parent/revisions/_id",
@@ -1115,7 +1210,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/pages/_id/autosaves",
@@ -1146,7 +1241,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts",
@@ -1177,7 +1272,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts",
@@ -1208,7 +1303,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_id",
@@ -1239,7 +1334,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_id",
@@ -1270,7 +1365,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_id",
@@ -1301,7 +1396,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_parent/revisions",
@@ -1332,10 +1427,10 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
-      "provider_alias_intent": "/wp/v2/posts/_parent/autosaves/_id",
+      "provider_alias_intent": "/wp/v2/posts/_parent/revisions/_id",
       "text": "Retrieve a Post Revision",
       "category": "All",
       "method": "GET",
@@ -1350,6 +1445,37 @@
         "auth": [],
         "description": "Retrieve a Post Revision",
         "rate_limit": [],
+        "api_endpoint": "/wp/v2/posts/<parent>/revisions/<id>",
+        "alias_endpoint": "/wordpressorg/wp/v2/posts/_parent/revisions/_id",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/post-revisions/#retrieve-a-post-revision"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/posts/_parent/autosaves/_id",
+      "text": "Retrieve a Post Autosave",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve a Post Autosave",
+        "rate_limit": [],
         "api_endpoint": "/wp/v2/posts/<parent>/autosaves/<id>",
         "alias_endpoint": "/wordpressorg/wp/v2/posts/_parent/autosaves/_id",
         "api_ref": "https://developer.wordpress.org/rest-api/reference/post-revisions/#retrieve-a-post-revision-3"
@@ -1363,7 +1489,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_parent/revisions/_id",
@@ -1394,7 +1520,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/posts/_id/autosaves",
@@ -1425,7 +1551,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/search",
@@ -1456,7 +1582,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/settings",
@@ -1487,7 +1613,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/settings",
@@ -1518,7 +1644,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/statuses",
+      "text": "List Statuses",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Statuses",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/statuses",
+        "alias_endpoint": "/wordpressorg/wp/v2/statuses",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/post-statuses/#list-statuses"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/statuses/_status",
@@ -1549,7 +1706,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/tags",
@@ -1580,7 +1737,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/tags",
@@ -1611,7 +1768,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/tags/_id",
@@ -1642,7 +1799,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/tags/_id",
@@ -1673,7 +1830,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/tags/_id",
@@ -1704,7 +1861,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/taxonomies",
+      "text": "List Taxonomies",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Taxonomies",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/taxonomies",
+        "alias_endpoint": "/wordpressorg/wp/v2/taxonomies",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/taxonomies/#list-taxonomies"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/taxonomies/_taxonomy",
@@ -1735,7 +1923,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/themes",
@@ -1766,7 +1954,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/types",
+      "text": "List Types",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Types",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/types",
+        "alias_endpoint": "/wordpressorg/wp/v2/types",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/post-types/#list-types"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/types/_type",
@@ -1797,7 +2016,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users",
@@ -1828,7 +2047,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users",
@@ -1859,7 +2078,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/me",
@@ -1890,7 +2109,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/me",
@@ -1921,7 +2140,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/users/me",
@@ -1952,7 +2171,100 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/users/_id",
+      "text": "Retrieve a User",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Retrieve a User",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/users/<id>",
+        "alias_endpoint": "/wordpressorg/wp/v2/users/_id",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/users/#retrieve-a-user"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/users/_id",
+      "text": "Update a User",
+      "category": "All",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Update a User",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/users/<id>",
+        "alias_endpoint": "/wordpressorg/wp/v2/users/_id",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/users/#update-a-user"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/users/_id",
+      "text": "Delete a User",
+      "category": "All",
+      "method": "DELETE",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "Delete a User",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/users/<id>",
+        "alias_endpoint": "/wordpressorg/wp/v2/users/_id",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/users/#delete-a-user"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/block-directory/search",
@@ -1983,7 +2295,38 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
+    },
+    {
+      "provider_alias_intent": "/wp/v2/plugins",
+      "text": "List Plugins",
+      "category": "All",
+      "method": "GET",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v2",
+        "auth": [],
+        "description": "List Plugins",
+        "rate_limit": [],
+        "api_endpoint": "/wp/v2/plugins",
+        "alias_endpoint": "/wordpressorg/wp/v2/plugins",
+        "api_ref": "https://developer.wordpress.org/rest-api/reference/plugins/#list-plugins"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "accessToken"
+        }
+      },
+      "subdomain": {},
+      "payload_type": "",
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
@@ -2014,7 +2357,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/plugins",
@@ -2045,7 +2388,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
@@ -2076,7 +2419,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     },
     {
       "provider_alias_intent": "/wp/v2/plugins/_plugin",
@@ -2107,7 +2450,7 @@
       },
       "subdomain": {},
       "payload_type": "",
-      "updated_at": "2025-11-11T15:37:35.629Z"
+      "updated_at": "2025-01-28T12:00:00.000Z"
     }
   ]
 }
