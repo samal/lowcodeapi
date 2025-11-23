@@ -108,6 +108,7 @@ export default async({ BUILD_PROVIDERS } = {}) => {
             total_api: item.total_api || '',
             released: item.released || false,
             logo_url: item.logo_url || '',
+            updated_at: item.updated_at || '',
           }
         });
         let account_service = { login : { disable_google: true, disable_email: false } , signup : { disable_google: true, disable_email: false } }

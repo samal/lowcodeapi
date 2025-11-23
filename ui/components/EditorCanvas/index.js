@@ -365,7 +365,7 @@ const EditorCanvas = ({ selected = {}, permaCategory = {}, integrated, paneView 
                         </div>
                     </div>
                 </PaneView>
-                {
+                {/* {
                     providersView ? <div className='absolute top-0 left-0 right-0 bottom-0 p-8 bg-white z-10 overflow-hidden'>
                         <div className='flex flex-col items-center md:container md:mx-auto bg-white h-full overflow-y-scroll '>
                             <div className='flex items-center flex-wrap gap-4'>
@@ -404,7 +404,7 @@ const EditorCanvas = ({ selected = {}, permaCategory = {}, integrated, paneView 
                             </div>
                         </div>
                     </div>: null
-                }
+                } */}
             </div>
             {
                 !providersView ?

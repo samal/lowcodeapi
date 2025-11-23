@@ -1,112 +1,40 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { useSearchParams } from 'next/navigation'; // Added useSearchParams
-
+import dayjs from 'dayjs';
+import fromNow from 'dayjs/plugin/relativeTime';
+import Image from 'next/image';
 import axios from 'axios';
-import queryString from 'query-string';
 
 import apiFetch from '@/utils/request';
 import { isAuthenticated } from '@/utils/auth';
+import getLogoUrl from '@/utils/logo-url';
 
-import i18n from '@/static-json/i18n.json';
-
-import ExplorerViewNew from '@/components/ExplorerView';
-import { IntentTab, ConnectorStatus, IntentHead } from '@/components/ProviderPage';
-import APIRequestLogs from '@/components/ExplorerView/APIRequestLogs';
-import APIResponse from '@/components/ExplorerView/APIResponse';
 import Layout from '@/components/EditorLayout';
-import EditorCanvas from '@/components/EditorCanvas';
+
+dayjs.extend(fromNow);
 
 export default function Home({
-  info={},
   api_endpoints = {},
   user: userSession,
   config:configProps,
   sidebar,
-  apis = [],
   providers : providersList,
-  endpoint = {},
 }) {
 
-  const searchParams = useSearchParams(); // Initialize useSearchParams
-
-  const provider = searchParams.get('provider'); // Get 'provider' from search params
-  const providerDisplay = searchParams.get('providers'); // Get 'providers' from search params
-
   const {
-    BASE_API,
-    METRICS_API,
     APP_CONFIG_API,
-    INTEGRATIONS_API,
   } = api_endpoints;
 
-
-  const [renderingWait, setRenderingWait] = useState(false);  
-  const [uriLocation] = useState('');
   const [user, setUser] = useState({ ...userSession });
-  const [providerIntentMetrics, setProviderIntentMetrics] = useState({ });
-  const [data, setData] = useState({
-    error: null,
-  });
-  const [intentAction, setIntentAction] = useState({});
 
   const [config, setConfig] = useState({
     ...configProps,
     navs: sidebar,
   });
-  const [cachedPayload, setCachePayload] = useState({});
 
-  const [paneView, setPaneView] = useState(false);
-  const [codeView, setCodeView] = useState(false);
   const [imgFallback, setImgFallback] = useState({}); 
-  const [currentView, setCurrentView] = useState(apis[0]);
-  const [selected, setSelected] = useState(null);
-  const [apiViewList, setApiViewList] = useState([]);
-  const [apiViewFeaturedList, setApiViewFeaturedList] = useState(apis);
 
-  const [providerIntegrated, setProviderIntegrated] = useState({});
-
-  const [requestWait, setRequestWait] = useState(false);
-
-  const [intentRequestData, setIntentRequestData] = useState({
-      data: null,
-      status: '',
-      statusText: null,
-      headers: { },
-      size: 0,
-  });
-  const [responseView, setResponseView] = useState({
-      type: 'response',
-      display: {}
-  });
-
-  const [providersAll, setProvidersAll] = useState([
-
-  ]);
-
-  // @ Review: If this filter is needed or we can remove it.
-  useEffect(() => {
-    if (providerDisplay && providerDisplay.trim()) {
-      const filterProviders = providerDisplay.split(',');
-      const lpg = [{ list: [ ...providersList ] }].map(item => {
-        const local = { ...item };
-        let list = [ ...local.list ];
-
-        list = list.filter(i => {
-            return filterProviders.includes(i.id);
-        });
-        local.list = list;
-        return local;
-      });
-
-      setProvidersAll([ ...lpg[0].list ]);
-      setPaneView(true);
-    } else if (apis.length) {
-      setSelected(apis[0].selected);
-    }
-  }, [apis, providerDisplay, providersList, provider]); // Added 'provider' to dependency array
-  
   useEffect(() => {
     ;(async () => {    
         const { data: dynamicConfig } = await axios(`${APP_CONFIG_API}/config`, {}).catch((error) => ({ error }));
@@ -146,340 +74,119 @@ export default function Home({
     })();
   }, []);
   
-
-  useEffect(() => {
-    if (!selected || !selected.id) return;
-    ;(async () => {
-      try {
-        const provider = selected && selected.id ? selected.id : 'default';
-        const integration = selected && selected.integration_map ? selected.integration_map : provider;
-        const result = await apiFetch(`${INTEGRATIONS_API}/${integration}?check=1`, {
-          method: 'GET'
-        },{
-          skip: true
-        })
-        const data = result.res;
-        const localProviderIntegrated = { ...providerIntegrated }; 
-
-        const localDetail = { };
-
-        localDetail.integrated = !!data.activated;
-        localDetail.authorized = data.authorized;
-        localDetail.credential_found = data.credential_found;
-        localDetail.credentials = data.credential_found;
-        localDetail.masked_credentials = { ...data[selected.id], selected_scopes: undefined};
-
-        setProviderIntegrated({
-          ...localProviderIntegrated,
-          [provider]: {
-            ...localDetail
-          }
-        });
-      } catch(e) {
-        console.log(e);
-      }
-    })();
-  }, [currentView, user.name]);
-  
   const onError = (e, provider) => {
     const lf = { ...imgFallback };
     lf[provider] = 'lowcodeapi';
     setImgFallback({ ...lf });
   }  
 
-  const chooseCurrentView = (list) => {
-    if (list.length) {
-      const view = list[0];
-      setCurrentView(view);
-      return view;
-    }
-    return {}
-  }
-  const onClickTab = async(view) => {
-    if (renderingWait) return;
-    if(view) {
-      setCurrentView(view);
-      setRenderingWait(true);
-    }
 
-    const { selected } = view;
-    const { id: provider } = selected;
-    setSelected(view.selected);
-    let lacalViewInstane = { ...view, };
-    if (providerIntegrated[provider]) {
-      lacalViewInstane = { ...lacalViewInstane, details: providerIntegrated[provider] };
-    }
-    setCurrentView({ ...lacalViewInstane });
-    setRenderingWait(false);
-
-    if (isAuthenticated()) {       
-      const method = view.method;
-      const intent = view.route_name;
-
-      ;(async () => {
-        try {
-            const qs1 = queryString.stringify({ mode: 'fav', method, provider,  intent });
-            const fav = await apiFetch(`${BASE_API}/intent?${qs1}`, {}).catch((error) => ({ error }));
-            const localIntentAction = { ...intentAction };
-            setIntentAction({
-                ...localIntentAction,
-                [intent]: {
-                    fav: !!fav.results,
-                } 
-            });
-        } catch(e) {
-            console.log(e);
-        }
-      })();
-      const qs1 = queryString.stringify({ method, provider,  intent });
-      try {
-        const resp = await apiFetch(`${METRICS_API}?${qs1}`, {});
-        const { data } = resp.results;
-        setProviderIntentMetrics({
-          ...providerIntentMetrics,
-          [provider]: data[provider]
-      });
-      } catch(e) {
-          console.log(e);
-      }
-    }
-  }
-  const onSaveIntentAction = async (action) => {
-    setIntentAction({ ...action });
-  }
-  const onDeleteIntentAction = async(action) => {
-    setIntentAction({ ...action });
-    const apiListFiltered = apiViewList.filter(api => {
-      return api.route_name !== currentView.route_name;
-    });
-
-    if (apiListFiltered.length) {
-      const newApiView = apiListFiltered[0];
-      setCurrentView({ ...newApiView });
-      setApiViewList(apiListFiltered);
-      setSelected(newApiView.selected);
-    } else if (apiViewFeaturedList.length) {
-      const newApiView = apiViewFeaturedList[0];
-      setCurrentView({ ...newApiView });
-      setApiViewList([]);
-      setSelected(newApiView.selected);
-    }
-  }
-
-  const openSetupView = (provider, goto) => {
-    window.location.href=`/${provider}?view=configure`;
-  }
-  const onChangeCachePayload = (payload) => {
-    let localCachePayload = { ...cachedPayload };
-    const provider = selected && selected.provider ? selected.provider : 'default';
-    if (localCachePayload[provider]) {
-        localCachePayload[provider] = {
-            ...localCachePayload[provider],
-            [currentView.hash]: payload
-        };
-    } else {
-        localCachePayload[provider] = {
-            [currentView.hash]: payload
-        };
-    }
-    setCachePayload({...localCachePayload });
-    if (user && user.user_ref_id) {
-        try {
-            localStorage.setItem(`${user.user_ref_id}_payload_cache`, JSON.stringify(localCachePayload));
-        } catch (e) {
-            console.error(e);
-        }
-    }
-  }
-  const isIntegrated  = () => {
-    if (!currentView || !currentView.selected.id) return false;
-    
-    const status = providerIntegrated[currentView.selected.id];
-    if(!status) return false;
-
-    return !!(status.integrated || status.authorized);
-  }
-  const onClickTryIntentEndpoint = (params) => {
-    setRequestWait(true);
-    const statusCodeMap = {
-        '200': 'OK',
-        '500': 'Internal Server Error',
-        '401': 'Unauthorized',
-        '422': 'Unprocessable Entiry',
-    };
-    // Clear the response view
-    axios(params)
-        .then((response) => {
-            const { data, status, statusText, headers } = response;
-            const contentSize = +headers['content-length'] || 0;
-            let size = '';
-    
-            if (contentSize) {
-            contentSize > 1023
-                ? `${parseInt(contentSize / 1024, 10)} KB`
-                : `${contentSize} Bytes`;
-    
-            }
-    
-            if (!size) {
-            try {
-                size = new TextEncoder().encode(JSON.stringify(data)).length
-                size = `${parseInt(size / 1024, 10)} KB`
-            } catch (e) {
-    
-            }
-            }
-            console.log(data, params, headers);
-            const headersObj = data.result && data.result.headers ? data.result.headers : (data.response_headers ? data.response_headers : headers);
-            setIntentRequestData({
-                data,
-                status,
-                statusText: statusCodeMap[status] || statusText,
-                headers: { ...headersObj },
-                size,
-            });
-    
-            setResponseView({ type:'response', display: data });
-    
-            setTimeout(() => {
-                // UI Feedback improvement.
-                setRequestWait(false);
-            }, 200);
-    
-        })
-        .catch(function(error) {
-            console.log(error);
-            const { data, status, statusText, headers } = error.response
-            setIntentRequestData({
-                data: {},
-                error:{
-                    status,
-                    message: data.message || statusText,
-                    ...data
-                },
-                status,
-                statusText: statusCodeMap[status] || statusText,
-                headers: { ...(data.headers || headers)},
-            });
-            setResponseView({type:'error' , display: {
-                status,
-                message: data.message || statusText,
-                ...data
-            }});
-            setRequestWait(false);
-        });
-  };
-
-  console.log('providersAll', providersAll);
   return (
-    <Layout info={info} navs={config.navs} user={user} show={false} config={config} endpoints={api_endpoints}>
-      <EditorCanvas 
-        paneView={paneView}
-        user={user}
-        config={config}
-        info={info}
-        providers={providersList}
-        providersAll={providersAll}
-        metrics={providerIntentMetrics}
-        api_endpoints={api_endpoints}
-      >
-        <div className='p-4 pb-2 md:pt-0 bg-gray-50'>
-          <div className='grid grid-cols-10 gap-2 relative'>
-            <div className={`${user && user.name ? 'col-span-10' : 'col-span-8'} overflow-x-scroll `}>
-              <div className='flex items-center border-b border-gray-100 overflow-scroll'>
-              {
-                [...apiViewFeaturedList].map((item) => (
-                  <IntentTab 
-                    key={item.featured ? `${item.summary}.${item.featured}`: item.summary}
-                    selected={item.selected}
-                    fixed={true}
-                    method={item ? item.method : ''}
-                    renderingWait={renderingWait}
-                    view={item}
-                    title={item ? item.summary : ''}
-                    provider={''}
-                    tabView={currentView ? currentView : chooseCurrentView(apiViewFeaturedList)} 
-                    user={user}
-                    pending={false}
-                    imgFallback={imgFallback}
-                    onError={onError}
-                    onClickTab={onClickTab}
-                    onClose={() => {}}
-                  />                                            
-                ))
-              }
-              </div>
-            </div>
+    <Layout>
+      <div className='p-6 pt-2 sm:pt-4 sm:p-8 bg-gray-50 z-10 overflow-hidden'>
+        <div className='flex flex-col md:container md:mx-auto h-full overflow-y-scroll'>
+          <div className='flex items-center gap-2 mb-6 sm:mb-8'>
+            <Image src={getLogoUrl('lowcodeapi')} alt='LowcodeAPI' width={35} height={35} className='rounded-md' />
+            <h1 className='text-2xl font-bold text-gray-900'>Providers ({providersList.length})</h1>
           </div>
-        </div>
-        {
-          currentView ?
-            <>
-              <IntentHead
-                userAuthorized={user && user.name}
-                selected={currentView.selected}
-                total_providers={providersList.length}
-                view={currentView}
-                bookmark={false}
-                metrics={providerIntentMetrics}
-                intentAction={intentAction}
-                pin={false}
-                api_endpoints={api_endpoints}
-                uriLocation={uriLocation}
-                onClickTab={onClickTab}
-                onSaveAction={onSaveIntentAction}
-                onDeleteAction={onDeleteIntentAction}
-              >
-                <ConnectorStatus
-                    wait={false}
-                    endpoint={endpoint}
-                    selected={selected}
-                    user= {!!user.name}
-                    details={currentView.details}
-                    imgFallback={imgFallback}
-                    setConfigurationView={() => openSetupView(selected.id, 'setup')}
-                />
-              </IntentHead>
-              <div className='flex-grow overflow-scroll h-lvh p-4 py-2 pt-0 bg-gray-50'>
-                <ExplorerViewNew
-                  i18n={i18n}
-                  api={currentView}
-                  codeView={codeView}
-                  cachedPayload={cachedPayload[currentView.id] ? cachedPayload[currentView.id][currentView.hash] : {}}
-                  system={{ }}
-                  requestWait={requestWait}
-                  requestLogs={[]}
-                  errorLogs={[]}
-                  onChangeCachePayload={onChangeCachePayload}
-                  details={{
-                      breadcrumbs: data.breadcrumbs,
-                      ...currentView.details, 
-                      provider: currentView.selected.id,
-                      system_creds: null,
-                      ready: isIntegrated(), 
-                      total:data.total, 
-                      api_token: user.api_token, 
-                      user: !!user.name,
-                      api_security: null,
-                      ignore: null
-                  }}
-                  setConfigurationView={() => {}}
-                  onClickTryIntentEndpoint={onClickTryIntentEndpoint}
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6'>
+            {
+                providersList.map(item =>(
+                    <div key={item.id} className="relative">
+                        {
+                        !item.disabled? (
+                          <div className="flex flex-col h-full bg-gray-100 hover:bg-white rounded-lg border border-gray-200/50 hover:border-gray-300 hover:shadow transition-all duration-200 overflow-hidden">
+                            <div className="flex-1 p-5 sm:p-6">
+                              {/* Header with Logo and Name */}
+                              <div className="flex items-start gap-3 sm:gap-4 mb-4">
+                                <div className="flex-shrink-0">
+                                  <img 
+                                    src={getLogoUrl(imgFallback[item.id] || item.alias || item.id)} 
+                                    className="w-12 h-12 sm:w-14 sm:h-14 p-1.5 sm:p-2 border border-gray-200/60 rounded-lg bg-white transition-colors" 
+                                    alt={item.name} 
+                                title={item.name}
+                                    onError={(e) => onError(e, item.id)}
+                                  />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-start justify-between gap-2">
+                                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 truncate leading-tight">
+                                      {item.name}
+                                    </h3>
+                                    <a
+                                      href={`/${item.id}`}
+                                      title={`View ${item.name} APIs`}
+                                      className="flex-shrink-0 p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded transition-colors"
+                                      onClick={(e) => e.stopPropagation()}
+                                    >
+                                      <span className="sr-only">View {item.name} Explorer</span>
+                                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                      </svg>
+                                    </a>
+                                  </div>
+                                  {item.total_api && (
+                                    <div className="flex items-center gap-2 mt-2">
+                                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-gray-50 text-gray-600 border border-gray-200/60">
+                                        {item.total_api} Endpoints
+                                      </span>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
 
-                >
-                  <APIResponse intentRequestData={intentRequestData} i18n={i18n} responseView={responseView} setResponseView={setResponseView} />
-                </ExplorerViewNew>
-                <APIRequestLogs
-                  api={currentView}
-                  requestLogs={[]}
-                />
-                <div className='grid grid-cols-2 gap-4 text-xs min-h-[150px] p-4 '>
-                    
-                </div>
-              </div>
-            </> : null
-        }
-      </EditorCanvas>
+                              {/* Description */}
+                              {item.description && (
+                                <p className="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                                  {item.description}
+                                </p>
+                              )}
+
+                              {/* Metadata Grid */}
+                              <div className="space-y-2.5 border-t border-gray-100 pt-4 mt-4">
+                                {item.api_link_ref && (
+                                  <div className="flex items-start gap-2">
+                                    <span className="text-xs font-medium text-gray-500 min-w-[50px]">Docs:</span>
+                                    <a 
+                                      href={item.api_link_ref} 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      onClick={(e) => e.stopPropagation()}
+                                      title={item.api_link_ref}
+                                      className="text-xs text-gray-600 hover:text-gray-900 hover:underline break-all flex-1"
+                                    >
+                                      {item.api_link_ref.length > 25 ? `${item.api_link_ref.substring(0, 25)}...` : item.api_link_ref}
+                                    </a>
+                                  </div>
+                                )}
+                                {item.auth_type && (
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-xs font-medium text-gray-500 min-w-[50px]">Auth:</span>
+                                    <span className="text-xs text-gray-600">{item.auth_type}</span>
+                                  </div>
+                                )}
+                                {item.category && (
+                                  <div className="flex items-center gap-2">
+                                    <span className="text-xs font-medium text-gray-500 min-w-[50px]">Category:</span>
+                                    <span className="text-xs text-gray-600">{item.category}</span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                            {item.updated_at && (
+                              <div className="px-5 sm:px-6 py-3">
+                                <span className="text-xs text-gray-400">Last updated {dayjs(item.updated_at).fromNow()} on {dayjs(item.updated_at).format('MMM D, YYYY')}</span>
+                              </div>
+                            )}
+                          </div>
+                        ) : null
+                        }
+                    </div>
+                ))
+            }
+            </div>
+        </div>
+      </div>
     </Layout>
   );
 }
