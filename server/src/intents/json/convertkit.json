@@ -1,8 +1,8 @@
 {
   "config": {
     "id": "convertkit",
-    "name": "ConvertKit",
-    "description": "",
+    "name": "Kit Formerly ConvertKit",
+    "description": "Kit is a platform for creating and sending email campaigns.",
     "logo_url": "convertkit.svg",
     "auth_type": "TOKEN",
     "auth": {
@@ -40,15 +40,15 @@
     "headers": {},
     "api_endpoint": "https://api.kit.com",
     "released": 1,
-    "updated_at": "2024-12-22T06:59:40.000Z",
+    "updated_at": "2025-01-27T00:00:00.000Z",
     "website": "https://kit.com/",
     "api_link_ref": "https://developers.kit.com/v4#introduction",
-    "total_api": 33,
-    "credential_link": "https://app.convertkit.com/account_settings/advanced_settings"
+    "total_api": 46,
+    "credential_link": "https://app.kit.com/account_settings/advanced_settings"
   },
   "routes": [
     {
-      "provider_alias_intent": "/v3/account",
+      "provider_alias_intent": "/v4/account",
       "text": "Show the current account",
       "category": "Account",
       "method": "GET",
@@ -65,13 +65,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Show the current account",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/account",
-        "alias_endpoint": "/convertkit/v3/account",
-        "api_ref": "https://developers.convertkit.com/?shell#show-the-current-account"
+        "api_endpoint": "https://api.kit.com/v4/account",
+        "alias_endpoint": "/convertkit/v4/account",
+        "api_ref": "https://developers.kit.com/v4#show-the-current-account"
       },
       "auth": {
         "queryMap": {
@@ -82,7 +82,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts",
+      "provider_alias_intent": "/v4/broadcasts",
       "text": "List broadcasts",
       "category": "Broadcasts",
       "method": "GET",
@@ -103,13 +103,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List broadcasts",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts",
-        "alias_endpoint": "/convertkit/v3/broadcasts",
-        "api_ref": "https://developers.convertkit.com/?shell#list-broadcasts"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts",
+        "alias_endpoint": "/convertkit/v4/broadcasts",
+        "api_ref": "https://developers.kit.com/v4#list-broadcasts"
       },
       "auth": {
         "queryMap": {
@@ -120,7 +120,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts",
+      "provider_alias_intent": "/v4/broadcasts",
       "text": "Create a broadcast",
       "category": "Broadcasts",
       "method": "POST",
@@ -177,13 +177,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Create a broadcast",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts",
-        "alias_endpoint": "/convertkit/v3/broadcasts",
-        "api_ref": "https://developers.convertkit.com/?shell#create-a-broadcast"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts",
+        "alias_endpoint": "/convertkit/v4/broadcasts",
+        "api_ref": "https://developers.kit.com/v4#create-a-broadcast"
       },
       "auth": {
         "body": {
@@ -194,7 +194,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts/broadcast_id",
+      "provider_alias_intent": "/v4/broadcasts/broadcast_id",
       "text": "Retrieve a specific broadcast",
       "category": "Broadcasts",
       "method": "GET",
@@ -222,13 +222,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Retrieve a specific broadcast",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts/<broadcast_id>",
-        "alias_endpoint": "/convertkit/v3/broadcasts/broadcast_id",
-        "api_ref": "https://developers.convertkit.com/?shell#retrieve-a-specific-broadcast"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts/<broadcast_id>",
+        "alias_endpoint": "/convertkit/v4/broadcasts/broadcast_id",
+        "api_ref": "https://developers.kit.com/v4#retrieve-a-specific-broadcast"
       },
       "auth": {
         "queryMap": {
@@ -239,7 +239,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts/broadcast_id/stats",
+      "provider_alias_intent": "/v4/broadcasts/broadcast_id/stats",
       "text": "Get stats",
       "category": "Broadcasts",
       "method": "GET",
@@ -267,13 +267,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Get stats",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts/<broadcast_id>/stats",
-        "alias_endpoint": "/convertkit/v3/broadcasts/broadcast_id/stats",
-        "api_ref": "https://developers.convertkit.com/?shell#get-stats"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts/<broadcast_id>/stats",
+        "alias_endpoint": "/convertkit/v4/broadcasts/broadcast_id/stats",
+        "api_ref": "https://developers.kit.com/v4#get-stats"
       },
       "auth": {
         "queryMap": {
@@ -284,7 +284,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts/broadcast_id",
+      "provider_alias_intent": "/v4/broadcasts/broadcast_id",
       "text": "Update a broadcast",
       "category": "Broadcasts",
       "method": "PUT",
@@ -353,13 +353,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Update a broadcast",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts/<broadcast_id>",
-        "alias_endpoint": "/convertkit/v3/broadcasts/broadcast_id",
-        "api_ref": "https://developers.convertkit.com/?shell#update-a-broadcast"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts/<broadcast_id>",
+        "alias_endpoint": "/convertkit/v4/broadcasts/broadcast_id",
+        "api_ref": "https://developers.kit.com/v4#update-a-broadcast"
       },
       "auth": {
         "body": {
@@ -370,7 +370,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/broadcasts/broadcast_id",
+      "provider_alias_intent": "/v4/broadcasts/broadcast_id",
       "text": "Destroy a broadcast",
       "category": "Broadcasts",
       "method": "DELETE",
@@ -398,13 +398,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Destroy a broadcast",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/broadcasts/<broadcast_id>",
-        "alias_endpoint": "/convertkit/v3/broadcasts/broadcast_id",
-        "api_ref": "https://developers.convertkit.com/?shell#destroy-a-broadcast"
+        "api_endpoint": "https://api.kit.com/v4/broadcasts/<broadcast_id>",
+        "alias_endpoint": "/convertkit/v4/broadcasts/broadcast_id",
+        "api_ref": "https://developers.kit.com/v4#destroy-a-broadcast"
       },
       "auth": {
         "queryMap": {
@@ -415,7 +415,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/custom_fields",
+      "provider_alias_intent": "/v4/custom_fields",
       "text": "List fields",
       "category": "Custom Fields",
       "method": "GET",
@@ -432,13 +432,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List fields",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/custom_fields",
-        "alias_endpoint": "/convertkit/v3/custom_fields",
-        "api_ref": "https://developers.convertkit.com/?shell#list-fields"
+        "api_endpoint": "https://api.kit.com/v4/custom_fields",
+        "alias_endpoint": "/convertkit/v4/custom_fields",
+        "api_ref": "https://developers.kit.com/v4#list-fields"
       },
       "auth": {
         "queryMap": {
@@ -449,7 +449,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/custom_fields",
+      "provider_alias_intent": "/v4/custom_fields",
       "text": "Create field",
       "category": "Custom Fields",
       "method": "POST",
@@ -471,13 +471,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Create field",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/custom_fields",
-        "alias_endpoint": "/convertkit/v3/custom_fields",
-        "api_ref": "https://developers.convertkit.com/?shell#create-field"
+        "api_endpoint": "https://api.kit.com/v4/custom_fields",
+        "alias_endpoint": "/convertkit/v4/custom_fields",
+        "api_ref": "https://developers.kit.com/v4#create-field"
       },
       "auth": {
         "body": {
@@ -488,7 +488,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/custom_fields/id",
+      "provider_alias_intent": "/v4/custom_fields/id",
       "text": "Update field",
       "category": "Custom Fields",
       "method": "PUT",
@@ -504,11 +504,13 @@
       "body": {
         "api_secret": {
           "type": "string",
-          "text": "Your API secret key\nlabel",
-          "required": true,
-          "enum": [
-            "string"
-          ]
+          "text": "Your API secret key",
+          "required": true
+        },
+        "label": {
+          "type": "string",
+          "text": "The label of the custom field",
+          "required": true
         }
       },
       "path": {
@@ -520,13 +522,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Update field",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/custom_fields/<id>",
-        "alias_endpoint": "/convertkit/v3/custom_fields/id",
-        "api_ref": "https://developers.convertkit.com/?shell#update-field"
+        "api_endpoint": "https://api.kit.com/v4/custom_fields/<id>",
+        "alias_endpoint": "/convertkit/v4/custom_fields/id",
+        "api_ref": "https://developers.kit.com/v4#update-field"
       },
       "auth": {
         "body": {
@@ -537,7 +539,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/custom_fields/id",
+      "provider_alias_intent": "/v4/custom_fields/id",
       "text": "Destroy field",
       "category": "Custom Fields",
       "method": "DELETE",
@@ -560,13 +562,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Destroy field",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/custom_fields/<id>",
-        "alias_endpoint": "/convertkit/v3/custom_fields/id",
-        "api_ref": "https://developers.convertkit.com/?shell#destroy-field"
+        "api_endpoint": "https://api.kit.com/v4/custom_fields/<id>",
+        "alias_endpoint": "/convertkit/v4/custom_fields/id",
+        "api_ref": "https://developers.kit.com/v4#destroy-field"
       },
       "auth": {
         "queryMap": {
@@ -577,7 +579,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/forms",
+      "provider_alias_intent": "/v4/forms",
       "text": "List forms",
       "category": "Forms",
       "method": "GET",
@@ -594,13 +596,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List forms",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/forms",
-        "alias_endpoint": "/convertkit/v3/forms",
-        "api_ref": "https://developers.convertkit.com/?shell#list-forms"
+        "api_endpoint": "https://api.kit.com/v4/forms",
+        "alias_endpoint": "/convertkit/v4/forms",
+        "api_ref": "https://developers.kit.com/v4#list-forms"
       },
       "auth": {
         "queryMap": {
@@ -611,7 +613,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/forms/form_id/subscribe",
+      "provider_alias_intent": "/v4/forms/form_id/subscribe",
       "text": "Add subscriber to a form",
       "category": "Forms",
       "method": "POST",
@@ -657,13 +659,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Add subscriber to a form",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/forms/<form_id>/subscribe",
-        "alias_endpoint": "/convertkit/v3/forms/form_id/subscribe",
-        "api_ref": "https://developers.convertkit.com/?shell#add-subscriber-to-a-form"
+        "api_endpoint": "https://api.kit.com/v4/forms/<form_id>/subscribe",
+        "alias_endpoint": "/convertkit/v4/forms/form_id/subscribe",
+        "api_ref": "https://developers.kit.com/v4#add-subscriber-to-a-form"
       },
       "auth": {
         "body": {
@@ -674,7 +676,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/forms/form_id/subscriptions",
+      "provider_alias_intent": "/v4/forms/form_id/subscriptions",
       "text": "List subscriptions to a form",
       "category": "Forms",
       "method": "GET",
@@ -722,13 +724,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List subscriptions to a form",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/forms/<form_id>/subscriptions",
-        "alias_endpoint": "/convertkit/v3/forms/form_id/subscriptions",
-        "api_ref": "https://developers.convertkit.com/?shell#list-subscriptions-to-a-form"
+        "api_endpoint": "https://api.kit.com/v4/forms/<form_id>/subscriptions",
+        "alias_endpoint": "/convertkit/v4/forms/form_id/subscriptions",
+        "api_ref": "https://developers.kit.com/v4#list-subscriptions-to-a-form"
       },
       "auth": {
         "queryMap": {
@@ -739,7 +741,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/purchases",
+      "provider_alias_intent": "/v4/purchases",
       "text": "List purchases",
       "category": "Purchases",
       "method": "GET",
@@ -760,13 +762,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List purchases",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/purchases",
-        "alias_endpoint": "/convertkit/v3/purchases",
-        "api_ref": "https://developers.convertkit.com/?shell#list-purchases"
+        "api_endpoint": "https://api.kit.com/v4/purchases",
+        "alias_endpoint": "/convertkit/v4/purchases",
+        "api_ref": "https://developers.kit.com/v4#list-purchases"
       },
       "auth": {
         "queryMap": {
@@ -777,7 +779,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/purchases/purchase_id",
+      "provider_alias_intent": "/v4/purchases/purchase_id",
       "text": "Retrieve a specific purchase",
       "category": "Purchases",
       "method": "GET",
@@ -805,13 +807,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Retrieve a specific purchase",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/purchases/<purchase_id>",
-        "alias_endpoint": "/convertkit/v3/purchases/purchase_id",
-        "api_ref": "https://developers.convertkit.com/?shell#retrieve-a-specific-purchase"
+        "api_endpoint": "https://api.kit.com/v4/purchases/<purchase_id>",
+        "alias_endpoint": "/convertkit/v4/purchases/purchase_id",
+        "api_ref": "https://developers.kit.com/v4#retrieve-a-specific-purchase"
       },
       "auth": {
         "queryMap": {
@@ -822,7 +824,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/purchases",
+      "provider_alias_intent": "/v4/purchases",
       "text": "Create a purchase",
       "category": "Purchases",
       "method": "POST",
@@ -831,7 +833,7 @@
       "custom_headers": {},
       "body": {
         "transaction_id": {
-          "type": "sting",
+          "type": "string",
           "text": "A unique ID for the purchase",
           "required": true
         },
@@ -877,18 +879,23 @@
         "transaction_time": {
           "type": "string",
           "text": "date and time of purchase as ISO string"
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
         }
       },
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Create a purchase",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/purchases",
-        "alias_endpoint": "/convertkit/v3/purchases",
-        "api_ref": "https://developers.convertkit.com/?shell#create-a-purchase"
+        "api_endpoint": "https://api.kit.com/v4/purchases",
+        "alias_endpoint": "/convertkit/v4/purchases",
+        "api_ref": "https://developers.kit.com/v4#create-a-purchase"
       },
       "auth": {
         "body": {
@@ -899,7 +906,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/sequences",
+      "provider_alias_intent": "/v4/sequences",
       "text": "List sequences",
       "category": "Sequences",
       "method": "GET",
@@ -916,13 +923,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List sequences",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/sequences",
-        "alias_endpoint": "/convertkit/v3/sequences",
-        "api_ref": "https://developers.convertkit.com/?shell#list-sequences"
+        "api_endpoint": "https://api.kit.com/v4/sequences",
+        "alias_endpoint": "/convertkit/v4/sequences",
+        "api_ref": "https://developers.kit.com/v4#list-sequences"
       },
       "auth": {
         "queryMap": {
@@ -933,15 +940,15 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/sequences/sequence_id/subscribe",
+      "provider_alias_intent": "/v4/sequences/sequence_id/subscribe",
       "text": "Add subscriber to a sequence",
       "category": "Sequences",
       "method": "POST",
       "type": "API",
       "params": {
-        "sequences_id": {
+        "sequence_id": {
           "type": "string",
-          "text": "Sequences ID",
+          "text": "Sequence ID",
           "required": true
         }
       },
@@ -971,21 +978,21 @@
         }
       },
       "path": {
-        "sequences_id": {
+        "sequence_id": {
           "type": "string",
-          "text": "Sequences ID",
+          "text": "Sequence ID",
           "required": true
         }
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Add subscriber to a sequence",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/sequences/<sequence_id>/subscribe",
-        "alias_endpoint": "/convertkit/v3/sequences/sequence_id/subscribe",
-        "api_ref": "https://developers.convertkit.com/?shell#add-subscriber-to-a-sequence"
+        "api_endpoint": "https://api.kit.com/v4/sequences/<sequence_id>/subscribe",
+        "alias_endpoint": "/convertkit/v4/sequences/sequence_id/subscribe",
+        "api_ref": "https://developers.kit.com/v4#add-subscriber-to-a-sequence"
       },
       "auth": {
         "body": {
@@ -996,15 +1003,15 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/sequences/sequence_id/subscriptions",
+      "provider_alias_intent": "/v4/sequences/sequence_id/subscriptions",
       "text": "List subscriptions to a sequence",
       "category": "Sequences",
       "method": "GET",
       "type": "API",
       "params": {
-        "sequences_id": {
+        "sequence_id": {
           "type": "string",
-          "text": "Sequences ID",
+          "text": "Sequence ID",
           "required": true
         },
         "api_secret": {
@@ -1014,7 +1021,7 @@
         },
         "sort_order": {
           "type": "string",
-          "text": "asc to list subscribers added oldest to newest; desc to list subscribers added newest to oldest.asc is the default order.",
+          "text": "asc to list subscribers added oldest to newest; desc to list subscribers added newest to oldest. asc is the default order.",
           "enum": [
             "asc",
             "desc"
@@ -1030,27 +1037,27 @@
         },
         "page": {
           "type": "string",
-          "text": "the page to retrieve.50 results are returned per page."
+          "text": "the page to retrieve. 50 results are returned per page."
         }
       },
       "custom_headers": {},
       "body": {},
       "path": {
-        "sequences_id": {
+        "sequence_id": {
           "type": "string",
-          "text": "Sequences ID",
+          "text": "Sequence ID",
           "required": true
         }
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List subscriptions to a sequence",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/sequences/<sequence_id>/subscriptions",
-        "alias_endpoint": "/convertkit/v3/sequences/sequence_id/subscriptions",
-        "api_ref": "https://developers.convertkit.com/?shell#list-subscriptions-to-a-sequence"
+        "api_endpoint": "https://api.kit.com/v4/sequences/<sequence_id>/subscriptions",
+        "alias_endpoint": "/convertkit/v4/sequences/sequence_id/subscriptions",
+        "api_ref": "https://developers.kit.com/v4#list-subscriptions-to-a-sequence"
       },
       "auth": {
         "queryMap": {
@@ -1061,7 +1068,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/subscribers",
+      "provider_alias_intent": "/v4/subscribers",
       "text": "List subscribers",
       "category": "Subscribers",
       "method": "GET",
@@ -1110,13 +1117,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List subscribers",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/subscribers",
-        "alias_endpoint": "/convertkit/v3/subscribers",
-        "api_ref": "https://developers.convertkit.com/?shell#list-subscribers"
+        "api_endpoint": "https://api.kit.com/v4/subscribers",
+        "alias_endpoint": "/convertkit/v4/subscribers",
+        "api_ref": "https://developers.kit.com/v4#list-subscribers"
       },
       "auth": {
         "queryMap": {
@@ -1127,7 +1134,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/subscribers/subscriber_id",
+      "provider_alias_intent": "/v4/subscribers/subscriber_id",
       "text": "View a single subscriber",
       "category": "Subscribers",
       "method": "GET",
@@ -1155,13 +1162,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "View a single subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/subscribers/<subscriber_id>",
-        "alias_endpoint": "/convertkit/v3/subscribers/subscriber_id",
-        "api_ref": "https://developers.convertkit.com/?shell#view-a-single-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id",
+        "api_ref": "https://developers.kit.com/v4#view-a-single-subscriber"
       },
       "auth": {
         "queryMap": {
@@ -1172,7 +1179,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/subscribers/subscriber_id",
+      "provider_alias_intent": "/v4/subscribers/subscriber_id",
       "text": "Update subscriber",
       "category": "Subscribers",
       "method": "PUT",
@@ -1208,13 +1215,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Update subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/subscribers/<subscriber_id>",
-        "alias_endpoint": "/convertkit/v3/subscribers/subscriber_id",
-        "api_ref": "https://developers.convertkit.com/?shell#update-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id",
+        "api_ref": "https://developers.kit.com/v4#update-subscriber"
       },
       "auth": {
         "body": {
@@ -1225,7 +1232,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/unsubscribe",
+      "provider_alias_intent": "/v4/unsubscribe",
       "text": "Unsubscribe subscriber",
       "category": "Subscribers",
       "method": "PUT",
@@ -1247,13 +1254,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Unsubscribe subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/unsubscribe",
-        "alias_endpoint": "/convertkit/v3/unsubscribe",
-        "api_ref": "https://developers.convertkit.com/?shell#unsubscribe-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/unsubscribe",
+        "alias_endpoint": "/convertkit/v4/unsubscribe",
+        "api_ref": "https://developers.kit.com/v4#unsubscribe-subscriber"
       },
       "auth": {
         "body": {
@@ -1264,7 +1271,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/subscribers/subscriber_id/tags",
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/tags",
       "text": "List tags for a subscriber",
       "category": "Subscribers",
       "method": "GET",
@@ -1292,13 +1299,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List tags for a subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/subscribers/<subscriber_id>/tags",
-        "alias_endpoint": "/convertkit/v3/subscribers/subscriber_id/tags",
-        "api_ref": "https://developers.convertkit.com/?shell#list-tags-for-a-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/tags",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/tags",
+        "api_ref": "https://developers.kit.com/v4#list-tags-for-a-subscriber"
       },
       "auth": {
         "queryMap": {
@@ -1309,7 +1316,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/tags",
+      "provider_alias_intent": "/v4/tags",
       "text": "List tags",
       "category": "Tags",
       "method": "GET",
@@ -1326,13 +1333,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List tags",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/tags",
-        "alias_endpoint": "/convertkit/v3/tags",
-        "api_ref": "https://developers.convertkit.com/?shell#list-tags"
+        "api_endpoint": "https://api.kit.com/v4/tags",
+        "alias_endpoint": "/convertkit/v4/tags",
+        "api_ref": "https://developers.kit.com/v4#list-tags"
       },
       "auth": {
         "queryMap": {
@@ -1343,7 +1350,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/tags",
+      "provider_alias_intent": "/v4/tags",
       "text": "Create a tag",
       "category": "Tags",
       "method": "POST",
@@ -1365,24 +1372,24 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Create a tag",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/tags",
-        "alias_endpoint": "/convertkit/v3/tags",
-        "api_ref": "https://developers.convertkit.com/?shell#create-a-tag"
+        "api_endpoint": "https://api.kit.com/v4/tags",
+        "alias_endpoint": "/convertkit/v4/tags",
+        "api_ref": "https://developers.kit.com/v4#create-a-tag"
       },
       "auth": {
         "body": {
-          "api_key": "api_key"
+          "api_secret": "api_secret"
         }
       },
       "payload_type": "",
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/tags/tag_id/subscribe",
+      "provider_alias_intent": "/v4/tags/tag_id/subscribe",
       "text": "Tag a subscriber",
       "category": "Tags",
       "method": "POST",
@@ -1428,13 +1435,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Tag a subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/tags/<tag_id>/subscribe",
-        "alias_endpoint": "/convertkit/v3/tags/tag_id/subscribe",
-        "api_ref": "https://developers.convertkit.com/?shell#tag-a-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/tags/<tag_id>/subscribe",
+        "alias_endpoint": "/convertkit/v4/tags/tag_id/subscribe",
+        "api_ref": "https://developers.kit.com/v4#tag-a-subscriber"
       },
       "auth": {
         "body": {
@@ -1445,7 +1452,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/subscribers/subscriber_id/tags/tag_id",
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/tags/tag_id",
       "text": "Remove tag from a subscriber",
       "category": "Tags",
       "method": "DELETE",
@@ -1483,13 +1490,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Remove tag from a subscriber",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/subscribers/<subscriber_id>/tags/<tag_id>",
-        "alias_endpoint": "/convertkit/v3/subscribers/subscriber_id/tags/tag_id",
-        "api_ref": "https://developers.convertkit.com/?shell#remove-tag-from-a-subscriber"
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/tags/<tag_id>",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/tags/tag_id",
+        "api_ref": "https://developers.kit.com/v4#remove-tag-from-a-subscriber"
       },
       "auth": {
         "queryMap": {
@@ -1500,7 +1507,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/tags/tag_id/unsubscribe",
+      "provider_alias_intent": "/v4/tags/tag_id/unsubscribe",
       "text": "Remove tag from a subscriber by email",
       "category": "Tags",
       "method": "POST",
@@ -1534,13 +1541,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Remove tag from a subscriber by email",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/tags/<tag_id>/unsubscribe",
-        "alias_endpoint": "/convertkit/v3/tags/tag_id/unsubscribe",
-        "api_ref": "https://developers.convertkit.com/?shell#remove-tag-from-a-subscriber-by-email"
+        "api_endpoint": "https://api.kit.com/v4/tags/<tag_id>/unsubscribe",
+        "alias_endpoint": "/convertkit/v4/tags/tag_id/unsubscribe",
+        "api_ref": "https://developers.kit.com/v4#remove-tag-from-a-subscriber-by-email"
       },
       "auth": {
         "body": {
@@ -1551,7 +1558,7 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/tags/tag_id/subscriptions",
+      "provider_alias_intent": "/v4/tags/tag_id/subscriptions",
       "text": "List subscriptions to a tag",
       "category": "Tags",
       "method": "GET",
@@ -1599,13 +1606,13 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "List subscriptions to a tag",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/tags/<tag_id>/subscriptions",
-        "alias_endpoint": "/convertkit/v3/tags/tag_id/subscriptions",
-        "api_ref": "https://developers.convertkit.com/?shell#list-subscriptions-to-a-tag"
+        "api_endpoint": "https://api.kit.com/v4/tags/<tag_id>/subscriptions",
+        "alias_endpoint": "/convertkit/v4/tags/tag_id/subscriptions",
+        "api_ref": "https://developers.kit.com/v4#list-subscriptions-to-a-tag"
       },
       "auth": {
         "queryMap": {
@@ -1616,7 +1623,41 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/automations/hooks",
+      "provider_alias_intent": "/v4/automations/hooks",
+      "text": "List webhooks",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List webhooks",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/automations/hooks",
+        "alias_endpoint": "/convertkit/v4/automations/hooks",
+        "api_ref": "https://developers.kit.com/v4#list-webhooks"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/automations/hooks",
       "text": "Create a webhook",
       "category": "Webhooks",
       "method": "POST",
@@ -1638,13 +1679,13 @@
       "path": {},
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Create a webhook",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/automations/hooks",
-        "alias_endpoint": "/convertkit/v3/automations/hooks",
-        "api_ref": "https://developers.convertkit.com/?shell#create-a-webhook"
+        "api_endpoint": "https://api.kit.com/v4/automations/hooks",
+        "alias_endpoint": "/convertkit/v4/automations/hooks",
+        "api_ref": "https://developers.kit.com/v4#create-a-webhook"
       },
       "auth": {
         "body": {
@@ -1655,7 +1696,52 @@
       "updated_at": "2025-11-11T15:37:34.840Z"
     },
     {
-      "provider_alias_intent": "/v3/automations/hooks/rule_id",
+      "provider_alias_intent": "/v4/automations/hooks/rule_id",
+      "text": "Get webhook",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "rule_id": {
+          "type": "string",
+          "text": "Rule ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "rule_id": {
+          "type": "string",
+          "text": "Rule ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Get webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/automations/hooks/<rule_id>",
+        "alias_endpoint": "/convertkit/v4/automations/hooks/rule_id",
+        "api_ref": "https://developers.kit.com/v4#get-webhook"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/automations/hooks/rule_id",
       "text": "Destroy webhook",
       "category": "Webhooks",
       "method": "DELETE",
@@ -1683,13 +1769,544 @@
       },
       "domain_params": {},
       "meta": {
-        "version": "v3",
+        "version": "v4",
         "auth": [],
         "description": "Destroy webhook",
         "rate_limit": [],
-        "api_endpoint": "https://api.convertkit.com/v3/automations/hooks/<rule_id>",
-        "alias_endpoint": "/convertkit/v3/automations/hooks/rule_id",
-        "api_ref": "https://developers.convertkit.com/?shell#destroy-webhook"
+        "api_endpoint": "https://api.kit.com/v4/automations/hooks/<rule_id>",
+        "alias_endpoint": "/convertkit/v4/automations/hooks/rule_id",
+        "api_ref": "https://developers.kit.com/v4#destroy-webhook"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/products",
+      "text": "List products",
+      "category": "Products",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "page": {
+          "type": "string",
+          "text": "The page of results being requested"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List products",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/products",
+        "alias_endpoint": "/convertkit/v4/products",
+        "api_ref": "https://developers.kit.com/v4#list-products"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/products",
+      "text": "Create a product",
+      "category": "Products",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "text": "The product name",
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "text": "The product description"
+        },
+        "price": {
+          "type": "string",
+          "text": "The product price"
+        },
+        "url": {
+          "type": "string",
+          "text": "The product URL"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/products",
+        "alias_endpoint": "/convertkit/v4/products",
+        "api_ref": "https://developers.kit.com/v4#create-a-product"
+      },
+      "auth": {
+        "body": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/products/product_id",
+      "text": "Retrieve a specific product",
+      "category": "Products",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Retrieve a specific product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/products/<product_id>",
+        "alias_endpoint": "/convertkit/v4/products/product_id",
+        "api_ref": "https://developers.kit.com/v4#retrieve-a-specific-product"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/products/product_id",
+      "text": "Update a product",
+      "category": "Products",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "text": "The product name"
+        },
+        "description": {
+          "type": "string",
+          "text": "The product description"
+        },
+        "price": {
+          "type": "string",
+          "text": "The product price"
+        },
+        "url": {
+          "type": "string",
+          "text": "The product URL"
+        }
+      },
+      "path": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/products/<product_id>",
+        "alias_endpoint": "/convertkit/v4/products/product_id",
+        "api_ref": "https://developers.kit.com/v4#update-a-product"
+      },
+      "auth": {
+        "body": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/products/product_id",
+      "text": "Destroy a product",
+      "category": "Products",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "product_id": {
+          "type": "string",
+          "text": "Product ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Destroy a product",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/products/<product_id>",
+        "alias_endpoint": "/convertkit/v4/products/product_id",
+        "api_ref": "https://developers.kit.com/v4#destroy-a-product"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/events",
+      "text": "List events for a subscriber",
+      "category": "Events",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "page": {
+          "type": "string",
+          "text": "The page of results being requested"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List events for a subscriber",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/events",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/events",
+        "api_ref": "https://developers.kit.com/v4#list-events-for-a-subscriber"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/events",
+      "text": "Create an event",
+      "category": "Events",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "email": {
+          "type": "string",
+          "text": "Subscriber email address",
+          "required": true
+        },
+        "name": {
+          "type": "string",
+          "text": "Event name",
+          "required": true
+        },
+        "properties": {
+          "type": "string",
+          "text": "Object of key/value pairs for event properties"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Create an event",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/events",
+        "alias_endpoint": "/convertkit/v4/events",
+        "api_ref": "https://developers.kit.com/v4#create-an-event"
+      },
+      "auth": {
+        "body": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/automations/hooks/rule_id",
+      "text": "Update webhook",
+      "category": "Webhooks",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "rule_id": {
+          "type": "string",
+          "text": "Rule ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "target_url": {
+          "type": "string",
+          "text": "The URL that will receive subscriber data when the event is triggered"
+        },
+        "event": {
+          "type": "string",
+          "text": "JSON object that includes the trigger name and extra information when needed"
+        }
+      },
+      "path": {
+        "rule_id": {
+          "type": "string",
+          "text": "Rule ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "Update webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/automations/hooks/<rule_id>",
+        "alias_endpoint": "/convertkit/v4/automations/hooks/rule_id",
+        "api_ref": "https://developers.kit.com/v4#update-webhook"
+      },
+      "auth": {
+        "body": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/sequences",
+      "text": "List sequences for a subscriber",
+      "category": "Subscribers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List sequences for a subscriber",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/sequences",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/sequences",
+        "api_ref": "https://developers.kit.com/v4#list-sequences-for-a-subscriber"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/forms",
+      "text": "List forms for a subscriber",
+      "category": "Subscribers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List forms for a subscriber",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/forms",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/forms",
+        "api_ref": "https://developers.kit.com/v4#list-forms-for-a-subscriber"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret"
+        }
+      },
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:34.840Z"
+    },
+    {
+      "provider_alias_intent": "/v4/subscribers/subscriber_id/purchases",
+      "text": "List purchases for a subscriber",
+      "category": "Subscribers",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        },
+        "api_secret": {
+          "type": "string",
+          "text": "Your API secret key",
+          "required": true
+        },
+        "page": {
+          "type": "string",
+          "text": "The page of results being requested"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "subscriber_id": {
+          "type": "string",
+          "text": "Subscriber ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v4",
+        "auth": [],
+        "description": "List purchases for a subscriber",
+        "rate_limit": [],
+        "api_endpoint": "https://api.kit.com/v4/subscribers/<subscriber_id>/purchases",
+        "alias_endpoint": "/convertkit/v4/subscribers/subscriber_id/purchases",
+        "api_ref": "https://developers.kit.com/v4#list-purchases-for-a-subscriber"
       },
       "auth": {
         "queryMap": {

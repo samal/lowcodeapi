@@ -1,0 +1,2432 @@
+{
+  "config": {
+    "id": "mailersend",
+    "name": "Mailer send",
+    "description": "",
+    "logo_url": "mailersend.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "header": {
+        "authKey": "api_key",
+        "headerName": "Authorization",
+        "headerValue": "Bearer"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Key",
+        "message": "This API key will be used for accessing APIs.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.mailersend.com",
+    "released": 1,
+    "updated_at": "2024-12-22T11:23:06.000Z",
+    "website": "https://www.mailersend.com",
+    "api_link_ref": "https://developers.mailersend.com",
+    "total_api": 45,
+    "credential_link": "https://app.mailersend.com/api-tokens"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v1/email",
+      "text": "Send an email",
+      "category": "Emails",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "from": {
+          "type": "object",
+          "text": "Not required if template_id is present and template has default sender set",
+          "required": false,
+          "examples": {
+            "email": "",
+            "name": ""
+          }
+        },
+        "to": {
+          "type": "array",
+          "text": "Array of recipient objects",
+          "required": true,
+          "examples": [
+            {
+              "email": "",
+              "name": ""
+            }
+          ]
+        },
+        "cc": {
+          "type": "array",
+          "text": "Array of CC recipient objects",
+          "required": false,
+          "examples": [
+            {
+              "email": "",
+              "name": ""
+            }
+          ]
+        },
+        "bcc": {
+          "type": "array",
+          "text": "Array of BCC recipient objects",
+          "required": false,
+          "examples": [
+            {
+              "email": "",
+              "name": ""
+            }
+          ]
+        },
+        "reply_to": {
+          "type": "object",
+          "text": "Reply to email address and name",
+          "required": false,
+          "examples": {
+            "email": "",
+            "name": ""
+          }
+        },
+        "subject": {
+          "type": "string",
+          "text": "Not required if template_id is present and template has default subject set",
+          "required": false,
+          "examples": ""
+        },
+        "text": {
+          "type": "string",
+          "text": "Email represented in a text (text/plain) format",
+          "required": false,
+          "examples": ""
+        },
+        "html": {
+          "type": "string",
+          "text": "Email represented in HTML (text/html) format",
+          "required": false,
+          "examples": ""
+        },
+        "attachments": {
+          "type": "array",
+          "text": "Array of attachment objects with filename and content (base64 encoded)",
+          "required": false,
+          "examples": [
+            {
+              "filename": "",
+              "content": "",
+              "disposition": "attachment",
+              "id": ""
+            }
+          ]
+        },
+        "template_id": {
+          "type": "string",
+          "text": "Template ID to use for the email",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "text": "Array of tags (limit is max 5 tags)",
+          "required": false,
+          "examples": []
+        },
+        "personalization": {
+          "type": "array",
+          "text": "Allows using personalization in {{var}} syntax",
+          "required": false,
+          "examples": [
+            {
+              "email": "",
+              "data": {}
+            }
+          ]
+        },
+        "precedence_bulk": {
+          "type": "boolean",
+          "text": "This parameter will override domain's advanced settings",
+          "required": false,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "send_at": {
+          "type": "number",
+          "text": "Has to be a Unix timestamp",
+          "required": false
+        },
+        "in_reply_to": {
+          "type": "string",
+          "text": "Alphanumeric which can contain _, -, @ and .",
+          "required": false
+        },
+        "settings": {
+          "type": "object",
+          "text": "Email settings",
+          "required": false,
+          "examples": {
+            "track_clicks": true,
+            "track_opens": true,
+            "track_content": true,
+            "track_unsubscribe_html": true,
+            "track_unsubscribe_text": true,
+            "track_unsubscribe": true,
+            "bypass_list_management": false,
+            "bypass_unsubscribe_management": false,
+            "bypass_bounce_management": false,
+            "bypass_spam_management": false
+          }
+        },
+        "headers": {
+          "type": "object",
+          "text": "Custom headers (this feature is available to Enterprise accounts only)",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Send an asynchronous email",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/email",
+        "alias_endpoint": "/mailersend/v1/email",
+        "api_ref": "https://developers.mailersend.com/api/v1/email.html#send-an-email"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/bulk-email",
+      "text": "Send bulk emails",
+      "category": "Emails",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "from": {
+          "type": "object",
+          "text": "Sender email address and name",
+          "required": true,
+          "examples": {
+            "email": "",
+            "name": ""
+          }
+        },
+        "to": {
+          "type": "array",
+          "text": "Array of recipient objects",
+          "required": true,
+          "examples": [
+            {
+              "email": "",
+              "name": ""
+            }
+          ]
+        },
+        "subject": {
+          "type": "string",
+          "text": "Email subject",
+          "required": true,
+          "examples": ""
+        },
+        "text": {
+          "type": "string",
+          "text": "Email text content",
+          "required": false,
+          "examples": ""
+        },
+        "html": {
+          "type": "string",
+          "text": "Email HTML content",
+          "required": false,
+          "examples": ""
+        },
+        "template_id": {
+          "type": "string",
+          "text": "Template ID to use",
+          "required": false
+        },
+        "tags": {
+          "type": "array",
+          "text": "Array of tags (limit is max 5 tags)",
+          "required": false,
+          "examples": []
+        },
+        "personalization": {
+          "type": "array",
+          "text": "Personalization data for each recipient",
+          "required": false,
+          "examples": [
+            {
+              "email": "",
+              "data": {}
+            }
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Send bulk emails",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/bulk-email",
+        "alias_endpoint": "/mailersend/v1/bulk-email",
+        "api_ref": "https://developers.mailersend.com/api/v1/email.html#send-bulk-emails"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains",
+      "text": "List domains",
+      "category": "Domains",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all domains",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains",
+        "alias_endpoint": "/mailersend/v1/domains",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#get-a-list-of-domains"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains/domain_id",
+      "text": "Get a domain",
+      "category": "Domains",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains/{domain_id}",
+        "alias_endpoint": "/mailersend/v1/domains/domain_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#get-a-single-domain"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains",
+      "text": "Create a domain",
+      "category": "Domains",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Domain name",
+          "required": true,
+          "examples": ""
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains",
+        "alias_endpoint": "/mailersend/v1/domains",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#create-a-domain"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains/domain_id",
+      "text": "Update a domain",
+      "category": "Domains",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Domain name",
+          "required": false,
+          "examples": ""
+        },
+        "return_path_subdomain": {
+          "type": "string",
+          "text": "Return path subdomain",
+          "required": false
+        },
+        "custom_tracking_subdomain": {
+          "type": "string",
+          "text": "Custom tracking subdomain",
+          "required": false
+        }
+      },
+      "path": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains/{domain_id}",
+        "alias_endpoint": "/mailersend/v1/domains/domain_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#update-a-domain"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains/domain_id",
+      "text": "Delete a domain",
+      "category": "Domains",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains/{domain_id}",
+        "alias_endpoint": "/mailersend/v1/domains/domain_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#delete-a-domain"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains/domain_id/verify",
+      "text": "Verify a domain",
+      "category": "Domains",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Verify a domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains/{domain_id}/verify",
+        "alias_endpoint": "/mailersend/v1/domains/domain_id/verify",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#verify-a-domain"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/domains/domain_id/dns-records",
+      "text": "Get DNS records",
+      "category": "Domains",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get DNS records for a domain",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/domains/{domain_id}/dns-records",
+        "alias_endpoint": "/mailersend/v1/domains/domain_id/dns-records",
+        "api_ref": "https://developers.mailersend.com/api/v1/domains.html#get-dns-records"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/templates",
+      "text": "List templates",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all templates",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/templates",
+        "alias_endpoint": "/mailersend/v1/templates",
+        "api_ref": "https://developers.mailersend.com/api/v1/templates.html#get-a-list-of-templates"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/templates/template_id",
+      "text": "Get a template",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/templates/{template_id}",
+        "alias_endpoint": "/mailersend/v1/templates/template_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/templates.html#get-a-single-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/templates",
+      "text": "Create a template",
+      "category": "Templates",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Template name",
+          "required": true,
+          "examples": ""
+        },
+        "html": {
+          "type": "string",
+          "text": "HTML content of the template",
+          "required": false,
+          "examples": ""
+        },
+        "text": {
+          "type": "string",
+          "text": "Text content of the template",
+          "required": false,
+          "examples": ""
+        },
+        "subject": {
+          "type": "string",
+          "text": "Default subject for the template",
+          "required": false,
+          "examples": ""
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/templates",
+        "alias_endpoint": "/mailersend/v1/templates",
+        "api_ref": "https://developers.mailersend.com/api/v1/templates.html#create-a-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/templates/template_id",
+      "text": "Update a template",
+      "category": "Templates",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Template name",
+          "required": false,
+          "examples": ""
+        },
+        "html": {
+          "type": "string",
+          "text": "HTML content of the template",
+          "required": false,
+          "examples": ""
+        },
+        "text": {
+          "type": "string",
+          "text": "Text content of the template",
+          "required": false,
+          "examples": ""
+        },
+        "subject": {
+          "type": "string",
+          "text": "Default subject for the template",
+          "required": false,
+          "examples": ""
+        }
+      },
+      "path": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/templates/{template_id}",
+        "alias_endpoint": "/mailersend/v1/templates/template_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/templates.html#update-a-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/templates/template_id",
+      "text": "Delete a template",
+      "category": "Templates",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "template_id": {
+          "type": "string",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/templates/{template_id}",
+        "alias_endpoint": "/mailersend/v1/templates/template_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/templates.html#delete-a-template"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks",
+      "text": "List webhooks",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Filter by domain ID",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all webhooks",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/webhooks",
+        "alias_endpoint": "/mailersend/v1/webhooks",
+        "api_ref": "https://developers.mailersend.com/api/v1/webhooks.html#get-a-list-of-webhooks"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks/webhook_id",
+      "text": "Get a webhook",
+      "category": "Webhooks",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/webhooks/{webhook_id}",
+        "alias_endpoint": "/mailersend/v1/webhooks/webhook_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/webhooks.html#get-a-single-webhook"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks",
+      "text": "Create a webhook",
+      "category": "Webhooks",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "url": {
+          "type": "string",
+          "text": "Webhook URL",
+          "required": true,
+          "examples": ""
+        },
+        "name": {
+          "type": "string",
+          "text": "Webhook name",
+          "required": false,
+          "examples": ""
+        },
+        "events": {
+          "type": "array",
+          "text": "Array of event types to subscribe to",
+          "required": true,
+          "examples": [
+            "activity.sent",
+            "activity.delivered",
+            "activity.soft_bounced",
+            "activity.hard_bounced",
+            "activity.opened",
+            "activity.clicked",
+            "activity.unsubscribed",
+            "activity.spam_complaint"
+          ]
+        },
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/webhooks",
+        "alias_endpoint": "/mailersend/v1/webhooks",
+        "api_ref": "https://developers.mailersend.com/api/v1/webhooks.html#create-a-webhook"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks/webhook_id",
+      "text": "Update a webhook",
+      "category": "Webhooks",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "url": {
+          "type": "string",
+          "text": "Webhook URL",
+          "required": false,
+          "examples": ""
+        },
+        "name": {
+          "type": "string",
+          "text": "Webhook name",
+          "required": false,
+          "examples": ""
+        },
+        "events": {
+          "type": "array",
+          "text": "Array of event types to subscribe to",
+          "required": false,
+          "examples": [
+            "activity.sent",
+            "activity.delivered",
+            "activity.soft_bounced",
+            "activity.hard_bounced",
+            "activity.opened",
+            "activity.clicked",
+            "activity.unsubscribed",
+            "activity.spam_complaint"
+          ]
+        }
+      },
+      "path": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/webhooks/{webhook_id}",
+        "alias_endpoint": "/mailersend/v1/webhooks/webhook_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/webhooks.html#update-a-webhook"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/webhooks/webhook_id",
+      "text": "Delete a webhook",
+      "category": "Webhooks",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "webhook_id": {
+          "type": "string",
+          "text": "Webhook ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a webhook",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/webhooks/{webhook_id}",
+        "alias_endpoint": "/mailersend/v1/webhooks/webhook_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/webhooks.html#delete-a-webhook"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/activity",
+      "text": "List activity events",
+      "category": "Activity",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Filter by domain ID",
+          "required": false
+        },
+        "date_from": {
+          "type": "number",
+          "text": "Unix timestamp - start date",
+          "required": false
+        },
+        "date_to": {
+          "type": "number",
+          "text": "Unix timestamp - end date",
+          "required": false
+        },
+        "event": {
+          "type": "string",
+          "text": "Filter by event type",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of activity events",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/activity",
+        "alias_endpoint": "/mailersend/v1/activity",
+        "api_ref": "https://developers.mailersend.com/api/v1/activity.html#get-a-list-of-events"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/activity/event_id",
+      "text": "Get an activity event",
+      "category": "Activity",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "event_id": {
+          "type": "string",
+          "text": "Event ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "event_id": {
+          "type": "string",
+          "text": "Event ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single activity event",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/activity/{event_id}",
+        "alias_endpoint": "/mailersend/v1/activity/event_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/activity.html#get-a-single-event"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/bounces",
+      "text": "List bounces",
+      "category": "Suppressions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Filter by domain ID",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of bounces",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/bounces",
+        "alias_endpoint": "/mailersend/v1/suppressions/bounces",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#get-a-list-of-bounces"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/bounces",
+      "text": "Add bounces",
+      "category": "Suppressions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "recipients": {
+          "type": "array",
+          "text": "Array of email addresses to add to bounces",
+          "required": true,
+          "examples": []
+        },
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Add email addresses to bounces",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/bounces",
+        "alias_endpoint": "/mailersend/v1/suppressions/bounces",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#add-bounces"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/bounces/suppression_id",
+      "text": "Delete a bounce",
+      "category": "Suppressions",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a bounce",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/bounces/{suppression_id}",
+        "alias_endpoint": "/mailersend/v1/suppressions/bounces/suppression_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#delete-a-bounce"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/unsubscribes",
+      "text": "List unsubscribes",
+      "category": "Suppressions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Filter by domain ID",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of unsubscribes",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/unsubscribes",
+        "alias_endpoint": "/mailersend/v1/suppressions/unsubscribes",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#get-a-list-of-unsubscribes"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/unsubscribes",
+      "text": "Add unsubscribes",
+      "category": "Suppressions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "recipients": {
+          "type": "array",
+          "text": "Array of email addresses to add to unsubscribes",
+          "required": true,
+          "examples": []
+        },
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Add email addresses to unsubscribes",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/unsubscribes",
+        "alias_endpoint": "/mailersend/v1/suppressions/unsubscribes",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#add-unsubscribes"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/unsubscribes/suppression_id",
+      "text": "Delete an unsubscribe",
+      "category": "Suppressions",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete an unsubscribe",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/unsubscribes/{suppression_id}",
+        "alias_endpoint": "/mailersend/v1/suppressions/unsubscribes/suppression_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#delete-an-unsubscribe"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/spam",
+      "text": "List spam complaints",
+      "category": "Suppressions",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "domain_id": {
+          "type": "string",
+          "text": "Filter by domain ID",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of spam complaints",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/spam",
+        "alias_endpoint": "/mailersend/v1/suppressions/spam",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#get-a-list-of-spam-complaints"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/spam",
+      "text": "Add spam complaints",
+      "category": "Suppressions",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "recipients": {
+          "type": "array",
+          "text": "Array of email addresses to add to spam complaints",
+          "required": true,
+          "examples": []
+        },
+        "domain_id": {
+          "type": "string",
+          "text": "Domain ID",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Add email addresses to spam complaints",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/spam",
+        "alias_endpoint": "/mailersend/v1/suppressions/spam",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#add-spam-complaints"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/suppressions/spam/suppression_id",
+      "text": "Delete a spam complaint",
+      "category": "Suppressions",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "suppression_id": {
+          "type": "string",
+          "text": "Suppression ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a spam complaint",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/suppressions/spam/{suppression_id}",
+        "alias_endpoint": "/mailersend/v1/suppressions/spam/suppression_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/suppressions.html#delete-a-spam-complaint"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/tokens",
+      "text": "List tokens",
+      "category": "Tokens",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all tokens",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/tokens",
+        "alias_endpoint": "/mailersend/v1/tokens",
+        "api_ref": "https://developers.mailersend.com/api/v1/tokens.html#get-a-list-of-tokens"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/tokens/token_id",
+      "text": "Get a token",
+      "category": "Tokens",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single token",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/tokens/{token_id}",
+        "alias_endpoint": "/mailersend/v1/tokens/token_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/tokens.html#get-a-single-token"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/tokens",
+      "text": "Create a token",
+      "category": "Tokens",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Token name",
+          "required": true,
+          "examples": ""
+        },
+        "scopes": {
+          "type": "array",
+          "text": "Array of scopes for the token",
+          "required": true,
+          "examples": [
+            "email_full",
+            "domains_read",
+            "domains_full",
+            "templates_read",
+            "templates_full",
+            "tokens_read",
+            "tokens_full",
+            "webhooks_read",
+            "webhooks_full",
+            "activity_read",
+            "activity_full",
+            "analytics_read",
+            "analytics_full"
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new token",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/tokens",
+        "alias_endpoint": "/mailersend/v1/tokens",
+        "api_ref": "https://developers.mailersend.com/api/v1/tokens.html#create-a-token"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/tokens/token_id",
+      "text": "Update a token",
+      "category": "Tokens",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "Token name",
+          "required": false,
+          "examples": ""
+        },
+        "status": {
+          "type": "string",
+          "text": "Token status",
+          "required": false,
+          "enum": [
+            "active",
+            "paused"
+          ]
+        }
+      },
+      "path": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a token",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/tokens/{token_id}",
+        "alias_endpoint": "/mailersend/v1/tokens/token_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/tokens.html#update-a-token"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/tokens/token_id",
+      "text": "Delete a token",
+      "category": "Tokens",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "token_id": {
+          "type": "string",
+          "text": "Token ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a token",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/tokens/{token_id}",
+        "alias_endpoint": "/mailersend/v1/tokens/token_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/tokens.html#delete-a-token"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/recipients",
+      "text": "List recipients",
+      "category": "Recipients",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "Filter by list ID",
+          "required": false
+        },
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all recipients",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/recipients",
+        "alias_endpoint": "/mailersend/v1/recipients",
+        "api_ref": "https://developers.mailersend.com/api/v1/recipients.html#get-a-list-of-recipients"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/recipients/recipient_id",
+      "text": "Get a recipient",
+      "category": "Recipients",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single recipient",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/recipients/{recipient_id}",
+        "alias_endpoint": "/mailersend/v1/recipients/recipient_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/recipients.html#get-a-single-recipient"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/recipients",
+      "text": "Create a recipient",
+      "category": "Recipients",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "email": {
+          "type": "string",
+          "text": "Recipient email address",
+          "required": true,
+          "examples": ""
+        },
+        "fields": {
+          "type": "object",
+          "text": "Custom fields for the recipient",
+          "required": false
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new recipient",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/recipients",
+        "alias_endpoint": "/mailersend/v1/recipients",
+        "api_ref": "https://developers.mailersend.com/api/v1/recipients.html#create-a-recipient"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/recipients/recipient_id",
+      "text": "Update a recipient",
+      "category": "Recipients",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "fields": {
+          "type": "object",
+          "text": "Custom fields for the recipient",
+          "required": false
+        }
+      },
+      "path": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a recipient",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/recipients/{recipient_id}",
+        "alias_endpoint": "/mailersend/v1/recipients/recipient_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/recipients.html#update-a-recipient"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/recipients/recipient_id",
+      "text": "Delete a recipient",
+      "category": "Recipients",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a recipient",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/recipients/{recipient_id}",
+        "alias_endpoint": "/mailersend/v1/recipients/recipient_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/recipients.html#delete-a-recipient"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists",
+      "text": "List recipient lists",
+      "category": "Recipients",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "page": {
+          "type": "number",
+          "text": "Page number",
+          "required": false
+        },
+        "limit": {
+          "type": "number",
+          "text": "Number of results per page",
+          "required": false
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a list of all recipient lists",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists",
+        "alias_endpoint": "/mailersend/v1/lists",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#get-a-list-of-lists"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists/list_id",
+      "text": "Get a recipient list",
+      "category": "Recipients",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Get a single recipient list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists/{list_id}",
+        "alias_endpoint": "/mailersend/v1/lists/list_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#get-a-single-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists",
+      "text": "Create a recipient list",
+      "category": "Recipients",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "List name",
+          "required": true,
+          "examples": ""
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Create a new recipient list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists",
+        "alias_endpoint": "/mailersend/v1/lists",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#create-a-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists/list_id",
+      "text": "Update a recipient list",
+      "category": "Recipients",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "name": {
+          "type": "string",
+          "text": "List name",
+          "required": false,
+          "examples": ""
+        }
+      },
+      "path": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Update a recipient list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists/{list_id}",
+        "alias_endpoint": "/mailersend/v1/lists/list_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#update-a-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists/list_id",
+      "text": "Delete a recipient list",
+      "category": "Recipients",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Delete a recipient list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists/{list_id}",
+        "alias_endpoint": "/mailersend/v1/lists/list_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#delete-a-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists/list_id/recipients",
+      "text": "Add recipients to a list",
+      "category": "Recipients",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "recipient_ids": {
+          "type": "array",
+          "text": "Array of recipient IDs to add to the list",
+          "required": true,
+          "examples": []
+        }
+      },
+      "path": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Add recipients to a list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists/{list_id}/recipients",
+        "alias_endpoint": "/mailersend/v1/lists/list_id/recipients",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#add-recipients-to-a-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    },
+    {
+      "provider_alias_intent": "/v1/lists/list_id/recipients/recipient_id",
+      "text": "Remove a recipient from a list",
+      "category": "Recipients",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        },
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "list_id": {
+          "type": "string",
+          "text": "List ID",
+          "required": true
+        },
+        "recipient_id": {
+          "type": "string",
+          "text": "Recipient ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v1",
+        "auth": [],
+        "description": "Remove a recipient from a list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailersend.com/v1/lists/{list_id}/recipients/{recipient_id}",
+        "alias_endpoint": "/mailersend/v1/lists/list_id/recipients/recipient_id",
+        "api_ref": "https://developers.mailersend.com/api/v1/lists.html#remove-a-recipient-from-a-list"
+      },
+      "auth": {
+        "header": {
+          "headerName": "Authorization",
+          "headerValue": "Bearer",
+          "authKey": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.209Z"
+    }
+  ]
+}

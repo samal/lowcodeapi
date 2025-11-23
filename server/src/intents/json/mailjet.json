@@ -1,0 +1,1935 @@
+{
+  "config": {
+    "id": "mailjet",
+    "name": "Mailjet",
+    "description": "",
+    "logo_url": "mailjet.svg",
+    "auth_type": "TOKEN",
+    "auth": {
+      "body": {
+        "api_key": "api_key",
+        "api_secret": "api_secret"
+      },
+      "queryMap": {
+        "api_key": "api_key",
+        "api_secret": "api_secret"
+      }
+    },
+    "auth_config": [
+      {
+        "name": "api_key",
+        "type": "input",
+        "field": "input",
+        "label": "API Key",
+        "message": "API Key is used for accessing the API.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      },
+      {
+        "name": "api_secret",
+        "type": "input",
+        "field": "input",
+        "label": "API Secret",
+        "message": "API Secret is used for accessing the API.",
+        "required": true,
+        "className": "",
+        "placeholder": ""
+      }
+    ],
+    "headers": {},
+    "api_endpoint": "https://api.mailjet.com",
+    "released": 1,
+    "updated_at": "2024-12-22T10:10:12.000Z",
+    "website": "https://www.mailjet.com/",
+    "api_link_ref": "https://dev.mailjet.com/email/reference/",
+    "total_api": 35,
+    "credential_link": "https://app.mailjet.com/account/apikeys"
+  },
+  "routes": [
+    {
+      "provider_alias_intent": "/v3/send",
+      "text": "Send message v3",
+      "category": "Send Emails",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "FromEmail": {
+          "type": "string",
+          "text": "Specifies the sender email address",
+          "examples": ""
+        },
+        "FromName": {
+          "type": "string",
+          "text": "Sender name that will be displayed in the recipient's mailbox",
+          "examples": ""
+        },
+        "Sender": {
+          "type": "boolean",
+          "text": "Sender email address will be used to send the message",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "Recipients": {
+          "type": "array",
+          "text": "A json array containing the list of recipients",
+          "examples": [
+            {
+              "Email": "",
+              "Name": ""
+            }
+          ]
+        },
+        "To": {
+          "type": "string",
+          "text": "The email address (and name, optionally) of the recipients",
+          "examples": ""
+        },
+        "Cc": {
+          "type": "string",
+          "text": "A json array containing the list of recipients",
+          "examples": ""
+        },
+        "Bcc": {
+          "type": "string",
+          "text": "The email address of a recipient who is supposed to receive a blind carbon copy of this message",
+          "examples": ""
+        },
+        "Subject": {
+          "type": "string",
+          "text": "The email subject line",
+          "examples": ""
+        },
+        "Text-part": {
+          "type": "string",
+          "text": "Provides the Text part of the message",
+          "required": true,
+          "examples": ""
+        },
+        "Html-part": {
+          "type": "string",
+          "text": "Provides the HTML part of the message",
+          "required": true,
+          "examples": ""
+        },
+        "Attachments": {
+          "type": "array",
+          "text": "A json object containing descriptions of the files attached to this message"
+        },
+        "Mj-TemplateID": {
+          "type": "number",
+          "text": "The Template ID or Name to use as this email content",
+          "default": false
+        },
+        "Mj-TemplateLanguage": {
+          "type": "boolean",
+          "text": "When true, activates the template language processing",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "Mj-TemplateErrorReporting": {
+          "type": "string",
+          "text": "An email address, where a carbon copy with the error message is sent to in case of sending issues"
+        },
+        "Mj-TemplateErrorDeliver": {
+          "type": "string",
+          "text": "Defines if the message will be delivered if an error is discovered in the templating language",
+          "required": true
+        },
+        "inline_attachments": {
+          "type": "array",
+          "text": "A json object containing descriptions of the files attached to this message"
+        },
+        "Mj-prio": {
+          "type": "number",
+          "text": "Indicates the processing priority inside your account (API Key) scheduling queue"
+        },
+        "Mj-campaign": {
+          "type": "string",
+          "text": "Specifies a custom campaign name, to which all messages with this property value will be assigned"
+        },
+        "Mj-deduplicatecampaign": {
+          "type": "number",
+          "text": "Enables or disables the option to send messages from the same campaign to the same contact multiple times"
+        },
+        "Mj-trackopen": {
+          "type": "number",
+          "text": "Enable or disable open tracking on this message"
+        },
+        "Mj-CustomID": {
+          "type": "string",
+          "text": "Select a user-defined custom ID"
+        },
+        "Mj-EventPayload": {
+          "type": "string",
+          "text": "Defines a payload attached to the message"
+        },
+        "Headers": {
+          "type": "object",
+          "text": "A JSON object containing additional email headers"
+        },
+        "Vars": {
+          "type": "object",
+          "text": "A JSON object containing variables used to modify the content of your email"
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Send a message via Send API v3",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/send",
+        "alias_endpoint": "/mailjet/v3/send",
+        "api_ref": "https://dev.mailjet.com/email/reference/send-emails#v3_post_send"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        },
+        "body": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3.1/send",
+      "text": "Send message v3.1",
+      "category": "Send Emails",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "SandboxMode": {
+          "type": "boolean",
+          "text": "When true, the API call will be run in Sandbox mode",
+          "default": false,
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "AdvanceErrorHandling": {
+          "type": "boolean",
+          "text": "When true, enables additional error checks relating to the Send API v3.1 payload",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "Globals": {
+          "type": "object",
+          "text": "An object containing properties that will be applied to all message objects"
+        },
+        "Message": {
+          "type": "array",
+          "text": "A json array containing message objects",
+          "required": true,
+          "examples": [
+            {
+              "From": {
+                "Email": "",
+                "Name": ""
+              },
+              "Sender": {
+                "Email": "",
+                "Name": ""
+              },
+              "To": [
+                {
+                  "Email": "",
+                  "Name": ""
+                }
+              ],
+              "Cc": [
+                {
+                  "Email": "",
+                  "Name": ""
+                }
+              ],
+              "Bcc": [
+                {
+                  "Email": "",
+                  "Name": ""
+                }
+              ],
+              "ReplyTo": {},
+              "Subject": "",
+              "TextPart": "",
+              "HTMLPart": ""
+            }
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3.1",
+        "auth": [],
+        "description": "Send a message via Send API v3.1",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3.1/send",
+        "alias_endpoint": "/mailjet/v3.1/send",
+        "api_ref": "https://dev.mailjet.com/email/reference/send-emails#v3_1_post_send"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        },
+        "body": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contact",
+      "text": "List contacts",
+      "category": "Contacts",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        },
+        "IsExcludedFromCampaigns": {
+          "type": "boolean",
+          "text": "Filter contacts excluded from campaigns",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of contacts",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contact",
+        "alias_endpoint": "/mailjet/v3/REST/contact",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact#v3_get_contact"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contact",
+      "text": "Create contact",
+      "category": "Contacts",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "Email": {
+          "type": "string",
+          "text": "Email address of the contact",
+          "required": true,
+          "examples": ""
+        },
+        "Name": {
+          "type": "string",
+          "text": "Name of the contact",
+          "examples": ""
+        },
+        "IsExcludedFromCampaigns": {
+          "type": "boolean",
+          "text": "Exclude contact from campaigns",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Create a new contact",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contact",
+        "alias_endpoint": "/mailjet/v3/REST/contact",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact#v3_post_contact"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contact/contact_id",
+      "text": "Get contact",
+      "category": "Contacts",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific contact",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contact/{contact_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contact/contact_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact#v3_get_contact_contact_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contact/contact_id",
+      "text": "Update contact",
+      "category": "Contacts",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the contact",
+          "examples": ""
+        },
+        "IsExcludedFromCampaigns": {
+          "type": "boolean",
+          "text": "Exclude contact from campaigns",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update a contact",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contact/{contact_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contact/contact_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact#v3_put_contact_contact_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contact/contact_id",
+      "text": "Delete contact",
+      "category": "Contacts",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Delete a contact",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contact/{contact_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contact/contact_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact#v3_delete_contact_contact_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactdata/contact_id",
+      "text": "Get contact data",
+      "category": "Contacts",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve contact data properties",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactdata/{contact_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contactdata/contact_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact-properties#v3_get_contactdata_contact_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactdata/contact_id",
+      "text": "Update contact data",
+      "category": "Contacts",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Data": {
+          "type": "array",
+          "text": "Array of contact data properties",
+          "required": true,
+          "examples": [
+            {
+              "Name": "",
+              "Value": ""
+            }
+          ]
+        }
+      },
+      "path": {
+        "contact_id": {
+          "type": "number",
+          "text": "Contact ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update contact data properties",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactdata/{contact_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contactdata/contact_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contact-properties#v3_put_contactdata_contact_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist",
+      "text": "List contact lists",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of contact lists",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_get_contactslist"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist",
+      "text": "Create contact list",
+      "category": "Lists",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the contact list",
+          "required": true,
+          "examples": ""
+        },
+        "IsDeleted": {
+          "type": "boolean",
+          "text": "Whether the list is deleted",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Create a new contact list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_post_contactslist"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist/list_id",
+      "text": "Get contact list",
+      "category": "Lists",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific contact list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist/{list_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist/list_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_get_contactslist_list_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist/list_id",
+      "text": "Update contact list",
+      "category": "Lists",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the contact list",
+          "examples": ""
+        },
+        "IsDeleted": {
+          "type": "boolean",
+          "text": "Whether the list is deleted",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update a contact list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist/{list_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist/list_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_put_contactslist_list_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist/list_id",
+      "text": "Delete contact list",
+      "category": "Lists",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Delete a contact list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist/{list_id}",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist/list_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_delete_contactslist_list_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/contactslist/list_id/managecontact",
+      "text": "Manage contact in list",
+      "category": "Lists",
+      "method": "POST",
+      "type": "API",
+      "params": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Email": {
+          "type": "string",
+          "text": "Email address of the contact",
+          "required": true,
+          "examples": ""
+        },
+        "Action": {
+          "type": "string",
+          "text": "Action to perform: addnoforce, addforce, remove, unsub",
+          "required": true,
+          "enum": [
+            "addnoforce",
+            "addforce",
+            "remove",
+            "unsub"
+          ]
+        },
+        "Properties": {
+          "type": "object",
+          "text": "Contact properties"
+        }
+      },
+      "path": {
+        "list_id": {
+          "type": "number",
+          "text": "List ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Add or remove a contact from a list",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/contactslist/{list_id}/managecontact",
+        "alias_endpoint": "/mailjet/v3/REST/contactslist/list_id/managecontact",
+        "api_ref": "https://dev.mailjet.com/email/reference/contacts/contacts-list#v3_post_contactslist_list_ID_managecontact"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template",
+      "text": "List templates",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        },
+        "OwnerType": {
+          "type": "string",
+          "text": "Filter by owner type",
+          "enum": [
+            "user",
+            "apikey"
+          ]
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of templates",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template",
+        "alias_endpoint": "/mailjet/v3/REST/template",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_get_template"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template",
+      "text": "Create template",
+      "category": "Templates",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the template",
+          "required": true,
+          "examples": ""
+        },
+        "Author": {
+          "type": "string",
+          "text": "Author of the template",
+          "examples": ""
+        },
+        "Categories": {
+          "type": "string",
+          "text": "Categories for the template",
+          "examples": ""
+        },
+        "Copyright": {
+          "type": "string",
+          "text": "Copyright information",
+          "examples": ""
+        },
+        "Description": {
+          "type": "string",
+          "text": "Description of the template",
+          "examples": ""
+        },
+        "EditMode": {
+          "type": "string",
+          "text": "Edit mode: html, dragdrop, or builder",
+          "enum": [
+            "html",
+            "dragdrop",
+            "builder"
+          ]
+        },
+        "IsStarred": {
+          "type": "boolean",
+          "text": "Whether the template is starred",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "Locale": {
+          "type": "string",
+          "text": "Locale of the template",
+          "examples": "en_US"
+        },
+        "OwnerType": {
+          "type": "string",
+          "text": "Owner type: user or apikey",
+          "enum": [
+            "user",
+            "apikey"
+          ]
+        },
+        "Presets": {
+          "type": "string",
+          "text": "Presets for the template",
+          "examples": ""
+        },
+        "Purposes": {
+          "type": "string",
+          "text": "Purposes of the template",
+          "examples": ""
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Create a new template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template",
+        "alias_endpoint": "/mailjet/v3/REST/template",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_post_template"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template/template_id",
+      "text": "Get template",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template/{template_id}",
+        "alias_endpoint": "/mailjet/v3/REST/template/template_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_get_template_template_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template/template_id",
+      "text": "Update template",
+      "category": "Templates",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the template",
+          "examples": ""
+        },
+        "Author": {
+          "type": "string",
+          "text": "Author of the template",
+          "examples": ""
+        },
+        "Categories": {
+          "type": "string",
+          "text": "Categories for the template",
+          "examples": ""
+        },
+        "Copyright": {
+          "type": "string",
+          "text": "Copyright information",
+          "examples": ""
+        },
+        "Description": {
+          "type": "string",
+          "text": "Description of the template",
+          "examples": ""
+        },
+        "EditMode": {
+          "type": "string",
+          "text": "Edit mode: html, dragdrop, or builder",
+          "enum": [
+            "html",
+            "dragdrop",
+            "builder"
+          ]
+        },
+        "IsStarred": {
+          "type": "boolean",
+          "text": "Whether the template is starred",
+          "enum": [
+            true,
+            false
+          ]
+        },
+        "Locale": {
+          "type": "string",
+          "text": "Locale of the template",
+          "examples": "en_US"
+        },
+        "OwnerType": {
+          "type": "string",
+          "text": "Owner type: user or apikey",
+          "enum": [
+            "user",
+            "apikey"
+          ]
+        },
+        "Presets": {
+          "type": "string",
+          "text": "Presets for the template",
+          "examples": ""
+        },
+        "Purposes": {
+          "type": "string",
+          "text": "Purposes of the template",
+          "examples": ""
+        }
+      },
+      "path": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update a template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template/{template_id}",
+        "alias_endpoint": "/mailjet/v3/REST/template/template_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_put_template_template_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template/template_id",
+      "text": "Delete template",
+      "category": "Templates",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Delete a template",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template/{template_id}",
+        "alias_endpoint": "/mailjet/v3/REST/template/template_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_delete_template_template_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template/template_id/detailcontent",
+      "text": "Get template content",
+      "category": "Templates",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve template content",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template/{template_id}/detailcontent",
+        "alias_endpoint": "/mailjet/v3/REST/template/template_id/detailcontent",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_get_template_template_ID_detailcontent"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/template/template_id/detailcontent",
+      "text": "Update template content",
+      "category": "Templates",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Html-part": {
+          "type": "string",
+          "text": "HTML content of the template",
+          "examples": ""
+        },
+        "Text-part": {
+          "type": "string",
+          "text": "Text content of the template",
+          "examples": ""
+        },
+        "Headers": {
+          "type": "object",
+          "text": "Headers for the template"
+        }
+      },
+      "path": {
+        "template_id": {
+          "type": "number",
+          "text": "Template ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update template content",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/template/{template_id}/detailcontent",
+        "alias_endpoint": "/mailjet/v3/REST/template/template_id/detailcontent",
+        "api_ref": "https://dev.mailjet.com/email/reference/templates#v3_put_template_template_ID_detailcontent"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/sender",
+      "text": "List senders",
+      "category": "Senders",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of senders",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/sender",
+        "alias_endpoint": "/mailjet/v3/REST/sender",
+        "api_ref": "https://dev.mailjet.com/email/reference/senders#v3_get_sender"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/sender",
+      "text": "Create sender",
+      "category": "Senders",
+      "method": "POST",
+      "type": "API",
+      "params": {},
+      "custom_headers": {},
+      "body": {
+        "Email": {
+          "type": "string",
+          "text": "Email address of the sender",
+          "required": true,
+          "examples": ""
+        },
+        "Name": {
+          "type": "string",
+          "text": "Name of the sender",
+          "examples": ""
+        },
+        "IsDefaultSender": {
+          "type": "boolean",
+          "text": "Whether this is the default sender",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Create a new sender",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/sender",
+        "alias_endpoint": "/mailjet/v3/REST/sender",
+        "api_ref": "https://dev.mailjet.com/email/reference/senders#v3_post_sender"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/sender/sender_id",
+      "text": "Get sender",
+      "category": "Senders",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific sender",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/sender/{sender_id}",
+        "alias_endpoint": "/mailjet/v3/REST/sender/sender_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/senders#v3_get_sender_sender_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/sender/sender_id",
+      "text": "Update sender",
+      "category": "Senders",
+      "method": "PUT",
+      "type": "API",
+      "params": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {
+        "Name": {
+          "type": "string",
+          "text": "Name of the sender",
+          "examples": ""
+        },
+        "IsDefaultSender": {
+          "type": "boolean",
+          "text": "Whether this is the default sender",
+          "enum": [
+            true,
+            false
+          ]
+        }
+      },
+      "path": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Update a sender",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/sender/{sender_id}",
+        "alias_endpoint": "/mailjet/v3/REST/sender/sender_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/senders#v3_put_sender_sender_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/sender/sender_id",
+      "text": "Delete sender",
+      "category": "Senders",
+      "method": "DELETE",
+      "type": "API",
+      "params": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "sender_id": {
+          "type": "number",
+          "text": "Sender ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Delete a sender",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/sender/{sender_id}",
+        "alias_endpoint": "/mailjet/v3/REST/sender/sender_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/senders#v3_delete_sender_sender_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/statcounters",
+      "text": "Get statistics counters",
+      "category": "Statistics",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "CounterSource": {
+          "type": "string",
+          "text": "Source of the counter",
+          "examples": "api"
+        },
+        "CounterTiming": {
+          "type": "string",
+          "text": "Timing of the counter",
+          "examples": "message"
+        },
+        "CounterResolution": {
+          "type": "string",
+          "text": "Resolution of the counter",
+          "examples": "lifetime"
+        },
+        "FromTS": {
+          "type": "string",
+          "text": "Start timestamp",
+          "examples": ""
+        },
+        "ToTS": {
+          "type": "string",
+          "text": "End timestamp",
+          "examples": ""
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve statistics counters",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/statcounters",
+        "alias_endpoint": "/mailjet/v3/REST/statcounters",
+        "api_ref": "https://dev.mailjet.com/email/reference/statistics#v3_get_statcounters"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/statistics",
+      "text": "Get statistics",
+      "category": "Statistics",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "FromTS": {
+          "type": "string",
+          "text": "Start timestamp",
+          "examples": ""
+        },
+        "ToTS": {
+          "type": "string",
+          "text": "End timestamp",
+          "examples": ""
+        },
+        "SourceID": {
+          "type": "number",
+          "text": "Source ID",
+          "examples": 0
+        },
+        "CounterSource": {
+          "type": "string",
+          "text": "Source of the counter",
+          "examples": "api"
+        },
+        "CounterTiming": {
+          "type": "string",
+          "text": "Timing of the counter",
+          "examples": "message"
+        },
+        "CounterResolution": {
+          "type": "string",
+          "text": "Resolution of the counter",
+          "examples": "lifetime"
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve statistics",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/statistics",
+        "alias_endpoint": "/mailjet/v3/REST/statistics",
+        "api_ref": "https://dev.mailjet.com/email/reference/statistics#v3_get_statistics"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/message",
+      "text": "List messages",
+      "category": "Messages",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        },
+        "FromTS": {
+          "type": "string",
+          "text": "Start timestamp",
+          "examples": ""
+        },
+        "ToTS": {
+          "type": "string",
+          "text": "End timestamp",
+          "examples": ""
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of messages",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/message",
+        "alias_endpoint": "/mailjet/v3/REST/message",
+        "api_ref": "https://dev.mailjet.com/email/reference/messages#v3_get_message"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/message/message_id",
+      "text": "Get message",
+      "category": "Messages",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "message_id": {
+          "type": "number",
+          "text": "Message ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "message_id": {
+          "type": "number",
+          "text": "Message ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific message",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/message/{message_id}",
+        "alias_endpoint": "/mailjet/v3/REST/message/message_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/messages#v3_get_message_message_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/messageinformation",
+      "text": "Get message information",
+      "category": "Messages",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "MessageID": {
+          "type": "number",
+          "text": "Message ID",
+          "required": true
+        },
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve message information",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/messageinformation",
+        "alias_endpoint": "/mailjet/v3/REST/messageinformation",
+        "api_ref": "https://dev.mailjet.com/email/reference/messages#v3_get_messageinformation"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/campaign",
+      "text": "List campaigns",
+      "category": "Campaigns",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "Limit": {
+          "type": "number",
+          "text": "Number of results to return",
+          "examples": 100
+        },
+        "Offset": {
+          "type": "number",
+          "text": "Offset for pagination",
+          "examples": 0
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {},
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a list of campaigns",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/campaign",
+        "alias_endpoint": "/mailjet/v3/REST/campaign",
+        "api_ref": "https://dev.mailjet.com/email/reference/campaigns#v3_get_campaign"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    },
+    {
+      "provider_alias_intent": "/v3/REST/campaign/campaign_id",
+      "text": "Get campaign",
+      "category": "Campaigns",
+      "method": "GET",
+      "type": "API",
+      "params": {
+        "campaign_id": {
+          "type": "number",
+          "text": "Campaign ID",
+          "required": true
+        }
+      },
+      "custom_headers": {},
+      "body": {},
+      "path": {
+        "campaign_id": {
+          "type": "number",
+          "text": "Campaign ID",
+          "required": true
+        }
+      },
+      "domain_params": {},
+      "meta": {
+        "version": "v3",
+        "auth": [],
+        "description": "Retrieve a specific campaign",
+        "rate_limit": [],
+        "api_endpoint": "https://api.mailjet.com/v3/REST/campaign/{campaign_id}",
+        "alias_endpoint": "/mailjet/v3/REST/campaign/campaign_id",
+        "api_ref": "https://dev.mailjet.com/email/reference/campaigns#v3_get_campaign_campaign_ID"
+      },
+      "auth": {
+        "queryMap": {
+          "api_secret": "api_secret",
+          "api_key": "api_key"
+        }
+      },
+      "response_type": "",
+      "payload_type": "",
+      "updated_at": "2025-11-11T15:37:35.210Z"
+    }
+  ]
+}
